@@ -41,10 +41,12 @@
 .nt-grupo { margin-bottom: 16px; }
 .nt-grupo-label { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--suave); margin: 0 0 8px 2px; }
 .nt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.nt-grid--col { grid-template-columns: 1fr; }
 
 .nt-card { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); overflow: hidden; box-shadow: var(--sombra-sm); cursor: pointer; text-align: left; font-family: var(--fonte-corpo); padding: 0; transition: transform .12s, box-shadow .12s; }
 .nt-card:hover { transform: translateY(-1px); box-shadow: var(--sombra-md); }
 .nt-card--obs { opacity: .65; }
+.nt-card--on { border-color: var(--acento); box-shadow: 0 0 0 1px var(--acento) inset, var(--sombra-sm); }
 .nt-card-bar { height: 4px; }
 .nt-card-corpo { padding: 12px 14px; display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
 .nt-card-info { flex: 1; min-width: 0; }
@@ -68,6 +70,7 @@
 .nt-nota-cab { padding: 7px 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .nt-nota-kind { font-size: 11px; font-weight: 700; }
 .nt-nota-data { font-size: 11px; font-weight: 600; }
+.nt-nota-feito { font-size: 11px; font-weight: 700; color: #16a34a; }
 .nt-nota-edit { font-size: 10px; color: var(--tenue); }
 .nt-feito { width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--tenue); background: var(--superficie); flex-shrink: 0; cursor: pointer; padding: 0; }
 .nt-nota-acao { padding: 2px 7px; font-size: 11px; border: 1px solid var(--borda); border-radius: 6px; background: transparent; cursor: pointer; color: var(--tenue); display: inline-flex; align-items: center; font-family: var(--fonte-corpo); }
@@ -90,17 +93,17 @@
 
 /* ── Layout de 2 painéis (ecrã largo) ─────────────────────────────────────── */
 .nt-2col { display: flex; gap: 16px; align-items: flex-start; }
-.nt-side { width: 300px; flex-shrink: 0; position: sticky; top: 12px; max-height: calc(100vh - 90px); overflow-y: auto; }
+.nt-side { width: 320px; flex-shrink: 0; position: sticky; top: 12px; max-height: calc(100vh - 90px); overflow-y: auto; }
 .nt-main { flex: 1; min-width: 0; }
-.nt-placeholder { text-align: center; color: var(--tenue); padding: 80px 24px; font-size: 14px; background: var(--superficie); border: 1px dashed var(--borda); border-radius: var(--raio-lg); }
 
-.nt-row { display: flex; align-items: center; gap: 8px; padding: 9px 11px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); margin-bottom: 6px; cursor: pointer; }
-.nt-row:hover { border-color: var(--acento); }
-.nt-row.on { border-color: var(--acento); box-shadow: 0 0 0 1px var(--acento) inset; }
-.nt-row--obs { opacity: .6; }
-.nt-row-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-.nt-row-ini { font-weight: 800; font-size: 13px; color: var(--texto); }
-.nt-row-esp { font-size: 10px; font-weight: 600; white-space: nowrap; }
+/* Barra fina do detalhe do doente */
+.nt-detalhe-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid var(--borda); }
+.nt-detalhe-ini { font-weight: 800; font-size: 16px; color: var(--texto); }
+
+/* Nota de apoio editável (topo do detalhe, sincroniza com o card) */
+.nt-apoio { display: flex; align-items: center; gap: 8px; padding: 8px 11px; margin-bottom: 12px; border: 1px solid rgba(124,58,237,.28); border-radius: var(--raio-md); background: rgba(124,58,237,.06); }
+.nt-apoio-input { flex: 1; border: none; background: transparent; outline: none; font-family: var(--fonte-corpo); font-size: 13px; font-weight: 600; color: #7C3AED; padding: 0; }
+.nt-apoio-input::placeholder { color: rgba(124,58,237,.6); font-weight: 500; }
 
 /* ── Modal (gestor de separadores) ────────────────────────────────────────── */
 .nt-modal { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; }

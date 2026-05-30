@@ -44,6 +44,7 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
             {nota.feito && I.check("#fff", 10)}
           </button>
         )}
+        {!rosa && !antigo && nota.feito && <span className="nt-nota-feito">Feito</span>}
         {antigo ? (
           <input type="date" value={nota.data} onChange={(e) => onUpdate({ ...nota, data: e.target.value })} className="campo" style={{ width: "auto", padding: "2px 6px", fontSize: 11, background: "transparent" }} />
         ) : (
@@ -104,12 +105,12 @@ function PainelTarefas({ itens = [], onChange, accent }) {
 }
 
 // ───────────────────────── Cartão de doente (lista — ecrã estreito) ───────────
-function CartaoDoente({ p, onSelect, onVisto, onAlta, onEditar }) {
+function CartaoDoente({ p, ativo, onSelect, onVisto, onAlta, onEditar }) {
   const ei = espInfo(p.especialidade);
   const pi = p.especialidade === "urgencia" && p.prioridade ? prioInfo(p.prioridade) : null;
   const ultima = Object.values(p.notas || {}).flat().reduce((acc, n) => { const t = n.atualizadoEm || n.criadoEm || ""; return t > acc ? t : acc; }, "");
   return (
-    <div className={"nt-card" + (p.observado ? " nt-card--obs" : "")} onClick={onSelect}>
+    <div className={"nt-card" + (p.observado ? " nt-card--obs" : "") + (ativo ? " nt-card--on" : "")} onClick={onSelect}>
       <div className="nt-card-bar" style={{ background: ei.color }} />
       <div className="nt-card-corpo">
         <div className="nt-card-info">
@@ -131,21 +132,6 @@ function CartaoDoente({ p, onSelect, onVisto, onAlta, onEditar }) {
           <button className="nt-chip" style={p.observado === "alta" ? { background: "#FAECE7", color: "#993C1D" } : undefined} onClick={() => onAlta(p.id)}>Alta</button>
         </div>
       </div>
-    </div>
-  );
-}
-
-// ───────────────────────── Linha de doente (barra lateral — ecrã largo) ──────
-function PatientRow({ p, ativo, onSelect }) {
-  const ei = espInfo(p.especialidade);
-  const pi = p.especialidade === "urgencia" && p.prioridade ? prioInfo(p.prioridade) : null;
-  return (
-    <div className={"nt-row" + (ativo ? " on" : "") + (p.observado ? " nt-row--obs" : "")} onClick={onSelect}>
-      <span className="nt-row-dot" style={{ background: ei.color }} />
-      <span className="nt-row-ini" style={p.observado === "alta" ? { color: "#993C1D" } : undefined}>{p.iniciais}</span>
-      {pi && <span className="nt-prio-dot" style={{ background: pi.color, width: 10, height: 10 }} title={pi.label} />}
-      <span style={{ flex: 1 }} />
-      <span className="nt-row-esp" style={{ color: ei.color }}>{ei.label}</span>
     </div>
   );
 }
@@ -172,21 +158,28 @@ function FormDoente({ inicial, onGuardar, onCancelar, accent }) {
   };
   return (
     <div className="cartao" style={{ padding: 14, marginBottom: 14 }}>
-      <div className="secao-label">{editar ? "Editar doente" : "Novo doente"}</div>
-      <input className="campo" style={{ marginBottom: 8 }} placeholder={editar ? `Novo nome (atual: ${inicial.iniciais})` : "Nome (será convertido em iniciais)"} value={nome} onChange={(e) => setNome(e.target.value)} />
-      {(nome || editar) && <div style={{ fontSize: 12, color: "var(--suave)", marginBottom: 8 }}>Guardado como: <strong style={{ color: accent }}>{iniciaisPrev || "—"}</strong></div>}
-      <select className="campo" style={{ marginBottom: 8 }} value={esp} onChange={(e) => setEsp(e.target.value)}>
+      <div className="secao-label" style={{ fontSize: 13, fontWeight: 700, textTransform: "none", marginBottom: 10 }}>{editar ? "Editar doente" : "Novo doente"}</div>
+      <div className="secao-label">Nome <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(convertido em iniciais)</span></div>
+      <input className="campo" style={{ marginBottom: 6 }} placeholder={editar ? `Novo nome (atual: ${inicial.iniciais})` : "Nome do doente"} value={nome} onChange={(e) => setNome(e.target.value)} />
+      {(nome || editar) && <div style={{ fontSize: 12, color: "var(--suave)", marginBottom: 10 }}>Guardado como: <strong style={{ color: accent }}>{iniciaisPrev || "—"}</strong></div>}
+      <div className="secao-label">Especialidade</div>
+      <select className="campo" style={{ marginBottom: 10 }} value={esp} onChange={(e) => setEsp(e.target.value)}>
         {ESPECIALIDADES.map((e) => <option key={e.id} value={e.id}>{e.label}</option>)}
       </select>
       {esp === "urgencia" && (
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
-          {PRIORIDADES.map((pr) => (
-            <button key={pr.id} className={"nt-prio" + (prio === pr.id ? " on" : "")} style={prio === pr.id ? { background: pr.bg, color: pr.color, borderColor: pr.color } : undefined} onClick={() => setPrio(pr.id)}>{pr.label}</button>
-          ))}
-        </div>
+        <>
+          <div className="secao-label">Prioridade</div>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
+            {PRIORIDADES.map((pr) => (
+              <button key={pr.id} className={"nt-prio" + (prio === pr.id ? " on" : "")} style={prio === pr.id ? { background: pr.bg, color: pr.color, borderColor: pr.color } : undefined} onClick={() => setPrio(pr.id)}>{pr.label}</button>
+            ))}
+          </div>
+        </>
       )}
-      <input className="campo" style={{ marginBottom: 8 }} placeholder="Alergias (opcional)" value={alergias} onChange={(e) => setAlergias(e.target.value)} />
-      <input className="campo" style={{ marginBottom: 10 }} placeholder="Nota de apoio (opcional)" value={apoio} onChange={(e) => setApoio(e.target.value)} />
+      <div className="secao-label">Alergias <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(opcional)</span></div>
+      <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: Penicilina (rash)" value={alergias} onChange={(e) => setAlergias(e.target.value)} />
+      <div className="secao-label">Nota de apoio <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(opcional, aparece a roxo)</span></div>
+      <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: aguarda TAC" value={apoio} onChange={(e) => setApoio(e.target.value)} />
       <div style={{ display: "flex", gap: 8 }}>
         <button className="nt-nova" style={{ background: accent, flex: 1 }} onClick={guardar} disabled={!podeGuardar}>{editar ? "Guardar alterações" : "+ Adicionar doente"}</button>
         <button className="nt-acao" onClick={onCancelar}>Cancelar</button>
@@ -282,7 +275,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const [doentes, setDoentes] = useState([]);
   const [view, setView] = useState("list"); // usado só em ecrã estreito
   const [selId, setSelId] = useState(null);
-  const [sidebarView, setSidebarView] = useState("doentes");
+  const [filtro, setFiltro] = useState("ativos"); // "ativos" | "todos"
   const [aba, setAba] = useState("diario");
   const [tabs, setTabs] = useState(TABS_DEFAULT);
   const [busca, setBusca] = useState("");
@@ -316,6 +309,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const apagarDoente = (id) => { setDoentes((ds) => ds.filter((d) => d.id !== id)); setView("list"); setSelId(null); };
 
   const abrir = (p) => { setSelId(p.id); setAba(tabs[0]?.id || "diario"); setQuery(""); setFixadaId(null); setEditId(null); setAdicionar(false); setView("patient"); };
+  const voltar = () => { setSelId(null); setEditId(null); setAdicionar(false); setView("list"); };
 
   const notasTab = sel ? sel.notas[aba] || [] : [];
   const ordenadas = useMemo(() => ordenarNotas(notasTab, fixadaId, query), [notasTab, fixadaId, query]);
@@ -332,36 +326,37 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
 
   // Listas derivadas
   const filtrados = doentes.filter((d) => !busca.trim() || d.iniciais.toLowerCase().includes(busca.toLowerCase()));
-  const ativos = filtrados.filter((d) => d.observado === false);
-  const urgencia = ativos.filter((d) => d.especialidade === "urgencia");
-  const internados = ativos.filter((d) => d.especialidade !== "urgencia");
-  const fora = filtrados.filter((d) => d.observado !== false);
-  const porEspecialidade = ESPECIALIDADES.map((e) => ({ ...e, pts: ativos.filter((d) => d.especialidade === e.id) })).filter((s) => s.pts.length > 0);
+  const ativosAll = doentes.filter((d) => d.observado === false);          // contagem total de ativos
+  const pool = filtro === "ativos" ? filtrados.filter((d) => d.observado === false) : filtrados;
+  const urgencia = pool.filter((d) => d.especialidade === "urgencia");
+  const internados = pool.filter((d) => d.especialidade !== "urgencia");
 
-  const grupoCards = (label, lista, cor) => lista.length > 0 && (
+  const grupoCards = (label, lista, cor, compacto) => lista.length > 0 && (
     <div className="nt-grupo" key={label}>
       <div className="nt-grupo-label" style={cor ? { color: cor } : undefined}>{label} · {lista.length}</div>
-      <div className="nt-grid">
-        {lista.map((p) => <CartaoDoente key={p.id} p={p} onSelect={() => abrir(p)} onVisto={setVisto} onAlta={setAlta} onEditar={(pat) => { setAdicionar(false); setEditId(pat.id); }} />)}
+      <div className={compacto ? "nt-grid nt-grid--col" : "nt-grid"}>
+        {lista.map((p) => (
+          <CartaoDoente
+            key={p.id}
+            p={p}
+            ativo={compacto && p.id === selId}
+            onSelect={() => abrir(p)}
+            onVisto={setVisto}
+            onAlta={setAlta}
+            onEditar={(pat) => { setAdicionar(false); setEditId(pat.id); }}
+          />
+        ))}
       </div>
     </div>
   );
-  const grupoRows = (label, lista, cor) => lista.length > 0 && (
-    <div className="nt-grupo" key={label}>
-      <div className="nt-grupo-label" style={cor ? { color: cor } : undefined}>{label} · {lista.length}</div>
-      {lista.map((p) => <PatientRow key={p.id} p={p} ativo={p.id === selId} onSelect={() => abrir(p)} />)}
-    </div>
-  );
-  const grupos2 = (G) => (
-    sidebarView === "doentes"
-      ? <>{G("Urgência", urgencia, "#8B1A3A")}{G("Internados", internados)}{G("Vistos / Altas", fora)}</>
-      : porEspecialidade.map((s) => G(s.label, s.pts, s.color))
+  const grupos2 = (compacto) => (
+    <>{grupoCards("Urgência", urgencia, "#8B1A3A", compacto)}{grupoCards("Internados", internados, null, compacto)}</>
   );
 
-  const segToggle = (
+  const filtroTabs = (
     <div className="nt-seg">
-      {[["doentes", "Doentes"], ["especialidade", "Especialidade"]].map(([v, l]) => (
-        <button key={v} className={"nt-seg-btn" + (sidebarView === v ? " on" : "")} onClick={() => setSidebarView(v)}>{l}</button>
+      {[["ativos", `Ativos · ${ativosAll.length}`], ["todos", `Todos · ${doentes.length}`]].map(([v, l]) => (
+        <button key={v} className={"nt-seg-btn" + (filtro === v ? " on" : "")} onClick={() => setFiltro(v)}>{l}</button>
       ))}
     </div>
   );
@@ -378,13 +373,12 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
     </div>
   );
 
-  const heroBack = !largo && view === "patient" ? () => setView("list") : onVoltar;
   const hero = (
     <header className="hero" style={{ background: gradiente || accent }}>
       <div className="hero-conteudo">
-        <button className="voltar" onClick={heroBack}>← {!largo && view === "patient" ? "Doentes" : "Início"}</button>
+        <button className="voltar" onClick={onVoltar}>← Início</button>
         <div className="hero-titulo">Notas Clínicas</div>
-        <div className="hero-subtitulo">{largo ? "Lista + notas · só iniciais" : view === "patient" ? "Notas por separador · só iniciais" : "Lista de doentes · só iniciais"}</div>
+        <div className="hero-subtitulo">Lista de doentes · só iniciais</div>
       </div>
     </header>
   );
@@ -393,31 +387,35 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const isDiario = aba === "diario";
   const detalhe = sel && (() => {
     const ei = espInfo(sel.especialidade);
-    const pi = sel.especialidade === "urgencia" && sel.prioridade ? prioInfo(sel.prioridade) : null;
     return (
       <>
-        <div className="cartao" style={{ padding: 14, marginBottom: 12, display: "flex", alignItems: "center", gap: 12 }}>
-          <span className="nt-iniciais" style={{ background: ei.bg, color: ei.color }}>{sel.iniciais}</span>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              {sel.especialidade === "urgencia" && (
-                <span style={{ display: "inline-flex", gap: 5 }}>
-                  {PRIORIDADES.map((pr) => (
-                    <button key={pr.id} title={pr.label} onClick={() => setPrioridade(sel.id, pr.id)} style={{ width: 15, height: 15, borderRadius: "50%", cursor: "pointer", padding: 0, background: sel.prioridade === pr.id ? pr.color : "transparent", border: `2px solid ${pr.color}` }} />
-                  ))}
-                </span>
-              )}
-              <span style={{ fontWeight: 800, color: "var(--texto)" }}>{sel.iniciais}</span>
-            </div>
-            <span className="nt-esp" style={{ background: ei.bg, color: ei.color, marginTop: 3, display: "inline-block" }}>{ei.label}</span>
-            {sel.alergias && <div className="nt-linha-mini" style={{ color: "#E8735A" }}><span className="nt-mini-dot" style={{ background: "#E8735A" }} />Alergias: {sel.alergias}</div>}
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            <button className="nt-btn" onClick={() => { setAdicionar(false); setEditId(sel.id); }}>Editar</button>
-            <button className="nt-btn" onClick={() => setVisto(sel.id)}>{sel.observado === true ? "Reativar" : "Visto"}</button>
-            <button className="nt-btn" onClick={() => setAlta(sel.id)}>{sel.observado === "alta" ? "Reativar" : "Alta"}</button>
-            <button className="nt-btn nt-btn--danger" onClick={() => apagarDoente(sel.id)}>Apagar</button>
-          </div>
+        <div className="nt-detalhe-bar">
+          <button className="nt-btn" onClick={voltar}>← Voltar</button>
+          {sel.especialidade === "urgencia" && (
+            <span style={{ display: "inline-flex", gap: 5 }}>
+              {PRIORIDADES.map((pr) => (
+                <button key={pr.id} title={pr.label} onClick={() => setPrioridade(sel.id, pr.id)} style={{ width: 15, height: 15, borderRadius: "50%", cursor: "pointer", padding: 0, background: sel.prioridade === pr.id ? pr.color : "transparent", border: `2px solid ${pr.color}` }} />
+              ))}
+            </span>
+          )}
+          <span className="nt-detalhe-ini" style={sel.observado === "alta" ? { color: "#993C1D" } : undefined}>{sel.iniciais}</span>
+          <span className="nt-esp" style={{ background: ei.bg, color: ei.color }}>{ei.label}</span>
+          <span style={{ flex: 1 }} />
+          <button className="nt-btn" onClick={() => { setAdicionar(false); setEditId(sel.id); }}>Editar</button>
+          <button className="nt-btn" onClick={() => setVisto(sel.id)}>{sel.observado === true ? "Reativar" : "Visto"}</button>
+          <button className="nt-btn" onClick={() => setAlta(sel.id)}>{sel.observado === "alta" ? "Reativar" : "Alta"}</button>
+          <button className="nt-btn nt-btn--danger" title="Apagar doente" aria-label="Apagar doente" onClick={() => apagarDoente(sel.id)}>{I.trash("currentColor", 14)}</button>
+        </div>
+        {sel.alergias && <div className="nt-linha-mini" style={{ color: "#E8735A", marginBottom: 10 }}><span className="nt-mini-dot" style={{ background: "#E8735A" }} />Alergias: {sel.alergias}</div>}
+
+        <div className="nt-apoio">
+          <span className="nt-mini-dot" style={{ background: "#7C3AED", flexShrink: 0 }} />
+          <input
+            className="nt-apoio-input"
+            placeholder="Nota de apoio (aparece no card)…"
+            value={sel.apoio || ""}
+            onChange={(e) => patch(sel.id, (d) => ({ ...d, apoio: e.target.value }))}
+          />
         </div>
 
         <div className="nt-tabs">
@@ -426,9 +424,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
           ))}
         </div>
 
-        {notasTab.length > 3 && (
-          <input className="campo" style={{ marginBottom: 10 }} placeholder="Pesquisar nestas notas…" value={query} onChange={(e) => setQuery(e.target.value)} />
-        )}
+        <input className="campo" style={{ marginBottom: 10 }} placeholder={`Pesquisar em ${tab?.label || "notas"}…`} value={query} onChange={(e) => setQuery(e.target.value)} />
 
         <PainelTarefas itens={sel.tarefas[aba] || []} onChange={setTarefas} accent={accent} />
 
@@ -452,43 +448,70 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
           ) : (
             <button className="nt-acao" style={{ borderColor: accent, color: accent }} onClick={addComTemplate}>+ Nova nota</button>
           )}
+          <button className="nt-acao" style={{ borderColor: "#7F77DD", color: "#7F77DD" }} onClick={() => setGerir(true)}>Template</button>
           <span style={{ fontSize: 11, color: "var(--tenue)", marginLeft: "auto" }}>{notasTab.length} nota{notasTab.length !== 1 ? "s" : ""}</span>
         </div>
       </>
     );
   })();
 
-  // ── Barra lateral (lista compacta) — ecrã largo ──
-  const sidebar = (
+  const gestorModal = gerir && <GestorSeparadores tabs={tabs} accent={accent} onFechar={() => setGerir(false)} onGuardar={saveTabs} />;
+
+  // ── Ecrã inicial: cards a toda a largura (partilhado entre estreito e largo) ──
+  const home = (
     <>
-      <div className="nt-topo" style={{ marginBottom: 10 }}>
-        <div><div className="nt-h1" style={{ fontSize: 17 }}>Doentes</div><div className="nt-count">{ativos.length} ativo{ativos.length !== 1 ? "s" : ""}</div></div>
+      {aviso}
+      <div className="nt-topo">
+        <div><div className="nt-h1">Doentes</div><div className="nt-count">{ativosAll.length} ativo{ativosAll.length !== 1 ? "s" : ""}</div></div>
+        <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
+          <button className="nt-btn" onClick={() => setGerir(true)}>Templates</button>
+          <button className="nt-nova" style={{ background: accent, width: "auto", padding: "9px 16px" }} onClick={() => { setEditId(null); setAdicionar((v) => !v); }}>+ Adicionar</button>
+        </div>
       </div>
-      {segToggle}
-      {sidebarView === "doentes" && <input className="campo" style={{ marginBottom: 10 }} placeholder="Iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />}
-      {doentes.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Sem doentes.</div>}
-      {grupos2(grupoRows)}
-      <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 12 }}>
-        <button className="nt-nova" style={{ background: accent }} onClick={() => { setEditId(null); setSelId(null); setAdicionar(true); }}>+ Adicionar doente</button>
-        <button className="nt-btn" style={{ textAlign: "center" }} onClick={() => setGerir(true)}>Tabs e templates</button>
+      {filtroTabs}
+      <input className="campo" style={{ marginBottom: 12 }} placeholder="Pesquisar por iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />
+      {gestorModal}
+      {formAtual}
+      {doentes.length === 0 && !adicionar && <div className="nt-vazio">Sem doentes. Clica em “+ Adicionar”.</div>}
+      {doentes.length > 0 && pool.length === 0 && <div className="nt-vazio">Nenhum doente neste filtro.</div>}
+      {grupos2(false)}
+      <div className="rodape">
+        <strong>Nota:</strong> Separadores e templates vêm do teu ficheiro de conteúdo. Sincronização chega a seguir.
       </div>
     </>
   );
 
-  // ════════ Ecrã largo: 2 painéis ════════
+  // ── Barra lateral (cards ricos, em coluna) — ecrã largo com doente aberto ──
+  const sidebar = (
+    <>
+      <div className="nt-topo" style={{ marginBottom: 10 }}>
+        <div><div className="nt-h1" style={{ fontSize: 17 }}>Doentes</div><div className="nt-count">{ativosAll.length} ativo{ativosAll.length !== 1 ? "s" : ""}</div></div>
+        <button className="nt-nova" style={{ background: accent, width: "auto", padding: "7px 13px" }} onClick={() => { voltar(); setAdicionar(true); }}>+ Novo</button>
+      </div>
+      {filtroTabs}
+      <input className="campo" style={{ marginBottom: 10 }} placeholder="Iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />
+      {doentes.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Sem doentes.</div>}
+      {doentes.length > 0 && pool.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Nenhum doente neste filtro.</div>}
+      {grupos2(true)}
+      <button className="nt-btn" style={{ textAlign: "center", width: "100%", marginTop: 12 }} onClick={() => setGerir(true)}>Templates</button>
+    </>
+  );
+
+  // ════════ Ecrã largo ════════
   if (largo) {
     return (
       <div style={{ "--acento": accent }}>
         {hero}
         <div className="modulo-corpo">
-          {aviso}
-          {gerir && <GestorSeparadores tabs={tabs} accent={accent} onFechar={() => setGerir(false)} onGuardar={saveTabs} />}
-          <div className="nt-2col">
-            <aside className="nt-side">{sidebar}</aside>
-            <main className="nt-main">
-              {formAtual ? formAtual : detalhe ? detalhe : <div className="nt-placeholder">Seleciona um doente à esquerda, ou adiciona um novo.</div>}
-            </main>
-          </div>
+          {sel ? (
+            <>
+              {gestorModal}
+              <div className="nt-2col">
+                <aside className="nt-side">{sidebar}</aside>
+                <main className="nt-main">{(adicionar || editId) ? formAtual : detalhe}</main>
+              </div>
+            </>
+          ) : home}
         </div>
       </div>
     );
@@ -499,32 +522,17 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
     return (
       <div style={{ "--acento": accent }}>
         {hero}
-        <div className="modulo-corpo">{editId === sel.id ? formAtual : detalhe}</div>
+        <div className="modulo-corpo">
+          {gestorModal}
+          {editId === sel.id ? formAtual : detalhe}
+        </div>
       </div>
     );
   }
   return (
     <div style={{ "--acento": accent }}>
       {hero}
-      <div className="modulo-corpo">
-        {aviso}
-        <div className="nt-topo">
-          <div><div className="nt-h1">Doentes</div><div className="nt-count">{ativos.length} ativo{ativos.length !== 1 ? "s" : ""}</div></div>
-          <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
-            <button className="nt-btn" onClick={() => setGerir(true)}>Separadores</button>
-            <button className="nt-nova" style={{ background: accent, width: "auto", padding: "9px 16px" }} onClick={() => { setEditId(null); setAdicionar((v) => !v); }}>+ Adicionar</button>
-          </div>
-        </div>
-        {segToggle}
-        {sidebarView === "doentes" && <input className="campo" style={{ marginBottom: 12 }} placeholder="Pesquisar por iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />}
-        {gerir && <GestorSeparadores tabs={tabs} accent={accent} onFechar={() => setGerir(false)} onGuardar={saveTabs} />}
-        {formAtual}
-        {doentes.length === 0 && !adicionar && <div className="nt-vazio">Sem doentes. Clica em “+ Adicionar”.</div>}
-        {grupos2(grupoCards)}
-        <div className="rodape">
-          <strong>Nota:</strong> Separadores e templates vêm do teu ficheiro de conteúdo. Gestor de separadores personalizados e sincronização chegam a seguir.
-        </div>
-      </div>
+      <div className="modulo-corpo">{home}</div>
     </div>
   );
 }
