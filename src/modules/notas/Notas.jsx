@@ -68,29 +68,37 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
 
 // ───────────────────────── Painel de tarefas ─────────────────────────
 function PainelTarefas({ itens = [], onChange, accent }) {
+  const [aberto, setAberto] = useState(false);
   const [txt, setTxt] = useState("");
+  const feitas = itens.filter((i) => i.feito).length;
   const add = () => { const t = txt.trim(); if (!t) return; onChange([...itens, { id: uid(), texto: t, feito: false }]); setTxt(""); };
   return (
-    <div className="cartao nt-todo" style={{ padding: 14 }}>
-      <div className="secao-label" style={{ marginBottom: 6 }}>Tarefas</div>
-      {itens.length === 0 && <div style={{ fontSize: 12.5, color: "var(--tenue)" }}>Sem tarefas neste separador.</div>}
-      {itens.map((i) => (
-        <div key={i.id} className="nt-todo-item">
-          <button
-            className="nt-todo-check"
-            style={{ borderColor: i.feito ? VERDE : "var(--tenue)", background: i.feito ? VERDE : "var(--superficie)", display: "inline-flex", alignItems: "center", justifyContent: "center" }}
-            onClick={() => onChange(itens.map((x) => x.id === i.id ? { ...x, feito: !x.feito } : x))}
-          >
-            {i.feito && I.check("#fff", 11)}
-          </button>
-          <span className={"nt-todo-txt" + (i.feito ? " feito" : "")}>{i.texto}</span>
-          <button className="nt-nota-acao" onClick={() => onChange(itens.filter((x) => x.id !== i.id))} aria-label="Apagar tarefa">{I.close("currentColor", 12)}</button>
+    <div className="cartao nt-todo" style={{ padding: 0, overflow: "hidden", marginBottom: 12 }}>
+      <button className="nt-todo-cab" onClick={() => setAberto((v) => !v)}>
+        <Ico name="checkCircle" c={VERDE} s={16} />
+        <span style={{ fontWeight: 700, color: accent }}>Lista de tarefas</span>
+        <span style={{ flex: 1 }} />
+        <span style={{ fontSize: 12, color: "var(--tenue)" }}>{feitas}/{itens.length}</span>
+        <span style={{ color: "var(--suave)", fontSize: 12 }}>{aberto ? "▴" : "▾"}</span>
+      </button>
+      {aberto && (
+        <div style={{ padding: "0 14px 12px" }}>
+          {itens.length === 0 && <div style={{ fontSize: 12.5, color: "var(--tenue)", paddingBottom: 8 }}>Sem tarefas neste separador.</div>}
+          {itens.map((i) => (
+            <div key={i.id} className="nt-todo-item">
+              <button className="nt-todo-check" style={{ borderColor: i.feito ? VERDE : "var(--tenue)", background: i.feito ? VERDE : "var(--superficie)", display: "inline-flex", alignItems: "center", justifyContent: "center" }} onClick={() => onChange(itens.map((x) => (x.id === i.id ? { ...x, feito: !x.feito } : x)))}>
+                {i.feito && I.check("#fff", 11)}
+              </button>
+              <span className={"nt-todo-txt" + (i.feito ? " feito" : "")}>{i.texto}</span>
+              <button className="nt-nota-acao" onClick={() => onChange(itens.filter((x) => x.id !== i.id))} aria-label="Apagar tarefa">{I.close("currentColor", 12)}</button>
+            </div>
+          ))}
+          <div className="nt-todo-add">
+            <input className="campo" placeholder="Nova tarefa…" value={txt} onChange={(e) => setTxt(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} />
+            <button className="nt-acao" style={{ borderColor: accent, color: accent }} onClick={add}>+ Tarefa</button>
+          </div>
         </div>
-      ))}
-      <div className="nt-todo-add">
-        <input className="campo" placeholder="Nova tarefa…" value={txt} onChange={(e) => setTxt(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} />
-        <button className="nt-acao" style={{ borderColor: accent, color: accent }} onClick={add}>+ Tarefa</button>
-      </div>
+      )}
     </div>
   );
 }
@@ -304,6 +312,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const guardarEdicao = (dados) => { patch(editId, (d) => ({ ...d, ...dados })); setEditId(null); };
   const setVisto = (id) => patch(id, (d) => ({ ...d, observado: d.observado === true ? false : true }));
   const setAlta = (id) => patch(id, (d) => ({ ...d, observado: d.observado === "alta" ? false : "alta" }));
+  const setPrioridade = (id, pid) => patch(id, (d) => ({ ...d, prioridade: pid }));
   const apagarDoente = (id) => { setDoentes((ds) => ds.filter((d) => d.id !== id)); setView("list"); setSelId(null); };
 
   const abrir = (p) => { setSelId(p.id); setAba(tabs[0]?.id || "diario"); setQuery(""); setFixadaId(null); setEditId(null); setAdicionar(false); setView("patient"); };
@@ -391,7 +400,13 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
           <span className="nt-iniciais" style={{ background: ei.bg, color: ei.color }}>{sel.iniciais}</span>
           <div style={{ flex: 1, minWidth: 0 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              {pi && <span className="nt-prio-dot" style={{ background: pi.color }} title={pi.label} />}
+              {sel.especialidade === "urgencia" && (
+                <span style={{ display: "inline-flex", gap: 5 }}>
+                  {PRIORIDADES.map((pr) => (
+                    <button key={pr.id} title={pr.label} onClick={() => setPrioridade(sel.id, pr.id)} style={{ width: 15, height: 15, borderRadius: "50%", cursor: "pointer", padding: 0, background: sel.prioridade === pr.id ? pr.color : "transparent", border: `2px solid ${pr.color}` }} />
+                  ))}
+                </span>
+              )}
               <span style={{ fontWeight: 800, color: "var(--texto)" }}>{sel.iniciais}</span>
             </div>
             <span className="nt-esp" style={{ background: ei.bg, color: ei.color, marginTop: 3, display: "inline-block" }}>{ei.label}</span>
@@ -415,6 +430,8 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
           <input className="campo" style={{ marginBottom: 10 }} placeholder="Pesquisar nestas notas…" value={query} onChange={(e) => setQuery(e.target.value)} />
         )}
 
+        <PainelTarefas itens={sel.tarefas[aba] || []} onChange={setTarefas} accent={accent} />
+
         {ordenadas.length === 0 && <div className="nt-vazio">Sem notas neste separador. Usa os botões abaixo.</div>}
         {grupos.map((g) => (
           <div key={g.data}>
@@ -437,8 +454,6 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
           )}
           <span style={{ fontSize: 11, color: "var(--tenue)", marginLeft: "auto" }}>{notasTab.length} nota{notasTab.length !== 1 ? "s" : ""}</span>
         </div>
-
-        <PainelTarefas itens={sel.tarefas[aba] || []} onChange={setTarefas} accent={accent} />
       </>
     );
   })();
@@ -446,17 +461,17 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   // ── Barra lateral (lista compacta) — ecrã largo ──
   const sidebar = (
     <>
-      <div className="nt-topo">
+      <div className="nt-topo" style={{ marginBottom: 10 }}>
         <div><div className="nt-h1" style={{ fontSize: 17 }}>Doentes</div><div className="nt-count">{ativos.length} ativo{ativos.length !== 1 ? "s" : ""}</div></div>
-        <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
-          <button className="nt-btn" onClick={() => setGerir(true)}>Separadores</button>
-          <button className="nt-nova" style={{ background: accent, width: "auto", padding: "7px 12px" }} onClick={() => { setEditId(null); setSelId(null); setAdicionar(true); }}>+ Novo</button>
-        </div>
       </div>
       {segToggle}
       {sidebarView === "doentes" && <input className="campo" style={{ marginBottom: 10 }} placeholder="Iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />}
       {doentes.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Sem doentes.</div>}
       {grupos2(grupoRows)}
+      <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 12 }}>
+        <button className="nt-nova" style={{ background: accent }} onClick={() => { setEditId(null); setSelId(null); setAdicionar(true); }}>+ Adicionar doente</button>
+        <button className="nt-btn" style={{ textAlign: "center" }} onClick={() => setGerir(true)}>Tabs e templates</button>
+      </div>
     </>
   );
 

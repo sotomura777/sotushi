@@ -77,7 +77,8 @@
 .nt-acoes { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 10px 0 4px; margin-top: 4px; border-top: 1px solid var(--borda); }
 .nt-acao { padding: 7px 13px; font-size: 12px; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie); cursor: pointer; font-family: var(--fonte-corpo); font-weight: 700; color: var(--suave); display: inline-flex; align-items: center; gap: 4px; }
 
-.nt-todo { margin-top: 14px; }
+.nt-todo { margin-top: 0; }
+.nt-todo-cab { width: 100%; display: flex; align-items: center; gap: 8px; padding: 11px 14px; background: none; border: none; cursor: pointer; font-family: var(--fonte-corpo); font-size: 13.5px; }
 .nt-todo-item { display: flex; align-items: center; gap: 9px; padding: 7px 0; border-bottom: 1px solid var(--borda-2); }
 .nt-todo-item:last-child { border-bottom: none; }
 .nt-todo-check { width: 16px; height: 16px; border-radius: 5px; border: 2px solid var(--tenue); background: var(--superficie); flex-shrink: 0; cursor: pointer; padding: 0; }
