@@ -86,3 +86,17 @@
 .nt-todo-add { display: flex; gap: 8px; margin-top: 8px; }
 
 .nt-vazio { text-align: center; color: var(--tenue); padding: 24px; font-size: 13px; }
+
+/* ── Layout de 2 painéis (ecrã largo) ─────────────────────────────────────── */
+.nt-2col { display: flex; gap: 16px; align-items: flex-start; }
+.nt-side { width: 300px; flex-shrink: 0; position: sticky; top: 12px; max-height: calc(100vh - 90px); overflow-y: auto; }
+.nt-main { flex: 1; min-width: 0; }
+.nt-placeholder { text-align: center; color: var(--tenue); padding: 80px 24px; font-size: 14px; background: var(--superficie); border: 1px dashed var(--borda); border-radius: var(--raio-lg); }
+
+.nt-row { display: flex; align-items: center; gap: 8px; padding: 9px 11px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); margin-bottom: 6px; cursor: pointer; }
+.nt-row:hover { border-color: var(--acento); }
+.nt-row.on { border-color: var(--acento); box-shadow: 0 0 0 1px var(--acento) inset; }
+.nt-row--obs { opacity: .6; }
+.nt-row-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.nt-row-ini { font-weight: 800; font-size: 13px; color: var(--texto); }
+.nt-row-esp { font-size: 10px; font-weight: 600; white-space: nowrap; }
