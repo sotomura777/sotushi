@@ -100,3 +100,12 @@
 .nt-row-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .nt-row-ini { font-weight: 800; font-size: 13px; color: var(--texto); }
 .nt-row-esp { font-size: 10px; font-weight: 600; white-space: nowrap; }
+
+/* ── Modal (gestor de separadores) ────────────────────────────────────────── */
+.nt-modal { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; }
+.nt-modal-box { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: 18px; width: 520px; max-width: 100%; max-height: 88vh; overflow-y: auto; box-shadow: var(--sombra-md); }
+.nt-modal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.nt-modal-x { background: none; border: none; cursor: pointer; color: var(--tenue); display: inline-flex; padding: 0; }
+.nt-swatches { display: flex; gap: 6px; flex-wrap: wrap; }
+.nt-swatch { width: 30px; height: 30px; border-radius: 8px; border: none; cursor: pointer; }
+.nt-tab-row { display: flex; align-items: center; gap: 8px; padding: 9px 11px; border: 1px solid var(--borda); border-radius: var(--raio-md); margin-bottom: 6px; }

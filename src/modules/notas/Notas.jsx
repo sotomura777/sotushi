@@ -7,13 +7,13 @@ import {
 import { I, Ico } from "@/components/icones";
 import "./estilo.css";
 
-const TABS = config.separadores_padrao;
+const TABS_DEFAULT = config.separadores_padrao;
+const CORES = config.cores;
 const ESPECIALIDADES = config.especialidades;
 const PRIORIDADES = config.prioridades;
 
 const espInfo = (id) => ESPECIALIDADES.find((e) => e.id === id) || { label: "—", color: "var(--suave)", bg: "var(--superficie-2)" };
 const prioInfo = (id) => PRIORIDADES.find((p) => p.id === id);
-const tabInfo = (id) => TABS.find((t) => t.id === id) || TABS[0];
 
 const KIND = {
   rosa: { cor: "#E8735A", label: "Nota" },
@@ -187,18 +187,102 @@ function FormDoente({ inicial, onGuardar, onCancelar, accent }) {
   );
 }
 
+// ───────────────────────── Modal genérico ─────────────────────────
+function Modal({ title, onClose, children }) {
+  return (
+    <div className="nt-modal" onClick={onClose}>
+      <div className="nt-modal-box" onClick={(e) => e.stopPropagation()}>
+        <div className="nt-modal-head">
+          <h3 style={{ fontSize: 15, fontWeight: 700, color: "var(--texto)" }}>{title}</h3>
+          <button className="nt-modal-x" onClick={onClose} aria-label="Fechar">{I.close("currentColor", 18)}</button>
+        </div>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+// ───────────────────────── Gestor de separadores ─────────────────────────
+function GestorSeparadores({ tabs, onFechar, onGuardar, accent }) {
+  const [lista, setLista] = useState(tabs.map((t) => ({ ...t })));
+  const [edit, setEdit] = useState(null);
+  const [novo, setNovo] = useState(null);
+  const mover = (i, d) => setLista((l) => { const a = [...l]; const j = i + d; if (j < 0 || j >= a.length) return a; [a[i], a[j]] = [a[j], a[i]]; return a; });
+  const Swatches = ({ sel, onPick }) => (
+    <div className="nt-swatches">
+      {CORES.map((c) => (
+        <button key={c.color} className="nt-swatch" style={{ background: c.color, outline: sel === c.color ? "3px solid rgba(0,0,0,.35)" : "none" }} onClick={() => onPick(c.color, c.bg)} aria-label="Escolher cor" />
+      ))}
+    </div>
+  );
+
+  if (edit !== null) {
+    const t = lista[edit];
+    const set = (k, v) => setLista((l) => l.map((x, j) => (j === edit ? { ...x, [k]: v } : x)));
+    return (
+      <Modal title="Editar separador" onClose={() => setEdit(null)}>
+        <div className="secao-label">Nome</div>
+        <input className="campo" style={{ marginBottom: 12 }} value={t.label} onChange={(e) => set("label", e.target.value)} />
+        <div className="secao-label">Cor</div>
+        <Swatches sel={t.color} onPick={(color, bg) => setLista((l) => l.map((x, j) => (j === edit ? { ...x, color, bg } : x)))} />
+        <div className="secao-label" style={{ marginTop: 12 }}>Template <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(usa [DATA] para a data)</span></div>
+        <textarea className="nt-textarea" style={{ border: "1px solid var(--borda)", borderRadius: 8, minHeight: 200, marginBottom: 12 }} value={t.template || ""} onChange={(e) => set("template", e.target.value)} />
+        <button className="nt-nova" style={{ background: accent }} onClick={() => setEdit(null)}>OK</button>
+      </Modal>
+    );
+  }
+  if (novo) {
+    return (
+      <Modal title="Novo separador" onClose={() => setNovo(null)}>
+        <div className="secao-label">Nome</div>
+        <input className="campo" style={{ marginBottom: 12 }} placeholder="Ex.: Evolução" value={novo.label} onChange={(e) => setNovo({ ...novo, label: e.target.value })} />
+        <div className="secao-label">Cor</div>
+        <Swatches sel={novo.color} onPick={(color, bg) => setNovo({ ...novo, color, bg })} />
+        <div className="secao-label" style={{ marginTop: 12 }}>Template (opcional)</div>
+        <textarea className="nt-textarea" style={{ border: "1px solid var(--borda)", borderRadius: 8, minHeight: 140, marginBottom: 12 }} value={novo.template} onChange={(e) => setNovo({ ...novo, template: e.target.value })} />
+        <div style={{ display: "flex", gap: 8 }}>
+          <button className="nt-acao" onClick={() => setNovo(null)}>Cancelar</button>
+          <button className="nt-nova" style={{ background: accent, flex: 1 }} disabled={!novo.label.trim()} onClick={() => { setLista((l) => [...l, { id: uid(), label: novo.label.trim(), color: novo.color, bg: novo.bg, template: novo.template, isDefault: false }]); setNovo(null); }}>Adicionar</button>
+        </div>
+      </Modal>
+    );
+  }
+  return (
+    <Modal title="Separadores e templates" onClose={onFechar}>
+      <p style={{ fontSize: 12, color: "var(--suave)", marginBottom: 12 }}>Cada separador tem o seu template. Usa <b>[DATA]</b> para a data automática.</p>
+      {lista.map((t, i) => (
+        <div key={t.id} className="nt-tab-row" style={{ borderColor: t.color + "55" }}>
+          <span className="nt-mini-dot" style={{ background: t.color, width: 10, height: 10 }} />
+          <span style={{ flex: 1, fontWeight: 600, color: "var(--texto)" }}>{t.label}</span>
+          <button className="nt-nota-acao" onClick={() => mover(i, -1)} disabled={i === 0}>↑</button>
+          <button className="nt-nota-acao" onClick={() => mover(i, 1)} disabled={i === lista.length - 1}>↓</button>
+          <button className="nt-nota-acao" onClick={() => setEdit(i)}>Editar</button>
+          {!t.isDefault && <button className="nt-nota-acao" style={{ color: "#b91c1c" }} onClick={() => setLista((l) => l.filter((_, j) => j !== i))}>Apagar</button>}
+        </div>
+      ))}
+      <button className="nt-acao" style={{ marginTop: 10, borderColor: accent, color: accent }} onClick={() => setNovo({ label: "", color: CORES[3].color, bg: CORES[3].bg, template: "" })}>+ Novo separador</button>
+      <div style={{ display: "flex", gap: 8, marginTop: 16 }}>
+        <button className="nt-acao" onClick={onFechar}>Cancelar</button>
+        <button className="nt-nova" style={{ background: accent, flex: 1 }} onClick={() => onGuardar(lista)}>Guardar</button>
+      </div>
+    </Modal>
+  );
+}
+
 // ════════════════════════════ Módulo ════════════════════════════
 export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const [doentes, setDoentes] = useState([]);
   const [view, setView] = useState("list"); // usado só em ecrã estreito
   const [selId, setSelId] = useState(null);
   const [sidebarView, setSidebarView] = useState("doentes");
-  const [aba, setAba] = useState(TABS[0].id);
+  const [aba, setAba] = useState("diario");
+  const [tabs, setTabs] = useState(TABS_DEFAULT);
   const [busca, setBusca] = useState("");
   const [query, setQuery] = useState("");
   const [fixadaId, setFixadaId] = useState(null);
   const [adicionar, setAdicionar] = useState(false);
   const [editId, setEditId] = useState(null);
+  const [gerir, setGerir] = useState(false);
   const [largo, setLargo] = useState(typeof window !== "undefined" && window.innerWidth >= 800);
 
   useEffect(() => {
@@ -208,7 +292,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   }, []);
 
   const sel = doentes.find((d) => d.id === selId);
-  const tab = tabInfo(aba);
+  const tab = tabs.find((t) => t.id === aba) || tabs[0];
 
   const patch = (id, fn) => setDoentes((ds) => ds.map((d) => (d.id === id ? fn(d) : d)));
   const patchNotas = (id, t, fn) => patch(id, (d) => ({ ...d, notas: { ...d.notas, [t]: fn(d.notas[t] || []) } }));
@@ -222,7 +306,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const setAlta = (id) => patch(id, (d) => ({ ...d, observado: d.observado === "alta" ? false : "alta" }));
   const apagarDoente = (id) => { setDoentes((ds) => ds.filter((d) => d.id !== id)); setView("list"); setSelId(null); };
 
-  const abrir = (p) => { setSelId(p.id); setAba(TABS[0].id); setQuery(""); setFixadaId(null); setEditId(null); setAdicionar(false); setView("patient"); };
+  const abrir = (p) => { setSelId(p.id); setAba(tabs[0]?.id || "diario"); setQuery(""); setFixadaId(null); setEditId(null); setAdicionar(false); setView("patient"); };
 
   const notasTab = sel ? sel.notas[aba] || [] : [];
   const ordenadas = useMemo(() => ordenarNotas(notasTab, fixadaId, query), [notasTab, fixadaId, query]);
@@ -235,6 +319,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const updateNota = (n) => patchNotas(selId, aba, (arr) => arr.map((x) => (x.id === n.id ? n : x)));
   const apagarNota = (nid) => patchNotas(selId, aba, (arr) => arr.filter((x) => x.id !== nid));
   const setTarefas = (itens) => patch(selId, (d) => ({ ...d, tarefas: { ...d.tarefas, [aba]: itens } }));
+  const saveTabs = (nova) => { setTabs(nova); if (!nova.find((t) => t.id === aba)) setAba(nova[0]?.id || "diario"); setGerir(false); };
 
   // Listas derivadas
   const filtrados = doentes.filter((d) => !busca.trim() || d.iniciais.toLowerCase().includes(busca.toLowerCase()));
@@ -321,7 +406,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
         </div>
 
         <div className="nt-tabs">
-          {TABS.map((t) => (
+          {tabs.map((t) => (
             <button key={t.id} className={"nt-tab" + (aba === t.id ? " on" : "")} style={aba === t.id ? { color: t.color, borderColor: t.color } : undefined} onClick={() => { setAba(t.id); setFixadaId(null); }}>{t.label}</button>
           ))}
         </div>
@@ -363,7 +448,10 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
     <>
       <div className="nt-topo">
         <div><div className="nt-h1" style={{ fontSize: 17 }}>Doentes</div><div className="nt-count">{ativos.length} ativo{ativos.length !== 1 ? "s" : ""}</div></div>
-        <button className="nt-nova" style={{ background: accent, width: "auto", padding: "7px 12px" }} onClick={() => { setEditId(null); setSelId(null); setAdicionar(true); }}>+ Novo</button>
+        <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
+          <button className="nt-btn" onClick={() => setGerir(true)}>Separadores</button>
+          <button className="nt-nova" style={{ background: accent, width: "auto", padding: "7px 12px" }} onClick={() => { setEditId(null); setSelId(null); setAdicionar(true); }}>+ Novo</button>
+        </div>
       </div>
       {segToggle}
       {sidebarView === "doentes" && <input className="campo" style={{ marginBottom: 10 }} placeholder="Iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />}
@@ -379,6 +467,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
         {hero}
         <div className="modulo-corpo">
           {aviso}
+          {gerir && <GestorSeparadores tabs={tabs} accent={accent} onFechar={() => setGerir(false)} onGuardar={saveTabs} />}
           <div className="nt-2col">
             <aside className="nt-side">{sidebar}</aside>
             <main className="nt-main">
@@ -406,10 +495,14 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
         {aviso}
         <div className="nt-topo">
           <div><div className="nt-h1">Doentes</div><div className="nt-count">{ativos.length} ativo{ativos.length !== 1 ? "s" : ""}</div></div>
-          <button className="nt-nova" style={{ background: accent, width: "auto", padding: "9px 16px" }} onClick={() => { setEditId(null); setAdicionar((v) => !v); }}>+ Adicionar</button>
+          <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
+            <button className="nt-btn" onClick={() => setGerir(true)}>Separadores</button>
+            <button className="nt-nova" style={{ background: accent, width: "auto", padding: "9px 16px" }} onClick={() => { setEditId(null); setAdicionar((v) => !v); }}>+ Adicionar</button>
+          </div>
         </div>
         {segToggle}
         {sidebarView === "doentes" && <input className="campo" style={{ marginBottom: 12 }} placeholder="Pesquisar por iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />}
+        {gerir && <GestorSeparadores tabs={tabs} accent={accent} onFechar={() => setGerir(false)} onGuardar={saveTabs} />}
         {formAtual}
         {doentes.length === 0 && !adicionar && <div className="nt-vazio">Sem doentes. Clica em “+ Adicionar”.</div>}
         {grupos2(grupoCards)}
