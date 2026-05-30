@@ -1,0 +1,258 @@
+<section class="view" id="view-matrix">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar
+      </button>
+    </div>
+
+    <h2 class="page-title"><span class="icon">📊</span> Calendário Vacinal — Matriz</h2>
+
+    <div class="timeline-intro">
+      <div class="info-icon">i</div>
+      <div>
+        <strong>Vacinas × Idades — Plano Nacional de Vacinação 2025.</strong>
+        Clica numa <strong>idade</strong> (cabeçalho da coluna) para filtrar as vacinas a administrar nessa altura. Passa o rato sobre cada dose para ver o nome completo da vacina.
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <input id="search-matrix" type="text" placeholder="Pesquisar por vacina ou doença (ex: hepatite, sarampo, meningite)…">
+      <button class="clear-btn" type="button" aria-label="Limpar">✕</button>
+    </div>
+
+    <div class="matrix-filter-info" id="matrix-filter-info">
+      <span id="matrix-filter-text"></span>
+      <button onclick="clearMatrixFilter()">Limpar filtro</button>
+    </div>
+
+    <div class="matrix-wrap">
+      <table class="matrix" id="matrix-table">
+        <thead>
+          <tr>
+            <th class="disease-col">Vacina / Doença</th>
+            <th data-age="0"><span class="age-num">Nasc.</span><span class="age-unit"></span></th>
+            <th data-age="2m"><span class="age-num">2</span><span class="age-unit">meses</span></th>
+            <th data-age="4m"><span class="age-num">4</span><span class="age-unit">meses</span></th>
+            <th data-age="6m"><span class="age-num">6</span><span class="age-unit">meses</span></th>
+            <th data-age="12m"><span class="age-num">12</span><span class="age-unit">meses</span></th>
+            <th data-age="18m"><span class="age-num">18</span><span class="age-unit">meses</span></th>
+            <th data-age="5a"><span class="age-num">5</span><span class="age-unit">anos</span></th>
+            <th data-age="10a"><span class="age-num">10</span><span class="age-unit">anos</span></th>
+            <th data-age="25a"><span class="age-num">25</span><span class="age-unit">anos</span></th>
+            <th data-age="45a"><span class="age-num">45</span><span class="age-unit">anos</span></th>
+            <th data-age="65a"><span class="age-num">65</span><span class="age-unit">anos</span></th>
+            <th data-age="10/10"><span class="age-num">10/10</span><span class="age-unit">anos</span></th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr data-disease="hepatite B">
+            <td class="disease">Hepatite B</td>
+            <td class="cell" data-age="0"><span class="v-pill v-vhb" data-info="VHB — Vacina contra a hepatite B (1ª dose, à nascença)"><span class="dose">1</span><span class="label">VHB</span></span></td>
+            <td class="cell" data-age="2m"><span class="v-pill v-vhb" data-info="VHB — 2ª dose (incluída na hexavalente)"><span class="dose">2</span><span class="label">VHB</span></span></td>
+            <td class="cell" data-age="4m"></td>
+            <td class="cell" data-age="6m"><span class="v-pill v-vhb" data-info="VHB — 3ª dose (incluída na hexavalente)"><span class="dose">3</span><span class="label">VHB</span></span></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="haemophilus influenzae b hib">
+            <td class="disease">Haemophilus influenzae b</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"><span class="v-pill v-hib" data-info="Hib — Haemophilus influenzae tipo b, 1ª dose (hexavalente)"><span class="dose">1</span><span class="label">Hib</span></span></td>
+            <td class="cell" data-age="4m"><span class="v-pill v-hib" data-info="Hib — 2ª dose (hexavalente)"><span class="dose">2</span><span class="label">Hib</span></span></td>
+            <td class="cell" data-age="6m"><span class="v-pill v-hib" data-info="Hib — 3ª dose (hexavalente)"><span class="dose">3</span><span class="label">Hib</span></span></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"><span class="v-pill v-hib" data-info="Hib — 4ª dose / reforço (pentavalente)"><span class="dose">4</span><span class="label">Hib</span></span></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="difteria tétano tosse convulsa">
+            <td class="disease">Difteria, tétano, tosse convulsa</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"><span class="v-pill v-dtpa" data-info="DTPa — Difteria, tétano, tosse convulsa acelular, 1ª dose"><span class="dose">1</span><span class="label">DTPa</span></span></td>
+            <td class="cell" data-age="4m"><span class="v-pill v-dtpa" data-info="DTPa — 2ª dose"><span class="dose">2</span><span class="label">DTPa</span></span></td>
+            <td class="cell" data-age="6m"><span class="v-pill v-dtpa" data-info="DTPa — 3ª dose"><span class="dose">3</span><span class="label">DTPa</span></span></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"><span class="v-pill v-dtpa" data-info="DTPa — 4ª dose / reforço"><span class="dose">4</span><span class="label">DTPa</span></span></td>
+            <td class="cell" data-age="5a"><span class="v-pill v-dtpa" data-info="DTPa — 5ª dose / reforço pré-escolar"><span class="dose">5</span><span class="label">DTPa</span></span></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="poliomielite polio">
+            <td class="disease">Poliomielite</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"><span class="v-pill v-vip" data-info="VIP — Vacina inativada da poliomielite, 1ª dose"><span class="dose">1</span><span class="label">VIP</span></span></td>
+            <td class="cell" data-age="4m"><span class="v-pill v-vip" data-info="VIP — 2ª dose"><span class="dose">2</span><span class="label">VIP</span></span></td>
+            <td class="cell" data-age="6m"><span class="v-pill v-vip" data-info="VIP — 3ª dose"><span class="dose">3</span><span class="label">VIP</span></span></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"><span class="v-pill v-vip" data-info="VIP — 4ª dose / reforço"><span class="dose">4</span><span class="label">VIP</span></span></td>
+            <td class="cell" data-age="5a"><span class="v-pill v-vip" data-info="VIP — 5ª dose / reforço pré-escolar"><span class="dose">5</span><span class="label">VIP</span></span></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="streptococcus pneumoniae pneumocócica">
+            <td class="disease">Streptococcus pneumoniae</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"><span class="v-pill v-pn" data-info="Pn20 — Vacina pneumocócica conjugada 20-valente, 1ª dose (substituiu Pn13 em 01/01/2025)"><span class="dose">1</span><span class="label">Pn20</span></span></td>
+            <td class="cell" data-age="4m"><span class="v-pill v-pn" data-info="Pn20 — 2ª dose"><span class="dose">2</span><span class="label">Pn20</span></span></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"><span class="v-pill v-pn" data-info="Pn20 — 3ª dose / reforço"><span class="dose">3</span><span class="label">Pn20</span></span></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="neisseria meningitidis B meningococo">
+            <td class="disease">Neisseria meningitidis B</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"><span class="v-pill v-menb" data-info="MenB — Vacina contra meningococo B, 1ª dose"><span class="dose">1</span><span class="label">MenB</span></span></td>
+            <td class="cell" data-age="4m"><span class="v-pill v-menb" data-info="MenB — 2ª dose"><span class="dose">2</span><span class="label">MenB</span></span></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"><span class="v-pill v-menb" data-info="MenB — 3ª dose / reforço"><span class="dose">3</span><span class="label">MenB</span></span></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="neisseria meningitidis ACWY meningococo">
+            <td class="disease">Neisseria meningitidis A, C, W, Y</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"></td>
+            <td class="cell" data-age="4m"></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"><span class="v-pill v-menacwy" data-info="MenACWY — Vacina conjugada tetravalente (substituiu MenC em 14/03/2025, Norma 005/2025)"><span class="dose">1</span><span class="label">MenACWY</span></span></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="sarampo papeira rubéola parotidite VASPR">
+            <td class="disease">Sarampo, parotidite epidémica, rubéola</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"></td>
+            <td class="cell" data-age="4m"></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"><span class="v-pill v-vaspr" data-info="VASPR — Sarampo, papeira, rubéola; 1ª dose"><span class="dose">1</span><span class="label">VASPR</span></span></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"><span class="v-pill v-vaspr" data-info="VASPR — 2ª dose"><span class="dose">2</span><span class="label">VASPR</span></span></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="vírus papiloma humano HPV">
+            <td class="disease">Vírus papiloma humano</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"></td>
+            <td class="cell" data-age="4m"></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"><span class="v-pill v-hpv" data-info="HPV — Vacina nonavalente contra papiloma vírus humano; 2 doses (0, 6 meses) aos 10 anos. Universal para raparigas e rapazes."><span class="dose">1,2</span><span class="label">HPV</span></span></td>
+            <td class="cell" data-age="25a"></td>
+            <td class="cell" data-age="45a"></td>
+            <td class="cell" data-age="65a"></td>
+            <td class="cell" data-age="10/10"></td>
+          </tr>
+
+          <tr data-disease="tétano difteria tosse convulsa grávida tdpa">
+            <td class="disease">Tétano, difteria e tosse convulsa (grávidas)</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"></td>
+            <td class="cell" data-age="4m"></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"></td>
+            <td class="cell" data-age="25a" colspan="4" style="text-align:center;">
+              <span class="v-pill v-tdpa" data-info="Tdpa — Em cada gravidez, idealmente 20–36 semanas (preferencialmente até 32). Proteção do recém-nascido contra tosse convulsa." style="min-width: 320px;"><span class="dose">Tdpa — Grávidas</span></span>
+            </td>
+          </tr>
+
+          <tr data-disease="tétano difteria td">
+            <td class="disease">Tétano e difteria</td>
+            <td class="cell" data-age="0"></td>
+            <td class="cell" data-age="2m"></td>
+            <td class="cell" data-age="4m"></td>
+            <td class="cell" data-age="6m"></td>
+            <td class="cell" data-age="12m"></td>
+            <td class="cell" data-age="18m"></td>
+            <td class="cell" data-age="5a"></td>
+            <td class="cell" data-age="10a"><span class="v-pill v-td" data-info="Td — Tétano + difteria (dose reduzida adulto), 1ª dose de reforço aos 10 anos"><span class="dose">Td</span></span></td>
+            <td class="cell" data-age="25a"><span class="v-pill v-td" data-info="Td — Reforço aos 25 anos"><span class="dose">Td</span></span></td>
+            <td class="cell" data-age="45a"><span class="v-pill v-td" data-info="Td — Reforço aos 45 anos"><span class="dose">Td</span></span></td>
+            <td class="cell" data-age="65a"><span class="v-pill v-td" data-info="Td — Reforço aos 65 anos"><span class="dose">Td</span></span></td>
+            <td class="cell" data-age="10/10"><span class="v-pill v-td" data-info="Td — Reforços decenais após os 65 anos"><span class="dose">Td</span></span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="matrix-legend">
+      <span class="item"><span class="swatch" style="background:#fce8d4;border-color:#f0c896"></span>VHB · Hepatite B</span>
+      <span class="item"><span class="swatch" style="background:#fef5c4;border-color:#ecd97a"></span>Hib · Haemophilus b</span>
+      <span class="item"><span class="swatch" style="background:#ffe0d4;border-color:#f7b39e"></span>DTPa · Tríplice</span>
+      <span class="item"><span class="swatch" style="background:#fcd0c5;border-color:#f29b87"></span>VIP · Polio</span>
+      <span class="item"><span class="swatch" style="background:#c8e9d6;border-color:#8fd0a8"></span>Pn20 · Pneumocócica</span>
+      <span class="item"><span class="swatch" style="background:#d6e8f5;border-color:#98c5e0"></span>MenB</span>
+      <span class="item"><span class="swatch" style="background:#d4dff5;border-color:#9eb5e0"></span>MenACWY</span>
+      <span class="item"><span class="swatch" style="background:#e1eccb;border-color:#b6c98a"></span>VASPR</span>
+      <span class="item"><span class="swatch" style="background:#e1d4f0;border-color:#b8a3d8"></span>HPV</span>
+      <span class="item"><span class="swatch" style="background:#fad1e6;border-color:#ed9bc5"></span>Tdpa</span>
+      <span class="item"><span class="swatch" style="background:#f5d4c8;border-color:#e0a48d"></span>Td</span>
+    </div>
+
+    <div class="no-results">
+      <span class="emoji">🔍</span>
+      Nenhum resultado encontrado.
+    </div>
+
+    <div class="notes-block">
+      <h3>Notas</h3>
+      <ul>
+        <li><strong>PNV 2025 atualizado:</strong> Pn20 substituiu Pn13 a 01/01/2025 (Norma 013/2024); MenACWY substituiu MenC a 14/03/2025 (Norma 005/2025).</li>
+        <li>Os algarismos dentro das pílulas (1, 2, 3…) indicam o <strong>número da dose</strong> dessa vacina.</li>
+        <li>A vacina <strong>BCG</strong> à nascença é administrada apenas a crianças pertencentes a grupos de risco para tuberculose.</li>
+        <li>Os reforços de Td continuam aos 65 anos e depois de 10 em 10 anos.</li>
+        <li>A vacina <strong>Tdpa-Grávidas</strong> é administrada em <strong>cada</strong> gravidez (idealmente 20–36 semanas).</li>
+      </ul>
+    </div>
+  </section>

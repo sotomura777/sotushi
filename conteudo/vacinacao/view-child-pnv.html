@@ -1,0 +1,174 @@
+<section class="view" id="view-child-pnv">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar
+      </button>
+    </div>
+
+    <h2 class="page-title"><span class="icon">👶</span> PNV — Crianças e Adolescentes</h2>
+
+    <div class="timeline-intro">
+      <div class="info-icon">i</div>
+      <div>
+        <strong>Esquema vacinal recomendado em vigor desde 2025.</strong>
+        Inclui as alterações: introdução da vacina pneumocócica conjugada 20-valente (Pn20, em substituição da Pn13) a 01/01/2025 e da MenACWY (em substituição da MenC) aos 12 meses a partir de 14/03/2025.
+        Passa o rato sobre cada vacina para mais informação.
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <input id="search-child-pnv" type="text" placeholder="Pesquisar por vacina, idade ou doença (ex: hexavalente, 12 meses, sarampo)…">
+      <button class="clear-btn" type="button" aria-label="Limpar">✕</button>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">Nasc.</span><span class="age-unit">À nascença</span></div>
+        <div class="tl-card">
+          <h3>Nascimento</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="VHB — Vacina contra a hepatite B" data-info="1ª dose. Esquema 0, 2, 6 meses (administrada em combinação na hexavalente aos 2, 4 e 6 meses)."><span class="dot"></span>VHB (1ª dose)</span>
+            <span class="vaccine-chip" data-info-title="BCG — Vacina contra a tuberculose" data-info="Administrada apenas a crianças pertencentes a grupos de risco para tuberculose (Norma 006/2016 atualizada 2025)."><span class="dot"></span>BCG (grupos de risco)</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> hepatite B, tuberculose (grupos de risco)</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">2</span><span class="age-unit">meses</span></div>
+        <div class="tl-card">
+          <h3>2 meses</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Hexavalente — DTPa + VIP + Hib + VHB" data-info="Vacina combinada. Protege contra difteria, tétano, tosse convulsa (acelular), poliomielite, Haemophilus influenzae b e hepatite B. 1ª dose."><span class="dot"></span>Hexavalente (1ª)</span>
+            <span class="vaccine-chip" data-info-title="Pn20 — Vacina pneumocócica conjugada 20-valente" data-info="Substituiu a Pn13 a 01/01/2025 (Norma 013/2024). Esquema 2+1 (2, 4 e 12 meses). 1ª dose."><span class="dot"></span>Pn20 (1ª)</span>
+            <span class="vaccine-chip" data-info-title="MenB — Vacina contra meningococo B" data-info="Vacina contra Neisseria meningitidis serogrupo B. Esquema 2, 4 e 12 meses. 1ª dose."><span class="dot"></span>MenB (1ª)</span>
+            <span class="vaccine-chip" data-info-title="Rotavírus" data-info="Apenas grupos de risco definidos por norma DGS. Administração oral, esquema dependente do produto utilizado."><span class="dot"></span>Rotavírus (grupos de risco)</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> difteria, tétano, tosse convulsa, poliomielite, Hib, hepatite B, doença pneumocócica invasiva, meningite B, gastroenterite por rotavírus</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">4</span><span class="age-unit">meses</span></div>
+        <div class="tl-card">
+          <h3>4 meses</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Hexavalente — DTPa + VIP + Hib + VHB" data-info="2ª dose."><span class="dot"></span>Hexavalente (2ª)</span>
+            <span class="vaccine-chip" data-info-title="Pn20 — Vacina pneumocócica conjugada 20-valente" data-info="2ª dose."><span class="dot"></span>Pn20 (2ª)</span>
+            <span class="vaccine-chip" data-info-title="MenB — Vacina contra meningococo B" data-info="2ª dose."><span class="dot"></span>MenB (2ª)</span>
+            <span class="vaccine-chip" data-info-title="Rotavírus" data-info="2ª dose (apenas grupos de risco)."><span class="dot"></span>Rotavírus (grupos de risco)</span>
+          </div>
+          <div class="tl-protects"><strong>Reforça proteção:</strong> mesmas doenças da 1ª toma</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">6</span><span class="age-unit">meses</span></div>
+        <div class="tl-card">
+          <h3>6 meses</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Hexavalente — DTPa + VIP + Hib + VHB" data-info="3ª dose. Conclui primovacinação."><span class="dot"></span>Hexavalente (3ª)</span>
+          </div>
+          <div class="tl-protects"><strong>Conclui:</strong> primovacinação contra difteria, tétano, tosse convulsa, polio, Hib, hepatite B</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">12</span><span class="age-unit">meses</span></div>
+        <div class="tl-card">
+          <h3>12 meses</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Pn20 — Vacina pneumocócica conjugada 20-valente" data-info="3ª dose / reforço. Conclui o esquema 2+1."><span class="dot"></span>Pn20 (reforço)</span>
+            <span class="vaccine-chip" data-info-title="MenB — Vacina contra meningococo B" data-info="Dose de reforço (3ª dose)."><span class="dot"></span>MenB (reforço)</span>
+            <span class="vaccine-chip" data-info-title="MenACWY — Vacina conjugada tetravalente" data-info="Vacina contra meningococos A, C, W e Y. Substituiu a MenC desde 14/03/2025 (Norma 005/2025). Proteção contra mais serotipos de doença invasiva meningocócica."><span class="dot"></span>MenACWY</span>
+            <span class="vaccine-chip" data-info-title="VASPR — Sarampo, papeira, rubéola" data-info="Vacina combinada contra sarampo, parotidite epidémica (papeira) e rubéola. 1ª dose."><span class="dot"></span>VASPR (1ª)</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> doença pneumocócica invasiva, meningite B, meningite A/C/W/Y, sarampo, papeira, rubéola</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">18</span><span class="age-unit">meses</span></div>
+        <div class="tl-card">
+          <h3>18 meses</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="DTPaHibVIP — Pentavalente" data-info="Reforço (4ª dose) contra difteria, tétano, tosse convulsa, Haemophilus influenzae b e poliomielite."><span class="dot"></span>DTPaHibVIP (reforço)</span>
+          </div>
+          <div class="tl-protects"><strong>Reforço:</strong> difteria, tétano, tosse convulsa, polio, Hib</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">5</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>5 anos</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="DTPaVIP — Tetravalente" data-info="Reforço pré-escolar contra difteria, tétano, tosse convulsa e poliomielite."><span class="dot"></span>DTPaVIP</span>
+            <span class="vaccine-chip" data-info-title="VASPR — Sarampo, papeira, rubéola" data-info="2ª dose. Conclui esquema. Intervalo mínimo de 4 semanas após 1ª dose."><span class="dot"></span>VASPR (2ª)</span>
+          </div>
+          <div class="tl-protects"><strong>Reforça:</strong> difteria, tétano, tosse convulsa, polio; <strong>conclui:</strong> sarampo, papeira, rubéola</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">10</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>10 anos</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — Tétano + difteria (dose reduzida adulto)" data-info="Vacina contra tétano e difteria com doses reduzidas de antigénio."><span class="dot"></span>Td</span>
+            <span class="vaccine-chip" data-info-title="HPV — Vacina nonavalente contra papiloma vírus humano" data-info="Esquema de 2 doses (0, 6 meses) em menores de 15 anos. Universal para raparigas e rapazes desde 2020."><span class="dot"></span>HPV (raparigas e rapazes)</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> tétano, difteria, infeções e cancros associados ao HPV (colo do útero, vulva, vagina, pénis, ânus, orofaringe; verrugas genitais)</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">10-13</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>10–13 anos · Reforços ao longo da vida</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — reforços" data-info="Reforços de Td ao longo da vida com intervalos de 10 anos: 25, 45, 65 anos e depois a cada 10 anos.">  <span class="dot"></span>Td (reforços decenais)</span>
+          </div>
+          <div class="tl-protects"><strong>Reforços Td:</strong> aos 10, 25, 45, 65 anos e depois cada 10 anos</div>
+        </div>
+      </div>
+
+      <div class="no-results">
+        <span class="emoji">🔍</span>
+        Nenhum resultado encontrado.
+      </div>
+
+    </div>
+
+    <div class="notes-block">
+      <h3>Alterações recentes ao PNV (2024–2025)</h3>
+      <ul>
+        <li><strong>01/01/2025</strong> — Vacina pneumocócica conjugada 20-valente (Pn20) substituiu a Pn13 no esquema (2, 4 e 12 meses). <em>Norma 013/2024 DGS.</em></li>
+        <li><strong>14/03/2025</strong> — MenACWY substituiu a MenC aos 12 meses. <em>Norma 005/2025 DGS.</em></li>
+        <li>Mantém-se vacinação MenB aos 2, 4 e 12 meses.</li>
+      </ul>
+      <h3>Vacinação em pré-termo (Livro Azul, Cap. 5)</h3>
+      <ul>
+        <li>A vacinação de crianças pré-termo <strong>não deve ser adiada</strong>, mesmo quando permanecem hospitalizadas.</li>
+        <li><strong>&lt;28 semanas:</strong> se internado, vacinar com monitorização cardiorrespiratória e vigilância médica 6–8h. Se já teve alta: vacinação até aos 2 meses no hospital com monitorização.</li>
+        <li><strong>≥28 e &lt;37 semanas:</strong> vacinar em Cuidados de Saúde Primários (exceto se internado ou indicação médica contrária). Se evento cardiorrespiratório pós-vacinal: próximas vacinas em hospital com monitorização 6–8h.</li>
+        <li><em>Exceções:</em> VHB e BCG ao nascer — seguem regras específicas dos capítulos respetivos.</li>
+      </ul>
+      <h3>Vacinas vivas e imunoglobulinas</h3>
+      <ul>
+        <li>Vacinas <strong>inativadas</strong>: podem ser administradas em simultâneo, antes ou depois de produtos contendo Ig, em locais anatómicos diferentes.</li>
+        <li>Vacinas <strong>vivas atenuadas</strong> (VASPR, BCG): respeitar intervalos mínimos entre Ig e vacina viva. A VASPR pode necessitar de intervalos de semanas a meses após Ig, consoante o tipo e dose.</li>
+        <li>O anticorpo monoclonal contra VSR (Nirsevimab) <strong>não interfere</strong> com a resposta à vacinação.</li>
+      </ul>
+      <h3>Legenda de abreviaturas</h3>
+      <ul>
+        <li><strong>DTPa</strong> — difteria, tétano, tosse convulsa (acelular) · <strong>VIP</strong> — vacina inativada da poliomielite</li>
+        <li><strong>Hib</strong> — Haemophilus influenzae b · <strong>VHB</strong> — vírus da hepatite B</li>
+        <li><strong>VASPR</strong> — sarampo, parotidite epidémica, rubéola · <strong>HPV</strong> — papiloma vírus humano</li>
+        <li><strong>MenACWY / MenB</strong> — Neisseria meningitidis serogrupos · <strong>Pn20</strong> — pneumocócica 20-valente</li>
+        <li><strong>Td</strong> — tétano + difteria (dose reduzida adulto)</li>
+      </ul>
+    </div>
+  </section>

@@ -1,0 +1,38 @@
+// ============================================================================
+// LÓGICA — Estádios de Tanner. Interpretação pubertária. Fiel ao original.
+// ============================================================================
+
+export const PRI_INFO = {
+  urg: { cor: "#dc2626", label: "Urgência — próprio dia", bg: "rgba(220,38,38,.07)", bd: "rgba(220,38,38,.2)" },
+  pri: { cor: "#d97706", label: "Prioritário — 1 a 2 semanas", bg: "rgba(217,119,6,.07)", bd: "rgba(217,119,6,.2)" },
+  prog: { cor: "#7c3aed", label: "Programado — 4 a 12 semanas", bg: "rgba(124,58,237,.07)", bd: "rgba(124,58,237,.2)" },
+  vig: { cor: "#059669", label: "Vigiar — próxima consulta", bg: "rgba(5,150,105,.07)", bd: "rgba(5,150,105,.2)" },
+};
+
+// Raparigas — M = mama, PF = pilosidade
+export function interpretarTannerF(stadios, idade) {
+  const M = stadios.M, P = stadios.PF, s = Math.max(M, P);
+  if (!s) return null;
+  if (s >= 2 && M <= 1 && P >= 2 && idade < 8) return { pri: "prog", titulo: "Adrenarca precoce — avaliar", sub: "Pilosidade sem desenvolvimento mamário antes dos 8 anos.", interpretacao: ["Pilosidade púbica sem telarca pode ser adrenarca precoce (início precoce da produção suprarrenal de androgénios).", "Geralmente benigna mas requer exclusão de HSC não clássica e tumor suprarrenal."], conduta: ["Referenciação programada a Endocrinologia Pediátrica.", "Avaliar velocidade de crescimento e idade óssea."], exames: ["Idade óssea", "DHEA-S", "17-OH-Progesterona", "Androstenediona"] };
+  if (s >= 2 && idade < 8) return { pri: "prog", titulo: "Puberdade precoce — referenciação programada", sub: "Tanner " + s + " com " + idade + " anos. Início antes dos 8 anos nas raparigas.", interpretacao: ["Telarca antes dos 8 anos define puberdade precoce.", "A maioria é puberdade precoce central idiopática — benigna. Importa avaliar velocidade de progressão e impacto na altura final prevista.", "Progressão rápida (todos os estadios em menos de 2 anos) é mais preocupante que início isolado."], conduta: ["Referenciação programada a Endocrinologia Pediátrica (4-8 semanas).", "Avaliar e registar velocidade de crescimento em cada consulta.", "Tranquilizar — maioria dos casos é benigna e tratável."], exames: ["Idade óssea (Rx mão e punho)", "LH basal", "FSH basal", "Estradiol", "Ecografia pélvica", "TSH (excluir hipotiroidismo)"] };
+  if (s >= 2 && idade >= 8 && idade <= 14) return { pri: "vig", titulo: "Desenvolvimento pubertário normal", sub: "Tanner " + s + " com " + idade + " anos — dentro do intervalo esperado.", interpretacao: ["Desenvolvimento pubertário normal para a faixa etária.", (s === 3 || s === 4) ? "Menarca esperada no Tanner 3-4, 1-3 anos após telarca." : "", (M !== P && M > 0 && P > 0) ? "M" + M + " e P" + P + " discordantes — normal, os dois componentes são independentes." : ""].filter(Boolean), conduta: ["Tranquilizar a criança e a família.", "Orientar sobre menarca se Tanner 3-4.", "Reforçar higiene corporal adequada à fase.", "Registar no BSIJ. Reavaliar em 6-12 meses."], exames: [] };
+  if (s <= 1 && idade >= 13) return { pri: "prog", titulo: "Atraso pubertário — investigar", sub: "Sem desenvolvimento pubertário (Tanner 1) aos " + idade + " anos.", interpretacao: ["Ausência de telarca após os 13 anos define atraso pubertário.", "Nas raparigas o atraso constitucional é menos frequente — requer investigação mais ativa.", "Causas: hipogonadismo hipogonadotrófico, síndrome de Turner, doença crónica, défice nutricional."], conduta: ["Referenciação programada a Endocrinologia Pediátrica (4-8 semanas).", "Avaliar história familiar, doença crónica, exercício intenso, restrição alimentar."], exames: ["LH", "FSH", "Estradiol", "TSH", "Prolactina", "Cariotipo (excluir Síndrome de Turner)", "Idade óssea"] };
+  if (s <= 2 && idade >= 13 && idade < 15) return { pri: "prog", titulo: "Progressão pubertária lenta — avaliar", sub: "Tanner " + s + " com " + idade + " anos.", interpretacao: ["Progressão mais lenta que o habitual — verificar se há progressão sequencial."], conduta: ["Referenciação programada a Endocrinologia Pediátrica."], exames: ["LH", "FSH", "Estradiol", "Idade óssea"] };
+  return { pri: "vig", titulo: "Desenvolvimento pubertário normal", sub: "Tanner " + s + " com " + idade + " anos.", interpretacao: ["Dentro do esperado para a idade."], conduta: ["Registar no BSIJ. Reavaliar na próxima consulta."], exames: [] };
+}
+
+// Rapazes — T = volume testicular, PM = pilosidade
+export function interpretarTannerM(stadios, idade) {
+  const T = stadios.T, P = stadios.PM, s = Math.max(T, P);
+  if (!s) return null;
+  if (T <= 1 && P >= 2 && idade < 9) return { pri: "prog", titulo: "Adrenarca precoce — avaliar", sub: "Pilosidade sem aumento testicular antes dos 9 anos.", interpretacao: ["Pilosidade púbica sem aumento testicular sugere adrenarca precoce ou HSC não clássica.", "O aumento testicular (volume maior ou igual a 4ml) é o marcador do início real da puberdade nos rapazes."], conduta: ["Referenciação programada a Endocrinologia Pediátrica."], exames: ["Idade óssea", "DHEA-S", "17-OH-Progesterona", "Androstenediona", "Testosterona"] };
+  if (s >= 2 && idade < 9) return { pri: "prog", titulo: "Puberdade precoce — referenciação programada", sub: "Tanner " + s + " com " + idade + " anos. Início antes dos 9 anos nos rapazes.", interpretacao: ["Aumento testicular (volume maior ou igual a 4ml) antes dos 9 anos define puberdade precoce.", "Nos rapazes é menos frequente puberdade precoce central idiopática — investigar causas secundárias.", (T >= 2 && P <= 1) ? "Aumento testicular sem pilosidade pode indicar causa periférica — excluir tumor testicular." : ""].filter(Boolean), conduta: ["Referenciação programada a Endocrinologia Pediátrica (4-8 semanas).", "Palpação testicular cuidadosa — excluir assimetria ou nódulo."], exames: ["Idade óssea", "LH basal", "FSH basal", "Testosterona", "17-OH-Progesterona", "Ecografia testicular se assimetria"] };
+  if (s >= 2 && idade >= 9 && idade <= 15) {
+    const notas = [];
+    if (s === 3) notas.push("Pico de velocidade de crescimento esperado neste estadio.");
+    if (s === 3 || s === 4) notas.push("Ginecomastia fisiológica transitória pode ocorrer — tranquilizar, resolve em 6-18 meses.");
+    return { pri: "vig", titulo: "Desenvolvimento pubertário normal", sub: "Tanner " + s + " com " + idade + " anos — dentro do intervalo esperado.", interpretacao: ["Desenvolvimento pubertário normal para a faixa etária."].concat(notas), conduta: ["Tranquilizar o jovem e a família.", "Abordar mudança de voz, acne, ejaculação de forma natural.", "Registar no BSIJ. Reavaliar em 6-12 meses."], exames: [] };
+  }
+  if (s <= 1 && idade >= 14) return { pri: "prog", titulo: "Atraso pubertário — investigar", sub: "Sem aumento testicular (G1) aos " + idade + " anos.", interpretacao: ["Ausência de aumento testicular após os 14 anos define atraso pubertário.", "Causa mais comum: atraso constitucional do crescimento e da puberdade — benigno e frequentemente familiar.", "Outras causas: síndrome de Kallmann (anosmia associada), síndrome de Klinefelter, doença crónica."], conduta: ["Referenciação programada a Endocrinologia Pediátrica.", "Pesquisar história familiar de atraso pubertário.", "Avaliar olfacto (anosmia no síndrome de Kallmann)."], exames: ["LH", "FSH", "Testosterona", "TSH", "Prolactina", "Cariotipo (excluir Klinefelter)", "Idade óssea"] };
+  return { pri: "vig", titulo: "Desenvolvimento pubertário normal", sub: "Tanner " + s + " com " + idade + " anos.", interpretacao: ["Dentro do esperado para a idade."], conduta: ["Registar no BSIJ. Reavaliar na próxima consulta."], exames: [] };
+}

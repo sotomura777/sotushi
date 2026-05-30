@@ -1,0 +1,117 @@
+<section class="view" id="view-travel">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar
+      </button>
+    </div>
+
+    <h2 class="page-title"><span class="icon">🌍</span> Consulta do Viajante — Mapa</h2>
+
+    <div class="timeline-intro">
+      <div class="info-icon">i</div>
+      <div>
+        <strong>Clica numa região</strong> do mapa ou na legenda para abrir a página completa com todas as recomendações de vacinação para essa zona.
+      </div>
+    </div>
+
+    <div class="map-wrap map-wrap-full">
+      <svg class="world-map" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <!-- Background ocean -->
+        <rect x="0" y="0" width="1000" height="500" fill="#e8f4fa" rx="12"/>
+
+        <!-- NORTH AMERICA -->
+        <path class="region region-namerica" data-region="namerica" d="M 80 80 L 200 70 L 280 90 L 320 130 L 290 180 L 250 200 L 210 220 L 180 250 L 150 230 L 120 200 L 90 160 L 70 120 Z"/>
+        <text class="region-label" x="190" y="155">AMÉRICA</text>
+        <text class="region-label" x="190" y="170">DO NORTE</text>
+
+        <!-- CENTRAL AMERICA / CARIBE (stylised) -->
+        <path class="region region-samerica" data-region="samerica" d="M 200 240 L 240 260 L 245 290 L 235 320 L 230 360 L 235 410 L 220 450 L 200 460 L 185 430 L 175 390 L 170 340 L 175 290 L 190 260 Z"/>
+        <text class="region-label" x="205" y="360">AMÉRICA</text>
+        <text class="region-label" x="205" y="375">DO SUL</text>
+
+        <!-- EUROPE -->
+        <path class="region region-europe" data-region="europe" d="M 460 100 L 540 90 L 580 100 L 600 130 L 590 165 L 550 175 L 510 170 L 470 160 L 445 130 Z"/>
+        <text class="region-label" x="520" y="135">EUROPA</text>
+
+        <!-- NORTH AFRICA -->
+        <path class="region region-africa-north" data-region="africa-north" d="M 460 200 L 550 195 L 610 200 L 640 220 L 630 260 L 590 270 L 530 270 L 480 260 L 450 240 Z"/>
+        <text class="region-label" x="540" y="235">NORTE DE ÁFRICA</text>
+
+        <!-- SUB-SAHARAN AFRICA -->
+        <path class="region region-africa-sub" data-region="africa-sub" d="M 480 280 L 560 280 L 620 290 L 640 330 L 625 380 L 600 420 L 560 440 L 520 435 L 490 410 L 470 370 L 465 320 Z"/>
+        <text class="region-label" x="545" y="345">ÁFRICA</text>
+        <text class="region-label" x="545" y="360">SUBSARIANA</text>
+
+        <!-- CENTRAL ASIA -->
+        <path class="region region-asia-central" data-region="asia-central" d="M 620 110 L 720 100 L 770 120 L 760 160 L 720 175 L 670 170 L 625 155 Z"/>
+        <text class="region-label" x="695" y="140">ÁSIA CENTRAL</text>
+
+        <!-- SOUTH ASIA -->
+        <path class="region region-asia-south" data-region="asia-south" d="M 670 200 L 740 195 L 770 220 L 760 260 L 730 275 L 695 270 L 670 250 L 660 220 Z"/>
+        <text class="region-label" x="715" y="240">SUL DA ÁSIA</text>
+
+        <!-- SOUTHEAST ASIA -->
+        <path class="region region-asia-se" data-region="asia-se" d="M 790 250 L 850 245 L 890 260 L 905 295 L 880 330 L 840 340 L 810 320 L 790 290 Z"/>
+        <text class="region-label" x="845" y="295">SUDESTE ASIÁTICO</text>
+
+        <!-- EAST ASIA -->
+        <path class="region region-asia-east" data-region="asia-east" d="M 800 130 L 880 120 L 920 145 L 910 185 L 870 200 L 830 195 L 800 175 Z"/>
+        <text class="region-label" x="860" y="165">ÁSIA ORIENTAL</text>
+
+        <!-- OCEANIA -->
+        <path class="region region-oceania" data-region="oceania" d="M 830 380 L 900 370 L 940 390 L 930 420 L 880 430 L 845 420 L 830 400 Z"/>
+        <text class="region-label" x="885" y="405">OCEANIA</text>
+
+        <!-- MECA marker (star) -->
+        <g class="meca-marker region" data-region="meca">
+          <circle cx="620" cy="218" r="11" fill="#f6d365" stroke="white" stroke-width="2"/>
+          <text x="620" y="223" text-anchor="middle" font-size="13" font-weight="900" fill="#5a4400">★</text>
+        </g>
+        <text class="region-label" x="640" y="218" text-anchor="start" style="font-size:8.5px;">MECA</text>
+        <text class="region-label" x="640" y="228" text-anchor="start" style="font-size:8px;">(Arábia Saudita)</text>
+
+      </svg>
+    </div>
+
+    <div class="region-legend region-legend-full" id="region-legend">
+      <div class="leg" data-region="namerica"><span class="swatch" style="background:#c9e3d2"></span>América do Norte</div>
+      <div class="leg" data-region="samerica"><span class="swatch" style="background:#ffd6a5"></span>América Central e Sul</div>
+      <div class="leg" data-region="europe"><span class="swatch" style="background:#b8d4e8"></span>Europa</div>
+      <div class="leg" data-region="africa-north"><span class="swatch" style="background:#ffcaa7"></span>Norte de África</div>
+      <div class="leg" data-region="africa-sub"><span class="swatch" style="background:#ff9b6b"></span>África Subsariana</div>
+      <div class="leg" data-region="asia-central"><span class="swatch" style="background:#d4b6e5"></span>Ásia Central</div>
+      <div class="leg" data-region="asia-south"><span class="swatch" style="background:#c8a4d8"></span>Sul da Ásia</div>
+      <div class="leg" data-region="asia-se"><span class="swatch" style="background:#f4a8c9"></span>Sudeste Asiático</div>
+      <div class="leg" data-region="asia-east"><span class="swatch" style="background:#e8b4dd"></span>Ásia Oriental</div>
+      <div class="leg" data-region="oceania"><span class="swatch" style="background:#a8d8c7"></span>Oceania</div>
+      <div class="leg" data-region="meca"><span class="swatch" style="background:#f6d365"></span>Meca (Hajj/Umrah)</div>
+    </div>
+
+    <div class="priority-legend">
+      <span class="item" style="background:#c62828;color:#fff">Obrigatória</span>
+      <span class="item" style="background:#ffcdd2;color:#b71c1c">Essencial</span>
+      <span class="item" style="background:#fff9c4;color:#7b6b00">Recomendada</span>
+      <span class="item" style="background:#bbdefb;color:#0d47a1">Situações específicas</span>
+    </div>
+
+    <div class="travel-disclaimer">
+      <strong>📘 Aguarda atualização:</strong> A <strong>Parte 4 — Vacinação do viajante</strong> do Livro Azul de Vacinas (DGS) encontra-se ainda <strong>em fase de produção</strong>, bem como os capítulos de doenças evitáveis por vacinação em contexto de viagem. Quando publicada, esta secção será atualizada com base nesse referencial técnico nacional.
+    </div>
+
+    <div class="travel-disclaimer">
+      <strong>⚕️ Nota clínica:</strong> Esta consulta de viagem é uma referência para apoio à decisão. A consulta presencial num Centro de Vacinação Internacional (CVI) é recomendada idealmente 4–6 semanas antes da viagem. Avaliar sempre destino específico, época do ano, tipo de viagem (urbano vs. rural), duração, atividades planeadas e estado de saúde individual.
+    </div>
+
+    <div class="notes-block" style="margin-top:16px;">
+      <h3>Fontes de referência internacionais</h3>
+      <ul>
+        <li><strong>OMS — Vacinas e viagens:</strong> <a href="https://www.who.int/travel-advice/vaccines" target="_blank">who.int/travel-advice/vaccines</a></li>
+        <li><strong>OMS — Informação por país:</strong> <a href="https://www.who.int/travel-advice" target="_blank">who.int/travel-advice</a></li>
+        <li><strong>CDC Yellow Book — Destinos:</strong> <a href="https://wwwnc.cdc.gov/travel/destinations/list" target="_blank">wwwnc.cdc.gov/travel/destinations/list</a></li>
+        <li><strong>CDC — Vacinas para viajantes:</strong> <a href="https://wwwnc.cdc.gov/travel/page/travel-vaccines" target="_blank">wwwnc.cdc.gov/travel/page/travel-vaccines</a></li>
+        <li><strong>NaTHNaC Travel Health Pro (UK):</strong> <a href="https://travelhealthpro.org.uk" target="_blank">travelhealthpro.org.uk</a></li>
+      </ul>
+    </div>
+
+  </section>

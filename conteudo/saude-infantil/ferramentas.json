@@ -1,0 +1,276 @@
+{
+ "ta": {
+  "M": {
+   "1": [
+    100,
+    54
+   ],
+   "2": [
+    102,
+    57
+   ],
+   "3": [
+    104,
+    63
+   ],
+   "4": [
+    106,
+    66
+   ],
+   "5": [
+    108,
+    68
+   ],
+   "6": [
+    111,
+    70
+   ],
+   "7": [
+    112,
+    72
+   ],
+   "8": [
+    114,
+    73
+   ],
+   "9": [
+    115,
+    74
+   ],
+   "10": [
+    120,
+    75
+   ],
+   "11": [
+    122,
+    76
+   ],
+   "12": [
+    123,
+    77
+   ],
+   "13": [
+    126,
+    78
+   ],
+   "14": [
+    128,
+    80
+   ],
+   "15": [
+    130,
+    82
+   ],
+   "16": [
+    133,
+    83
+   ],
+   "17": [
+    136,
+    84
+   ]
+  },
+  "F": {
+   "1": [
+    100,
+    54
+   ],
+   "2": [
+    102,
+    57
+   ],
+   "3": [
+    104,
+    63
+   ],
+   "4": [
+    107,
+    66
+   ],
+   "5": [
+    108,
+    68
+   ],
+   "6": [
+    111,
+    70
+   ],
+   "7": [
+    112,
+    72
+   ],
+   "8": [
+    114,
+    73
+   ],
+   "9": [
+    115,
+    74
+   ],
+   "10": [
+    119,
+    75
+   ],
+   "11": [
+    121,
+    76
+   ],
+   "12": [
+    122,
+    77
+   ],
+   "13": [
+    124,
+    78
+   ],
+   "14": [
+    125,
+    79
+   ],
+   "15": [
+    127,
+    80
+   ],
+   "16": [
+    128,
+    81
+   ],
+   "17": [
+    129,
+    84
+   ]
+  }
+ },
+ "snellen": {
+  "acuidade": [
+   [
+    "3 anos",
+    "6/9 (0,7)"
+   ],
+   [
+    "4 anos",
+    "6/7,5 (0,8)"
+   ],
+   [
+    "5 anos",
+    "6/6 (1,0)"
+   ],
+   [
+    "6+ anos",
+    "6/6 (1,0)"
+   ]
+  ],
+  "referenciar": [
+   "Acuidade inferior a 6/9 em qualquer olho",
+   "Diferença de 2 ou mais linhas entre olhos",
+   "Estrabismo constante após 4 meses",
+   "Reflexo vermelho ausente ou assimétrico",
+   "Nistagmo ou ptose palpebral"
+  ],
+  "metodo": [
+   "3 anos: Tabela de imagens de Allen ou E de Snellen a 3 metros",
+   "4–5 anos: E de Snellen a 3 metros — aceitar se 6/9 ou melhor",
+   "6+ anos: Snellen a 6 metros — aceitar se 6/6 em cada olho",
+   "Método: testar cada olho separadamente com o outro bem ocluído. 3 tentativas por linha."
+  ]
+ },
+ "fluor": {
+  "topico": [
+   "0–2 anos: 500 ppm · grão de arroz · 1x/dia",
+   "2–6 anos: 1000 ppm · grão de ervilha · 2x/dia",
+   "6+ anos: 1450 ppm · ervilha · 2x/dia",
+   "Cuspir mas não passar água — aumenta eficácia"
+  ],
+  "cheques": [
+   "1º cheque: 12 meses",
+   "2º cheque: 3–4 anos",
+   "3º cheque: 6–7 anos",
+   "4º cheque: 10–13 anos",
+   "5º cheque: 15–16 anos"
+  ],
+  "denticao": [
+   "Decídua: 6M–30M (20 dentes)",
+   "1ºs molares perms: 6–7 anos",
+   "Incisivos perms: 6–8 anos",
+   "Pré-molares: 9–12 anos",
+   "Caninos: 11–12 anos",
+   "2ºs molares: 11–13 anos"
+  ],
+  "altoRisco": [
+   "Cárie prévia ou mancha branca no esmalte",
+   "Hipoplasia do esmalte",
+   "Xerostomia ou medicação xerostomizante",
+   "Dieta rica em açúcares frequentes",
+   "Higiene oral inadequada"
+  ]
+ },
+ "referenciar": [
+  {
+   "esp": "Pediatria e Endocrinologia",
+   "cor": "#059669",
+   "crit": [
+    "Crescimento abaixo de P3 ou cruzamento de 2 percentis sem causa",
+    "IMC acima de P97 (obesidade) ou abaixo de P3 com emagrecimento",
+    "Puberdade precoce: raparigas abaixo de 8A, rapazes abaixo de 9A",
+    "HTA confirmada em 3 medições separadas",
+    "Suspeita de patologia crónica ou síndrome dismórfico"
+   ]
+  },
+  {
+   "esp": "Oftalmologia",
+   "cor": "#0369a1",
+   "crit": [
+    "Reflexo vermelho ausente ou assimétrico (urgente)",
+    "Estrabismo manifesto e constante após 4 meses",
+    "Acuidade visual abaixo de 6/9 em qualquer olho",
+    "Diferença de 2 linhas de Snellen entre olhos",
+    "Nistagmo, ptose palpebral ou suspeita de ambliopia"
+   ]
+  },
+  {
+   "esp": "ORL e Audiologia",
+   "cor": "#d97706",
+   "crit": [
+    "Rastreio auditivo neonatal alterado ou não realizado",
+    "Suspeita de hipoacusia em qualquer idade",
+    "Otites de repetição (mais de 4 por ano) ou derrame acima de 3 meses",
+    "Atraso da linguagem sem outra causa identificada",
+    "Roncopatia intensa com suspeita de apneia do sono"
+   ]
+  },
+  {
+   "esp": "Neurologia Pediátrica",
+   "cor": "#7c3aed",
+   "crit": [
+    "Regressão de aquisições em qualquer domínio",
+    "Suspeita de epilepsia ou movimentos anormais",
+    "Macrocefalia ou microcefalia progressiva",
+    "M-CHAT positivo — suspeita de PEA",
+    "Marcha em pontas de pés sistemática após 2 anos"
+   ]
+  },
+  {
+   "esp": "Ortopedia Pediátrica",
+   "cor": "#ea580c",
+   "crit": [
+    "Criptorquidia persistente após 6 meses de idade",
+    "Displasia da anca suspeita (eco antes dos 6M se fatores de risco)",
+    "Escoliose com curva acima de 10 graus ou progressão documentada",
+    "Alterações da marcha persistentes após os 3 anos",
+    "Genu varo ou valgo fora dos limites normais"
+   ]
+  },
+  {
+   "esp": "Saúde Mental Infantil",
+   "cor": "#be185d",
+   "crit": [
+    "Perturbações emocionais ou do comportamento persistentes",
+    "Suspeita de maus-tratos, negligência ou abuso",
+    "PHDA com impacto funcional escolar e social",
+    "Perturbações alimentares com risco nutricional",
+    "Ideação suicida ou comportamentos autolesivos"
+   ]
+  }
+ ],
+ "disclaimer": "Ferramenta de apoio baseada no PNSIJ (Norma DGS 010/2013), PNV 2025 e Curvas de Crescimento OMS 2006/2007. Apesar do rigor, erros podem ocorrer. As orientações são de carácter geral e não substituem o julgamento clínico. Confirmar sempre com as normas DGS vigentes e o BSIJ da criança."
+}

@@ -1,0 +1,45 @@
+{
+ "perguntas": [
+  "Se apontas para qualquer coisa ao longe, o teu filho olha para o que estás a apontar?",
+  "Já te perguntaste se o teu filho podia ter surdez?",
+  "O teu filho já brincou de faz-de-conta (ex: fingir falar ao telefone, tratar de uma boneca)?",
+  "O teu filho gosta de trepar (ex: móveis, parques infantis, escadas)?",
+  "O teu filho faz movimentos incomuns com os dedos perto dos olhos?",
+  "O teu filho aponta com o indicador para pedir alguma coisa ou para ajuda?",
+  "O teu filho aponta com o indicador para mostrar algo interessante?",
+  "O teu filho interessa-se por outras crianças?",
+  "O teu filho mostra-te coisas levando-as até ti ou erguendo-as para que vejas?",
+  "O teu filho responde quando o chamas pelo nome?",
+  "Quando sorris ao teu filho, ele sorri de volta?",
+  "O teu filho fica perturbado com barulhos do dia-a-dia (ex: aspirador, música alta)?",
+  "O teu filho anda?",
+  "O teu filho faz contacto visual contigo quando falas com ele ou brincas com ele?",
+  "O teu filho tenta imitar o que fazes (ex: acenar adeus, bater palmas)?",
+  "Se te viras para ver qualquer coisa, o teu filho olha à volta para ver o que estás a ver?",
+  "O teu filho tenta que olhes para ele (ex: olha para ti à procura de elogio)?",
+  "O teu filho compreende o que lhe dizes?",
+  "Quando acontece algo novo, o teu filho olha para o teu rosto para ver como te sentes?",
+  "O teu filho gosta de actividades de movimento (ex: colo a balanço, cavalinho)?"
+ ],
+ "risco_nao": [
+  0,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18
+ ],
+ "risco_sim": [
+  1,
+  4,
+  11
+ ]
+}

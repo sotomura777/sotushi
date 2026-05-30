@@ -1,0 +1,469 @@
+{
+  "namerica": {
+    "name": "América do Norte",
+    "sub": "EUA, Canadá, México (zonas urbanas)",
+    "color": "#c9e3d2",
+    "vaccines": [
+      {
+        "name": "PNV atualizado",
+        "brand": "",
+        "priority": "essential",
+        "info": "Garantir reforços do PNV em dia (Td, VASPR, gripe sazonal). Em geral, baixo risco infecioso adicional."
+      },
+      {
+        "name": "Vacina contra a gripe",
+        "brand": "Influvac Tetra® · Vaxigrip Tetra®",
+        "priority": "recommended",
+        "info": "Dose anual, especialmente entre outubro e março. Considerar em todos os viajantes ≥ 6 meses."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "specific",
+        "info": "Em zonas rurais ou contacto próximo com população local. 2 doses (0, 6–12 meses)."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "specific",
+        "info": "Apenas em viagens prolongadas a zonas remotas, espeleologia ou contacto com animais (México rural)."
+      }
+    ]
+  },
+  "samerica": {
+    "name": "América Central e do Sul",
+    "sub": "Brasil, Peru, Bolívia, Equador, Colômbia, Venezuela, América Central",
+    "color": "#ffd6a5",
+    "vaccines": [
+      {
+        "name": "Vacina contra a febre amarela",
+        "brand": "Stamaril®",
+        "priority": "essential",
+        "info": "<strong>Dose única ≥ 10 dias antes da viagem. Certificado vitalício (desde 2016, OMS).</strong> Endémica em toda a Amazónia e zonas tropicais. Obrigatória para entrada em vários países. Risco parcial: Brasil, Colômbia, Equador, Peru, Bolívia, Venezuela, Panamá, Paraguai, Argentina (Misiones e Corrientes), Trinidad e Tobago. CVI autorizado."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "essential",
+        "info": "Risco elevado em toda a região. 2 doses (0, 6–12 meses). Ou combinada com Hep B (Twinrix®)."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "recommended",
+        "info": "Risco em zonas rurais e contacto próximo com população local. 1 dose IM ou 3 cápsulas orais."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "specific",
+        "info": "Viagens prolongadas, zonas remotas, contacto com animais (cães, morcegos, primatas). 3 doses IM."
+      },
+      {
+        "name": "Vacina contra cólera",
+        "brand": "Dukoral®",
+        "priority": "specific",
+        "info": "Em zonas com surtos ativos ou viagens com risco aumentado. Útil também contra diarreia do viajante por LT-ETEC."
+      },
+      {
+        "name": "Profilaxia da malária",
+        "brand": "(quimioprofilaxia, não vacina)",
+        "priority": "specific",
+        "info": "Não existe vacina disponível. Quimioprofilaxia (atovaquona-proguanil, doxiciclina ou mefloquina) em zonas endémicas. Repelentes + mosquiteiro."
+      }
+    ]
+  },
+  "europe": {
+    "name": "Europa",
+    "sub": "União Europeia, Reino Unido, Balcãs, Europa de Leste",
+    "color": "#b8d4e8",
+    "vaccines": [
+      {
+        "name": "PNV atualizado",
+        "brand": "",
+        "priority": "essential",
+        "info": "Verificar Td, VASPR e gripe sazonal. Baixo risco infecioso adicional em geral."
+      },
+      {
+        "name": "Vacina contra encefalite por carraça (TBE)",
+        "brand": "FSME-Immun® · Encepur®",
+        "priority": "specific",
+        "info": "Áustria, Alemanha, Suíça, países bálticos, Escandinávia rural, Europa de Leste, Sibéria. Endémica entre primavera e outono. 3 doses (esquema acelerado disponível)."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "specific",
+        "info": "Europa de Leste rural, contacto com animais selvagens. Considerar em estadias prolongadas."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "specific",
+        "info": "Europa de Leste e Balcãs em viagens de longa duração ou contacto próximo com população local."
+      }
+    ]
+  },
+  "africa-north": {
+    "name": "Norte de África",
+    "sub": "Marrocos, Argélia, Tunísia, Líbia, Egito",
+    "color": "#ffcaa7",
+    "vaccines": [
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "essential",
+        "info": "Risco elevado em toda a região. 2 doses (0, 6–12 meses)."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "recommended",
+        "info": "Recomendada para a maioria dos viajantes, especialmente fora dos resorts turísticos."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Em estadias prolongadas, contacto sexual, procedimentos médicos. Ou combinada (Twinrix®)."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "specific",
+        "info": "Contacto com animais (cães errantes frequentes). 3 doses IM."
+      },
+      {
+        "name": "Vacina contra a poliomielite",
+        "brand": "(VIP)",
+        "priority": "specific",
+        "info": "Reforço único de adulto se Egito, Sudão ou regiões fronteiriças. Verificar surtos ativos."
+      },
+      {
+        "name": "Vacina contra a febre amarela",
+        "brand": "Stamaril®",
+        "priority": "specific",
+        "info": "Argélia e Egito exigem prova de vacinação a viajantes provenientes de países com risco de febre amarela (OMS, Anexo 1). Certificado vitalício."
+      }
+    ]
+  },
+  "africa-sub": {
+    "name": "África Subsariana",
+    "sub": "Senegal, Costa do Marfim, Gana, Nigéria, Quénia, Tanzânia, África do Sul, Moçambique, Angola, Cabo Verde, etc.",
+    "color": "#ff9b6b",
+    "vaccines": [
+      {
+        "name": "Vacina contra a febre amarela",
+        "brand": "Stamaril®",
+        "priority": "required",
+        "info": "<strong>OBRIGATÓRIA</strong> para entrada na maioria dos países desta região. Dose única ≥ 10 dias antes. Certificado vitalício (OMS, desde 2016). Exigida de TODOS os viajantes: Angola, Benim, Burkina Faso, Burundi, Camarões, RCA, Chade, Congo, RDC, Costa do Marfim, Gabão, Gana, Guiné-Bissau, Mali, Níger, Serra Leoa, Sudão do Sul, Togo, Uganda. Exigida se proveniente de país de risco: Quénia, Etiópia, Nigéria, Senegal, Gâmbia e outros."
+      },
+      {
+        "name": "Vacina meningocócica ACWY",
+        "brand": "Nimenrix® · MenQuadfi®",
+        "priority": "essential",
+        "info": "Cinturão da meningite (Sahel: Senegal a Etiópia), sobretudo dezembro–junho. Dose única."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "essential",
+        "info": "Risco muito elevado. 2 doses (0, 6–12 meses). Combinada com Hep B (Twinrix®) é prática."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "essential",
+        "info": "Risco muito elevado em zonas rurais e urbanas. 1 dose IM ou 3 cápsulas orais."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Prevalência elevada. Em estadias prolongadas, profissionais de saúde, contactos próximos."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "recommended",
+        "info": "Cães e morcegos endémicos. Acesso pós-exposição muitas vezes limitado. 3 doses IM."
+      },
+      {
+        "name": "Vacina contra cólera",
+        "brand": "Dukoral®",
+        "priority": "specific",
+        "info": "Surtos frequentes em zonas com acesso limitado a água potável. Também protege contra LT-ETEC."
+      },
+      {
+        "name": "Profilaxia da malária",
+        "brand": "(quimioprofilaxia, não vacina)",
+        "priority": "essential",
+        "info": "Endémica em quase toda a região. Quimioprofilaxia obrigatória + repelentes + mosquiteiro impregnado."
+      }
+    ]
+  },
+  "asia-central": {
+    "name": "Ásia Central",
+    "sub": "Cazaquistão, Uzbequistão, Turquemenistão, Tajiquistão, Quirguistão, Mongólia",
+    "color": "#d4b6e5",
+    "vaccines": [
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "essential",
+        "info": "Risco elevado. 2 doses (0, 6–12 meses)."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "recommended",
+        "info": "Zonas rurais e contacto próximo com população local."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Em estadias prolongadas ou contactos próximos."
+      },
+      {
+        "name": "Vacina contra encefalite por carraça (TBE)",
+        "brand": "FSME-Immun® · Encepur®",
+        "priority": "specific",
+        "info": "Endémica em zonas florestais; transmissão entre primavera e outono."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "specific",
+        "info": "Animais selvagens e cães errantes; acesso pós-exposição limitado."
+      }
+    ]
+  },
+  "asia-south": {
+    "name": "Sul da Ásia",
+    "sub": "Índia, Paquistão, Bangladesh, Sri Lanka, Nepal, Butão, Maldivas",
+    "color": "#c8a4d8",
+    "vaccines": [
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "essential",
+        "info": "<strong>Risco mais elevado do mundo</strong>. Recomendada a todos os viajantes para a região."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "essential",
+        "info": "Risco muito elevado em toda a região. 2 doses (0, 6–12 meses)."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Prevalência elevada. Combinada com Hep A (Twinrix®) é prática."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "recommended",
+        "info": "Índia é o país com mais mortes por raiva no mundo. Recomendada a todos os viajantes prolongados."
+      },
+      {
+        "name": "Vacina contra encefalite japonesa",
+        "brand": "Ixiaro®",
+        "priority": "specific",
+        "info": "Áreas rurais com arrozais, estadias > 4 semanas durante época de transmissão (maio–outubro). 2 doses (0, 28 dias)."
+      },
+      {
+        "name": "Vacina contra cólera",
+        "brand": "Dukoral®",
+        "priority": "specific",
+        "info": "Bangladesh, Índia, Nepal — em zonas com surtos ativos. Também contra LT-ETEC."
+      },
+      {
+        "name": "Profilaxia da malária",
+        "brand": "(quimioprofilaxia, não vacina)",
+        "priority": "specific",
+        "info": "Endémica em zonas rurais. Avaliar destino específico."
+      }
+    ]
+  },
+  "asia-se": {
+    "name": "Sudeste Asiático",
+    "sub": "Tailândia, Vietname, Camboja, Laos, Myanmar, Malásia, Indonésia, Filipinas, Singapura",
+    "color": "#f4a8c9",
+    "vaccines": [
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "essential",
+        "info": "Risco elevado em toda a região. 2 doses (0, 6–12 meses)."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "essential",
+        "info": "Risco elevado, especialmente fora de centros urbanos turísticos."
+      },
+      {
+        "name": "Vacina contra encefalite japonesa",
+        "brand": "Ixiaro®",
+        "priority": "recommended",
+        "info": "Endémica. Recomendada em estadias > 4 semanas em zonas rurais durante época de transmissão. 2 doses (0, 28 dias)."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Prevalência elevada de hepatite B na região."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "recommended",
+        "info": "Endémica. Cães, morcegos e macacos representam risco elevado."
+      },
+      {
+        "name": "Vacina contra cólera",
+        "brand": "Dukoral®",
+        "priority": "specific",
+        "info": "Filipinas, Indonésia, Myanmar — em zonas com surtos ativos."
+      },
+      {
+        "name": "Profilaxia da malária e dengue",
+        "brand": "(quimioprofilaxia / repelentes)",
+        "priority": "specific",
+        "info": "Malária em zonas rurais; dengue urbana e rural (sem vacina universal). Repelentes essenciais."
+      }
+    ]
+  },
+  "asia-east": {
+    "name": "Ásia Oriental",
+    "sub": "China, Japão, Coreia do Sul, Coreia do Norte, Taiwan",
+    "color": "#e8b4dd",
+    "vaccines": [
+      {
+        "name": "PNV atualizado",
+        "brand": "",
+        "priority": "essential",
+        "info": "Garantir reforços do PNV em dia, sobretudo VASPR e Td."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "recommended",
+        "info": "Risco intermédio. Recomendada na maioria das viagens à China e Coreia do Norte."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "recommended",
+        "info": "China rural, Coreia do Norte. Não necessária para Japão / Coreia do Sul urbanos."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Prevalência elevada na China. Estadias prolongadas, contactos próximos."
+      },
+      {
+        "name": "Vacina contra encefalite japonesa",
+        "brand": "Ixiaro®",
+        "priority": "specific",
+        "info": "China rural (arrozais), Japão rural em meses quentes (junho–setembro). 2 doses (0, 28 dias)."
+      },
+      {
+        "name": "Vacina contra a raiva (pré-exposição)",
+        "brand": "Verorab® · Rabipur®",
+        "priority": "specific",
+        "info": "China e Coreia do Norte rural. Acesso pós-exposição variável."
+      }
+    ]
+  },
+  "oceania": {
+    "name": "Oceania",
+    "sub": "Austrália, Nova Zelândia, Polinésia, Melanésia, Micronésia",
+    "color": "#a8d8c7",
+    "vaccines": [
+      {
+        "name": "PNV atualizado",
+        "brand": "",
+        "priority": "essential",
+        "info": "Austrália e Nova Zelândia: garantir reforços do PNV. Baixo risco infecioso adicional."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "specific",
+        "info": "Recomendada em viagens a ilhas do Pacífico (Papua-Nova Guiné, Fiji, Vanuatu, Samoa)."
+      },
+      {
+        "name": "Vacina contra a febre tifoide",
+        "brand": "Typhim Vi® · Vivotif®",
+        "priority": "specific",
+        "info": "Papua-Nova Guiné, ilhas do Pacífico em zonas rurais."
+      },
+      {
+        "name": "Vacina contra encefalite japonesa",
+        "brand": "Ixiaro®",
+        "priority": "specific",
+        "info": "Papua-Nova Guiné, Estreito de Torres (Austrália do norte). Estadias prolongadas em zonas rurais."
+      },
+      {
+        "name": "Profilaxia da malária e dengue",
+        "brand": "(quimioprofilaxia / repelentes)",
+        "priority": "specific",
+        "info": "Papua-Nova Guiné, Ilhas Salomão, Vanuatu. Dengue em surtos em várias ilhas."
+      }
+    ]
+  },
+  "meca": {
+    "name": "Peregrinação a Meca",
+    "sub": "Hajj e Umrah · Arábia Saudita",
+    "color": "#f6d365",
+    "vaccines": [
+      {
+        "name": "Vacina meningocócica ACWY",
+        "brand": "Nimenrix® · MenQuadfi®",
+        "priority": "required",
+        "info": "<strong>OBRIGATÓRIA para emissão do visto Hajj/Umrah.</strong> Dose única ≥ 10 dias e ≤ 3 anos antes da chegada. Comprovativo de vacinação exigido nas fronteiras."
+      },
+      {
+        "name": "Vacina contra a gripe sazonal",
+        "brand": "Influvac Tetra® · Vaxigrip Tetra®",
+        "priority": "essential",
+        "info": "<strong>Exigida pelas autoridades sauditas</strong> a todos os peregrinos. Multidões em ambiente fechado favorecem transmissão."
+      },
+      {
+        "name": "Vacina contra a poliomielite",
+        "brand": "(VIP)",
+        "priority": "required",
+        "info": "Para peregrinos provenientes de países com transmissão ativa de poliovírus. Verificar requisitos atualizados."
+      },
+      {
+        "name": "Vacina contra a febre amarela",
+        "brand": "Stamaril®",
+        "priority": "required",
+        "info": "Para peregrinos provenientes de países com risco de febre amarela. Certificado vitalício (OMS, desde 2016). Arábia Saudita exige prova se trânsito >12h em país de risco."
+      },
+      {
+        "name": "Vacina contra hepatite A",
+        "brand": "Havrix® · VAQTA® · Avaxim®",
+        "priority": "recommended",
+        "info": "Recomendada devido a aglomerações e condições sanitárias variáveis durante a peregrinação."
+      },
+      {
+        "name": "Vacina contra hepatite B",
+        "brand": "Engerix B® · HBVaxPro®",
+        "priority": "recommended",
+        "info": "Recomendada, especialmente para peregrinos com procedimentos de barbear (Hajj termina com tonsura)."
+      },
+      {
+        "name": "Vacina contra COVID-19",
+        "brand": "(boosters atualizados)",
+        "priority": "recommended",
+        "info": "Verificar requisitos atuais das autoridades sauditas."
+      }
+    ]
+  }
+}

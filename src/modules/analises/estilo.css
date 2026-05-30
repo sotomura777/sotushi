@@ -1,0 +1,45 @@
+/* Análises — estilos específicos (usam as variáveis partilhadas). */
+
+.an-controlo { display: flex; gap: 10px; align-items: center; margin: 16px 0 10px; flex-wrap: wrap; }
+.an-sexo { display: flex; border: 1px solid var(--borda); border-radius: var(--raio-md); overflow: hidden; }
+.an-sexo button {
+  padding: 9px 16px; border: none; background: var(--superficie-2);
+  color: var(--suave); font-family: var(--fonte-corpo); font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.an-sexo button.on { background: var(--acento); color: #fff; }
+
+.an-param { padding: 14px 16px; border-bottom: 1px solid var(--borda-2); }
+.an-param:last-child { border-bottom: none; }
+.an-param-topo { display: flex; align-items: center; gap: 10px; }
+.an-param-info { flex: 1; min-width: 0; }
+.an-param-nome { font-weight: 600; font-size: 14px; color: var(--texto); display: flex; align-items: center; gap: 6px; }
+.an-param-ref { font-size: 11px; color: var(--tenue); margin-top: 2px; }
+/* Especificidade > .campo (que vem depois no bundle e definiria width:100%). */
+.an-param-topo .an-param-input { width: 92px; flex-shrink: 0; text-align: center; font-weight: 700; }
+.an-estrela { background: none; border: none; cursor: pointer; font-size: 16px; line-height: 1; color: var(--tenue); flex-shrink: 0; }
+.an-estrela.on { color: #e8a87c; }
+
+.an-interp {
+  margin-top: 8px; padding: 8px 12px; border-radius: var(--raio-sm);
+  font-size: 13px; line-height: 1.5; border: 1px solid;
+}
+.an-tk { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.an-tk-chip {
+  font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+  background: var(--superficie-2); color: var(--suave); border: 1px solid var(--borda);
+}
+.an-tk-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--tenue); align-self: center; margin-right: 2px; }
+
+/* GSA */
+.gsa-ctx { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.gsa-ctx-l { font-size: 12px; font-weight: 600; color: var(--suave); }
+.gsa-sup { display: flex; border: 1px solid var(--borda); border-radius: var(--raio-md); overflow: hidden; }
+.gsa-sup button { padding: 8px 12px; border: none; background: var(--superficie-2); color: var(--suave); font-family: var(--fonte-corpo); font-size: 12.5px; font-weight: 600; cursor: pointer; }
+.gsa-sup button.on { background: var(--acento); color: #fff; }
+.gsa-grelha { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
+.gsa-campo { display: flex; flex-direction: column; gap: 3px; }
+.gsa-campo label { font-size: 11.5px; font-weight: 600; color: var(--texto-2); }
+.gsa-campo .campo { padding: 7px 9px; font-size: 14px; font-weight: 600; text-align: center; }
+.an-modo { display: flex; gap: 6px; margin: 16px 0 4px; }
+.an-modo button { flex: 1; padding: 9px 0; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); color: var(--suave); font-family: var(--fonte-corpo); font-size: 13.5px; font-weight: 700; cursor: pointer; }
+.an-modo button.on { background: var(--acento); color: #fff; border-color: var(--acento); }

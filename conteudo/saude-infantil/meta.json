@@ -1,0 +1,28 @@
+{
+ "prioridades": {
+  "cores": {
+   "urg": "#dc2626",
+   "pri": "#d97706",
+   "prog": "#7c3aed",
+   "vig": "#059669"
+  },
+  "etiquetas": {
+   "urg": "🔴 Urgência — próprio dia",
+   "pri": "🟠 Prioritário — 1 a 2 semanas",
+   "prog": "🟣 Programado — 4 a 12 semanas",
+   "vig": "🟢 Vigiar — próxima consulta"
+  },
+  "fundo": {
+   "urg": "rgba(220,38,38,.07)",
+   "pri": "rgba(217,119,6,.07)",
+   "prog": "rgba(124,58,237,.07)",
+   "vig": "rgba(5,150,105,.07)"
+  },
+  "borda": {
+   "urg": "rgba(220,38,38,.2)",
+   "pri": "rgba(217,119,6,.2)",
+   "prog": "rgba(124,58,237,.2)",
+   "vig": "rgba(5,150,105,.2)"
+  }
+ }
+}

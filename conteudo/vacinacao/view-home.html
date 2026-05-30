@@ -1,0 +1,71 @@
+<section class="view active" id="view-home">
+    <header class="app-header">
+      <h1>Consultor de Vacinação</h1>
+      <p class="subtitle">Plano Nacional de Vacinação · Portugal</p>
+      <span class="badge-source">Atualizado · PNV 2025 (DGS)</span>
+    </header>
+
+    <button class="hub-card-wide" onclick="showView('view-matrix')">
+      <div class="icon">📊</div>
+      <div class="text">
+        <h2>Calendário Vacinal — Visão de Matriz</h2>
+        <p>Tabela interativa cruzando vacinas com idades. Ideal para consulta rápida do esquema completo PNV 2025.</p>
+      </div>
+      <div class="arrow">→</div>
+    </button>
+
+    <button class="hub-card-wide" onclick="showView('view-special-matrix')" style="border-left:4px solid #e74c3c;">
+      <div class="icon">🛡️</div>
+      <div class="text">
+        <h2>Matriz — Situações Especiais</h2>
+        <p>Vacinas por grupo de risco: imunocomprometidos, transplantados, asplenia, VIH, grávidas e outros. Baseado no Livro Azul de Vacinas (DGS, 2025–2026).</p>
+      </div>
+      <div class="arrow">→</div>
+    </button>
+
+    <div class="hub-grid">
+      <button class="hub-card" onclick="showView('view-child-pnv')">
+        <div class="icon">👶</div>
+        <h2>PNV — Crianças</h2>
+        <p>Esquema vacinal recomendado dos 0 aos 18 anos. Cronograma interativo por idade.</p>
+        <div class="meta">
+          <span>Obrigatório · Gratuito</span>
+          <div class="arrow">→</div>
+        </div>
+      </button>
+
+      <button class="hub-card" onclick="showView('view-adult-pnv')">
+        <div class="icon">👤</div>
+        <h2>PNV — Adultos</h2>
+        <p>Reforços, catch-up, grávidas, profissionais de saúde, grupos de risco e pós-exposição.</p>
+        <div class="meta">
+          <span>Livro Azul · Caps. 2–5</span>
+          <div class="arrow">→</div>
+        </div>
+      </button>
+
+      <button class="hub-card" onclick="showView('view-adult-extra')">
+        <div class="icon">💉</div>
+        <h2>Situações Especiais</h2>
+        <p>Imunocomprometidos, transplantados, VIH, asplenia, corticoterapia, coabitantes, pré-termo.</p>
+        <div class="meta">
+          <span>Livro Azul · Caps. 5–6</span>
+          <div class="arrow">→</div>
+        </div>
+      </button>
+
+      <button class="hub-card" onclick="showView('view-travel')">
+        <div class="icon">🌍</div>
+        <h2>Consulta do Viajante</h2>
+        <p>Mapa interativo das vacinas recomendadas por região do mundo.</p>
+        <div class="meta">
+          <span>OMS · CDC · NaTHNaC</span>
+          <div class="arrow">→</div>
+        </div>
+      </button>
+    </div>
+
+    <div class="footer">
+      Fontes: DGS · Livro Azul de Vacinas (Despacho 2794/2026) · Norma 013/2024 · Norma 005/2025 · Norma 006/2025
+    </div>
+  </section>

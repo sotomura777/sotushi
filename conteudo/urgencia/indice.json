@@ -1,0 +1,1616 @@
+{
+ "sistemas": {
+  "gastrointestinal": {
+   "label": "Gastrointestinal",
+   "cor": "#d97706"
+  },
+  "respiratorio": {
+   "label": "Respiratório",
+   "cor": "#2563eb"
+  },
+  "cardiovascular": {
+   "label": "Cardiovascular",
+   "cor": "#dc2626"
+  },
+  "neurologico": {
+   "label": "Neurológico",
+   "cor": "#7c3aed"
+  },
+  "psiquiatrico": {
+   "label": "Psiquiátrico",
+   "cor": "#6d28d9"
+  },
+  "dermatologico": {
+   "label": "Dermatológico",
+   "cor": "#e11d48"
+  },
+  "musculoesqueletico": {
+   "label": "Músculo-esquelético",
+   "cor": "#ea580c"
+  },
+  "orl": {
+   "label": "ORL",
+   "cor": "#ca8a04"
+  },
+  "oftalmologico": {
+   "label": "Oftalmológico",
+   "cor": "#0369a1"
+  },
+  "endocrino": {
+   "label": "Endócrino/Metabólico",
+   "cor": "#c2410c"
+  },
+  "ginecologico": {
+   "label": "Ginecológico",
+   "cor": "#be185d"
+  },
+  "geniturinario": {
+   "label": "Geniturinário",
+   "cor": "#0d9488"
+  },
+  "constitucionais": {
+   "label": "Constitucionais",
+   "cor": "#059669"
+  }
+ },
+ "sintomas": [
+  {
+   "id": "agitacao",
+   "name": "Agitação",
+   "sys": "psiquiatrico",
+   "search": [
+    "agitação",
+    "agitado",
+    "inquieto",
+    "delirium",
+    "confusão"
+   ]
+  },
+  {
+   "id": "alt_memoria",
+   "name": "Alteração da memória",
+   "sys": "neurologico",
+   "search": [
+    "memória",
+    "esquecimento",
+    "demência",
+    "alzheimer",
+    "confusão"
+   ]
+  },
+  {
+   "id": "alt_menstruais",
+   "name": "Alterações menstruais",
+   "sys": "ginecologico",
+   "search": [
+    "menstruação",
+    "período",
+    "ciclo",
+    "amenorreia",
+    "metrorragia",
+    "hemorragia"
+   ]
+  },
+  {
+   "id": "alt_ponderais",
+   "name": "Alterações ponderais",
+   "sys": "endocrino",
+   "search": [
+    "peso",
+    "emagrecer",
+    "engordar",
+    "perda de peso",
+    "ganho de peso",
+    "obesidade"
+   ]
+  },
+  {
+   "id": "amenorreia",
+   "name": "Amenorreia",
+   "sys": "ginecologico",
+   "search": [
+    "amenorreia",
+    "menstruação",
+    "período",
+    "falta de período",
+    "gravidez"
+   ]
+  },
+  {
+   "id": "ansiedade",
+   "name": "Ansiedade",
+   "sys": "psiquiatrico",
+   "search": [
+    "ansiedade",
+    "nervoso",
+    "pânico",
+    "preocupação",
+    "angústia"
+   ]
+  },
+  {
+   "id": "artralgias",
+   "name": "Artralgias",
+   "sys": "musculoesqueletico",
+   "search": [
+    "articulação",
+    "dor articular",
+    "joelho",
+    "anca",
+    "punho",
+    "artrite"
+   ]
+  },
+  {
+   "id": "ataques_panico",
+   "name": "Ataques de pânico",
+   "sys": "psiquiatrico",
+   "search": [
+    "pânico",
+    "ataque",
+    "ansiedade",
+    "taquicardia",
+    "medo",
+    "fobia"
+   ]
+  },
+  {
+   "id": "cansaco",
+   "name": "Cansaço",
+   "sys": "constitucionais",
+   "search": [
+    "cansaço",
+    "fadiga",
+    "astenia",
+    "fraqueza",
+    "exaustão",
+    "burnout"
+   ]
+  },
+  {
+   "id": "cefaleia",
+   "name": "Cefaleia",
+   "sys": "neurologico",
+   "search": [
+    "cabeça",
+    "dor de cabeça",
+    "enxaqueca",
+    "migrânea",
+    "cefaleia tensional"
+   ]
+  },
+  {
+   "id": "cervicalgia",
+   "name": "Cervicalgia",
+   "sys": "musculoesqueletico",
+   "search": [
+    "pescoço",
+    "cervical",
+    "torcicolo",
+    "rigidez cervical"
+   ]
+  },
+  {
+   "id": "claudicacao",
+   "name": "Claudicação",
+   "sys": "cardiovascular",
+   "search": [
+    "claudicação",
+    "pernas",
+    "andar",
+    "dor a caminhar",
+    "arteriopatia"
+   ]
+  },
+  {
+   "id": "comichao_vaginal",
+   "name": "Comichão vaginal",
+   "sys": "ginecologico",
+   "search": [
+    "comichão",
+    "prurido vaginal",
+    "vulva",
+    "candidíase",
+    "vaginite"
+   ]
+  },
+  {
+   "id": "congestao_nasal",
+   "name": "Congestão nasal",
+   "sys": "respiratorio",
+   "search": [
+    "nariz",
+    "entupido",
+    "congestão",
+    "rinite",
+    "sinusite",
+    "constipação"
+   ]
+  },
+  {
+   "id": "corrimento_vag",
+   "name": "Corrimento vaginal",
+   "sys": "ginecologico",
+   "search": [
+    "corrimento",
+    "vaginal",
+    "leucorreia",
+    "candidíase",
+    "vaginose"
+   ]
+  },
+  {
+   "id": "diarreia",
+   "name": "Diarreia",
+   "sys": "gastrointestinal",
+   "search": [
+    "diarreia",
+    "fezes moles",
+    "gastroenterite",
+    "colite",
+    "dejeções"
+   ]
+  },
+  {
+   "id": "dim_libido",
+   "name": "Diminuição da líbido",
+   "sys": "ginecologico",
+   "search": [
+    "líbido",
+    "desejo sexual",
+    "disfunção sexual",
+    "menopausa"
+   ]
+  },
+  {
+   "id": "diplopia",
+   "name": "Diplopia",
+   "sys": "oftalmologico",
+   "search": [
+    "visão dupla",
+    "diplopia",
+    "olhos",
+    "estrabismo"
+   ]
+  },
+  {
+   "id": "disfagia",
+   "name": "Disfagia",
+   "sys": "gastrointestinal",
+   "search": [
+    "engolir",
+    "dificuldade em engolir",
+    "esófago",
+    "disfagia"
+   ]
+  },
+  {
+   "id": "dispareunia",
+   "name": "Dispareunia",
+   "sys": "ginecologico",
+   "search": [
+    "dor relações",
+    "dispareunia",
+    "dor sexual",
+    "coito"
+   ]
+  },
+  {
+   "id": "dispneia",
+   "name": "Dispneia",
+   "sys": "respiratorio",
+   "search": [
+    "falta de ar",
+    "dispneia",
+    "respiração",
+    "ofego",
+    "sufoco"
+   ]
+  },
+  {
+   "id": "disuria",
+   "name": "Disúria",
+   "sys": "geniturinario",
+   "search": [
+    "dor a urinar",
+    "disúria",
+    "ardor",
+    "infecção urinária",
+    "cistite"
+   ]
+  },
+  {
+   "id": "dor_abdominal",
+   "name": "Dor abdominal",
+   "sys": "gastrointestinal",
+   "search": [
+    "barriga",
+    "dor de barriga",
+    "abdómen",
+    "cólica",
+    "epigastralgia"
+   ]
+  },
+  {
+   "id": "dor_garganta",
+   "name": "Dor de garganta",
+   "sys": "orl",
+   "search": [
+    "garganta",
+    "odinofagia",
+    "amigdalite",
+    "faringite",
+    "angina"
+   ]
+  },
+  {
+   "id": "dor_ouvido",
+   "name": "Dor de ouvido",
+   "sys": "orl",
+   "search": [
+    "ouvido",
+    "otalgia",
+    "otite",
+    "ouvidos"
+   ]
+  },
+  {
+   "id": "dor_joelho",
+   "name": "Dor no joelho",
+   "sys": "musculoesqueletico",
+   "search": [
+    "joelho",
+    "gonalgia",
+    "menisco",
+    "ligamentos"
+   ]
+  },
+  {
+   "id": "dor_ombro",
+   "name": "Dor no ombro",
+   "sys": "musculoesqueletico",
+   "search": [
+    "ombro",
+    "omalgia",
+    "rotador",
+    "bursite",
+    "tendinite"
+   ]
+  },
+  {
+   "id": "dor_ocular",
+   "name": "Dor ocular",
+   "sys": "oftalmologico",
+   "search": [
+    "olho",
+    "dor no olho",
+    "ocular",
+    "glaucoma"
+   ]
+  },
+  {
+   "id": "dor_pelvica",
+   "name": "Dor pélvica",
+   "sys": "ginecologico",
+   "search": [
+    "pélvica",
+    "pélvis",
+    "dor pélvica",
+    "endometriose",
+    "ovário"
+   ]
+  },
+  {
+   "id": "dor_pleuritica",
+   "name": "Dor pleurítica",
+   "sys": "respiratorio",
+   "search": [
+    "dor torácica",
+    "pleurisia",
+    "dor a respirar",
+    "pleural"
+   ]
+  },
+  {
+   "id": "dor_toracica",
+   "name": "Dor torácica",
+   "sys": "cardiovascular",
+   "search": [
+    "peito",
+    "dor no peito",
+    "torácica",
+    "angina",
+    "enfarte",
+    "precordialgia"
+   ]
+  },
+  {
+   "id": "dormencia",
+   "name": "Dormência",
+   "sys": "neurologico",
+   "search": [
+    "dormência",
+    "formigueiro",
+    "parestesias",
+    "adormecimento"
+   ]
+  },
+  {
+   "id": "edema_mi",
+   "name": "Edema dos MI",
+   "sys": "cardiovascular",
+   "search": [
+    "pernas inchadas",
+    "edema",
+    "tornozelos",
+    "insuficiência cardíaca"
+   ]
+  },
+  {
+   "id": "epistaxe",
+   "name": "Epistaxe",
+   "sys": "orl",
+   "search": [
+    "sangue do nariz",
+    "epistaxe",
+    "hemorragia nasal"
+   ]
+  },
+  {
+   "id": "eritema",
+   "name": "Eritema",
+   "sys": "dermatologico",
+   "search": [
+    "vermelhidão",
+    "eritema",
+    "pele vermelha",
+    "erisipela",
+    "celulite"
+   ]
+  },
+  {
+   "id": "febre",
+   "name": "Febre",
+   "sys": "constitucionais",
+   "search": [
+    "febre",
+    "temperatura",
+    "febril",
+    "febrícula",
+    "hipertermia",
+    "infecção"
+   ]
+  },
+  {
+   "id": "fotofobia",
+   "name": "Fotofobia",
+   "sys": "oftalmologico",
+   "search": [
+    "luz",
+    "fotofobia",
+    "sensibilidade à luz",
+    "enxaqueca"
+   ]
+  },
+  {
+   "id": "hipoacusia",
+   "name": "Hipoacusia",
+   "sys": "orl",
+   "search": [
+    "ouvir",
+    "surdez",
+    "hipoacusia",
+    "perda auditiva"
+   ]
+  },
+  {
+   "id": "humor_depressivo",
+   "name": "Humor depressivo",
+   "sys": "psiquiatrico",
+   "search": [
+    "triste",
+    "depressão",
+    "humor",
+    "anedonia",
+    "choro"
+   ]
+  },
+  {
+   "id": "insonia",
+   "name": "Insónia",
+   "sys": "psiquiatrico",
+   "search": [
+    "dormir",
+    "insónia",
+    "sono",
+    "acordar",
+    "dificuldade em adormecer"
+   ]
+  },
+  {
+   "id": "intol_calor",
+   "name": "Intolerância ao calor",
+   "sys": "endocrino",
+   "search": [
+    "calor",
+    "suores",
+    "hipertiroidismo",
+    "tiróide"
+   ]
+  },
+  {
+   "id": "intol_frio",
+   "name": "Intolerância ao frio",
+   "sys": "endocrino",
+   "search": [
+    "frio",
+    "hipotiroidismo",
+    "tiróide",
+    "mixedema"
+   ]
+  },
+  {
+   "id": "irritabilidade",
+   "name": "Irritabilidade",
+   "sys": "psiquiatrico",
+   "search": [
+    "irritável",
+    "raiva",
+    "mau humor",
+    "agressividade"
+   ]
+  },
+  {
+   "id": "lacrimejo",
+   "name": "Lacrimejo",
+   "sys": "oftalmologico",
+   "search": [
+    "lágrimas",
+    "lacrimejo",
+    "olho a chorar",
+    "conjuntivite"
+   ]
+  },
+  {
+   "id": "lesoes_cutaneas",
+   "name": "Lesões cutâneas",
+   "sys": "dermatologico",
+   "search": [
+    "pele",
+    "lesão",
+    "mancha",
+    "borbulhas",
+    "erupção",
+    "dermatite"
+   ]
+  },
+  {
+   "id": "lombalgia",
+   "name": "Lombalgia",
+   "sys": "musculoesqueletico",
+   "search": [
+    "costas",
+    "lombar",
+    "dor nas costas",
+    "ciática",
+    "hérnia"
+   ]
+  },
+  {
+   "id": "mal_estar",
+   "name": "Mal-estar geral",
+   "sys": "constitucionais",
+   "search": [
+    "mal-estar",
+    "indisposição",
+    "fraqueza",
+    "prostração"
+   ]
+  },
+  {
+   "id": "mialgias",
+   "name": "Mialgias",
+   "sys": "musculoesqueletico",
+   "search": [
+    "músculos",
+    "dor muscular",
+    "mialgias",
+    "cãibras"
+   ]
+  },
+  {
+   "id": "nauseas_vomitos",
+   "name": "Náuseas / Vómitos",
+   "sys": "gastrointestinal",
+   "search": [
+    "náuseas",
+    "vómitos",
+    "enjoo",
+    "emese"
+   ]
+  },
+  {
+   "id": "obstipacao",
+   "name": "Obstipação",
+   "sys": "gastrointestinal",
+   "search": [
+    "obstipação",
+    "prisão de ventre",
+    "fezes duras",
+    "não defeca",
+    "trânsito intestinal",
+    "laxante"
+   ],
+   "active": true
+  },
+  {
+   "id": "odinofagia",
+   "name": "Odinofagia",
+   "sys": "gastrointestinal",
+   "search": [
+    "dor a engolir",
+    "odinofagia",
+    "garganta",
+    "esófago"
+   ]
+  },
+  {
+   "id": "olho_vermelho",
+   "name": "Olho vermelho",
+   "sys": "oftalmologico",
+   "search": [
+    "olho vermelho",
+    "conjuntivite",
+    "uveíte",
+    "glaucoma"
+   ]
+  },
+  {
+   "id": "ortopneia",
+   "name": "Ortopneia",
+   "sys": "cardiovascular",
+   "search": [
+    "ortopneia",
+    "falta de ar deitado",
+    "almofadas",
+    "insuficiência cardíaca"
+   ]
+  },
+  {
+   "id": "palpitacoes",
+   "name": "Palpitações",
+   "sys": "cardiovascular",
+   "search": [
+    "palpitações",
+    "coração",
+    "taquicardia",
+    "arritmia",
+    "batimentos"
+   ]
+  },
+  {
+   "id": "pele_seca",
+   "name": "Pele seca",
+   "sys": "dermatologico",
+   "search": [
+    "pele seca",
+    "xerose",
+    "eczema",
+    "descamação"
+   ]
+  },
+  {
+   "id": "perda_peso",
+   "name": "Perda de peso",
+   "sys": "constitucionais",
+   "search": [
+    "emagrecer",
+    "perda de peso",
+    "emagrecimento",
+    "peso",
+    "anorexia"
+   ]
+  },
+  {
+   "id": "perdas_hematicas",
+   "name": "Perdas hemáticas",
+   "sys": "constitucionais",
+   "search": [
+    "sangue",
+    "hemorragia",
+    "sangramento",
+    "hematoquézia",
+    "melenas"
+   ]
+  },
+  {
+   "id": "perdas_sang_gine",
+   "name": "Perdas sanguíneas (gine)",
+   "sys": "ginecologico",
+   "search": [
+    "hemorragia vaginal",
+    "metrorragia",
+    "menorragia",
+    "spotting"
+   ]
+  },
+  {
+   "id": "poliuria",
+   "name": "Poliúria",
+   "sys": "endocrino",
+   "search": [
+    "urinar muito",
+    "poliúria",
+    "diabetes",
+    "sede",
+    "polidipsia"
+   ]
+  },
+  {
+   "id": "prurido",
+   "name": "Prurido",
+   "sys": "dermatologico",
+   "search": [
+    "comichão",
+    "prurido",
+    "coçar",
+    "urticária",
+    "alergia"
+   ]
+  },
+  {
+   "id": "queda_cabelo",
+   "name": "Queda de cabelo",
+   "sys": "dermatologico",
+   "search": [
+    "cabelo",
+    "alopécia",
+    "queda",
+    "calvície"
+   ]
+  },
+  {
+   "id": "quedas",
+   "name": "Quedas",
+   "sys": "neurologico",
+   "search": [
+    "queda",
+    "cair",
+    "equilíbrio",
+    "idoso",
+    "marcha"
+   ]
+  },
+  {
+   "id": "rash",
+   "name": "Rash / Exantema",
+   "sys": "dermatologico",
+   "search": [
+    "rash",
+    "exantema",
+    "erupção",
+    "manchas",
+    "alergia",
+    "viral"
+   ]
+  },
+  {
+   "id": "refluxo",
+   "name": "Refluxo / Pirose",
+   "sys": "gastrointestinal",
+   "search": [
+    "azia",
+    "refluxo",
+    "pirose",
+    "ácido",
+    "estômago",
+    "DRGE"
+   ]
+  },
+  {
+   "id": "rigidez_articular",
+   "name": "Rigidez articular",
+   "sys": "musculoesqueletico",
+   "search": [
+    "rigidez",
+    "manhã",
+    "articular",
+    "artrite reumatoide"
+   ]
+  },
+  {
+   "id": "rinorreia",
+   "name": "Rinorreia",
+   "sys": "respiratorio",
+   "search": [
+    "ranho",
+    "corrimento nasal",
+    "rinorreia",
+    "constipação",
+    "rinite"
+   ]
+  },
+  {
+   "id": "roncopatia",
+   "name": "Roncopatia / Apneias",
+   "sys": "respiratorio",
+   "search": [
+    "ressonar",
+    "ronco",
+    "apneia",
+    "sono",
+    "SAOS"
+   ]
+  },
+  {
+   "id": "rouquidao",
+   "name": "Rouquidão",
+   "sys": "respiratorio",
+   "search": [
+    "voz",
+    "rouquidão",
+    "disfonia",
+    "rouquidão",
+    "laringite"
+   ]
+  },
+  {
+   "id": "sede_excessiva",
+   "name": "Sede excessiva",
+   "sys": "endocrino",
+   "search": [
+    "sede",
+    "polidipsia",
+    "diabetes",
+    "boca seca"
+   ]
+  },
+  {
+   "id": "sincope",
+   "name": "Síncope",
+   "sys": "cardiovascular",
+   "search": [
+    "desmaio",
+    "síncope",
+    "perda de consciência",
+    "lipotímia"
+   ]
+  },
+  {
+   "id": "stress_burnout",
+   "name": "Stress / Burnout",
+   "sys": "psiquiatrico",
+   "search": [
+    "stress",
+    "burnout",
+    "esgotamento",
+    "exaustão",
+    "trabalho"
+   ]
+  },
+  {
+   "id": "sudorese",
+   "name": "Sudorese excessiva",
+   "sys": "endocrino",
+   "search": [
+    "suores",
+    "sudorese",
+    "transpiração",
+    "suores noturnos",
+    "hipertiroidismo"
+   ]
+  },
+  {
+   "id": "tonturas",
+   "name": "Tonturas",
+   "sys": "neurologico",
+   "search": [
+    "tonturas",
+    "vertigem",
+    "desequilíbrio",
+    "cabeça a rodar"
+   ]
+  },
+  {
+   "id": "tosse",
+   "name": "Tosse",
+   "sys": "respiratorio",
+   "search": [
+    "tosse",
+    "tossir",
+    "expetoração",
+    "catarro"
+   ]
+  },
+  {
+   "id": "tremor",
+   "name": "Tremor",
+   "sys": "neurologico",
+   "search": [
+    "tremor",
+    "tremer",
+    "mãos",
+    "parkinson",
+    "essencial"
+   ]
+  },
+  {
+   "id": "urticaria",
+   "name": "Urticária",
+   "sys": "dermatologico",
+   "search": [
+    "urticária",
+    "pápulas",
+    "alergia",
+    "comichão",
+    "histamina"
+   ]
+  },
+  {
+   "id": "vertigens",
+   "name": "Vertigens",
+   "sys": "neurologico",
+   "search": [
+    "vertigem",
+    "rodar",
+    "vestibular",
+    "VPPB",
+    "tonturas"
+   ]
+  },
+  {
+   "id": "visao_turva",
+   "name": "Visão turva",
+   "sys": "oftalmologico",
+   "search": [
+    "visão",
+    "turva",
+    "borrada",
+    "ver mal",
+    "miopia"
+   ]
+  },
+  {
+   "id": "zumbidos",
+   "name": "Zumbidos",
+   "sys": "orl",
+   "search": [
+    "zumbido",
+    "tinnitus",
+    "ouvido",
+    "ruído"
+   ]
+  },
+  {
+   "id": "sintomas_menopausa",
+   "name": "Sintomas da menopausa",
+   "sys": "ginecologico",
+   "search": [
+    "menopausa",
+    "afrontamentos",
+    "calores",
+    "climatério"
+   ]
+  }
+ ],
+ "suspeitas": [
+  {
+   "id": "s_gastroenterite",
+   "name": "Gastroenterite",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "febre",
+    "vómitos",
+    "diarreia"
+   ],
+   "search": [
+    "gastroenterite",
+    "viral",
+    "bacteriana",
+    "vómitos",
+    "diarreia",
+    "febre",
+    "intoxicação alimentar"
+   ]
+  },
+  {
+   "id": "s_refluxo",
+   "name": "Refluxo / DRGE",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "azia",
+    "regurgitação",
+    "dor epigástrica"
+   ],
+   "search": [
+    "refluxo",
+    "drge",
+    "azia",
+    "pirose",
+    "regurgitação",
+    "epigástrica"
+   ]
+  },
+  {
+   "id": "s_ulcera",
+   "name": "Úlcera péptica",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "dor epigástrica",
+    "náuseas",
+    "melenas"
+   ],
+   "search": [
+    "úlcera",
+    "péptica",
+    "epigástrica",
+    "melenas",
+    "hemorragia digestiva"
+   ]
+  },
+  {
+   "id": "s_apendicite",
+   "name": "Apendicite",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "dor fossa ilíaca direita",
+    "febre",
+    "náuseas"
+   ],
+   "search": [
+    "apendicite",
+    "fossa ilíaca direita",
+    "dor abdominal",
+    "febre"
+   ]
+  },
+  {
+   "id": "s_diverticulite",
+   "name": "Diverticulite",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "dor fossa ilíaca esquerda",
+    "febre",
+    "obstipação"
+   ],
+   "search": [
+    "diverticulite",
+    "fossa ilíaca esquerda",
+    "febre",
+    "obstipação"
+   ]
+  },
+  {
+   "id": "s_oclusao",
+   "name": "Oclusão intestinal",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "obstipação",
+    "distensão",
+    "vómitos"
+   ],
+   "search": [
+    "oclusão",
+    "obstipação",
+    "distensão",
+    "vómitos",
+    "paragem de gases"
+   ]
+  },
+  {
+   "id": "s_colecistite",
+   "name": "Cólica biliar / Colecistite",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "dor hipocôndrio direito",
+    "náuseas",
+    "febre"
+   ],
+   "search": [
+    "colecistite",
+    "cólica biliar",
+    "vesícula",
+    "hipocôndrio direito",
+    "febre"
+   ]
+  },
+  {
+   "id": "s_pancreatite",
+   "name": "Pancreatite aguda",
+   "sys": "gastrointestinal",
+   "type": "suspeita",
+   "tags": [
+    "dor epigástrica",
+    "vómitos",
+    "irradiação dorsal"
+   ],
+   "search": [
+    "pancreatite",
+    "epigástrica",
+    "dorsal",
+    "cintura",
+    "vómitos"
+   ]
+  },
+  {
+   "id": "s_inf_resp",
+   "name": "Infeção respiratória",
+   "sys": "respiratorio",
+   "type": "suspeita",
+   "tags": [
+    "febre",
+    "tosse",
+    "dispneia"
+   ],
+   "search": [
+    "pneumonia",
+    "bronquite",
+    "infeção respiratória",
+    "tosse",
+    "febre",
+    "dispneia"
+   ]
+  },
+  {
+   "id": "s_dpoc_ag",
+   "name": "Agudização DPOC",
+   "sys": "respiratorio",
+   "type": "suspeita",
+   "tags": [
+    "dispneia",
+    "tosse",
+    "expetoração"
+   ],
+   "search": [
+    "dpoc",
+    "agudização",
+    "expetoração",
+    "dispneia",
+    "broncoespasmo"
+   ]
+  },
+  {
+   "id": "s_asma",
+   "name": "Asma agudizada",
+   "sys": "respiratorio",
+   "type": "suspeita",
+   "tags": [
+    "dispneia",
+    "pieira",
+    "tosse"
+   ],
+   "search": [
+    "asma",
+    "pieira",
+    "dispneia",
+    "broncoespasmo",
+    "tosse"
+   ]
+  },
+  {
+   "id": "s_tep",
+   "name": "TEP",
+   "sys": "cardiovascular",
+   "type": "suspeita",
+   "tags": [
+    "dispneia",
+    "dor torácica",
+    "taquicardia"
+   ],
+   "search": [
+    "tep",
+    "tromboembolismo",
+    "dispneia",
+    "dor torácica",
+    "taquicardia"
+   ]
+  },
+  {
+   "id": "s_sca",
+   "name": "SCA / Enfarte",
+   "sys": "cardiovascular",
+   "type": "suspeita",
+   "tags": [
+    "dor torácica",
+    "sudorese",
+    "dispneia"
+   ],
+   "search": [
+    "enfarte",
+    "sca",
+    "síndrome coronária",
+    "dor torácica",
+    "sudorese",
+    "irradiação"
+   ]
+  },
+  {
+   "id": "s_icc",
+   "name": "Insuficiência cardíaca aguda",
+   "sys": "cardiovascular",
+   "type": "suspeita",
+   "tags": [
+    "dispneia",
+    "ortopneia",
+    "edemas"
+   ],
+   "search": [
+    "insuficiência cardíaca",
+    "dispneia",
+    "ortopneia",
+    "edemas",
+    "ortopneia"
+   ]
+  },
+  {
+   "id": "s_fa",
+   "name": "Fibrilhação auricular",
+   "sys": "cardiovascular",
+   "type": "suspeita",
+   "tags": [
+    "palpitações",
+    "dispneia",
+    "taquicardia"
+   ],
+   "search": [
+    "fibrilhação auricular",
+    "palpitações",
+    "taquicardia",
+    "arritmia"
+   ]
+  },
+  {
+   "id": "s_hta_grave",
+   "name": "Hipertensão grave",
+   "sys": "cardiovascular",
+   "type": "suspeita",
+   "tags": [
+    "cefaleia",
+    "visão turva",
+    "tensão alta"
+   ],
+   "search": [
+    "hipertensão grave",
+    "emergência hipertensiva",
+    "cefaleia",
+    "visão turva"
+   ]
+  },
+  {
+   "id": "s_avc",
+   "name": "AVC isquémico",
+   "sys": "neurologico",
+   "type": "suspeita",
+   "tags": [
+    "défice focal",
+    "assimetria facial",
+    "disartria"
+   ],
+   "search": [
+    "avc",
+    "acidente vascular",
+    "défice focal",
+    "hemiplegia",
+    "disartria",
+    "fast"
+   ]
+  },
+  {
+   "id": "s_meningite",
+   "name": "Meningite",
+   "sys": "neurologico",
+   "type": "suspeita",
+   "tags": [
+    "cefaleia",
+    "febre",
+    "rigidez da nuca"
+   ],
+   "search": [
+    "meningite",
+    "rigidez da nuca",
+    "cefaleia",
+    "febre",
+    "fotofobia"
+   ]
+  },
+  {
+   "id": "s_convulsao",
+   "name": "Convulsão / Epilepsia",
+   "sys": "neurologico",
+   "type": "suspeita",
+   "tags": [
+    "perda de consciência",
+    "movimentos tónicos",
+    "confusão"
+   ],
+   "search": [
+    "convulsão",
+    "epilepsia",
+    "crise epiléptica",
+    "perda de consciência"
+   ]
+  },
+  {
+   "id": "s_enxaqueca",
+   "name": "Enxaqueca",
+   "sys": "neurologico",
+   "type": "suspeita",
+   "tags": [
+    "cefaleia",
+    "fotofobia",
+    "náuseas"
+   ],
+   "search": [
+    "enxaqueca",
+    "migrânea",
+    "cefaleia",
+    "fotofobia",
+    "náuseas",
+    "aura"
+   ]
+  },
+  {
+   "id": "s_vppb",
+   "name": "Vertigem posicional (VPPB)",
+   "sys": "neurologico",
+   "type": "suspeita",
+   "tags": [
+    "tonturas",
+    "náuseas",
+    "nistagmo"
+   ],
+   "search": [
+    "vertigem",
+    "vppb",
+    "tonturas",
+    "nistagmo",
+    "posicional"
+   ]
+  },
+  {
+   "id": "s_itu",
+   "name": "ITU / Cistite",
+   "sys": "geniturinario",
+   "type": "suspeita",
+   "tags": [
+    "disúria",
+    "polaquiúria",
+    "urgência miccional"
+   ],
+   "search": [
+    "itu",
+    "cistite",
+    "infecção urinária",
+    "disúria",
+    "polaquiúria"
+   ]
+  },
+  {
+   "id": "s_pielonefrite",
+   "name": "Pielonefrite",
+   "sys": "geniturinario",
+   "type": "suspeita",
+   "tags": [
+    "febre",
+    "dor lombar",
+    "disúria"
+   ],
+   "search": [
+    "pielonefrite",
+    "infecção urinária alta",
+    "febre",
+    "dor lombar",
+    "disúria"
+   ]
+  },
+  {
+   "id": "s_amigdalite",
+   "name": "Amigdalite / Faringite",
+   "sys": "orl",
+   "type": "suspeita",
+   "tags": [
+    "dor de garganta",
+    "febre",
+    "odinofagia"
+   ],
+   "search": [
+    "amigdalite",
+    "faringite",
+    "dor de garganta",
+    "angina",
+    "odinofagia",
+    "febre"
+   ]
+  },
+  {
+   "id": "s_otite",
+   "name": "Otite média aguda",
+   "sys": "orl",
+   "type": "suspeita",
+   "tags": [
+    "otalgia",
+    "febre",
+    "hipoacusia"
+   ],
+   "search": [
+    "otite",
+    "otalgia",
+    "ouvido",
+    "febre",
+    "hipoacusia"
+   ]
+  },
+  {
+   "id": "s_grav_ect",
+   "name": "Gravidez ectópica",
+   "sys": "ginecologico",
+   "type": "suspeita",
+   "tags": [
+    "dor pélvica",
+    "atraso menstrual",
+    "hemorragia vaginal"
+   ],
+   "search": [
+    "gravidez ectópica",
+    "dor pélvica",
+    "atraso menstrual",
+    "hemorragia vaginal"
+   ]
+  },
+  {
+   "id": "s_dip",
+   "name": "DIP",
+   "sys": "ginecologico",
+   "type": "suspeita",
+   "tags": [
+    "dor pélvica",
+    "febre",
+    "corrimento vaginal"
+   ],
+   "search": [
+    "dip",
+    "doença inflamatória pélvica",
+    "dor pélvica",
+    "febre",
+    "corrimento"
+   ]
+  },
+  {
+   "id": "s_anafilaxia",
+   "name": "Anafilaxia",
+   "sys": "constitucionais",
+   "type": "suspeita",
+   "tags": [
+    "urticária",
+    "dispneia",
+    "hipotensão"
+   ],
+   "search": [
+    "anafilaxia",
+    "alergia",
+    "urticária",
+    "dispneia",
+    "hipotensão",
+    "angioedema"
+   ]
+  },
+  {
+   "id": "s_sepsis",
+   "name": "Sepsis",
+   "sys": "constitucionais",
+   "type": "suspeita",
+   "tags": [
+    "febre",
+    "taquicardia",
+    "hipotensão"
+   ],
+   "search": [
+    "sepsis",
+    "sépsis",
+    "febre",
+    "taquicardia",
+    "hipotensão",
+    "foco infecioso"
+   ]
+  },
+  {
+   "id": "s_hipoglicemia",
+   "name": "Hipoglicemia",
+   "sys": "endocrino",
+   "type": "suspeita",
+   "tags": [
+    "confusão",
+    "sudorese",
+    "tremores"
+   ],
+   "search": [
+    "hipoglicemia",
+    "glicemia baixa",
+    "confusão",
+    "sudorese",
+    "tremores"
+   ]
+  },
+  {
+   "id": "s_intoxicacao",
+   "name": "Intoxicação / Overdose",
+   "sys": "neurologico",
+   "type": "suspeita",
+   "tags": [
+    "alteração consciência",
+    "miose",
+    "bradipneia"
+   ],
+   "search": [
+    "intoxicação",
+    "overdose",
+    "miose",
+    "bradipneia",
+    "alteração consciência",
+    "drogas"
+   ]
+  },
+  {
+   "id": "s_sincope",
+   "name": "Síncope",
+   "sys": "cardiovascular",
+   "type": "suspeita",
+   "tags": [
+    "perda de consciência",
+    "pródromo vagal",
+    "recuperação rápida"
+   ],
+   "search": [
+    "síncope",
+    "desmaio",
+    "perda de consciência",
+    "lipotímia",
+    "vagal"
+   ]
+  },
+  {
+   "id": "s_artrite_sep",
+   "name": "Artrite séptica",
+   "sys": "musculoesqueletico",
+   "type": "suspeita",
+   "tags": [
+    "articulação quente",
+    "febre",
+    "dor articular"
+   ],
+   "search": [
+    "artrite séptica",
+    "articulação quente",
+    "febre",
+    "dor articular",
+    "monoartrite"
+   ]
+  },
+  {
+   "id": "s_gota",
+   "name": "Gota",
+   "sys": "musculoesqueletico",
+   "type": "suspeita",
+   "tags": [
+    "articulação vermelha",
+    "dor intensa",
+    "calor local"
+   ],
+   "search": [
+    "gota",
+    "articulação vermelha",
+    "dor intensa",
+    "urato",
+    "calor",
+    "podagra"
+   ]
+  }
+ ]
+}

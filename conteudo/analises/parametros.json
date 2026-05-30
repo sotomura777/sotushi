@@ -1,0 +1,1910 @@
+[
+  {
+    "id": "hb",
+    "nm": "Hemoglobina",
+    "ab": "Hb",
+    "cat": "hemo",
+    "un": "g/dL",
+    "ref": {
+      "M": [
+        13,
+        17
+      ],
+      "F": [
+        12,
+        15
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Anemia. Classificar por VGM: microcítica (ferropénica? talassémia?), normocítica (doença crónica? hemorragia aguda?), macrocítica (B12? folato? álcool?). Se <7 g/dL considerar transfusão.",
+    "hi": "Policitémia. Relativa (desidratação) ou absoluta (policitémia vera, hipóxia crónica, DPOC, tabagismo, EPO tumoral). Verificar hematócrito.",
+    "tk": [
+      "VGM",
+      "Ferritina",
+      "B12",
+      "Folato"
+    ]
+  },
+  {
+    "id": "gv",
+    "nm": "Glóbulos vermelhos",
+    "ab": "GV",
+    "cat": "hemo",
+    "un": "x10¹²/L",
+    "ref": {
+      "M": [
+        4.5,
+        5.9
+      ],
+      "F": [
+        3.8,
+        4.8
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "htc",
+    "nm": "Hematócrito",
+    "ab": "Htc",
+    "cat": "hemo",
+    "un": "L/L",
+    "ref": {
+      "M": [
+        0.4,
+        0.52
+      ],
+      "F": [
+        0.36,
+        0.46
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "vgm",
+    "nm": "VGM",
+    "ab": "VGM",
+    "cat": "hemo",
+    "un": "fL",
+    "ref": {
+      "M": [
+        80,
+        100
+      ],
+      "F": [
+        80,
+        100
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "hgm",
+    "nm": "HGM",
+    "ab": "HGM",
+    "cat": "hemo",
+    "un": "pg",
+    "ref": {
+      "M": [
+        27,
+        33
+      ],
+      "F": [
+        27,
+        33
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "chgm",
+    "nm": "CHGM",
+    "ab": "CHGM",
+    "cat": "hemo",
+    "un": "g/dL",
+    "ref": {
+      "M": [
+        32,
+        36
+      ],
+      "F": [
+        32,
+        36
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "rdw",
+    "nm": "RDW",
+    "ab": "RDW",
+    "cat": "hemo",
+    "un": "%",
+    "ref": {
+      "M": [
+        11.5,
+        14.5
+      ],
+      "F": [
+        11.5,
+        14.5
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "leuc",
+    "nm": "Leucócitos",
+    "ab": "Leuc",
+    "cat": "hemo",
+    "un": "x10⁹/L",
+    "ref": {
+      "M": [
+        4,
+        10
+      ],
+      "F": [
+        4,
+        10
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Leucopénia. Se neutrófilos baixos — risco infeccioso. Causas: viral, fármacos (metotrexato, quimioterapia), hematológica. Verificar fórmula.",
+    "hi": "Leucocitose. Ver fórmula: neutrofilia (bacteriana, stress, corticóides), linfocitose (viral, LLC), eosinofilia (alergia, parasitas). Se >30 — reação leucemóide ou neoplasia.",
+    "tk": [
+      "Neutrófilos",
+      "Linfócitos",
+      "Eosinófilos",
+      "PCR"
+    ]
+  },
+  {
+    "id": "neut",
+    "nm": "Neutrófilos",
+    "ab": "Neut",
+    "cat": "hemo",
+    "un": "%",
+    "ref": {
+      "M": [
+        40,
+        80
+      ],
+      "F": [
+        40,
+        80
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Neutropénia relativa (<40%). Se leucócitos também baixos — risco infeccioso significativo. Causas: fármacos (quimio, metotrexato, metamizol), viral, autoimune, hematológica. Se febre: ATB empírica urgente.",
+    "hi": "Neutrofilia (>80%). Causa mais comum: infeção bacteriana. Também corticóides, stress cirúrgico, necrose tecidular, tabagismo. Se leucocitose muito marcada (Leuc >30): reação leucemóide — excluir neoplasia.",
+    "tk": [
+      "Leucócitos",
+      "PCR",
+      "Procalcitonina"
+    ]
+  },
+  {
+    "id": "linf",
+    "nm": "Linfócitos",
+    "ab": "Linf",
+    "cat": "hemo",
+    "un": "%",
+    "ref": {
+      "M": [
+        20,
+        40
+      ],
+      "F": [
+        20,
+        40
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Linfopénia (<20%). Causas frequentes: corticóides, sépsis grave, HIV, lúpus, quimioterapia, COVID. Se persistente e sem causa óbvia: pedir serologias HIV.",
+    "hi": "Linfocitose (>40%). Causa mais comum: infeção viral (EBV, CMV, hepatite, HIV agudo). Se crónica em >50 anos com leucocitose mantida: pensar LLC — pedir citometria de fluxo.",
+    "tk": [
+      "Leucócitos",
+      "PCR"
+    ]
+  },
+  {
+    "id": "mono",
+    "nm": "Monócitos",
+    "ab": "Mono",
+    "cat": "hemo",
+    "un": "%",
+    "ref": {
+      "M": [
+        2,
+        10
+      ],
+      "F": [
+        2,
+        10
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Monocitopénia. Rara isolada. Pode ocorrer em aplasia medular, tricoleucémia. Valorizar no contexto da fórmula completa.",
+    "hi": "Monocitose (>10%). Infeções crónicas (tuberculose, endocardite, brucelose), doenças inflamatórias (sarcoidose, Crohn), recuperação pós-quimioterapia. Se persistente: excluir leucemia mielomonocítica crónica.",
+    "tk": [
+      "Leucócitos"
+    ]
+  },
+  {
+    "id": "eosi",
+    "nm": "Eosinófilos",
+    "ab": "Eosi",
+    "cat": "hemo",
+    "un": "%",
+    "ref": {
+      "M": [
+        1,
+        6
+      ],
+      "F": [
+        1,
+        6
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Eosinopénia. Pode ocorrer em stress agudo, corticóides, fase aguda de infeção. Pouco significado isolado.",
+    "hi": "Eosinofilia (>6%). Alergia/atopia (causa mais frequente), parasitas (helmintas — pedir exame parasitológico), fármacos (DRESS se febre + rash + hepatite). Se marcada e persistente: síndrome hipereosinofílico, vasculite eosinofílica.",
+    "tk": [
+      "Leucócitos"
+    ]
+  },
+  {
+    "id": "baso",
+    "nm": "Basófilos",
+    "ab": "Baso",
+    "cat": "hemo",
+    "un": "%",
+    "ref": {
+      "M": [
+        0,
+        2
+      ],
+      "F": [
+        0,
+        2
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "plaq",
+    "nm": "Plaquetas",
+    "ab": "Plaq",
+    "cat": "hemo",
+    "un": "x10⁹/L",
+    "ref": {
+      "M": [
+        150,
+        410
+      ],
+      "F": [
+        150,
+        410
+      ]
+    },
+    "tm": "Hemograma",
+    "lo": "Trombocitopénia. Consumo (CIVD, PTT, SHU), sequestro (esplenomegália), produção↓ (medular), fármacos (HIT), pseudo por EDTA (repetir citrato). <50 risco hemorrágico, <20 espontânea.",
+    "hi": "Trombocitose. Reativa (infecção, inflamação, ferropénia) vs primária. >1000: mieloproliferativa.",
+    "tk": [
+      "LDH",
+      "Fibrinogénio",
+      "D-dímeros",
+      "INR"
+    ]
+  },
+  {
+    "id": "glic",
+    "nm": "Glicose",
+    "ab": "Glic",
+    "cat": "bioq",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        70,
+        99
+      ],
+      "F": [
+        70,
+        99
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "Hiperglicémia. >126 (jejum): diabetes. 100-125: pré-diabetes. Urgência: stress/corticóides. >250+cetonúria: cetoacidose. >600: hiperosmolar.",
+    "tk": [
+      "HbA1c",
+      "Na"
+    ]
+  },
+  {
+    "id": "hba1c",
+    "nm": "HbA1c",
+    "ab": "HbA1c",
+    "cat": "bioq",
+    "un": "%",
+    "ref": {
+      "M": [
+        4,
+        5.6
+      ],
+      "F": [
+        4,
+        5.6
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "prot",
+    "nm": "Proteínas totais",
+    "ab": "Prot",
+    "cat": "bioq",
+    "un": "g/dL",
+    "ref": {
+      "M": [
+        6.4,
+        8.3
+      ],
+      "F": [
+        6.4,
+        8.3
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "alb",
+    "nm": "Albumina",
+    "ab": "Alb",
+    "cat": "bioq",
+    "un": "g/dL",
+    "ref": {
+      "M": [
+        3.5,
+        5.2
+      ],
+      "F": [
+        3.5,
+        5.2
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Hipoalbuminémia. Doença crónica, desnutrição, nefrótica, hepática, inflamação. Reagente fase aguda negativo. Semi-vida ~20 dias. Corrigir cálcio.",
+    "hi": "Informação em breve.",
+    "tk": [
+      "Ca total",
+      "PCR",
+      "INR",
+      "Bilirrubina total"
+    ]
+  },
+  {
+    "id": "ldh",
+    "nm": "LDH",
+    "ab": "LDH",
+    "cat": "bioq",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        120,
+        246
+      ],
+      "F": [
+        120,
+        246
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "LDH elevada. Inespecífica: hemólise (com haptoglobina↓), enfarte, hepatite, pneumonia, neoplasia, megaloblástica.",
+    "tk": [
+      "Hb",
+      "Bilirrubina indireta"
+    ]
+  },
+  {
+    "id": "amil",
+    "nm": "Amilase",
+    "ab": "Amil",
+    "cat": "bioq",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        28,
+        100
+      ],
+      "F": [
+        28,
+        100
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "Amilase elevada. Pancreatite (menos específica que lipase). Também parotidite, macroamilasémia, IR. Confirmar com lipase.",
+    "tk": [
+      "Lipase"
+    ]
+  },
+  {
+    "id": "lipase",
+    "nm": "Lipase",
+    "ab": "Lip",
+    "cat": "bioq",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        13,
+        60
+      ],
+      "F": [
+        13,
+        60
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "Lipase elevada. Mais específica para pancreatite. >3x limite superior: muito sugestivo (critérios de Atlanta).",
+    "tk": [
+      "Amilase"
+    ]
+  },
+  {
+    "id": "ck",
+    "nm": "CK",
+    "ab": "CK",
+    "cat": "bioq",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        39,
+        308
+      ],
+      "F": [
+        26,
+        192
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "CK elevada. >5x: rabdomiólise — verificar função renal, K. Causas: trauma, imobilização, exercício, convulsões, estatinas, cocaína, hipotiroidismo. Hidratar.",
+    "tk": [
+      "Creatinina",
+      "K"
+    ]
+  },
+  {
+    "id": "trop",
+    "nm": "Troponina",
+    "ab": "Trop",
+    "cat": "bioq",
+    "un": "ng/mL",
+    "ref": {
+      "M": [
+        0,
+        0.04
+      ],
+      "F": [
+        0,
+        0.04
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "Troponina elevada. Lesão miocárdica: SCA, IC aguda, miocardite, TEP, sépsis, IR. hs-Trop: valores ligeiramente acima podem ser crónicos (IC, IRC). Valorizar curva (>20% em 3-6h).",
+    "tk": [
+      "CK",
+      "BNP"
+    ]
+  },
+  {
+    "id": "bnp",
+    "nm": "BNP",
+    "ab": "BNP",
+    "cat": "bioq",
+    "un": "pg/mL",
+    "ref": {
+      "M": [
+        0,
+        100
+      ],
+      "F": [
+        0,
+        100
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "BNP >100: sugestivo IC. 100-400 zona cinzenta. >400 muito provável. Sobe com idade, FA, IR, sépsis. Obesidade: falsamente baixo.",
+    "tk": [
+      "Troponina",
+      "Creatinina"
+    ]
+  },
+  {
+    "id": "ntprobnp",
+    "nm": "NT-proBNP",
+    "ab": "NT-proBNP",
+    "cat": "bioq",
+    "un": "pg/mL",
+    "ref": {
+      "M": [
+        0,
+        300
+      ],
+      "F": [
+        0,
+        300
+      ]
+    },
+    "tm": "Bioquímica",
+    "lo": "Informação em breve.",
+    "hi": "NT-proBNP >300: exclui IC se normal. Ajustar à idade: <50a >450, 50-75a >900, >75a >1800. Mais afetado por IR.",
+    "tk": [
+      "BNP",
+      "Troponina"
+    ]
+  },
+  {
+    "id": "creat",
+    "nm": "Creatinina",
+    "ab": "Creat",
+    "cat": "renal",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0.7,
+        1.3
+      ],
+      "F": [
+        0.6,
+        1.1
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Lesão renal. Pré-renal (Ureia/Creat >40 mg/dL), renal (FENa >2%; FENa <1% em GN/NIA; diuréticos→FEUreia), pós-renal (eco). Calcular ClCr.",
+    "tk": [
+      "Ureia",
+      "Na urinário",
+      "K"
+    ]
+  },
+  {
+    "id": "ureia",
+    "nm": "Ureia",
+    "ab": "Ureia",
+    "cat": "renal",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        17,
+        43
+      ],
+      "F": [
+        17,
+        43
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Isolada (creat normal): hemorragia GI, catabolismo, desidratação. Com creat↑: IR. Ureia/Creat >40: pré-renal.",
+    "tk": [
+      "Creatinina"
+    ]
+  },
+  {
+    "id": "aurico",
+    "nm": "Ácido úrico",
+    "ab": "AcUr",
+    "cat": "renal",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        3.4,
+        7
+      ],
+      "F": [
+        2.4,
+        5.7
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "cistc",
+    "nm": "Cistatina C",
+    "ab": "CysC",
+    "cat": "renal",
+    "un": "mg/L",
+    "ref": {
+      "M": [
+        0.56,
+        0.98
+      ],
+      "F": [
+        0.56,
+        0.98
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "naurin",
+    "nm": "Na urinário",
+    "ab": "Na ur",
+    "cat": "renal",
+    "un": "mmol/L",
+    "ref": {
+      "M": [
+        40,
+        220
+      ],
+      "F": [
+        40,
+        220
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "creatuir",
+    "nm": "Creat urinária",
+    "ab": "Creat ur",
+    "cat": "renal",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        20,
+        300
+      ],
+      "F": [
+        20,
+        300
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "osmurin",
+    "nm": "Osm urinária",
+    "ab": "Osm ur",
+    "cat": "renal",
+    "un": "mOsm/kg",
+    "ref": {
+      "M": [
+        300,
+        900
+      ],
+      "F": [
+        300,
+        900
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "proturin",
+    "nm": "Prot urinárias",
+    "ab": "Prot ur",
+    "cat": "renal",
+    "un": "mg/24h",
+    "ref": {
+      "M": [
+        0,
+        150
+      ],
+      "F": [
+        0,
+        150
+      ]
+    },
+    "tm": "Função renal",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "ast",
+    "nm": "AST (TGO)",
+    "ab": "AST",
+    "cat": "hepa",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        0,
+        40
+      ],
+      "F": [
+        0,
+        40
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "AST isolada: menos específica do fígado (músculo, coração, eritrócitos). Se ALT normal: CK, troponina. Se AST+ALT↑: citólise — ratio >2 alcoólica, >1000 aguda.",
+    "tk": [
+      "ALT",
+      "CK",
+      "Troponina",
+      "LDH"
+    ]
+  },
+  {
+    "id": "alt",
+    "nm": "ALT (TGP)",
+    "ab": "ALT",
+    "cat": "hepa",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        0,
+        41
+      ],
+      "F": [
+        0,
+        33
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "ALT mais específica do fígado. Isolada: fármacos (paracetamol, estatinas), esteatose, hepatite crónica. Com AST: ratio AST/ALT >2 alcoólica, <1 outras. >1000: aguda.",
+    "tk": [
+      "AST",
+      "GGT",
+      "FA",
+      "Bilirrubina total"
+    ]
+  },
+  {
+    "id": "ggt",
+    "nm": "GGT",
+    "ab": "GGT",
+    "cat": "hepa",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        0,
+        60
+      ],
+      "F": [
+        0,
+        40
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "GGT: colestase ou indução (álcool, fármacos). Isolada sem FA: álcool/fármacos. Com FA↑: colestase.",
+    "tk": [
+      "FA",
+      "AST",
+      "ALT",
+      "Bilirrubina direta"
+    ]
+  },
+  {
+    "id": "fa",
+    "nm": "Fosfatase alcalina",
+    "ab": "FA",
+    "cat": "hepa",
+    "un": "U/L",
+    "ref": {
+      "M": [
+        40,
+        130
+      ],
+      "F": [
+        40,
+        130
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "FA com GGT↑: hepática (colestase). Sem GGT: óssea (Paget, metástases, hiperparatiroidismo).",
+    "tk": [
+      "GGT",
+      "Bilirrubina direta"
+    ]
+  },
+  {
+    "id": "biltot",
+    "nm": "Bilirrubina total",
+    "ab": "BilT",
+    "cat": "hepa",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0.3,
+        1.2
+      ],
+      "F": [
+        0.3,
+        1.2
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "Icterícia >2-3. Distinguir direta vs indireta. Indireta: hemólise ou Gilbert (5-10% população, benigno). Direta: colestase/hepatopatia.",
+    "tk": [
+      "Bilirrubina direta",
+      "Bilirrubina indireta",
+      "LDH"
+    ]
+  },
+  {
+    "id": "bildir",
+    "nm": "Bilirrubina direta",
+    "ab": "BilD",
+    "cat": "hepa",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0,
+        0.3
+      ],
+      "F": [
+        0,
+        0.3
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "Colestase. Intra-hepática (fármacos, sépsis, CBP) ou extra (litíase, neoplasia). Eco vias biliares.",
+    "tk": [
+      "FA",
+      "GGT",
+      "Bilirrubina total"
+    ]
+  },
+  {
+    "id": "bilind",
+    "nm": "Bilirrubina indireta",
+    "ab": "BilI",
+    "cat": "hepa",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0.1,
+        0.9
+      ],
+      "F": [
+        0.1,
+        0.9
+      ]
+    },
+    "tm": "Hepática",
+    "lo": "Informação em breve.",
+    "hi": "Hemólise (verificar LDH, haptoglobina) ou Gilbert (benigno, restante normal). Se ligeiramente elevada com tudo normal em jovem: Gilbert.",
+    "tk": [
+      "LDH",
+      "Hb"
+    ]
+  },
+  {
+    "id": "tsh",
+    "nm": "TSH",
+    "ab": "TSH",
+    "cat": "tiro",
+    "un": "µUI/mL",
+    "ref": {
+      "M": [
+        0.4,
+        4
+      ],
+      "F": [
+        0.4,
+        4
+      ]
+    },
+    "tm": "Tiróide",
+    "lo": "TSH↓: hipertiroidismo (se T4L/T3L↑) ou subclínico. Graves, nódulo tóxico, tiroidite, excesso levotiroxina. Sick euthyroid.",
+    "hi": "TSH↑: hipotiroidismo (se T4L↓) ou subclínico. Hashimoto, pós-tiroidectomia, amiodarona, lítio.",
+    "tk": [
+      "T4 livre",
+      "T3 livre"
+    ]
+  },
+  {
+    "id": "t4l",
+    "nm": "T4 livre",
+    "ab": "T4L",
+    "cat": "tiro",
+    "un": "ng/dL",
+    "ref": {
+      "M": [
+        0.8,
+        1.8
+      ],
+      "F": [
+        0.8,
+        1.8
+      ]
+    },
+    "tm": "Tiróide",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "t3l",
+    "nm": "T3 livre",
+    "ab": "T3L",
+    "cat": "tiro",
+    "un": "pg/mL",
+    "ref": {
+      "M": [
+        2.3,
+        4.2
+      ],
+      "F": [
+        2.3,
+        4.2
+      ]
+    },
+    "tm": "Tiróide",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "atpo",
+    "nm": "Anti-TPO",
+    "ab": "Anti-TPO",
+    "cat": "tiro",
+    "un": "UI/mL",
+    "ref": {
+      "M": [
+        0,
+        35
+      ],
+      "F": [
+        0,
+        35
+      ]
+    },
+    "tm": "Tiróide",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "atg",
+    "nm": "Anti-tiroglobulina",
+    "ab": "Anti-TG",
+    "cat": "tiro",
+    "un": "UI/mL",
+    "ref": {
+      "M": [
+        0,
+        40
+      ],
+      "F": [
+        0,
+        40
+      ]
+    },
+    "tm": "Tiróide",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "na",
+    "nm": "Sódio",
+    "ab": "Na",
+    "cat": "elec",
+    "un": "mmol/L",
+    "ref": {
+      "M": [
+        135,
+        145
+      ],
+      "F": [
+        135,
+        145
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Hiponatrémia. Classificar por osmolaridade e volémia. Verificar glicose (Na corrigido), Na urinário. <125: risco neurológico — corrigir 8-10 mmol/24h. Excluir pseudohiponatrémia.",
+    "hi": "Hipernatrémia. Défice água livre. Verificar hidratação, diabetes insípidus. >155: crítico.",
+    "tk": [
+      "Glicose",
+      "K",
+      "Na urinário"
+    ]
+  },
+  {
+    "id": "k",
+    "nm": "Potássio",
+    "ab": "K",
+    "cat": "elec",
+    "un": "mmol/L",
+    "ref": {
+      "M": [
+        3.5,
+        5.1
+      ],
+      "F": [
+        3.5,
+        5.1
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Hipocaliémia. Perdas (vómitos, diarreia, diuréticos), shift (alcalose, insulina). <3: crítico, arritmia. Verificar Mg. ECG.",
+    "hi": "Hipercaliémia. IR, fármacos (IECA/ARA/espironolactona/AINEs), acidose, rabdomiólise. >6: crítico — ECG urgente. Excluir pseudo (torniquete, hemólise).",
+    "tk": [
+      "Mg",
+      "Creatinina"
+    ]
+  },
+  {
+    "id": "cl",
+    "nm": "Cloro",
+    "ab": "Cl",
+    "cat": "elec",
+    "un": "mmol/L",
+    "ref": {
+      "M": [
+        98,
+        107
+      ],
+      "F": [
+        98,
+        107
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "catot",
+    "nm": "Cálcio total",
+    "ab": "Ca",
+    "cat": "elec",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        8.5,
+        10.5
+      ],
+      "F": [
+        8.5,
+        10.5
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Hipocalcémia. Verificar albumina. Se Ca corrigido baixo: hipoparatir, vit D↓, pancreatite, hipoMg.",
+    "hi": "Hipercalcémia. Hiperparatir primário ou neoplasia. PTH. Corrigir para albumina: Ca + 0.8×(4-Alb).",
+    "tk": [
+      "Albumina",
+      "Mg",
+      "Fósforo",
+      "Vitamina D"
+    ]
+  },
+  {
+    "id": "caion",
+    "nm": "Cálcio ionizado",
+    "ab": "Ca²⁺",
+    "cat": "elec",
+    "un": "mmol/L",
+    "ref": {
+      "M": [
+        1.12,
+        1.32
+      ],
+      "F": [
+        1.12,
+        1.32
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "mg",
+    "nm": "Magnésio",
+    "ab": "Mg",
+    "cat": "elec",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        1.7,
+        2.2
+      ],
+      "F": [
+        1.7,
+        2.2
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "p",
+    "nm": "Fósforo",
+    "ab": "P",
+    "cat": "elec",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        2.5,
+        4.5
+      ],
+      "F": [
+        2.5,
+        4.5
+      ]
+    },
+    "tm": "Electrólitos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "pcr",
+    "nm": "PCR",
+    "ab": "PCR",
+    "cat": "infl",
+    "un": "mg/L",
+    "ref": {
+      "M": [
+        0,
+        5
+      ],
+      "F": [
+        0,
+        5
+      ]
+    },
+    "tm": "Inflamação",
+    "lo": "Informação em breve.",
+    "hi": "PCR↑: inespecífica. Com PCT↑: bacteriana. >100: bacteriana grave/necrose/vasculite. 10-50: viral, inflamação, pós-op.",
+    "tk": [
+      "Procalcitonina",
+      "Leucócitos",
+      "Lactato"
+    ]
+  },
+  {
+    "id": "pct",
+    "nm": "Procalcitonina",
+    "ab": "PCT",
+    "cat": "infl",
+    "un": "ng/mL",
+    "ref": {
+      "M": [
+        0,
+        0.25
+      ],
+      "F": [
+        0,
+        0.25
+      ]
+    },
+    "tm": "Inflamação",
+    "lo": "Informação em breve.",
+    "hi": "PCT: <0.25 bacteriana pouco provável. 0.25-0.5 possível. >0.5 provável. >2 muito provável/sépsis. Guiar antibioterapia.",
+    "tk": [
+      "PCR",
+      "Leucócitos",
+      "Lactato"
+    ]
+  },
+  {
+    "id": "vs",
+    "nm": "VS",
+    "ab": "VS",
+    "cat": "infl",
+    "un": "mm/h",
+    "ref": {
+      "M": [
+        0,
+        15
+      ],
+      "F": [
+        0,
+        20
+      ]
+    },
+    "tm": "Inflamação",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "ferr",
+    "nm": "Ferritina",
+    "ab": "Ferr",
+    "cat": "infl",
+    "un": "ng/mL",
+    "ref": {
+      "M": [
+        30,
+        400
+      ],
+      "F": [
+        13,
+        150
+      ]
+    },
+    "tm": "Inflamação",
+    "lo": "Ferritina <30: défice ferro confirmado. Reagente fase aguda — pode mascarar ferropénia com inflamação.",
+    "hi": "Reagente fase aguda. >500: causa secundária. >10000: síndrome hemofagocítico (triglicéridos, fibr↓, citopénias). Sat. transferrina para hemocromatose.",
+    "tk": [
+      "Ferro sérico",
+      "Transferrina",
+      "PCR",
+      "Hb"
+    ]
+  },
+  {
+    "id": "il6",
+    "nm": "IL-6",
+    "ab": "IL-6",
+    "cat": "infl",
+    "un": "pg/mL",
+    "ref": {
+      "M": [
+        0,
+        7
+      ],
+      "F": [
+        0,
+        7
+      ]
+    },
+    "tm": "Inflamação",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "inr",
+    "nm": "INR",
+    "ab": "INR",
+    "cat": "coag",
+    "un": "",
+    "ref": {
+      "M": [
+        0.8,
+        1.2
+      ],
+      "F": [
+        0.8,
+        1.2
+      ]
+    },
+    "tm": "Coagulação",
+    "lo": "Informação em breve.",
+    "hi": "Se varfarina: ajustar. Se não: hepatopatia (albumina, bili), CIVD (fibr, D-dim, plaq), défice vit K. >3 sem anticoag: coagulopatia significativa.",
+    "tk": [
+      "aPTT",
+      "Fibrinogénio",
+      "D-dímeros",
+      "Plaquetas",
+      "Albumina"
+    ]
+  },
+  {
+    "id": "tp",
+    "nm": "TP",
+    "ab": "TP",
+    "cat": "coag",
+    "un": "seg",
+    "ref": {
+      "M": [
+        11,
+        13.5
+      ],
+      "F": [
+        11,
+        13.5
+      ]
+    },
+    "tm": "Coagulação",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "aptt",
+    "nm": "aPTT",
+    "ab": "aPTT",
+    "cat": "coag",
+    "un": "seg",
+    "ref": {
+      "M": [
+        25,
+        35
+      ],
+      "F": [
+        25,
+        35
+      ]
+    },
+    "tm": "Coagulação",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "fibr",
+    "nm": "Fibrinogénio",
+    "ab": "Fibr",
+    "cat": "coag",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        200,
+        400
+      ],
+      "F": [
+        200,
+        400
+      ]
+    },
+    "tm": "Coagulação",
+    "lo": "Fibr↓: CIVD, hepatopatia grave, hiperfibrinólise. Com D-dim↑+Plaq↓+INR↑: CIVD (score ISTH). <100: risco hemorrágico grave.",
+    "hi": "Informação em breve.",
+    "tk": [
+      "D-dímeros",
+      "Plaquetas",
+      "INR",
+      "aPTT"
+    ]
+  },
+  {
+    "id": "ddim",
+    "nm": "D-dímeros",
+    "ab": "D-Dim",
+    "cat": "coag",
+    "un": "µg/mL",
+    "ref": {
+      "M": [
+        0,
+        0.5
+      ],
+      "F": [
+        0,
+        0.5
+      ]
+    },
+    "tm": "Coagulação",
+    "lo": "Informação em breve.",
+    "hi": "Inespecífico. Útil para excluir TEP/TVP se baixo. >50 anos: corte ajustado (idade×10 µg/L). Sobe em infecção, cirurgia, neoplasia, CIVD.",
+    "tk": [
+      "Fibrinogénio",
+      "INR",
+      "Plaquetas"
+    ]
+  },
+  {
+    "id": "pdf",
+    "nm": "PDF",
+    "ab": "PDF",
+    "cat": "coag",
+    "un": "µg/mL",
+    "ref": {
+      "M": [
+        0,
+        5
+      ],
+      "F": [
+        0,
+        5
+      ]
+    },
+    "tm": "Coagulação",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "vitd",
+    "nm": "Vitamina D (25-OH)",
+    "ab": "VitD",
+    "cat": "vita",
+    "un": "ng/mL",
+    "ref": {
+      "M": [
+        30,
+        100
+      ],
+      "F": [
+        30,
+        100
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "<20: défice. 20-30: insuficiência. Muito prevalente em PT. Suplementar. Verificar Ca, P, PTH.",
+    "hi": "Informação em breve.",
+    "tk": [
+      "Ca total",
+      "Fósforo"
+    ]
+  },
+  {
+    "id": "b12",
+    "nm": "Vitamina B12",
+    "ab": "B12",
+    "cat": "vita",
+    "un": "pg/mL",
+    "ref": {
+      "M": [
+        200,
+        900
+      ],
+      "F": [
+        200,
+        900
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "B12↓: anemia megaloblástica (VGM↑). Dieta (veganos), má absorção, metformina, perniciosa. Verificar folato.",
+    "hi": "Informação em breve.",
+    "tk": [
+      "VGM",
+      "Ácido fólico",
+      "Hb"
+    ]
+  },
+  {
+    "id": "folato",
+    "nm": "Ácido fólico",
+    "ab": "Folato",
+    "cat": "vita",
+    "un": "ng/mL",
+    "ref": {
+      "M": [
+        4,
+        20
+      ],
+      "F": [
+        4,
+        20
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "fe",
+    "nm": "Ferro sérico",
+    "ab": "Fe",
+    "cat": "vita",
+    "un": "µg/dL",
+    "ref": {
+      "M": [
+        60,
+        170
+      ],
+      "F": [
+        60,
+        170
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "Confirmar ferropénia com ferritina↓ e TIBC↑. Se ferritina normal/↑ com ferro↓: bloqueio inflamatório (doença crónica).",
+    "hi": "Informação em breve.",
+    "tk": [
+      "Ferritina",
+      "Transferrina",
+      "TIBC",
+      "Hb",
+      "VGM"
+    ]
+  },
+  {
+    "id": "transf",
+    "nm": "Transferrina",
+    "ab": "Transf",
+    "cat": "vita",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        200,
+        360
+      ],
+      "F": [
+        200,
+        360
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "sattransf",
+    "nm": "Sat. transferrina",
+    "ab": "SatT",
+    "cat": "vita",
+    "un": "%",
+    "ref": {
+      "M": [
+        20,
+        50
+      ],
+      "F": [
+        20,
+        50
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "tibc",
+    "nm": "TIBC",
+    "ab": "TIBC",
+    "cat": "vita",
+    "un": "µg/dL",
+    "ref": {
+      "M": [
+        250,
+        370
+      ],
+      "F": [
+        250,
+        370
+      ]
+    },
+    "tm": "Vitaminas",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "coltot",
+    "nm": "Colesterol total",
+    "ab": "ColT",
+    "cat": "lipi",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0,
+        190
+      ],
+      "F": [
+        0,
+        190
+      ]
+    },
+    "tm": "Lípidos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "ldlc",
+    "nm": "Colesterol LDL",
+    "ab": "LDL",
+    "cat": "lipi",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0,
+        115
+      ],
+      "F": [
+        0,
+        115
+      ]
+    },
+    "tm": "Lípidos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "hdlc",
+    "nm": "Colesterol HDL",
+    "ab": "HDL",
+    "cat": "lipi",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        40,
+        100
+      ],
+      "F": [
+        45,
+        100
+      ]
+    },
+    "tm": "Lípidos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "trig",
+    "nm": "Triglicéridos",
+    "ab": "TG",
+    "cat": "lipi",
+    "un": "mg/dL",
+    "ref": {
+      "M": [
+        0,
+        150
+      ],
+      "F": [
+        0,
+        150
+      ]
+    },
+    "tm": "Lípidos",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "upH",
+    "nm": "pH urinário",
+    "ab": "pH ur",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        5,
+        8
+      ],
+      "F": [
+        5,
+        8
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "udens",
+    "nm": "Densidade urinária",
+    "ab": "Dens",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        1.005,
+        1.03
+      ],
+      "F": [
+        1.005,
+        1.03
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "uprot",
+    "nm": "Proteínas (fita)",
+    "ab": "Prot fita",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "uglic",
+    "nm": "Glicose (fita)",
+    "ab": "Glic fita",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "usang",
+    "nm": "Sangue/Hb (fita)",
+    "ab": "Sang fita",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "uleuc",
+    "nm": "Leucócitos (fita)",
+    "ab": "Leuc fita",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "unitr",
+    "nm": "Nitritos",
+    "ab": "Nitr",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "ucet",
+    "nm": "Corpos cetónicos",
+    "ab": "Cet",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "ubil",
+    "nm": "Bilirrubina urinária",
+    "ab": "Bil ur",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        0
+      ],
+      "F": [
+        0,
+        0
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  },
+  {
+    "id": "uubil",
+    "nm": "Urobilinogénio",
+    "ab": "Urobil",
+    "cat": "urin",
+    "un": "",
+    "ref": {
+      "M": [
+        0,
+        1
+      ],
+      "F": [
+        0,
+        1
+      ]
+    },
+    "tm": "Urina",
+    "lo": "Informação em breve.",
+    "hi": "Informação em breve.",
+    "tk": []
+  }
+]

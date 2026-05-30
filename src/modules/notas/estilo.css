@@ -1,0 +1,31 @@
+/* Notas clínicas — usa os tokens partilhados */
+
+.nt-aviso {
+  background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412;
+  border-radius: var(--raio-md); padding: 11px 13px; font-size: 12px; line-height: 1.55; margin-bottom: 14px;
+}
+.dark .nt-aviso { background: rgba(154,52,18,.18); border-color: rgba(254,215,170,.25); color: #fdba74; }
+
+.nt-iniciais { width: 40px; height: 40px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0; letter-spacing: .02em; }
+.nt-esp { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-top: 3px; }
+
+.nt-btn { padding: 6px 12px; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie-2); color: var(--suave); font-family: var(--fonte-corpo); font-size: 11.5px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.nt-btn--danger { background: #fef2f2; border-color: #fecaca; color: #b91c1c; }
+.dark .nt-btn--danger { background: rgba(185,28,28,.15); border-color: rgba(254,202,202,.2); color: #fca5a5; }
+
+.nt-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--borda); margin-bottom: 12px; overflow-x: auto; }
+.nt-tab { padding: 9px 12px; border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; font-family: var(--fonte-corpo); font-size: 13px; font-weight: 600; color: var(--suave); white-space: nowrap; }
+.nt-tab.on { font-weight: 700; }
+
+.nt-nova { width: 100%; padding: 10px; border: none; border-radius: var(--raio-md); color: #fff; font-family: var(--fonte-corpo); font-size: 13.5px; font-weight: 700; cursor: pointer; margin-bottom: 12px; }
+.nt-nova:disabled { opacity: .5; cursor: not-allowed; }
+
+.nt-prio { padding: 6px 12px; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie); color: var(--suave); font-family: var(--fonte-corpo); font-size: 12px; font-weight: 600; cursor: pointer; }
+.nt-prio.on { font-weight: 700; }
+
+.nt-textarea {
+  width: 100%; border: 1px solid var(--borda); border-radius: 8px; padding: 10px 12px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; line-height: 1.55;
+  color: var(--texto); background: var(--superficie); resize: vertical; box-sizing: border-box; outline: none;
+}
+.nt-textarea:focus { border-color: var(--acento); }

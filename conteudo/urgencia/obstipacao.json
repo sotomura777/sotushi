@@ -1,0 +1,441 @@
+{
+ "steps": [
+  {
+   "id": "confirm",
+   "label": "Confirmar",
+   "type": "single",
+   "title": "Confirmar obstipação",
+   "sub": "Antes de avançar, confirmar que estamos perante obstipação clínica.",
+   "opts": [
+    {
+     "val": "sim",
+     "t": "Sim, confirmo obstipação",
+     "d": "Menos de 3 dejeções espontâneas por semana, ou 2+ critérios Roma IV presentes."
+    },
+    {
+     "val": "nao",
+     "t": "Não tenho a certeza",
+     "d": "Ver critérios de definição antes de continuar."
+    }
+   ],
+   "extra_roma": true
+  },
+  {
+   "id": "tipo",
+   "label": "Tipo",
+   "type": "single",
+   "title": "Como se apresentam as queixas?",
+   "sub": "Esta distinção orienta logo a abordagem e o grau de urgência.",
+   "opts": [
+    {
+     "val": "novo",
+     "t": "Queixas de novo início recente",
+     "d": "Obstipação que apareceu recentemente, sem história anterior."
+    },
+    {
+     "val": "agravamento",
+     "t": "Queixas antigas com agravamento súbito",
+     "d": "Tinha obstipação conhecida mas agravou de forma marcada e recente."
+    },
+    {
+     "val": "cronica",
+     "t": "Queixas já há muito tempo, estáveis",
+     "d": "Obstipação persistente há bastante tempo, sem agravamento súbito recente."
+    }
+   ]
+  },
+  {
+   "id": "alarme",
+   "label": "Sinais alarme",
+   "type": "multi",
+   "title": "Sinais de alarme",
+   "sub": "Marca todos os que estão presentes. Vermelho = urgência.",
+   "opts_aguda": [
+    {
+     "val": "paragem_gases",
+     "t": "Paragem de gases e fezes",
+     "d": "Para completamente · nem gases nem fezes",
+     "flagged": true
+    },
+    {
+     "val": "distensao",
+     "t": "Distensão abdominal progressiva",
+     "d": "Abdómen visivelmente distendido, timpanismo",
+     "flagged": true
+    },
+    {
+     "val": "vomitos",
+     "t": "Vómitos",
+     "d": "Alimentares, biliosos ou fecaloides",
+     "flagged": true
+    },
+    {
+     "val": "rectorragi_ag",
+     "t": "Rectorragia abundante aguda",
+     "d": "Hematoquézia em volume significativo ou com instabilidade",
+     "flagged": true
+    },
+    {
+     "val": "febre_dor",
+     "t": "Febre com dor abdominal localizada",
+     "d": "Febre + dor localizada com resistência muscular",
+     "flagged": true
+    },
+    {
+     "val": "nenhum_al",
+     "t": "Nenhum sinal de alarme",
+     "d": "",
+     "none": true
+    }
+   ],
+   "opts_cronica": [
+    {
+     "val": "massa",
+     "t": "Massa abdominal ou rectal palpável",
+     "d": "Massa identificada ao exame físico",
+     "flagged": true
+    },
+    {
+     "val": "rectorragi_cr",
+     "t": "Rectorragia",
+     "d": "Qualquer sangramento rectal, independentemente do volume",
+     "flagged": true
+    },
+    {
+     "val": "perda_peso",
+     "t": "Perda de peso involuntária",
+     "d": "Perda de peso sem dieta intencional",
+     "flagged": true
+    },
+    {
+     "val": "anemia",
+     "t": "Anemia ferropénica",
+     "d": "Identificada em analítica",
+     "flagged": true
+    },
+    {
+     "val": "alt_transito",
+     "t": "Alteração recente e súbita do trânsito",
+     "d": "Mudança marcada no padrão intestinal sem causa explicável",
+     "flagged": true
+    },
+    {
+     "val": "idade50",
+     "t": "Início após os 50 anos sem rastreio",
+     "d": "Sem colonoscopia prévia de rastreio",
+     "flagged": true
+    },
+    {
+     "val": "hx_familiar",
+     "t": "História familiar de CCR ou DII",
+     "d": "Familiar de 1º grau com cancro colorretal ou DII",
+     "flagged": true
+    },
+    {
+     "val": "nenhum_al",
+     "t": "Nenhum sinal de alarme",
+     "d": "",
+     "none": true
+    }
+   ]
+  },
+  {
+   "id": "sx",
+   "label": "Sintomas",
+   "type": "multi",
+   "title": "Sintomas associados",
+   "sub": "Marca todos os presentes.",
+   "opts": [
+    {
+     "val": "distensao_sx",
+     "t": "Distensão abdominal",
+     "d": "Sensação de abdómen cheio, timpanismo"
+    },
+    {
+     "val": "dor_abd",
+     "t": "Dor abdominal",
+     "d": "Cólicas ou dor difusa"
+    },
+    {
+     "val": "nauseas",
+     "t": "Náuseas",
+     "d": "Com ou sem vómitos"
+    },
+    {
+     "val": "alternancia",
+     "t": "Alternância com diarreia",
+     "d": "Períodos de diarreia intercalados"
+    },
+    {
+     "val": "esforco",
+     "t": "Esforço evacuatório marcado",
+     "d": "Necessidade de grande esforço para defecar"
+    },
+    {
+     "val": "incompl",
+     "t": "Sensação de evacuação incompleta",
+     "d": "Sensação de que não esvaziou completamente"
+    },
+    {
+     "val": "manobras",
+     "t": "Manobras manuais",
+     "d": "Necessidade de pressão perineal, vaginal ou digital"
+    },
+    {
+     "val": "nenhum_sx",
+     "t": "Nenhum sintoma associado",
+     "d": "",
+     "none": true
+    }
+   ]
+  },
+  {
+   "id": "meds",
+   "label": "Medicação",
+   "type": "multi",
+   "title": "Medicação habitual relevante",
+   "sub": "Marca todos os fármacos que o doente toma que podem causar obstipação.",
+   "type_special": "meds_search"
+  },
+  {
+   "id": "ap_rel",
+   "label": "Antecedentes",
+   "type": "multi",
+   "title": "Antecedentes pessoais relevantes",
+   "sub": "Condições que podem influenciar a causa ou o tratamento.",
+   "opts": [
+    {
+     "val": "hipotir",
+     "t": "Hipotiroidismo",
+     "d": ""
+    },
+    {
+     "val": "dm",
+     "t": "Diabetes mellitus",
+     "d": "Neuropatia autonómica"
+    },
+    {
+     "val": "drc",
+     "t": "Doença renal crónica",
+     "d": "Uremia afeta a motilidade"
+    },
+    {
+     "val": "parkinson",
+     "t": "Doença de Parkinson",
+     "d": "Disfunção autonómica"
+    },
+    {
+     "val": "em",
+     "t": "Esclerose múltipla",
+     "d": "Desmielinização das vias autonómicas"
+    },
+    {
+     "val": "dep",
+     "t": "Depressão / ansiedade",
+     "d": "Per se e pela medicação"
+    },
+    {
+     "val": "neoplasia",
+     "t": "Neoplasia conhecida",
+     "d": "Ativa ou em tratamento",
+     "flagged": true
+    },
+    {
+     "val": "cir_abd",
+     "t": "Cirurgia abdominal prévia",
+     "d": "Aderências, alterações anatómicas"
+    },
+    {
+     "val": "nenhum_ap",
+     "t": "Nenhum relevante",
+     "d": "",
+     "none": true
+    }
+   ]
+  },
+  {
+   "id": "outros_ap",
+   "label": "Outros AP",
+   "type": "special_ant",
+   "title": "Outros antecedentes",
+   "sub": "Para completar a nota clínica. Não influencia a decisão clínica."
+  },
+  {
+   "id": "eo",
+   "label": "EO",
+   "type": "multi",
+   "title": "Exame objetivo · O que está alterado?",
+   "sub": "Marca o que encontraste alterado. O que não marcares assume-se normal.",
+   "opts": [
+    {
+     "val": "distensao_eo",
+     "t": "Distensão / timpanismo",
+     "d": "Abdómen distendido, timpânico"
+    },
+    {
+     "val": "defesa",
+     "t": "Defesa / peritonismo",
+     "d": "Dor à descompressão, rigidez involuntária",
+     "flagged": true
+    },
+    {
+     "val": "massa_eo",
+     "t": "Massa abdominal ou rectal palpável",
+     "d": "",
+     "flagged": true
+    },
+    {
+     "val": "dor_palp",
+     "t": "Dor à palpação abdominal",
+     "d": "Sem defesa ou peritonismo"
+    },
+    {
+     "val": "ri_alt",
+     "t": "Ruídos intestinais alterados",
+     "d": "Aumentados (metálicos) ou diminuídos/abolidos"
+    },
+    {
+     "val": "toque_alt",
+     "t": "Toque rectal alterado",
+     "d": "Impactação, massa, fissura, tonus alterado",
+     "flagged": true
+    },
+    {
+     "val": "normal_eo",
+     "t": "Exame objetivo normal",
+     "d": "",
+     "none": true
+    }
+   ]
+  }
+ ],
+ "antecedentes": [
+  "HTA",
+  "DM1",
+  "DM2",
+  "ICC",
+  "FA",
+  "AVC",
+  "EAM",
+  "DPOC",
+  "DRC",
+  "Asma",
+  "Hipotiroidismo",
+  "Hipertiroidismo",
+  "Dislipidemia",
+  "Obesidade",
+  "Depressão",
+  "Ansiedade",
+  "Doença de Parkinson",
+  "Esclerose múltipla",
+  "Epilepsia",
+  "Fibromialgia",
+  "Artrite reumatoide",
+  "Lúpus eritematoso sistémico",
+  "Doença inflamatória intestinal",
+  "Doença de Crohn",
+  "Colite ulcerosa",
+  "Síndrome do intestino irritável",
+  "Cirrose hepática",
+  "Hepatite crónica",
+  "Insuficiência hepática",
+  "Neoplasia colorretal",
+  "Neoplasia da mama",
+  "Neoplasia do pulmão",
+  "Neoplasia da próstata",
+  "Neoplasia do colo do útero",
+  "Neoplasia gástrica",
+  "Hematologia",
+  "Anemia ferropénica",
+  "Anemia perniciosa",
+  "TVP",
+  "TEP",
+  "Doença arterial periférica",
+  "Insuficiência venosa crónica",
+  "Osteoporose",
+  "Osteoartrose",
+  "Espondilite anquilosante",
+  "Gota",
+  "Psoriase",
+  "Dermatite atópica",
+  "Urticária crónica",
+  "Hipocaliemia",
+  "Hipercalcemia",
+  "Hiperparatiroidismo",
+  "Insuficiência suprarrenal",
+  "Síndrome de Cushing",
+  "Acromegalia",
+  "Hiperprolactinemia",
+  "Doença celíaca",
+  "Intolerância à lactose",
+  "Alergias alimentares",
+  "Apneia obstrutiva do sono",
+  "Insónia crónica",
+  "Esquizofrenia",
+  "Perturbação bipolar",
+  "TOC",
+  "PTSD",
+  "Demência",
+  "Alzheimer",
+  "AVC isquémico",
+  "AVC hemorrágico",
+  "Colecistite",
+  "Colelitíase",
+  "Pancreatite crónica",
+  "Refluxo gastroesofágico",
+  "Hérnia do hiato",
+  "Úlcera péptica",
+  "Insuficiência renal aguda",
+  "Pielonefrite crónica",
+  "Litíase renal",
+  "Hiperplasia benigna da próstata",
+  "Incontinência urinária",
+  "Endometriose",
+  "Síndrome dos ovários poliquísticos",
+  "Miomas uterinos",
+  "Laparotomia prévia",
+  "Apendicectomia",
+  "Colecistectomia",
+  "Histerectomia",
+  "Artroplastia do joelho",
+  "Artroplastia da anca",
+  "Cirurgia colorretal",
+  "Alcoolismo",
+  "Tabagismo",
+  "Uso de drogas ilícitas",
+  "VIH/SIDA",
+  "Tuberculose",
+  "Hepatite B",
+  "Hepatite C",
+  "Artrite psoriática",
+  "Vasculite",
+  "Amiloidose",
+  "Sarcoidose",
+  "Síndrome de Sjögren",
+  "Esclerose sistémica",
+  "Dermatomiosite",
+  "Hiponatremia",
+  "Hiperpotassemia",
+  "Hipopotassemia",
+  "Hipermagnesemia"
+ ],
+ "meds": [
+  "Opioides (morfina, oxicodona, tramadol, codeína)",
+  "Ferro (sulfato ferroso, fumarato ferroso)",
+  "Antidepressivos tricíclicos (amitriptilina, imipramina)",
+  "Anticolinérgicos / antiespasmódicos (hioscina, mebeverina)",
+  "Bloqueadores dos canais de cálcio (verapamilo, diltiazem)",
+  "Antipsicóticos (clozapina, olanzapina, quetiapina)",
+  "Anti-histamínicos (difenidramina, hidroxizina)",
+  "Antiepiléticos (carbamazepina, gabapentina, pregabalina)",
+  "Beta-bloqueadores (atenolol, propranolol)",
+  "Diuréticos (tiazidas, furosemida)",
+  "Suplementos de cálcio",
+  "Antiácidos com alumínio",
+  "AINEs (ibuprofeno, diclofenac, naproxeno)",
+  "IBPs (omeprazol, pantoprazol)",
+  "Contracetivos orais",
+  "Loperamida",
+  "Nenhuma medicação relevante"
+ ]
+}

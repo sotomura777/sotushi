@@ -1,0 +1,49 @@
+/* Vigilância Infantil — usa os tokens partilhados */
+
+.si-tabs { display: flex; gap: 4px; margin-top: 16px; border-bottom: 1px solid var(--borda); }
+.si-tab {
+  flex: 1; padding: 9px 4px; border: none; background: none; cursor: pointer;
+  font-family: var(--fonte-corpo); font-size: 13px; font-weight: 600; color: var(--suave);
+  border-bottom: 2px solid transparent; display: flex; align-items: center; justify-content: center; gap: 5px;
+}
+.si-tab.on { color: var(--acento); border-bottom-color: var(--acento); }
+.si-tab-n { font-size: 10px; font-weight: 700; background: var(--superficie-2); color: var(--suave); border-radius: 8px; padding: 1px 6px; }
+.si-tab.on .si-tab-n { background: var(--acento); color: #fff; }
+
+.si-item {
+  display: flex; align-items: flex-start; gap: 11px; padding: 12px 14px;
+  border: 1px solid var(--borda-2); border-radius: var(--raio-md); margin-bottom: 8px;
+  background: var(--superficie); cursor: pointer;
+}
+.si-ico { width: 34px; height: 34px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+.si-item strong { font-size: 14px; color: var(--texto); display: block; }
+.si-sub { font-size: 12.5px; color: var(--suave); display: block; margin-top: 2px; line-height: 1.45; }
+.si-arrow { color: var(--tenue); font-size: 10px; flex-shrink: 0; margin-top: 4px; }
+
+.si-acc { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--borda); }
+.si-acc-row { margin-bottom: 8px; }
+.si-acc-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--tenue); margin-bottom: 2px; }
+.si-acc-text { font-size: 13px; color: var(--texto-2); line-height: 1.5; }
+
+.si-alerta {
+  display: flex; gap: 11px; align-items: flex-start; padding: 12px 14px;
+  border: 1px solid; border-radius: var(--raio-md); margin-bottom: 8px;
+}
+.si-alerta strong { font-size: 14px; display: block; }
+
+.si-mq {
+  padding: 7px 20px; border-radius: 8px; border: 1.5px solid var(--borda);
+  background: var(--superficie); font-family: var(--fonte-corpo); font-size: 13px; font-weight: 600; color: var(--suave); cursor: pointer;
+}
+
+/* Ferramentas (crescimento, tanner, etc.) */
+.cr-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.cr-inputs label { font-size: 11.5px; font-weight: 600; color: var(--texto-2); display: flex; flex-direction: column; gap: 3px; }
+.cr-inputs .campo { padding: 7px 9px; font-size: 14px; }
+.cr-chart { background: #fff; border: 1px solid var(--borda-2); border-radius: var(--raio-md); padding: 6px; margin-top: 10px; }
+.cr-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 12px; }
+.cr-table th { text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--tenue); padding: 6px 8px; border-bottom: 1px solid var(--borda); }
+.cr-td { padding: 6px 8px; border-bottom: 1px solid var(--borda-2); vertical-align: top; }
+.tn-h { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--tenue); margin-bottom: 6px; }
+.si-ferramentas { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin-top: 4px; -webkit-overflow-scrolling: touch; }
+.si-ferramentas .filtro { white-space: nowrap; flex-shrink: 0; }

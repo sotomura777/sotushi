@@ -1,0 +1,196 @@
+<section class="view" id="view-adult-pnv">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar
+      </button>
+    </div>
+
+    <h2 class="page-title"><span class="icon">👤</span> PNV — Adultos</h2>
+
+    <div class="timeline-intro">
+      <div class="info-icon">i</div>
+      <div>
+        <strong>Baseado no Livro Azul de Vacinas — DGS (Caps. 2, 3, 4, 5), Despacho 2794/2026.</strong>
+        As vacinas aqui listadas são <strong>do PNV</strong> e <strong>gratuitas</strong>. Inclui reforços ao longo da vida, esquemas de recurso, vacinação na gravidez, mulheres em idade fértil, profissionais de saúde e catch-up HPV.
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <input id="search-adult-pnv" type="text" placeholder="Pesquisar (ex: tétano, grávida, sarampo, HPV)…">
+      <button class="clear-btn" type="button" aria-label="Limpar">✕</button>
+    </div>
+
+    <div class="timeline">
+
+      <!-- ======== REFORÇOS AO LONGO DA VIDA ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">25</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>25 anos — Reforço</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — Tétano e difteria (doses reduzidas)" data-info="Reforço decenal. Se esquema atualizado com ≥18 anos: a dose seguinte é administrada com intervalo de 20 anos (até aos 65)."><span class="dot"></span>Td</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> tétano, difteria</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">45</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>45 anos — Reforço</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — Tétano e difteria" data-info="Reforço. Em esquemas atualizados ≥18 anos, este reforço pode ocorrer 20 anos após a dose anterior."><span class="dot"></span>Td</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> tétano, difteria</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">65</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>65 anos — Reforço</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — Tétano e difteria" data-info="Recomenda-se a vacinação se a última dose de Td tiver ocorrido há ≥10 anos. As doses seguintes são administradas de 10 em 10 anos."><span class="dot"></span>Td</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> tétano, difteria. A partir daqui, reforços de 10 em 10 anos.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">10/10</span><span class="age-unit">anos</span></div>
+        <div class="tl-card">
+          <h3>≥65 anos — Cada 10 anos</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — reforços decenais" data-info="Após os 65 anos, reforços de Td de 10 em 10 anos, ao longo de toda a vida."><span class="dot"></span>Td (decenais)</span>
+          </div>
+          <div class="tl-protects"><strong>Reforço contínuo:</strong> tétano, difteria</div>
+        </div>
+      </div>
+
+      <!-- ======== ESQUEMA RECURSO ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">⟳</span><span class="age-unit">recurso</span></div>
+        <div class="tl-card">
+          <h3>Esquema de recurso — Adulto não vacinado ou esquema desconhecido</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Td — Primovacinação adulto" data-info="3 doses: 0, 4–6 semanas após 1ª dose, 6–12 meses após 2ª dose. Continuar com reforços ao longo da vida."><span class="dot"></span>Td (3 doses)</span>
+            <span class="vaccine-chip" data-info-title="VASPR — Sarampo, papeira, rubéola" data-info="Nascidos ≥1970, sem história credível de sarampo, não vacinados: 1 dose. Profissionais de saúde com contacto próximo com doentes: 2 doses (independentemente do ano nascimento), intervalo mínimo 4 semanas."><span class="dot"></span>VASPR (nascidos ≥1970)</span>
+            <span class="vaccine-chip" data-info-title="VHB — Hepatite B" data-info="Esquema 0, 1 e 6 meses. A partir dos 16 anos utilizar dose de adulto."><span class="dot"></span>VHB (se não vacinado)</span>
+            <span class="vaccine-chip" data-info-title="VIP — Poliomielite" data-info="Adultos com risco acrescido de exposição ao vírus da poliomielite: esquema de 3 doses em qualquer idade, cumprindo intervalos mínimos."><span class="dot"></span>VIP (se risco acrescido)</span>
+          </div>
+          <div class="tl-protects"><strong>Atualização:</strong> todas as oportunidades de vacinação devem ser aproveitadas para completar ou atualizar o esquema vacinal</div>
+        </div>
+      </div>
+
+      <!-- ======== HPV CATCH-UP ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">HPV</span><span class="age-unit">catch-up</span></div>
+        <div class="tl-card">
+          <h3>HPV — Catch-up PNV</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="HPV9 — Mulheres ≥18 e &lt;27 anos" data-info="Mulheres das coortes abrangidas pelo PNV: 2 doses (0, 6 meses) se &lt;15 anos ao iniciar; 3 doses (0, 2, 6 meses) se ≥15 anos."><span class="dot"></span>HPV (♀ 18–26 anos)</span>
+            <span class="vaccine-chip" data-info-title="HPV9 — Homens coortes 2000–2002" data-info="Homens das coortes de nascimento 2000–2002 (24, 25 e 26 anos em 2026): 2 doses (0, 6 meses). Gratuita."><span class="dot"></span>HPV (♂ coortes 2000–2002)</span>
+            <span class="vaccine-chip" data-info-title="HPV9 — Imunocomprometidos" data-info="Esquema de 3 doses (0, 2, 6 meses) para pessoas imunocomprometidas, ≥10 e &lt;27 anos. Gratuita."><span class="dot"></span>HPV (imunocompr. 10–26a)</span>
+          </div>
+          <div class="tl-protects"><strong>Protege contra:</strong> infeções e cancros associados ao HPV (colo do útero, vulva, vagina, pénis, ânus, orofaringe, verrugas genitais)</div>
+        </div>
+      </div>
+
+      <!-- ======== GRÁVIDAS ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🤰</span><span class="age-unit">grávida</span></div>
+        <div class="tl-card">
+          <h3>Vacinação na gravidez</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Tdpa — Tosse convulsa (grávidas)" data-info="1 dose em CADA gravidez, entre as 20 e 36 semanas de gestação (idealmente até 32 semanas), após a ecografia morfológica. Objetivo: proteção passiva do recém-nascido. Após as 36 semanas: confere apenas proteção indireta (mãe); administrada mediante prescrição médica."><span class="dot"></span>Tdpa (cada gravidez)</span>
+            <span class="vaccine-chip" data-info-title="Td — Tétano neonatal" data-info="Completar 3 doses antes do parto se primovacinação incompleta. Se não possível durante a gravidez, completar o mais cedo possível após o parto."><span class="dot"></span>Td (se esquema incompleto)</span>
+          </div>
+          <div class="tl-protects"><strong>Protege o recém-nascido contra:</strong> tosse convulsa (primeiras semanas de vida), tétano neonatal</div>
+          <div style="margin-top:10px; padding:10px; background:var(--warn-bg); border-radius:8px; font-size:0.85rem; border:1px solid var(--warn-border); color:var(--warn-text);">
+            <strong>⚠️ Na gravidez:</strong><br>
+            <strong>Administrar se indicadas</strong> (vacinas inativadas, preferir 2º/3º trimestre): Td, VHB, VIP, MenACWY, Pn20, Pn23<br>
+            <strong>Contraindicada:</strong> VASPR (vacina viva — risco teórico para o feto). Se exposição ao sarampo: Ig humana normal.<br>
+            <strong>Não recomendada:</strong> HPV (evidência insuficiente — adiar para pós-parto).
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== MULHERES IDADE FÉRTIL ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">♀</span><span class="age-unit">fértil</span></div>
+        <div class="tl-card">
+          <h3>Mulheres em idade fértil</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="VASPR — Rubéola congénita" data-info="Para prevenção da síndrome de rubéola congénita: devem ter 2 doses de VASPR/VAR. Vacinar até pelo menos 4 semanas ANTES de engravidar, ou na primeira oportunidade após o parto. Prova de imunidade: 2 doses de VASPR/VAR ou serologia positiva."><span class="dot"></span>VASPR (2 doses, ≥4 sem antes gravidez)</span>
+            <span class="vaccine-chip" data-info-title="Td — Tétano antes 1ª gravidez" data-info="Cada mulher deve ter registo de pelo menos 3 doses de vacina contra o tétano antes da 1ª gravidez (DTPw, DTPa, T, Td ou Tdpa). Reforço em cada gravidez com Tdpa; continuar Td ao longo da vida."><span class="dot"></span>Td (≥3 doses antes 1ª gravidez)</span>
+          </div>
+          <div class="tl-protects"><strong>Previne:</strong> síndrome de rubéola congénita, tétano neonatal e do puerpério</div>
+        </div>
+      </div>
+
+      <!-- ======== PROFISSIONAIS DE SAÚDE ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">⚕️</span><span class="age-unit">prof.</span></div>
+        <div class="tl-card">
+          <h3>Profissionais de saúde (no âmbito do PNV)</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="VHB — Hepatite B" data-info="Todos os profissionais dos serviços de saúde que não tenham funções estritamente administrativas têm direito à vacinação contra VHB no âmbito do PNV. Não carece de controlo serológico prévio se não previamente vacinado. Após serologia, se indicação para vacinação: prescrição médica."><span class="dot"></span>VHB</span>
+            <span class="vaccine-chip" data-info-title="VASPR — Sarampo, papeira, rubéola" data-info="No âmbito do Programa Nacional de Eliminação do Sarampo e da Rubéola: 2 doses recomendadas (independentemente do ano de nascimento) se contacto próximo com doentes."><span class="dot"></span>VASPR (2 doses)</span>
+            <span class="vaccine-chip" data-info-title="VIP — Poliomielite" data-info="No âmbito do Programa Nacional de Erradicação da Poliomielite e do PNV."><span class="dot"></span>VIP</span>
+          </div>
+          <div class="tl-protects"><strong>Proteção profissional:</strong> hepatite B, sarampo, papeira, rubéola, poliomielite</div>
+          <div style="margin-top:8px; font-size:0.83rem; color:var(--ink-soft);">Outras vacinas fora do PNV necessárias para proteção contra riscos biológicos: no âmbito dos Serviços de Saúde Ocupacional (legislação em vigor).</div>
+        </div>
+      </div>
+
+      <!-- ======== PROFILAXIA PÓS-EXPOSIÇÃO ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">⚡</span><span class="age-unit">pós-exp.</span></div>
+        <div class="tl-card">
+          <h3>Profilaxia pós-exposição</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Hepatite A — VHA ± IgHN" data-info="Até 14 dias após exposição. Pode ser considerada >14 dias (efeito inferior). Avaliação caso a caso."><span class="dot"></span>Hep A (14 dias)</span>
+            <span class="vaccine-chip" data-info-title="Hepatite B — VHB ± IgG anti-VHB" data-info="Vacina até 14 dias; Ig específica urgente."><span class="dot"></span>Hep B (14 dias / urgente)</span>
+            <span class="vaccine-chip" data-info-title="Sarampo — VASPR ou IgHN" data-info="VASPR até 72 horas após exposição. Ig humana normal até 6 dias (quando VASPR contraindicada: grávidas, imunocomprometidos graves)."><span class="dot"></span>Sarampo (72h / 6 dias)</span>
+            <span class="vaccine-chip" data-info-title="Tétano — Td/Tdpa ± IgHT" data-info="Administração urgente conforme estado vacinal e tipo de ferida."><span class="dot"></span>Tétano (urgente)</span>
+            <span class="vaccine-chip" data-info-title="Mpox — MVA-BN" data-info="Idealmente ≤4 dias após exposição (até 14 dias). Norma 006/2022 atualizada 21/11/2024."><span class="dot"></span>Mpox (≤4d / 14d)</span>
+            <span class="vaccine-chip" data-info-title="Varicela — VV" data-info="Até 3 dias pós-exposição. Profissionais de saúde: mesmo que >3 dias, para diminuir transmissão a pacientes."><span class="dot"></span>Varicela (3 dias)</span>
+          </div>
+          <div class="tl-protects"><strong>Imunização ativa e/ou passiva em suscetíveis expostos.</strong> Tempos máximos entre parêntesis.</div>
+        </div>
+      </div>
+
+      <div class="no-results">
+        <span class="emoji">🔍</span>
+        Nenhum resultado encontrado.
+      </div>
+
+    </div>
+
+    <div class="notes-block">
+      <h3>Notas (Livro Azul, Caps. 2–5)</h3>
+      <ul>
+        <li><strong>Regra dos 20 anos:</strong> Em esquemas atualizados com ≥18 anos, a dose seguinte de Td é administrada com intervalo de 20 anos. A partir dos 65 anos: reforço se última dose há ≥10 anos; doses seguintes de 10 em 10 anos.</li>
+        <li><strong>Intervalos mínimos Td:</strong> 4 semanas entre doses. A interrupção do esquema vacinal requer apenas que seja completado, independentemente do tempo decorrido desde a última dose.</li>
+        <li><strong>VIP adulto:</strong> Se a 3ª ou 4ª dose for administrada ≥4 anos, considera-se o esquema completo desde que o intervalo entre a penúltima e última dose seja ≥6 meses.</li>
+        <li><strong>Tdpa grávidas:</strong> A idade gestacional é comprovada através de Boletim de Saúde da Grávida, declaração médica ou consulta de informação clínica.</li>
+        <li><strong>Vacinas inativadas na gravidez:</strong> Podem ser administradas em simultâneo, antes ou depois de produtos contendo Ig, desde que em locais anatómicos diferentes.</li>
+        <li><strong>VASPR adulto:</strong> De acordo com o Inquérito Serológico Nacional 2015/2016, 99,6% dos nascidos antes de 1970 estão imunes ao sarampo.</li>
+        <li><strong>Pós-exposição complementar:</strong> Difteria, Hib, MenACWY, pneumocócica, poliomielite, rubéola, parotidite e tosse convulsa — a vacinação pós-exposição não é tão efetiva nem uniformemente recomendada, mas pode ser oportunidade para atualizar esquema ou reduzir circulação do agente (decisão caso a caso pela DGS ou Autoridade de Saúde).</li>
+      </ul>
+      <h3>Vacinas PNV para grupos de risco adultos — capítulos não disponíveis</h3>
+      <p style="font-size:0.85rem;color:var(--ink-soft);line-height:1.6;">
+        O Quadro nº 1 do Livro Azul (Cap. 4) lista ainda as seguintes vacinas como recomendadas a adultos em grupos de risco, cujos <strong>capítulos específicos não me foram enviados</strong>:
+        <strong>Gripe sazonal</strong> (anualmente), <strong>COVID-19</strong>, <strong>Pn20 + Pn23</strong> (pneumocócicas), <strong>MVA-BN</strong> (mpox), <strong>VGZ</strong> (gripe zoonótica), <strong>VHA</strong> (hepatite A), <strong>VHB</strong> (grupos de risco específicos), <strong>VIP</strong> (grupos de risco). Estas vacinas são do PNV e gratuitas para os grupos elegíveis, mas os critérios detalhados de elegibilidade estão nos capítulos de cada doença.
+      </p>
+      <h3>Legenda</h3>
+      <ul>
+        <li><strong>Td</strong> — tétano + difteria (doses reduzidas) · <strong>Tdpa</strong> — tétano + difteria + tosse convulsa (doses reduzidas)</li>
+        <li><strong>VASPR</strong> — sarampo, parotidite epidémica, rubéola · <strong>VHB</strong> — hepatite B</li>
+        <li><strong>VIP</strong> — poliomielite inativada · <strong>HPV</strong> — papiloma vírus humano</li>
+        <li><strong>IgHN</strong> — imunoglobulina humana normal · <strong>IgHT</strong> — imunoglobulina antitetânica</li>
+      </ul>
+      <p style="font-size:0.82rem;color:var(--ink-mute);margin-top:12px;">Fonte: Livro Azul de Vacinas — DGS (Caps. 2, 3, 4, 5), Despacho 2794/2026.</p>
+    </div>
+  </section>

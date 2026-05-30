@@ -1,0 +1,51 @@
+{
+  "nome": "Análises & GSA",
+  "subtitulo": "Interpretação de análises laboratoriais",
+  "categorias": [
+    {
+      "id": "hemo",
+      "nm": "Hemograma"
+    },
+    {
+      "id": "bioq",
+      "nm": "Bioquímica geral"
+    },
+    {
+      "id": "renal",
+      "nm": "Função renal"
+    },
+    {
+      "id": "hepa",
+      "nm": "Função hepática"
+    },
+    {
+      "id": "tiro",
+      "nm": "Tiróide"
+    },
+    {
+      "id": "elec",
+      "nm": "Electrólitos"
+    },
+    {
+      "id": "infl",
+      "nm": "Inflamação"
+    },
+    {
+      "id": "coag",
+      "nm": "Coagulação"
+    },
+    {
+      "id": "vita",
+      "nm": "Vitaminas / Minerais"
+    },
+    {
+      "id": "lipi",
+      "nm": "Perfil lipídico"
+    },
+    {
+      "id": "urin",
+      "nm": "Urina tipo II"
+    }
+  ],
+  "rodape": "Valores de referência orientadores — variam com o laboratório e o método. Não dispensam a avaliação clínica nem a leitura do relatório do laboratório."
+}

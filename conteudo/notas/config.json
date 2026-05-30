@@ -1,0 +1,240 @@
+{
+ "especialidades": [
+  {
+   "id": "urgencia",
+   "label": "Urgência",
+   "color": "#8B1A3A",
+   "bg": "#F9E0E8"
+  },
+  {
+   "id": "medicina_interna",
+   "label": "Medicina Interna",
+   "color": "#1A56A0",
+   "bg": "#DDEEFF"
+  },
+  {
+   "id": "cardiologia",
+   "label": "Cardiologia",
+   "color": "#C0392B",
+   "bg": "#FDECEA"
+  },
+  {
+   "id": "pneumologia",
+   "label": "Pneumologia",
+   "color": "#16A085",
+   "bg": "#D0F5EE"
+  },
+  {
+   "id": "neurologia",
+   "label": "Neurologia",
+   "color": "#7D3C98",
+   "bg": "#F0E6FA"
+  },
+  {
+   "id": "gastroenterologia",
+   "label": "Gastroenterologia",
+   "color": "#B7770D",
+   "bg": "#FEF3DC"
+  },
+  {
+   "id": "nefrologia",
+   "label": "Nefrologia",
+   "color": "#1F618D",
+   "bg": "#D6EAF8"
+  },
+  {
+   "id": "endocrinologia",
+   "label": "Endocrinologia",
+   "color": "#1E8449",
+   "bg": "#D5F5E3"
+  },
+  {
+   "id": "reumatologia",
+   "label": "Reumatologia",
+   "color": "#A569BD",
+   "bg": "#F4ECF7"
+  },
+  {
+   "id": "hematologia",
+   "label": "Hematologia",
+   "color": "#CB4335",
+   "bg": "#FDEDEC"
+  },
+  {
+   "id": "oncologia",
+   "label": "Oncologia",
+   "color": "#515A5A",
+   "bg": "#EAEDED"
+  },
+  {
+   "id": "infecciologia",
+   "label": "Infecciologia",
+   "color": "#117A65",
+   "bg": "#D1F2EB"
+  },
+  {
+   "id": "cirurgia_geral",
+   "label": "Cirurgia Geral",
+   "color": "#B5960A",
+   "bg": "#FEF9DC"
+  },
+  {
+   "id": "ortopedia",
+   "label": "Ortopedia",
+   "color": "#0E9080",
+   "bg": "#D5F5F0"
+  },
+  {
+   "id": "urologia",
+   "label": "Urologia",
+   "color": "#1A5276",
+   "bg": "#D6EAF8"
+  },
+  {
+   "id": "ginecologia",
+   "label": "Ginecologia/Obstetrícia",
+   "color": "#C0396B",
+   "bg": "#FDEEF5"
+  },
+  {
+   "id": "pediatria",
+   "label": "Pediatria",
+   "color": "#F39C12",
+   "bg": "#FEF9E7"
+  },
+  {
+   "id": "psiquiatria",
+   "label": "Psiquiatria",
+   "color": "#5B2C6F",
+   "bg": "#EBE0F5"
+  },
+  {
+   "id": "dermatologia",
+   "label": "Dermatologia",
+   "color": "#E07B39",
+   "bg": "#FDEBD0"
+  },
+  {
+   "id": "oftalmologia",
+   "label": "Oftalmologia",
+   "color": "#2E86C1",
+   "bg": "#D6EAF8"
+  },
+  {
+   "id": "anestesiologia",
+   "label": "Anestesiologia",
+   "color": "#707B7C",
+   "bg": "#F2F3F4"
+  },
+  {
+   "id": "uci",
+   "label": "UCI / Cuidados Intensivos",
+   "color": "#922B21",
+   "bg": "#FADBD8"
+  },
+  {
+   "id": "medicina_fisica",
+   "label": "Medicina Física e Reab.",
+   "color": "#1ABC9C",
+   "bg": "#D1F2EB"
+  },
+  {
+   "id": "radiologia",
+   "label": "Radiologia",
+   "color": "#34495E",
+   "bg": "#EAF0F6"
+  },
+  {
+   "id": "medicina_geral",
+   "label": "Medicina Geral e Familiar",
+   "color": "#2980B9",
+   "bg": "#D6EAF8"
+  }
+ ],
+ "separadores_padrao": [
+  {
+   "id": "diario",
+   "label": "Diário clínico",
+   "color": "#0F6E56",
+   "bg": "#E1F5EE",
+   "isDefault": true,
+   "template": "S: [Subjetivo — queixas do doente]\n\nO: TA: ___ FC: ___ FR: ___ T: ___ SpO2: ___\n   EO: [Exame objetivo]\n   Analítica: [Resultados]\n\nA: [Avaliação clínica]\n\nP: [Plano]"
+  },
+  {
+   "id": "admissao",
+   "label": "Nota de admissão",
+   "color": "#185FA5",
+   "bg": "#E6F1FB",
+   "isDefault": true,
+   "template": "Data de admissão: [DATA]\nMotivo de internamento:\n\nHISTÓRIA CLÍNICA\nDoença atual:\nAntecedentes pessoais:\nMedicação habitual:\nAlergias:\n\nEXAME OBJETIVO\nTA: ___ FC: ___ FR: ___ T: ___ SpO2: ___\n\nEXAMES COMPLEMENTARES\nAnalítica:\nImagiologia:\n\nDIAGNÓSTICO DE ADMISSÃO:\n\nPLANO TERAPÊUTICO:"
+  },
+  {
+   "id": "alta",
+   "label": "Nota de alta",
+   "color": "#993C1D",
+   "bg": "#FAECE7",
+   "isDefault": true,
+   "template": "Data de alta: [DATA]\nDiagnóstico principal:\nDiagnósticos secundários:\n\nRESUMO DO INTERNAMENTO:\n\nEXAMES REALIZADOS:\n\nTERAPÊUTICA À ALTA:\n1.\n2.\n3.\n\nRECOMENDAÇÕES:\n-\n-\n\nSEGUIMENTO:\nEspecialidade:\nData/prazo sugerido:"
+  }
+ ],
+ "cores": [
+  {
+   "color": "#0F6E56",
+   "bg": "#E1F5EE"
+  },
+  {
+   "color": "#185FA5",
+   "bg": "#E6F1FB"
+  },
+  {
+   "color": "#993C1D",
+   "bg": "#FAECE7"
+  },
+  {
+   "color": "#7F77DD",
+   "bg": "#EEEDFE"
+  },
+  {
+   "color": "#E8735A",
+   "bg": "#FBEAF0"
+  },
+  {
+   "color": "#5F5E5A",
+   "bg": "#F1EFE8"
+  },
+  {
+   "color": "#BA7517",
+   "bg": "#FAEEDA"
+  },
+  {
+   "color": "#A32D2D",
+   "bg": "#FCEBEB"
+  }
+ ],
+ "prioridades": [
+  {
+   "id": "green",
+   "color": "#16A34A",
+   "bg": "#DCFCE7",
+   "label": "Verde"
+  },
+  {
+   "id": "yellow",
+   "color": "#CA8A04",
+   "bg": "#FEF9C3",
+   "label": "Amarelo"
+  },
+  {
+   "id": "orange",
+   "color": "#EA580C",
+   "bg": "#FFEDD5",
+   "label": "Laranja"
+  },
+  {
+   "id": "red",
+   "color": "#DC2626",
+   "bg": "#FEE2E2",
+   "label": "Vermelho"
+  }
+ ]
+}

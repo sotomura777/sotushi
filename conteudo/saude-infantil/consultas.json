@@ -1,0 +1,1709 @@
+{
+ "1ª semana": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "👁️",
+    "sky",
+    "Reflexo vermelho",
+    "Bilateral e simétrico. Ausência ou assimetria: referenciação urgente a Oftalmologia"
+   ],
+   [
+    "👂",
+    "lav",
+    "Rastreio auditivo neonatal",
+    "Confirmar realização (GRISI). Se não realizado: agendar urgentemente"
+   ],
+   [
+    "🧬",
+    "mint",
+    "Diagnóstico precoce neonatal",
+    "Teste do pezinho D3-D6. Confirmar colheita e resultado"
+   ],
+   [
+    "⚖️",
+    "peach",
+    "Peso",
+    "Perda fisiológica max 10%. Recuperação esperada até D10-14. Registar no BSIJ"
+   ],
+   [
+    "📏",
+    "mint",
+    "Comprimento e perímetro cefálico",
+    "Registar nas curvas OMS do BSIJ desde o nascimento"
+   ],
+   [
+    "💉",
+    "sky",
+    "Vacinação",
+    "Confirmar VHB dose RN e BCG se indicado (grupos de risco)"
+   ],
+   [
+    "💪",
+    "peach",
+    "Reflexos primitivos",
+    "Moro, preensão palmar, sucção, marcha automática, Babinski - presença e simetria"
+   ],
+   [
+    "👶",
+    "sun",
+    "Exame físico completo",
+    "Icterícia, fontanela, coxofemoral (Ortolani/Barlow), genitais, testículos, cordão umbilical"
+   ],
+   [
+    "🤱",
+    "peach",
+    "Aleitamento materno",
+    "Pega, posição, frequência 8-12x/dia, sinais de fome/saciedade, satisfação da mãe"
+   ],
+   [
+    "💙",
+    "lav",
+    "Enamoramento mae-bebé",
+    "Satisfação do cuidador. Adaptação familiar. Alerta: desinteresse, desespero"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🍼",
+    "peach",
+    "AM exclusivo até 6 meses",
+    "Pega correta, livre demanda 8-12x/dia. Sem agua, chas ou formula salvo indicação medica"
+   ],
+   [
+    "😴",
+    "sky",
+    "Deitar de costas",
+    "Superfície firme, sem almofadas nem edredoes. Prevencão SMSL"
+   ],
+   [
+    "💊",
+    "mint",
+    "Vitamina D 400 UI/dia",
+    "Iniciar na 1a semana, independentemente do tipo de alimentação"
+   ],
+   [
+    "🚗",
+    "lav",
+    "Transporte seguro",
+    "Cadeirinha homologada, voltada para tras, banco traseiro. Nunca frente com airbag"
+   ],
+   [
+    "🚬",
+    "peach",
+    "Fumo passivo - zero tolerancia",
+    "Não fumar em casa nem carro. Aumenta risco SMSL e infecoes"
+   ],
+   [
+    "🛁",
+    "sky",
+    "Cuidados do cordão umbilical",
+    "Limpar com agua, deixar secar ao ar. Não aplicar alcool nem talco"
+   ],
+   [
+    "☀️",
+    "sun",
+    "Ritmo circadiano",
+    "Diferenciar dia (luz, ruido) e noite (escuridao, silencio) para consolidar sono"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Reflexo vermelho ausente ou assimétrico",
+    "Referenciação urgente a Oftalmologia - catarata congénita, glaucoma ou retinoblastoma."
+   ],
+   [
+    "red",
+    "Icterícia nas primeiras 24h",
+    "Icterícia D1 é sempre patológica. Avaliação urgente de bilirrubina sérica."
+   ],
+   [
+    "red",
+    "Rastreio metabólico não realizado",
+    "Janela D3-D6. Agendar urgentemente. Sem rastreio não se detetam hipotiroidismo, PKU e outras doenças tratáveis."
+   ],
+   [
+    "red",
+    "Criptorquidia bilateral",
+    "Testículos ausentes bilateralmente. Endocrinologia Pediátrica urgente."
+   ],
+   [
+    "orange",
+    "Perda de peso superior a 10%",
+    "Reavaliar pega e oferta alimentar. Reavaliar em 24-48h."
+   ],
+   [
+    "orange",
+    "Sinais de depressão pós-parto",
+    "Falta de interesse no bebé, choro persistente. Referenciação urgente a Saúde Mental."
+   ]
+  ],
+  "vacinas": [
+   [
+    "Hepatite B (VHB)",
+    "1ª dose ao nascimento"
+   ],
+   [
+    "BCG",
+    "Grupos de risco (alta prevalência TB)"
+   ]
+  ]
+ },
+ "1 mês": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Peso, comprimento, perímetro cefálico",
+    "Registar nas curvas OMS. Recuperação do peso nascimento esperada"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Fixa e segue rosto a 30 cm. Reflexo vermelho presente e simétrico. Cover test"
+   ],
+   [
+    "👂",
+    "lav",
+    "Audição",
+    "Confirmar resultado do rastreio auditivo neonatal"
+   ],
+   [
+    "💪",
+    "peach",
+    "Tónus e postura",
+    "Tónus adequado, posição de flexão fisiológica, tentativa de controlo cefálico"
+   ],
+   [
+    "❤️",
+    "rose",
+    "Exame cardíaco",
+    "Auscultar sopros - referenciação a Cardiologia Pediátrica se patológico"
+   ],
+   [
+    "👶",
+    "sun",
+    "Coxofemoral",
+    "Confirmar normal. Eco se duvida ou fator de risco"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🍼",
+    "peach",
+    "Aleitamento materno",
+    "Reforçar. Se formula: 150 ml/kg/dia, 6-8 refeições. Sem agua entre refeições"
+   ],
+   [
+    "💊",
+    "mint",
+    "Vitamina D 400 UI/dia",
+    "Confirmar suplementação em curso"
+   ],
+   [
+    "😴",
+    "lav",
+    "Ritual de adormecimento",
+    "Não criar dependência de TV ou automovel. Autorregulação progressiva"
+   ],
+   [
+    "😢",
+    "sun",
+    "Cólicas",
+    "Pico 6-8 semanas. Normais e autolimitadas. Colo, movimento suave, calor no abdomen"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não fixa nem segue rosto humano",
+    "Referenciação urgente a Oftalmologia."
+   ],
+   [
+    "red",
+    "Ausência de controlo cefálico ou hipotonia marcada",
+    "Avaliação neurológica urgente."
+   ],
+   [
+    "orange",
+    "Icterícia persistente após D14",
+    "Avaliar bilirrubina total. Excluir icterícia colestática."
+   ],
+   [
+    "orange",
+    "Bebé inconsolável ou apático",
+    "Sem períodos de comunicação. Avaliação médica."
+   ]
+  ],
+  "vacinas": [
+   [
+    "Hepatite B (VHB)",
+    "2ª dose"
+   ]
+  ]
+ },
+ "2 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria",
+    "Peso, comprimento, PC - marcar nas curvas OMS"
+   ],
+   [
+    "😊",
+    "sun",
+    "Sorriso social",
+    "Presente a partir das 6-8 semanas. Sinal de alerta se ausente"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Segue objeto em arco de 180 graus. Fixa rosto. Reflexo fotomotor presente"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Vocalização",
+    "Sons guturais, palreio incipiente, reage a voz familiar"
+   ],
+   [
+    "💪",
+    "mint",
+    "Motor grosseiro",
+    "Em DV: tenta levantar cabeça. Simetria dos membros"
+   ],
+   [
+    "🤲",
+    "peach",
+    "Motor fino",
+    "Maos abertas na maior parte do tempo. Maos sempre fechadas = sinal de alerta"
+   ]
+  ],
+  "antecipar": [
+   [
+    "😊",
+    "sun",
+    "Estimulação precoce",
+    "Falar, cantar, sorrir ao bebé. Brinquedos com contraste de cores. Tempo em DV quando acordado"
+   ],
+   [
+    "😴",
+    "sky",
+    "Sono",
+    "Ciclos 2-3h, ainda irregulares. Rotina não antes dos 3-4 meses"
+   ],
+   [
+    "💉",
+    "mint",
+    "Vacinas desta consulta",
+    "Reacoes esperadas 24-48h: febre, choro, vermelhidao local. Paracetamol se febre acima de 38C"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Sorriso social ausente aos 2 meses",
+    "Referenciação a Desenvolvimento."
+   ],
+   [
+    "red",
+    "Não segue rosto nem objeto",
+    "Referenciação urgente a Oftalmologia."
+   ],
+   [
+    "red",
+    "Maos sempre fechadas",
+    "Perseveração de reflexo de preensão - avaliação neurológica."
+   ],
+   [
+    "red",
+    "Não reage a sons",
+    "Audiologia urgente."
+   ]
+  ],
+  "vacinas": [
+   [
+    "DTPa-VIP-Hib-VHB (Hexavalente)",
+    "1ª dose"
+   ],
+   [
+    "Pneumocócica conjugada PCV13",
+    "1ª dose"
+   ],
+   [
+    "Meningocócica B (MenB)",
+    "1ª dose"
+   ],
+   [
+    "Rotavírus (RV)",
+    "1ª dose - oral"
+   ]
+  ]
+ },
+ "4 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria",
+    "Registar e avaliar tendência. Peso medio cerca de 6 kg"
+   ],
+   [
+    "😊",
+    "sun",
+    "Sorriso social e gargalhada",
+    "Gargalhada emergente. Interação social ativa"
+   ],
+   [
+    "💪",
+    "mint",
+    "Motor grosseiro",
+    "Em DV: eleva cabeça e tronco, apoia nos antebraços. Controlo cefálico estável"
+   ],
+   [
+    "🤲",
+    "peach",
+    "Motor fino",
+    "Preensão palmar, leva objetos a boca, transferência incipiente entre maos"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Segue objeto 180 graus. Convergência ocular estável. Cover test"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Palreio ativo, sons vogais, reage ao nome"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🥣",
+    "peach",
+    "Diversificação alimentar",
+    "Iniciar aos 6 meses (não antes dos 4M nem depois dos 6M). Um alimento de cada vez"
+   ],
+   [
+    "🛡️",
+    "mint",
+    "Prevenção de acidentes",
+    "Nunca deixar em superfícies elevadas. Objetos pequenos fora do alcance"
+   ],
+   [
+    "😴",
+    "sky",
+    "Início de rotina de sono",
+    "Banho, feeds, escuridao, quietude"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não sorri nem vocaliza",
+    "Referenciação a Desenvolvimento."
+   ],
+   [
+    "red",
+    "Hipotonia marcada ou não levanta cabeça em DV",
+    "Avaliação neurológica urgente."
+   ],
+   [
+    "red",
+    "Não segue objetos",
+    "Referenciação urgente a Oftalmologia."
+   ],
+   [
+    "orange",
+    "Estrabismo manifesto e constante após 4 meses",
+    "Referenciação a Oftalmologia."
+   ]
+  ],
+  "vacinas": [
+   [
+    "DTPa-VIP-Hib-VHB (Hexavalente)",
+    "2ª dose"
+   ],
+   [
+    "Pneumocócica conjugada PCV13",
+    "2ª dose"
+   ],
+   [
+    "Meningocócica B (MenB)",
+    "2ª dose"
+   ],
+   [
+    "Rotavírus (RV)",
+    "2ª dose - oral"
+   ]
+  ]
+ },
+ "6 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria",
+    "Verificar evolução percentis. Peso medio 7-8 kg"
+   ],
+   [
+    "🪑",
+    "peach",
+    "Motor grosseiro",
+    "Senta com apoio, rola nos dois sentidos, transfere objetos entre maos"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Lalação (ba-ba, da-da), reage ao nome, vocaliza em resposta"
+   ],
+   [
+    "👀",
+    "sky",
+    "Visão",
+    "Segue objetos pequenos. Interessa-se pelo espelho"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Dentição",
+    "Erupção primeiros dentes (incisivos centrais inferiores). Esperar entre 5-9 meses"
+   ],
+   [
+    "👂",
+    "lav",
+    "Audição",
+    "Vira cabeça em direcção ao som. Reage a voz familiar"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🥣",
+    "peach",
+    "Diversificação alimentar",
+    "Papas e purés. Um alimento novo de cada vez. Sem sal, açucar nem mel (mel proibido ate 12M)"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Início higiene oral",
+    "Com 1o dente: escova macia. Creme 500 ppm fluor, grão de arroz"
+   ],
+   [
+    "🛡️",
+    "peach",
+    "Prevenção de acidentes",
+    "Portao nas escadas. Tomadas protegidas. Objetos pequenos fora do alcance"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não senta com apoio",
+    "Hipotonia ou atraso motor - avaliação neurológica."
+   ],
+   [
+    "red",
+    "Não laleia nem vocaliza",
+    "Audiologia e Desenvolvimento."
+   ],
+   [
+    "orange",
+    "Não reage ao nome",
+    "Rastreio auditivo - se normal, avaliar desenvolvimento."
+   ]
+  ],
+  "vacinas": [
+   [
+    "DTPa-VIP-Hib-VHB (Hexavalente)",
+    "3ª dose"
+   ],
+   [
+    "Meningocócica C conjugada (MenC)",
+    "1ª dose"
+   ]
+  ]
+ },
+ "9 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria",
+    "Registar peso, comprimento, PC nas curvas OMS"
+   ],
+   [
+    "🚶",
+    "peach",
+    "Motor grosseiro",
+    "Senta sem apoio, gatinha ou arrasta-se, puxa-se para pé, marcha lateral com apoio"
+   ],
+   [
+    "🤏",
+    "mint",
+    "Pinça fina",
+    "Pinça inferior ou radial emergente. Pega objetos pequenos polegar-indicador"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Mama/papa sem especificidade, imita sons, compreende não, lalação variada"
+   ],
+   [
+    "👆",
+    "sky",
+    "Social e cognitivo",
+    "Aponta com indicador, procura objeto escondido, permanência do objeto"
+   ],
+   [
+    "👶",
+    "sun",
+    "Testículos",
+    "Confirmar testículos nas bolsas"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🛡️",
+    "peach",
+    "Prevenção de acidentes",
+    "Portao nas escadas, tomadas protegidas, medicamentos trancados"
+   ],
+   [
+    "🥣",
+    "mint",
+    "Alimentação",
+    "Finger foods, variedade, participação nas refeições. Sem sal e açucar"
+   ],
+   [
+    "😴",
+    "sky",
+    "Ansiedade de separação",
+    "Intensa nesta fase - normal. Rotina noturna previsível"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não se senta sem apoio",
+    "Atraso motor - avaliação neurológica."
+   ],
+   [
+    "red",
+    "Não aponta, não imita, não olha quando chamam (2 ou mais itens)",
+    "Referenciação urgente a Desenvolvimento (rastreio PEA)."
+   ],
+   [
+    "orange",
+    "Não reage a sons",
+    "Audiologia urgente."
+   ]
+  ],
+  "vacinas": []
+ },
+ "12 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria",
+    "Peso cerca de 3x peso nascimento (9-10 kg). Comprimento cerca de 75 cm"
+   ],
+   [
+    "🚶",
+    "peach",
+    "Motor grosseiro",
+    "Marcha com apoio, fica de pé sem apoio, primeiros passos independentes"
+   ],
+   [
+    "🤏",
+    "mint",
+    "Pinça fina",
+    "Pinça superior bem estabelecida"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "2-3 palavras com significado. Compreende pedidos simples"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Dentição e higiene oral",
+    "Verificar estado dentário. 1o cheque-dentista (PNPSO)"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir a partir do 1o ano. Comparar com tabelas de referência"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Cover test. Reflexo vermelho. Comportamento visual normal"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🥛",
+    "peach",
+    "Transição alimentar",
+    "Leite de vaca inteiro 200-300 ml/dia. Manter AM se desejado. Mel ja permitido"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Ler histórias diariamente. Nomear objetos. Limitar ecras ao maximo"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Higiene oral",
+    "2x/dia. Creme 500 ppm fluor, quantidade de grão de ervilha"
+   ],
+   [
+    "💊",
+    "mint",
+    "Vitamina D",
+    "Aumentar para 600 UI/dia após o 1o ano"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não anda com apoio",
+    "Atraso motor - avaliação neurológica."
+   ],
+   [
+    "red",
+    "Não tem palavras com significado",
+    "Referenciação a Desenvolvimento e Terapia da Fala."
+   ],
+   [
+    "red",
+    "Não aponta, não imita, não olha quando chamam",
+    "Rastreio PEA - M-CHAT. Referenciação urgente."
+   ],
+   [
+    "red",
+    "Perda de aquisições ja alcançadas",
+    "Urgente - avaliação neurológica."
+   ]
+  ],
+  "vacinas": [
+   [
+    "VASPR (Sarampo-Parotidite-Rubeola)",
+    "1ª dose"
+   ],
+   [
+    "Meningocócica B (MenB)",
+    "Reforço"
+   ],
+   [
+    "Pneumocócica conjugada PCV13",
+    "Reforço"
+   ]
+  ]
+ },
+ "15 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria",
+    "Registar e comparar com curvas OMS. Avaliar tendência IMC"
+   ],
+   [
+    "🚶",
+    "peach",
+    "Motor grosseiro",
+    "Marcha independente estável, sobe escadas com apoio das duas maos, corre (instável)"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "5-10 palavras com significado. Compreende pedidos simples"
+   ],
+   [
+    "🤝",
+    "sun",
+    "Social e cognitivo",
+    "Jogo paralelo emergente, imita tarefas domésticas"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Dentição",
+    "Cerca de 8 dentes. Higiene oral 2x/dia"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e registar"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🎭",
+    "lav",
+    "Birras",
+    "Normais e frequentes. Consistência nos limites, distração, ignorar se seguro"
+   ],
+   [
+    "📵",
+    "peach",
+    "Ecras",
+    "Limitar ao maximo antes dos 2 anos. Preferir interação real e leitura"
+   ],
+   [
+    "💊",
+    "mint",
+    "Vitamina D",
+    "600 UI/dia após 1 ano. Confirmar continuação"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não anda sem apoio",
+    "Referenciação a Desenvolvimento e Neurologia."
+   ],
+   [
+    "red",
+    "Menos de 5 palavras com significado",
+    "Referenciação a Terapia da Fala."
+   ],
+   [
+    "red",
+    "Perda de competências ja adquiridas",
+    "Urgente - avaliação neurológica."
+   ]
+  ],
+  "vacinas": [
+   [
+    "VASPR (Sarampo-Parotidite-Rubeola)",
+    "2ª dose"
+   ],
+   [
+    "Meningocócica C conjugada (MenC)",
+    "Reforço"
+   ],
+   [
+    "DTPa-VIP-Hib (Pentavalente)",
+    "Reforço"
+   ]
+  ]
+ },
+ "18 meses": {
+  "fase": "bebe",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC",
+    "IMC começa a ter significado clínico. Registar e interpretar"
+   ],
+   [
+    "🏃",
+    "peach",
+    "Motor grosseiro",
+    "Corre (instável), sobe e desce escadas com apoio, chuta bola"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "15-20 palavras com significado. Começa a combinar 2 palavras"
+   ],
+   [
+    "🧩",
+    "sun",
+    "Cognitivo",
+    "Jogo simbólico emergente (faz de conta). Encaixa formas simples"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Rastreio com Tabela dos E de Snellen ou Imagens de Mary Sheridan"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e registar"
+   ],
+   [
+    "🤝",
+    "lav",
+    "M-CHAT - Rastreio PEA",
+    "Aplicar questionário M-CHAT-R/F (idade ideal 18M). Positivo: referenciação urgente"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🗣️",
+    "lav",
+    "Linguagem - alerta",
+    "Menos de 15 palavras: Terapia da Fala. Menos de 10 palavras: referenciação urgente"
+   ],
+   [
+    "🛡️",
+    "peach",
+    "Segurança",
+    "Piscinas e banheiras nunca sem vigilância. Cadeirinha grupo I (9-18 kg)"
+   ],
+   [
+    "🚽",
+    "sky",
+    "Controlo de esfíncteres",
+    "Aguardar sinais de prontidao: interesse, avisa, fica seco períodos"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Menos de 10 palavras com significado",
+    "Referenciação urgente a Terapia da Fala e Desenvolvimento."
+   ],
+   [
+    "red",
+    "Não aponta, não imita, sem jogo simbólico",
+    "M-CHAT - referenciação urgente a Desenvolvimento (PEA)."
+   ],
+   [
+    "red",
+    "Marcha em pontas de pés sistemática",
+    "Referenciação a Neurologia e Ortopedia."
+   ],
+   [
+    "red",
+    "Perda de competências ja adquiridas",
+    "Urgente - avaliação neurológica."
+   ],
+   [
+    "orange",
+    "M-CHAT positivo",
+    "Referenciação a Desenvolvimento para avaliação aprofundada."
+   ]
+  ],
+  "vacinas": [
+   [
+    "Hepatite A (HA)",
+    "1ª dose"
+   ]
+  ]
+ },
+ "2 anos": {
+  "fase": "crian",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC",
+    "Calcular e registar IMC - identificar risco de excesso de peso precocemente"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Frases de 2 palavras minimo. Vocabulário acima de 50 palavras. Inteligível para família"
+   ],
+   [
+    "🏃",
+    "peach",
+    "Motor grosseiro",
+    "Corre bem, chuta bola, sobe e desce escadas sozinho, salta no mesmo sitio"
+   ],
+   [
+    "✏️",
+    "sun",
+    "Motor fino",
+    "Torre de 6 cubos, rabisca linhas, vira páginas de livro"
+   ],
+   [
+    "🤝",
+    "sky",
+    "Social",
+    "Jogo paralelo, imita tarefas domésticas, interesse em outras crianças"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Dentição",
+    "Cerca de 20 dentes. Verificar caries e higiene oral"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e comparar com tabelas por sexo e altura"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🍽️",
+    "peach",
+    "Anorexia fisiológica do 2o ano",
+    "Normal - crescimento abranda, apetite diminui. Não forçar, não brigar com a comida"
+   ],
+   [
+    "🚽",
+    "mint",
+    "Controlo de esfíncteres",
+    "Prontidão: fica seco 2h, avisa, interesse. Iniciar treino sem pressão"
+   ],
+   [
+    "📖",
+    "lav",
+    "Leitura partilhada diária",
+    "Melhor estimulo de linguagem. 15-20 min em voz alta"
+   ],
+   [
+    "📵",
+    "peach",
+    "Ecras",
+    "Menos de 1h/dia de conteudo de qualidade, sempre com adulto"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não forma frases de 2 palavras",
+    "Referenciação a Terapia da Fala."
+   ],
+   [
+    "red",
+    "Vocabulário abaixo de 50 palavras",
+    "Referenciação a Desenvolvimento."
+   ],
+   [
+    "red",
+    "Linguagem incompreensível para a família",
+    "Referenciação a Terapia da Fala e Audiologia."
+   ],
+   [
+    "red",
+    "Não brinca com outras crianças nem imita",
+    "Rastreio PEA - referenciação a Desenvolvimento."
+   ]
+  ],
+  "vacinas": [
+   [
+    "Hepatite A (HA)",
+    "2ª dose"
+   ]
+  ]
+ },
+ "3 anos": {
+  "fase": "crian",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC",
+    "Avaliar tendência de crescimento e estado nutricional"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Frases 3-4 palavras, inteligível para estranhos em 75% das vezes"
+   ],
+   [
+    "🏃",
+    "peach",
+    "Motor grosseiro",
+    "Sobe escadas alternando pés, pedala triciclo, equilibra num pé 1-2 seg"
+   ],
+   [
+    "✏️",
+    "sun",
+    "Motor fino",
+    "Copia círculo, desenha figura humana rudimentar, enfia contas"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Acuidade acima de 6/9 bilateralmente - E de Snellen. Cover test"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Dentição",
+    "Decídua completa (20 dentes). Carie = alto risco - cheque-dentista"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e registar com tabelas de referência"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🏫",
+    "mint",
+    "Jardim de infância",
+    "Adaptação, interação com pares, autonomia (vestir, comer, casa de banho)"
+   ],
+   [
+    "😴",
+    "sky",
+    "Sono",
+    "10-13h total. Sesta a desaparecer aos 2-3 anos. Rotina noturna essencial"
+   ],
+   [
+    "🏃",
+    "mint",
+    "Atividade física",
+    "Brincar ao ar livre, correr, saltar. 3 ou mais horas por dia"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Linguagem incompreensível para estranhos",
+    "Referenciação a Terapia da Fala."
+   ],
+   [
+    "red",
+    "Não forma frases completas",
+    "Referenciação a Desenvolvimento."
+   ],
+   [
+    "red",
+    "Agressividade, oposição ou ansiedade persistentes",
+    "Avaliação de Saúde Mental Infantil."
+   ],
+   [
+    "orange",
+    "Acuidade visual abaixo de 6/9 ou diferença entre olhos",
+    "Referenciação a Oftalmologia urgente - risco de ambliopia."
+   ]
+  ],
+  "vacinas": []
+ },
+ "4 anos": {
+  "fase": "crian",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC",
+    "Avaliar evolução. Verificar curva de crescimento no BSIJ"
+   ],
+   [
+    "🗣️",
+    "lav",
+    "Linguagem",
+    "Frases complexas, conta histórias, vocabulário rico. Inteligível 100%"
+   ],
+   [
+    "🏃",
+    "peach",
+    "Motor grosseiro",
+    "Salta ao pé-coxinho, anda de bicicleta com rodas extra, recorta com tesoura"
+   ],
+   [
+    "✏️",
+    "sun",
+    "Motor fino e pré-escrita",
+    "Copia cruz e quadrado, desenha figura humana com 4-5 partes"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Visão",
+    "Acuidade acima de 6/6 esperada"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e comparar com tabelas de referência"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🏃",
+    "mint",
+    "Atividade física",
+    "60 ou mais minutos por dia de atividade moderada a intensa"
+   ],
+   [
+    "📺",
+    "peach",
+    "Ecras",
+    "Menos de 1h/dia. Sem ecras 1h antes de dormir"
+   ],
+   [
+    "🏫",
+    "lav",
+    "Competências pré-escolares",
+    "Atenção, seguir instruções, esperar pela vez, trabalho em grupo"
+   ]
+  ],
+  "alertas": [
+   [
+    "orange",
+    "Não recorta com tesoura nem copia formas",
+    "Atraso de motor fino - avaliação de Terapia Ocupacional."
+   ],
+   [
+    "orange",
+    "Gaguez persistente acima de 6 meses",
+    "Referenciação a Terapia da Fala."
+   ],
+   [
+    "orange",
+    "Dificuldades marcadas de atenção",
+    "Observar - PHDA pode ser avaliada a partir dos 4 anos em casos graves."
+   ]
+  ],
+  "vacinas": []
+ },
+ "5 anos": {
+  "fase": "crian",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC - Exame Global",
+    "Registar e avaliar evolução completa do crescimento"
+   ],
+   [
+    "🧠",
+    "lav",
+    "Prontidão escolar",
+    "Reconhece letras e numeros, desenha figura humana, copia triângulo, conta até 10"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Acuidade visual",
+    "Tabela de Snellen - acima de 6/6 esperado. Referenciação urgente se abaixo de 6/9"
+   ],
+   [
+    "🦷",
+    "sun",
+    "Saude oral",
+    "Caries, higiene, cheque-dentista. Início erupção incisivos permanentes"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e comparar com tabelas por sexo e altura"
+   ],
+   [
+    "🤸",
+    "peach",
+    "Motor",
+    "Salta ao pé-coxinho, bicicleta, recorta com precisão, escreve o proprio nome"
+   ]
+  ],
+  "antecipar": [
+   [
+    "📚",
+    "lav",
+    "Entrada na escola",
+    "Capacidade de atenção, seguir instruções, esperar a vez. Sinalizar PHDA ou ansiedade escolar"
+   ],
+   [
+    "🏃",
+    "mint",
+    "Atividade física",
+    "60 ou mais minutos por dia. Reduzir tempo de ecra"
+   ],
+   [
+    "😴",
+    "sky",
+    "Sono",
+    "9-11h por noite. Sem ecras no quarto. Rotina consistente de deitar"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Não reconhece letras nem numeros",
+    "Avaliação de prontidão escolar - Psicologia e Desenvolvimento."
+   ],
+   [
+    "red",
+    "Não desenha figura humana",
+    "Atraso cognitivo ou motor fino - avaliação."
+   ],
+   [
+    "orange",
+    "Acuidade visual abaixo de 6/9 ou diferença entre olhos",
+    "Referenciação urgente a Oftalmologia - risco de ambliopia."
+   ]
+  ],
+  "vacinas": [
+   [
+    "DTPa-VIP (Tetravalente)",
+    "Reforço - 5-6 anos"
+   ],
+   [
+    "VASPR",
+    "Confirmar 2 doses. Completar se necessário"
+   ]
+  ]
+ },
+ "6/7 anos": {
+  "fase": "crian",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC - Final 1o Ano",
+    "Avaliar crescimento e IMC"
+   ],
+   [
+    "🧠",
+    "lav",
+    "Dificuldades de aprendizagem",
+    "Dislexia, disgrafia, discalculia. Desempenho escolar no 1o ano"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Acuidade visual",
+    "Detetar precocemente défices que afetam a aprendizagem"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e registar"
+   ],
+   [
+    "🤝",
+    "lav",
+    "Saude mental",
+    "Bem-estar emocional, ansiedade escolar, bullying, relações com pares"
+   ]
+  ],
+  "antecipar": [
+   [
+    "📖",
+    "lav",
+    "Dificuldades de aprendizagem",
+    "Sinalizar precocemente. Referenciação a Psicologia se suspeita"
+   ],
+   [
+    "🤝",
+    "sky",
+    "Bullying",
+    "Abordar questoes de bullying. Ensinar a pedir ajuda"
+   ],
+   [
+    "🏃",
+    "mint",
+    "Atividade física",
+    "60 ou mais minutos por dia. Desporto - beneficios físicos, sociais e cognitivos"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Dificuldades persistentes de leitura e escrita",
+    "Referenciação a Psicologia - rastreio de dislexia."
+   ],
+   [
+    "orange",
+    "Ansiedade escolar marcada ou recusa escolar",
+    "Avaliação de Saude Mental Infantil."
+   ],
+   [
+    "orange",
+    "Comportamento agressivo ou isolamento social persistente",
+    "Avaliação de Saude Mental Infantil."
+   ]
+  ],
+  "vacinas": []
+ },
+ "8 anos": {
+  "fase": "crian",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC",
+    "Avaliar evolução e tendência. IMC crítico nesta faixa"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e comparar. Rastreio dislipidémias se fatores de risco"
+   ],
+   [
+    "👁️",
+    "sky",
+    "Acuidade visual",
+    "Rastreio anual - miopia muito frequente nesta idade"
+   ],
+   [
+    "🧠",
+    "lav",
+    "Aprendizagem",
+    "Desempenho escolar, atenção, memória, organização. Sinais de PHDA"
+   ],
+   [
+    "🤝",
+    "sky",
+    "Saude mental",
+    "Bem-estar emocional, autoestima, bullying, relações com pares"
+   ]
+  ],
+  "antecipar": [
+   [
+    "👦",
+    "lav",
+    "Pré-puberdade",
+    "Antecipar as mudanças. Raparigas: início normal 8-13 anos. Rapazes: 9-14 anos"
+   ],
+   [
+    "📱",
+    "peach",
+    "Segurança digital",
+    "Uso seguro da internet. Cyberbullying. Privacidade"
+   ],
+   [
+    "🏃",
+    "mint",
+    "Atividade física",
+    "60 ou mais minutos por dia. Combater sedentarismo"
+   ]
+  ],
+  "alertas": [
+   [
+    "orange",
+    "PHDA com impacto escolar e social",
+    "Avaliação formal - referenciação a Pediatria e Psicologia."
+   ],
+   [
+    "orange",
+    "Miopia com progressão rápida",
+    "Referenciação a Oftalmologia - estratégias de controlo de miopia."
+   ],
+   [
+    "orange",
+    "IMC acima de P85",
+    "Intervencão precoce - avaliação nutricional e atividade física."
+   ]
+  ],
+  "vacinas": []
+ },
+ "10 anos": {
+  "fase": "jov",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC (curvas OMS 2007)",
+    "Avaliar estado nutricional e crescimento pubertário"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir - maior prevalência de HTA nesta faixa"
+   ],
+   [
+    "🌱",
+    "lav",
+    "Estadios de Tanner",
+    "Raparigas: telarca (normal 8-13A). Rapazes: aumento testicular (normal 9-14A)"
+   ],
+   [
+    "😊",
+    "sky",
+    "Saude mental",
+    "Bem-estar, autoestima, pares, desempenho escolar, ansiedade e depressão"
+   ],
+   [
+    "👁️",
+    "sun",
+    "Acuidade visual",
+    "Miopia muito prevalente. Rastrear anualmente"
+   ],
+   [
+    "🚬",
+    "lav",
+    "Habitos: tabaco, alcool, substâncias",
+    "Registar na Ficha Individual. Periodicidade maxima de 3 em 3 anos"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🌱",
+    "lav",
+    "Puberdade - orientação completa",
+    "Explicar a criança E a família as mudanças físicas. Higiene reforçada, menarca, ejaculação, acne"
+   ],
+   [
+    "📱",
+    "peach",
+    "Redes sociais e cyberbullying",
+    "Estabelecer limites de uso. Alertar para perigos online"
+   ],
+   [
+    "🏃",
+    "mint",
+    "Atividade física",
+    "60 ou mais minutos por dia. Desporto organizado"
+   ],
+   [
+    "😴",
+    "sky",
+    "Sono",
+    "9-11h por noite. Cronotipo atrasa na adolescência"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Puberdade precoce - raparigas abaixo de 8 anos, rapazes abaixo de 9 anos",
+    "Referenciação urgente a Endocrinologia Pediátrica."
+   ],
+   [
+    "red",
+    "Atraso pubertário - raparigas sem telarca acima de 13A, rapazes sem desenvolvimento acima de 14A",
+    "Referenciação a Endocrinologia Pediátrica."
+   ],
+   [
+    "orange",
+    "Sinais de depressão ou ansiedade",
+    "Referenciação a Saude Mental Infantil."
+   ],
+   [
+    "orange",
+    "HTA confirmada em 3 medicoes",
+    "Referenciação a Pediatria. Estudo de causa secundária."
+   ]
+  ],
+  "vacinas": [
+   [
+    "VPH (Papilomavírus Humano)",
+    "1ª dose - todos os géneros, 10 anos"
+   ],
+   [
+    "Meningocócica ACWY (MenACWY)",
+    "1ª dose"
+   ]
+  ]
+ },
+ "12/13 anos": {
+  "fase": "jov",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC - Exame Global",
+    "Curva de crescimento pubertário. Desvios de peso"
+   ],
+   [
+    "🔵",
+    "rose",
+    "TA e rastreio dislipidémias",
+    "Colesterol se fatores de risco. TA por tabelas sexo e altura"
+   ],
+   [
+    "🌱",
+    "lav",
+    "Estadios de Tanner",
+    "Progressão pubertária. Raparigas: menarca (valor medio 12-13 anos)"
+   ],
+   [
+    "😊",
+    "sky",
+    "Saude mental",
+    "Humor, autoestima, relações sociais, depressão, ansiedade, perturbacoes alimentares"
+   ],
+   [
+    "🚬",
+    "lav",
+    "Habitos: tabaco, alcool, substâncias",
+    "Avaliar e registar. Consulta a sós se desejado. Confidencialidade garantida"
+   ],
+   [
+    "❤️",
+    "rose",
+    "Saude sexual",
+    "Abordagem não punitiva. Consentimento, afetividade, IST, contraceção"
+   ]
+  ],
+  "antecipar": [
+   [
+    "💊",
+    "lav",
+    "Alcool, tabaco e substâncias",
+    "Abordagem empatica. Riscos do consumo precoce para o cérebro em desenvolvimento"
+   ],
+   [
+    "❤️",
+    "rose",
+    "Sexualidade e afetividade",
+    "Informação clara sobre saude sexual, IST e metodos contracetivos"
+   ],
+   [
+    "😴",
+    "sky",
+    "Sono",
+    "9-11h por noite. Cronotipo atrasado. Ecras fora do quarto"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Perda de peso inexplicada ou restrição alimentar marcada",
+    "Referenciação urgente a Saude Mental - perturbação alimentar."
+   ],
+   [
+    "red",
+    "Ideação suicida ou autolesão",
+    "Referenciação urgente a Pedopsiquiatria."
+   ],
+   [
+    "orange",
+    "Sinais de depressão ou ansiedade persistentes",
+    "Referenciação a Saude Mental Infantil."
+   ],
+   [
+    "orange",
+    "Absentismo escolar frequente",
+    "Avaliar causa - ansiedade, bullying, consumos ou doenca."
+   ]
+  ],
+  "vacinas": [
+   [
+    "VPH (Papilomavírus Humano)",
+    "2ª dose (6 meses após 1a dose)"
+   ],
+   [
+    "dTpa (difteria-tetano-tosse convulsa)",
+    "Reforço adolescente"
+   ],
+   [
+    "Meningocócica ACWY (MenACWY)",
+    "2ª dose"
+   ]
+  ]
+ },
+ "15/18 anos": {
+  "fase": "jov",
+  "avaliar": [
+   [
+    "⚖️",
+    "mint",
+    "Antropometria e IMC",
+    "Crescimento pubertário geralmente completo nas raparigas. Rapazes ainda podem crescer"
+   ],
+   [
+    "🔵",
+    "rose",
+    "Tensão arterial",
+    "Medir e comparar. Rastreio HTA e dislipidémias se fatores de risco"
+   ],
+   [
+    "🌱",
+    "lav",
+    "Puberdade",
+    "Avaliar completude. Ciclos menstruais (raparigas). Ginecomastia fisiológica (rapazes)"
+   ],
+   [
+    "😊",
+    "sky",
+    "Saude mental",
+    "Depressão, ansiedade, perturbações alimentares, comportamentos de risco, autoestima"
+   ],
+   [
+    "🚬",
+    "lav",
+    "Habitos: tabaco, alcool, substâncias e sexualidade",
+    "Consulta a sós. Confidencialidade garantida"
+   ]
+  ],
+  "antecipar": [
+   [
+    "🚗",
+    "peach",
+    "Segurança rodoviaria",
+    "Perigos de conduzir sob efeito de alcool ou substâncias. Uso obrigatório de capacete"
+   ],
+   [
+    "❤️",
+    "rose",
+    "Saude sexual e reprodutiva",
+    "Contraceção, consentimento, IST. Rastrear violência em relações afetivas"
+   ],
+   [
+    "😴",
+    "sky",
+    "Sono",
+    "8-10h por noite. Privação de sono muito frequente em adolescentes"
+   ]
+  ],
+  "alertas": [
+   [
+    "red",
+    "Ideação suicida ou autolesão",
+    "Referenciação urgente a Pedopsiquiatria."
+   ],
+   [
+    "red",
+    "Perturbação alimentar com risco nutricional",
+    "Referenciação urgente a Saude Mental e Nutrição."
+   ],
+   [
+    "orange",
+    "Consumos regulares de alcool ou substâncias",
+    "Referenciação a equipas de tratamento especializado."
+   ],
+   [
+    "orange",
+    "Depressão ou ansiedade persistentes",
+    "Referenciação a Saude Mental."
+   ]
+  ],
+  "vacinas": [
+   [
+    "VPH (Papilomavírus Humano)",
+    "Completar esquema se não vacinado anteriormente"
+   ],
+   [
+    "Hepatite B (VHB)",
+    "Completar esquema se não vacinado"
+   ],
+   [
+    "dTpa",
+    "Reforço se não administrado aos 12/13 anos"
+   ]
+  ]
+ }
+}

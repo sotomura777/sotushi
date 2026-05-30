@@ -1,0 +1,278 @@
+<section class="view" id="view-special-matrix">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar
+      </button>
+    </div>
+
+    <h2 class="page-title"><span class="icon">🛡️</span> Matriz de Vacinação — Situações Especiais</h2>
+
+    <div class="timeline-intro">
+      <div class="info-icon">i</div>
+      <div>
+        <strong>Baseado no Livro Azul de Vacinas (DGS, Caps. 4–6, 2025–2026).</strong>
+        Mostra, para cada grupo de risco, quais vacinas estão recomendadas, gratuitas, contraindicadas ou com condições. Desliza horizontalmente para ver todas as colunas.
+      </div>
+    </div>
+
+    <div class="sp-legend">
+      <span class="item"><span class="sw" style="background:#c3e6cb"></span> Gratuita (PNV/grupo risco)</span>
+      <span class="item"><span class="sw" style="background:#d4edda"></span> Recomendada</span>
+      <span class="item"><span class="sw" style="background:#fff3cd"></span> Com condições</span>
+      <span class="item"><span class="sw" style="background:#f8d7da"></span> Contraindicada</span>
+      <span class="item"><span class="sw" style="background:#f0f3f5"></span> PNV standard</span>
+    </div>
+
+    <div class="sp-matrix-wrap">
+      <table class="sp-matrix">
+        <thead>
+          <tr>
+            <th>Grupo / Condição</th>
+            <th data-info-title="Pn20 — Vacina pneumocócica conjugada 20-valente (Prevenar 20®)" data-info="Protege contra: doença invasiva pneumocócica (meningite, bacteriemia, pneumonia) por 20 serotipos de Streptococcus pneumoniae.">Pn20</th>
+            <th data-info-title="Pn23 — Vacina pneumocócica polissacárida 23-valente (Pneumovax 23®)" data-info="Protege contra: doença invasiva pneumocócica por 23 serotipos. Complementa a Pn20.">Pn23</th>
+            <th data-info-title="MenACWY — Vacina contra Neisseria meningitidis serogrupos A, C, W e Y" data-info="Protege contra: doença meningocócica invasiva (meningite, sépsis) dos serogrupos A, C, W e Y.">MenACWY</th>
+            <th data-info-title="MenB — Vacina contra Neisseria meningitidis serogrupo B" data-info="Protege contra: doença meningocócica invasiva (meningite, sépsis) do serogrupo B.">MenB</th>
+            <th data-info-title="Hib — Vacina contra Haemophilus influenzae tipo b" data-info="Protege contra: meningite, epiglotite, pneumonia e sépsis por Haemophilus influenzae tipo b.">Hib</th>
+            <th data-info-title="VHB — Vacina contra a hepatite B" data-info="Protege contra: hepatite B (infeção hepática crónica, cirrose, carcinoma hepatocelular).">VHB</th>
+            <th data-info-title="VHA — Vacina contra a hepatite A" data-info="Protege contra: hepatite A (infeção hepática aguda, transmissão fecal-oral).">VHA</th>
+            <th data-info-title="VASPR — Vacina contra sarampo, parotidite epidémica e rubéola" data-info="Vacina viva atenuada. Protege contra: sarampo, papeira (parotidite) e rubéola.">VASPR</th>
+            <th data-info-title="HPV9 — Vacina contra o vírus do papiloma humano nonavalente" data-info="Protege contra: cancros do colo do útero, vulva, vagina, pénis, ânus, orofaringe e verrugas genitais.">HPV</th>
+            <th data-info-title="BCG — Vacina contra a tuberculose" data-info="Vacina viva atenuada. Protege contra: formas graves de tuberculose (meningite tuberculosa, tuberculose miliar).">BCG</th>
+            <th data-info-title="Gripe sazonal — Vacina contra os vírus Influenza" data-info="Protege contra: gripe sazonal (vírus Influenza tipos A e B). Dose anual.">Gripe</th>
+            <th data-info-title="COVID-19 — Vacina contra SARS-CoV-2" data-info="Protege contra: doença COVID-19 (infeção por SARS-CoV-2). Conforme Normas em vigor.">COVID-19</th>
+            <th data-info-title="MVA-BN — Vacina contra mpox (Jynneos® / Imvanex®)" data-info="Vacina de vírus Vaccinia Ankara modificado vivo. Protege contra: mpox (varíola dos macacos).">MVA-BN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asplenia / Hipoesplenismo / Déf. complemento</td>
+            <td class="c-free" data-info="Pn20 dose única. Gratuita. Vacinar idealmente até 2 sem antes de esplenectomia.">✓ G</td>
+            <td class="c-free" data-info="Pn23: 1 dose 6–12m após Pn20 (mín. 8 sem). Gratuita.">✓ G</td>
+            <td class="c-free" data-info="MenACWY. Gratuita nesta situação.">✓ G</td>
+            <td class="c-free" data-info="MenB se não vacinado. Até 50 anos. Gratuita.">✓ G<br><small>&lt;50a</small></td>
+            <td class="c-free" data-info="Hib em qualquer idade se não vacinado. Gratuita.">✓ G</td>
+            <td class="c-std" data-info="Seguir esquema PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-std" data-info="Seguir esquema PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Seguir esquema PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-yes" data-info="Gripe sazonal anualmente conforme Normas.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente conforme Normas.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>VIH (qualquer estadio)</td>
+            <td class="c-free" data-info="Pn20 dose única. Recomendada em qualquer estadio. Gratuita.">✓ G</td>
+            <td class="c-free" data-info="Pn23: 6–12m após Pn20. Recomendada em qualquer estadio. Gratuita.">✓ G</td>
+            <td class="c-std" data-info="Seguir PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV para a idade.">PNV</td>
+            <td class="c-free" data-info="VHB recomendada. Esquema conforme capítulo específico. Gratuita.">✓ G</td>
+            <td class="c-free" data-info="VHA recomendada. 2 doses (0, 6–12m). Gratuita.">✓ G</td>
+            <td class="c-warn" data-info="VASPR contraindicada se imunossupressão grave: CD4 &lt;200/µL (≥6 anos) ou CD4 &lt;500/µL e &lt;15% linf. T (1–5 anos).">⚠<br><small>CI se CD4 baixo</small></td>
+            <td class="c-free" data-info="HPV: 3 doses (0, 2, 6m), 10–26 anos. Se já fez 2 doses: basta 1 adicional. Gratuita.">✓ G<br><small>3 doses 10–26a</small></td>
+            <td class="c-no" data-info="BCG: contraindicada sempre em VIH.">✗</td>
+            <td class="c-yes" data-info="Gripe sazonal anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-yes" data-info="MVA-BN conforme Norma 006/2022.">✓</td>
+          </tr>
+          <tr>
+            <td>Transplante células estaminais</td>
+            <td class="c-free" data-info="Pn20: 3 doses (0, 2, 8m). Iniciar 6–12m pós-transplante. Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-free" data-info="Pn23: 1 dose 12m pós-Tx (mín. 8 sem após Pn20). Reforço único após 5 anos. ≥24m idade. Gratuita.">✓ G<br><small>≥24m idade</small></td>
+            <td class="c-free" data-info="MenACWY: 1 dose, 6–12m pós-Tx. Gratuita.">✓ G</td>
+            <td class="c-free" data-info="MenB: 2–3 doses conforme idade, 6–12m pós-Tx. &lt;50 anos. Gratuita.">✓ G<br><small>&lt;50a</small></td>
+            <td class="c-free" data-info="Hib: 3 doses (0, 2, 12m), 6–12m pós-Tx. Qualquer idade. Gratuita.">✓ G</td>
+            <td class="c-free" data-info="VHB: 3 doses (0, 1, 6m). Titular anti-HBs 1–2m após 3ª dose. Se &lt;10 mUI/mL: nova série. Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-std" data-info="Sem recomendação específica neste contexto.">—</td>
+            <td class="c-warn" data-info="VASPR: 2 doses, ≥24 meses pós-transplante, apenas se imunocompetente.">⚠<br><small>≥24m pós-Tx</small></td>
+            <td class="c-free" data-info="HPV: 3 doses (0, 1–2, 6m), 6–12m pós-Tx, 10–26 anos. Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-no" data-info="BCG: contraindicada sempre.">✗</td>
+            <td class="c-yes" data-info="Gripe sazonal anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Transplante órgão sólido</td>
+            <td class="c-free" data-info="Pn20 gratuita independentemente da idade.">✓ G</td>
+            <td class="c-free" data-info="Pn23 gratuita independentemente da idade.">✓ G</td>
+            <td class="c-std" data-info="Seguir PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV para a idade.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV. Reavaliar serologia hep B pós-Tx.">PNV</td>
+            <td class="c-free" data-info="VHA gratuita se candidato a transplante hepático ou doença hepática crónica com serologia negativa.">✓ G<br><small>Tx hepático</small></td>
+            <td class="c-warn" data-info="VASPR: 2 doses pré-Tx (até 4 sem antes). Pós-Tx: não recomendada (segurança não estudada). Se exposição sarampo: Ig humana normal.">⚠<br><small>Pré-Tx apenas</small></td>
+            <td class="c-free" data-info="HPV: 3 doses (10–26 anos). Se já fez 2 em rotina: basta 1 adicional. Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-no" data-info="BCG: contraindicada sempre.">✗</td>
+            <td class="c-yes" data-info="Gripe sazonal anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Imunossupressão crónica</td>
+            <td class="c-yes" data-info="Pn20 recomendada.">✓</td>
+            <td class="c-yes" data-info="Pn23 recomendada.">✓</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-no" data-info="VASPR contraindicada se altas doses de imunossupressores (azatioprina ≥3mg/kg/d, MTX ≥0,4mg/kg/sem, biológicos).">✗<br><small>alta dose</small></td>
+            <td class="c-free" data-info="HPV: 3 doses (10–26 anos). Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-no" data-info="BCG: contraindicada.">✗</td>
+            <td class="c-yes" data-info="Gripe anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Corticoterapia ≥14d alta dose<br><small>(prednisolona ≥20mg/d)</small></td>
+            <td class="c-warn" data-info="Inativadas: sem CI mas preferível após final do tratamento se curta duração.">⚠<br><small>Pref. após Tx</small></td>
+            <td class="c-warn" data-info="Inativadas: sem CI mas preferível após final do tratamento.">⚠</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-no" data-info="VASPR: vacina viva — esperar 1 MÊS após parar corticoterapia (se ≥14 dias). Se &lt;14 dias: 2 semanas após.">✗<br><small>1m após parar</small></td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-no" data-info="BCG: vacina viva — contraindicada durante corticoterapia alta dose.">✗</td>
+            <td class="c-warn" data-info="Sem CI mas preferível após final do tratamento se curta duração.">⚠</td>
+            <td class="c-warn" data-info="Sem CI mas preferível após final do tratamento se curta duração.">⚠</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Imunodef. primárias (alterações linfócitos B)</td>
+            <td class="c-yes" data-info="Pn20 recomendada.">✓</td>
+            <td class="c-yes" data-info="Pn23 recomendada.">✓</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-warn" data-info="VASPR: CI relativa — pode não estar indicada (sem resposta devido a Ig regulares). Deficiência seletiva de IgA/subclasses IgG NÃO é CI para vacinas vivas.">⚠<br><small>Pode não estar indicada</small></td>
+            <td class="c-free" data-info="HPV: 3 doses (10–26 anos). Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-std" data-info="Seguir PNV. BCG sem CI específica neste grupo.">PNV</td>
+            <td class="c-yes" data-info="Gripe anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Imunodef. primárias (alterações linfócitos T / SCID)</td>
+            <td class="c-warn" data-info="Pode ser administrada mas pode ser ineficaz em defeitos completos (SCID).">⚠<br><small>Pode ser ineficaz</small></td>
+            <td class="c-warn" data-info="Pode ser administrada mas pode ser ineficaz.">⚠</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-no" data-info="VASPR: contraindicada (vacina viva — risco de doença por estirpes vacinais). Todas as vacinas vivas CI.">✗</td>
+            <td class="c-free" data-info="HPV (inativada): 3 doses (10–26 anos). Gratuita.">✓ G<br><small>3 doses</small></td>
+            <td class="c-no" data-info="BCG: contraindicada (vacina viva).">✗</td>
+            <td class="c-warn" data-info="Pode ser administrada mas pode ser ineficaz em SCID.">⚠</td>
+            <td class="c-warn" data-info="Pode ser administrada mas pode ser ineficaz em SCID.">⚠</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Grávidas</td>
+            <td class="c-warn" data-info="Pn20: administrar se indicada. Vacina inativada — preferir 2º/3º trimestre.">⚠<br><small>Se indicada</small></td>
+            <td class="c-warn" data-info="Pn23: administrar se indicada. Vacina inativada.">⚠</td>
+            <td class="c-warn" data-info="MenACWY: administrar se indicada. Vacina inativada.">⚠<br><small>Se indicada</small></td>
+            <td class="c-std" data-info="Sem recomendação específica na gravidez.">—</td>
+            <td class="c-std" data-info="Sem recomendação específica na gravidez.">—</td>
+            <td class="c-warn" data-info="VHB: administrar se indicada. Vacina inativada.">⚠<br><small>Se indicada</small></td>
+            <td class="c-std" data-info="Sem recomendação específica na gravidez.">—</td>
+            <td class="c-no" data-info="VASPR: CONTRAINDICADA (vacina viva atenuada — risco teórico para o feto). Se exposição ao sarampo: Ig humana normal.">✗<br><small>Viva atenuada</small></td>
+            <td class="c-warn" data-info="HPV: NÃO RECOMENDADA na gravidez (evidência insuficiente). Adiar para pós-parto.">⚠<br><small>Não recomendada</small></td>
+            <td class="c-no" data-info="BCG: contraindicada (vacina viva).">✗</td>
+            <td class="c-yes" data-info="Gripe recomendada na gravidez.">✓</td>
+            <td class="c-yes" data-info="COVID-19 conforme Normas em vigor.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica na gravidez.">—</td>
+          </tr>
+          <tr>
+            <td>Profissionais de saúde</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-free" data-info="VHB: direito à vacinação no PNV (exceto funções estritamente administrativas). Gratuita.">✓ G</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-free" data-info="VASPR: 2 doses recomendadas (independentemente do ano nascimento) se contacto próximo com doentes. Programa Eliminação Sarampo/Rubéola.">✓ G<br><small>2 doses</small></td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-yes" data-info="Gripe anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Doença hepática crónica / Candidato Tx hepático</td>
+            <td class="c-yes" data-info="Pn20 recomendada.">✓</td>
+            <td class="c-yes" data-info="Pn23 recomendada.">✓</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-yes" data-info="VHB recomendada.">✓</td>
+            <td class="c-free" data-info="VHA: indicada e GRATUITA em candidatos a Tx hepático e doença hepática crónica com serologia negativa.">✓ G</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-yes" data-info="Gripe anualmente.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Alterações coagulação / Anticoagulação</td>
+            <td class="c-warn" data-info="Pn20: pode ser via SC profunda se INR >3 ou anti-Xa >0,5 UI/mL.">⚠<br><small>SC profunda</small></td>
+            <td class="c-warn" data-info="Pn23: pode ser via SC profunda se diátese hemorrágica.">⚠<br><small>SC profunda</small></td>
+            <td class="c-warn" data-info="MenACWY: IM por prescrição médica. Agulha 23G, pressão 5 min, diminuir mobilidade 24h. Não usar IM se INR >3.">⚠<br><small>IM se INR≤3</small></td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-warn" data-info="Hib: pode ser via SC profunda.">⚠<br><small>SC profunda</small></td>
+            <td class="c-warn" data-info="VHB: pode ser via SC profunda.">⚠<br><small>SC profunda</small></td>
+            <td class="c-std" data-info="Sem recomendação específica. Sob fatores de coagulação derivados de plasma: VHA gratuita.">—</td>
+            <td class="c-warn" data-info="VASPR: pode ser via SC profunda.">⚠<br><small>SC profunda</small></td>
+            <td class="c-warn" data-info="HPV: IM por prescrição médica. Agulha 23G, pressão firme 5 min.">⚠<br><small>IM: agulha fina</small></td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-warn" data-info="Via adaptada conforme coagulação.">⚠</td>
+            <td class="c-warn" data-info="Via adaptada conforme coagulação.">⚠</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+          <tr>
+            <td>Coabitantes de imunocomprometidos</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+            <td class="c-yes" data-info="VASPR pode ser administrada aos contactos próximos de imunocomprometidos. Segura.">✓<br><small>Segura</small></td>
+            <td class="c-std" data-info="Seguir PNV.">PNV</td>
+            <td class="c-yes" data-info="BCG pode ser administrada. Segura. VAP (oral viva): CONTRAINDICADA em coabitantes.">✓<br><small>Segura</small></td>
+            <td class="c-yes" data-info="Gripe anualmente — fundamental para proteger o imunocomprometido.">✓</td>
+            <td class="c-yes" data-info="COVID-19 anualmente.">✓</td>
+            <td class="c-std" data-info="Sem recomendação específica.">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes-block">
+      <h3>Notas à Matriz</h3>
+      <ul>
+        <li><strong>✓ G</strong> = Recomendada e <strong>gratuita</strong> no âmbito do PNV / estratégia de grupo de risco.</li>
+        <li><strong>✓</strong> = Recomendada (pode ou não ser gratuita; verificar norma específica).</li>
+        <li><strong>⚠</strong> = Com condições especiais (prescrição médica, intervalos específicos, via SC profunda, etc.).</li>
+        <li><strong>✗</strong> = Contraindicada neste grupo.</li>
+        <li><strong>PNV</strong> = Seguir esquema standard do PNV para a idade; sem recomendação especial.</li>
+        <li>A vacinação de imunocomprometidos deve ser efetuada <strong>sob orientação e prescrição médica</strong>.</li>
+        <li>Vacinas <strong>inativadas</strong>: preferência por administração até 2 semanas antes de terapêutica imunossupressora.</li>
+        <li>Vacinas <strong>vivas</strong> (VASPR, BCG, VAP): até 4 semanas antes de imunossupressão; BCG sempre contraindicada em imunocomprometidos.</li>
+        <li>Em alterações da coagulação: se INR &gt;3 ou anti-Xa &gt;0,5 UI/mL (4h pós-dose), não usar via IM. Via SC profunda alternativa para Hib, VHB, Pn20, Pn23, VIP, VASPR, Td. Agulha 23G, pressão firme 5 min.</li>
+        <li><strong>Coabitantes:</strong> VAP (poliomielite oral viva) está contraindicada. VASPR e BCG podem ser administradas. Rotavírus pode ser dado a crianças coabitantes — os imunocomprometidos devem evitar cuidar da higiene da criança nas 4 semanas seguintes.</li>
+      </ul>
+      <p style="margin-top:16px;font-size:0.85rem;color:var(--ink-mute);">
+        <strong>Fonte:</strong> Livro Azul de Vacinas — DGS, Caps. 5 (Vacinação em situações especiais) e 6 (Vacinação no imunocomprometido), atualizados a 14/04/2026.
+      </p>
+    </div>
+  </section>

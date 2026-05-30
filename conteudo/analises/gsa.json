@@ -1,0 +1,52 @@
+{
+  "campos": {
+    "rapida": [
+      { "id": "g_ph", "var": "ph", "nm": "pH", "un": "", "step": 0.01 },
+      { "id": "g_pco2", "var": "pco2", "nm": "pCO₂", "un": "mmHg", "step": 0.1 },
+      { "id": "g_po2", "var": "po2", "nm": "pO₂", "un": "mmHg", "step": 0.1 },
+      { "id": "g_hco3", "var": "hco3", "nm": "HCO₃⁻", "un": "mmol/L", "step": 0.1 },
+      { "id": "g_lact", "var": "lact", "nm": "Lactato", "un": "mmol/L", "step": 0.01 },
+      { "id": "g_sao2", "var": "sao2", "nm": "sO₂", "un": "%", "step": 0.1 },
+      { "id": "g_k", "var": "k", "nm": "K⁺", "un": "mmol/L", "step": 0.01 },
+      { "id": "g_na", "var": "na", "nm": "Na⁺", "un": "mmol/L", "step": 0.1 },
+      { "id": "g_ca", "var": "ca", "nm": "Ca²⁺", "un": "mmol/L", "step": 0.01 },
+      { "id": "g_cl", "var": "cl", "nm": "Cl⁻", "un": "mmol/L", "step": 0.1 },
+      { "id": "g_glic", "var": "gli", "nm": "Glicose", "un": "mg/dL", "step": 1 }
+    ],
+    "extra": [
+      { "id": "g_be", "var": "be", "nm": "BE", "un": "mmol/L", "step": 0.1 },
+      { "id": "g_cthb", "var": "cthb", "nm": "ctHb", "un": "g/dL", "step": 0.1 },
+      { "id": "g_hctc", "var": "hctc", "nm": "Hctc", "un": "%", "step": 0.1 },
+      { "id": "g_fo2hb", "var": "fo2hb", "nm": "FO₂Hb", "un": "%", "step": 0.1 },
+      { "id": "g_fcohb", "var": "fcohb", "nm": "FCOHb", "un": "%", "step": 0.01 },
+      { "id": "g_fhhb", "var": "fhhb", "nm": "FHHb", "un": "%", "step": 0.1 },
+      { "id": "g_fmethb", "var": "fmethb", "nm": "FMetHb", "un": "%", "step": 0.1 },
+      { "id": "g_ctbil", "var": "ctbil", "nm": "Bilirrubina", "un": "mg/dL", "step": 0.1 }
+    ]
+  },
+  "referencias": {
+    "ph": { "min": 7.35, "max": 7.45 },
+    "hco3": { "min": 22, "max": 26 },
+    "pco2": { "min": 35, "max": 45 },
+    "anionGap": { "min": 8, "max": 12 },
+    "pf": { "normal": 300, "ardsLigeiro": 200, "ardsModerado": 100 },
+    "po2": { "hipoxemia": 60, "limite": 80 },
+    "lactato": { "vigiar": 2, "alarme": 4 },
+    "k": { "baixo": 3.5, "alto": 5.1, "criticoBaixo": 3, "criticoAlto": 6 },
+    "na": { "baixo": 130, "alto": 150, "grave": 125 },
+    "ca": { "baixo": 1.12, "alto": 1.32 },
+    "glicose": { "baixo": 70, "alto": 180 }
+  },
+  "textos": {
+    "mudpiles": "MUDPILES (Metanol, Urémia, cetoacidose Diabética, Propilenoglicol, INH/Ferro, Lactato, Etilenoglicol, Salicilatos)",
+    "comoLer": [
+      { "t": "1. pH", "d": "Diz-nos se o sangue está mais ácido (<7.35) ou alcalino (>7.45). Normal: 7.35–7.45. Se está fora destes valores, há um distúrbio." },
+      { "t": "2. Identificar a causa", "d": "O HCO₃⁻ (bicarbonato, normal 22–26) representa o lado metabólico (rins). O pCO₂ (normal 35–45) representa o lado respiratório (pulmões). Se o pH está baixo e o HCO₃⁻ também: acidose metabólica. Se o pH está baixo e o pCO₂ está alto: acidose respiratória." },
+      { "t": "3. Compensação", "d": "O corpo tenta corrigir: se há acidose metabólica, os pulmões respiram mais rápido para baixar o CO₂. Se há acidose respiratória, os rins retêm bicarbonato. Usamos fórmulas (Winter, etc.) para verificar se a compensação é adequada ou se há um segundo distúrbio." },
+      { "t": "4. Anion gap", "d": "Calcula-se: Na − (Cl + HCO₃). Normal 8–12. Se elevado, há ácidos extra no sangue (lactato, cetonas, tóxicos — mnemónica MUDPILES). Se normal numa acidose metabólica, a causa é perda de bicarbonato (diarreia, rim)." },
+      { "t": "5. Oxigenação", "d": "O P/F (pO₂ ÷ FiO₂) avalia os pulmões independentemente do O₂ dado. >300 é normal, <200 é grave (ARDS). O gradiente A-a mostra se o problema é nos pulmões (elevado: pneumonia, TEP) ou só ventilação insuficiente (normal)." },
+      { "t": "6. Lactato", "d": "Sobe quando os tecidos não recebem oxigénio suficiente (choque, hipoperfusão) ou há excesso de produção (convulsões, metformina). >2 é de vigiar, >4 é alarme." },
+      { "t": "7. Electrólitos", "d": "K⁺, Na⁺, Ca²⁺ e Glicose na gasimetria dão resultados imediatos. K alto ou baixo pode causar arritmias. Na baixo pode dar sintomas neurológicos. Glicose elevada pode indicar diabetes descompensada." }
+    ]
+  }
+}

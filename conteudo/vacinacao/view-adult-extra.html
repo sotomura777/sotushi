@@ -1,0 +1,258 @@
+<section class="view" id="view-adult-extra">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar
+      </button>
+    </div>
+
+    <h2 class="page-title"><span class="icon">💉</span> Extra PNV — Adultos</h2>
+
+    <div class="timeline-intro">
+      <div class="info-icon">i</div>
+      <div>
+        <strong>Baseado no Livro Azul de Vacinas — DGS, Cap. 5 (Vacinação em situações especiais) e Cap. 6 (Vacinação no imunocomprometido), atualizados a 14/04/2026.</strong>
+        Inclui vacinação de imunocomprometidos, transplantados, pessoas com VIH, asplenia, alterações da coagulação e coabitantes. Passa o rato sobre cada vacina para mais detalhe.
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <input id="search-adult-extra" type="text" placeholder="Pesquisar (ex: transplante, VIH, asplenia, corticoides)…">
+      <button class="clear-btn" type="button" aria-label="Limpar">✕</button>
+    </div>
+
+    <div class="timeline">
+
+      <!-- ======== REGRAS GERAIS ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">📋</span><span class="age-unit">regras</span></div>
+        <div class="tl-card">
+          <h3>Regras gerais — Vacinação no imunocomprometido</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Vacinas inativadas" data-info="Podem ser administradas em pessoas imunocomprometidas. De preferência até 2 SEMANAS antes da intervenção imunossupressora."><span class="dot"></span>Inativadas: até 2 sem antes</span>
+            <span class="vaccine-chip" data-info-title="Vacinas vivas" data-info="Podem estar contraindicadas pelo risco de doença pelas estirpes vacinais. Devem ser administradas até 4 SEMANAS antes de intervenção imunossupressora."><span class="dot"></span>Vivas: até 4 sem antes</span>
+          </div>
+          <div class="tl-protects"><strong>Princípio:</strong> pessoas com imunodeficiência devem ser consideradas potencialmente suscetíveis mesmo com esquema vacinal atualizado. Vacinação sob orientação e prescrição médica.</div>
+          <div style="margin-top:10px; padding:10px; background:var(--warn-bg); border-radius:8px; font-size:0.85rem; border:1px solid var(--warn-border); color:var(--warn-text);">
+            <strong>Contraindicações por tipo:</strong><br>
+            <strong>Alt. linfócitos B:</strong> VASPR = contraindicação relativa (pode não haver resposta por Ig passivas). BCG contraindicada se defeito completo.<br>
+            <strong>Alt. linfócitos T / SCID:</strong> Todas as vacinas vivas contraindicadas. Vacinas podem ser ineficazes em defeitos completos.<br>
+            <strong>Alt. complemento / fagocitária:</strong> BCG contraindicada. Restantes sem contraindicação específica.<br>
+            <strong>VIH:</strong> VASPR só contraindicada se imunossupressão grave (CD4 &lt;200/µL ≥6 anos; CD4 &lt;500/µL e &lt;15% linf. T em 1–5 anos). BCG contraindicada.<br>
+            <strong>Cancro / transplante / imunossupressão:</strong> BCG contraindicada. Vacinas vivas: contraindicação relativa (efetividade depende do grau de imunossupressão).
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== ASPLENIA ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🛡️</span><span class="age-unit">asplenia</span></div>
+        <div class="tl-card">
+          <h3>Asplenia anatómica/funcional, hipoesplenismo, défice do complemento ou terapêutica com inibidores do complemento</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Hib — Vacina contra Haemophilus influenzae tipo b" data-info="Protege contra: meningite, epiglotite, pneumonia e sépsis por Haemophilus influenzae tipo b. Se não vacinado nas idades recomendadas, administrar em qualquer idade. GRATUITA."><span class="dot"></span>Hib ✦</span>
+            <span class="vaccine-chip" data-info-title="MenB — Vacina contra Neisseria meningitidis serogrupo B" data-info="Protege contra: doença invasiva meningocócica do serogrupo B (meningite, sépsis). Se não vacinado, até aos 50 anos. GRATUITA."><span class="dot"></span>MenB (&lt;50a) ✦</span>
+            <span class="vaccine-chip" data-info-title="MenACWY — Vacina contra Neisseria meningitidis serogrupos A, C, W e Y" data-info="Protege contra: doença invasiva meningocócica dos serogrupos A, C, W e Y (meningite, sépsis). GRATUITA nesta situação."><span class="dot"></span>MenACWY ✦</span>
+            <span class="vaccine-chip" data-info-title="Pn20 — Vacina pneumocócica conjugada 20-valente (Prevenar 20®)" data-info="Protege contra: doença invasiva pneumocócica (meningite, bacteriemia, pneumonia) por 20 serotipos de Streptococcus pneumoniae. Dose única. GRATUITA."><span class="dot"></span>Pn20 ✦</span>
+            <span class="vaccine-chip" data-info-title="Pn23 — Vacina pneumocócica polissacárida 23-valente (Pneumovax 23®)" data-info="Protege contra: doença invasiva pneumocócica por 23 serotipos de Streptococcus pneumoniae. Complementa a Pn20. 1 dose 6–12 meses após Pn20 (mínimo 8 semanas). GRATUITA."><span class="dot"></span>Pn23 ✦</span>
+            <span class="vaccine-chip" data-info-title="Gripe sazonal + COVID-19" data-info="Gripe: protege contra os vírus Influenza (tipos A e B). COVID-19: protege contra o SARS-CoV-2. Ambas recomendadas anualmente conforme Normas/Orientações em vigor."><span class="dot"></span>Gripe + COVID-19</span>
+          </div>
+          <div class="tl-protects"><strong>Risco aumentado de infeção grave por bactérias capsuladas</strong> (Haemophilus, Neisseria, Streptococcus). Vacinar idealmente até 2 semanas antes de esplenectomia eletiva ou início de terapêutica com inibidores do complemento (eculizumab, ravulizumab).</div>
+          <div style="margin-top:6px; font-size:0.82rem; color:var(--teal-deep);">✦ = Gratuita independentemente da idade</div>
+        </div>
+      </div>
+
+      <!-- ======== VIH ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🔬</span><span class="age-unit">VIH</span></div>
+        <div class="tl-card">
+          <h3>Pessoas que vivem com infeção por VIH</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="PNV — esquema adequado à idade" data-info="Recomendadas em qualquer estadio (resposta pode estar diminuída). Vacinar o mais precocemente possível. Se imunossupressão grave: pode ser considerado protelar até recuperação com TAR."><span class="dot"></span>PNV (qualquer estadio)</span>
+            <span class="vaccine-chip" data-info-title="Pn20 + Pn23 — Vacinas pneumocócicas" data-info="Protege contra: doença invasiva pneumocócica (meningite, bacteriemia, pneumonia). Pn20 (conjugada 20-valente): dose única. Pn23 (polissacárida 23-valente): 6–12 meses após. Recomendadas em qualquer estadio de VIH. GRATUITAS."><span class="dot"></span>Pn20 + Pn23 ✦</span>
+            <span class="vaccine-chip" data-info-title="VHA — Vacina contra a hepatite A" data-info="Protege contra: hepatite A (infeção hepática aguda pelo vírus da hepatite A, transmissão fecal-oral). 2 doses (0, 6–12 meses). GRATUITA."><span class="dot"></span>VHA ✦</span>
+            <span class="vaccine-chip" data-info-title="VHB — Vacina contra a hepatite B" data-info="Protege contra: hepatite B (infeção hepática crónica, cirrose, carcinoma hepatocelular). Esquema conforme capítulo específico VHB. GRATUITA."><span class="dot"></span>VHB ✦</span>
+            <span class="vaccine-chip" data-info-title="HPV9 — Vacina contra o vírus do papiloma humano nonavalente" data-info="Protege contra: cancro do colo do útero, vulva, vagina, pénis, ânus e orofaringe; verrugas genitais. 3 doses (0, 2, 6 meses), gratuita, 10–26 anos. Se já fez 2 doses em rotina: basta 1 dose adicional."><span class="dot"></span>HPV (3 doses, 10–26a) ✦</span>
+            <span class="vaccine-chip" data-info-title="Gripe sazonal + COVID-19" data-info="Gripe: protege contra os vírus Influenza (tipos A e B). COVID-19: protege contra o SARS-CoV-2. Ambas recomendadas anualmente conforme Normas/Orientações em vigor."><span class="dot"></span>Gripe + COVID-19</span>
+          </div>
+          <div class="tl-protects"><strong>Em qualquer estadio:</strong> vacinas inativadas recomendadas. Vacinados em fase de imunossupressão grave: podem ser considerados reforços de todas as vacinas do PNV (exceto BCG) após recuperação.</div>
+          <div style="margin-top:10px; padding:10px; background:#f8d7da; border-radius:8px; font-size:0.85rem; border:1px solid #f5c6cb; color:#721c24;">
+            <strong>✗ Contraindicadas:</strong> BCG (sempre). VASPR se imunossupressão grave (CD4 &lt;200/µL em ≥6 anos).
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== TRANSPLANTE CÉLULAS ESTAMINAIS ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🧬</span><span class="age-unit">TCE</span></div>
+        <div class="tl-card">
+          <h3>Transplante de células estaminais medulares ou periféricas</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="VHB" data-info="Iniciar 6–12 meses após transplante. 3 doses (0, 1, 6m ou 0, 2, 12m se combinada). Titular anti-HBs 1–2 meses após 3ª dose; se &lt;10 mUI/mL: 2ª série de 3 doses."><span class="dot"></span>VHB (3 doses) ✦</span>
+            <span class="vaccine-chip" data-info-title="DTPa (&lt;7a) / Tdpa (7–9a) / Td (≥10a)" data-info="Iniciar 6–12 meses após. 3 doses (0, 2, 12m). Reforços conforme PNV."><span class="dot"></span>DTPa/Tdpa/Td ✦</span>
+            <span class="vaccine-chip" data-info-title="VIP" data-info="Iniciar 6–12 meses após. 3 doses (0, 2, 12m)."><span class="dot"></span>VIP (3 doses) ✦</span>
+            <span class="vaccine-chip" data-info-title="Hib — Vacina contra Haemophilus influenzae tipo b" data-info="Protege contra: meningite, epiglotite, pneumonia por Hib. Iniciar 6–12 meses após transplante. 3 doses (0, 2, 12m). Em qualquer idade. GRATUITA."><span class="dot"></span>Hib (3 doses) ✦</span>
+            <span class="vaccine-chip" data-info-title="MenB" data-info="Iniciar 6–12 meses após. 2–3 doses dependendo da idade de início. &lt;50 anos."><span class="dot"></span>MenB (&lt;50a) ✦</span>
+            <span class="vaccine-chip" data-info-title="MenACWY — Vacina contra meningococo ACWY" data-info="Protege contra: doença meningocócica invasiva dos serogrupos A, C, W e Y. 1 dose, 6–12 meses após transplante. ≥12 meses de idade. GRATUITA."><span class="dot"></span>MenACWY (1 dose) ✦</span>
+            <span class="vaccine-chip" data-info-title="Pn20 — Vacina pneumocócica conjugada 20-valente" data-info="Protege contra: doença invasiva pneumocócica. Iniciar 6–12 meses após transplante. 3 doses (0, 2, 8 meses). GRATUITA."><span class="dot"></span>Pn20 (3 doses) ✦</span>
+            <span class="vaccine-chip" data-info-title="Pn23 — Vacina pneumocócica polissacárida 23-valente" data-info="Protege contra: doença invasiva pneumocócica (complementa Pn20). 12 meses após transplante (mín. 8 sem após Pn20). 1 dose + reforço único após 5 anos. ≥24 meses de idade. GRATUITA."><span class="dot"></span>Pn23 ✦</span>
+            <span class="vaccine-chip" data-info-title="VASPR" data-info="Iniciar ≥24 meses após transplante (se imunocompetente). 2 doses (intervalo mínimo 4 semanas)."><span class="dot"></span>VASPR (≥24m pós-Tx)</span>
+            <span class="vaccine-chip" data-info-title="HPV" data-info="3 doses (0, 1–2, 6m). Iniciar 6–12 meses pós-transplante. 10–26 anos. GRATUITA."><span class="dot"></span>HPV (3 doses) ✦</span>
+          </div>
+          <div class="tl-protects"><strong>Considerar como não vacinados</strong> (naive) independentemente da história vacinal do dador. Todas as vacinas gratuitas.</div>
+          <div style="margin-top:10px; padding:10px; background:#f8d7da; border-radius:8px; font-size:0.85rem; border:1px solid #f5c6cb; color:#721c24;">
+            <strong>✗ BCG:</strong> contraindicada sempre. <strong>Pré-transplante:</strong> completar PNV + capsuladas (Hib, MenB, MenACWY, Pn20). VASPR do dador: não nas 4 semanas antes da colheita.
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== TRANSPLANTE ÓRGÃO SÓLIDO ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🫀</span><span class="age-unit">TOS</span></div>
+        <div class="tl-card">
+          <h3>Candidatos a transplante e transplantados com órgão sólido</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="PNV completo" data-info="Cumprir PNV com esquema adequado à idade. Podem ser adotados esquemas acelerados (intervalos mínimos) antes do transplante."><span class="dot"></span>PNV (esquema acelerado possível)</span>
+            <span class="vaccine-chip" data-info-title="Pn20 + Pn23" data-info="Gratuitas independentemente da idade."><span class="dot"></span>Pn20 + Pn23 ✦</span>
+            <span class="vaccine-chip" data-info-title="VHA — Transplante hepático" data-info="Indicada e GRATUITA nos candidatos a transplante hepático e pessoas com doença hepática crónica com serologia negativa."><span class="dot"></span>VHA (se Tx hepático) ✦</span>
+            <span class="vaccine-chip" data-info-title="VASPR — Pré-transplante" data-info="Nos adultos: 2 doses, intervalo mínimo 4 semanas. Pode ser antecipada. Até 4 semanas antes do transplante."><span class="dot"></span>VASPR (pré-Tx apenas)</span>
+            <span class="vaccine-chip" data-info-title="HPV" data-info="Esquema de 3 doses, gratuita, 10–26 anos. Se já fez 2 doses em rotina: basta 1 dose adicional."><span class="dot"></span>HPV (3 doses, 10–26a) ✦</span>
+            <span class="vaccine-chip" data-info-title="Gripe sazonal + COVID-19" data-info="Gripe: protege contra os vírus Influenza (tipos A e B). COVID-19: protege contra o SARS-CoV-2. Ambas recomendadas anualmente conforme Normas em vigor."><span class="dot"></span>Gripe + COVID-19</span>
+          </div>
+          <div class="tl-protects"><strong>Pré-Tx:</strong> vacinar o máximo possível. Vacinas inativadas até 2 sem antes. Vacinas vivas até 4 sem antes.</div>
+          <div style="margin-top:10px; padding:10px; background:#f8d7da; border-radius:8px; font-size:0.85rem; border:1px solid #f5c6cb; color:#721c24;">
+            <strong>✗ Pós-transplante:</strong> BCG contraindicada sempre. Vacinas vivas (VASPR) não recomendadas (segurança não estudada). Se exposição ao sarampo: Ig humana normal independentemente da história vacinal.
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== IMUNOSSUPRESSÃO CRÓNICA ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">💊</span><span class="age-unit">IS crónica</span></div>
+        <div class="tl-card">
+          <h3>Imunossupressão crónica</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="PNV inativadas" data-info="Vacinas inativadas recomendadas com esquema adequado à idade."><span class="dot"></span>PNV (inativadas)</span>
+            <span class="vaccine-chip" data-info-title="Pn20 + Pn23 — Vacinas pneumocócicas" data-info="Protege contra: doença invasiva pneumocócica (meningite, bacteriemia, pneumonia). Pn20 dose única + Pn23 6–12 meses após. Recomendadas."><span class="dot"></span>Pn20 + Pn23</span>
+            <span class="vaccine-chip" data-info-title="HPV9 — Vacina contra o vírus do papiloma humano" data-info="Protege contra: cancros e lesões associadas ao HPV. 3 doses (0, 2, 6m), gratuita, 10–26 anos."><span class="dot"></span>HPV (3 doses) ✦</span>
+            <span class="vaccine-chip" data-info-title="Gripe + COVID-19" data-info="Anualmente, conforme Normas em vigor."><span class="dot"></span>Gripe + COVID-19</span>
+          </div>
+          <div class="tl-protects"><strong>Vacinar em períodos de remissão e menor imunossupressão.</strong></div>
+          <div style="margin-top:10px; padding:10px; background:var(--warn-bg); border-radius:8px; font-size:0.85rem; border:1px solid var(--warn-border); color:var(--warn-text);">
+            <strong>Vacinas vivas NÃO recomendadas se altas doses:</strong> azatioprina ≥3 mg/kg/dia, 6-mercaptopurina &gt;1,5 mg/kg/dia, metotrexato ≥0,4 mg/kg/semana, fármacos biológicos.
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== CORTICOTERAPIA ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">💊</span><span class="age-unit">cortic.</span></div>
+        <div class="tl-card">
+          <h3>Terapêutica com corticosteroides</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Dose elevada ≥14 dias" data-info="Prednisolona ≥1 mg/kg/dia ou ≥20 mg/dia. Vacinas vivas: 1 MÊS depois de parar. Vacinas inativadas: sem contraindicação (preferível após final do tratamento se curta duração)."><span class="dot"></span>Alta dose ≥14d: vivas 1m após</span>
+            <span class="vaccine-chip" data-info-title="Dose elevada &lt;14 dias" data-info="Vacinas vivas: preferível 2 SEMANAS depois de parar. Vacinas inativadas: sem contraindicação."><span class="dot"></span>Alta dose &lt;14d: vivas 2sem após</span>
+            <span class="vaccine-chip" data-info-title="Dose baixa / substitutiva / tópica / inalatória" data-info="Sem contraindicação para vacinas vivas nem inativadas."><span class="dot"></span>Dose baixa/tópica: sem CI</span>
+          </div>
+          <div class="tl-protects"><strong>Referência:</strong> prednisolona ≥20 mg/dia (ou equivalente) = dose elevada</div>
+        </div>
+      </div>
+
+      <!-- ======== IMUNODEFICIÊNCIAS PRIMÁRIAS ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🧪</span><span class="age-unit">ID prim.</span></div>
+        <div class="tl-card">
+          <h3>Imunodeficiências primárias</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="PNV" data-info="Vacinas do PNV com esquema adequado à idade, salvaguardando contraindicações."><span class="dot"></span>PNV (salvo CI)</span>
+            <span class="vaccine-chip" data-info-title="Pn20 + Pn23 — Vacinas pneumocócicas" data-info="Protege contra: doença invasiva pneumocócica. Pn20 (conjugada 20-valente) + Pn23 (polissacárida 23-valente). Recomendadas."><span class="dot"></span>Pn20 + Pn23</span>
+            <span class="vaccine-chip" data-info-title="Gripe sazonal + COVID-19" data-info="Gripe: protege contra os vírus Influenza. COVID-19: protege contra o SARS-CoV-2. Anualmente."><span class="dot"></span>Gripe + COVID-19</span>
+            <span class="vaccine-chip" data-info-title="HPV" data-info="Esquema de 3 doses, gratuita, 10–26 anos."><span class="dot"></span>HPV (3 doses) ✦</span>
+          </div>
+          <div class="tl-protects"><strong>Alt. isoladas anticorpos:</strong> VASPR não contraindicada (mas resposta incerta). Pessoas em Ig regulares podem não responder à VASPR (anticorpos passivos).</div>
+        </div>
+      </div>
+
+      <!-- ======== TERAPÊUTICA IMUNOSSUPRESSORA CURTA DURAÇÃO ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">⏱️</span><span class="age-unit">IS curta</span></div>
+        <div class="tl-card">
+          <h3>Após terapêutica imunossupressora de curta duração</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Geral" data-info="Vacinas vivas: ≥3 meses após concluir terapêutica. Vacinas inativadas: ≥3 meses após."><span class="dot"></span>Geral: vivas ≥3m, inativadas ≥3m</span>
+            <span class="vaccine-chip" data-info-title="Rituximab / Alemtuzumab / CTLA4-Ig" data-info="Vacinas vivas: ≥6 meses após. Vacinas inativadas: ≥6 meses após."><span class="dot"></span>Rituximab/Alemtuzumab: ≥6m</span>
+          </div>
+          <div class="tl-protects"><strong>Filhos de mães tratadas com biológicos:</strong> BCG ≥6 meses de idade (quando indicada). Rotavírus: contraindicada. Nos expostos a rituximab/alemtuzumab: contagem de linfócitos B antes de vacinar.</div>
+        </div>
+      </div>
+
+      <!-- ======== COABITANTES ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🏠</span><span class="age-unit">coab.</span></div>
+        <div class="tl-card">
+          <h3>Coabitantes de pessoas com imunodeficiência</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="PNV atualizado" data-info="Assegurar que coabitantes estão vacinados de acordo com o PNV."><span class="dot"></span>PNV atualizado</span>
+            <span class="vaccine-chip" data-info-title="Gripe + COVID-19" data-info="Anualmente, conforme Normas em vigor."><span class="dot"></span>Gripe + COVID-19 (anual)</span>
+            <span class="vaccine-chip" data-info-title="VASPR e BCG" data-info="Podem ser administradas aos contactos próximos de imunocomprometidos. Seguras."><span class="dot"></span>VASPR e BCG: seguras</span>
+            <span class="vaccine-chip" data-info-title="Rotavírus em crianças" data-info="Pode ser administrada a crianças coabitantes. Os imunocomprometidos devem evitar prestar cuidados de higiene à criança nas 4 semanas após vacinação. Higienizar mãos com solução alcoólica 70% após muda de fralda."><span class="dot"></span>Rotavírus: pode (precauções)</span>
+          </div>
+          <div style="margin-top:10px; padding:10px; background:#f8d7da; border-radius:8px; font-size:0.85rem; border:1px solid #f5c6cb; color:#721c24;">
+            <strong>✗ VAP (poliomielite oral viva):</strong> contraindicada em coabitantes de imunocomprometidos.
+          </div>
+        </div>
+      </div>
+
+      <!-- ======== ALTERAÇÕES DA COAGULAÇÃO ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">🩸</span><span class="age-unit">coagul.</span></div>
+        <div class="tl-card">
+          <h3>Pessoas com alterações da coagulação</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Via subcutânea profunda" data-info="Se risco de diátese hemorrágica: Hib, VHB, Pn20, Pn23, VIP, VASPR e Td podem ser administradas por via SC profunda (em vez de IM). Maior frequência de reações locais e resposta imunitária possivelmente inferior."><span class="dot"></span>Via SC profunda (se necessário)</span>
+            <span class="vaccine-chip" data-info-title="Via IM com precauções" data-info="DTPaHibVIPVHB, DTPaHibVIP, DTPaVIP, MenB, MenACWY, HPV e Tdpa: podem ser administradas IM por prescrição médica. Agulha 23G (0,6 mm × 25 mm) ou mais fina. Pressão firme no local 5 minutos (sem friccionar). Diminuir mobilidade do membro 24h."><span class="dot"></span>IM: agulha 23G + pressão 5min</span>
+          </div>
+          <div class="tl-protects"><strong>Não usar via IM se:</strong> INR &gt;3.0 (varfarina) ou atividade anti-Xa &gt;0,5 UI/mL (HBPM, 4h após toma). Se anticoagulação de curta duração: preferível adiar vacinação para permitir via IM.</div>
+          <div style="margin-top:6px;font-size:0.83rem;color:var(--ink-soft);">Pessoas sob fatores de coagulação derivados do plasma: vacinar contra VHA (gratuita).</div>
+        </div>
+      </div>
+
+      <!-- ======== IMUNOGLOBULINAS E VACINAS ======== -->
+      <div class="tl-item">
+        <div class="tl-marker"><span class="age-num">💉</span><span class="age-unit">Ig</span></div>
+        <div class="tl-card">
+          <h3>Imunoglobulinas e vacinas</h3>
+          <div class="tl-vaccines">
+            <span class="vaccine-chip" data-info-title="Vacinas inativadas" data-info="Podem ser administradas em simultâneo, antes ou depois de Ig, desde que em locais anatómicos diferentes."><span class="dot"></span>Inativadas: sem interferência</span>
+            <span class="vaccine-chip" data-info-title="VASPR e Ig" data-info="Ig limitam a resposta à VASPR. Respeitar intervalos mínimos (variáveis conforme tipo e dose de Ig — consultar capítulos sarampo/rubéola/parotidite). Se intervalo não respeitado: repetir VASPR após intervalo recomendado."><span class="dot"></span>VASPR: intervalos após Ig</span>
+            <span class="vaccine-chip" data-info-title="Varicela e Ig" data-info="Mesma interferência que VASPR. Consultar capítulo da varicela para intervalos específicos."><span class="dot"></span>Varicela: intervalos após Ig</span>
+            <span class="vaccine-chip" data-info-title="BCG, VAP oral, Rotavírus" data-info="Sem interferência com Ig."><span class="dot"></span>BCG/VAP/Rotavírus: sem interferência</span>
+          </div>
+          <div class="tl-protects"><strong>Nota:</strong> o anticorpo monoclonal contra VSR (Nirsevimab) não interfere com a resposta à vacinação.</div>
+        </div>
+      </div>
+
+      <div class="no-results">
+        <span class="emoji">🔍</span>
+        Nenhum resultado encontrado.
+      </div>
+
+    </div>
+
+    <div class="notes-block">
+      <h3>Legenda</h3>
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:center;margin-bottom:16px;font-size:0.88rem;">
+        <span style="display:inline-block;width:28px;height:16px;background:#c3e6cb;border-radius:4px;border:1px solid rgba(0,0,0,0.1);"></span><span><strong>✓ G</strong> — Gratuita (PNV ou grupo de risco)</span>
+        <span style="display:inline-block;width:28px;height:16px;background:#d4edda;border-radius:4px;border:1px solid rgba(0,0,0,0.1);"></span><span><strong>✓</strong> — Recomendada</span>
+        <span style="display:inline-block;width:28px;height:16px;background:#fff3cd;border-radius:4px;border:1px solid rgba(0,0,0,0.1);"></span><span><strong>⚠</strong> — Com condições (prescrição, via SC, intervalos)</span>
+        <span style="display:inline-block;width:28px;height:16px;background:#f8d7da;border-radius:4px;border:1px solid rgba(0,0,0,0.1);"></span><span><strong>✗</strong> — Contraindicada</span>
+        <span style="display:inline-block;width:28px;height:16px;background:#f0f3f5;border-radius:4px;border:1px solid rgba(0,0,0,0.1);"></span><span><strong>PNV</strong> — Seguir esquema standard para a idade</span>
+        <span style="font-size:1.1rem;text-align:center;">✦</span><span>Gratuita independentemente da idade</span>
+      </div>
+      <h3>Abreviaturas</h3>
+      <p style="font-size:0.84rem;line-height:1.8;color:var(--ink-soft);">
+        <strong>Td</strong> tétano+difteria · <strong>Tdpa</strong> tétano+difteria+tosse convulsa · <strong>DTPa</strong> difteria+tétano+tosse convulsa (pediátrica) · <strong>VIP</strong> poliomielite · <strong>VASPR</strong> sarampo+papeira+rubéola · <strong>BCG</strong> tuberculose · <strong>VHB</strong> hepatite B · <strong>VHA</strong> hepatite A · <strong>HPV</strong> papiloma humano · <strong>Hib</strong> Haemophilus influenzae b · <strong>MenB</strong> meningococo B · <strong>MenACWY</strong> meningococo ACWY · <strong>Pn20</strong> pneumocócica 20-valente · <strong>Pn23</strong> pneumocócica 23-valente · <strong>MVA-BN</strong> mpox · <strong>VAP</strong> poliomielite oral viva · <strong>VV</strong> varicela · <strong>Ig</strong> imunoglobulina · <strong>Tx</strong> transplante · <strong>IS</strong> imunossupressão · <strong>CI</strong> contraindicação · <strong>SC</strong> subcutânea · <strong>IM</strong> intramuscular · <strong>TAR</strong> terapêutica antirretroviral
+      </p>
+      <p style="font-size:0.82rem;color:var(--ink-mute);margin-top:12px;">Fonte: Livro Azul de Vacinas — DGS, Cap. 5 e Cap. 6, atualizados a 14/04/2026.</p>
+    </div>
+  </section>

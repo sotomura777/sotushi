@@ -1,0 +1,45 @@
+<section class="view" id="view-region-detail">
+    <div class="toolbar">
+      <button class="btn-back" onclick="showView('view-travel')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        Voltar ao mapa
+      </button>
+    </div>
+
+    <div class="region-detail-hero" id="region-detail-hero">
+      <!-- populated by JS -->
+    </div>
+
+    <div class="region-detail-content">
+      <div class="region-detail-main">
+        <h3 class="region-detail-section-title">Vacinas recomendadas</h3>
+        <div id="region-detail-vaccines"></div>
+      </div>
+
+      <aside class="region-detail-side">
+        <div class="region-side-card">
+          <h4>⏱️ Quando vacinar</h4>
+          <p>Idealmente <strong>4–6 semanas antes</strong> da partida, para tempo de imunização completa e eventuais doses adicionais.</p>
+        </div>
+        <div class="region-side-card">
+          <h4>📋 Documentos</h4>
+          <p>Levar o <strong>Cartão Internacional de Vacinação</strong> ("cartão amarelo") em viagens onde haja vacinas obrigatórias.</p>
+        </div>
+        <div class="region-side-card">
+          <h4>🦟 Medidas adicionais</h4>
+          <p>Repelentes de insetos (DEET ≥ 30%), mosquiteiro impregnado, água engarrafada/fervida, lavagem cuidadosa de alimentos crus.</p>
+        </div>
+        <div class="region-side-card region-side-card-warn">
+          <h4>⚠️ Atenção</h4>
+          <p>Confirmar requisitos de entrada do destino e <strong>quimioprofilaxia para a malária</strong> se aplicável (não substituível por vacina).</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="travel-disclaimer">
+      <strong>📘 Fonte:</strong> Informação aguarda atualização com a Parte 4 — Vacinação do viajante do Livro Azul de Vacinas (DGS), ainda em produção. Referências atuais: OMS (<a href="https://www.who.int/travel-advice/vaccines" target="_blank">who.int/travel-advice</a>) e CDC (<a href="https://wwwnc.cdc.gov/travel" target="_blank">cdc.gov/travel</a>).
+    </div>
+    <div class="travel-disclaimer">
+      <strong>⚕️ Nota clínica:</strong> Lista de recomendações genéricas. A escolha individual deve sempre ser feita em consulta presencial num Centro de Vacinação Internacional (CVI), considerando destino específico, época do ano, duração, atividades, estado de saúde e história vacinal.
+    </div>
+  </section>
