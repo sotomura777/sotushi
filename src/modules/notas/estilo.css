@@ -1,4 +1,4 @@
-/* Notas clínicas — usa os tokens partilhados */
+/* Notas clínicas — usa os tokens partilhados (não redefine paleta/tipografia). */
 
 .nt-aviso {
   background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412;
@@ -7,7 +7,7 @@
 .dark .nt-aviso { background: rgba(154,52,18,.18); border-color: rgba(254,215,170,.25); color: #fdba74; }
 
 .nt-iniciais { width: 40px; height: 40px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0; letter-spacing: .02em; }
-.nt-esp { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-top: 3px; }
+.nt-esp { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
 
 .nt-btn { padding: 6px 12px; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie-2); color: var(--suave); font-family: var(--fonte-corpo); font-size: 11.5px; font-weight: 600; cursor: pointer; white-space: nowrap; }
 .nt-btn--danger { background: #fef2f2; border-color: #fecaca; color: #b91c1c; }
@@ -17,15 +17,72 @@
 .nt-tab { padding: 9px 12px; border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; font-family: var(--fonte-corpo); font-size: 13px; font-weight: 600; color: var(--suave); white-space: nowrap; }
 .nt-tab.on { font-weight: 700; }
 
-.nt-nova { width: 100%; padding: 10px; border: none; border-radius: var(--raio-md); color: #fff; font-family: var(--fonte-corpo); font-size: 13.5px; font-weight: 700; cursor: pointer; margin-bottom: 12px; }
+.nt-nova { width: 100%; padding: 10px; border: none; border-radius: var(--raio-md); color: #fff; font-family: var(--fonte-corpo); font-size: 13.5px; font-weight: 700; cursor: pointer; }
 .nt-nova:disabled { opacity: .5; cursor: not-allowed; }
 
 .nt-prio { padding: 6px 12px; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie); color: var(--suave); font-family: var(--fonte-corpo); font-size: 12px; font-weight: 600; cursor: pointer; }
 .nt-prio.on { font-weight: 700; }
 
 .nt-textarea {
-  width: 100%; border: 1px solid var(--borda); border-radius: 8px; padding: 10px 12px;
-  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; line-height: 1.55;
+  width: 100%; border: none; padding: 12px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; line-height: 1.7;
   color: var(--texto); background: var(--superficie); resize: vertical; box-sizing: border-box; outline: none;
 }
-.nt-textarea:focus { border-color: var(--acento); }
+
+/* ── Lista de doentes (layout em cartões, agrupado) ───────────────────────── */
+.nt-topo { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.nt-h1 { font-size: 20px; font-weight: 800; color: var(--texto); line-height: 1.1; }
+.nt-count { font-size: 12px; color: var(--tenue); margin-top: 1px; }
+
+.nt-seg { display: flex; background: var(--superficie-2); border-radius: var(--raio-md); padding: 3px; margin-bottom: 10px; }
+.nt-seg-btn { flex: 1; padding: 7px 0; border: none; border-radius: var(--raio-sm); background: transparent; color: var(--suave); font-family: var(--fonte-corpo); font-size: 12px; font-weight: 600; cursor: pointer; }
+.nt-seg-btn.on { background: var(--superficie); color: var(--texto); font-weight: 700; box-shadow: var(--sombra-sm); }
+
+.nt-grupo { margin-bottom: 16px; }
+.nt-grupo-label { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--suave); margin: 0 0 8px 2px; }
+.nt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+
+.nt-card { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); overflow: hidden; box-shadow: var(--sombra-sm); cursor: pointer; text-align: left; font-family: var(--fonte-corpo); padding: 0; transition: transform .12s, box-shadow .12s; }
+.nt-card:hover { transform: translateY(-1px); box-shadow: var(--sombra-md); }
+.nt-card--obs { opacity: .65; }
+.nt-card-bar { height: 4px; }
+.nt-card-corpo { padding: 12px 14px; display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.nt-card-info { flex: 1; min-width: 0; }
+.nt-card-linha1 { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.nt-editar { padding: 2px 8px; font-size: 11px; border: 1px solid var(--borda); border-radius: 6px; background: var(--superficie); cursor: pointer; color: var(--tenue); flex-shrink: 0; font-family: var(--fonte-corpo); }
+.nt-prio-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+.nt-card-iniciais { font-size: 16px; font-weight: 800; color: var(--texto); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nt-card-tags { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.nt-meta { font-size: 11px; color: var(--tenue); }
+.nt-linha-mini { font-size: 11px; font-weight: 600; display: flex; align-items: center; gap: 5px; margin-top: 3px; }
+.nt-mini-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.nt-card-acoes { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; flex-shrink: 0; }
+.nt-chip { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; font-size: 10px; border-radius: 20px; border: none; cursor: pointer; font-family: var(--fonte-corpo); font-weight: 600; background: var(--superficie-2); color: var(--suave); white-space: nowrap; }
+
+/* ── Detalhe do doente ────────────────────────────────────────────────────── */
+.nt-sep { display: flex; align-items: center; gap: 8px; margin: 14px 0 8px; }
+.nt-sep-data { font-size: 11px; font-weight: 700; color: var(--tenue); letter-spacing: .03em; }
+.nt-sep-linha { flex: 1; height: 1px; background: var(--borda); }
+
+.nt-nota { border: 1px solid var(--borda); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+.nt-nota-cab { padding: 7px 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.nt-nota-kind { font-size: 11px; font-weight: 700; }
+.nt-nota-data { font-size: 11px; font-weight: 600; }
+.nt-nota-edit { font-size: 10px; color: var(--tenue); }
+.nt-feito { width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--tenue); background: var(--superficie); flex-shrink: 0; cursor: pointer; padding: 0; }
+.nt-nota-acao { padding: 2px 7px; font-size: 11px; border: 1px solid var(--borda); border-radius: 6px; background: transparent; cursor: pointer; color: var(--tenue); display: inline-flex; align-items: center; font-family: var(--fonte-corpo); }
+.nt-aviso-num { font-size: 11px; color: #b45309; padding: 4px 12px; background: #fff7ed; display: flex; align-items: center; gap: 5px; }
+.dark .nt-aviso-num { background: rgba(180,83,9,.18); color: #fbbf24; }
+
+.nt-acoes { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 10px 0 4px; margin-top: 4px; border-top: 1px solid var(--borda); }
+.nt-acao { padding: 7px 13px; font-size: 12px; border: 1px solid var(--borda); border-radius: 8px; background: var(--superficie); cursor: pointer; font-family: var(--fonte-corpo); font-weight: 700; color: var(--suave); display: inline-flex; align-items: center; gap: 4px; }
+
+.nt-todo { margin-top: 14px; }
+.nt-todo-item { display: flex; align-items: center; gap: 9px; padding: 7px 0; border-bottom: 1px solid var(--borda-2); }
+.nt-todo-item:last-child { border-bottom: none; }
+.nt-todo-check { width: 16px; height: 16px; border-radius: 5px; border: 2px solid var(--tenue); background: var(--superficie); flex-shrink: 0; cursor: pointer; padding: 0; }
+.nt-todo-txt { flex: 1; font-size: 13px; color: var(--texto); }
+.nt-todo-txt.feito { text-decoration: line-through; color: var(--tenue); }
+.nt-todo-add { display: flex; gap: 8px; margin-top: 8px; }
+
+.nt-vazio { text-align: center; color: var(--tenue); padding: 24px; font-size: 13px; }
