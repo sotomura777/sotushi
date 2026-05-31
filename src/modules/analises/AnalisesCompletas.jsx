@@ -11,6 +11,7 @@ import {
 import ModalPreencher from "./ModalPreencher.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
+import { toast, useEscape } from "@/lib/toast";
 
 const uid = () => "m" + Math.random().toString(36).slice(2, 9);
 const hojeDDMM = () => { const d = new Date(); const p = (n) => String(n).padStart(2, "0"); return `${p(d.getDate())}/${p(d.getMonth() + 1)}`; };
@@ -27,6 +28,7 @@ export default function AnalisesCompletas({ sexo, setSexo, uRefs, accent, onGuar
   const [resumo, setResumo] = useState("");
   const [resumoBase, setResumoBase] = useState("");
   const [resultado, setResultado] = useState(null);
+  useEscape(modal ? () => setModal(null) : null);
 
   const nomeCat = useMemo(() => { const m = {}; meta.categorias.forEach((c) => (m[c.id] = c.nm)); return m; }, []);
   const porCat = useMemo(() => meta.categorias.map((c) => ({ ...c, ps: parametros.filter((p) => p.cat === c.id) })).filter((c) => c.ps.length), []);
@@ -49,8 +51,9 @@ export default function AnalisesCompletas({ sexo, setSexo, uRefs, accent, onGuar
     if (!nomeModelo.trim() || !pick.length) return;
     setModelosCustom((m) => [...m, { id: uid(), nm: nomeModelo.trim(), ps: pick }]);
     setModal(null);
+    toast("Modelo guardado");
   };
-  const apagarModelo = (id) => setModelosCustom((m) => m.filter((x) => x.id !== id));
+  const apagarModelo = (id) => { setModelosCustom((m) => m.filter((x) => x.id !== id)); toast("Modelo apagado"); };
 
   // Gerar resumo a partir dos valores submetidos no ModalPreencher
   const gerar = (vals, ctx) => {
@@ -66,8 +69,9 @@ export default function AnalisesCompletas({ sexo, setSexo, uRefs, accent, onGuar
     setResultado({ alterados, padroes: pads, formulas });
     onGuardarHistorico?.(dSel, vals, texto);
     setVista("result"); setModal(null);
+    toast("Resumo gerado e guardado no Histórico");
   };
-  const copiar = () => navigator.clipboard?.writeText(resumo);
+  const copiar = () => { navigator.clipboard?.writeText(resumo); toast("Copiado!"); };
 
   // ════ Resultado ════
   if (vista === "result" && resultado) {

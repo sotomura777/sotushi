@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getIntervalo, getEstado, interpretacao, ESTADO_INFO } from "./logica";
 import { I, Ico } from "@/components/icones";
+import { useEscape } from "@/lib/toast";
 
 // Modal de um parâmetro: Saber mais, sexo, referência (+ editar), valor →
 // interpretação, forçar ↓/↑, e guardar no slot do Explorar.
@@ -14,6 +15,7 @@ export default function ModalParametro({
   const [mostrarInfo, setMostrarInfo] = useState(false);
   const [min, setMin] = useState("");
   const [max, setMax] = useState("");
+  useEscape(onClose);
 
   const ref = getIntervalo(param, sexo, uRefs);
   const status = getEstado(param, val, sexo, uRefs, force);

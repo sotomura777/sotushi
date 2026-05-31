@@ -15,6 +15,7 @@ import Cards from "./Cards.jsx";
 import Gsa from "./Gsa.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
+import { toast } from "@/lib/toast";
 import "./estilo.css";
 
 export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
@@ -40,11 +41,11 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
 
   const toggleFav = (id) =>
     setFavoritos((f) => (f.includes(id) ? f.filter((x) => x !== id) : [...f, id]));
-  const guardarSlot = (id, slot) => setSlots((s) => ({ ...s, [id]: slot }));
+  const guardarSlot = (id, slot) => { setSlots((s) => ({ ...s, [id]: slot })); toast("Guardado no quadro"); };
   const removerSlot = (id) => setSlots((s) => { const n = { ...s }; delete n[id]; return n; });
   const limparSlots = () => { setSlots({}); setVerPad(false); };
-  const guardarRef = (id, ref) => setURefs((u) => ({ ...u, [id]: ref }));
-  const reporRef = (id) => setURefs((u) => { const n = { ...u }; delete n[id]; return n; });
+  const guardarRef = (id, ref) => { setURefs((u) => ({ ...u, [id]: ref })); toast("Referência personalizada guardada"); };
+  const reporRef = (id) => { setURefs((u) => { const n = { ...u }; delete n[id]; return n; }); toast("Referência reposta"); };
 
   const nomeCat = useMemo(() => {
     const m = {};

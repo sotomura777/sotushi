@@ -4,6 +4,7 @@ import flashcards from "@conteudo/analises/flashcards.json";
 import { getCorCat } from "./logica";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
+import { toast, useEscape } from "@/lib/toast";
 
 const NOME_CAT = {};
 meta.categorias.forEach((c) => (NOME_CAT[c.id] = c.nm));
@@ -17,18 +18,24 @@ export default function Cards({ accent }) {
   const [cat, setCat] = useState("all");
   const [flipped, setFlipped] = useState({});
   const [edit, setEdit] = useState(null); // { id?, cat, front, desc, back_title, back }
+  useEscape(edit ? () => setEdit(null) : null);
 
   const usadas = [...new Set(cards.map((c) => c.cat))];
   const filtrados = cards.filter((c) => (!soFav || c.fav) && (cat === "all" || c.cat === cat));
 
   const flip = (id) => setFlipped((f) => ({ ...f, [id]: !f[id] }));
-  const togFav = (id) => setCards((cs) => cs.map((c) => (c.id === id ? { ...c, fav: !c.fav } : c)));
-  const apagar = (id) => setCards((cs) => cs.filter((c) => c.id !== id));
+  const togFav = (id) => {
+    const c = cards.find((x) => x.id === id);
+    setCards((cs) => cs.map((x) => (x.id === id ? { ...x, fav: !x.fav } : x)));
+    toast(c && c.fav ? "Removido dos favoritos" : "Adicionado aos favoritos ★");
+  };
+  const apagar = (id) => { setCards((cs) => cs.filter((c) => c.id !== id)); toast("Card apagado"); };
   const guardar = () => {
     if (!edit.front.trim()) return;
     if (edit.id) setCards((cs) => cs.map((c) => (c.id === edit.id ? { ...c, ...edit } : c)));
     else setCards((cs) => [{ ...edit, id: uid(), fav: false }, ...cs]);
     setEdit(null);
+    toast("Card guardado");
   };
 
   return (

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MODULOS } from "./modules/registo";
 import { I, ICONE_MODULO } from "./components/icones";
 import { useEstadoLocal } from "./lib/persistencia";
+import Toaster from "./components/Toaster.jsx";
 
 const ABAS = [
   { id: "inicio", label: "Início", icon: I.home },
@@ -177,6 +178,8 @@ export default function App() {
           );
         })}
       </nav>
+
+      <Toaster />
     </div>
   );
 }

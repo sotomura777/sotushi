@@ -12,6 +12,7 @@ import {
 } from "./logica";
 import ModalPreencher from "./ModalPreencher.jsx";
 import { I } from "@/components/icones";
+import { toast } from "@/lib/toast";
 
 const MAX_SETS = 3;
 const ddmm = (s) => (s || "").split(" ")[0].split("/").slice(0, 2).join("/");
@@ -24,12 +25,11 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
   const [modo, setModo] = useState(null); // 'resumo' | 'cmp'
   const [cmpSel, setCmpSel] = useState([]);
   const [addOpen, setAddOpen] = useState(false);
-  const [copiado, setCopiado] = useState("");
 
   const abrir = (i) => { setIdx(i); setISet(historico[i].sets.length - 1); setModo(null); setCmpSel([]); };
   const voltar = () => { setIdx(null); setModo(null); };
-  const apagar = (i, e) => { e.stopPropagation(); setHistorico((h) => h.filter((_, j) => j !== i)); if (idx === i) voltar(); };
-  const copiar = (txt) => { navigator.clipboard?.writeText(txt); setCopiado(txt); setTimeout(() => setCopiado(""), 1200); };
+  const apagar = (i, e) => { e.stopPropagation(); setHistorico((h) => h.filter((_, j) => j !== i)); if (idx === i) voltar(); toast("Entrada apagada"); };
+  const copiar = (txt) => { navigator.clipboard?.writeText(txt); toast("Copiado!"); };
 
   const addSet = (vals) => {
     const date = agora();
@@ -41,6 +41,7 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
     setAddOpen(false);
     setISet((historico[idx].sets.length)); // novo set fica selecionado
     setModo(null);
+    toast("Análise guardada");
   };
 
   // ════ Lista ════
@@ -140,7 +141,7 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
         <>
           <div className="an-resumo-box">
             <div className="an-resumo-head"><span className="an-ctx-l">Resumo</span>
-              <button className="an-btn" onClick={() => copiar(resTxt)}>{copiado === resTxt ? "Copiado!" : "Copiar"}</button>
+              <button className="an-btn" onClick={() => copiar(resTxt)}>Copiar</button>
             </div>
             <div className="an-resumo-txt" style={{ whiteSpace: "pre-wrap" }}>{resTxt}</div>
           </div>
@@ -178,7 +179,7 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
           </div>
           <div className="an-resumo-box">
             <div className="an-resumo-head"><span className="an-ctx-l">Comparação</span>
-              <button className="an-btn" onClick={() => copiar(cmp.texto)}>{copiado === cmp.texto ? "Copiado!" : "Copiar"}</button>
+              <button className="an-btn" onClick={() => copiar(cmp.texto)}>Copiar</button>
             </div>
             <div className="an-resumo-txt" style={{ whiteSpace: "pre-wrap" }}>{cmp.texto}</div>
           </div>

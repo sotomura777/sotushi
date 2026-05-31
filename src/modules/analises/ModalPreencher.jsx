@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import parametros from "@conteudo/analises/parametros.json";
 import { getEstado, ESTADO_INFO } from "./logica";
 import { I } from "@/components/icones";
+import { useEscape } from "@/lib/toast";
 
 // Modal reutilizável para preencher valores de um conjunto de parâmetros.
 // Gere os seus próprios valores; ao submeter devolve (valores, { idade, peso }).
@@ -14,6 +15,7 @@ export default function ModalPreencher({
   const [idade, setIdade] = useState("");
   const [peso, setPeso] = useState("");
   const inputs = useRef([]);
+  useEscape(onClose);
 
   const setValor = (id, val) => {
     const p = parametros.find((x) => x.id === id);

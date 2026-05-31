@@ -296,6 +296,18 @@ input[type=number] { -moz-appearance: textfield; }
 }
 .rodape strong { color: var(--suave); }
 
+/* ── Toaster (notificações transitórias) ────────────────────────────────── */
+.toaster { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 300; display: flex; flex-direction: column; gap: 8px; align-items: center; pointer-events: none; width: max-content; max-width: 90vw; }
+.toast-msg {
+  background: var(--superficie); color: var(--texto);
+  -webkit-backdrop-filter: blur(24px) saturate(1.8); backdrop-filter: blur(24px) saturate(1.8);
+  border: 1px solid var(--borda); border-radius: var(--raio-pill);
+  box-shadow: var(--sombra-md), var(--brilho);
+  padding: 9px 16px; font-size: 13px; font-weight: 600; text-align: center;
+  animation: toast-in .22s ease;
+}
+@keyframes toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
 /* ==========================================================================
    (OPCIONAL) Barra de baixo 100% violeta
    --------------------------------------------------------------------------
