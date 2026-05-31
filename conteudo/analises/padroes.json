@@ -1,0 +1,399 @@
+[
+ {
+  "id": "pat0",
+  "nm": "Pancitopénia",
+  "ids": [
+   "hb",
+   "leuc",
+   "plaq"
+  ],
+  "txt": "Hb↓ + Leuc↓ + Plaq↓: as 3 linhas baixas. Causas mais comuns: B12/folato (megaloblástica), fármacos (quimio, metotrexato), aplasia medular, mielodisplasia, infiltração medular (leucemia, linfoma, metástases), hiperesplenismo, HIV. Pedir esfregaço, reticulócitos, B12, folato. Se persistente: hematologia."
+ },
+ {
+  "id": "pat1",
+  "nm": "Bicitopénia — leucopénia + trombocitopénia",
+  "ids": [
+   "leuc",
+   "plaq"
+  ],
+  "txt": "Leuc↓ + Plaq↓ sem anemia: bicitopénia. Causas: viral (EBV, CMV, HIV, parvovírus), fármacos, hiperesplenismo, LES, mielodisplasia, B12/folato. Repetir em 2-4 semanas se 1.ª vez. Se persistente: esfregaço, serologias (HIV, hepatite), ANA, B12/folato, eco abdominal (baço)."
+ },
+ {
+  "id": "pat2",
+  "nm": "Bicitopénia — anemia + trombocitopénia",
+  "ids": [
+   "hb",
+   "plaq"
+  ],
+  "txt": "Hb↓ + Plaq↓: pensar microangiopatia trombótica (SHU/PTT — pedir esfregaço para esquistócitos, LDH, haptoglobina, Coombs), CIVD, hiperesplenismo, LES, síndrome de Evans. Se Creat↑ associada: SHU provável."
+ },
+ {
+  "id": "pat3",
+  "nm": "Bicitopénia — anemia + leucopénia",
+  "ids": [
+   "hb",
+   "leuc"
+  ],
+  "txt": "Hb↓ + Leuc↓: pensar B12/folato (megaloblástica — VGM alto?), aplasia, mielodisplasia, fármacos, LES, HIV. Pedir reticulócitos, B12, folato, esfregaço."
+ },
+ {
+  "id": "pat4",
+  "nm": "Neutropénia com trombocitopénia",
+  "ids": [
+   "neut",
+   "plaq"
+  ],
+  "txt": "Neut↓ + Plaq↓: mesmo que leucócitos borderline — padrão de citopénia de 2 linhas. Risco infeccioso significativo se neutropénia marcada. Mesma abordagem que bicitopénia: viral, fármacos, medular, autoimune."
+ },
+ {
+  "id": "pat5",
+  "nm": "Anemia microcítica",
+  "ids": [
+   "hb",
+   "vgm"
+  ],
+  "txt": "Hb↓ + VGM↓ sugere anemia microcítica. Causa mais comum: ferropénia (pedir ferritina, ferro sérico, sat. transferrina). Considerar também talassémia, anemia sideroblástica, anemia de doença crónica."
+ },
+ {
+  "id": "pat6",
+  "nm": "Anemia macrocítica",
+  "ids": [
+   "hb",
+   "vgm"
+  ],
+  "txt": "Hb↓ + VGM↑ sugere anemia macrocítica. Pedir B12 e folato (se baixos: megaloblástica). Outras causas: alcoolismo, hipotiroidismo, hepatopatia, mielodisplasia, fármacos (metotrexato, azatioprina)."
+ },
+ {
+  "id": "pat7",
+  "nm": "Anemia normocítica",
+  "ids": [
+   "hb",
+   "vgm"
+  ],
+  "txt": "Hb↓ com VGM normal. Pedir reticulócitos: se elevados → hemorragia aguda ou hemólise; se baixos → doença crónica, insuficiência renal, aplasia. Ferropénia e B12/folato em fase inicial podem ser normocíticos."
+ },
+ {
+  "id": "pat8",
+  "nm": "Anemia ferropénica confirmada",
+  "ids": [
+   "hb",
+   "ferr",
+   "fe",
+   "sattransf"
+  ],
+  "txt": "Hb↓ + Ferritina↓ e/ou Fe↓: anemia ferropénica. Sat. transferrina <16% confirma. Investigar perdas (GI, menstruais), dieta pobre em ferro, má absorção (celíaca)."
+ },
+ {
+  "id": "pat9",
+  "nm": "Anemia de doença crónica",
+  "ids": [
+   "hb",
+   "ferr",
+   "transf"
+  ],
+  "txt": "Hb↓ + Ferritina N/↑ + Transferrina↓ sugere anemia de doença crónica. Ferritina é reagente de fase aguda — pode mascarar ferropénia concomitante. Avaliar contexto inflamatório/infeccioso/neoplásico."
+ },
+ {
+  "id": "pat10",
+  "nm": "Anemia megaloblástica confirmada",
+  "ids": [
+   "hb",
+   "vgm",
+   "b12",
+   "folato"
+  ],
+  "txt": "Hb↓ + VGM↑ + B12↓ ou Folato↓: anemia megaloblástica. Se B12↓: investigar dieta, absorção, anemia perniciosa (Ac. anti-FI). Atenção: repor folato isolado com B12↓ pode agravar lesão neurológica."
+ },
+ {
+  "id": "pat11",
+  "nm": "Suspeita de hemólise",
+  "ids": [
+   "hb",
+   "ldh",
+   "bilind"
+  ],
+  "txt": "Hb↓ com LDH↑ ou Bili indireta↑ levanta hipótese de hemólise. Pedir haptoglobina (↓ é o marcador mais sensível), Coombs direto, reticulócitos, esfregaço. LDH↑ + haptoglobina↓ têm 96% de especificidade."
+ },
+ {
+  "id": "pat12",
+  "nm": "Citólise hepática",
+  "ids": [
+   "ast",
+   "alt"
+  ],
+  "txt": "AST↑ + ALT↑ sugere citólise hepática. Causas: viral, tóxica/medicamentosa, autoimune, esteatose, isquemia. Ratio AST/ALT >2: sugere etiologia alcoólica. Valores >1000: hepatite aguda grave."
+ },
+ {
+  "id": "pat13",
+  "nm": "Colestase",
+  "ids": [
+   "fa",
+   "ggt"
+  ],
+  "txt": "FA↑ + GGT↑ sugere colestase. Se Bili direta↑: confirma. Eco para vias biliares. FA isolada↑ sem GGT: pensar causa óssea (Paget, metástases)."
+ },
+ {
+  "id": "pat14",
+  "nm": "Hepatite colestática mista",
+  "ids": [
+   "ast",
+   "alt",
+   "fa",
+   "ggt"
+  ],
+  "txt": "Citólise + Colestase simultâneas: padrão misto. Pensar em hepatite medicamentosa (amoxicilina-ác. clavulânico, flucloxacilina), colangite, hepatite autoimune com componente colestático, infiltração hepática."
+ },
+ {
+  "id": "pat15",
+  "nm": "Insuficiência hepática",
+  "ids": [
+   "inr",
+   "alb"
+  ],
+  "txt": "INR↑ + Albumina↓ sugere falência de síntese hepática. Se aguda: hepatite fulminante. Se crónica: cirrose descompensada. Avaliar bilirrubina, MELD, sinais de hipertensão portal."
+ },
+ {
+  "id": "pat16",
+  "nm": "Lesão renal",
+  "ids": [
+   "creat",
+   "ureia"
+  ],
+  "txt": "Creatinina↑ + Ureia↑ sugere lesão renal. Ratio Ureia/Creat elevado sugere componente pré-renal (desidratação, hipoperfusão). Avaliar débito urinário, ecografia renal, sedimento."
+ },
+ {
+  "id": "pat17",
+  "nm": "Lesão renal com hipercaliémia",
+  "ids": [
+   "creat",
+   "k"
+  ],
+  "txt": "Creatinina↑ + K↑: hipercaliémia provavelmente por retenção renal. K >6: ECG urgente. Rever IECA, ARA, espironolactona, AINEs. Acidose associada agrava hipercaliémia."
+ },
+ {
+  "id": "pat18",
+  "nm": "Síndrome nefrótica",
+  "ids": [
+   "alb",
+   "proturin"
+  ],
+  "txt": "Albumina↓ + Proteinúria↑ sugere síndrome nefrótica. Confirmar com proteinúria >3.5g/24h. Esperar colesterol↑, edemas. Pedir ANA, complemento conforme contexto."
+ },
+ {
+  "id": "pat19",
+  "nm": "Perfil de desidratação",
+  "ids": [
+   "ureia",
+   "na",
+   "htc"
+  ],
+  "txt": "Ureia↑ + Na↑ ou Htc↑ sugere desidratação. Ratio Ureia/Creat elevado reforça componente pré-renal. Rever ingesta, perdas (diarreia, vómitos, diuréticos)."
+ },
+ {
+  "id": "pat20",
+  "nm": "Hiperuricémia com lesão renal",
+  "ids": [
+   "aurico",
+   "creat"
+  ],
+  "txt": "Ácido úrico↑ + Creatinina↑: a hiperuricémia pode agravar a lesão renal e vice-versa. Se aguda: pensar síndrome de lise tumoral (pedir LDH, K, P). Se crónica: nefropatia por uratos. Avaliar necessidade de alopurinol."
+ },
+ {
+  "id": "pat21",
+  "nm": "SHU / Microangiopatia trombótica",
+  "ids": [
+   "hb",
+   "plaq",
+   "creat"
+  ],
+  "txt": "Hb↓ + Plaq↓ + Creat↑: tríade de síndrome hemolítico-urémico (SHU). Pedir esfregaço (esquistócitos), LDH, haptoglobina, Coombs direto (negativo no SHU). ADAMTS13 para excluir PTT. Urgente."
+ },
+ {
+  "id": "pat22",
+  "nm": "Inflamação bacteriana",
+  "ids": [
+   "pcr",
+   "pct"
+  ],
+  "txt": "PCR↑ + Procalcitonina↑ sugere infeção bacteriana sistémica. Colher hemoculturas antes de ATB. PCT >2 ng/mL: sépsis muito provável."
+ },
+ {
+  "id": "pat23",
+  "nm": "Resposta inflamatória com leucocitose",
+  "ids": [
+   "pcr",
+   "leuc"
+  ],
+  "txt": "PCR↑ + Leucocitose: resposta inflamatória significativa. Se neutrofilia: provável bacteriana. Verificar lactato e PCT para estratificar. Lactato >2 mmol/L: considerar sépsis."
+ },
+ {
+  "id": "pat24",
+  "nm": "Mononucleose / hepatite viral",
+  "ids": [
+   "linf",
+   "ast",
+   "alt"
+  ],
+  "txt": "Linfocitose + Transaminases↑: padrão sugestivo de mononucleose (EBV, CMV) ou hepatite viral. Pedir serologias EBV (VCA IgM), CMV IgM, hepatite A/B/C. Esfregaço para linfócitos atípicos. >90% das mononucleoses têm ALT/AST elevados."
+ },
+ {
+  "id": "pat25",
+  "nm": "Eosinofilia com inflamação",
+  "ids": [
+   "eosi",
+   "pcr"
+  ],
+  "txt": "Eosinofilia + PCR↑: pensar parasitose (helmintas — pedir exame parasitológico), reação medicamentosa (DRESS), vasculite eosinofílica (Churg-Strauss), aspergilose broncopulmonar alérgica."
+ },
+ {
+  "id": "pat26",
+  "nm": "Coagulopatia",
+  "ids": [
+   "inr",
+   "plaq",
+   "fibr"
+  ],
+  "txt": "INR↑ com Plaquetas↓ e/ou Fibrinogénio↓: coagulopatia significativa. Hipóteses: CIVD (pedir D-dímeros — score ISTH ≥5 confirma), insuficiência hepática, hemodiluição. Tratar causa subjacente."
+ },
+ {
+  "id": "pat27",
+  "nm": "D-dímeros elevados com trombocitopénia",
+  "ids": [
+   "ddim",
+   "plaq"
+  ],
+  "txt": "D-dímeros↑ + Plaq↓: consumo ativo de fatores. Pensar CIVD, TEP maciço, microangiopatia trombótica. Pedir INR, fibrinogénio, esfregaço."
+ },
+ {
+  "id": "pat28",
+  "nm": "Rabdomiólise",
+  "ids": [
+   "ck"
+  ],
+  "txt": "CK↑ levanta hipótese de lesão muscular/rabdomiólise (CK >5× limite superior). Se Creatinina↑ associada: lesão renal por mioglobinúria — hidratar. Monitorizar K. Causas: trauma, imobilização, exercício, estatinas, convulsões."
+ },
+ {
+  "id": "pat29",
+  "nm": "Pancreatite aguda",
+  "ids": [
+   "lipase",
+   "amil"
+  ],
+  "txt": "Lipase↑ sugere pancreatite aguda (Atlanta: >3× limite superior confirma). Lipase mais específica que amilase. TC se sinais de gravidade."
+ },
+ {
+  "id": "pat30",
+  "nm": "Lesão miocárdica",
+  "ids": [
+   "trop",
+   "ck"
+  ],
+  "txt": "Troponina↑: lesão miocárdica. SCA é o mais urgente (ECG, contexto clínico). Outras causas: IC aguda, miocardite, TEP, sépsis, IR avançada. Com hs-Trop: valorizar curva (>20% em 3-6h sugere agudo). CK↑ associada reforça lesão muscular cardíaca vs crónica."
+ },
+ {
+  "id": "pat31",
+  "nm": "Insuficiência cardíaca",
+  "ids": [
+   "bnp",
+   "ntprobnp"
+  ],
+  "txt": "BNP↑ ou NT-proBNP↑: sugestivo de insuficiência cardíaca. Quanto mais elevado, maior a probabilidade. Eco cardíaco para confirmar e avaliar função. Atenção: IR, obesidade, FA podem alterar o valor."
+ },
+ {
+  "id": "pat32",
+  "nm": "Hipotiroidismo primário",
+  "ids": [
+   "tsh",
+   "t4l"
+  ],
+  "txt": "TSH↑ + T4L↓: hipotiroidismo primário. Causa mais frequente: tiroidite de Hashimoto (pedir Anti-TPO). Outras: pós-tiroidectomia, amiodarona, lítio, iodo radioativo."
+ },
+ {
+  "id": "pat33",
+  "nm": "Hipotiroidismo subclínico",
+  "ids": [
+   "tsh",
+   "t4l"
+  ],
+  "txt": "TSH↑ com T4L normal sugere hipotiroidismo subclínico. Repetir em 2-3 meses. Pedir Anti-TPO (se positivo: maior risco de progressão). Tratamento depende de TSH, idade e sintomas."
+ },
+ {
+  "id": "pat34",
+  "nm": "Hipertiroidismo",
+  "ids": [
+   "tsh",
+   "t4l"
+  ],
+  "txt": "TSH↓ + T4L↑: hipertiroidismo. Hipóteses: Graves (TRAb+), nódulo tóxico, tiroidite. Se T4L normal: pedir T3L (T3-toxicose)."
+ },
+ {
+  "id": "pat35",
+  "nm": "Hipertiroidismo subclínico",
+  "ids": [
+   "tsh",
+   "t4l"
+  ],
+  "txt": "TSH↓ com T4L normal sugere hipertiroidismo subclínico ou supressão por levotiroxina. Pedir T3L. Avaliar risco cardiovascular (FA) e osteoporose."
+ },
+ {
+  "id": "pat36",
+  "nm": "Diabetes / pré-diabetes",
+  "ids": [
+   "glic",
+   "hba1c"
+  ],
+  "txt": "Glicose↑ e/ou HbA1c↑: rastreio positivo para diabetes/pré-diabetes. HbA1c ≥6.5% ou Glicose jejum ≥126 mg/dL: diabetes. HbA1c 5.7-6.4% ou Glicose 100-125: pré-diabetes. Confirmar com 2.ª determinação."
+ },
+ {
+  "id": "pat37",
+  "nm": "Hipoglicémia",
+  "ids": [
+   "glic"
+  ],
+  "txt": "Glicose↓ (<70 mg/dL): hipoglicémia. Se sintomática: tratar imediatamente (15g HC). Causas: insulina/ADO excessivos, jejum prolongado, insuficiência hepática, insuficiência suprarrenal, insulinoma. Avaliar contexto."
+ },
+ {
+  "id": "pat38",
+  "nm": "Hipocalcémia com hipoalbuminémia",
+  "ids": [
+   "catot",
+   "alb"
+  ],
+  "txt": "Ca total↓ + Albumina↓: pode ser pseudohipocalcémia. Corrigir: Ca corr = Ca + 0.8×(4-Alb). Se corrigido normal: não é verdadeira hipocalcémia. Se continua baixo: pensar hipoparatiroidismo, défice vit D, hipomagnesémia."
+ },
+ {
+  "id": "pat39",
+  "nm": "Hipercalcémia",
+  "ids": [
+   "catot",
+   "caion"
+  ],
+  "txt": "Cálcio↑: 90% das causas são hiperparatiroidismo primário (pedir PTH) ou malignidade. Se PTH↑: hiperparatiroidismo. Se PTH↓: neoplasia, sarcoidose, intoxicação vit D. Se ligeira e assintomática: hiperparatiroidismo provável."
+ },
+ {
+  "id": "pat40",
+  "nm": "Hipomagnesémia com hipocalcémia",
+  "ids": [
+   "mg",
+   "catot"
+  ],
+  "txt": "Mg↓ + Ca↓: a hipomagnesémia causa resistência à PTH e agrava a hipocalcémia. Corrigir o magnésio primeiro — muitas vezes o cálcio corrige depois. Causas de Mg↓: diuréticos, diarreia, alcoolismo, IBP."
+ },
+ {
+  "id": "pat41",
+  "nm": "Hipofosfatémia",
+  "ids": [
+   "p"
+  ],
+  "txt": "Fósforo↓: pensar síndrome de realimentação (doentes malnutridos a iniciar alimentação), hiperparatiroidismo, défice de vitamina D, diuréticos. Se <1 mg/dL: crítico — risco de fraqueza muscular, rabdomiólise, insuficiência respiratória."
+ },
+ {
+  "id": "pat42",
+  "nm": "Hiperfosfatémia com lesão renal",
+  "ids": [
+   "p",
+   "creat"
+  ],
+  "txt": "Fósforo↑ + Creatinina↑: retenção renal de fosfato. Se aguda: lise tumoral (pedir LDH, K, ácido úrico). Se crónica: IRC — avaliar cálcio, PTH, vitamina D para doença óssea metabólica."
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "fontes": [
+  "Harrison's Principles of Internal Medicine 21st Ed (2022)",
+  "Goldman-Cecil Medicine 26th Ed (2020)",
+  "Oxford Handbook of Clinical Medicine 10th Ed (2018)",
+  "Surviving Sepsis Campaign Guidelines (2021)",
+  "KDIGO Guidelines for AKI (2012)",
+  "ESC Guidelines for Heart Failure (2021)",
+  "ESC Guidelines for Acute Coronary Syndromes (2020/2023)",
+  "ISTH Score for DIC",
+  "AABB Guidelines for RBC Transfusion (2016)",
+  "TRICC Trial — Hébert et al., NEJM 1999",
+  "Endocrine Society Guidelines for Vitamin D (2011)",
+  "ADA Standards of Medical Care in Diabetes (2024)",
+  "Rose & Post — Clinical Physiology of Acid-Base and Electrolyte Disorders",
+  "Sherlock's Diseases of the Liver 13th Ed",
+  "ProHOSP Trial",
+  "PRORATA Trial."
+ ],
+ "nota": "Interpretações padronizadas com base em literatura médica — a leitura de análises é sempre no contexto de cada doente e cada caso. Esta ferramenta é apenas uma referência de apoio, não substitui o raciocínio clínico."
+}

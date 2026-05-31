@@ -1,0 +1,59 @@
+[
+ {
+  "id": "urg",
+  "nm": "Urgência básica",
+  "ps": [
+   "hb",
+   "leuc",
+   "plaq",
+   "na",
+   "k",
+   "creat",
+   "ureia",
+   "pcr"
+  ]
+ },
+ {
+  "id": "int",
+  "nm": "Internamento completo",
+  "ps": [
+   "hb",
+   "leuc",
+   "plaq",
+   "na",
+   "k",
+   "creat",
+   "ureia",
+   "ast",
+   "alt",
+   "ggt",
+   "fa",
+   "biltot",
+   "alb",
+   "inr",
+   "aptt",
+   "glic",
+   "catot",
+   "mg",
+   "p",
+   "trop",
+   "pcr"
+  ]
+ },
+ {
+  "id": "hep",
+  "nm": "Hepático",
+  "ps": [
+   "ast",
+   "alt",
+   "ggt",
+   "fa",
+   "biltot",
+   "bildir",
+   "alb",
+   "inr",
+   "plaq",
+   "ldh"
+  ]
+ }
+]

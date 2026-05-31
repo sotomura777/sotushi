@@ -5,3 +5,5 @@ dist-ssr
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
+scripts/_p_v4.json
+scripts/_padroes_test.txt

@@ -1,0 +1,74 @@
+[
+ {
+  "cat": "hemo",
+  "front": "Anemia — como classificar",
+  "desc": "A Hb está baixa. E agora?\n\nOlha para o VGM:\n• VGM baixo → falta ferro?\n• VGM normal → doença crónica?\n• VGM alto → falta B12 ou folato?",
+  "back_title": "Próximo passo para cada",
+  "back": "VGM baixo: pedir ferritina e ferro\nVGM normal: pedir reticulócitos\nVGM alto: pedir B12 e folato\n\nSe nada explica: esfregaço",
+  "fav": true
+ },
+ {
+  "cat": "coag",
+  "front": "CIVD — quando suspeitar",
+  "desc": "O sangue coagula e sangra ao mesmo tempo.\n\nSuspeitar quando:\n• Plaquetas a descer\n• INR a subir\n• Fibrinogénio a descer\n• D-dímeros muito altos",
+  "back_title": "Score ISTH (≥5 confirma)",
+  "back": "Plaq: >100→0 | 50-100→1 | <50→2\nD-dím: N→0 | mod→2 | alto→3\nPT: <3s→0 | 3-6s→1 | >6s→2\nFibr: >1g→0 | <1g→1\n\nO essencial: tratar a CAUSA",
+  "fav": false
+ },
+ {
+  "cat": "hepa",
+  "front": "Fígado — dois padrões",
+  "desc": "As enzimas do fígado dizem coisas diferentes:\n\nAST e ALT sobem → as células estão a morrer (citólise)\n\nFA e GGT sobem → a bile não está a fluir (colestase)",
+  "back_title": "Pistas para a causa",
+  "back": "Citólise:\n• >1000 → hepatite aguda\n• AST/ALT >2 → álcool\n\nColestase:\n• FA + GGT → eco para ver vias biliares\n• FA sem GGT → é do osso, não do fígado",
+  "fav": true
+ },
+ {
+  "cat": "elec",
+  "front": "Hipercaliémia — urgência",
+  "desc": "O potássio alto é perigoso para o coração.\n\nK >5.5 → vigiar\nK >6.0 → fazer ECG já\nK >6.5 → tratar já",
+  "back_title": "Tratamento (por esta ordem)",
+  "back": "1.º Gluconato de cálcio → protege o coração\n2.º Insulina + glicose → empurra K para dentro das células\n3.º Salbutamol neb → reforça\n4.º Resinas ou diálise → tira K do corpo\n\nSuspender IECA, ARA, AINEs",
+  "fav": true
+ },
+ {
+  "cat": "renal",
+  "front": "IRA — pré-renal ou renal?",
+  "desc": "A creatinina subiu. Porquê?\n\nPré-renal = rim OK, pouco sangue\n(desidratação, hemorragia, IC)\n\nRenal = rim danificado\n(tóxicos, isquémia, nefrite)",
+  "back_title": "Como distinguir",
+  "back": "Pré-renal:\n• Na urinário <20\n• FENa <1%\n• Melhora com fluidos\n\nRenal:\n• Na urinário >40\n• FENa >2%\n• Não melhora com fluidos",
+  "fav": false
+ },
+ {
+  "cat": "hemo",
+  "front": "Pancitopénia — tudo baixo",
+  "desc": "As 3 linhas do sangue estão baixas:\nHb ↓  Leucócitos ↓  Plaquetas ↓\n\nA medula não está a produzir o suficiente ou há destruição.",
+  "back_title": "O que pedir",
+  "back": "1. Esfregaço periférico\n2. Reticulócitos\n3. B12 e folato\n4. Serologias: HIV, hepatite B/C\n5. Eco abdominal (baço grande?)\n\nSe tudo negativo → hematologia",
+  "fav": false
+ },
+ {
+  "cat": "infl",
+  "front": "PCR vs PCT — qual pedir?",
+  "desc": "Ambas sobem na inflamação mas são diferentes:\n\nPCR → sobe em tudo (infeção, trauma, cirurgia)\nPCT → sobe mais nas bactérias",
+  "back_title": "Valores de referência",
+  "back": "PCR:\n• >100 → provavelmente bacteriana\n• Útil para ver evolução\n\nPCT:\n• >0.5 → bacteriana provável\n• >2 → sépsis muito provável\n• Normal → viral provável\n\nDica: pedir as duas se febre sem foco",
+  "fav": false
+ },
+ {
+  "cat": "tiro",
+  "front": "Tiróide — por onde começar",
+  "desc": "Pede sempre o TSH primeiro.\n\nTSH alto → a hipófise pede mais\n= tiróide não funciona (HIPO)\n\nTSH baixo → a hipófise trava\n= tiróide produz demais (HIPER)",
+  "back_title": "E se o T4L está normal?",
+  "back": "TSH alto + T4L normal\n→ subclínico, repetir em 2-3 meses\n→ pedir Anti-TPO\n\nTSH baixo + T4L normal\n→ subclínico, pedir T3L\n\nRegra: TSH é o exame de rastreio.\nT4L confirma e classifica.",
+  "fav": false
+ },
+ {
+  "cat": "bioq",
+  "front": "Troponina — nem tudo é enfarte",
+  "desc": "A troponina vem do músculo do coração.\nSe está alta = há lesão cardíaca.\n\nMas atenção: há muitas causas além do enfarte.",
+  "back_title": "Como interpretar",
+  "back": "Fazer 2 medições (0h e 3-6h):\n\n• Sobe >20% → agudo (SCA?)\n• Estável (±20%) → crónico\n• 2x normal → exclui enfarte\n\nOutras causas de subida:\nIC, miocardite, TEP, sépsis, IR",
+  "fav": true
+ }
+]
