@@ -40,9 +40,25 @@
 .gsa-campo { display: flex; flex-direction: column; gap: 3px; }
 .gsa-campo label { font-size: 11.5px; font-weight: 600; color: var(--texto-2); }
 .gsa-campo .campo { padding: 7px 9px; font-size: 14px; font-weight: 600; text-align: center; }
-.an-modo { display: flex; gap: 6px; margin: 16px 0 4px; }
-.an-modo button { flex: 1; padding: 9px 0; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); color: var(--suave); font-family: var(--fonte-corpo); font-size: 13.5px; font-weight: 700; cursor: pointer; }
+.an-modo { display: flex; gap: 6px; margin: 16px 0 4px; overflow-x: auto; padding-bottom: 2px; }
+.an-modo button { flex: 0 0 auto; padding: 9px 16px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); color: var(--suave); font-family: var(--fonte-corpo); font-size: 13px; font-weight: 700; cursor: pointer; white-space: nowrap; }
 .an-modo button.on { background: var(--acento); color: #fff; border-color: var(--acento); }
+
+/* ── Flashcards (Meus cards) ────────────────────────────────────────────── */
+.an-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.an-card3d { perspective: 900px; height: 212px; cursor: pointer; }
+.an-card3d-in { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .5s; }
+.an-card3d-in.flip { transform: rotateY(180deg); }
+.an-card3d-face { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; border: 1px solid var(--borda); border-radius: var(--raio-lg); background: var(--superficie); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: var(--sombra-sm); padding: 12px 13px; display: flex; flex-direction: column; overflow: hidden; }
+.an-card3d-face.back { transform: rotateY(180deg); }
+.an-card3d-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 6px; }
+.an-card3d-cat { display: inline-flex; align-items: center; gap: 5px; font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--suave); }
+.an-card3d-acts { display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; }
+.an-card3d-act { background: none; border: none; cursor: pointer; color: var(--tenue); display: inline-flex; padding: 1px; }
+.an-card3d-titulo { font-size: 14px; font-weight: 800; color: var(--texto); line-height: 1.2; margin-bottom: 5px; }
+.an-card3d-bt { font-size: 13px; font-weight: 800; color: var(--acento); margin-bottom: 5px; }
+.an-card3d-desc { font-size: 12px; color: var(--texto-2); line-height: 1.45; white-space: pre-wrap; overflow-y: auto; flex: 1; }
+.an-card3d-foot { font-size: 10px; color: var(--tenue); text-align: right; margin-top: 6px; flex-shrink: 0; }
 
 /* ── Botões base do módulo ──────────────────────────────────────────────── */
 .an-btn { padding: 8px 14px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); color: var(--suave); font-family: var(--fonte-corpo); font-size: 12.5px; font-weight: 700; cursor: pointer; }

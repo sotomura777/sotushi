@@ -3,6 +3,7 @@ import meta from "@conteudo/analises/meta.json";
 import parametros from "@conteudo/analises/parametros.json";
 import padroes from "@conteudo/analises/padroes.json";
 import paramInfo from "@conteudo/analises/param_info.json";
+import biblio from "@conteudo/analises/biblio.json";
 import {
   getCorCat, ESTADO_INFO,
   construirMapaStatus, detetarAlterados, detetarPadroes, construirQueryPesquisa,
@@ -10,6 +11,7 @@ import {
 import ModalParametro from "./ModalParametro.jsx";
 import AnalisesCompletas from "./AnalisesCompletas.jsx";
 import Historico from "./Historico.jsx";
+import Cards from "./Cards.jsx";
 import Gsa from "./Gsa.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
@@ -92,6 +94,8 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
           <button className={modo === "analises" ? "on" : ""} onClick={() => setModo("analises")}>Parâmetros</button>
           <button className={modo === "completas" ? "on" : ""} onClick={() => setModo("completas")}>Completas</button>
           <button className={modo === "historico" ? "on" : ""} onClick={() => setModo("historico")}>Histórico</button>
+          <button className={modo === "cards" ? "on" : ""} onClick={() => setModo("cards")}>Cards</button>
+          <button className={modo === "biblio" ? "on" : ""} onClick={() => setModo("biblio")}>Biblio</button>
           <button className={modo === "gsa" ? "on" : ""} onClick={() => setModo("gsa")}>GSA</button>
         </div>
 
@@ -99,6 +103,16 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
           <AnalisesCompletas sexo={sexo} setSexo={setSexo} uRefs={uRefs} accent={accent} onGuardarHistorico={novaEntradaHistorico} />
         ) : modo === "historico" ? (
           <Historico historico={historico} setHistorico={setHistorico} sexo={sexo} setSexo={setSexo} uRefs={uRefs} accent={accent} />
+        ) : modo === "cards" ? (
+          <Cards accent={accent} />
+        ) : modo === "biblio" ? (
+          <div>
+            <div className="secao-label" style={{ marginTop: 4 }}>Referências utilizadas</div>
+            <div className="lista">
+              {biblio.fontes.map((f, i) => <div key={i} className="lista-item" style={{ fontSize: 13, color: "var(--texto-2)" }}>{f}</div>)}
+            </div>
+            <div className="rodape" style={{ marginTop: 14 }}>{biblio.nota}</div>
+          </div>
         ) : modo === "gsa" ? (
           <Gsa />
         ) : (
