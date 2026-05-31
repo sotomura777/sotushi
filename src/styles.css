@@ -1,76 +1,102 @@
 /* ==========================================================================
-   ESTILOS GLOBAIS — identidade visual MedGuia
-   Paleta creme + verde, Instrument Serif (títulos) + Plus Jakarta Sans (corpo),
-   com modo claro/escuro. As variáveis abaixo são a base partilhada por TODA a
-   app; os módulos consomem-nas (por isso herdam este visual automaticamente).
+   MedGuia — IDENTIDADE VISUAL "Liquid Glass" (violeta) · claro + escuro
+   --------------------------------------------------------------------------
+   Mesmas classes e variáveis da app (só visual; não toca em .jsx/.js).
+   Profundidade: fundo vivo a cobrir a janela inteira (fixo) + grão subtil +
+   vidro com brilho de aresta e sombras em camadas.
    ========================================================================== */
 
 :root {
-  /* Base neutra (modo claro) */
-  --fundo: #f5f5f0;
-  --superficie: #ffffff;
-  --superficie-2: #eeeee8;
-  --texto: #1c1917;
-  --texto-2: #292524;
-  --suave: #78716c;
-  --tenue: #a8a29e;
-  --borda: #e2e0db;
-  --borda-2: #efede8;
+  /* ---- Neutros frios (claro) ---- */
+  --fundo: #e7ecf3;
+  --superficie: rgba(255,255,255,.72);     /* vidro */
+  --superficie-2: rgba(255,255,255,.52);
+  --texto: #131c29;
+  --texto-2: #283242;
+  --suave: #586377;
+  --tenue: #97a1b2;
+  --borda: rgba(255,255,255,.85);
+  --borda-2: rgba(20,40,70,.10);
 
-  /* Tipografia */
-  --fonte-display: "Instrument Serif", Georgia, serif;
+  /* Brilho de aresta superior (dá "espessura" ao vidro) */
+  --brilho: inset 0 1px 0 rgba(255,255,255,.7), inset 0 0 0 1px rgba(255,255,255,.12);
+
+  /* Tipografia (mantém as fontes já carregadas) */
+  --fonte-display: "Plus Jakarta Sans", system-ui, sans-serif;
   --fonte-corpo: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 
   /* Raios e sombras */
-  --raio-sm: 8px;
-  --raio-md: 11px;
-  --raio-lg: 14px;
-  --raio-pill: 20px;
-  --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --sombra-md: 0 2px 8px rgba(0, 0, 0, 0.07);
+  --raio-sm: 10px; --raio-md: 14px; --raio-lg: 20px; --raio-pill: 999px;
+  --sombra-sm: 0 1px 2px rgba(20,35,70,.06), 0 6px 18px rgba(20,35,70,.08);
+  --sombra-md: 0 2px 6px rgba(20,35,70,.08), 0 18px 44px rgba(20,35,70,.16);
 
-  /* Acento (verde por defeito; cada módulo redefine --acento) */
-  --acento: #2d8a4e;
-  --acento-claro: #ebf5ee;
+  /* Acento — VIOLETA (marca). Cada módulo continua a redefinir --acento. */
+  --acento: #8b5cf6;
+  --acento-claro: #efeafe;
 
-  /* Layout responsivo */
   --px: 18px;
   --cols: 2;
 }
 
 .dark {
-  --fundo: #0f1117;
-  --superficie: #181b24;
-  --superficie-2: #222630;
-  --texto: #f0f2f5;
-  --texto-2: #d5d8e0;
-  --suave: #8a92a6;
-  --tenue: #6b7280;
-  --borda: #2a2f3d;
-  --borda-2: #232733;
-  --acento-claro: #1b5e35;
-  --sombra-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
-  --sombra-md: 0 2px 10px rgba(0, 0, 0, 0.4);
+  --fundo: #090c12;
+  --superficie: rgba(255,255,255,.07);
+  --superficie-2: rgba(255,255,255,.10);
+  --texto: #eef2f7;
+  --texto-2: #d2d8e1;
+  --suave: #aeb8c5;
+  --tenue: #76808f;
+  --borda: rgba(255,255,255,.14);
+  --borda-2: rgba(255,255,255,.07);
+  --brilho: inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(255,255,255,.04);
+  --acento: #a78bfa;
+  --acento-claro: #2a2350;
+  --sombra-sm: 0 2px 12px rgba(0,0,0,.42);
+  --sombra-md: 0 18px 48px rgba(0,0,0,.6);
 }
 
-@media (min-width: 640px) {
-  :root { --px: 28px; --cols: 3; }
-}
-@media (min-width: 800px) {
-  :root { --px: 36px; --cols: 4; }
-}
+@media (min-width: 640px) { :root { --px: 28px; --cols: 3; } }
+@media (min-width: 800px) { :root { --px: 36px; --cols: 4; } }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 ::-webkit-scrollbar { display: none; }
 
+html { background: var(--fundo); }
+
 body {
-  background: var(--fundo);
+  position: relative;
+  min-height: 100vh;
   color: var(--texto-2);
   font-family: var(--fonte-corpo);
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 14px; line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  /* base que cobre a JANELA toda (não só a coluna central) */
+  background:
+    radial-gradient(1100px 760px at 6% -6%, color-mix(in srgb, var(--acento) 30%, transparent), transparent 58%),
+    radial-gradient(1000px 720px at 102% 2%, rgba(45,212,191,.26), transparent 56%),
+    radial-gradient(1100px 900px at 50% 116%, color-mix(in srgb, var(--acento) 26%, transparent), transparent 60%),
+    radial-gradient(820px 680px at 92% 72%, rgba(244,114,182,.20), transparent 60%),
+    radial-gradient(720px 620px at 4% 64%, rgba(56,189,248,.18), transparent 62%),
+    linear-gradient(180deg, #eef1f7, #f3f6fb);
+  background-attachment: fixed;
 }
+body:has(.app.dark) {
+  background:
+    radial-gradient(1100px 760px at 6% -6%, color-mix(in srgb, var(--acento) 34%, transparent), transparent 58%),
+    radial-gradient(1000px 720px at 102% 2%, rgba(45,212,191,.18), transparent 56%),
+    radial-gradient(1100px 900px at 50% 118%, color-mix(in srgb, var(--acento) 30%, transparent), transparent 60%),
+    radial-gradient(820px 680px at 92% 72%, rgba(244,114,182,.14), transparent 60%),
+    linear-gradient(180deg, #0b0f16, #090c12);
+  background-attachment: fixed;
+}
+
+/* Grão subtil — dá textura "frosted" por cima de tudo (não captura cliques) */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  opacity: .05; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 input::placeholder { color: var(--tenue); }
 button:active { transform: scale(0.98); }
 input[type=number]::-webkit-inner-spin-button,
@@ -78,216 +104,202 @@ input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
 input[type=number] { -moz-appearance: textfield; }
 
 /* ==========================================================================
-   SHELL (ecrã inicial, separadores, barra inferior)
+   SHELL
    ========================================================================== */
 .app {
-  max-width: 960px;
-  margin: 0 auto;
-  min-height: 100vh;
-  background: var(--fundo);
-  position: relative;
+  max-width: 960px; margin: 0 auto; min-height: 100vh; position: relative;
+  z-index: 1;                 /* fica acima do fundo/grão fixos */
+  background: transparent;
 }
-.app-conteudo { padding: 14px 0 78px; min-height: 100vh; }
+.app-conteudo { padding: 14px 0 96px; min-height: 100vh; }
 .aba { padding: 0 var(--px); }
 
-.aba-cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-.aba-titulo { font-size: 22px; font-weight: 800; color: var(--texto); }
+.aba-cabecalho { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.aba-titulo { font-family: var(--fonte-corpo); font-size: 26px; font-weight: 800; letter-spacing: -.02em; color: var(--texto); }
+
 .avatar {
-  width: 34px; height: 34px;
-  border-radius: 50%;
-  background: var(--acento);
-  color: #fff;
-  font-size: 12.5px; font-weight: 700;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(140deg, color-mix(in srgb, var(--acento) 78%, #fff), var(--acento));
+  color: #fff; font-size: 13px; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--acento) 45%, transparent), var(--brilho);
 }
 .toggle-tema {
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  background: var(--superficie-2);
-  border: 1px solid var(--borda);
-  color: var(--suave);
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--superficie); border: 1px solid var(--borda); color: var(--suave);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(16px) saturate(1.6); -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  box-shadow: var(--sombra-sm), var(--brilho);
 }
 
-/* Grelha de ferramentas */
-.ferramentas {
-  display: grid;
-  grid-template-columns: repeat(var(--cols), 1fr);
-  gap: 7px;
-  margin-bottom: 18px;
-}
+/* ---- Grelha de ferramentas (vidro + chip de ícone) ---- */
+.ferramentas { display: grid; grid-template-columns: repeat(var(--cols), 1fr); gap: 9px; margin-bottom: 22px; }
 .ferramenta {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 12px 11px;
-  border-radius: var(--raio-md);
-  border: 1px solid var(--borda);
-  cursor: pointer;
+  display: flex; align-items: center; gap: 11px; padding: 13px 12px;
+  border-radius: var(--raio-md); cursor: pointer; text-align: left;
   font-family: var(--fonte-corpo);
-  text-align: left;
-  transition: transform 0.12s, box-shadow 0.12s;
+  background: var(--superficie) !important;
+  border: 1px solid var(--borda) !important;
+  backdrop-filter: blur(20px) saturate(1.8); -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  box-shadow: var(--sombra-sm), var(--brilho);
+  transition: transform .16s ease, box-shadow .16s ease;
 }
-.ferramenta:hover { transform: translateY(-1px); box-shadow: var(--sombra-sm); }
-.ferramenta-nome { font-size: 12px; font-weight: 600; }
-.ferramenta-desc { font-size: 10px; color: var(--suave); line-height: 1.3; margin-top: 1px; }
-.ferramenta--embreve { opacity: 0.45; cursor: default; }
-.ferramenta--embreve:hover { transform: none; box-shadow: none; }
+.ferramenta:hover { transform: translateY(-2px); box-shadow: var(--sombra-md), var(--brilho); }
+.ferramenta > svg {
+  flex-shrink: 0; width: 20px; height: 20px; box-sizing: content-box; padding: 9px;
+  border-radius: 12px; background: var(--superficie-2);
+  box-shadow: inset 0 0 0 1px var(--borda-2), inset 0 1px 0 rgba(255,255,255,.4);
+}
+.ferramenta-nome { font-size: 12.5px; font-weight: 650; color: var(--texto) !important; }
+.ferramenta-desc { font-size: 10.5px; color: var(--suave); line-height: 1.3; margin-top: 1px; }
+.ferramenta--embreve { opacity: 0.5; cursor: default; }
+.ferramenta--embreve:hover { transform: none; box-shadow: var(--sombra-sm), var(--brilho); }
 .embreve-tag { font-size: 9px; font-weight: 700; text-transform: uppercase; color: var(--tenue); }
 
-/* Cartões e secções */
-.secao-titulo { font-size: 16px; font-weight: 700; color: var(--texto); }
-.secao-cabecalho {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 9px; margin-top: 4px;
-}
-.sugestao {
-  background: var(--superficie);
-  border: 1px solid var(--borda);
-  border-radius: var(--raio-lg);
-  box-shadow: var(--sombra-sm);
-  padding: 13px 15px;
-  margin-bottom: 18px;
-  cursor: pointer;
-  text-align: left;
-  width: 100%;
-  font-family: var(--fonte-corpo);
-}
-.sugestao-eyebrow { font-size: 9.5px; font-weight: 700; color: var(--acento); letter-spacing: 0.08em; margin-bottom: 2px; }
-.sugestao-titulo { font-size: 15px; font-weight: 700; color: var(--texto); margin-bottom: 2px; }
-.sugestao-desc { font-size: 12px; color: var(--suave); line-height: 1.5; }
+/* ---- Secções ---- */
+.secao-titulo { font-family: var(--fonte-corpo); font-size: 18px; font-weight: 700; letter-spacing: -.01em; color: var(--texto); }
+.secao-cabecalho { display: flex; justify-content: space-between; align-items: center; margin-bottom: 11px; margin-top: 4px; }
 
-.recente {
-  display: flex; align-items: center; gap: 10px;
-  background: var(--superficie);
+/* ---- Cartão de sugestão (vidro + brilho de marca AMBIENTE) ---- */
+.sugestao {
+  position: relative; overflow: hidden;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--acento) 13%, transparent), transparent 52%),
+    var(--superficie);
   border: 1px solid var(--borda);
-  border-radius: var(--raio-md);
-  padding: 10px 13px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  width: 100%;
+  border-radius: var(--raio-lg); box-shadow: var(--sombra-md), var(--brilho);
+  backdrop-filter: blur(24px) saturate(1.8); -webkit-backdrop-filter: blur(24px) saturate(1.8);
+  padding: 17px 18px; margin-bottom: 22px; cursor: pointer; text-align: left; width: 100%;
   font-family: var(--fonte-corpo);
-  text-align: left;
 }
+.sugestao::after {
+  content: ""; position: absolute; right: -50px; top: -64px; width: 210px; height: 210px; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--acento) 55%, transparent), transparent 66%);
+  filter: blur(26px); opacity: .85; pointer-events: none;
+}
+.sugestao-eyebrow { position: relative; z-index: 1; font-size: 9.5px; font-weight: 700; color: var(--acento); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; }
+.sugestao-titulo { position: relative; z-index: 1; font-size: 16px; font-weight: 700; color: var(--texto); margin-bottom: 3px; }
+.sugestao-desc { position: relative; z-index: 1; font-size: 12px; color: var(--suave); line-height: 1.5; }
+
+/* ---- Recentes ---- */
+.recente {
+  display: flex; align-items: center; gap: 11px;
+  background: var(--superficie) !important; border: 1px solid var(--borda);
+  border-radius: var(--raio-md); padding: 11px 13px; margin-bottom: 7px; cursor: pointer; width: 100%;
+  font-family: var(--fonte-corpo); text-align: left;
+  backdrop-filter: blur(18px) saturate(1.6); -webkit-backdrop-filter: blur(18px) saturate(1.6);
+  box-shadow: var(--sombra-sm), var(--brilho);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+.recente:hover { transform: translateY(-1px); box-shadow: var(--sombra-md), var(--brilho); }
 .recente-icone {
-  width: 34px; height: 34px;
-  border-radius: var(--raio-md);
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
+  width: 38px; height: 38px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  background: var(--superficie-2) !important; box-shadow: inset 0 0 0 1px var(--borda-2), inset 0 1px 0 rgba(255,255,255,.4);
 }
-.recente-nome { font-weight: 600; font-size: 13px; color: var(--texto); }
+.recente-nome { font-weight: 650; font-size: 13px; color: var(--texto); }
 .recente-sub { font-size: 11px; color: var(--suave); }
 
 .vazio { text-align: center; padding: 28px 16px; color: var(--tenue); font-size: 13px; }
 
-/* Barra inferior */
+/* ---- Barra inferior (vidro flutuante) ---- */
 .nav-inferior {
-  position: fixed; bottom: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 100%; max-width: 960px;
-  background: color-mix(in srgb, var(--superficie) 92%, transparent);
-  backdrop-filter: blur(20px);
-  border-top: 1px solid var(--borda);
-  display: flex; justify-content: space-around;
-  padding: 6px 0 16px;
-  z-index: 50;
+  position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%);
+  width: min(936px, calc(100% - 24px));
+  background: var(--superficie);
+  backdrop-filter: blur(30px) saturate(1.8); -webkit-backdrop-filter: blur(30px) saturate(1.8);
+  border: 1px solid var(--borda); border-radius: 24px;
+  display: flex; justify-content: space-around; align-items: center;
+  padding: 8px 6px; box-shadow: var(--sombra-md), var(--brilho); z-index: 50;
 }
-.nav-btn {
-  background: none; border: none; cursor: pointer;
-  display: flex; flex-direction: column; align-items: center; gap: 1px;
-  padding: 3px 14px;
-  opacity: 0.5;
-  transition: opacity 0.15s;
-}
+.nav-btn { background: none; border: none; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 14px; opacity: 0.55; transition: opacity .15s; }
 .nav-btn.ativo { opacity: 1; }
 .nav-btn span { font-size: 9.5px; font-weight: 600; margin-top: 1px; }
 
 /* ==========================================================================
-   CLASSES PARTILHADAS PELOS MÓDULOS
+   CABEÇALHO DE MÓDULO — "LIQUID GLASS"
+   .hero recebe gradiente inline (override) e ganha orbs de cor difusos;
+   .hero-conteudo é o cartão de vidro fosco.
    ========================================================================== */
-
-/* Cabeçalho de módulo (gradiente definido inline por módulo) */
-.hero { padding: 24px 20px 22px; color: #fff; }
-.hero-conteudo { max-width: 800px; margin: 0 auto; }
-.hero-titulo { font-family: var(--fonte-display); font-size: 26px; line-height: 1.1; margin-bottom: 2px; }
-.hero-subtitulo { font-size: 12.5px; opacity: 0.78; line-height: 1.4; }
+.hero {
+  position: relative;
+  background: transparent !important;       /* anula o gradiente sólido inline */
+  color: var(--texto);
+  padding: 16px var(--px) 20px;
+}
+.hero-conteudo {
+  position: relative; z-index: 2; max-width: 800px; margin: 0 auto;
+  background: var(--superficie); border: 1px solid var(--borda); border-radius: 24px;
+  padding: 16px 16px 18px;
+  backdrop-filter: blur(30px) saturate(1.8); -webkit-backdrop-filter: blur(30px) saturate(1.8);
+  box-shadow: var(--sombra-md), var(--brilho);
+}
+.hero-titulo { font-family: var(--fonte-corpo); font-weight: 700; font-size: 23px; line-height: 1.12; letter-spacing: -.02em; color: var(--texto); margin: 6px 0 3px; }
+.hero-subtitulo { font-size: 12.5px; color: var(--suave); opacity: 1; line-height: 1.45; }
 .voltar {
   display: inline-flex; align-items: center; gap: 4px;
-  background: rgba(255, 255, 255, 0.18);
-  border: none; color: #fff;
-  padding: 5px 11px; border-radius: 7px;
-  font-size: 12px; font-weight: 600;
-  font-family: var(--fonte-corpo);
-  cursor: pointer; margin-bottom: 10px;
+  background: color-mix(in srgb, var(--texto) 7%, transparent); border: 1px solid var(--borda-2); color: var(--texto-2);
+  padding: 6px 12px; border-radius: 10px; font-size: 12px; font-weight: 600;
+  font-family: var(--fonte-corpo); cursor: pointer; margin-bottom: 6px;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }
 
-.modulo-corpo { max-width: 800px; margin: 0 auto; padding: 12px 16px 32px; }
+/* ==========================================================================
+   CLASSES PARTILHADAS PELOS MÓDULOS
+   ========================================================================== */
+.modulo-corpo { max-width: 800px; margin: 0 auto; padding: 14px 16px 36px; }
 
 .cartao {
-  background: var(--superficie);
-  border: 1px solid var(--borda);
-  border-radius: var(--raio-lg);
-  box-shadow: var(--sombra-sm);
+  background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg);
+  backdrop-filter: blur(20px) saturate(1.7); -webkit-backdrop-filter: blur(20px) saturate(1.7);
+  box-shadow: var(--sombra-sm), var(--brilho);
 }
 
 .campo {
-  width: 100%;
-  padding: 10px 13px;
-  border: 1px solid var(--borda);
-  border-radius: var(--raio-md);
-  font-size: 14px;
-  font-family: var(--fonte-corpo);
-  background: var(--superficie-2);
-  color: var(--texto);
-  outline: none;
-  transition: border-color 0.2s;
+  width: 100%; padding: 11px 14px; border: 1px solid var(--borda);
+  border-radius: var(--raio-md); font-size: 14px; font-family: var(--fonte-corpo);
+  background: var(--superficie-2); color: var(--texto); outline: none;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--brilho);
+  transition: border-color .2s, box-shadow .2s;
 }
-.campo:focus { border-color: var(--acento); }
+.campo:focus { border-color: var(--acento); box-shadow: 0 0 0 3px color-mix(in srgb, var(--acento) 22%, transparent); }
 
 .filtros { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 10px; }
 .filtro {
-  padding: 6px 13px;
-  border: 1.5px solid var(--borda);
-  border-radius: var(--raio-pill);
-  background: transparent;
-  color: var(--suave);
-  font-size: 12px; font-weight: 600;
-  font-family: var(--fonte-corpo);
-  cursor: pointer; white-space: nowrap;
-  transition: all 0.15s;
+  padding: 7px 14px; border: 1px solid var(--borda); border-radius: var(--raio-pill);
+  background: var(--superficie); color: var(--suave); font-size: 12px; font-weight: 600;
+  font-family: var(--fonte-corpo); cursor: pointer; white-space: nowrap;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all .15s;
+  box-shadow: var(--brilho);
 }
-.filtro--ativo { color: #fff; }
+.filtro--ativo { color: #fff; background: var(--acento); border-color: transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,.28); -webkit-backdrop-filter: none; backdrop-filter: none; }
 
-.secao-label {
-  font-size: 11px; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.08em;
-  color: var(--suave);
-  margin-bottom: 6px; padding-left: 2px;
-}
+.secao-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--suave); margin-bottom: 8px; padding-left: 2px; }
 
 .lista {
-  background: var(--superficie);
-  border: 1px solid var(--borda);
-  border-radius: var(--raio-lg);
-  overflow: hidden;
-  box-shadow: var(--sombra-sm);
+  background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg);
+  overflow: hidden; backdrop-filter: blur(20px) saturate(1.7); -webkit-backdrop-filter: blur(20px) saturate(1.7);
+  box-shadow: var(--sombra-sm), var(--brilho);
 }
 .lista-item { padding: 14px 16px; border-bottom: 1px solid var(--borda-2); }
 .lista-item:last-child { border-bottom: none; }
 
-.badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
+.badge { font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: var(--raio-pill); white-space: nowrap; flex-shrink: 0; }
 
 .rodape {
   margin-top: 24px; padding: 16px;
-  background: var(--superficie-2);
-  border: 1px solid var(--borda);
-  border-radius: var(--raio-md);
+  background: var(--superficie-2); border: 1px solid var(--borda); border-radius: var(--raio-md);
   font-size: 11px; color: var(--tenue); line-height: 1.6;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--brilho);
 }
 .rodape strong { color: var(--suave); }
+
+/* ==========================================================================
+   (OPCIONAL) Barra de baixo 100% violeta
+   --------------------------------------------------------------------------
+   O ícone/texto do separador ATIVO recebem cor por uma constante no JS.
+   Para ficarem violeta, em src/App.jsx troca, nos dois objetos `tema`:
+   ac: "#2d8a4e"   ->   ac: "#8b5cf6"
+   ========================================================================== */

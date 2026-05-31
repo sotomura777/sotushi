@@ -156,14 +156,14 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
       <div style={{ "--acento": accent }}>
         {hero}
         <div className="modulo-corpo">
-          <div className="lista">
+          <div className="vac-menu">
             {VIEWS.map((v) => (
-              <button key={v.id} className="lista-item" onClick={() => abrir(v.id)} style={{ width: "100%", textAlign: "left", cursor: "pointer", border: "none", background: "var(--superficie)" }}>
+              <button key={v.id} className="cartao vac-menu-item" onClick={() => abrir(v.id)}>
                 <div>
-                  <div style={{ fontWeight: 600, color: "var(--texto)" }}>{v.titulo}</div>
-                  <div style={{ fontSize: 12.5, color: "var(--suave)", marginTop: 2 }}>{v.desc}</div>
+                  <div className="vac-menu-titulo">{v.titulo}</div>
+                  <div className="vac-menu-desc">{v.desc}</div>
                 </div>
-                <span style={{ color: "var(--tenue)" }}>›</span>
+                <span className="vac-menu-seta" style={{ color: accent }}>›</span>
               </button>
             ))}
           </div>

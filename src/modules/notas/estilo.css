@@ -26,7 +26,7 @@
 .nt-textarea {
   width: 100%; border: none; padding: 12px;
   font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; line-height: 1.7;
-  color: var(--texto); background: var(--superficie); resize: vertical; box-sizing: border-box; outline: none;
+  color: var(--texto); background: transparent; resize: vertical; box-sizing: border-box; outline: none;
 }
 
 /* ── Lista de doentes (layout em cartões, agrupado) ───────────────────────── */
@@ -43,8 +43,8 @@
 .nt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
 .nt-grid--col { grid-template-columns: 1fr; }
 
-.nt-card { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); overflow: hidden; box-shadow: var(--sombra-sm); cursor: pointer; text-align: left; font-family: var(--fonte-corpo); padding: 0; transition: transform .12s, box-shadow .12s; }
-.nt-card:hover { transform: translateY(-1px); box-shadow: var(--sombra-md); }
+.nt-card { background: var(--superficie); -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5); border: 1px solid var(--borda); border-radius: var(--raio-lg); overflow: hidden; box-shadow: var(--sombra-sm); cursor: pointer; text-align: left; font-family: var(--fonte-corpo); padding: 0; transition: transform .14s, box-shadow .14s; }
+.nt-card:hover { transform: translateY(-2px); box-shadow: var(--sombra-md); }
 .nt-card--obs { opacity: .65; }
 .nt-card--on { border-color: var(--acento); box-shadow: 0 0 0 1px var(--acento) inset, var(--sombra-sm); }
 .nt-card-bar { height: 4px; }
@@ -107,7 +107,7 @@
 
 /* ── Modal (gestor de separadores) ────────────────────────────────────────── */
 .nt-modal { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; }
-.nt-modal-box { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: 18px; width: 520px; max-width: 100%; max-height: 88vh; overflow-y: auto; box-shadow: var(--sombra-md); }
+.nt-modal-box { background: var(--superficie); -webkit-backdrop-filter: blur(30px) saturate(180%); backdrop-filter: blur(30px) saturate(180%); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: 18px; width: 520px; max-width: 100%; max-height: 88vh; overflow-y: auto; box-shadow: var(--sombra-md); }
 .nt-modal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
 .nt-modal-x { background: none; border: none; cursor: pointer; color: var(--tenue); display: inline-flex; padding: 0; }
 .nt-swatches { display: flex; gap: 6px; flex-wrap: wrap; }

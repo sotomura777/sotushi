@@ -31,8 +31,8 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
   const aviso = temSequenciaNumerica(nota.texto);
   const editado = nota.atualizadoEm && nota.atualizadoEm !== nota.criadoEm;
   return (
-    <div className="nt-nota" style={{ borderLeft: `3px solid ${cor}` }}>
-      <div className="nt-nota-cab" style={{ background: `${cor}14` }}>
+    <div className="nt-nota" style={{ borderLeft: `4px solid ${cor}`, background: `${cor}12`, borderColor: `${cor}33` }}>
+      <div className="nt-nota-cab" style={{ background: `${cor}26` }}>
         <span className="nt-nota-kind" style={{ color: cor }}>{label}</span>
         {!rosa && !antigo && (
           <button
