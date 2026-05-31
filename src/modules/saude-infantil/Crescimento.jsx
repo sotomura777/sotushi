@@ -2,6 +2,7 @@ import { useState } from "react";
 import cres from "@conteudo/saude-infantil/crescimento.json";
 import { getLMS2, valToZ, zToP2, interpPercText, construirGraficoSVG } from "./crescimento";
 import { I, Ico } from "@/components/icones";
+import { useEstadoLocal } from "@/lib/persistencia";
 
 const { LMS_W, LMS_H, LMS_HC } = cres;
 
@@ -12,7 +13,7 @@ export default function Crescimento({ accent }) {
   const [alt, setAlt] = useState("");
   const [pc, setPc] = useState("");
   const [msg, setMsg] = useState("");
-  const [entradas, setEntradas] = useState([]);
+  const [entradas, setEntradas] = useEstadoLocal("medguia:crescimento:entradas", []);
 
   function adicionar() {
     const a = parseFloat(idade), p = parseFloat(peso), al = parseFloat(alt), c = parseFloat(pc);

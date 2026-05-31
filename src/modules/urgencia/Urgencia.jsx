@@ -3,6 +3,7 @@ import indice from "@conteudo/urgencia/indice.json";
 import { filtrarItens } from "./logica";
 import Obstipacao from "./Obstipacao.jsx";
 import { I, Ico } from "@/components/icones";
+import { useEstadoLocal } from "@/lib/persistencia";
 import "./estilo.css";
 
 const { sistemas, sintomas, suspeitas } = indice;
@@ -10,7 +11,7 @@ const ITENS = [...sintomas, ...suspeitas];
 
 export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
   const [filtro, setFiltro] = useState("todas");
-  const [favoritos, setFavoritos] = useState([]);
+  const [favoritos, setFavoritos] = useEstadoLocal("medguia:urgencia:favoritos", []);
   const [query, setQuery] = useState("");
   const [aberto, setAberto] = useState(null);
 

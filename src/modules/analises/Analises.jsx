@@ -4,6 +4,7 @@ import parametros from "@conteudo/analises/parametros.json";
 import { getIntervalo, getEstado, interpretacao, ESTADO_INFO, getCorCat } from "./logica";
 import Gsa from "./Gsa.jsx";
 import { I, Ico } from "@/components/icones";
+import { useEstadoLocal } from "@/lib/persistencia";
 import "./estilo.css";
 
 export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
@@ -13,7 +14,7 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
   const [categoria, setCategoria] = useState("Todos");
   const [soFav, setSoFav] = useState(false);
   const [valores, setValores] = useState({});
-  const [favoritos, setFavoritos] = useState([]);
+  const [favoritos, setFavoritos] = useEstadoLocal("medguia:analises:favoritos", []);
 
   const setValor = (id, v) => setValores((prev) => ({ ...prev, [id]: v }));
   const toggleFav = (id) =>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MODULOS } from "./modules/registo";
 import { I, ICONE_MODULO } from "./components/icones";
+import { useEstadoLocal } from "./lib/persistencia";
 
 const ABAS = [
   { id: "inicio", label: "Início", icon: I.home },
@@ -11,9 +12,9 @@ const ABAS = [
 
 export default function App() {
   const [aba, setAba] = useState("inicio");
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useEstadoLocal("medguia:tema:dark", false);
   const [abertoId, setAbertoId] = useState(null);
-  const [recentes, setRecentes] = useState([]);
+  const [recentes, setRecentes] = useEstadoLocal("medguia:recentes", []);
   const [procura, setProcura] = useState("");
 
   // Cores literais (hex) para ícones SVG e estilos que dependem do tema.

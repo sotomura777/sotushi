@@ -5,6 +5,7 @@ import {
   temSequenciaNumerica, criarNota, ordenarNotas, agruparPorData,
 } from "./logica";
 import { I, Ico } from "@/components/icones";
+import { useEstadoLocal } from "@/lib/persistencia";
 import "./estilo.css";
 
 const TABS_DEFAULT = config.separadores_padrao;
@@ -272,12 +273,12 @@ function GestorSeparadores({ tabs, onFechar, onGuardar, accent }) {
 
 // ════════════════════════════ Módulo ════════════════════════════
 export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
-  const [doentes, setDoentes] = useState([]);
+  const [doentes, setDoentes] = useEstadoLocal("medguia:notas:doentes", []);
   const [view, setView] = useState("list"); // usado só em ecrã estreito
   const [selId, setSelId] = useState(null);
   const [filtro, setFiltro] = useState("ativos"); // "ativos" | "todos"
   const [aba, setAba] = useState("diario");
-  const [tabs, setTabs] = useState(TABS_DEFAULT);
+  const [tabs, setTabs] = useEstadoLocal("medguia:notas:tabs", TABS_DEFAULT);
   const [busca, setBusca] = useState("");
   const [query, setQuery] = useState("");
   const [fixadaId, setFixadaId] = useState(null);
@@ -369,7 +370,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
 
   const aviso = (
     <div className="nt-aviso">
-      <Ico name="lock" s={13} /> <strong>Pré-visualização.</strong> Nada é guardado ainda. Insere <strong>apenas iniciais</strong>; o nome é convertido automaticamente e nunca é guardado. Não inserir dados reais de doentes.
+      <Ico name="lock" s={13} /> <strong>Guardado só neste dispositivo</strong> (sem cloud, sem conta). Insere <strong>apenas iniciais</strong>; o nome é convertido automaticamente e nunca é guardado. Não inserir dados reais de doentes.
     </div>
   );
 
