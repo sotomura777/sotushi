@@ -9,6 +9,7 @@ import {
 } from "./logica";
 import ModalParametro from "./ModalParametro.jsx";
 import AnalisesCompletas from "./AnalisesCompletas.jsx";
+import Historico from "./Historico.jsx";
 import Gsa from "./Gsa.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
@@ -22,7 +23,16 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
   const [soFav, setSoFav] = useState(false);
   const [favoritos, setFavoritos] = useEstadoLocal("medguia:analises:favoritos", []);
   const [uRefs, setURefs] = useEstadoLocal("medguia:analises:urefs", {});
+  const [historico, setHistorico] = useEstadoLocal("medguia:analises:historico", []);
   const [slots, setSlots] = useState({}); // { id: {val, status, force} } — sessão
+
+  const MAX_ENTRADAS = 8;
+  const novaEntradaHistorico = (params, vals, resumo) => {
+    const d = new Date(), z = (n) => String(n).padStart(2, "0");
+    const date = `${z(d.getDate())}/${z(d.getMonth() + 1)}/${d.getFullYear()} ${z(d.getHours())}:${z(d.getMinutes())}`;
+    const set = { date, params: [...params], vals: JSON.parse(JSON.stringify(vals)), resumo };
+    setHistorico((h) => { const n = [...h, { date, sets: [set] }]; return n.length > MAX_ENTRADAS ? n.slice(n.length - MAX_ENTRADAS) : n; });
+  };
   const [modalId, setModalId] = useState(null);
   const [verPad, setVerPad] = useState(false);
 
@@ -81,11 +91,14 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
         <div className="an-modo">
           <button className={modo === "analises" ? "on" : ""} onClick={() => setModo("analises")}>Parâmetros</button>
           <button className={modo === "completas" ? "on" : ""} onClick={() => setModo("completas")}>Completas</button>
+          <button className={modo === "historico" ? "on" : ""} onClick={() => setModo("historico")}>Histórico</button>
           <button className={modo === "gsa" ? "on" : ""} onClick={() => setModo("gsa")}>GSA</button>
         </div>
 
         {modo === "completas" ? (
-          <AnalisesCompletas sexo={sexo} setSexo={setSexo} uRefs={uRefs} accent={accent} />
+          <AnalisesCompletas sexo={sexo} setSexo={setSexo} uRefs={uRefs} accent={accent} onGuardarHistorico={novaEntradaHistorico} />
+        ) : modo === "historico" ? (
+          <Historico historico={historico} setHistorico={setHistorico} sexo={sexo} setSexo={setSexo} uRefs={uRefs} accent={accent} />
         ) : modo === "gsa" ? (
           <Gsa />
         ) : (

@@ -115,6 +115,53 @@ export function calcularFormulas(valores, params, ctx = {}) {
   return out;
 }
 
+// Comparação/evolução entre análises (sets) de uma entrada do histórico.
+// `selecionados` = ids com setas; restantes mostram só o valor atual.
+// Devolve { texto, notas }. As notas de evolução são fiéis ao original.
+export function gerarComparacao(sets, selecionados, params) {
+  if (!sets || sets.length < 2) return null;
+  const lastSet = sets[sets.length - 1];
+  const lastDate = (lastSet.date || "").split(" ")[0].split("/").slice(0, 2).join("/");
+  const val = (s, id) => { const sv = s.vals && s.vals[id]; return sv && sv.val != null && sv.val !== "" ? sv.val : null; };
+
+  const parts = [];
+  (lastSet.params || []).forEach((id) => {
+    const p = params.find((x) => x.id === id);
+    if (!p || val(lastSet, id) == null) return;
+    if (selecionados.includes(id)) {
+      const seq = sets.map((s) => (val(s, id) != null ? val(s, id) : "—"));
+      parts.push(`${p.ab} ${seq.join("→")}${p.un ? " " + p.un : ""}`);
+    } else {
+      parts.push(`${p.ab} ${val(lastSet, id)}${p.un ? " " + p.un : ""}`);
+    }
+  });
+  const texto = `Análises (${lastDate}): ${parts.join(", ")}`;
+
+  const firstSet = sets[0];
+  const notas = [];
+  selecionados.forEach((id) => {
+    const p = params.find((x) => x.id === id);
+    const cv = val(lastSet, id), pv = val(firstSet, id);
+    if (!p || cv == null || pv == null) return;
+    const cur = Number(cv), prev = Number(pv);
+    if (prev === 0 || Number.isNaN(cur) || Number.isNaN(prev)) return;
+    const pct = ((cur - prev) / Math.abs(prev)) * 100;
+    const dir = cur > prev ? "subiu" : "desceu";
+    const pctStr = Math.abs(pct).toFixed(0) + "%";
+    let especifico = false;
+    const add = (t) => { notas.push(t); especifico = true; };
+    if (id === "hb") { if (cur < 7) add("Hb <7 — considerar transfusão."); if (prev - cur > 2) add("Hb em descida significativa — vigiar."); }
+    if (id === "pcr") { if (pct > 50) add(`PCR subiu ${pctStr} — investigar.`); else if (pct < -30) add(`PCR em melhoria (desceu ${Math.abs(pct).toFixed(0)}%).`); }
+    if (id === "creat" && pct > 50) add("Creatinina a agravar — rever função renal.");
+    if (id === "k") { if (cur > 6) add("K⁺ >6 — crítico, ECG."); else if (cur < 3) add("K⁺ <3 — crítico."); }
+    if (id === "na") { if (cur < 125) add("Na⁺ <125 — risco neurológico."); else if (cur > 155) add("Na⁺ >155 — crítico."); }
+    if (id === "plaq") { if (cur < 20) add("Plaq <20 — risco hemorragia espontânea."); else if (cur < 50) add("Plaq <50 — risco hemorrágico."); }
+    if (id === "trop") { if (pct > 20) add("Troponina em subida — curva positiva."); else if (Math.abs(pct) <= 20) add("Troponina estável."); }
+    if (!especifico) notas.push(`${p.ab} ${dir} ${pctStr}.`);
+  });
+  return { texto, notas };
+}
+
 // ── Apresentação ────────────────────────────────────────────────────────────
 
 export const ESTADO_INFO = {
