@@ -84,6 +84,37 @@ export function construirQueryPesquisa(padraoNm, idsSelecionados, slots, params,
   return "https://www.google.com/search?q=" + encodeURIComponent(q);
 }
 
+// Texto de transcrição limpo (copiável): "Análises (DD/MM): Hb 11.2 g/dL, …"
+export function gerarResumoTexto(ids, valores, params, dataDDMM) {
+  const parts = [];
+  ids.forEach((id) => {
+    const p = params.find((x) => x.id === id);
+    const v = valores[id];
+    if (!p || !v || v.val == null || v.val === "") return;
+    parts.push(`${p.ab} ${v.val}${p.un ? " " + p.un : ""}`);
+  });
+  return `Análises (${dataDDMM}): ${parts.join(", ")}`;
+}
+
+// Fórmulas calculadas automaticamente quando há valores relevantes.
+// `valores` = { id: {val} }. ctx = { idade, peso, sexo, hco3 }.
+export function calcularFormulas(valores, params, ctx = {}) {
+  const num = (id) => { const d = valores[id]; if (!d || d.val == null || d.val === "") return null; const n = Number(d.val); return Number.isNaN(n) ? null : n; };
+  const { idade, peso, sexo, hco3 } = ctx;
+  const na = num("na"), gli = num("glic"), cl = num("cl"), ur = num("ureia");
+  const ca = num("catot"), alb = num("alb"), ast = num("ast"), alt = num("alt");
+  const cr = num("creat"), naur = num("naurin"), crur = num("creatuir");
+  const out = [];
+  if (na != null && gli != null && gli > 100) { const f = gli > 400 ? 2.4 : 1.6; out.push(`Na corr: ${(na + f * (gli - 100) / 100).toFixed(1)} mmol/L`); }
+  if (na != null && cl != null && hco3 != null) { const ag = na - (cl + hco3); out.push(`AG: ${ag.toFixed(1)}${ag > 12 ? " (elevado)" : " (normal)"}`); }
+  if (ca != null && alb != null && alb < 4) out.push(`Ca corr: ${(ca + 0.8 * (4 - alb)).toFixed(1)} mg/dL`);
+  if (ast != null && alt != null && alt > 0) { const r = ast / alt; out.push(`AST/ALT: ${r.toFixed(2)}${r > 2 ? " (sugestivo alcoólica)" : r < 1 ? " (não alcoólica)" : ""}`); }
+  if (cr != null && cr > 0 && idade != null && peso != null) { let clcr = (140 - idade) * peso / (72 * cr); if (sexo === "F") clcr *= 0.85; out.push(`ClCr: ${clcr.toFixed(0)} mL/min`); }
+  if (na != null && gli != null && ur != null) out.push(`Osm calc: ${(2 * na + gli / 18 + ur / 5.6).toFixed(0)} mOsm/kg`);
+  if (naur != null && cr != null && na != null && crur != null && crur > 0 && na > 0) { const fena = naur * cr / (na * crur) * 100; out.push(`FENa: ${fena.toFixed(2)}%${fena < 1 ? " (pré-renal)" : fena > 2 ? " (renal)" : ""}`); }
+  return out;
+}
+
 // ── Apresentação ────────────────────────────────────────────────────────────
 
 export const ESTADO_INFO = {

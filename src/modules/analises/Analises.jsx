@@ -8,6 +8,7 @@ import {
   construirMapaStatus, detetarAlterados, detetarPadroes, construirQueryPesquisa,
 } from "./logica";
 import ModalParametro from "./ModalParametro.jsx";
+import AnalisesCompletas from "./AnalisesCompletas.jsx";
 import Gsa from "./Gsa.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
@@ -79,10 +80,13 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
       <div className="modulo-corpo">
         <div className="an-modo">
           <button className={modo === "analises" ? "on" : ""} onClick={() => setModo("analises")}>Parâmetros</button>
-          <button className={modo === "gsa" ? "on" : ""} onClick={() => setModo("gsa")}>GSA (gasimetria)</button>
+          <button className={modo === "completas" ? "on" : ""} onClick={() => setModo("completas")}>Completas</button>
+          <button className={modo === "gsa" ? "on" : ""} onClick={() => setModo("gsa")}>GSA</button>
         </div>
 
-        {modo === "gsa" ? (
+        {modo === "completas" ? (
+          <AnalisesCompletas sexo={sexo} setSexo={setSexo} uRefs={uRefs} accent={accent} />
+        ) : modo === "gsa" ? (
           <Gsa />
         ) : (
           <>
