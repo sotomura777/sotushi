@@ -1,0 +1,135 @@
+/* ============================================================================
+   Farmacologia na Grávida — estilos do módulo.
+   Estrutura/layout consomem as variáveis partilhadas (styles.css).
+   As cores semânticas de risco/FDA/trimestre entram inline (config no JSX).
+   ============================================================================ */
+
+/* ── Estatísticas no hero ───────────────────────────────────────── */
+.fg-stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.fg-stat {
+  background: color-mix(in srgb, var(--acento) 12%, transparent);
+  border: 1px solid var(--borda-2);
+  border-radius: var(--raio-sm); padding: 6px 14px;
+}
+.fg-stat-num { font-size: 18px; font-weight: 800; color: var(--texto); line-height: 1.1; }
+.fg-stat-label { font-size: 9px; color: var(--suave); text-transform: uppercase; letter-spacing: .05em; }
+
+/* ── Aviso ──────────────────────────────────────────────────────── */
+.fg-aviso {
+  margin-bottom: 12px; padding: 10px 14px;
+  background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--raio-md);
+  font-size: 11.5px; color: #92400e; line-height: 1.5;
+}
+.fg-aviso strong { color: #78350f; }
+
+/* ── Atalhos externos ───────────────────────────────────────────── */
+.fg-atalhos { display: flex; gap: 8px; margin-bottom: 12px; }
+.fg-atalho {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;
+  padding: 10px 8px; background: var(--superficie); border: 1px solid var(--borda);
+  border-radius: var(--raio-md); font-size: 12px; font-weight: 700; text-decoration: none;
+  box-shadow: var(--brilho); transition: transform .15s, box-shadow .15s;
+}
+.fg-atalho:hover { transform: translateY(-1px); box-shadow: var(--sombra-sm); }
+.fg-atalho.azul { color: #2563eb; }
+.fg-atalho.verde { color: #059669; }
+
+/* ── Filtros (selects) ──────────────────────────────────────────── */
+.fg-selects { display: flex; gap: 8px; margin-top: 8px; }
+.fg-select {
+  flex: 1; padding: 9px 10px; border: 1px solid var(--borda);
+  border-radius: var(--raio-md); font-size: 12px; font-family: var(--fonte-corpo);
+  background: var(--superficie-2); color: var(--texto); outline: none;
+  box-shadow: var(--brilho); -webkit-appearance: none; appearance: none;
+}
+.fg-select:focus { border-color: var(--acento); }
+
+.fg-contagem { padding: 8px 2px 10px; font-size: 12px; color: var(--suave); }
+
+/* ── Card de medicamento ────────────────────────────────────────── */
+.fg-card {
+  background: var(--superficie); border: 1px solid var(--borda);
+  border-radius: var(--raio-lg); margin-bottom: 12px; cursor: pointer; overflow: hidden;
+  box-shadow: var(--sombra-sm), var(--brilho);
+  transition: border-color .2s, box-shadow .2s;
+}
+.fg-card.aberto { box-shadow: var(--sombra-md), var(--brilho); }
+
+.fg-card-banner {
+  background: #f0fdf4; border-bottom: 1px solid #dcfce7;
+  padding: 6px 16px; font-size: 11px; font-weight: 700; color: #166534;
+}
+
+.fg-card-cab { padding: 14px 16px; display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.fg-card-info { flex: 1; min-width: 0; }
+.fg-card-linha1 { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 3px; }
+.fg-card-nome { font-weight: 700; font-size: 14.5px; color: var(--texto); }
+.fg-card-ativo { font-size: 11.5px; color: var(--suave); font-style: italic; margin-bottom: 2px; }
+.fg-card-marcas { font-size: 11px; color: var(--tenue); line-height: 1.4; }
+.fg-card-marcas strong { color: var(--suave); }
+.fg-card-meta { margin-top: 6px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.fg-cat-tag {
+  font-size: 10px; color: var(--suave); background: var(--superficie-2);
+  padding: 2px 8px; border-radius: var(--raio-sm);
+}
+.fg-chevron { color: var(--tenue); flex-shrink: 0; margin-top: 4px; transition: transform .2s; }
+.fg-card.aberto .fg-chevron { transform: rotate(180deg); }
+
+/* ── Conteúdo expandido ─────────────────────────────────────────── */
+.fg-corpo { padding: 0 16px 16px; }
+.fg-risco-box { border-radius: var(--raio-md); padding: 12px; margin-bottom: 10px; }
+.fg-risco-label { font-size: 11px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .06em; }
+.fg-risco-texto { font-size: 12.5px; color: #374151; line-height: 1.5; }
+
+/* ── Barra de trimestres ────────────────────────────────────────── */
+.fg-trim { display: flex; gap: 6px; margin-top: 8px; }
+.fg-trim-cel { flex: 1; text-align: center; }
+.fg-trim-cab { font-size: 10px; color: var(--suave); margin-bottom: 3px; font-weight: 600; }
+.fg-trim-val { padding: 4px 2px; border-radius: var(--raio-sm); font-size: 9px; font-weight: 700; color: #fff; }
+
+/* ── Alternativas ───────────────────────────────────────────────── */
+.fg-alts { margin-top: 12px; }
+.fg-alts-titulo { font-size: 12px; font-weight: 700; color: #059669; margin-bottom: 6px; }
+.fg-alt {
+  background: #f0fdf4; border-radius: var(--raio-md); border-left: 3px solid #22c55e;
+  padding: 8px 12px; margin-bottom: 5px;
+}
+.fg-alt.match { background: #dcfce7; border-left-color: #16a34a; box-shadow: 0 0 0 2px #22c55e44; }
+.fg-alt-cab { display: flex; align-items: center; gap: 6px; margin-bottom: 2px; flex-wrap: wrap; }
+.fg-alt-nome { font-weight: 700; font-size: 12px; color: #166534; }
+.fg-alt-seguro { font-size: 10px; font-weight: 700; color: #fff; background: #16a34a; padding: 1px 8px; border-radius: var(--raio-sm); }
+.fg-alt-nota { font-size: 11px; color: #4b5563; line-height: 1.4; }
+
+/* ── Badges (estrutura; cor inline) ─────────────────────────────── */
+.fg-badge-fda { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.fg-badge-risco { display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 8px; font-size: 11px; font-weight: 700; }
+
+/* ── Painéis colapsáveis (FDA / recursos) ───────────────────────── */
+.fg-painel {
+  background: var(--superficie); border: 1px solid var(--borda);
+  border-radius: var(--raio-lg); padding: 12px 16px; cursor: pointer;
+  margin-bottom: 10px; box-shadow: var(--sombra-sm), var(--brilho);
+}
+.fg-painel-cab { display: flex; justify-content: space-between; align-items: center; }
+.fg-painel-titulo { font-size: 13px; font-weight: 700; color: var(--texto); }
+.fg-painel-chevron { color: var(--tenue); transition: transform .2s; }
+.fg-painel.aberto .fg-painel-chevron { transform: rotate(180deg); }
+.fg-painel-corpo { margin-top: 10px; }
+.fg-fda-linha { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 6px; }
+.fg-fda-desc { font-size: 11.5px; color: var(--texto-2); line-height: 1.4; flex: 1; }
+.fg-fda-nota {
+  margin-top: 8px; padding: 8px 10px; background: var(--superficie-2);
+  border-radius: var(--raio-sm); font-size: 10.5px; color: var(--suave); line-height: 1.5;
+}
+.fg-recurso {
+  display: block; padding: 8px 10px; margin-bottom: 6px;
+  background: var(--superficie-2); border-radius: var(--raio-md);
+  border-left: 3px solid var(--acento); text-decoration: none;
+}
+.fg-recurso-nome { font-size: 12px; font-weight: 700; color: var(--acento); }
+.fg-recurso-desc { font-size: 10px; color: var(--suave); margin-top: 1px; }
+
+/* ── Estado vazio ───────────────────────────────────────────────── */
+.fg-vazio { text-align: center; padding: 40px 20px; color: var(--suave); }
+.fg-vazio-titulo { font-size: 14px; font-weight: 600; color: var(--texto-2); }
+.fg-vazio-sub { font-size: 12px; margin-top: 4px; }

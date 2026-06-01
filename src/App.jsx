@@ -3,6 +3,7 @@ import { MODULOS } from "./modules/registo";
 import { I } from "./components/icones";
 import IconeModulo from "./components/IconeModulo.jsx";
 import { useEstadoLocal } from "./lib/persistencia";
+import { normalizar } from "./lib/texto";
 import Toaster from "./components/Toaster.jsx";
 
 const ABAS = [
@@ -13,9 +14,9 @@ const ABAS = [
 ];
 
 export default function App() {
-  const [aba, setAba] = useState("inicio");
+  const [aba, setAba] = useEstadoLocal("medguia:nav:aba", "inicio");
   const [dark, setDark] = useEstadoLocal("medguia:tema:dark", false);
-  const [abertoId, setAbertoId] = useState(null);
+  const [abertoId, setAbertoId] = useEstadoLocal("medguia:nav:aberto", null);
   const [recentes, setRecentes] = useEstadoLocal("medguia:recentes", []);
   const [procura, setProcura] = useState("");
 
@@ -24,7 +25,7 @@ export default function App() {
     ? { tx: "#f0f2f5", tx2: "#8a92a6", sf2: "#222630", bd: "#2a2f3d", ac: "#a78bfa" }
     : { tx: "#1c1917", tx2: "#78716c", sf2: "#eeeee8", bd: "#e2e0db", ac: "#8b5cf6" };
 
-  const moduloAberto = abertoId ? MODULOS.find((m) => m.id === abertoId) : null;
+  const moduloAberto = abertoId ? MODULOS.find((m) => m.id === abertoId && m.Componente) : null;
 
   const abrir = (m) => {
     if (!m || !m.pronto) return;
@@ -104,9 +105,9 @@ export default function App() {
 
   // ── PROCURAR ──
   function renderProcurar() {
-    const q = procura.toLowerCase().trim();
+    const q = normalizar(procura).trim();
     const resultados = q
-      ? MODULOS.filter((m) => m.nome.toLowerCase().includes(q) || m.descricao.toLowerCase().includes(q))
+      ? MODULOS.filter((m) => normalizar(m.nome).includes(q) || normalizar(m.descricao).includes(q))
       : MODULOS;
     return (
       <div className="aba">

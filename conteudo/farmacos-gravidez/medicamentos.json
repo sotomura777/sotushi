@@ -1,0 +1,3629 @@
+[
+  {
+    "id": 1,
+    "name": "5-Fluorouracil tópico",
+    "activeIngredient": "5-Fluorouracil",
+    "category": "Dermatológico (Antineoplásico tópico)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Efudix creme 5%"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Antimetabolito citotóxico — teratogénico mesmo por via tópica. Contraindicado em toda a gravidez.",
+    "alternatives": [
+      {
+        "name": "Crioterapia",
+        "safetyNote": "Alternativa segura para queratoses actínicas.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Adiar tratamento para pós-parto",
+        "safetyNote": "Se não urgente.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ácido Acetilsalicílico (dose analgésica)",
+    "activeIngredient": "AAS ≥ 500 mg",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Aspirina",
+      "AAS",
+      "Aspegic"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Risco de hemorragia materna e fetal, encerramento prematuro do canal arterial. Nota: baixa dose (100–150 mg) pode ser prescrita para prevenção de pré-eclâmpsia.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "Alternativa segura para dor e febre.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Ácido salicílico tópico (concentrações altas)",
+    "activeIngredient": "Ácido salicílico ≥ 2%",
+    "category": "Dermatológico (Queratolítico tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Duofilm",
+      "Verrugon",
+      "vários pensos e soluções queratolíticas"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Em concentrações ≥ 2% e grandes áreas, absorção sistémica pode mimetizar efeito dos AINEs. Pensos e soluções concentradas (>2%) devem ser evitados. Gel/tónico facial até 2% em área pequena é geralmente tolerado.",
+    "alternatives": [
+      {
+        "name": "Ácido glicólico tópico (baixa concentração)",
+        "safetyNote": "Esfoliante mais seguro na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Ácido azelaico (Skinoren)",
+        "safetyNote": "Seguro e eficaz.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Ácido Valpróico / Valproato",
+    "activeIngredient": "Ácido valpróico",
+    "category": "Antiepiléptico / Estabilizador do humor",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Depakine",
+      "Diplexil",
+      "Valproato de sódio Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Defeitos do tubo neural (~10%), malformações craniofaciais/cardíacas, e diminuição do QI (8–11 pontos). INFARMED/EMA contra-indica exceto se sem alternativa para epilepsia.",
+    "alternatives": [
+      {
+        "name": "Lamotrigina (Lamictal)",
+        "safetyNote": "Antiepiléptico com melhor perfil. Ajustar dose.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Levetiracetam (Keppra)",
+        "safetyNote": "Dados crescentes de segurança.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Acitretina",
+    "activeIngredient": "Acitretina",
+    "category": "Dermatológico (Retinóide oral)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Neotigason"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Retinóide oral teratogénico. Efeito prolongado — evitar gravidez até 3 ANOS após descontinuação.",
+    "alternatives": [
+      {
+        "name": "Emolientes e corticóides tópicos baixa potência",
+        "safetyNote": "Tratamento tópico da psoríase na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Fototerapia UVB",
+        "safetyNote": "Considerada segura para psoríase.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Adapaleno tópico",
+    "activeIngredient": "Adapaleno",
+    "category": "Dermatológico (Retinóide tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Differin gel/creme",
+      "Epiduo (adapaleno+peróxido de benzoílo)"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Retinóide tópico — apesar de baixa absorção sistémica, princípio da precaução recomenda evitar todos os retinóides na gravidez.",
+    "alternatives": [
+      {
+        "name": "Ácido azelaico (Skinoren creme/gel)",
+        "safetyNote": "Alternativa tópica segura.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Eritromicina tópica (Zineryt)",
+        "safetyNote": "Segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Albendazol (1.º trimestre)",
+    "activeIngredient": "Albendazol",
+    "category": "Antiparasitário (Anti-helmíntico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Zentel",
+      "Albendazol Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Teratogénico em animais (malformações esqueléticas em ratos). Contraindicado no 1.º trimestre. A OMS permite uso após o 1.º trimestre em áreas endémicas. Evitar gravidez até 1 mês após tratamento.",
+    "alternatives": [
+      {
+        "name": "Mebendazol (Pantelmin) — após 1.º trimestre",
+        "safetyNote": "Absorção mínima. Pode ser usado após o 1.º trimestre.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Adiar tratamento para 2.º trimestre",
+        "safetyNote": "Se não urgente.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Alcatrão de hulha tópico (Coal Tar)",
+    "activeIngredient": "Alcatrão de hulha",
+    "category": "Dermatológico tópico (Psoríase/Dermatite)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Polytar (champô)",
+      "Alphosyl",
+      "vários champôs anti-caspa com coaltar"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Contém hidrocarbonetos aromáticos policíclicos (PAHs) com potencial mutagénico e carcinogénico. Absorção cutânea variável. Dados insuficientes na gravidez. Evitar — existem alternativas mais seguras.",
+    "alternatives": [
+      {
+        "name": "Emolientes (CeraVe, Bioderma Atoderm)",
+        "safetyNote": "Base do tratamento tópico da psoríase na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Hidrocortisona 1% tópica (Pandermil)",
+        "safetyNote": "Corticóide de baixa potência seguro.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Champô de piritionato de zinco",
+        "safetyNote": "Seguro para caspa/dermatite seborreica.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Alopurinol",
+    "activeIngredient": "Alopurinol",
+    "category": "Anti-gotoso (inibidor xantina oxidase)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Zyloric",
+      "Alopurinol Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Dados limitados em humanos. Relatos de anomalias congénitas isoladas. Atravessa a placenta. Evitar na gravidez salvo se estritamente necessário. Para crises agudas de gota, usar alternativas.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "Para dor leve da gota.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Prednisolona (curta duração)",
+        "safetyNote": "Corticóide oral para crises agudas. Usar dose mínima e curta.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Alprazolam",
+    "activeIngredient": "Alprazolam",
+    "category": "Ansiolítico (Benzodiazepina)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Xanax",
+      "Alprazolam Generis",
+      "Alprazolam Mylan"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Mesmos riscos do diazepam. Fenda labial no 1.º trim. e abstinência neonatal no 3.º trim.",
+    "alternatives": [
+      {
+        "name": "TCC",
+        "safetyNote": "Preferencial.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Sertralina (Zoloft)",
+        "safetyNote": "ISRS com melhor perfil na gravidez.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Ambrisentano",
+    "activeIngredient": "Ambrisentano",
+    "category": "Antagonista endotelina (HAP)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Volibris",
+      "Letairis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico em animais. Mesma classe do bosentano — contraindicado na gravidez. Programa de prevenção obrigatório.",
+    "alternatives": [
+      {
+        "name": "Sildenafil (Revatio)",
+        "safetyNote": "Alternativa para HAP com dados na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Antigripais combinados",
+    "activeIngredient": "Combinações (paracetamol + pseudoefedrina + anti-histamínico + cafeína)",
+    "category": "Antigripal combinado (OTC)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Griponal",
+      "Cêgripe",
+      "Antigripine",
+      "Frenadol",
+      "Theraflu",
+      "Ilvico"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Contêm frequentemente pseudoefedrina, fenilefrina ou AINEs — todos com riscos na gravidez. Podem conter cafeína em dose elevada ou álcool. Nunca tomar antigripais combinados sem verificar cada componente.",
+    "alternatives": [
+      {
+        "name": "Paracetamol isolado (Ben-U-Ron)",
+        "safetyNote": "Para febre e dores. Seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Soro fisiológico nasal",
+        "safetyNote": "Para congestão nasal.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Mel + limão + repouso",
+        "safetyNote": "Medidas caseiras seguras para sintomas gripais.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Apixabano",
+    "activeIngredient": "Apixabano",
+    "category": "Anticoagulante (DOAC)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Eliquis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Sem dados de segurança em humanas grávidas. Contraindicado — utilizar HBPM.",
+    "alternatives": [
+      {
+        "name": "Enoxaparina (Lovenox, Clexane)",
+        "safetyNote": "HBPM segura em toda a gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Atenolol",
+    "activeIngredient": "Atenolol",
+    "category": "Anti-hipertensor (Beta-bloqueador)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Tenormin",
+      "Atenolol Generis",
+      "Atenolol Mylan"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Associado a restrição de crescimento intrauterino (RCIU), baixo peso ao nascer e bradicardia fetal. O efeito é proporcional à duração do tratamento. Trocar para labetalol ou nifedipina.",
+    "alternatives": [
+      {
+        "name": "Labetalol",
+        "safetyNote": "Beta-bloqueador de eleição na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha para HTA gestacional.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Nifedipina (Adalat)",
+        "safetyNote": "BCC seguro na gravidez.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Atorvastatina",
+    "activeIngredient": "Atorvastatina",
+    "category": "Hipolipemiante (Estatina)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Zarator",
+      "Sortis",
+      "Atorvastatina Generis",
+      "Lipitor"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Colesterol essencial para desenvolvimento fetal. Estatinas podem causar malformações. Suspender imediatamente.",
+    "alternatives": [
+      {
+        "name": "Colestiramina (Quantalan)",
+        "safetyNote": "Não absorvida sistemicamente.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Dieta e medidas não-farmacológicas",
+        "safetyNote": "Abordagem preferencial.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Bisfosfonatos (Ácido Alendrónico/Risedronato)",
+    "activeIngredient": "Alendronato / Risedronato / Ibandronato",
+    "category": "Anti-osteoporótico (Bisfosfonato)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Fosamax (alendronato)",
+      "Actonel (risedronato)",
+      "Bonviva (ibandronato)",
+      "Alendronato Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Acumulam-se no osso durante anos. Em animais, causam toxicidade fetal (hipocalcemia, malformações esqueléticas). Meia-vida óssea muito longa (>10 anos). Mulheres em idade fértil devem ser aconselhadas antes de iniciar.",
+    "alternatives": [
+      {
+        "name": "Cálcio + Vitamina D",
+        "safetyNote": "Suplementação segura na gravidez para saúde óssea.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Adiar tratamento para pós-parto/amamentação",
+        "safetyNote": "Se possível.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Bosentano",
+    "activeIngredient": "Bosentano",
+    "category": "Antagonista endotelina (HAP)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Tracleer",
+      "Stayveer"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico em animais — malformações craniofaciais e cardiovasculares. Programa de prevenção da gravidez obrigatório (REMS). Pode reduzir eficácia dos contracetivos hormonais.",
+    "alternatives": [
+      {
+        "name": "Sildenafil (Revatio)",
+        "safetyNote": "Dados limitados mas pode ser usado com monitorização em HAP na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Prostaciclinas (Epoprostenol)",
+        "safetyNote": "Podem ser utilizadas na HAP durante a gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Bromazepam",
+    "activeIngredient": "Bromazepam",
+    "category": "Ansiolítico (Benzodiazepina)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Lexotan",
+      "Bromazepam Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Benzodiazepina — mesmos riscos que diazepam/alprazolam.",
+    "alternatives": [
+      {
+        "name": "TCC",
+        "safetyNote": "Preferencial.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Sertralina (Zoloft)",
+        "safetyNote": "Se necessário tratamento farmacológico.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Candesartan",
+    "activeIngredient": "Candesartan cilexetil",
+    "category": "Anti-hipertensor (ARA-II)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Atacand",
+      "Blopress",
+      "Candesartan Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "ARA-II — mesma contraindicação no 2.º e 3.º trimestres.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Carbamazepina",
+    "activeIngredient": "Carbamazepina",
+    "category": "Antiepiléptico",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Tegretol",
+      "Carbamazepina Generis"
+    ],
+    "trimesterRisk": [
+      "Alto risco",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Risco de defeitos do tubo neural (~1%), malformações faciais e atraso no desenvolvimento. Suplementar ácido fólico 5mg/dia.",
+    "alternatives": [
+      {
+        "name": "Lamotrigina (Lamictal)",
+        "safetyNote": "Preferido na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Levetiracetam (Keppra)",
+        "safetyNote": "Bom perfil de segurança.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Ciprofloxacina",
+    "activeIngredient": "Ciprofloxacina",
+    "category": "Antibiótico (Fluoroquinolona)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Ciproxina",
+      "Ciprofloxacina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Artrotoxicidade — dano à cartilagem articular fetal em animais.",
+    "alternatives": [
+      {
+        "name": "Amoxicilina + Ác. Clavulânico (Augmentin, Clavamox)",
+        "safetyNote": "Espectro alargado seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Ceftriaxona",
+        "safetyNote": "Cefalosporina 3.ª geração segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Ciproterona + Etinilestradiol",
+    "activeIngredient": "Ciproterona/Etinilestradiol",
+    "category": "Anti-androgénio / Contracetivo",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Diane 35",
+      "Minerva",
+      "Ciproterona+EE Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Anti-androgénio — risco de feminização de fetos masculinos. Contracetivo hormonal combinado, descontinuar imediatamente se gravidez confirmada.",
+    "alternatives": [
+      {
+        "name": "Eritromicina tópica (Zineryt)",
+        "safetyNote": "Para acne na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Ácido azelaico (Skinoren)",
+        "safetyNote": "Tópico seguro.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Clomifeno",
+    "activeIngredient": "Clomifeno",
+    "category": "Indutor da ovulação (SERM)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Clomid",
+      "Serophene"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Usado para induzir ovulação — deve ser descontinuado assim que a gravidez for confirmada. Exposição durante a gravidez associada a anomalias fetais em estudos animais.",
+    "alternatives": [
+      {
+        "name": "Descontinuar ao confirmar gravidez",
+        "safetyNote": "Uso pré-concecional. Parar imediatamente após conceção.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Cloranfenicol",
+    "activeIngredient": "Cloranfenicol",
+    "category": "Antibiótico",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Clorocil colírio",
+      "Cloranfenicol Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Risco de síndrome do bebé cinzento (gray baby syndrome) no 3.º trimestre. Depressão medular. Via tópica ocular tem absorção mínima mas deve ser evitada quando possível.",
+    "alternatives": [
+      {
+        "name": "Fusídico ácido colírio (Fucithalmic)",
+        "safetyNote": "Tópico ocular mais seguro.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Azitromicina colírio (Azyter)",
+        "safetyNote": "Alternativa oftálmica segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Codeína (uso prolongado)",
+    "activeIngredient": "Codeína",
+    "category": "Opioide",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Dafalgan Codeína",
+      "Solpadeine",
+      "Nurofen Plus"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Uso prolongado ou peri-parto — risco de síndrome de abstinência neonatal e depressão respiratória do recém-nascido. Uso pontual e breve no 2.º trim. pode ser considerado.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "1.ª linha para dor.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Contracetivos orais combinados",
+    "activeIngredient": "Etinilestradiol + Progestagénio",
+    "category": "Contracetivo hormonal",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Yasmin",
+      "Diane 35",
+      "Minigeste",
+      "Harmonet",
+      "Gynera",
+      "Mercilon"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Descontinuar imediatamente. Sem evidência de teratogenicidade significativa com exposição inadvertida.",
+    "alternatives": [
+      {
+        "name": "Descontinuar imediatamente",
+        "safetyNote": "Se exposição inadvertida, risco baixo. Tranquilizar.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Corticóides tópicos potentes/muito potentes",
+    "activeIngredient": "Betametasona/Clobetasol",
+    "category": "Dermatológico (Corticóide tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Diprosone (betametasona)",
+      "Dermovate (clobetasol)",
+      "Betnovate"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Corticóides tópicos potentes (classe III–IV) em grandes áreas ou uso prolongado — risco de restrição de crescimento fetal e insuficiência adrenal. Uso breve e localizado de potência baixa/média é seguro.",
+    "alternatives": [
+      {
+        "name": "Hidrocortisona 1% (Pandermil, Cortisil)",
+        "safetyNote": "Corticóide tópico de baixa potência — seguro na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Emolientes (Cerave, Bioderma Atoderm)",
+        "safetyNote": "Base do tratamento do eczema gestacional.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Cremes anti-estrias com retinol/cafeína",
+    "activeIngredient": "Retinol + Cafeína (cosméticos)",
+    "category": "Cosmético corporal",
+    "fdaCategory": "—",
+    "riskLevel": "high",
+    "brandNames": [
+      "Vários cremes anti-estrias e anti-celulite de farmácia/parafarmácia"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Muitos cremes anti-estrias contêm retinol ou derivados de vitamina A na fórmula. Verificar SEMPRE a composição (INCI). Evitar qualquer produto com retinol, retinyl palmitate, retinaldeído, ou ácido retinóico. Cremes com apenas manteiga de karité, vitamina E, ou centella asiática são seguros.",
+    "alternatives": [
+      {
+        "name": "Óleo de amêndoas doces",
+        "safetyNote": "Hidratante seguro para prevenção de estrias.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Manteiga de karité / Creme com centella asiática",
+        "safetyNote": "Seguros na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Bio-Oil (sem retinol)",
+        "safetyNote": "Formulação sem retinol, considerada segura.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Cremes depilatórios (tioglicolato de cálcio)",
+    "activeIngredient": "Tioglicolato de cálcio",
+    "category": "Cosmético depilatório",
+    "fdaCategory": "—",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Veet",
+      "Nair",
+      "cremes depilatórios diversos"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Sem estudos específicos na gravidez. Absorção sistémica mínima mas podem causar irritação cutânea (pele grávida mais sensível). Odor forte pode agravar náuseas. Uso pontual em áreas pequenas é provavelmente seguro.",
+    "alternatives": [
+      {
+        "name": "Depilação com lâmina",
+        "safetyNote": "Método mais seguro na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Cera (quente/fria)",
+        "safetyNote": "Segura, mas pele pode estar mais sensível.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Dabigatrano",
+    "activeIngredient": "Dabigatrano etexilato",
+    "category": "Anticoagulante (DOAC)",
+    "fdaCategory": "C",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Pradaxa"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "DOAC sem dados em humanas grávidas. Contraindicado pelo RCM. Utilizar HBPM como alternativa.",
+    "alternatives": [
+      {
+        "name": "Enoxaparina (Lovenox, Clexane)",
+        "safetyNote": "HBPM de eleição na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Danazol",
+    "activeIngredient": "Danazol",
+    "category": "Hormona (Androgénio sintético)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Danatrol"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Androgénio sintético — virilização de fetos femininos (clitoromegalia, fusão labial).",
+    "alternatives": [
+      {
+        "name": "Consultar ginecologista",
+        "safetyNote": "Alternativas dependem da indicação.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Dapsona",
+    "activeIngredient": "Dapsona",
+    "category": "Antibiótico / Antimalárico",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Dapsona"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Risco de anemia hemolítica neonatal e metemoglobinemia, especialmente em recém-nascidos com deficiência de G6PD. Evitar próximo do parto.",
+    "alternatives": [
+      {
+        "name": "Hidroxicloroquina (Plaquenil)",
+        "safetyNote": "Segura na gravidez para indicações reumatológicas.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Diazepam",
+    "activeIngredient": "Diazepam",
+    "category": "Ansiolítico (Benzodiazepina)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Valium",
+      "Stesolid",
+      "Diazepam Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Risco de fenda labial/palatina no 1.º trim. Síndrome de abstinência neonatal e 'floppy infant' no 3.º trim.",
+    "alternatives": [
+      {
+        "name": "TCC (Terapia Cognitivo-Comportamental)",
+        "safetyNote": "1.ª linha não-farmacológica.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Hidroxizina (Atarax)",
+        "safetyNote": "Ansiolítico com melhor perfil.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Diclofenac",
+    "activeIngredient": "Diclofenac sódico/potássico",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Voltaren",
+      "Olfen",
+      "Cataflam",
+      "Diclofenac Generis",
+      "Flameril"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "AINE com risco de encerramento prematuro do canal arterial e insuficiência renal fetal. Inclui formulações tópicas em doses elevadas.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "Analgésico oral seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Calor local / Fisioterapia",
+        "safetyNote": "Abordagem não-farmacológica para dor musculoesquelética.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Diclofenac gel tópico",
+    "activeIngredient": "Diclofenac dietilamina/sódico gel",
+    "category": "Anti-inflamatório tópico (AINE gel)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Voltaren Emulgel",
+      "Flector",
+      "Diclofenac gel Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "AINE tópico — atravessa a placenta mesmo por via cutânea. Estudos demonstraram constrição reversível do canal arterial fetal com diclofenac tópico. Contraindicado a partir das 30 semanas (como todos os AINEs). No 1.º e 2.º trimestres, usar com precaução e apenas pontualmente.",
+    "alternatives": [
+      {
+        "name": "Paracetamol oral (Ben-U-Ron)",
+        "safetyNote": "Para dor musculoesquelética.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Calor local / Gelo",
+        "safetyNote": "Abordagem não-farmacológica segura.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Fisioterapia",
+        "safetyNote": "Segura na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Difenidramina (doses elevadas/prolongadas)",
+    "activeIngredient": "Difenidramina",
+    "category": "Anti-histamínico (1.ª geração)",
+    "fdaCategory": "B",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Benadryl",
+      "Caladryl (tópico)",
+      "presente em muitos antigripais"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Seguro",
+      "Evitar"
+    ],
+    "reason": "Geralmente seguro em doses baixas e pontuais. Doses elevadas ou uso crónico no 3.º trimestre associados a risco de contrações uterinas e síndrome de abstinência neonatal. Evitar próximo do parto.",
+    "alternatives": [
+      {
+        "name": "Cetirizina (Zyrtec)",
+        "safetyNote": "Anti-histamínico de 2.ª geração preferido na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Loratadina (Claritine)",
+        "safetyNote": "Seguro na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Domperidona (uso prolongado)",
+    "activeIngredient": "Domperidona",
+    "category": "Antiemético / Procinético",
+    "fdaCategory": "C",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Motilium",
+      "Domperidona Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Dados limitados na gravidez. Risco teórico de prolongamento QT. Usar apenas se necessário e por períodos curtos. Não é 1.ª linha para náuseas da gravidez.",
+    "alternatives": [
+      {
+        "name": "Doxilamina + Piridoxina (Cariban)",
+        "safetyNote": "1.ª linha para náuseas da gravidez. Cat. A.",
+        "fdaCategory": "A"
+      },
+      {
+        "name": "Metoclopramida (Primperan)",
+        "safetyNote": "2.ª linha, mais dados de segurança que domperidona.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Doxiciclina / Tetraciclina",
+    "activeIngredient": "Tetraciclinas",
+    "category": "Antibiótico (Tetraciclina)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Vibramicina (doxiciclina)",
+      "Actira",
+      "Tetraciclina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Deposição nos ossos e dentes fetais a partir das 16 semanas — descoloração dentária permanente e inibição do crescimento ósseo.",
+    "alternatives": [
+      {
+        "name": "Amoxicilina (Clamoxyl, Ospamox)",
+        "safetyNote": "Seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Azitromicina (Zithromax)",
+        "safetyNote": "Segura.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Cefalexina (Keflex)",
+        "safetyNote": "Cefalosporina segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Duloxetina",
+    "activeIngredient": "Duloxetina",
+    "category": "Antidepressivo (IRSN)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Cymbalta",
+      "Duloxetina Generis",
+      "Xeristar"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Dados limitados em humanos. Alguns estudos sugerem risco de hipertensão pulmonar persistente neonatal e síndrome de adaptação neonatal no 3.º trimestre. Evitar quando possível, especialmente próximo do parto.",
+    "alternatives": [
+      {
+        "name": "Sertralina (Zoloft)",
+        "safetyNote": "ISRS com melhor perfil de segurança na gravidez.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Dutasterida",
+    "activeIngredient": "Dutasterida",
+    "category": "Anti-androgénio (inibidor 5α-redutase)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Avodart",
+      "Duodart (dutasterida+tansulosina)"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Mais potente que a finasterida — inibe os dois tipos de 5α-redutase. Risco de feminização de fetos masculinos (anomalias genitais). Absorção transcutânea — grávidas não devem manipular cápsulas. Semi-vida ~5 semanas — evitar gravidez até 6 meses após descontinuação.",
+    "alternatives": [
+      {
+        "name": "Suspender ≥6 meses antes da conceção",
+        "safetyNote": "Sem alternativa segura na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Dymista (azelastina + fluticasona nasal)",
+    "activeIngredient": "Azelastina + Fluticasona propionato",
+    "category": "Anti-alérgico nasal (anti-histamínico + corticóide)",
+    "fdaCategory": "C",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Dymista spray nasal"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Sem estudos adequados em grávidas. Estudos em animais com azelastina oral mostraram toxicidade fetal em doses muito elevadas (>600x a dose humana). Dados pós-comercialização limitados não identificaram riscos. Fluticasona inalada tem bom perfil de segurança. Usar na gravidez apenas se o benefício justificar o risco potencial. Absorção nasal é mínima.",
+    "alternatives": [
+      {
+        "name": "Soro fisiológico nasal (Rhinomer)",
+        "safetyNote": "1.ª linha para congestão e rinite na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Budesonida nasal (Budesonide Aqua)",
+        "safetyNote": "Corticóide nasal com mais dados de segurança na gravidez — Cat. B.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Cetirizina oral (Zyrtec)",
+        "safetyNote": "Anti-histamínico de 2.ª geração com bom perfil na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Loratadina oral (Claritine)",
+        "safetyNote": "Anti-histamínico seguro na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Efavirenz",
+    "activeIngredient": "Efavirenz",
+    "category": "Antiviral (Anti-retroviral)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Stocrin",
+      "Efavirenz Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Defeitos do tubo neural em primatas. Dados em humanos menos preocupantes, mas evitar no 1.º trimestre quando possível.",
+    "alternatives": [
+      {
+        "name": "Dolutegravir (Tivicay)",
+        "safetyNote": "Inibidor da integrase com dados de segurança crescentes.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Raltegravir (Isentress)",
+        "safetyNote": "Alternativa com bom perfil na gravidez.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Enalapril",
+    "activeIngredient": "Enalapril",
+    "category": "Anti-hipertensor (IECA)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Renitec",
+      "Enalapril Generis",
+      "Enalapril Mylan",
+      "Enalapril Ratiopharm"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Fetotoxicidade — oligoâmnios, insuficiência renal fetal, hipoplasia pulmonar, anúria neonatal e morte fetal.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet, Dopegyt)",
+        "safetyNote": "1.ª linha na hipertensão gestacional.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Nifedipina (Adalat)",
+        "safetyNote": "Bloqueador dos canais de cálcio seguro.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Labetalol",
+        "safetyNote": "Beta-bloqueador de eleição na HTA gestacional.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Ergotamina / Dihidroergotamina",
+    "activeIngredient": "Derivados da cravagem do centeio",
+    "category": "Anti-enxaqueca (Ergotamínico)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Migretil (ergotamina+cafeína)"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Vasoconstrição uterina potente — risco de aborto, parto prematuro e isquémia fetal. Efeito ocitócico.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "1.ª linha para crise de enxaqueca.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Sumatriptano (Imigran) — se necessário",
+        "safetyNote": "Dados limitados mas sem sinal de teratogenicidade significativa. Discutir com médico.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Propranolol (profilaxia)",
+        "safetyNote": "Seguro para prevenção de enxaqueca.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Espironolactona",
+    "activeIngredient": "Espironolactona",
+    "category": "Diurético / Anti-androgénio",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Aldactone",
+      "Espironolactona Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Propriedades anti-androgénicas — risco de feminização de fetos masculinos. Contraindicada em toda a gravidez.",
+    "alternatives": [
+      {
+        "name": "Furosemida (Lasix) — se necessário",
+        "safetyNote": "Diurético com mais dados. Usar apenas se estritamente indicado.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Etoricoxib / Celecoxib (COX-2)",
+    "activeIngredient": "Inibidores COX-2",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Arcoxia (etoricoxib)",
+      "Celebrex (celecoxib)"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Inibidores seletivos da COX-2 — mesmos riscos cardiovasculares fetais que os AINEs clássicos. Contraindicados a partir das 20 semanas.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "Seguro na gravidez para dor.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Fenilefrina nasal",
+    "activeIngredient": "Fenilefrina",
+    "category": "Descongestionante nasal (agonista α-adrenérgico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Neo-Sinefrina",
+      "alguns sprays combinados"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Vasoconstritor — pode reduzir perfusão uterina. Dados limitados. Evitar no 1.º trimestre.",
+    "alternatives": [
+      {
+        "name": "Soro fisiológico nasal",
+        "safetyNote": "Sem riscos, 1.ª linha.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Fenitoína",
+    "activeIngredient": "Fenitoína",
+    "category": "Antiepiléptico",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Hidantina",
+      "Epanutin",
+      "Dilantin"
+    ],
+    "trimesterRisk": [
+      "Alto risco",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Síndrome fetal da hidantoína — hipoplasia das falanges, anomalias craniofaciais, fenda labial.",
+    "alternatives": [
+      {
+        "name": "Lamotrigina (Lamictal)",
+        "safetyNote": "1.ª escolha na epilepsia na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Levetiracetam (Keppra)",
+        "safetyNote": "Boa alternativa.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Fenobarbital",
+    "activeIngredient": "Fenobarbital",
+    "category": "Antiepiléptico / Barbitúrico",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Luminal",
+      "Fenobarbital Generis"
+    ],
+    "trimesterRisk": [
+      "Alto risco",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Risco de malformações cardíacas e fenda labial/palatina no 1.º trimestre. Síndrome de abstinência neonatal no 3.º trimestre. Défice de vitamina K neonatal — risco hemorrágico. Administrar vitamina K ao recém-nascido.",
+    "alternatives": [
+      {
+        "name": "Lamotrigina (Lamictal)",
+        "safetyNote": "Antiepiléptico com melhor perfil na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Levetiracetam (Keppra)",
+        "safetyNote": "Boa alternativa.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Finasterida",
+    "activeIngredient": "Finasterida",
+    "category": "Anti-androgénio",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Proscar",
+      "Propecia",
+      "Finasterida Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Risco de feminização de fetos masculinos (hipospádia). Não manipular comprimidos partidos — absorção transcutânea.",
+    "alternatives": [
+      {
+        "name": "Suspender",
+        "safetyNote": "Sem alternativa segura na gravidez para esta indicação.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Fluconazol (doses elevadas/crónicas)",
+    "activeIngredient": "Fluconazol",
+    "category": "Antifúngico oral",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Diflucan",
+      "Fluconazol Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado*",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Doses ≥400 mg/dia ou uso crónico — malformações craniofaciais e cardíacas. Dose única 150 mg para candidíase tem risco muito baixo.",
+    "alternatives": [
+      {
+        "name": "Clotrimazol tópico vaginal (Canesten, Gino-Canesten)",
+        "safetyNote": "Antifúngico tópico seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Miconazol tópico (Daktarin)",
+        "safetyNote": "Alternativa tópica segura.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Nistatina tópica (Mycostatin)",
+        "safetyNote": "Não absorvida. Segura na gravidez.",
+        "fdaCategory": "A"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Glibenclamida / Glimepirida (Sulfonilureias)",
+    "activeIngredient": "Sulfonilureias",
+    "category": "Antidiabético oral",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Daonil (glibenclamida)",
+      "Amaryl (glimepirida)"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Atravessam a placenta — risco de hipoglicemia neonatal grave. Insulina é preferida.",
+    "alternatives": [
+      {
+        "name": "Insulina",
+        "safetyNote": "Não atravessa a placenta. Eleição na diabetes gestacional.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Metformina (Glucophage, Risidon)",
+        "safetyNote": "Pode ser usada com monitorização. Dados crescentes.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Griseofulvina",
+    "activeIngredient": "Griseofulvina",
+    "category": "Antifúngico oral",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Griseovulfin"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico e embriotóxico em animais. Associação com gémeos siameses em relatos. Contraindicado.",
+    "alternatives": [
+      {
+        "name": "Terbinafina tópica (Lamisil creme)",
+        "safetyNote": "Tópico mais seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Adiar para pós-parto",
+        "safetyNote": "Infeções fúngicas superficiais não são urgência.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Hidroclorotiazida (uso crónico)",
+    "activeIngredient": "Hidroclorotiazida",
+    "category": "Diurético tiazídico",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Clorotiazida",
+      "Co-Diovan",
+      "Preterax",
+      "vários anti-hipertensores combinados"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Uso crónico pode causar redução do volume plasmático materno e perfusão placentária, trombocitopenia neonatal, icterícia e desequilíbrios eletrolíticos fetais.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha para HTA gestacional.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Labetalol",
+        "safetyNote": "Beta-bloqueador seguro.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Hidroquinona tópica",
+    "activeIngredient": "Hidroquinona",
+    "category": "Dermatológico (Despigmentante tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Pigmanorm",
+      "várias fórmulas magistrais despigmentantes"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Absorção sistémica significativa (35–45%). Dados insuficientes sobre segurança fetal. Evitar durante a gravidez.",
+    "alternatives": [
+      {
+        "name": "Ácido azelaico (Skinoren 20%)",
+        "safetyNote": "Despigmentante seguro na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Vitamina C tópica",
+        "safetyNote": "Antioxidante e despigmentante suave, seguro.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Protetor solar SPF 50+",
+        "safetyNote": "Fundamental para prevenir/tratar melasma gestacional.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Hipericão (Erva de São João)",
+    "activeIngredient": "Hypericum perforatum",
+    "category": "Fitoterápico / Suplemento",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Valdispert Humor",
+      "Hipericão cápsulas",
+      "St. John's Wort (suplementos)"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Indutor enzimático potente (CYP3A4, CYP2C9) — pode reduzir eficácia de muitos medicamentos. Dados insuficientes na gravidez. Relatos de contrações uterinas e risco de aborto em estudos animais. Evitar na gravidez.",
+    "alternatives": [
+      {
+        "name": "Sertralina (Zoloft) — se indicado",
+        "safetyNote": "ISRS com bom perfil na gravidez para depressão.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Psicoterapia / TCC",
+        "safetyNote": "1.ª linha para depressão ligeira na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Ibuprofeno",
+    "activeIngredient": "Ibuprofeno",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Brufen",
+      "Nurofen",
+      "Moment",
+      "Advil",
+      "Trifene",
+      "Ibuprofeno Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Risco de encerramento prematuro do canal arterial, oligoâmnios e insuficiência renal fetal. A FDA contra-indica todos os AINEs a partir das 20 semanas.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron, Tylenol)",
+        "safetyNote": "Analgésico de 1.ª linha na gravidez. Dose máx. 3g/dia.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Imiquimod tópico",
+    "activeIngredient": "Imiquimod",
+    "category": "Dermatológico (Imunomodulador tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Aldara creme 5%",
+      "Zyclara"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Imunomodulador tópico — dados insuficientes. Evitar na gravidez para tratamento de condilomas ou queratoses.",
+    "alternatives": [
+      {
+        "name": "Crioterapia",
+        "safetyNote": "Segura na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Iodo radioativo (I-131)",
+    "activeIngredient": "Iodo-131",
+    "category": "Radiofármaco",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Tratamento com iodo radioativo para hipertiroidismo/cancro da tiróide"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Atravessa a placenta e destrói a tiróide fetal a partir das 10–12 semanas. Causa hipotiroidismo fetal permanente, atraso mental. Evitar gravidez até 6–12 meses após tratamento.",
+    "alternatives": [
+      {
+        "name": "Propiltiouracilo — PTU (1.º trimestre)",
+        "safetyNote": "Antitiroideo preferido no 1.º trimestre.",
+        "fdaCategory": "D"
+      },
+      {
+        "name": "Metimazol (Tapazol) — 2.º/3.º trimestre",
+        "safetyNote": "Preferido após o 1.º trimestre. No 1.º trim. associado a aplasia cutis.",
+        "fdaCategory": "D"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Irbesartan",
+    "activeIngredient": "Irbesartan",
+    "category": "Anti-hipertensor (ARA-II)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Aprovel",
+      "Irbesartan Generis",
+      "CoAprovel (+ HCTZ)"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "ARA-II — mesma contraindicação que losartan/valsartan.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Isotretinoína",
+    "activeIngredient": "Isotretinoína",
+    "category": "Dermatológico (Retinóide oral)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Roaccutane",
+      "Isotrex",
+      "Acnecutan",
+      "Isotretinoína Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Altamente teratogénico — malformações craniofaciais, cardíacas e do SNC. Suspender pelo menos 1 mês antes da conceção. Programa de prevenção da gravidez obrigatório.",
+    "alternatives": [
+      {
+        "name": "Eritromicina tópica (Zineryt)",
+        "safetyNote": "Segura para acne na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Ácido azelaico (Skinoren)",
+        "safetyNote": "Tópico seguro na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Peróxido de benzoílo (Benzac, Brevoxyl)",
+        "safetyNote": "Tópico com absorção mínima, seguro.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Itraconazol",
+    "activeIngredient": "Itraconazol",
+    "category": "Antifúngico oral",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Sporanox",
+      "Itraconazol Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Embriotóxico e teratogénico em animais. Dados limitados em humanos. Evitar na gravidez.",
+    "alternatives": [
+      {
+        "name": "Clotrimazol tópico (Canesten)",
+        "safetyNote": "Seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Nistatina tópica (Mycostatin)",
+        "safetyNote": "Não absorvida, segura.",
+        "fdaCategory": "A"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Ivermectina",
+    "activeIngredient": "Ivermectina",
+    "category": "Antiparasitário",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Stromectol",
+      "Ivermectina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Teratogénica em animais em doses elevadas. Dados insuficientes em humanas grávidas. FDA contra-indica na gravidez até existirem mais dados. Evitar na gravidez.",
+    "alternatives": [
+      {
+        "name": "Permetrina tópica 5% (para sarna)",
+        "safetyNote": "Tratamento tópico de eleição para sarna na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Adiar tratamento",
+        "safetyNote": "Se possível aguardar pós-parto.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Ketoconazol champô/creme",
+    "activeIngredient": "Ketoconazol tópico",
+    "category": "Antifúngico tópico",
+    "fdaCategory": "C",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Nizoral champô 2%",
+      "Ketoconazol creme Generis",
+      "Ketoisdin"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Via tópica tem absorção mínima. O ketoconazol oral é contraindicado (hepatotoxicidade e anti-androgénico), mas o champô/creme tópico pode ser usado com precaução na gravidez para dermatite seborreica ou pitiríase versicolor.",
+    "alternatives": [
+      {
+        "name": "Champô de piritionato de zinco",
+        "safetyNote": "1.ª linha para caspa na gravidez. Seguro.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Clotrimazol creme (Canesten)",
+        "safetyNote": "Antifúngico tópico seguro.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Leflunomida",
+    "activeIngredient": "Leflunomida",
+    "category": "Imunossupressor",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Arava",
+      "Leflunomida Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico. Metabolito com semi-vida muito longa (~2 semanas). Requer washout com colestiramina antes da conceção.",
+    "alternatives": [
+      {
+        "name": "Azatioprina (Imuran)",
+        "safetyNote": "Melhor perfil na gravidez.",
+        "fdaCategory": "D"
+      },
+      {
+        "name": "Sulfassalazina (Salazopyrin)",
+        "safetyNote": "Segura para artrite.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Lenalidomida",
+    "activeIngredient": "Lenalidomida",
+    "category": "Imunomodulador / Antineoplásico",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Revlimid"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Análogo da talidomida — teratogénico. Programa de prevenção da gravidez obrigatório (REMS/Lenalidomide REMS). Contraceção obrigatória até 4 semanas após descontinuação.",
+    "alternatives": [
+      {
+        "name": "Consultar hematologista/oncologista",
+        "safetyNote": "Alternativas dependem da indicação.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Levofloxacina",
+    "activeIngredient": "Levofloxacina",
+    "category": "Antibiótico (Fluoroquinolona)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Tavanic",
+      "Levofloxacina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Fluoroquinolona — mesmo risco de artrotoxicidade.",
+    "alternatives": [
+      {
+        "name": "Amoxicilina + Ác. Clavulânico (Augmentin)",
+        "safetyNote": "Alternativa segura.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Azitromicina (Zithromax)",
+        "safetyNote": "Segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Lindano tópico",
+    "activeIngredient": "Lindano (hexaclorociclohexano)",
+    "category": "Antiparasitário tópico (pediculicida/escabicida)",
+    "fdaCategory": "C",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Jacutin (descontinuado em muitos países)"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Pesticida organoclorado com neurotoxicidade — absorção cutânea significativa. Associado a convulsões e toxicidade do SNC. Banido em muitos países. Contraindicado na gravidez e amamentação.",
+    "alternatives": [
+      {
+        "name": "Permetrina creme 5% (Nix, Lyclear)",
+        "safetyNote": "Escabicida/pediculicida de 1.ª linha na gravidez. Segura.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Dimeticona loção (Hedrin, Paranix)",
+        "safetyNote": "Anti-piolhos não-inseticida, seguro na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Lisinopril",
+    "activeIngredient": "Lisinopril",
+    "category": "Anti-hipertensor (IECA)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Zestril",
+      "Prinivil",
+      "Lisinopril Generis",
+      "Ecapril"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Fetotoxicidade renal, oligoâmnios e morte fetal — como todos os IECAs.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha para HTA na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Labetalol",
+        "safetyNote": "Alternativa segura.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Lítio",
+    "activeIngredient": "Carbonato de lítio",
+    "category": "Estabilizador do humor",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Priadel"
+    ],
+    "trimesterRisk": [
+      "Alto risco",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Anomalia de Ebstein (malformação tricúspide) no 1.º trimestre (~0.1–0.5%). Toxicidade neonatal — hipotonia, hipotiroidismo.",
+    "alternatives": [
+      {
+        "name": "Lamotrigina (Lamictal)",
+        "safetyNote": "Melhor perfil na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Quetiapina (Seroquel)",
+        "safetyNote": "Pode ser considerada com monitorização.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Lorazepam",
+    "activeIngredient": "Lorazepam",
+    "category": "Ansiolítico (Benzodiazepina)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Lorenin",
+      "Ansilor",
+      "Lorazepam Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Benzodiazepina — mesmos riscos gerais. Evitar no 1.º e 3.º trimestres.",
+    "alternatives": [
+      {
+        "name": "TCC / Relaxamento",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Hidroxizina (Atarax)",
+        "safetyNote": "Alternativa pontual.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Losartan",
+    "activeIngredient": "Losartan potássico",
+    "category": "Anti-hipertensor (ARA-II)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Cozaar",
+      "Losartan Generis",
+      "Losartan Mylan",
+      "Lortaan"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Fetotoxicidade renal e pulmonar — perfil idêntico aos IECAs.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Labetalol",
+        "safetyNote": "Alternativa segura.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Metilfenidato / Lisdexanfetamina (TDAH)",
+    "activeIngredient": "Estimulantes do SNC",
+    "category": "Estimulante (TDAH)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Ritalina/Concerta (metilfenidato)",
+      "Elvanse (lisdexanfetamina)",
+      "Metilfenidato Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Dados limitados. Alguns estudos sugerem possível risco ligeiro de malformações cardíacas e parto prematuro. Vasoconstrição pode reduzir perfusão placentária. Suspender na gravidez quando possível.",
+    "alternatives": [
+      {
+        "name": "Estratégias não-farmacológicas (TCC, coaching)",
+        "safetyNote": "1.ª linha para gestão do TDAH na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Suspender com acompanhamento psiquiátrico",
+        "safetyNote": "Planear redução gradual pré-concecional.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Metimazol / Tiamazol (1.º trimestre)",
+    "activeIngredient": "Metimazol / Tiamazol",
+    "category": "Antitiroideo",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Tapazol",
+      "Thyrozol",
+      "Metimazol Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "No 1.º trimestre associado a aplasia cutis congénita (defeito do couro cabeludo), atresia das coanas e embriopatia por metimazol. Trocar para PTU no 1.º trimestre. A partir do 2.º trimestre pode ser retomado sob monitorização.",
+    "alternatives": [
+      {
+        "name": "Propiltiouracilo — PTU",
+        "safetyNote": "Preferido no 1.º trimestre. Trocar para metimazol no 2.º trim. (PTU tem risco de hepatotoxicidade).",
+        "fdaCategory": "D"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Metotrexato",
+    "activeIngredient": "Metotrexato",
+    "category": "Imunossupressor / Antineoplásico",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Ledertrexate",
+      "Metoject",
+      "Nordimet",
+      "Metotrexato Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico potente — defeitos do tubo neural, anomalias craniofaciais e dos membros. Abortivo. Descontinuar ≥3 meses antes da conceção.",
+    "alternatives": [
+      {
+        "name": "Azatioprina (Imuran)",
+        "safetyNote": "Relativamente segura. Monitorizar hemograma.",
+        "fdaCategory": "D"
+      },
+      {
+        "name": "Sulfassalazina (Salazopyrin)",
+        "safetyNote": "Segura com suplementação de ácido fólico 5mg/dia.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Hidroxicloroquina (Plaquenil)",
+        "safetyNote": "Segura na gravidez, especialmente no lúpus.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Metronidazol (1.º trimestre)",
+    "activeIngredient": "Metronidazol",
+    "category": "Antibiótico / Antiparasitário",
+    "fdaCategory": "B",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Flagyl",
+      "Metronidazol Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Seguro",
+      "Seguro"
+    ],
+    "reason": "Dados contraditórios no 1.º trim. — estudos recentes não confirmam teratogenicidade mas evita-se por precaução. Seguro no 2.º e 3.º trim.",
+    "alternatives": [
+      {
+        "name": "Clindamicina (Dalacin)",
+        "safetyNote": "Alternativa para vaginose bacteriana no 1.º trim.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Micofenolato de mofetil",
+    "activeIngredient": "Micofenolato",
+    "category": "Imunossupressor",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "CellCept",
+      "Myfortic"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Risco de aborto (45–49%) e malformações congénitas (fenda labial, microotia, anomalias cardíacas). Descontinuar ≥6 semanas antes da conceção.",
+    "alternatives": [
+      {
+        "name": "Azatioprina (Imuran)",
+        "safetyNote": "Imunossupressor com melhor perfil.",
+        "fdaCategory": "D"
+      },
+      {
+        "name": "Tacrolimus (Prograf)",
+        "safetyNote": "Pode ser utilizado com monitorização de níveis.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Minociclina oral",
+    "activeIngredient": "Minociclina",
+    "category": "Antibiótico (Tetraciclina)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Minocin",
+      "Minociclina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Tetraciclina — mesmos riscos de descoloração dentária e inibição do crescimento ósseo fetal a partir das 16 semanas. Frequentemente usada para acne — suspender ao planear gravidez.",
+    "alternatives": [
+      {
+        "name": "Eritromicina tópica (Zineryt)",
+        "safetyNote": "Segura para acne na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Ácido azelaico (Skinoren)",
+        "safetyNote": "Tópico seguro.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Minoxidil tópico",
+    "activeIngredient": "Minoxidil",
+    "category": "Dermatológico (Anti-alopécia tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Regaine",
+      "Rogaine",
+      "Minoxidil Generis solução/espuma"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Vasodilatador potente — potencialmente tóxico para o feto. Casos relatados de hipertricose e anomalias cardiovasculares fetais. Absorção sistémica possível.",
+    "alternatives": [
+      {
+        "name": "Suspender e aguardar pós-parto",
+        "safetyNote": "Queda capilar gestacional é fisiológica e geralmente reverte.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Misoprostol",
+    "activeIngredient": "Misoprostol",
+    "category": "Prostaglandina",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Cytotec",
+      "Arthrotec (diclofenac+misoprostol)"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Potente uterotónico — aborto espontâneo, parto prematuro e síndrome de Moebius. Uso apenas em contexto obstétrico para indução do parto.",
+    "alternatives": [
+      {
+        "name": "Omeprazol (Losec, Meprazol)",
+        "safetyNote": "IBP seguro para DRGE/úlcera.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Famotidina (Pepcid)",
+        "safetyNote": "Anti-H2 seguro.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Nafazolina nasal",
+    "activeIngredient": "Nafazolina",
+    "category": "Descongestionante nasal (agonista α-adrenérgico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Rinazina",
+      "Colírio Nasal"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Vasoconstritor nasal — mesmos riscos dos outros agonistas α-adrenérgicos. Dados de segurança ainda mais limitados que xilometazolina/oximetazolina.",
+    "alternatives": [
+      {
+        "name": "Soro fisiológico nasal",
+        "safetyNote": "1.ª linha segura.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Lavagem nasal salina",
+        "safetyNote": "Eficaz e sem riscos.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Naproxeno",
+    "activeIngredient": "Naproxeno",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Naprosyn",
+      "Naproxeno Generis",
+      "Momendol",
+      "Aleve"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Mesmo perfil de risco dos AINEs — encerramento prematuro do canal arterial, oligoâmnios e disfunção renal fetal.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "1.ª linha para dor e febre na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Nimesulida",
+    "activeIngredient": "Nimesulida",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Nimed",
+      "Aulin",
+      "Nimesulida Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Contraindicada em toda a gravidez pelo INFARMED/EMA. Hepatotoxicidade materna e fetotoxicidade renal e cardiovascular.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "Alternativa segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Ondansetrom (doses elevadas/1.º trim.)",
+    "activeIngredient": "Ondansetrom",
+    "category": "Antiemético",
+    "fdaCategory": "B",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Zofran",
+      "Ondansetrom Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Seguro",
+      "Seguro"
+    ],
+    "reason": "Alguns estudos sugerem risco ligeiro de fenda palatina no 1.º trimestre, embora dados conflituantes. Reservar para náuseas graves resistentes ao tratamento de 1.ª linha.",
+    "alternatives": [
+      {
+        "name": "Doxilamina + Piridoxina (Cariban)",
+        "safetyNote": "1.ª linha para náuseas e vómitos da gravidez. Cat. A.",
+        "fdaCategory": "A"
+      },
+      {
+        "name": "Gengibre (suplemento)",
+        "safetyNote": "Eficaz e seguro para náuseas ligeiras.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Metoclopramida (Primperan)",
+        "safetyNote": "2.ª linha. Segura na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Oximetazolina nasal",
+    "activeIngredient": "Oximetazolina",
+    "category": "Descongestionante nasal (agonista α-adrenérgico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Nasivin",
+      "Vicks Sinex",
+      "Oximetazolina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Mesmo mecanismo da xilometazolina. Alguns guidelines norte-americanos consideram-na o descongestionante nasal preferido se necessário, mas apenas por períodos curtos (≤3 dias) e a partir do 2.º trimestre.",
+    "alternatives": [
+      {
+        "name": "Soro fisiológico nasal (Rhinomer)",
+        "safetyNote": "1.ª linha, seguro sempre.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Lavagem nasal com solução salina hipertónica",
+        "safetyNote": "Descongestionante natural eficaz.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Paroxetina",
+    "activeIngredient": "Paroxetina",
+    "category": "Antidepressivo (ISRS)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Seroxat",
+      "Paxil",
+      "Paroxetina Generis"
+    ],
+    "trimesterRisk": [
+      "Alto risco",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Único ISRS com Cat. D — malformações cardíacas (defeitos septais) no 1.º trim. Síndrome de adaptação neonatal no 3.º trim.",
+    "alternatives": [
+      {
+        "name": "Sertralina (Zoloft, Sertralina Generis)",
+        "safetyNote": "ISRS com melhor perfil na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Fluoxetina (Prozac)",
+        "safetyNote": "Longa experiência. Discutir com psiquiatra.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Peeling químico (ácido glicólico/TCA concentrado)",
+    "activeIngredient": "Ácido glicólico >30% / Ácido tricloroacético",
+    "category": "Procedimento dermatológico / Cosmético",
+    "fdaCategory": "—",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Peelings profissionais em consultório",
+      "The Ordinary AHA 30% + BHA 2%"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Peelings superficiais com ácido glicólico até 30% são geralmente seguros. Peelings médios e profundos (TCA, fenol) devem ser evitados — absorção sistémica significativa. Ácido glicólico em uso doméstico (<10%) é considerado seguro.",
+    "alternatives": [
+      {
+        "name": "Ácido glicólico <10% (uso doméstico)",
+        "safetyNote": "Esfoliante suave seguro na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Ácido lático (suave)",
+        "safetyNote": "AHA com ação hidratante, seguro em baixas concentrações.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Perindopril",
+    "activeIngredient": "Perindopril",
+    "category": "Anti-hipertensor (IECA)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Coversyl",
+      "Perindopril Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "IECA — mesma contraindicação que enalapril/ramipril no 2.º e 3.º trimestres.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Labetalol",
+        "safetyNote": "Alternativa segura.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Piroxicam",
+    "activeIngredient": "Piroxicam",
+    "category": "Anti-inflamatório (AINE)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Feldene",
+      "Piroxicam Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "AINE de longa ação — mesmos riscos fetais que os restantes AINEs, agravados pela semi-vida longa.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "1.ª linha para dor na gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Podofilotoxina tópica",
+    "activeIngredient": "Podofilotoxina",
+    "category": "Dermatológico (Antiviral tópico)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Wartec creme/solução",
+      "Condyline"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Citotóxico — potencialmente teratogénico. Contraindicado para tratamento de condilomas na gravidez.",
+    "alternatives": [
+      {
+        "name": "Crioterapia (azoto líquido)",
+        "safetyNote": "Tratamento seguro de condilomas na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Ácido tricloroacético (TCA)",
+        "safetyNote": "Aplicação médica — seguro na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Pomalidomida",
+    "activeIngredient": "Pomalidomida",
+    "category": "Imunomodulador / Antineoplásico",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Imnovid",
+      "Pomalyst"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Análogo da talidomida — alto potencial teratogénico. Programa de prevenção obrigatório.",
+    "alternatives": [
+      {
+        "name": "Consultar hematologista",
+        "safetyNote": "Alternativas dependem do contexto clínico.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Preenchimentos dérmicos (Ácido Hialurónico injetável)",
+    "activeIngredient": "Ácido hialurónico cross-linked injetável",
+    "category": "Preenchimento dérmico injetável",
+    "fdaCategory": "—",
+    "riskLevel": "high",
+    "brandNames": [
+      "Juvederm",
+      "Restylane",
+      "Belotero",
+      "Teosyal"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Sem estudos de segurança na gravidez. Risco teórico de reação inflamatória/imunológica. Todas as sociedades de dermatologia e medicina estética desaconselham na gravidez. Adiar para pós-parto.",
+    "alternatives": [
+      {
+        "name": "Adiar para pós-parto",
+        "safetyNote": "Procedimentos estéticos injetáveis devem ser adiados.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Pseudoefedrina (oral)",
+    "activeIngredient": "Pseudoefedrina",
+    "category": "Descongestionante oral (simpaticomimético)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Sudafed",
+      "Actifed",
+      "Clarinase (loratadina+pseudoefedrina)",
+      "Sinutab"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Descongestionante oral — associado a risco ligeiro de gastrosquise, atresia intestinal e defeitos da parede abdominal no 1.º trimestre. Vasoconstrição uterina. Evitar especialmente no 1.º trimestre. Pode reduzir produção de leite na amamentação.",
+    "alternatives": [
+      {
+        "name": "Soro fisiológico nasal (Rhinomer)",
+        "safetyNote": "1.ª linha para congestão nasal na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Inalação de vapor",
+        "safetyNote": "Alívio sintomático seguro.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Paracetamol (Ben-U-Ron) — se febre/dor",
+        "safetyNote": "Seguro para sintomas associados.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Raloxifeno",
+    "activeIngredient": "Raloxifeno",
+    "category": "Anti-estrogénio (SERM)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Evista",
+      "Optruma"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Modulador seletivo dos recetores de estrogénio — contraindicado na gravidez. Usado na osteoporose pós-menopausa. Não indicado em mulheres em idade fértil.",
+    "alternatives": [
+      {
+        "name": "Não aplicável",
+        "safetyNote": "Medicamento para pós-menopausa — não tem alternativa na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Ramipril",
+    "activeIngredient": "Ramipril",
+    "category": "Anti-hipertensor (IECA)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Triatec",
+      "Ramipril Generis",
+      "Ramipril Mylan"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "IECA — contraindicado no 2.º e 3.º trimestres. Malformações renais e pulmonares fetais.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Nifedipina (Adalat)",
+        "safetyNote": "BCC seguro na gravidez.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Retinol / Retinaldeído (cosméticos anti-idade)",
+    "activeIngredient": "Retinol, Retinaldeído, Retinil palmitato",
+    "category": "Cosmético (Retinóide tópico OTC)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Sérum de Retinol (La Roche-Posay, CeraVe, The Ordinary)",
+      "Cremes anti-rugas com retinol",
+      "Redermic R",
+      "Retinol 0.5/1%"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Todas as formas de vitamina A tópica (retinol, retinaldeído, retinil palmitato) devem ser evitadas por precaução. Embora a absorção de cosméticos OTC seja baixa, existem relatos de malformações com retinóides tópicos. Suspender imediatamente ao planear ou confirmar gravidez.",
+    "alternatives": [
+      {
+        "name": "Ácido azelaico (Skinoren 15-20%)",
+        "safetyNote": "Seguro para acne e hiperpigmentação. Cat. B.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Vitamina C sérum (ác. ascórbico)",
+        "safetyNote": "Antioxidante e iluminador seguro na gravidez.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Niacinamida (vitamina B3)",
+        "safetyNote": "Segura e eficaz para poros, tom e textura.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Ácido hialurónico",
+        "safetyNote": "Hidratante seguro em toda a gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Ribavirina",
+    "activeIngredient": "Ribavirina",
+    "category": "Antiviral",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Copegus",
+      "Rebetol"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico e embriotóxico. Evitar gravidez até 6 meses após descontinuação (ambos os sexos).",
+    "alternatives": [
+      {
+        "name": "Adiar tratamento para pós-parto",
+        "safetyNote": "Discutir com hepatologista.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Rivaroxabano",
+    "activeIngredient": "Rivaroxabano",
+    "category": "Anticoagulante (DOAC)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Xarelto"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Dados insuficientes em humanos. Toxicidade reprodutiva em animais. Atravessa a placenta — risco hemorrágico fetal.",
+    "alternatives": [
+      {
+        "name": "Enoxaparina (Lovenox, Clexane)",
+        "safetyNote": "HBPM segura em toda a gravidez.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Rosuvastatina",
+    "activeIngredient": "Rosuvastatina",
+    "category": "Hipolipemiante (Estatina)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Crestor",
+      "Rosuvastatina Generis",
+      "Visacor"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Todas as estatinas contraindicadas — interferem com síntese de colesterol fetal.",
+    "alternatives": [
+      {
+        "name": "Colestiramina (Quantalan)",
+        "safetyNote": "Resina não absorvida.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Sene / Bisacodilo (uso crónico)",
+    "activeIngredient": "Laxantes estimulantes",
+    "category": "Laxante estimulante",
+    "fdaCategory": "C",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Dulcolax (bisacodilo)",
+      "Bekunis (sene)",
+      "Pursennid (sene)",
+      "Dulcosoft não — este é osmótico"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Uso pontual é aceitável. Uso crónico pode causar desequilíbrios eletrolíticos e, teoricamente, estimulação de contrações uterinas. Preferir laxantes osmóticos ou fibras.",
+    "alternatives": [
+      {
+        "name": "Lactulose (Laevolac)",
+        "safetyNote": "Laxante osmótico seguro em toda a gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Macrogol / PEG (Movicol, Molaxole)",
+        "safetyNote": "Laxante osmótico seguro.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Psyllium / Fibras (Metamucil)",
+        "safetyNote": "Suplemento de fibra seguro.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Sinvastatina",
+    "activeIngredient": "Sinvastatina",
+    "category": "Hipolipemiante (Estatina)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Zocor",
+      "Sinvastatina Generis",
+      "Sinvastatina Mylan"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Estatina — mesma contraindicação que a atorvastatina.",
+    "alternatives": [
+      {
+        "name": "Colestiramina (Quantalan)",
+        "safetyNote": "Não absorvida sistemicamente.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Subsalicilato de bismuto",
+    "activeIngredient": "Subsalicilato de bismuto",
+    "category": "Antidiarreico / Antiácido",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Pepto-Bismol"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Contraindicado"
+    ],
+    "reason": "Contém salicilato — mesmos riscos que a aspirina em doses elevadas (encerramento do canal arterial, hemorragia). Absorção de bismuto pode ser tóxica. Evitar em toda a gravidez.",
+    "alternatives": [
+      {
+        "name": "Loperamida (Imodium)",
+        "safetyNote": "Antidiarreico mais seguro na gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Soluções de reidratação oral",
+        "safetyNote": "1.ª linha para diarreia — seguras.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Tacrolimus tópico",
+    "activeIngredient": "Tacrolimus tópico",
+    "category": "Dermatológico (Imunomodulador tópico)",
+    "fdaCategory": "C",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Protopic pomada 0.03%/0.1%"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Absorção sistémica mínima via tópica. Dados limitados mas sem sinal de teratogenicidade. Pode ser usado em áreas pequenas se o benefício justificar, sob supervisão.",
+    "alternatives": [
+      {
+        "name": "Hidrocortisona 1% tópica",
+        "safetyNote": "Corticóide de baixa potência, 1.ª linha.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Emolientes",
+        "safetyNote": "Manutenção segura.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Talidomida",
+    "activeIngredient": "Talidomida",
+    "category": "Imunomodulador",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Thalidomide Celgene"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico histórico — focomelia, malformações graves dos membros, defeitos cardíacos e auriculares. Programa de prevenção obrigatório.",
+    "alternatives": [
+      {
+        "name": "Consultar oncologista/hematologista",
+        "safetyNote": "Alternativas dependem da indicação clínica.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Tamoxifeno",
+    "activeIngredient": "Tamoxifeno",
+    "category": "Anti-estrogénio (SERM)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Nolvadex",
+      "Tamoxifeno Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Risco aumentado de malformações fetais (~12.6% vs 3.9% na população geral). Anomalias genitais, craniofaciais. Descontinuar antes da conceção. Usado no cancro da mama — adiar gravidez durante tratamento.",
+    "alternatives": [
+      {
+        "name": "Adiar gravidez até fim do tratamento",
+        "safetyNote": "Discutir com oncologista o planeamento familiar.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Tazaroteno tópico",
+    "activeIngredient": "Tazaroteno",
+    "category": "Dermatológico (Retinóide tópico)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Zorac gel"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Retinóide tópico potente — contraindicado na gravidez pelo risco teratogénico.",
+    "alternatives": [
+      {
+        "name": "Calcipotriol (Daivonex)",
+        "safetyNote": "Análogo da vitamina D tópico, dados limitados mas pode ser considerado.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Emolientes + corticóide tópico baixa potência",
+        "safetyNote": "Tratamento seguro da psoríase.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Telmisartan",
+    "activeIngredient": "Telmisartan",
+    "category": "Anti-hipertensor (ARA-II)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Micardis",
+      "Pritor",
+      "Telmisartan Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "ARA-II — contraindicado no 2.º e 3.º trimestres.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Terbinafina oral",
+    "activeIngredient": "Terbinafina",
+    "category": "Antifúngico oral",
+    "fdaCategory": "B",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Lamisil",
+      "Terbinafina Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Precaução"
+    ],
+    "reason": "Cat. B mas dados limitados em humanas grávidas. Adiar tratamento de onicomicose para pós-parto. Via tópica é mais segura.",
+    "alternatives": [
+      {
+        "name": "Terbinafina tópica (Lamisil creme)",
+        "safetyNote": "Absorção mínima via tópica. Mais seguro.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Adiar para pós-parto",
+        "safetyNote": "Onicomicose não é urgência.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Testosterona / Androgénios",
+    "activeIngredient": "Testosterona",
+    "category": "Hormona (Androgénio)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Testogel",
+      "Androgel",
+      "Nebido",
+      "Testim"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Virilização de fetos femininos — clitoromegalia, fusão labial, voz grave. Contraindicado em mulheres grávidas. Atenção à transferência por contacto cutâneo com parceiro que use gel de testosterona.",
+    "alternatives": [
+      {
+        "name": "Suspender",
+        "safetyNote": "Contraindicado. Sem alternativa.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Topiramato",
+    "activeIngredient": "Topiramato",
+    "category": "Antiepiléptico",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Topamax",
+      "Topiramato Generis"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Precaução"
+    ],
+    "reason": "Risco de fenda labial/palatina (3–5x superior). INFARMED/EMA contra-indica na prevenção de enxaqueca na gravidez. Programa de prevenção desde 2023.",
+    "alternatives": [
+      {
+        "name": "Lamotrigina (Lamictal)",
+        "safetyNote": "Alternativa para epilepsia.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Propranolol (para enxaqueca)",
+        "safetyNote": "Seguro para profilaxia de enxaqueca.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Toxina botulínica (Botox)",
+    "activeIngredient": "Toxina botulínica tipo A",
+    "category": "Neuromodulador injetável",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Botox",
+      "Dysport",
+      "Bocouture",
+      "Azzalure"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Dados insuficientes na gravidez humana. Estudos em animais com doses elevadas mostraram redução do peso fetal e atraso na ossificação. Por precaução, adiar tratamentos estéticos para pós-parto. Se usada para indicação médica (distonia, enxaqueca crónica), discutir com neurologista.",
+    "alternatives": [
+      {
+        "name": "Adiar para pós-parto",
+        "safetyNote": "Tratamentos estéticos devem ser adiados.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Tramadol",
+    "activeIngredient": "Tramadol",
+    "category": "Opioide",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Tramal",
+      "Tramadol Generis",
+      "Zaldiar (tramadol+paracetamol)"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Contraindicado"
+    ],
+    "reason": "Risco de síndrome de abstinência neonatal. Convulsões neonatais relatadas. Evitar especialmente no 3.º trimestre.",
+    "alternatives": [
+      {
+        "name": "Paracetamol (Ben-U-Ron)",
+        "safetyNote": "1.ª linha para dor ligeira-moderada.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Tretinoína tópica",
+    "activeIngredient": "Tretinoína",
+    "category": "Dermatológico (Retinóide tópico)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Ketrel creme",
+      "Retin-A",
+      "Airol"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Retinóide tópico — apesar da absorção limitada, é classificado como Cat. X. Evitar totalmente na gravidez.",
+    "alternatives": [
+      {
+        "name": "Ácido azelaico (Skinoren)",
+        "safetyNote": "Seguro na gravidez para acne e hiperpigmentação.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Vitamina C tópica (sérum)",
+        "safetyNote": "Seguro como antioxidante tópico.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Trimetoprim / Cotrimoxazol",
+    "activeIngredient": "Trimetoprim + Sulfametoxazol",
+    "category": "Antibiótico (Antifolato)",
+    "fdaCategory": "D",
+    "riskLevel": "high",
+    "brandNames": [
+      "Bactrim",
+      "Septrin"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Antagonista do ácido fólico — risco de defeitos do tubo neural e malformações cardiovasculares no 1.º trim. Risco de kernicterus próximo do parto.",
+    "alternatives": [
+      {
+        "name": "Nitrofurantoína (Furadantina)",
+        "safetyNote": "Segura no 2.º trim. para ITU.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Cefalexina (Keflex)",
+        "safetyNote": "Segura para ITU.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Fosfomicina (Monuril)",
+        "safetyNote": "Dose única para ITU. Segura.",
+        "fdaCategory": "B"
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Vacina HPV",
+    "activeIngredient": "Vacina contra Papilomavírus Humano",
+    "category": "Vacina (recombinante)",
+    "fdaCategory": "B",
+    "riskLevel": "moderate",
+    "brandNames": [
+      "Gardasil 9",
+      "Cervarix"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Embora não seja vacina viva, não é recomendada durante a gravidez por falta de dados suficientes. Se administrada inadvertidamente, não há indicação para interrupção. Completar esquema após o parto.",
+    "alternatives": [
+      {
+        "name": "Adiar para pós-parto",
+        "safetyNote": "Completar esquema vacinal após o parto. Segura na amamentação.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Vacinas de vírus vivos",
+    "activeIngredient": "Vacinas vivas atenuadas",
+    "category": "Vacina (vírus vivos)",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "VASPR (sarampo-papeira-rubéola)",
+      "Varicela (Varivax)",
+      "BCG",
+      "Febre Amarela"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Vacinas de vírus vivos — risco teórico de infeção fetal. Administrar pelo menos 4 semanas antes da conceção. Se vacinação inadvertida, não indica interrupção da gravidez.",
+    "alternatives": [
+      {
+        "name": "Vacinas inativadas (Gripe, Tdpa, COVID-19 mRNA)",
+        "safetyNote": "Vacinas inativadas são seguras e recomendadas na gravidez.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Valsartan",
+    "activeIngredient": "Valsartan",
+    "category": "Anti-hipertensor (ARA-II)",
+    "fdaCategory": "D",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Diovan",
+      "Tareg",
+      "Valsartan Generis"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "ARA-II — contraindicado no 2.º e 3.º trimestres.",
+    "alternatives": [
+      {
+        "name": "Metildopa (Aldomet)",
+        "safetyNote": "1.ª linha.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Nifedipina (Adalat)",
+        "safetyNote": "Seguro.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Varfarina",
+    "activeIngredient": "Varfarina sódica",
+    "category": "Anticoagulante",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Varfine",
+      "Coumadin",
+      "Marevan"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Precaução extrema",
+      "Contraindicado"
+    ],
+    "reason": "Teratogénico — síndrome da varfarina fetal (hipoplasia nasal, condrodisplasia punctata). Hemorragia intracraniana fetal no 3.º trimestre.",
+    "alternatives": [
+      {
+        "name": "Enoxaparina — HBPM (Lovenox, Clexane)",
+        "safetyNote": "Não atravessa a placenta. Segura em toda a gravidez.",
+        "fdaCategory": "B"
+      },
+      {
+        "name": "Heparina não fracionada",
+        "safetyNote": "Não atravessa a placenta. Monitorizar aPTT.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Venlafaxina",
+    "activeIngredient": "Venlafaxina",
+    "category": "Antidepressivo (IRSN)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Effexor",
+      "Venlafaxina Generis",
+      "Venlift"
+    ],
+    "trimesterRisk": [
+      "Precaução",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Dados mais extensos que a duloxetina. Risco de síndrome de adaptação neonatal no 3.º trimestre (irritabilidade, tremores, dificuldade alimentar). Considerar redução gradual antes do parto.",
+    "alternatives": [
+      {
+        "name": "Sertralina (Zoloft)",
+        "safetyNote": "ISRS preferido na gravidez.",
+        "fdaCategory": "C"
+      },
+      {
+        "name": "Fluoxetina (Prozac)",
+        "safetyNote": "Alternativa com longa experiência.",
+        "fdaCategory": "C"
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Vitamina A (doses elevadas > 10.000 UI/dia)",
+    "activeIngredient": "Retinol / Vitamina A",
+    "category": "Vitamina / Suplemento",
+    "fdaCategory": "X",
+    "riskLevel": "critical",
+    "brandNames": [
+      "Suplementos de Vitamina A isolados",
+      "Óleo de fígado de bacalhau (dose elevada)"
+    ],
+    "trimesterRisk": [
+      "Contraindicado",
+      "Contraindicado",
+      "Contraindicado"
+    ],
+    "reason": "Doses > 10.000 UI/dia são teratogénicas — malformações craniofaciais, cardíacas e do SNC (mesmo mecanismo dos retinóides). Multivitamínicos pré-natais contêm doses seguras (~4.000 UI ou em forma de beta-caroteno). Evitar suplementos de vitamina A isolados.",
+    "alternatives": [
+      {
+        "name": "Beta-caroteno (provitamina A)",
+        "safetyNote": "Conversão regulada — sem risco de toxicidade.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Multivitamínico pré-natal",
+        "safetyNote": "Contém dose segura de vitamina A.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Xilometazolina nasal",
+    "activeIngredient": "Xilometazolina",
+    "category": "Descongestionante nasal (agonista α-adrenérgico)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Otrivin",
+      "Vibrocil (xilometazolina+fenilefrina)",
+      "Nasorhinathiol",
+      "Olynth"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Precaução",
+      "Evitar"
+    ],
+    "reason": "Agonista α-adrenérgico — potencial vasoconstrição uterina e redução do fluxo sanguíneo placentário. Absorção sistémica possível. Uso prolongado (>3–5 dias) causa rinite medicamentosa. Evitar no 1.º trimestre e próximo do parto. Uso pontual e breve no 2.º trimestre pode ser considerado.",
+    "alternatives": [
+      {
+        "name": "Soro fisiológico nasal (Rhinomer, Nasalmer)",
+        "safetyNote": "Seguro em toda a gravidez. 1.ª linha.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Lavagem nasal com solução salina",
+        "safetyNote": "Eficaz e sem riscos.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Inalação de vapor / humidificador",
+        "safetyNote": "Alívio sintomático seguro.",
+        "fdaCategory": "—"
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Zolpidem",
+    "activeIngredient": "Zolpidem",
+    "category": "Hipnótico (Z-drug)",
+    "fdaCategory": "C",
+    "riskLevel": "high",
+    "brandNames": [
+      "Stilnox",
+      "Zolpidem Generis"
+    ],
+    "trimesterRisk": [
+      "Evitar",
+      "Evitar",
+      "Evitar"
+    ],
+    "reason": "Dados limitados. Possível síndrome de abstinência neonatal. Atravessa a placenta. Evitar especialmente no 3.º trimestre.",
+    "alternatives": [
+      {
+        "name": "Higiene do sono",
+        "safetyNote": "Medidas não-farmacológicas 1.ª linha.",
+        "fdaCategory": "—"
+      },
+      {
+        "name": "Doxilamina (Dormidina)",
+        "safetyNote": "Anti-histamínico sedativo com bom perfil na gravidez.",
+        "fdaCategory": "A"
+      }
+    ]
+  }
+]

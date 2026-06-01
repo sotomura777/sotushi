@@ -13,7 +13,7 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
   const [filtro, setFiltro] = useState("todas");
   const [favoritos, setFavoritos] = useEstadoLocal("medguia:urgencia:favoritos", []);
   const [query, setQuery] = useState("");
-  const [aberto, setAberto] = useState(null);
+  const [aberto, setAberto] = useEstadoLocal("medguia:urgencia:aberto", null);
 
   const toggleFav = (id) => setFavoritos((f) => (f.includes(id) ? f.filter((x) => x !== id) : [...f, id]));
   const { total, grupos } = useMemo(() => filtrarItens(ITENS, sistemas, { filtro, favoritos, query }), [filtro, favoritos, query]);

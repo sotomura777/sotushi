@@ -16,6 +16,8 @@ import SaudeInfantil from "./saude-infantil/SaudeInfantil";
 import Urgencia from "./urgencia/Urgencia";
 import Notas from "./notas/Notas";
 import Calculadoras from "./calculadoras/Calculadoras";
+import FarmacosGravidez from "./farmacos-gravidez/FarmacosGravidez";
+import metaGravidez from "@conteudo/farmacos-gravidez/meta.json";
 
 export const MODULOS = [
   {
@@ -100,5 +102,15 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#f472b6 0%,#ec4899 55%,#be185d 100%)",
     pronto: true,
     Componente: SaudeInfantil,
+  },
+  {
+    id: "farmacos-gravidez",
+    nome: metaGravidez.nome,
+    descricao: "Fármacos contraindicados na gravidez",
+    accent: "#7c3aed",
+    bg: "#f3eeff",
+    gradiente: "linear-gradient(135deg,#8b5cf6 0%,#7c3aed 55%,#4c1d95 100%)",
+    pronto: true,
+    Componente: FarmacosGravidez,
   },
 ];

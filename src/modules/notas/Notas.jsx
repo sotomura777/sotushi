@@ -7,6 +7,7 @@ import {
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import { toast } from "@/lib/toast";
+import { normalizar } from "@/lib/texto";
 import "./estilo.css";
 
 // Limita a 4 algarismos seguidos (evita nº de processo/identificadores) e avisa,
@@ -356,7 +357,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const saveTabs = (nova) => { setTabs(nova); if (!nova.find((t) => t.id === aba)) setAba(nova[0]?.id || "diario"); setGerir(false); };
 
   // Listas derivadas
-  const filtrados = doentes.filter((d) => !busca.trim() || d.iniciais.toLowerCase().includes(busca.toLowerCase()));
+  const filtrados = doentes.filter((d) => !busca.trim() || normalizar(d.iniciais).includes(normalizar(busca)));
   const ativosAll = doentes.filter((d) => d.observado === false);          // contagem total de ativos
   const pool = filtro === "ativos" ? filtrados.filter((d) => d.observado === false) : filtrados;
   const urgencia = pool.filter((d) => d.especialidade === "urgencia");

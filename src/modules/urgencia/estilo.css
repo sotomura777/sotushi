@@ -18,53 +18,365 @@
 .ug-fav.on { color: #d97706; }
 .ug-arrow { color: var(--tenue); font-size: 18px; flex-shrink: 0; align-self: center; }
 
-/* Obstipação — workup */
-.ob-prog { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 14px; }
-.ob-prog-step { display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; min-width: 56px; opacity: .5; }
-.ob-prog-step.done, .ob-prog-step.active { opacity: 1; }
-.ob-prog-dot { width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid var(--borda); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--suave); background: var(--superficie); }
-.ob-prog-lbl { font-size: 9px; font-weight: 600; color: var(--suave); text-align: center; }
-.ob-step-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--tenue); }
-.ob-step-title { font-family: var(--fonte-display); font-size: 21px; color: var(--texto); margin: 2px 0 4px; }
-.ob-step-sub { font-size: 13px; color: var(--suave); margin-bottom: 14px; line-height: 1.5; }
-.ob-roma { background: var(--superficie-2); border: 1px solid var(--borda); border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
-.ob-roma summary { padding: 10px 14px; cursor: pointer; font-size: 12px; font-weight: 700; color: #d97706; }
-.ob-opts { display: flex; flex-direction: column; gap: 8px; }
-.ob-opt { text-align: left; padding: 13px 15px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); cursor: pointer; }
-.ob-opt:hover { border-color: var(--acento); }
-.ob-opt-t { font-weight: 700; font-size: 14px; color: var(--texto); }
-.ob-opt-d { font-size: 12.5px; color: var(--suave); margin-top: 3px; line-height: 1.45; }
-.ob-hint { font-size: 11.5px; color: var(--tenue); margin-bottom: 10px; }
-.ob-checks { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
-.ob-chk { display: flex; gap: 11px; align-items: flex-start; padding: 11px 13px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); cursor: pointer; }
-.ob-chk-box { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid var(--borda); display: flex; align-items: center; justify-content: center; font-size: 12px; color: transparent; flex-shrink: 0; }
-.ob-chk.sel { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 8%, var(--superficie)); }
-.ob-chk.sel .ob-chk-box { background: var(--acento); border-color: var(--acento); color: #fff; }
-.ob-chk.sel-r { border-color: #dc2626; background: rgba(220,38,38,.06); }
-.ob-chk.sel-r .ob-chk-box { background: #dc2626; border-color: #dc2626; color: #fff; }
-.ob-chk-t { font-weight: 600; font-size: 13.5px; color: var(--texto); }
-.ob-chk-d { font-size: 12px; color: var(--suave); margin-top: 2px; line-height: 1.4; }
-.ob-chk-flag { font-size: 10px; font-weight: 700; color: #dc2626; margin-top: 3px; }
-.ob-cont { width: 100%; padding: 11px; border: none; border-radius: var(--raio-md); color: #fff; font-family: var(--fonte-corpo); font-size: 14px; font-weight: 700; cursor: pointer; display: block; }
-.ob-dropdown { position: absolute; top: 100%; left: 0; right: 0; z-index: 20; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); margin-top: 4px; box-shadow: 0 8px 24px rgba(0,0,0,.1); overflow: hidden; }
-.ob-dd-item { padding: 9px 12px; font-size: 13px; cursor: pointer; border-bottom: 1px solid var(--borda-2); }
-.ob-dd-item:hover { background: var(--superficie-2); }
-.ob-tags { display: flex; flex-wrap: wrap; gap: 6px; min-height: 24px; }
-.ob-tag { font-size: 12px; padding: 4px 10px; border-radius: 7px; background: var(--superficie-2); border: 1px solid var(--borda); cursor: pointer; color: var(--texto); }
-.ob-disc { font-size: 11px; color: var(--tenue); text-align: center; padding: 8px; background: var(--superficie-2); border-radius: 8px; margin-bottom: 14px; }
-.ob-sec { margin-bottom: 18px; }
-.ob-sec-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--tenue); margin-bottom: 8px; }
-.ob-copy { padding: 6px 12px; border-radius: 7px; border: 1px solid var(--borda); background: var(--superficie-2); color: var(--suave); font-family: var(--fonte-corpo); font-size: 11px; font-weight: 600; cursor: pointer; }
-.ob-note { background: var(--superficie-2); border: 1px solid var(--borda); border-radius: 8px; padding: 14px; font-size: 13px; line-height: 1.7; color: var(--texto); }
-.ob-note .pos { font-weight: 700; }
-.ob-note .urg { color: #dc2626; font-weight: 600; }
-.ob-note .neg { color: var(--suave); }
-.ob-note .wa { color: #d97706; font-weight: 600; }
-.ob-excl { border-radius: 8px; padding: 11px 13px; margin-bottom: 8px; border: 1px solid; }
-.ob-excl--red { background: rgba(220,38,38,.05); border-color: rgba(220,38,38,.2); }
-.ob-excl--orange { background: rgba(217,119,6,.05); border-color: rgba(217,119,6,.2); }
-.ob-excl-badge { display: inline-block; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #fff; padding: 2px 7px; border-radius: 5px; margin-bottom: 5px; }
-.ob-excl-name { font-weight: 700; font-size: 13.5px; color: var(--texto); }
-.ob-excl-sinais { font-size: 12px; color: var(--suave); margin-top: 2px; }
-.ob-excl-action { font-size: 12px; color: var(--texto-2); margin-top: 5px; }
-.ob-mini { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--tenue); margin-bottom: 4px; }
+/* ============================================================================
+   OBSTIPAÇÃO — página de referência (5 separadores). Usa os tokens da app;
+   cores semânticas (vermelho/âmbar/verde) hardcoded como nas alertas da ATB.
+   ============================================================================ */
+.ob-page { max-width: 820px; margin: 0 auto; }
+.ob-voltar { display: inline-flex; align-items: center; gap: 4px; background: none; border: none; color: var(--suave); font-family: var(--fonte-corpo); font-size: 13px; font-weight: 600; cursor: pointer; padding: 6px 0 10px; }
+.ob-voltar:hover { color: var(--texto); }
+.ob-titulo { font-family: var(--fonte-display); font-size: 30px; color: var(--texto); margin-bottom: 8px; line-height: 1.15; }
+.ob-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.ob-tag { font-size: 12px; font-weight: 500; color: var(--c, var(--acento)); padding: 4px 12px; border-radius: var(--raio-pill); background: color-mix(in srgb, var(--acento) 10%, transparent); border: 1px solid color-mix(in srgb, var(--acento) 22%, transparent); }
+
+/* Separadores principais */
+.ob-tabs { display: flex; gap: 0; border-bottom: 1.5px solid var(--borda); margin-bottom: 22px; overflow-x: auto; }
+.ob-tab { display: flex; align-items: center; gap: 7px; padding: 12px 18px; font-size: 13px; font-weight: 600; color: var(--suave); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; margin-bottom: -1.5px; font-family: var(--fonte-corpo); }
+.ob-tab:hover { color: var(--texto); }
+.ob-tab.ativo { color: var(--texto); border-bottom-color: var(--acento); }
+.ob-tabnum { font-size: 10px; font-weight: 700; width: 20px; height: 20px; border-radius: 5px; display: flex; align-items: center; justify-content: center; background: var(--superficie-2); color: var(--suave); }
+.ob-tab.ativo .ob-tabnum { background: var(--acento); color: #fff; }
+
+/* Sub-separadores (guia + tratamento) */
+.ob-sub { display: flex; border: 1px solid var(--borda); border-radius: var(--raio-sm); overflow-x: auto; margin-bottom: 22px; background: var(--superficie-2); }
+.ob-sub-btn { padding: 9px 15px; font-size: 12px; font-weight: 600; color: var(--suave); cursor: pointer; white-space: nowrap; border: none; background: none; border-right: 1px solid var(--borda); font-family: var(--fonte-corpo); }
+.ob-sub-btn:last-child { border-right: none; }
+.ob-sub-btn:hover { color: var(--texto); background: var(--superficie); }
+.ob-sub-btn.ativo { color: #fff; background: var(--acento); }
+
+/* Placeholder (algoritmo) */
+.ob-placeholder { text-align: center; padding: 56px 20px; }
+.ob-placeholder-titulo { font-weight: 700; font-size: 16px; color: var(--suave); margin-bottom: 6px; }
+.ob-placeholder-desc { font-size: 13px; color: var(--tenue); max-width: 420px; margin: 0 auto; line-height: 1.6; }
+
+/* ── Guia (conteúdo HTML) ───────────────────────────────────────── */
+.ob-card { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: 20px; margin-bottom: 16px; box-shadow: var(--sombra-sm), var(--brilho); }
+.ob-card h2 { font-family: var(--fonte-display); font-size: 20px; color: var(--acento); margin-bottom: 14px; }
+.ob-card h3 { font-size: 14px; font-weight: 700; margin: 18px 0 8px; color: var(--texto); }
+.ob-card p, .ob-card li { font-size: 13px; line-height: 1.7; color: var(--texto-2); }
+.ob-card ul { padding-left: 20px; margin: 8px 0; }
+.ob-card li { margin-bottom: 4px; }
+.ob-card table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+.ob-card th { background: var(--acento); color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.ob-card td { padding: 8px 10px; border-bottom: 1px solid var(--borda); font-size: 12.5px; line-height: 1.5; color: var(--texto-2); }
+.ob-card tr:nth-child(even) td { background: var(--superficie-2); }
+.ob-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 640px) { .ob-grid2 { grid-template-columns: 1fr; } }
+.ob-dx { padding: 12px 14px; background: var(--superficie); border: 1px solid var(--borda); border-left: 4px solid var(--acento); border-radius: 0 8px 8px 0; margin-bottom: 10px; }
+.ob-dx h4 { font-size: 13.5px; font-weight: 700; margin-bottom: 4px; color: var(--texto); }
+.ob-dx p { font-size: 12px; color: var(--suave); line-height: 1.5; }
+.ob-dx.emergency { border-left-color: #dc2626; }
+.ob-dx.urgent { border-left-color: var(--acento); }
+.ob-dx.routine { border-left-color: #059669; }
+.ob-alert { border-radius: 8px; padding: 12px 14px; font-size: 12px; line-height: 1.6; margin: 12px 0; color: var(--texto-2); }
+.ob-alert.r { background: rgba(220,38,38,.06); border-left: 3px solid #dc2626; }
+.ob-alert.g { background: rgba(5,150,105,.06); border-left: 3px solid #059669; }
+.ob-alert.y { background: rgba(202,138,4,.07); border-left: 3px solid #ca8a04; }
+.ob-alert.a { background: color-mix(in srgb, var(--acento) 8%, transparent); border-left: 3px solid var(--acento); }
+.ob-gtag { display: inline-block; padding: 3px 10px; border-radius: var(--raio-pill); font-size: 11px; font-weight: 600; }
+.ob-gtag.r { background: rgba(220,38,38,.08); color: #dc2626; }
+.ob-gtag.g { background: rgba(5,150,105,.08); color: #059669; }
+.ob-gtag.a { background: color-mix(in srgb, var(--acento) 12%, transparent); color: var(--acento); }
+.ob-step { background: var(--superficie-2); border-radius: 8px; padding: 12px 14px; margin: 8px 0; font-size: 12.5px; line-height: 1.6; color: var(--texto-2); }
+.ob-step b { color: var(--acento); }
+.ob-sec { margin-bottom: 10px; border: 1px solid var(--borda); border-radius: 8px; overflow: hidden; }
+.ob-sec > summary { display: flex; justify-content: space-between; padding: 11px 14px; background: var(--superficie-2); cursor: pointer; user-select: none; font-weight: 600; font-size: 13px; color: var(--texto); list-style: none; }
+.ob-sec > summary::-webkit-details-marker { display: none; }
+.ob-sec > summary::after { content: "+"; color: var(--tenue); font-size: 16px; }
+.ob-sec[open] > summary::after { content: "−"; }
+.ob-sec-body { padding: 12px 14px; font-size: 12.5px; line-height: 1.7; }
+
+/* ── Aviso ──────────────────────────────────────────────────────── */
+.ob-aviso { background: color-mix(in srgb, var(--acento) 6%, transparent); border: 1px solid color-mix(in srgb, var(--acento) 16%, transparent); border-radius: var(--raio-md); padding: 12px 16px; margin-bottom: 20px; font-size: 12px; color: var(--texto-2); line-height: 1.55; }
+.ob-aviso a { color: var(--acento); font-weight: 600; text-decoration: none; }
+
+/* ── Não farmacológico ──────────────────────────────────────────── */
+.ob-nf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.ob-nf-card { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 16px 18px; box-shadow: var(--brilho); }
+.ob-nf-titulo { font-weight: 700; font-size: 14px; color: var(--texto); margin-bottom: 6px; }
+.ob-nf-desc { font-size: 12.5px; color: var(--suave); line-height: 1.55; }
+.ob-nf-nota { margin-top: 10px; font-size: 11px; color: var(--tenue); font-style: italic; padding-top: 8px; border-top: 1px solid var(--borda-2); }
+
+/* ── Cards de fármacos (flip) ───────────────────────────────────── */
+.ob-drug-group { display: flex; align-items: center; gap: 12px; margin: 16px 0 12px; }
+.ob-drug-group-badge { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 5px 12px; border-radius: var(--raio-sm); background: color-mix(in srgb, var(--acento) 12%, transparent); color: var(--acento); white-space: nowrap; }
+.ob-drug-group-text { font-size: 13.5px; font-weight: 600; color: var(--texto); }
+.ob-drug-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 12px; }
+.ob-drug-wrap { perspective: 900px; position: relative; min-height: 200px; }
+.ob-drug-inner { transition: transform .5s ease; transform-style: preserve-3d; cursor: pointer; position: relative; height: 100%; }
+.ob-drug-wrap.flipped .ob-drug-inner { transform: rotateY(180deg); }
+.ob-drug-front, .ob-drug-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 14px 16px; }
+.ob-drug-front { position: relative; border-top: 3px solid var(--acento); }
+.ob-drug-back { position: absolute; inset: 0; transform: rotateY(180deg); background: color-mix(in srgb, var(--acento) 7%, var(--superficie)); display: flex; flex-direction: column; justify-content: center; overflow-y: auto; }
+.ob-drug-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.ob-drug-badge { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; padding: 3px 8px; border-radius: 4px; }
+.ob-drug-badge.strong { background: color-mix(in srgb, var(--acento) 14%, transparent); color: var(--acento); border: 1px solid color-mix(in srgb, var(--acento) 28%, transparent); }
+.ob-drug-badge.cond { background: var(--superficie-2); color: var(--suave); border: 1px solid var(--borda); }
+.ob-drug-nome { font-weight: 700; font-size: 14px; color: var(--texto); margin-bottom: 2px; }
+.ob-drug-aster { color: var(--acento); font-weight: 700; }
+.ob-drug-comercial { font-size: 11px; color: var(--suave); margin-bottom: 8px; line-height: 1.35; }
+.ob-drug-row { display: flex; gap: 6px; align-items: baseline; margin-bottom: 4px; }
+.ob-drug-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--suave); min-width: 36px; }
+.ob-drug-val { font-size: 12px; color: var(--texto); line-height: 1.4; }
+.ob-drug-ea { font-size: 11.5px; color: var(--suave); margin-top: 6px; line-height: 1.45; }
+.ob-drug-dica { margin-top: 8px; padding: 6px 10px; border-radius: 6px; background: color-mix(in srgb, var(--acento) 6%, transparent); border: 1px solid color-mix(in srgb, var(--acento) 14%, transparent); font-size: 11px; color: var(--texto-2); line-height: 1.45; }
+.ob-drug-dica-label { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--acento); margin-bottom: 2px; }
+.ob-pc-hint { position: absolute; bottom: 8px; right: 12px; font-size: 9px; color: var(--tenue); opacity: .6; }
+.ob-pc-star { position: absolute; top: 10px; right: 10px; z-index: 5; background: none; border: none; cursor: pointer; color: var(--tenue); padding: 4px; line-height: 1; }
+.ob-pc-star.saved { color: var(--acento); }
+.ob-pc-back-label { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--acento); margin-bottom: 8px; }
+.ob-pc-back-titulo { font-weight: 700; font-size: 13px; color: var(--texto); margin-bottom: 8px; }
+.ob-pc-back-texto { font-size: 12px; color: var(--texto-2); line-height: 1.5; }
+.ob-pc-back-ref { font-size: 10px; color: var(--tenue); margin-top: 10px; font-style: italic; }
+
+/* ── Evidência ──────────────────────────────────────────────────── */
+.ob-ev-intro, .ob-ev-metodologia { background: var(--superficie-2); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 12px 16px; font-size: 11.5px; color: var(--suave); line-height: 1.6; }
+.ob-ev-intro { margin-bottom: 22px; }
+.ob-ev-metodologia { margin-top: 18px; }
+.ob-ev-drug { margin-bottom: 24px; }
+.ob-ev-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--borda); }
+.ob-ev-nome { font-family: var(--fonte-display); font-size: 17px; color: var(--acento); }
+.ob-ev-badge { font-size: 10px; font-weight: 600; padding: 4px 12px; border-radius: 6px; white-space: nowrap; background: var(--superficie-2); color: var(--suave); border: 1px solid var(--borda); }
+.ob-ev-badge.forte { background: color-mix(in srgb, var(--acento) 12%, transparent); color: var(--acento); border-color: color-mix(in srgb, var(--acento) 28%, transparent); }
+.ob-ev-study { background: var(--superficie); border: 1px solid var(--borda); border-left: 3px solid color-mix(in srgb, var(--acento) 40%, transparent); border-radius: var(--raio-sm); padding: 14px 16px; margin-bottom: 8px; }
+.ob-ev-study-titulo { font-weight: 700; font-size: 13px; color: var(--texto); margin-bottom: 4px; }
+.ob-ev-study-desc { font-size: 12px; color: var(--suave); line-height: 1.55; }
+.ob-ev-study-ref { font-size: 10px; color: var(--tenue); margin-top: 6px; }
+
+/* ── Follow-up ──────────────────────────────────────────────────── */
+.ob-fu-titulo { font-family: var(--fonte-display); font-size: 20px; color: var(--acento); margin-bottom: 16px; }
+.ob-fu-timeline { display: flex; flex-direction: column; margin-bottom: 28px; }
+.ob-fu-marco { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--borda); }
+.ob-fu-marco:last-child { border-bottom: none; }
+.ob-fu-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--acento); flex-shrink: 0; margin-top: 5px; }
+.ob-fu-tempo { font-size: 13px; font-weight: 700; color: var(--texto); }
+.ob-fu-desc { font-size: 12.5px; color: var(--suave); margin-top: 2px; }
+.ob-fu-falha { background: rgba(220,38,38,.04); border: 1px solid rgba(220,38,38,.16); border-radius: var(--raio-lg); padding: 20px 22px; }
+.ob-fu-falha-titulo { font-family: var(--fonte-display); font-size: 18px; color: #dc2626; margin-bottom: 14px; }
+.ob-fu-falha-passo { display: flex; gap: 10px; align-items: baseline; font-size: 13px; font-weight: 600; color: var(--texto); margin-bottom: 10px; }
+.ob-fu-falha-num { font-weight: 700; color: #dc2626; }
+.ob-fu-rodape { margin-top: 16px; font-size: 11px; color: var(--tenue); line-height: 1.7; }
+
+/* ── FAQ ────────────────────────────────────────────────────────── */
+.ob-section-label { font-family: var(--fonte-display); font-size: 21px; color: var(--texto); margin-bottom: 14px; }
+.ob-faq-search { width: 100%; padding: 10px 14px; border: 1px solid var(--borda); border-radius: var(--raio-md); font-size: 13px; font-family: var(--fonte-corpo); background: var(--superficie-2); color: var(--texto); outline: none; margin-bottom: 16px; box-shadow: var(--brilho); }
+.ob-faq-search:focus { border-color: var(--acento); }
+.ob-faq-vazio { font-size: 12px; color: var(--tenue); margin-bottom: 12px; }
+.ob-faq-lista { display: flex; flex-direction: column; gap: 8px; }
+.ob-faq-item { background: var(--superficie); border: 1px solid var(--borda); border-radius: 8px; overflow: hidden; }
+.ob-faq-q { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; background: none; border: none; cursor: pointer; font-family: var(--fonte-corpo); font-weight: 600; font-size: 13px; color: var(--texto); text-align: left; }
+.ob-faq-chevron { color: var(--suave); flex-shrink: 0; transition: transform .2s; }
+.ob-faq-item.aberto .ob-faq-chevron { transform: rotate(180deg); }
+.ob-faq-a { padding: 0 16px 14px; font-size: 12.5px; color: var(--suave); line-height: 1.7; }
+.ob-faq-a strong { color: var(--texto); }
+
+/* ── Fontes ─────────────────────────────────────────────────────── */
+.ob-fontes { display: flex; flex-direction: column; gap: 12px; }
+.ob-fonte { display: flex; gap: 16px; align-items: flex-start; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 16px 18px; text-decoration: none; box-shadow: var(--brilho); transition: box-shadow .2s; }
+.ob-fonte:hover { box-shadow: var(--sombra-sm); }
+.ob-fonte-num { width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0; background: var(--acento); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--fonte-display); font-size: 16px; }
+.ob-fonte-info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ob-fonte-autores { font-size: 11.5px; color: var(--suave); margin-bottom: 2px; }
+.ob-fonte-titulo { font-family: var(--fonte-display); font-size: 15px; color: var(--texto); line-height: 1.35; margin-bottom: 4px; }
+.ob-fonte-revista { font-size: 11.5px; color: var(--tenue); }
+.ob-fonte-badge { display: inline-block; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 10px; border-radius: 5px; margin-left: 8px; }
+.ob-fonte-badge.guideline { background: color-mix(in srgb, var(--acento) 10%, transparent); color: var(--acento); border: 1px solid color-mix(in srgb, var(--acento) 25%, transparent); }
+.ob-fonte-badge.revisao { background: rgba(5,150,105,.08); color: #059669; border: 1px solid rgba(5,150,105,.2); }
+.ob-fonte-badge.consenso { background: rgba(124,58,237,.08); color: #7c3aed; border: 1px solid rgba(124,58,237,.2); }
+.ob-fonte-badge.rcm { background: var(--superficie-2); color: var(--suave); border: 1px solid var(--borda); }
+.ob-fonte-badge.resumo { background: rgba(202,138,4,.08); color: #ca8a04; border: 1px solid rgba(202,138,4,.2); }
+
+/* ============================================================================
+   OBSTIPAÇÃO — algoritmo interativo (.oba-*). Tokens da app; semânticas hardcoded.
+   ============================================================================ */
+.oba { position: relative; }
+.oba-main { min-width: 0; }
+.oba-aside { display: none; }
+/* Desktop: nota fixa do lado direito, a par dos passos */
+@media (min-width: 880px) {
+  .oba-shell { display: flex; gap: 18px; align-items: flex-start; }
+  .oba-main { flex: 1; }
+  .oba-aside { display: block; width: 300px; flex-shrink: 0; position: sticky; top: 12px; }
+}
+.oba-prog-cab { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.oba-prog-label { font-size: 11px; font-weight: 700; color: var(--suave); white-space: nowrap; }
+.oba-prog-bar { flex: 1; height: 6px; background: var(--superficie-2); border-radius: 3px; overflow: hidden; }
+.oba-prog-fill { height: 100%; background: var(--acento); border-radius: 3px; transition: width .3s; }
+
+.oba-card { background: var(--superficie); border: 1px solid var(--borda); border-top: 3px solid var(--acento); border-radius: var(--raio-lg); padding: 18px; margin-bottom: 16px; box-shadow: var(--sombra-sm), var(--brilho); }
+.oba-card-cab { margin-bottom: 14px; }
+.oba-card-t { font-family: var(--fonte-display); font-size: 20px; color: var(--texto); }
+.oba-card-s { font-size: 12px; color: var(--suave); margin-top: 2px; }
+
+.oba-lbl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--suave); margin-bottom: 8px; }
+.oba-field { margin-bottom: 16px; }
+.oba-row2 { display: flex; gap: 10px; margin-bottom: 16px; }
+.oba-row2 > div { flex: 1; }
+.oba-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 560px) { .oba-grid2 { grid-template-columns: 1fr; } }
+.oba-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+.oba-divider { border-top: 1px solid var(--borda); padding-top: 16px; margin-top: 16px; }
+.oba-mini-hint { font-size: 11px; color: var(--tenue); margin-top: 6px; }
+
+.oba-inp { width: 100%; padding: 10px 12px; border: 1px solid var(--borda); border-radius: var(--raio-md); font-size: 14px; font-family: var(--fonte-corpo); background: var(--superficie-2); color: var(--texto); outline: none; box-shadow: var(--brilho); }
+.oba-inp:focus { border-color: var(--acento); }
+.oba-inp-sm { padding: 6px 10px; font-size: 13px; }
+.oba-textarea { width: 100%; min-height: 80px; resize: vertical; padding: 10px 12px; border: 1px solid var(--borda); border-radius: var(--raio-md); font-size: 13px; font-family: var(--fonte-corpo); background: var(--superficie-2); color: var(--texto); outline: none; }
+.oba-textarea:focus { border-color: var(--acento); }
+.oba-nota { width: 100%; min-height: 280px; resize: vertical; padding: 14px; border: 1px solid var(--borda); border-radius: var(--raio-md); font-size: 13px; line-height: 1.7; font-family: var(--fonte-corpo); background: var(--superficie-2); color: var(--texto); outline: none; white-space: pre-wrap; }
+.oba-nota:focus { border-color: var(--acento); }
+
+/* Pills */
+.oba-pill { padding: 8px 13px; border: 1px solid var(--borda); border-radius: var(--raio-pill); background: var(--superficie); color: var(--texto-2); font-size: 12.5px; font-weight: 600; font-family: var(--fonte-corpo); cursor: pointer; }
+.oba-pill:hover { border-color: var(--acento); }
+.oba-pill.on { background: var(--acento); border-color: var(--acento); color: #fff; }
+.oba-pill.on.alarm { background: #dc2626; border-color: #dc2626; }
+
+/* Opções (cartões grandes) */
+.oba-opt { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 14px 16px; cursor: pointer; margin-bottom: 8px; }
+.oba-opt:hover { border-color: var(--acento); }
+.oba-opt.center { flex: 1; text-align: center; margin-bottom: 0; }
+.oba-opt.sel { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 8%, var(--superficie)); }
+.oba-opt.sel-g { border-color: #059669; background: rgba(5,150,105,.07); }
+.oba-opt.sel-r { border-color: #dc2626; background: rgba(220,38,38,.06); }
+.oba-opt-l { font-weight: 600; font-size: 14px; color: var(--texto); }
+.oba-opt-d { font-size: 12px; color: var(--suave); margin-top: 2px; }
+
+/* Bristol */
+.oba-bristol { background: var(--superficie-2); border: 1px solid var(--borda); border-radius: 8px; padding: 8px 12px; cursor: pointer; margin-bottom: 4px; font-size: 13px; color: var(--texto-2); }
+.oba-bristol.sel { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 8%, var(--superficie)); font-weight: 600; color: var(--texto); }
+
+/* Checkbox card */
+.oba-chk { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 11px 13px; margin-bottom: 7px; cursor: pointer; }
+.oba-chk-main { display: flex; gap: 11px; align-items: flex-start; }
+.oba-chk.sel { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 7%, var(--superficie)); }
+.oba-chk.sel-r { border-color: #dc2626; background: rgba(220,38,38,.05); }
+.oba-chk-box { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid color-mix(in srgb, var(--texto) 32%, transparent); background: var(--superficie-2); display: flex; align-items: center; justify-content: center; font-size: 12px; color: #fff; flex-shrink: 0; }
+.oba-chk.sel .oba-chk-box { background: var(--acento); border-color: var(--acento); }
+.oba-chk.sel-r .oba-chk-box { background: #dc2626; border-color: #dc2626; }
+.oba-chk-t { font-weight: 600; font-size: 13.5px; color: var(--texto); }
+.oba-chk-d { font-size: 12px; color: var(--suave); margin-top: 2px; line-height: 1.4; }
+.oba-saber { font-size: 11px; font-weight: 600; color: var(--acento); cursor: pointer; margin-top: 6px; display: inline-block; }
+.oba-faq-a { background: var(--superficie-2); border-radius: 8px; padding: 10px 12px; font-size: 12px; line-height: 1.6; color: var(--texto-2); margin-top: 6px; }
+
+/* Toggle (hint) */
+.oba-hint { margin-top: 6px; padding: 6px 10px; border-radius: 6px; font-size: 12px; }
+.oba-hint.good { background: rgba(5,150,105,.08); color: #059669; }
+.oba-hint.bad { background: rgba(220,38,38,.06); color: #dc2626; }
+
+/* Toggle buttons (EO) */
+.oba-togbtn { padding: 8px 13px; border: 1px solid var(--borda); border-radius: var(--raio-pill); background: color-mix(in srgb, var(--acento) 8%, var(--superficie)); color: var(--acento); font-size: 12.5px; font-weight: 600; font-family: var(--fonte-corpo); cursor: pointer; }
+.oba-togbtn.off { background: var(--superficie-2); color: var(--suave); }
+
+/* Alerts */
+.oba-alert { border-radius: 8px; padding: 10px 12px; font-size: 12px; line-height: 1.55; margin: 8px 0; }
+.oba-alert.r { background: rgba(220,38,38,.06); border: 1px solid rgba(220,38,38,.2); color: #b91c1c; }
+.oba-alert.y { background: rgba(202,138,4,.07); border: 1px solid rgba(202,138,4,.2); color: #92670c; }
+
+/* Tags removíveis */
+.oba-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.oba-tag-rm { font-size: 12px; padding: 4px 10px; border-radius: 7px; background: var(--superficie-2); border: 1px solid var(--borda); cursor: pointer; color: var(--texto); }
+
+/* Classes de fármacos */
+.oba-drgcls { margin-bottom: 12px; }
+.oba-drgcls-cab { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.oba-drgcls-nome { font-weight: 600; font-size: 13px; color: var(--suave); }
+.oba-drgcls-nome.sel { color: var(--acento); }
+
+/* Recbox / ABC */
+.oba-recbox { background: rgba(220,38,38,.05); border: 1px solid rgba(220,38,38,.2); border-radius: 10px; padding: 14px; margin: 12px 0; }
+.oba-abc { background: rgba(220,38,38,.05); border: 1px solid rgba(220,38,38,.25); border-radius: 12px; padding: 16px; margin-top: 12px; font-size: 13px; line-height: 1.8; color: var(--texto-2); }
+.oba-abc-t { font-weight: 700; color: #dc2626; font-size: 15px; margin-bottom: 10px; }
+.oba-abc b { color: #dc2626; }
+
+/* Exame objectivo */
+.oba-eo { padding: 14px 0; border-bottom: 1px solid var(--borda); }
+.oba-eo:last-child { border-bottom: none; }
+.oba-eo-t { font-weight: 700; font-size: 13px; color: var(--texto); margin-bottom: 10px; }
+.oba-eo-tr { display: flex; justify-content: space-between; align-items: center; }
+.oba-switch-wrap { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--suave); }
+.oba-switch { width: 44px; height: 24px; border-radius: 12px; background: color-mix(in srgb, var(--texto) 22%, transparent); border: 1px solid var(--borda-2); position: relative; cursor: pointer; transition: background .2s; flex-shrink: 0; }
+.oba-switch.on { background: var(--acento); border-color: var(--acento); }
+.oba-switch-knob { width: 18px; height: 18px; border-radius: 9px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.35); position: absolute; top: 2px; left: 2px; transition: left .2s; }
+.oba-switch.on .oba-switch-knob { left: 24px; }
+
+/* Quadrantes */
+.oba-quad { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; max-width: 320px; margin-bottom: 10px; }
+.oba-quad-cel { background: var(--superficie-2); border: 1px solid var(--borda); border-radius: 8px; padding: 8px; text-align: center; cursor: pointer; font-size: 11px; font-weight: 500; color: var(--texto-2); min-height: 50px; display: flex; align-items: center; justify-content: center; }
+.oba-quad-cel.sel { background: var(--acento); color: #fff; font-weight: 700; border-color: var(--acento); }
+
+/* Navegação */
+.oba-nav { display: flex; gap: 10px; margin-top: 4px; }
+.oba-btn { flex: 1; padding: 12px; border: none; border-radius: var(--raio-md); background: var(--acento); color: #fff; font-family: var(--fonte-corpo); font-size: 14px; font-weight: 700; cursor: pointer; }
+.oba-btn:disabled { opacity: .5; cursor: default; }
+.oba-btn-out { padding: 12px 18px; border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); color: var(--texto-2); font-family: var(--fonte-corpo); font-size: 14px; font-weight: 600; cursor: pointer; }
+
+/* Resultado — diagnóstico */
+.oba-dxcard { background: var(--superficie); border: 1px solid var(--borda); border-left: 4px solid var(--acento); border-radius: var(--raio-lg); padding: 18px; margin-bottom: 14px; box-shadow: var(--sombra-sm), var(--brilho); }
+.oba-dxcard-cab { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.oba-dxcard-n { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; flex-shrink: 0; }
+.oba-dxcard-t { font-family: var(--fonte-display); font-size: 19px; color: var(--texto); line-height: 1.2; }
+.oba-dxcard-st { font-size: 11px; color: var(--suave); text-transform: uppercase; letter-spacing: .05em; }
+.oba-dxinfo { font-size: 13px; line-height: 1.6; color: var(--suave); }
+.oba-rtag { padding: 4px 10px; border-radius: var(--raio-pill); font-size: 12px; }
+.oba-plano { background: var(--superficie-2); border-radius: 10px; padding: 14px; font-size: 13px; line-height: 1.7; color: var(--texto-2); }
+.oba-plano b { color: var(--texto); }
+
+.oba-dx2 { padding: 10px 0; border-bottom: 1px solid var(--borda); }
+.oba-dx2:last-child { border-bottom: none; }
+.oba-dx2-r { font-size: 11px; color: var(--suave); }
+.oba-dx2-r:not(:last-child)::after { content: " ·"; }
+.oba-dx2-info { font-size: 12px; color: var(--tenue); margin-top: 6px; line-height: 1.4; }
+
+/* Secção colapsável (resultado) */
+.oba-sec { margin-bottom: 12px; }
+.oba-sec-h { display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; background: var(--superficie-2); border: 1px solid var(--borda); border-radius: 8px; cursor: pointer; user-select: none; font-weight: 600; font-size: 13px; color: var(--texto); }
+.oba-sec-arr { color: var(--tenue); font-size: 16px; }
+.oba-sec-body { padding: 12px 4px; }
+
+/* Factores */
+.oba-factor { background: var(--superficie-2); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; }
+.oba-factor-t { font-weight: 600; font-size: 13px; margin-bottom: 4px; color: var(--texto); }
+.oba-factor-m { font-size: 12px; color: var(--suave); line-height: 1.5; }
+.oba-factor-a { font-size: 12px; color: var(--acento); margin-top: 4px; font-weight: 500; }
+
+/* Medidas / barras / analítica */
+.oba-medidas { font-size: 13px; line-height: 1.6; }
+.oba-medida { padding: 8px 0; border-bottom: 1px solid var(--borda); color: var(--texto-2); }
+.oba-medida:last-child { border-bottom: none; }
+.oba-medida b { color: var(--texto); }
+.oba-bar { border-radius: 8px; padding: 12px 14px; font-size: 13px; line-height: 1.6; }
+.oba-bar.g { background: rgba(5,150,105,.07); border-left: 3px solid #059669; color: var(--texto-2); }
+.oba-bar.y { background: rgba(202,138,4,.08); border-left: 3px solid #ca8a04; color: var(--texto-2); }
+.oba-bar.a { background: color-mix(in srgb, var(--acento) 8%, transparent); border-left: 3px solid var(--acento); color: var(--texto-2); }
+.oba-bar.r { background: rgba(220,38,38,.06); border-left: 3px solid #dc2626; color: var(--texto-2); }
+.oba-bar b { color: var(--texto); }
+.oba-ana-guia { margin-bottom: 12px; }
+.oba-step { background: var(--superficie-2); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; font-size: 12px; line-height: 1.5; color: var(--texto-2); }
+.oba-step b { color: var(--acento); }
+.oba-ana-grp { font-size: 12px; color: var(--acento); font-weight: 600; margin-bottom: 4px; }
+.oba-ana-lbl { display: flex; align-items: center; gap: 4px; margin-bottom: 3px; font-weight: 500; font-size: 13px; color: var(--texto); }
+.oba-ana-u { font-size: 11px; color: var(--tenue); }
+.oba-ana-tip { margin-top: 3px; padding: 3px 6px; border-radius: 4px; font-size: 11px; background: rgba(220,38,38,.06); color: #b91c1c; }
+
+/* ── Painel da nota (sidebar desktop / drawer mobile) ────────────────────── */
+.oba-nota-panel { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: 14px; box-shadow: var(--sombra-sm), var(--brilho); display: flex; flex-direction: column; }
+.oba-nota-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.oba-nota-titulo { font-family: var(--fonte-display); font-size: 16px; color: var(--texto); }
+.oba-nota-x { background: none; border: none; font-size: 17px; color: var(--suave); cursor: pointer; line-height: 1; }
+.oba-nota-acts { display: flex; gap: 8px; margin-top: 10px; }
+.oba-novo { width: 100%; margin-top: 8px; color: var(--acento); font-weight: 600; }
+.oba-aside .oba-nota { min-height: 420px; }
+.oba-nota-hint { margin-top: 16px; padding: 12px 14px; background: var(--superficie-2); border: 1px solid var(--borda); border-radius: var(--raio-md); font-size: 12px; color: var(--suave); line-height: 1.5; }
+.oba-nota-hint b { color: var(--acento); }
+
+/* Botão flutuante (telemóvel) */
+.oba-nota-btn { position: fixed; right: 14px; bottom: 92px; z-index: 200; display: inline-flex; align-items: center; gap: 6px; padding: 11px 16px; border: none; border-radius: var(--raio-pill); background: var(--acento); color: #fff; font-family: var(--fonte-corpo); font-size: 13px; font-weight: 700; box-shadow: var(--sombra-md); cursor: pointer; }
+/* Drawer (bottom sheet) */
+.oba-nota-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.42); z-index: 250; }
+.oba-nota-drawer { position: fixed; left: 0; right: 0; bottom: 0; z-index: 260; background: var(--superficie); border-radius: 20px 20px 0 0; padding: 16px 14px 24px; max-height: 82vh; overflow-y: auto; transform: translateY(101%); transition: transform .26s ease; box-shadow: 0 -8px 44px rgba(0,0,0,.28); }
+.oba-nota-drawer.aberta { transform: translateY(0); }
+.oba-nota-drawer .oba-nota-panel { border: none; box-shadow: none; padding: 0; background: none; }
+.oba-nota-drawer .oba-nota { min-height: 300px; }
+@media (min-width: 880px) { .oba-nota-btn, .oba-nota-drawer, .oba-nota-backdrop { display: none; } }
+@media (max-width: 879px) { .oba-aside { display: none; } }

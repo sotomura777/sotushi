@@ -25,6 +25,15 @@ export default function AntibioterapiaAmbulatorio({ accent = "#b45309", gradient
   const inicio = () => { setEspecialidade(null); setPatologia(null); };
   const voltarEspecialidade = () => setPatologia(null);
 
+  // Botão de voltar do hero: recua um passo dentro do módulo
+  // (tratamento → patologias → especialidades) e só vai ao Início na lista de especialidades.
+  const naLista = passoAtual === 0;
+  const voltarPasso = () => {
+    if (patologia !== null) setPatologia(null);      // tratamento → patologias
+    else if (especialidade) inicio();                // patologias → especialidades
+    else onVoltar && onVoltar();                     // especialidades → Início
+  };
+
   function renderPassos() {
     return (
       <div className="atb-passos">
@@ -68,9 +77,9 @@ export default function AntibioterapiaAmbulatorio({ accent = "#b45309", gradient
   const hero = (
     <header className="hero" style={{ background: gradiente || accent }}>
       <div className="hero-conteudo">
-        {onVoltar && (
-          <button className="voltar" onClick={onVoltar}>
-            ← Início
+        {(onVoltar || !naLista) && (
+          <button className="voltar" onClick={voltarPasso}>
+            ← {naLista ? "Início" : "Voltar"}
           </button>
         )}
         <div className="hero-titulo">{meta.nome}</div>

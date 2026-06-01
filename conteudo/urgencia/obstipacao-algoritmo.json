@@ -1,0 +1,234 @@
+{
+  "bristol": [
+    { "v": "1", "l": "Tipo 1", "d": "Caroços duros" },
+    { "v": "2", "l": "Tipo 2", "d": "Salsicha c/ grumos" },
+    { "v": "3", "l": "Tipo 3", "d": "Salsicha c/ fissuras" },
+    { "v": "4", "l": "Tipo 4", "d": "Lisa e mole" },
+    { "v": "5", "l": "Tipo 5", "d": "Pedaços moles" },
+    { "v": "6", "l": "Tipo 6", "d": "Pastosas" },
+    { "v": "7", "l": "Tipo 7", "d": "Aquosa" }
+  ],
+  "sintomas": [
+    { "id": "esf", "l": "Esforço evacuatório", "d": "Em >25% dejecções", "h": "Critério Roma IV para obstipação funcional. Se presente com mais 1-2 critérios durante 3 meses (início há ≥6 meses), confirma diagnóstico. Distingue funcional de secundária." },
+    { "id": "inc", "l": "Evacuação incompleta", "d": "Recto não esvaziado", "h": "Sugere disfunção evacuatória (obstrução de saída). Considerar manometria anorrectal e teste expulsão balão. Pode indicar rectocelo, intussuscepção rectal ou dissinergia pélvica." },
+    { "id": "man", "l": "Manobras digitais", "d": "Extracção digital ou pressão perineal", "h": "Indica disfunção grave do pavimento pélvico. Pressão vaginal/perineal sugere rectocelo. Extracção digital sugere dissinergia severa. Critério Roma IV." },
+    { "id": "blq", "l": "Bloqueio anorrectal", "d": "Obstrução à saída", "h": "Contracção paradoxal do puborrectal. Biofeedback é tratamento de eleição com taxa de sucesso de 70-80%." },
+    { "id": "enf", "l": "Enfartamento precoce", "d": "Saciedade precoce", "h": "Se recente, é sinal de alarme: massa abdominal, ascite, gastroparésia, neoplasia gástrica. Investigar se novo ou progressivo." },
+    { "id": "dab", "l": "Dor abdominal", "d": "Dor ou desconforto", "h": "Se alivia com defecação e com alteração frequência/consistência: critérios SII (Roma IV). Dor constante e progressiva é red flag. FIE = sigmóide/diverticular." },
+    { "id": "dis", "l": "Distensão abdominal", "d": "Barriga inchada", "h": "Comum na obstipação funcional. Se progressiva/assimétrica: excluir obstrução, ascite, massa. Na aguda com paragem gases = obstrução." },
+    { "id": "nau", "l": "Náuseas", "d": "Sem vómitos", "h": "Podem indicar estase gástrica, gastroparésia, ou obstrução parcial. Isoladas são menos alarmantes que com vómitos." },
+    { "id": "vma", "l": "Vómitos alimentares", "d": "Conteúdo alimentar", "h": "Vómitos de alimentos recentes. Podem indicar obstrução alta (gástrica/duodenal), gastroparésia, ou intolerância. Menos grave que vómitos fecalóides mas investigar se persistentes." },
+    { "id": "vbi", "l": "Vómitos biliares", "d": "Conteúdo biliar (verde/amarelo)", "h": "Indicam obstrução abaixo da ampola de Vater ou estase prolongada. Mais sugestivo de obstrução que vómitos alimentares. Investigar com Rx/TC." },
+    { "id": "vfc", "l": "Vómitos fecalóides", "d": "Cheiro/aspecto fecal — EMERGÊNCIA", "h": "Obstrução intestinal avançada/baixa. Conteúdo fecal refluído. Emergência cirúrgica. SNG imediata. Rx + TC urgente. Cirurgia provável." },
+    { "id": "fla", "l": "Flatulência excessiva", "d": "Excesso de gases", "h": "Produção excessiva de gás intestinal. Causas: fermentação bacteriana (dieta rica em fibra, FODMAPs), aerofagia, sobrecrescimento bacteriano (SIBO), intolerância alimentar (lactose, frutose). No SII é muito comum." },
+    { "id": "dev", "l": "Dor ao evacuar", "d": "Na defecação", "h": "Causa comum de retenção voluntária. Fissura anal (dor intensa, sangue vivo), hemorróidas trombosadas, abcesso perianal. O medo da dor perpetua a obstipação." },
+    { "id": "sli", "l": "Sangue ao limpar", "d": "No papel higiénico", "h": "Vermelho vivo sem mistura = causa anal (fissura, hemorróidas). Se misturado/escuro = investigar causa proximal. Se recorrente ou >50 anos: colonoscopia." },
+    { "id": "alt", "l": "Alternância obst/diarreia", "d": "Padrão alternante", "h": "SII misto (SII-M). Também overflow por fecaloma (diarreia paradoxal). Se novo em >50 anos, excluir neoplasia." },
+    { "id": "ten", "l": "Tenesmo", "d": "Vontade persistente sem resultado", "h": "Sugere inflamação ou massa rectal. Muito característico de proctite (DII, infecciosa). Investigar sempre." },
+    { "id": "icf", "l": "Incontinência fecal", "d": "Perda involuntária", "h": "Na obstipação pode ser overflow: fecaloma → distensão rectal → perda de fezes líquidas. Pode indicar disfunção esfincteriana. TR essencial." },
+    { "id": "dia", "l": "Diarreia", "d": "Fezes líquidas/pastosas", "h": "Na obstipação pode ser diarreia paradoxal por overflow: fezes líquidas contornam fecaloma impactado. Toque rectal essencial para distinguir de diarreia verdadeira." },
+    { "id": "ano", "l": "Perda de apetite", "d": "Anorexia", "h": "Pode ser por distensão e enfartamento. Se com perda peso = sinal alarme para neoplasia ou doença sistémica." },
+    { "id": "ppni", "l": "Perda peso não intencional", "d": "Sem atingir 5%", "h": "Perda de peso ligeira mas não intencional. Pode ser por redução da ingestão (medo de comer pela obstipação), ou sinal precoce de doença sistémica. Se progressiva, vigilância apertada." },
+    { "id": "feb", "l": "Febre", "d": "Temperatura elevada", "h": "Obstipação + febre = complicação: diverticulite, abcesso, perfuração, colite infecciosa. Na aguda é red flag." }
+  ],
+  "alarmesCronicos": [
+    { "id": "rec", "l": "Rectorragia", "d": "Sangramento rectal", "h": "Pode ser CCR, DII, diverticulose, hemorróidas. Se >50 anos ou recorrente: colonoscopia obrigatória. Se abundante: emergência. Sangue vermelho vivo geralmente é origem baixa (cólon/recto)." },
+    { "id": "ppe", "l": "Perda ponderal >5%", "d": "Não intencional", "h": "Perda >5% do peso corporal em 6-12 meses sem causa aparente. Para calcular: peso anterior x 0.05 = mínimo significativo. Ex: 70kg x 0.05 = 3.5kg, se perdeu 3.5kg ou mais é alarme. 80kg = 4kg. 60kg = 3kg. Red flag para neoplasia, DII, doença sistémica. Pedir TC + colonoscopia. Investigar mesmo que obstipação pareça funcional." },
+    { "id": "afe", "l": "Anemia ferropénica", "d": "Défice ferro", "h": "Anemia com ferro baixo sugere perda crónica de sangue GI oculta. A causa mais preocupante é CCR. Pedir ferro, ferritina, transferrina. Colonoscopia obrigatória. Em mulheres pré-menopausa considerar perdas ginecológicas." },
+    { "id": "atr", "l": "Alt. recente trânsito", "d": "Mudança súbita do padrão", "h": "Mudança recente do hábito intestinal habitual (de normal para obstipação, ou agravamento súbito). Pode indicar lesão obstrutiva (neoplasia, estenose). Colonoscopia se >50 anos ou com outros alarmes." },
+    { "id": "mas", "l": "Massa abd/rectal", "d": "Palpável ao exame", "h": "Red flag major. Massa abdominal: TC urgente. Massa rectal ao TR: biópsia e referenciação. Pode ser neoplasia, abcesso, fecaloma volumoso. Não adiar investigação." },
+    { "id": "enA", "l": "Enfartamento precoce", "d": "Saciedade precoce", "h": "Saciedade precoce de aparecimento recente. Pode indicar massa abdominal, ascite, gastroparésia, neoplasia gástrica. Se com perda peso: muito suspeito. EDA + TC." }
+  ],
+  "alarmesAgudos": [
+    { "id": "par", "l": "Paragem gases/fezes", "d": "Ausência total de emissão", "h": "Sinal cardinal de obstrução intestinal. Ausência completa de gases E fezes. Rx abdómen em pé imediato. Se confirmada obstrução: SNG + dieta zero + fluidos IV + TC + cirurgia." },
+    { "id": "tri", "l": "Tríade oclusiva", "d": "Dor + distensão + vómitos", "h": "Fortemente sugestivo de obstrução intestinal mecânica. Os três juntos quase confirmam obstrução. Vómitos precoces = obstrução alta. Vómitos tardios/fecalóides = obstrução baixa. Acção: SNG + Rx + TC." },
+    { "id": "per", "l": "Peritonismo", "d": "Dor à descompressão abdominal", "h": "Irritação peritoneal: sugere perfuração, isquemia intestinal, ou infecção intra-abdominal. Teste: pressão profunda seguida de descompressão brusca (Blumberg). Dor à descompressão = positivo. Avaliação cirúrgica imediata." },
+    { "id": "rab", "l": "Rectorragia abundante", "d": "Hemorragia rectal significativa", "h": "Sangramento rectal com repercussão hemodinâmica ou necessidade de transfusão. Estabilizar primeiro (ABC, acessos, fluidos). Colonoscopia urgente <24h ou angio-TC se maciça. Causas: diverticulose, angiodisplasia, neoplasia." },
+    { "id": "fed", "l": "Febre + dor localizada", "d": "Febre com dor num quadrante", "h": "Combinação sugere processo infeccioso/inflamatório intra-abdominal. FIE: diverticulite. FID: apendicite. Hipocôndrio D: colecistite, colangite. TC abdominal. Antibioterapia se infecção." },
+    { "id": "vfc2", "l": "Vómitos fecalóides", "d": "Cheiro/aspecto fecal", "h": "Obstrução intestinal avançada com refluxo de conteúdo colónico. Emergência cirúrgica. SNG imediata em aspiração. Rx + TC urgente. Cirurgia muito provável." }
+  ],
+  "farmacosClasses": [
+    { "cls": "Opióides", "mech": "Ligam-se a receptores µ no plexo mioentérico → reduzem peristaltismo, aumentam absorção de água, aumentam tónus esfincteriano. Efeito dose-dependente.", "drugs": ["Morfina", "Oxicodona", "Tramadol", "Codeína", "Fentanilo", "Buprenorfina", "Tapentadol"] },
+    { "cls": "Ferro oral", "mech": "Ferro não absorvido altera flora intestinal e irritação directa da mucosa. Aumenta consistência das fezes. Efeito proporcional à dose.", "drugs": ["Sulfato ferroso", "Fumarato ferroso", "Gluconato ferroso"] },
+    { "cls": "Antidepressivos tricíclicos", "mech": "Forte efeito anticolinérgico: bloqueiam receptores muscarínicos no plexo mioentérico → reduzem contracções intestinais e secreções.", "drugs": ["Amitriptilina", "Nortriptilina", "Imipramina", "Clomipramina"] },
+    { "cls": "Anticolinérgicos", "mech": "Bloqueiam acetilcolina nos receptores muscarínicos → reduzem peristaltismo e secreções intestinais. Efeito cumulativo se múltiplos.", "drugs": ["Hioscina", "Mebeverina", "Butilescopolamina", "Atropina", "Ipratrópio", "Tiotrópio"] },
+    { "cls": "Bloq. canais cálcio", "mech": "Reduzem influxo de cálcio no músculo liso intestinal → diminuem contratilidade. Verapamilo é o pior; di-hidropiridinas (amlodipina) menos efeito.", "drugs": ["Verapamilo", "Diltiazem", "Nifedipina", "Amlodipina"] },
+    { "cls": "Antiácidos c/ alumínio", "mech": "Alumínio tem efeito adstringente e obstipante directo na mucosa intestinal.", "drugs": ["Hidróxido alumínio", "Sucralfato"] },
+    { "cls": "Antipsicóticos", "mech": "Efeito anticolinérgico + sedação → reduzem motilidade. Pior com antipsicóticos de 1.ª geração e clozapina.", "drugs": ["Olanzapina", "Quetiapina", "Clozapina", "Haloperidol", "Risperidona"] },
+    { "cls": "Anti-parkinsónicos", "mech": "A própria doença afecta o sistema nervoso entérico. Levodopa e agonistas dopaminérgicos podem agravar por efeito central.", "drugs": ["Levodopa", "Pramipexol", "Ropinirol", "Entacapona"] },
+    { "cls": "Suplementos de cálcio", "mech": "Excesso de cálcio reduz excitabilidade neuromuscular intestinal e contratilidade do músculo liso.", "drugs": ["Carbonato de cálcio", "Citrato de cálcio"] },
+    { "cls": "Antidiarreicos", "mech": "Loperamida actua em receptores opióides µ intestinais → reduz peristaltismo e secreções. Não cruza barreira hematoencefálica.", "drugs": ["Loperamida", "Racecadotrilo"] },
+    { "cls": "Outros", "mech": "", "drugs": ["Diuréticos", "Anti-histamínicos", "Suplementos ferro IV", "Colestiramina"] }
+  ],
+  "antecedentes": [
+    { "id": "hip", "l": "Hipotiroidismo", "d": "Reduz motilidade", "h": "Metabolismo global reduzido → trânsito intestinal lento. Reduz secreções intestinais e contratilidade do músculo liso. TSH elevado confirma. Levotiroxina melhora obstipação." },
+    { "id": "dm", "l": "Diabetes Mellitus", "d": "Neuropatia autonómica", "h": "Hiperglicemia crónica lesa plexo mioentérico (neuropatia autonómica). Causa gastroparésia e dismotilidade colónica. Pior com mau controlo glicémico." },
+    { "id": "drc", "l": "DRC", "d": "Uremia", "h": "Toxinas urémicas afectam directamente o plexo mioentérico. Reduzem motilidade. Evitar magnésio (risco acumulação). PEG é seguro." },
+    { "id": "hca", "l": "Hipercalcemia", "d": "Reduz motilidade", "h": "Cálcio elevado reduz excitabilidade neuromuscular do músculo liso intestinal. Causa: hiperparatiroidismo, neoplasia, sarcoidose. Corrigir Ca antes de tratar obstipação." },
+    { "id": "prk", "l": "D. Parkinson", "d": "Disf. autonómica", "h": "Défice dopaminérgico afecta sistema nervoso entérico precocemente. Obstipação pode preceder sintomas motores em anos. Corpos de Lewy no plexo mioentérico." },
+    { "id": "em", "l": "Esclerose Múltipla", "d": "Desmielinização", "h": "Desmielinização das vias autonómicas que controlam o intestino. Pode causar intestino neurogénico. Frequente e subdiagnosticada na EM." },
+    { "id": "lm", "l": "Lesão Medular", "d": "Inervação interrompida", "h": "Interrupção das vias nervosas simpáticas e parassimpáticas → intestino neurogénico. Necessita programa intestinal estruturado (horário fixo, estimulação digital, enemas)." },
+    { "id": "avc", "l": "AVC", "d": "Controlo autonómico", "h": "Lesão de centros de controlo autonómico + imobilidade pós-AVC. Disfagia pode limitar ingestão de líquidos e fibra." },
+    { "id": "dep", "l": "Depressão", "d": "Reduz actividade", "h": "Reduz actividade física e apetite. Desinteresse pela alimentação → menos fibra e líquidos. Medicação (ADT, ISRS em menor grau) agrava." },
+    { "id": "neo", "l": "Neoplasia Colorretal", "d": "Recorrência/estenose", "h": "Risco de recorrência tumoral ou estenose anastomótica pós-cirúrgica. Qualquer alteração do trânsito requer investigação. Vigilância colonoscópica." },
+    { "id": "cir", "l": "Cirurgia Abdominal", "d": "Aderências", "h": "Aderências peritoneais são causa frequente de obstrução mecânica, especialmente parcial/intermitente. Mais comum após cirurgia pélvica e colorretal." },
+    { "id": "dii", "l": "DII", "d": "Estenoses", "h": "Doença de Crohn causa estenoses fibróticas que podem obstruir. Colite ulcerosa raramente causa obstipação excepto se estenose. Calprotectina fecal para actividade." },
+    { "id": "cel", "l": "Doença Celíaca", "d": "Pode causar obstipação", "h": "Não é só diarreia. Malabsorção causa distensão, obstipação, anemia, fadiga. Prevalência ~1%. Pedir anti-tTG IgA. Biópsia duodenal confirma. Dieta sem glúten." },
+    { "id": "hta", "l": "HTA", "d": "Factor risco vascular", "h": "Aterosclerose. Factor de risco para isquemia mesentérica. Fármacos anti-HTA (BCC, diuréticos) podem agravar obstipação." },
+    { "id": "dlp", "l": "Dislipidemia", "d": "Factor risco vascular", "h": "Aterosclerose vascular. Factor de risco para isquemia mesentérica." },
+    { "id": "dap", "l": "Doença arterial periférica", "d": "Aterosclerose generalizada", "h": "Se DAP, indica aterosclerose sistémica. Risco muito aumentado de isquemia mesentérica." },
+    { "id": "fa", "l": "Fibrilação auricular", "d": "Risco embolismo", "h": "FA causa embolismo arterial mesentérico. Dor abdominal súbita em doente com FA = isquemia até prova em contrário." },
+    { "id": "escl", "l": "Esclerodermia", "d": "Fibrose intestinal", "h": "Fibrose progressiva da parede intestinal → dismotilidade severa. Pseudo-obstrução intestinal crónica. Difícil de tratar." }
+  ],
+  "toqueRectal": [
+    { "id": "fec", "l": "Fecaloma/impactação", "a": 0, "expl": "<b>Fecaloma:</b> Desimpactação manual (fragmentar com dedo, lubrificante). Se não cede: enema fosfato/citrato. Após resolução: PEG manutenção." },
+    { "id": "fdu", "l": "Fezes duras na ampola", "a": 0, "expl": "<b>Fezes duras:</b> Obstipação distal confirmada. Laxante osmótico (PEG). Se recorrente: investigar dissinergia." },
+    { "id": "mre", "l": "Massa rectal", "a": 1, "expl": "<b>Massa rectal:</b> RED FLAG. Biópsia URGENTE. Referenciação oncologia/cirurgia. TC para estadiamento." },
+    { "id": "str", "l": "Vestígios hemáticos", "a": 1, "expl": "<b>Sangue/hemáticos:</b> Investigar origem. Colonoscopia indicada. Pode ser neoplasia, hemorróidas, fissura, DII." },
+    { "id": "tau", "l": "Tónus aumentado (dissinergia?)", "a": 0, "expl": "<b>Tónus aumentado:</b> Contracção paradoxal do puborrectal (dissinergia). Confirmar com manometria anorrectal. Biofeedback: 70-80% sucesso." },
+    { "id": "tdi", "l": "Tónus diminuído", "a": 0, "expl": "<b>Tónus diminuído:</b> Disfunção esfincteriana. Risco de incontinência. Avaliar pavimento pélvico (ecografia endoanal)." },
+    { "id": "avz", "l": "Ampola vazia", "a": 0, "expl": "<b>Ampola vazia:</b> Problema proximal — inércia colónica (trânsito lento). Fezes não chegam ao recto. Pode necessitar estudo tempo de trânsito colónico." },
+    { "id": "ach", "l": "Ampola cheia", "a": 0, "expl": "<b>Ampola cheia:</b> Disfunção evacuatória. Conteúdo fecal presente mas não consegue expulsar. Manometria + teste expulsão balão indicados." },
+    { "id": "fis", "l": "Fissura anal", "a": 0, "expl": "<b>Fissura anal:</b> Causa dor intensa → retenção voluntária → agrava obstipação. Tratar primeiro: banhos assento, PEG para fezes moles, nitroglicerina tópica 0.4%." }
+  ],
+  "rectorragiaTipos": {
+    "hqz": "<b>Hematoquézias:</b> Sangue vermelho vivo pelo ânus, não digerido. Indica origem BAIXA: cólon distal, recto ou canal anal. Causas mais comuns: hemorróidas, fissura anal, diverticulose, CCR, pólipos, DII (proctite). Se abundante com instabilidade: pode ser origem alta com trânsito rápido. Colonoscopia indicada.",
+    "mel": "<b>Melenas:</b> Fezes negras, brilhantes, aspecto alcatrão, cheiro fétido. Indica sangue DIGERIDO = origem ALTA (estômago, duodeno) ou cólon direito. Causas: úlcera péptica, varizes esofágicas, neoplasia gástrica, angiodisplasia cólon direito. Pedir EDA primeiro. Não confundir com fezes escuras por ferro oral ou bismuto (sem brilho nem cheiro fétido).",
+    "sof": "<b>Sangue oculto positivo:</b> Sangue não visível a olho nu, detectado por teste laboratorial. Indica perda crónica microscópica. Causa mais preocupante: CCR. Colonoscopia obrigatória. Falsos positivos: ferro oral, AINEs, dieta rica em carne vermelha (teste guaiaco)."
+  },
+  "analitica": [
+    { "grp": "Hemograma", "items": [
+      { "k": "Hb", "u": "g/dL", "lo": 12, "hi": 17, "tipLo": "Anemia. Perda GI? Pedir ferro/ferritina. Se ferropénica: colonoscopia.", "tipHi": "Policitemia. Desidratação? Policitemia vera?" },
+      { "k": "Leucócitos", "u": "x10^9/L", "lo": 4, "hi": 11, "tipLo": "Leucopenia. Imunossupressão?", "tipHi": "Leucocitose: infecção, inflamação. Diverticulite? Peritonite? Abcesso?" },
+      { "k": "Plaquetas", "u": "x10^9/L", "lo": 150, "hi": 400, "tipLo": "Trombocitopenia. Sépsis? CID? Fármaco?", "tipHi": "Trombocitose. Reactiva (inflamação, ferropénia) ou primária." }
+    ] },
+    { "grp": "Ionograma", "items": [
+      { "k": "Na", "u": "mmol/L", "lo": 135, "hi": 145, "tipLo": "Hiponatremia. Desidratação? SIADH? Diuréticos?", "tipHi": "Hipernatremia. Desidratação severa." },
+      { "k": "K", "u": "mmol/L", "lo": 3.5, "hi": 5.0, "tipLo": "Hipocaliemia: reduz motilidade intestinal. Causa íleus. Corrigir. Diuréticos? Perdas GI?", "tipHi": "Hipercaliemia: risco arritmia. ECG urgente. Insuficiência renal? IECA?" },
+      { "k": "Ca", "u": "mg/dL", "lo": 8.5, "hi": 10.5, "tipLo": "Hipocalcemia.", "tipHi": "Hipercalcemia: obstipante. Pedir PTH. Hiperparatiroidismo? Neoplasia?" },
+      { "k": "Mg", "u": "mg/dL", "lo": 1.7, "hi": 2.2, "tipLo": "Hipomagnesemia: pode causar obstipação e hipocaliemia refractária. Corrigir.", "tipHi": "Hipermagnesemia. Raro. Insuficiência renal?" }
+    ] },
+    { "grp": "Função renal", "items": [
+      { "k": "Creatinina", "u": "mg/dL", "lo": 0.6, "hi": 1.2, "tipLo": "", "tipHi": "Elevada: DRC? IRA? Calcular TFG. Ajustar fármacos. Evitar magnésio." },
+      { "k": "Ureia", "u": "mg/dL", "lo": 10, "hi": 50, "tipLo": "", "tipHi": "Elevada: desidratação? Hemorragia GI alta? DRC?" }
+    ] },
+    { "grp": "Metabolismo", "items": [
+      { "k": "Glicose", "u": "mg/dL", "lo": 70, "hi": 110, "tipLo": "Hipoglicemia.", "tipHi": "Hiperglicemia. Diabetes? Pedir HbA1c. Neuropatia autonómica agrava obstipação." },
+      { "k": "HbA1c", "u": "%", "lo": 0, "hi": 5.7, "tipLo": "", "tipHi": "Elevada: diabetes mal controlada. Neuropatia contribui para dismotilidade." },
+      { "k": "TSH", "u": "mUI/L", "lo": 0.4, "hi": 4.0, "tipLo": "Hipertiroidismo. Raro causar obstipação.", "tipHi": "Hipotiroidismo: causa comum e tratável. Iniciar levotiroxina." }
+    ] },
+    { "grp": "Inflamação", "items": [
+      { "k": "PCR", "u": "mg/L", "lo": 0, "hi": 5, "tipLo": "", "tipHi": "Elevada: processo inflamatório/infeccioso. Diverticulite? Peritonite? DII? Isquemia?" },
+      { "k": "VS", "u": "mm/h", "lo": 0, "hi": 20, "tipLo": "", "tipHi": "Elevada: inflamação crónica. DII? Neoplasia?" }
+    ] },
+    { "grp": "Estudo ferro", "items": [
+      { "k": "Ferro", "u": "ug/dL", "lo": 60, "hi": 170, "tipLo": "Ferro baixo: ferropénia. Perda GI oculta? Colonoscopia indicada.", "tipHi": "" },
+      { "k": "Ferritina", "u": "ng/mL", "lo": 12, "hi": 300, "tipLo": "Ferritina baixa: confirma ferropénia. Colonoscopia obrigatória.", "tipHi": "Elevada: inflamação, sobrecarga ferro." }
+    ] },
+    { "grp": "Função hepática", "items": [
+      { "k": "AST", "u": "U/L", "lo": 10, "hi": 40, "tipLo": "", "tipHi": "Elevada: lesão hepática. Metástases? Hepatite? Insuficiência cardíaca?" },
+      { "k": "ALT", "u": "U/L", "lo": 7, "hi": 56, "tipLo": "", "tipHi": "Elevada: lesão hepatocelular." },
+      { "k": "FA", "u": "U/L", "lo": 44, "hi": 147, "tipLo": "", "tipHi": "Elevada: colestase, metástases hepáticas, doença óssea." },
+      { "k": "GGT", "u": "U/L", "lo": 9, "hi": 48, "tipLo": "", "tipHi": "Elevada: colestase, álcool, fármacos." },
+      { "k": "Bilirrubina", "u": "mg/dL", "lo": 0.1, "hi": 1.2, "tipLo": "", "tipHi": "Elevada: icterícia. Obstrução biliar? Hemólise? Hepatite?" }
+    ] },
+    { "grp": "Especiais", "items": [
+      { "k": "Lactato", "u": "mmol/L", "lo": 0.5, "hi": 2.0, "tipLo": "", "tipHi": "Elevado: hipoperfusão tecidual. Isquemia intestinal? Sépsis? Mau prognóstico se >4." },
+      { "k": "CEA", "u": "ng/mL", "lo": 0, "hi": 5, "tipLo": "", "tipHi": "Elevado: marcador tumoral. CCR? Seguimento pós-operatório." },
+      { "k": "Amilase", "u": "U/L", "lo": 28, "hi": 100, "tipLo": "", "tipHi": "Elevada: pancreatite? Perfuração intestinal?" },
+      { "k": "Lipase", "u": "U/L", "lo": 0, "hi": 160, "tipLo": "", "tipHi": "Elevada: pancreatite (mais específica que amilase)." }
+    ] }
+  ],
+  "imgRx": [
+    ["nl", "Normal", "Sem sinais de obstrução ou fecaloma. Prosseguir avaliação."],
+    ["fec", "Fecaloma", "Fecaloma visível. Protocolo: desimpactação manual → enema → laxante osmótico."],
+    ["niv", "Níveis hidroaéreos", "Suspeita de obstrução. TC abdominal urgente. SNG se vómitos."],
+    ["dil", "Dilatação ansas", "Ansas dilatadas. Avaliar obstrução vs pseudo-obstrução. TC."],
+    ["out", "Outro achado", ""]
+  ],
+  "imgTc": [
+    ["nl", "Normal", "Sem patologia estrutural. Avaliar causa funcional."],
+    ["ms", "Massa/neoplasia", "Referenciação urgente: cirurgia + oncologia. Estadiamento."],
+    ["ob", "Obstrução mecânica", "Avaliação cirúrgica. SNG. Dieta zero. Fluidos IV."],
+    ["dv", "Diverticulite", "Antibioterapia. Se complicada (abcesso, perfuração): cirurgia."],
+    ["out", "Outro", ""]
+  ],
+  "colRes": [
+    ["nl", "Normal", "Sem lesões. Obstipação funcional provável. Tratamento empírico."],
+    ["pol", "Pólipos", "Polipectomia. Vigilância conforme risco (3-5 anos)."],
+    ["ms", "Massa/neoplasia", "Biópsia. Referenciação oncologia. Estadiamento (TC tórax/abd/pélvico)."],
+    ["dii_r", "DII", "Confirma DII. Referenciação gastrenterologia. Terapêutica dirigida."],
+    ["out", "Outro achado", ""]
+  ],
+  "quadrantes": [
+    { "id": "hcd", "l": "Hipocôndrio D", "h": "Litíase biliar, colecistite, hepatite, abcesso hepático" },
+    { "id": "epi", "l": "Epigastro", "h": "Úlcera péptica, pancreatite, esofagite" },
+    { "id": "hce", "l": "Hipocôndrio E", "h": "Esplenomegália, abcesso esplénico" },
+    { "id": "fld", "l": "Flanco D", "h": "Cólica renal, pielonefrite direita" },
+    { "id": "umb", "l": "Periumbilical", "h": "Apendicite precoce, linfadenite mesentérica" },
+    { "id": "fle", "l": "Flanco E", "h": "Cólica renal, pielonefrite esquerda" },
+    { "id": "fid", "l": "FID", "h": "Apendicite, D. Crohn, obstrução cecal, hérnia" },
+    { "id": "hip", "l": "Hipogastro", "h": "Retenção urinária, cistite, patologia ginecológica" },
+    { "id": "fie", "l": "FIE", "h": "Diverticulite, colite ulcerosa, OBSTIPAÇÃO, hérnia" }
+  ],
+  "quadranteNome": { "hcd": "hipocôndrio direito", "epi": "epigastro", "hce": "hipocôndrio esquerdo", "fld": "flanco direito", "umb": "região periumbilical", "fle": "flanco esquerdo", "fid": "FID", "hip": "hipogastro", "fie": "FIE" },
+  "abdomenAchados": [
+    { "id": "dist", "l": "Distensão", "expl": "<b>Distensão:</b> Inspecção (abdómen globoso?). Percussão (timpanismo = gás, macicez = líquido). Se assimétrica: vólvulo ou massa. Se aguda + paragem gases → obstrução." },
+    { "id": "timp", "l": "Timpanismo", "expl": "<b>Timpanismo:</b> Percussão abdominal. Som oco = ar. Difuso: obstrução, íleus. Localizado: ansa dilatada." },
+    { "id": "dor", "l": "Dor à palpação", "expl": "" },
+    { "id": "defesa", "l": "Defesa/peritonismo", "a": 1, "expl": "<b>Defesa/peritonismo:</b> Sinal de Blumberg (descompressão brusca). Dor à descompressão = peritonismo. Contractura involuntária = irritação peritoneal. EMERGÊNCIA CIRÚRGICA." },
+    { "id": "massa", "l": "Massa palpável", "a": 1, "expl": "<b>Massa palpável:</b> Palpação profunda. Avaliar localização, tamanho, consistência, mobilidade. Dura e fixa = neoplasia. Dolorosa e flutuante = abcesso. Moldável = fecaloma. TC urgente." },
+    { "id": "organo", "l": "Organomegália", "expl": "<b>Organomegália:</b> Fígado: palpar da FID ao rebordo costal com inspiração. Baço: decúbito lateral D, palpar hipocôndrio E. Se palpáveis: investigar causa." }
+  ],
+  "sinaisInstabilidade": [
+    { "id": "hipo", "l": "Hipotensão (PAS <90)", "h": "PAS <90 mmHg ou queda >20 mmHg da habitual. Indica hipoperfusão. Causas na obstipação: desidratação severa, sépsis (perfuração/diverticulite), hemorragia GI oculta. <b>Acção:</b> Fluidos IV em bólus (SF 0.9% 500mL-1L rápido). Se não responde: considerar vasopressores e causa cirúrgica.", "nome": "hipotensão" },
+    { "id": "taqui", "l": "Taquicardia (FC >100)", "h": "FC >100 bpm. Mecanismo compensatório de hipovolemia, dor, febre ou sépsis. <b>Acção:</b> Tratar causa: fluidos se desidratado, analgesia se dor, antibioterapia se sépsis. FC normaliza ao corrigir causa.", "nome": "taquicardia" },
+    { "id": "choque", "l": "Sinais de choque", "h": "Extremidades frias, marmoreadas, tempo preenchimento capilar >2s, alteração consciência, oligúria. Indica hipoperfusão tecidual grave. <b>Acção:</b> Reanimação agressiva: 2 acessos calibre 14-16G, fluidos IV em bólus, considerar vasopressores, gasimetria + lactato, cateter urinário para débito.", "nome": "sinais de choque" },
+    { "id": "desid", "l": "Desidratação severa", "h": "Mucosas secas, olhos encovados, prega cutânea, taquicardia, hipotensão, oligúria. Frequente em idosos com obstipação prolongada que param de comer/beber. <b>Acção:</b> Fluidos IV: SF 0.9% ou Lactato de Ringer. Corrigir em 24-48h. Ionograma para guiar reposição. Vigiar débito urinário (objectivo >0.5mL/kg/h).", "nome": "desidratação severa" },
+    { "id": "cons", "l": "Alteração da consciência", "h": "Confusão, letargia, GCS diminuído. Na obstipação pode indicar: sépsis (perfuração), desidratação severa com distúrbio electrolítico (hipercaliemia, hipercalcemia, hiponatremia), ou encefalopatia hepática. <b>Acção:</b> Gasimetria + ionograma + glicose URGENTES. Proteger via aérea se GCS ≤8.", "nome": "alteração da consciência" }
+  ],
+  "protocoloABC": "<b>A — Airway (Via aérea):</b> Permeável? Se alteração consciência: posição lateral, aspirar secreções. Se GCS ≤8: intubação.<br><b>B — Breathing (Respiração):</b> FR, SpO₂, padrão respiratório. O₂ suplementar se SpO₂ <94%. Auscultar pulmões.<br><b>C — Circulation (Circulação):</b> PA, FC, preenchimento capilar. 2 acessos IV calibre 14-16G. Fluidos: SF 0.9% 500mL bólus em 15min, reavaliar. Repetir se necessário (máx. 30mL/kg). Colheitas: hemograma, PCR, ionograma, lactato, gasimetria, coagulação, tipagem.<br><b>D — Disability (Neurológico):</b> GCS, pupilas, glicose capilar.<br><b>E — Exposure (Exposição):</b> Temperatura, abdómen (peritonismo?), TR. Prevenir hipotermia.",
+  "accoesEstabilizacao": ["2 acessos IV", "Bólus SF 0.9%", "O₂ suplementar", "Colheitas analítica", "Tipagem/reserva", "SNG", "Algaliação", "Analgesia IV", "Antibioterapia IV", "Chamada cirurgia", "Chamada UCI", "Monitorização contínua"],
+  "frequencias": ["1x/dia", "1x/2 dias", "2-3x/semana", "1x/semana", "<1x/semana"],
+  "diagnosticos": {
+    "emerg": { "l": "Emergência cirúrgica", "th": 1, "cor": "#dc2626", "info": "Situação que requer intervenção cirúrgica imediata ou estabilização urgente. Inclui peritonismo, instabilidade hemodinâmica, rectorragia com choque, vómitos fecalóides. Objectivo: estabilizar (ABC) e decidir cirurgia nas próximas horas.", "planoDefesa": "<b>1.</b> Estabilizar: ABC, 2 acessos IV, fluidos, monitorização.<br><b>2.</b> Analítica urgente (hemograma, PCR, ionograma, lactato, gasimetria, coagulação).<br><b>3.</b> Peritonismo → avaliação cirúrgica IMEDIATA.<br><b>4.</b> SNG se vómitos ou distensão marcada. Dieta zero.", "planoSemDefesa": "<b>1.</b> Estabilizar: ABC, 2 acessos IV, fluidos, monitorização.<br><b>2.</b> Analítica urgente (hemograma, PCR, ionograma, lactato, gasimetria, coagulação).<br><b>3.</b> TC abdominal urgente.<br><b>4.</b> SNG se vómitos ou distensão marcada. Dieta zero." },
+    "obstr": { "l": "Obstrução intestinal", "th": 3, "cor": "#dc2626", "info": "Algo FÍSICO bloqueia a passagem do conteúdo intestinal. Causas: aderências pós-cirúrgicas (mais comum), neoplasia, hérnia estrangulada, vólvulo (torção), estenose (Crohn, diverticular), intussuscepção. O intestino luta contra o obstáculo (RHA metálicos). Rx mostra níveis/dilatação. TC identifica causa e local. Pode precisar de cirurgia.", "plano": "<b>1.</b> Rx abdómen em pé AGORA.<br><b>2.</b> Se níveis/dilatação → TC abdominal urgente.<br><b>3.</b> SNG em aspiração se vómitos/distensão. Dieta zero. Fluidos IV.<br><b>4.</b> Avaliação cirúrgica se obstrução mecânica confirmada." },
+    "ileus": { "l": "Íleus paralítico / Pseudo-obstrução", "th": 5, "cor": "#d4762c", "info": "O intestino pára de funcionar SEM bloqueio físico. RHA ausentes ou diminuídos. Causas: pós-operatório (mais comum), opióides, hipocaliemia, hipercalcemia, peritonite, isquemia, sépsis. NÃO é cirúrgico - trata-se a causa. Se sem causa óbvia: investigar urgentemente pois pode ser sinal de catástrofe abdominal silenciosa (peritonite, isquemia).", "plano": "<b>1.</b> Investigar CAUSA: pós-operatório? Opióides? Electrólitos (K+, Ca, Mg)?<br><b>2.</b> Se causa óbvia: corrigir (repor K+, parar opióides/anticolinérgicos, mobilizar).<br><b>3.</b> SNG se distensão marcada ou vómitos. Dieta zero.<br><b>4.</b> Se SEM causa óbvia: TC urgente - pode ser sinal de catástrofe abdominal silenciosa (peritonite, isquemia).<br><b>5.</b> Se pseudo-obstrução aguda do cólon (Ogilvie): neostigmina IV (sob monitorização).<br><b>6.</b> NÃO é cirúrgico (diferente da obstrução mecânica)." },
+    "fecal": { "l": "Fecaloma / Impactação fecal", "th": 3, "cor": "#d4762c", "info": "Massa de fezes duras impactadas que o doente não consegue expulsar. Muito comum em idosos, acamados, sob opióides, desidratados. Pode ser BAIXO (palpável ao TR) ou ALTO (só visível no Rx). Complicações: diarreia paradoxal (overflow), incontinência, perfuração (raro). Tratamento: desimpactação, enema, laxante osmótico.", "planoComFecaloma": "<b>1.</b> Desimpactação manual (fragmentar, lubrificante).<br><b>2.</b> Enema (fosfato/citrato) se desimpactação insuficiente.<br><b>3.</b> Após resolução: laxante osmótico (PEG) de manutenção.<br><b>4.</b> Corrigir causa (opióides? imobilidade? hidratação?).", "planoSemFecaloma": "<b>1.</b> Confirmar: TR obrigatório se não realizado. Rx abdómen (fecaloma pode ser alto).<br><b>2.</b> Se confirmado: desimpactação + enema.<br><b>3.</b> Após resolução: laxante osmótico (PEG) de manutenção.<br><b>4.</b> Corrigir causa (opióides? imobilidade? hidratação?)." },
+    "neo": { "l": "Suspeita de neoplasia", "th": 4, "cor": "#dc2626", "info": "Sinais que levantam suspeita de cancro colorretal ou outro: massa palpável, perda de peso, anemia ferropénica, sangue oculto positivo, hematoquézias/melenas. Investigação: colonoscopia com biópsia para diagnóstico, TC para estadiamento. Referenciação oncologia/cirurgia.", "planoMelenas": "<b>1.</b> EDA (melenas = origem alta). Se normal → colonoscopia.<br><b>2.</b> TC tórax-abdómen-pélvico para estadiamento.<br><b>3.</b> Referenciação oncologia/cirurgia.<br><b>4.</b> Analítica: hemograma, ferro, função hepática, CEA.", "planoColono": "<b>1.</b> Colonoscopia com biópsia.<br><b>2.</b> TC tórax-abdómen-pélvico para estadiamento.<br><b>3.</b> Referenciação oncologia/cirurgia.<br><b>4.</b> Analítica: hemograma, ferro, função hepática, CEA." },
+    "isquemia": { "l": "Isquemia intestinal (considerar)", "th": 5, "cor": "#dc2626", "info": "O intestino fica sem sangue suficiente. Causa mais comum: embolismo da artéria mesentérica superior (frequentemente por FA). DOR ABDOMINAL é praticamente obrigatória - sem dor, isquemia é muito improvável. Dor desproporcional ao exame é clássico. Factores de risco vasculares: FA, HTA, diabetes, dislipidemia, tabagismo, DAP. Evolui para necrose e perfuração. Diagnóstico: angio-TC + lactato.", "plano": "<b>1.</b> TC abdominal com contraste IV URGENTE (angio-TC).<br><b>2.</b> Lactato sérico (elevado = mau prognóstico).<br><b>3.</b> Avaliação cirúrgica imediata.<br><b>4.</b> Antibioterapia de largo espectro.<br><b>5.</b> Se confirmada: cirurgia (ressecção intestino necrótico)." },
+    "perit": { "l": "Peritonite", "th": 6, "cor": "#dc2626", "info": "Inflamação/infecção do peritoneu. Sinais: defesa abdominal, dor à descompressão (Blumberg), febre, RHA ausentes. Causas: perfuração (úlcera, divertículo, neoplasia), apendicite complicada, isquemia com necrose. É cirúrgico - a fonte de contaminação precisa de ser controlada.", "plano": "<b>1.</b> Avaliação cirúrgica IMEDIATA.<br><b>2.</b> TC abdominal urgente (ar livre? líquido? abcesso?).<br><b>3.</b> Antibioterapia empírica IV de largo espectro (piperacilina/tazobactam ou meropenem).<br><b>4.</b> Reanimação: fluidos IV, analgesia, SNG se distensão.<br><b>5.</b> Cirurgia se perfuração ou isquemia." },
+    "divert": { "l": "Diverticulite provável", "th": 4, "cor": "#d4762c", "info": "Inflamação/infecção de um divertículo do cólon (mais comum FIE/sigmóide). Típico: dor FIE + febre em doente >50 anos. TC classifica gravidade (Hinchey). Não complicada: antibioterapia. Complicada (abcesso, perfuração): drenagem ou cirurgia.", "plano": "<b>1.</b> TC abdominal para classificar (Hinchey).<br><b>2.</b> Antibioterapia (amoxicilina/clavulânico ou ciprofloxacina + metronidazol).<br><b>3.</b> Se complicada (abcesso, perfuração): cirurgia.<br><b>4.</b> Após resolução: dieta rica em fibra. Colonoscopia 6-8 semanas depois." },
+    "dissin": { "l": "Dissinergia do pavimento pélvico", "th": 4, "cor": "#eab308", "info": "O doente não consegue coordenar os músculos para evacuar. Contracção paradoxal do puborrectal em vez de relaxar. Resultado: esforço enorme, evacuação incompleta, manobras digitais, sensação de bloqueio. Mais comum em mulheres. Diagnóstico: manometria anorrectal + teste expulsão balão. Biofeedback: 70-80% sucesso.", "plano": "<b>1.</b> Referenciar gastrenterologia.<br><b>2.</b> Manometria anorrectal + teste de expulsão do balão para confirmar.<br><b>3.</b> Biofeedback (70-80% sucesso).<br><b>4.</b> Entretanto: PEG/macrogol + posição correcta (banco para pés)." },
+    "sii": { "l": "Síndrome do Intestino Irritável (SII-O)", "th": 5, "cor": "#eab308", "info": "Perturbação funcional crónica. Critérios Roma IV: dor abdominal recorrente associada a alteração da frequência ou consistência. Sem alterações estruturais (exames normais). Mais comum em jovens e mulheres. A obstipação predomina no SII-O. Tratamento: dieta (FODMAPs), antiespasmódicos, laxantes, linaclotida.", "plano": "<b>Critérios Roma IV:</b> dor abdominal recorrente ≥1 dia/semana nos últimos 3 meses, associada a ≥2 de: defecação, alteração frequência, alteração consistência.<br><b>1.</b> Tranquilizar. Dieta pobre em FODMAPs.<br><b>2.</b> Antiespasmódico (hioscina) se dor.<br><b>3.</b> PEG/psyllium para obstipação.<br><b>4.</b> Se refractário: linaclotida 290µg/dia." },
+    "func": { "l": "Obstipação funcional", "th": 3, "cor": "#059669", "info": "Obstipação crónica sem causa orgânica. Trânsito lento ou normal, sem alarmes. Critérios Roma IV: esforço, fezes duras, evacuação incompleta, obstrução, manobras, <3/semana (2 ou mais em >3 meses). Tratamento: medidas gerais + laxantes osmóticos. Se refractária: investigação funcional.", "plano": "<b>1.</b> Medidas gerais: hidratação 1,5-2L/dia, fibra 25-30g/dia, exercício ≥150min/sem, não reprimir urgência.<br><b>2.</b> Psyllium 5-10g/dia + Macrogol (PEG) 1-2 saquetas/dia.<br><b>3.</b> Reavaliar 4-8 semanas. Se sem melhoria: associar bisacodilo/sene.<br><b>4.</b> Se refractária: prucaloprida 2mg/dia. Referenciar gastrenterologia." },
+    "medic": { "l": "Obstipação induzida por fármacos", "th": 2, "cor": "#d4762c", "info": "O fármaco é a causa principal. Opióides (mais comum e grave), ADT, anticolinérgicos, BCC, ferro. Resolve ao retirar/substituir fármaco. Se não substituível: laxante profilático obrigatório. Opióides: naloxegol se PEG insuficiente.", "plano": "<b>1.</b> Rever necessidade de cada fármaco obstipante.<br><b>2.</b> Substituir se possível (ex: ADT→ISRS, verapamilo→amlodipina, ferro oral→IV).<br><b>3.</b> Se não substituível: laxante profilático obrigatório (PEG).<br><b>4.</b> Se opióides: naloxegol 25mg/dia se PEG insuficiente. NÃO usar fibra isolada." },
+    "endo": { "l": "Causa secundária (endócrina/neurológica)", "th": 2, "cor": "#eab308", "info": "Doença de base causa a obstipação. Endócrinas: hipotiroidismo (trânsito lento), diabetes (neuropatia), hipercalcemia. Neurológicas: Parkinson (disf. autonómica precoce), EM, lesão medular. Tratar doença de base melhora/resolve obstipação.", "plano": "<b>1.</b> Analítica: TSH, glicose/HbA1c, Ca²⁺, creatinina/TFG.<br><b>2.</b> Tratar causa subjacente (levotiroxina, controlo glicémico, corrigir Ca).<br><b>3.</b> A obstipação pode melhorar/resolver com tratamento da causa.<br><b>4.</b> Entretanto: PEG/macrogol como laxante. Evitar magnésio se DRC." },
+    "indet": { "l": "Obstipação sem causa clara identificada", "th": 0, "cor": "#78716c", "info": "Nenhum diagnóstico atingiu confiança suficiente. Dados insuficientes ou quadro inespecífico. Completar avaliação com analítica, tratar empiricamente, reavaliar em 4-8 semanas.", "plano": "<b>1.</b> Completar avaliação: analítica básica (TSH, hemograma, Ca, glicose).<br><b>2.</b> Medidas gerais + PEG/macrogol.<br><b>3.</b> Reavaliar 4-8 semanas.<br><b>4.</b> Se persiste: referenciar gastrenterologia." }
+  },
+  "medidasGerais": [
+    ["Hidratação", "1,5-2 L/dia. Água e líquidos sem cafeína."],
+    ["Fibra", "25-30g/dia. Aumentar gradualmente (2-3 semanas). Frutas, vegetais, cereais integrais."],
+    ["Exercício", "≥150 min/semana de exercício moderado. Caminhada, natação, ciclismo."],
+    ["Reflexo gastrocólico", "Tentar evacuar 15-30min após refeições, especialmente pequeno-almoço."],
+    ["Posição", "Banco para elevar os pés no WC (simular cócoras). Abre ângulo anorrectal."],
+    ["Não reprimir", "Responder sempre à urgência. Adiar enfraquece reflexo defecatório."],
+    ["Psyllium", "Suplemento fibra: 5-10g/dia. Iniciar baixo, subir semanalmente. Com bastante água."]
+  ],
+  "tratamentoPrevio": [
+    { "v": "n", "l": "Nenhum" },
+    { "v": "g", "l": "Medidas gerais" },
+    { "v": "o", "l": "Lax. osmóticos" },
+    { "v": "e", "l": "Osm.+estimulantes" },
+    { "v": "t", "l": "Tudo s/ melhoria" }
+  ],
+  "tratamentoTextos": {
+    "n": { "cls": "g", "html": "<b>1.ª abordagem:</b> Medidas gerais + psyllium 5-10g/dia + macrogol (PEG) 1-2 saquetas/dia. Reavaliar 4-8 semanas." },
+    "g": { "cls": "g", "html": "<b>1.ª linha:</b> Psyllium + Macrogol (PEG). Alternativas: lactulose 15-30mL/dia, óxido magnésio 400-500mg/dia. Reavaliar 4-8 semanas." },
+    "o": { "cls": "y", "html": "<b>2.ª linha:</b> Associar bisacodilo 5-10mg ou sene 15mg ao deitar. Manter osmóticos. Reavaliar 4-8 semanas." },
+    "e": { "cls": "a", "html": "<b>3.ª linha:</b> Prucaloprida 2mg/dia ou Linaclotida 290µg/dia. Considerar referenciação gastrenterologia." },
+    "t": { "cls": "r", "html": "<b>Refractária:</b> Referenciar: manometria anorrectal, teste expulsão balão, tempo trânsito colónico, biofeedback." }
+  },
+  "accoesSU": ["Desimpactação", "Enema", "SNG", "Fluidos IV", "Lax. osmótico", "Lax. estimulante", "Aval. cirúrgica", "Analgesia", "Alta c/ orientações"],
+  "accoesRapidas": ["Medidas gerais", "Aumentar hidratação", "Aumentar fibra", "Iniciar PEG/macrogol", "Iniciar psyllium", "Iniciar bisacodilo", "Referenciar GE", "Colonoscopia programada", "EDA", "Rx abdómen", "TC abdómen", "Alta com orientações", "Reavaliação MF"]
+}

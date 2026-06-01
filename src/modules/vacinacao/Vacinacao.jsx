@@ -7,6 +7,7 @@ import extraHtml from "@conteudo/vacinacao/view-adult-extra.html?raw";
 import specialHtml from "@conteudo/vacinacao/view-special-matrix.html?raw";
 import travelHtml from "@conteudo/vacinacao/view-travel.html?raw";
 import { htmlComSvg } from "@/components/emoji";
+import { normalizar } from "@/lib/texto";
 import "./estilo.css";
 
 const VIEWS = [
@@ -102,10 +103,10 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
   useEffect(() => {
     const c = ref.current;
     if (!c) return;
-    const q = query.trim().toLowerCase();
+    const q = normalizar(query).trim();
     const blocos = c.querySelectorAll(".tl-item, .vacc-card, tbody tr, .notes-block, .leg");
     blocos.forEach((b) => {
-      b.style.display = !q || b.textContent.toLowerCase().includes(q) ? "" : "none";
+      b.style.display = !q || normalizar(b.textContent).includes(q) ? "" : "none";
     });
   }, [query, vista]);
 

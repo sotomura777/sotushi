@@ -112,6 +112,17 @@ const MI = {
       <path d="M4.5 21a7.5 7.5 0 0 1 15 0" />
     </>),
 
+  // Farmacologia na Grávida — silhueta de grávida
+  pregnant: (c, s) => D(c, s,
+    "M14.8 11.4c1.9.5 3.2 2 3.2 3.9 0 2.1-1.7 3.7-4.2 3.7H12V21",
+    <>
+      <circle cx="12.5" cy="4.4" r="2.2" />
+      <path d="M12.5 7v4.2" />
+      <path d="M12.5 11.2c2.6 0 4.4 1.6 4.4 3.9s-1.8 3.6-4.4 3.6" fill={c} fillOpacity="0.16" />
+      <path d="M12.5 11.2v10" />
+      <path d="M9.6 13.4c-.7 1.9-.6 3.8.5 5.6" stroke={c} fill="none" />
+    </>),
+
   // ---- nav ----
   home: (c, s) => D(c, s,
     "M4 10.5 12 3l8 7.5V20a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 20Z",
@@ -154,6 +165,7 @@ const MI_MODULO = {
   vacinacao: MI.syringe,
   notas: MI.clipboard,
   "saude-infantil": MI.baby,
+  "farmacos-gravidez": MI.pregnant,
 };
 
 // ============================================================================

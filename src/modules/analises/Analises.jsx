@@ -15,11 +15,16 @@ import Cards from "./Cards.jsx";
 import Gsa from "./Gsa.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
+import { useAtalhosNumericos } from "@/lib/atalhos";
+import { normalizar } from "@/lib/texto";
 import { toast } from "@/lib/toast";
 import "./estilo.css";
 
+const MODOS = ["analises", "completas", "historico", "gsa", "cards", "biblio"];
+
 export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
   const [modo, setModo] = useState("analises");
+  useAtalhosNumericos(MODOS.length, (i) => setModo(MODOS[i]));
   const [sexo, setSexo] = useState("M");
   const [pesquisa, setPesquisa] = useState("");
   const [categoria, setCategoria] = useState("Todos");
@@ -58,11 +63,11 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
     if (categoria !== "Todos") r = r.filter((p) => p.cat === categoria);
     if (soFav) r = r.filter((p) => favoritos.includes(p.id));
     if (pesquisa) {
-      const s = pesquisa.toLowerCase();
+      const s = normalizar(pesquisa);
       r = r.filter((p) =>
-        p.nm.toLowerCase().includes(s) ||
-        (p.ab || "").toLowerCase().includes(s) ||
-        (p.tm || "").toLowerCase().includes(s));
+        normalizar(p.nm).includes(s) ||
+        normalizar(p.ab).includes(s) ||
+        normalizar(p.tm).includes(s));
     }
     return r;
   }, [categoria, soFav, pesquisa, favoritos]);

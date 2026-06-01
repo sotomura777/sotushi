@@ -5,6 +5,8 @@
 // (Armazenamento encriptado e sincronização: Fase 3, no backend.)
 // ============================================================================
 
+import { normalizar } from "@/lib/texto";
+
 const CONECTORES = new Set(["de", "da", "do", "dos", "das", "e"]);
 
 // "João Pedro Silva" -> "J.P.S."   ·  "Maria de Sousa" -> "M.S."
@@ -80,8 +82,8 @@ export function ordenarNotas(notas, fixadaId, query) {
     if (b.data !== a.data) return b.data.localeCompare(a.data);
     return kindOrder(a.kind) - kindOrder(b.kind);
   });
-  const q = (query || "").trim().toLowerCase();
-  return q ? arr.filter((n) => (n.texto || "").toLowerCase().includes(q)) : arr;
+  const q = normalizar(query).trim();
+  return q ? arr.filter((n) => normalizar(n.texto).includes(q)) : arr;
 }
 
 // Agrupa notas (já ordenadas) por data, para mostrar separadores.

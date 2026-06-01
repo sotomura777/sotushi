@@ -8,6 +8,7 @@ import Tanner from "./Tanner.jsx";
 import { TensaoArterial, Snellen, Fluor, Referenciar } from "./FerramentasExtra";
 import { I, Ico } from "@/components/icones";
 import { EmojiIco, limparEmojis } from "@/components/emoji";
+import { useAtalhosNumericos } from "@/lib/atalhos";
 import "./estilo.css";
 
 const TABS = [["avaliar", "Avaliar"], ["antecipar", "Antecipar"], ["alertas", "Alertas"], ["vacinas", "Vacinas"]];
@@ -58,6 +59,7 @@ export default function SaudeInfantil({ accent = "#ec4899", gradiente, onVoltar 
   const [idade, setIdade] = useState(idades[0]);
   const [tab, setTab] = useState("avaliar");
   const [abertos, setAbertos] = useState({});
+  useAtalhosNumericos(TABS.length, (i) => { setTab(TABS[i][0]); setAbertos({}); });
 
   const grupos = useMemo(() => {
     const g = {};

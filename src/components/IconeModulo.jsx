@@ -11,6 +11,7 @@ const COR = {
   vacinacao: ["#34A7A0", "#2ff0d8"],
   notas: ["#6A7689", "#9fb4ff"],
   "saude-infantil": ["#CE7BA0", "#ff84c4"],
+  "farmacos-gravidez": ["#7C5BD0", "#b07cff"],
 };
 
 // Mosaico de ícone de módulo: glossy (claro) ou neon (escuro), conforme o tema.

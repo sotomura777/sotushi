@@ -2,6 +2,7 @@ import { useState, useMemo, useRef, useEffect } from "react";
 import doses from "@conteudo/calculadoras/doses.json";
 import { calc, r1 } from "./logica";
 import { Ico } from "@/components/icones";
+import { normalizar } from "@/lib/texto";
 import "./estilo.css";
 
 const ENTRIES = doses.esquemas;
@@ -17,8 +18,8 @@ function SearchSelect({ value, onChange, accent }) {
   }, []);
   const filtered = useMemo(() => {
     if (!q.trim()) return ENTRIES;
-    const l = q.toLowerCase();
-    return ENTRIES.filter((e) => e.label.toLowerCase().includes(l) || e.sub.toLowerCase().includes(l) || e.grupo.toLowerCase().includes(l));
+    const l = normalizar(q);
+    return ENTRIES.filter((e) => normalizar(e.label).includes(l) || normalizar(e.sub).includes(l) || normalizar(e.grupo).includes(l));
   }, [q]);
   const groups = useMemo(() => {
     const g = {}; filtered.forEach((e) => { (g[e.grupo] = g[e.grupo] || []).push(e); }); return g;

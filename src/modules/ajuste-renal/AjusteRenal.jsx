@@ -5,6 +5,7 @@ import { getAjuste, getGravidade, getEstadio, getCatCor } from "./logica";
 import { GRAVIDADE } from "@/design/tokens";
 import { Ico } from "@/components/icones";
 import { limparEmojis } from "@/components/emoji";
+import { normalizar } from "@/lib/texto";
 
 const CATEGORIAS = [...new Set(farmacos.map((d) => d.cat))];
 
@@ -21,12 +22,12 @@ export default function AjusteRenal({ accent = "#0f766e", gradiente, onVoltar })
     let r = farmacos;
     if (categoria !== "Todos") r = r.filter((d) => d.cat === categoria);
     if (pesquisa) {
-      const s = pesquisa.toLowerCase();
+      const s = normalizar(pesquisa);
       r = r.filter(
         (d) =>
-          d.name.toLowerCase().includes(s) ||
-          d.sub.toLowerCase().includes(s) ||
-          d.cat.toLowerCase().includes(s)
+          normalizar(d.name).includes(s) ||
+          normalizar(d.sub).includes(s) ||
+          normalizar(d.cat).includes(s)
       );
     }
     if (soComAjuste && tfgNum !== null) {

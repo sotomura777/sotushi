@@ -1,0 +1,26 @@
+{
+  "nome": "Farmacologia na Grávida",
+  "eyebrow": "Guia Farmacológico",
+  "tag": "Medicamentos contraindicados e alternativas seguras",
+  "aviso": "Aplicação informativa e educacional. Não substitui aconselhamento médico. Consulte sempre o seu obstetra.",
+  "rodape": "Fontes: Drugs.com, Briggs — Drugs in Pregnancy & Lactation, INFARMED, FDA, EMA. · 122 medicamentos · Maio 2026 · Consulte sempre o seu médico.",
+  "fdaDescricoes": [
+    { "cat": "A", "desc": "Estudos em humanas não mostram risco." },
+    { "cat": "B", "desc": "Sem evidência de risco em humanos." },
+    { "cat": "C", "desc": "Risco não excluído. Benefício pode justificar." },
+    { "cat": "D", "desc": "Evidência de risco. Usar apenas se benefício superior." },
+    { "cat": "X", "desc": "Contraindicado. Risco supera qualquer benefício." }
+  ],
+  "fdaNota": "A FDA substituiu estas categorias em 2015 pelo sistema PLLR descritivo.",
+  "atalhos": [
+    { "nome": "Drugs.com", "url": "https://www.drugs.com/pregnancy/", "cor": "azul" },
+    { "nome": "Infomed", "url": "https://extranet.infarmed.pt/INFOMED-fo/", "cor": "verde" }
+  ],
+  "recursos": [
+    { "nome": "Drugs.com — Pregnancy", "url": "https://www.drugs.com/pregnancy/", "desc": "Base de dados completa em inglês" },
+    { "nome": "Infomed (INFARMED)", "url": "https://extranet.infarmed.pt/INFOMED-fo/", "desc": "Pesquisa de medicamentos — Portugal" },
+    { "nome": "MotherToBaby", "url": "https://mothertobaby.org/", "desc": "Fichas sobre medicamentos na gravidez" },
+    { "nome": "LactMed (NIH)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/", "desc": "Medicamentos e lactação" },
+    { "nome": "UK Bumps", "url": "https://www.medicinesinpregnancy.org/", "desc": "Serviço de informação do Reino Unido" }
+  ]
+}
