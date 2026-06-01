@@ -1,0 +1,61 @@
+/* ============================================================================
+   icon-tiles.css — mosaicos (tiles) para os ícones modernos.
+   O tratamento troca automaticamente conforme o tema (a app põe .dark na raiz):
+     • claro  → Vidro Glossy Duo   (squircle com gradiente da cor da categoria)
+     • escuro → Contorno Neon       (vidro escuro com anel a brilhar na cor néon)
+
+   USO: <span class="mg-ictile" style="--ac:#8b5cf6"> … glifo … </span>.
+   O glifo deve ser desenhado com currentColor — a cor é controlada por CSS
+   (branco no glossy, cor da categoria no neon).
+   ============================================================================ */
+
+.mg-ictile {
+  width: 42px; height: 42px; border-radius: 13px;
+  position: relative; flex-shrink: 0; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center;
+  /* ---- claro · Vidro Glossy Duo ---- */
+  color: #fff;
+  background: linear-gradient(142deg,
+    color-mix(in srgb, var(--ac) 52%, rgba(255,255,255,.55)) 0%,
+    var(--ac) 56%,
+    color-mix(in srgb, var(--ac) 74%, #7c5cff) 100%);
+  border: 1px solid rgba(255,255,255,.6);
+  box-shadow: 0 6px 14px color-mix(in srgb, var(--ac) 30%, transparent), inset 0 1px 0 rgba(255,255,255,.7);
+}
+.mg-ictile svg { position: relative; z-index: 1; }
+.mg-ictile::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 54%;
+  border-radius: 13px 13px 60% 60% / 13px 13px 20px 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,.6), rgba(255,255,255,.05));
+}
+.mg-ictile svg path,
+.mg-ictile svg rect,
+.mg-ictile svg circle { fill-opacity: .24 !important; }
+
+/* ---- escuro · Contorno Neon ---- */
+.dark .mg-ictile {
+  color: var(--ac);
+  background: rgba(255,255,255,.04);
+  border: 1.5px solid color-mix(in srgb, var(--ac) 65%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--ac) 45%, transparent), inset 0 0 12px color-mix(in srgb, var(--ac) 16%, transparent);
+}
+.dark .mg-ictile::before { display: none; }
+.dark .mg-ictile svg {
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--ac) 80%, transparent))
+          drop-shadow(0 0 7px color-mix(in srgb, var(--ac) 55%, transparent));
+}
+.dark .mg-ictile svg path,
+.dark .mg-ictile svg rect,
+.dark .mg-ictile svg circle { fill: transparent !important; }
+
+/* Tamanhos alternativos (ex.: recentes 38px, hero 48px) */
+.mg-ictile--sm { width: 38px; height: 38px; border-radius: 12px; }
+.mg-ictile--lg { width: 48px; height: 48px; border-radius: 15px; }
+
+/* ============================================================================
+   PALETA POR CATEGORIA (passar em --ac):
+   ajuste-renal #2E9E8F/#2af5c0 · atb-ambulatorio #C58A3D/#ffc24d ·
+   urgencia #DB6A5B/#ff5c7a · cronicas #4E7CA8/#4db5ff · analises #8674C9/#b07cff ·
+   calculadoras #3FA178/#3df59a · vacinacao #34A7A0/#2ff0d8 · notas #6A7689/#9fb4ff ·
+   saude-infantil #CE7BA0/#ff84c4 (claro/neon).
+   ============================================================================ */

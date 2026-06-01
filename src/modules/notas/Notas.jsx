@@ -2,11 +2,40 @@ import { useState, useMemo, useEffect } from "react";
 import config from "@conteudo/notas/config.json";
 import {
   paraIniciais, uid, hojeISO, fmtData, fmtRelativo,
-  temSequenciaNumerica, criarNota, ordenarNotas, agruparPorData,
+  temSequenciaNumerica, limitarDigitos, criarNota, ordenarNotas, agruparPorData,
 } from "./logica";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
+import { toast } from "@/lib/toast";
 import "./estilo.css";
+
+// Limita a 4 algarismos seguidos (evita nº de processo/identificadores) e avisa,
+// com throttle para não encher de toasts.
+let ultimoAvisoNum = 0;
+function avisarNum() {
+  const t = Date.now();
+  if (t - ultimoAvisoNum > 2500) {
+    ultimoAvisoNum = t;
+    toast("Máx. 4 algarismos seguidos — não inserir nº de processo nem identificadores do doente.");
+  }
+}
+// Bloqueia o 5.º algarismo seguido ANTES de entrar (não mexe no valor → o cursor
+// não salta). Usar em onBeforeInput.
+function bloquearDigito(e) {
+  const data = e.data;
+  if (!data || !/\d/.test(data)) return;
+  const el = e.target;
+  const start = el.selectionStart ?? el.value.length;
+  const end = el.selectionEnd ?? start;
+  const novo = el.value.slice(0, start) + data + el.value.slice(end);
+  if (/\d{5,}/.test(novo)) { e.preventDefault(); avisarNum(); }
+}
+// Rede de segurança no onChange (ex.: colar) — capa e avisa.
+function entradaSegura(texto) {
+  const { texto: limpo, cortou } = limitarDigitos(texto);
+  if (cortou) avisarNum();
+  return limpo;
+}
 
 const TABS_DEFAULT = config.separadores_padrao;
 const CORES = config.cores;
@@ -61,7 +90,8 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
         className="nt-textarea"
         value={nota.texto}
         placeholder="Escrever…"
-        onChange={(e) => onUpdate({ ...nota, texto: e.target.value, atualizadoEm: agora() })}
+        onBeforeInput={bloquearDigito}
+        onChange={(e) => onUpdate({ ...nota, texto: entradaSegura(e.target.value), atualizadoEm: agora() })}
         rows={Math.max(5, (nota.texto || "").split("\n").length + 1)}
       />
     </div>
@@ -96,7 +126,7 @@ function PainelTarefas({ itens = [], onChange, accent }) {
             </div>
           ))}
           <div className="nt-todo-add">
-            <input className="campo" placeholder="Nova tarefa…" value={txt} onChange={(e) => setTxt(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} />
+            <input className="campo" placeholder="Nova tarefa…" value={txt} onBeforeInput={bloquearDigito} onChange={(e) => setTxt(entradaSegura(e.target.value))} onKeyDown={(e) => e.key === "Enter" && add()} />
             <button className="nt-acao" style={{ borderColor: accent, color: accent }} onClick={add}>+ Tarefa</button>
           </div>
         </div>
@@ -178,9 +208,9 @@ function FormDoente({ inicial, onGuardar, onCancelar, accent }) {
         </>
       )}
       <div className="secao-label">Alergias <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(opcional)</span></div>
-      <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: Penicilina (rash)" value={alergias} onChange={(e) => setAlergias(e.target.value)} />
+      <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: Penicilina (rash)" value={alergias} onBeforeInput={bloquearDigito} onChange={(e) => setAlergias(entradaSegura(e.target.value))} />
       <div className="secao-label">Nota de apoio <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(opcional, aparece a roxo)</span></div>
-      <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: aguarda TAC" value={apoio} onChange={(e) => setApoio(e.target.value)} />
+      <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: aguarda TAC" value={apoio} onBeforeInput={bloquearDigito} onChange={(e) => setApoio(entradaSegura(e.target.value))} />
       <div style={{ display: "flex", gap: 8 }}>
         <button className="nt-nova" style={{ background: accent, flex: 1 }} onClick={guardar} disabled={!podeGuardar}>{editar ? "Guardar alterações" : "+ Adicionar doente"}</button>
         <button className="nt-acao" onClick={onCancelar}>Cancelar</button>
@@ -415,7 +445,8 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
             className="nt-apoio-input"
             placeholder="Nota de apoio (aparece no card)…"
             value={sel.apoio || ""}
-            onChange={(e) => patch(sel.id, (d) => ({ ...d, apoio: e.target.value }))}
+            onBeforeInput={bloquearDigito}
+            onChange={(e) => patch(sel.id, (d) => ({ ...d, apoio: entradaSegura(e.target.value) }))}
           />
         </div>
 

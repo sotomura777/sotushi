@@ -95,9 +95,9 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
           <button className={modo === "analises" ? "on" : ""} onClick={() => setModo("analises")}>Parâmetros</button>
           <button className={modo === "completas" ? "on" : ""} onClick={() => setModo("completas")}>Completas</button>
           <button className={modo === "historico" ? "on" : ""} onClick={() => setModo("historico")}>Histórico</button>
+          <button className={modo === "gsa" ? "on" : ""} onClick={() => setModo("gsa")}>GSA</button>
           <button className={modo === "cards" ? "on" : ""} onClick={() => setModo("cards")}>Cards</button>
           <button className={modo === "biblio" ? "on" : ""} onClick={() => setModo("biblio")}>Biblio</button>
-          <button className={modo === "gsa" ? "on" : ""} onClick={() => setModo("gsa")}>GSA</button>
         </div>
 
         {modo === "completas" ? (

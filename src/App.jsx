@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MODULOS } from "./modules/registo";
-import { I, ICONE_MODULO } from "./components/icones";
+import { I } from "./components/icones";
+import IconeModulo from "./components/IconeModulo.jsx";
 import { useEstadoLocal } from "./lib/persistencia";
 import Toaster from "./components/Toaster.jsx";
 
@@ -20,8 +21,8 @@ export default function App() {
 
   // Cores literais (hex) para ícones SVG e estilos que dependem do tema.
   const tema = dark
-    ? { tx: "#f0f2f5", tx2: "#8a92a6", sf2: "#222630", bd: "#2a2f3d", ac: "#2d8a4e" }
-    : { tx: "#1c1917", tx2: "#78716c", sf2: "#eeeee8", bd: "#e2e0db", ac: "#2d8a4e" };
+    ? { tx: "#f0f2f5", tx2: "#8a92a6", sf2: "#222630", bd: "#2a2f3d", ac: "#a78bfa" }
+    : { tx: "#1c1917", tx2: "#78716c", sf2: "#eeeee8", bd: "#e2e0db", ac: "#8b5cf6" };
 
   const moduloAberto = abertoId ? MODULOS.find((m) => m.id === abertoId) : null;
 
@@ -34,7 +35,6 @@ export default function App() {
 
   // Cartão de ferramenta (home e procura)
   function cartaoFerramenta(m, mostrarDesc) {
-    const icone = ICONE_MODULO[m.id];
     return (
       <button
         key={m.id}
@@ -43,7 +43,7 @@ export default function App() {
         onClick={() => abrir(m)}
         disabled={!m.pronto}
       >
-        {icone && icone(dark ? tema.tx : m.accent, 18)}
+        <IconeModulo id={m.id} dark={dark} />
         <div>
           <div className="ferramenta-nome" style={{ color: dark ? tema.tx : m.accent }}>
             {m.nome}
@@ -86,12 +86,9 @@ export default function App() {
           recentes.map((id) => {
             const m = MODULOS.find((x) => x.id === id);
             if (!m) return null;
-            const icone = ICONE_MODULO[m.id];
             return (
               <button key={id} className="recente" onClick={() => abrir(m)}>
-                <div className="recente-icone" style={{ background: dark ? tema.sf2 : m.bg }}>
-                  {icone && icone(dark ? tema.tx : m.accent, 16)}
-                </div>
+                <IconeModulo id={m.id} dark={dark} size="sm" />
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div className="recente-nome">{m.nome}</div>
                   <div className="recente-sub">{m.descricao}</div>

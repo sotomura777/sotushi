@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import meta from "@conteudo/analises/meta.json";
 import flashcards from "@conteudo/analises/flashcards.json";
 import { getCorCat } from "./logica";
@@ -24,6 +24,13 @@ export default function Cards({ accent }) {
   const filtrados = cards.filter((c) => (!soFav || c.fav) && (cat === "all" || c.cat === cat));
 
   const flip = (id) => setFlipped((f) => ({ ...f, [id]: !f[id] }));
+  // Duplo toque (rato ou touch): só vira com dois toques rápidos (<350ms).
+  const ultimoToque = useRef({});
+  const tocar = (id) => {
+    const agora = Date.now();
+    if (agora - (ultimoToque.current[id] || 0) < 350) { flip(id); ultimoToque.current[id] = 0; }
+    else ultimoToque.current[id] = agora;
+  };
   const togFav = (id) => {
     const c = cards.find((x) => x.id === id);
     setCards((cs) => cs.map((x) => (x.id === id ? { ...x, fav: !x.fav } : x)));
@@ -59,7 +66,7 @@ export default function Cards({ accent }) {
 
       <div className="an-cards-grid">
         {filtrados.map((c) => (
-          <div key={c.id} className="an-card3d" onClick={() => flip(c.id)}>
+          <div key={c.id} className="an-card3d" onClick={() => tocar(c.id)}>
             <div className={"an-card3d-in" + (flipped[c.id] ? " flip" : "")}>
               <div className="an-card3d-face">
                 <div className="an-card3d-head">
@@ -72,12 +79,12 @@ export default function Cards({ accent }) {
                 </div>
                 <div className="an-card3d-titulo">{c.front}</div>
                 <div className="an-card3d-desc">{c.desc}</div>
-                <div className="an-card3d-foot">↻ virar</div>
+                <div className="an-card3d-foot">↻ duplo toque p/ virar</div>
               </div>
               <div className="an-card3d-face back">
                 <div className="an-card3d-bt">{c.back_title}</div>
                 <div className="an-card3d-desc">{c.back}</div>
-                <div className="an-card3d-foot">↻ virar</div>
+                <div className="an-card3d-foot">↻ duplo toque p/ virar</div>
               </div>
             </div>
           </div>

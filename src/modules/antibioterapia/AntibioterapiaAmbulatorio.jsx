@@ -4,6 +4,7 @@ import dados from "@conteudo/antibioterapia/dados.json";
 import { corEspecialidade, estiloViralNote, etiquetasObs, getDicas } from "./logica";
 import { I, Ico } from "@/components/icones";
 import { EmojiIco, limparEmojis } from "@/components/emoji";
+import CalculadoraPopup from "./CalculadoraPopup.jsx";
 import "./estilo.css";
 
 const PASSOS = ["Especialidade", "Patologia", "Tratamento"];
@@ -90,7 +91,7 @@ export default function AntibioterapiaAmbulatorio({ accent = "#b45309", gradient
             <div className="atb-esp-grelha">
               {Object.entries(dados).map(([key, sp]) => (
                 <button key={key} className="atb-esp-btn" style={{ "--c": corEspecialidade(sp) }} onClick={() => abrirEspecialidade(key)}>
-                  <span className="atb-esp-icon"><EmojiIco e={sp.icon} c={corEspecialidade(sp)} s={22} /></span>
+                  <span className="atb-esp-icon mg-ictile" style={{ "--ac": corEspecialidade(sp) }}><EmojiIco e={sp.icon} c="currentColor" s={22} /></span>
                   <span className="atb-esp-nome">{sp.full}</span>
                   <span className="atb-esp-desc">{sp.desc}</span>
                   <span className="atb-esp-tag">{sp.label}</span>
@@ -100,6 +101,7 @@ export default function AntibioterapiaAmbulatorio({ accent = "#b45309", gradient
           </div>
           <div className="rodape">{meta.rodape}</div>
         </div>
+        <CalculadoraPopup />
       </div>
     );
   }
@@ -128,6 +130,7 @@ export default function AntibioterapiaAmbulatorio({ accent = "#b45309", gradient
           </div>
           <div className="rodape">{meta.rodape}</div>
         </div>
+        <CalculadoraPopup />
       </div>
     );
   }
@@ -288,6 +291,7 @@ export default function AntibioterapiaAmbulatorio({ accent = "#b45309", gradient
 
         <div className="rodape" style={{ marginTop: 16 }}>{meta.rodape}</div>
       </div>
+      <CalculadoraPopup />
     </div>
   );
 }

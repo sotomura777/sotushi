@@ -14,11 +14,24 @@ export default function Gsa() {
   const [valores, setValores] = useState({});
   const [resultado, setResultado] = useState(null);
   const [copiado, setCopiado] = useState(false);
+  const [texto, setTexto] = useState("");
+  const [textoBase, setTextoBase] = useState("");
 
   const { campos, referencias, textos } = gsaConteudo;
   const fields = tab === "comp" ? campos.rapida.concat(campos.extra) : campos.rapida;
 
   const setVal = (id, v) => setValores((p) => ({ ...p, [id]: v }));
+
+  function montarTexto(supLabel) {
+    const partes = [];
+    fields.forEach((f) => {
+      const raw = valores[f.id];
+      if (raw !== "" && raw != null) partes.push(f.nm + " " + raw + (f.un ? " " + f.un : ""));
+    });
+    const d = new Date();
+    const dd = String(d.getDate()).padStart(2, "0"), mm = String(d.getMonth() + 1).padStart(2, "0");
+    return "GSA " + (supLabel || "AA") + " (" + dd + "/" + mm + "): " + partes.join(", ");
+  }
 
   function interpretar() {
     const v = {};
@@ -28,28 +41,23 @@ export default function Gsa() {
       if (n != null && !Number.isNaN(n)) v[f.var] = n;
     });
     const opts = { idade: parseInt(idade, 10) || 50, suporte, o2l, fio2pct };
-    setResultado(interpretarGSA(v, opts, referencias, textos));
+    const res = interpretarGSA(v, opts, referencias, textos);
+    setResultado(res);
+    if (res && !res.erro) { const t = montarTexto(res.supLabel); setTexto(t); setTextoBase(t); }
     setCopiado(false);
   }
 
   function limpar() {
     setValores({});
     setResultado(null);
+    setTexto("");
+    setTextoBase("");
     setCopiado(false);
   }
 
   function copiar() {
-    const partes = [];
-    fields.forEach((f) => {
-      const raw = valores[f.id];
-      if (raw !== "" && raw != null) partes.push(f.nm + " " + raw + (f.un ? " " + f.un : ""));
-    });
-    if (!partes.length) return;
-    const sup = resultado?.supLabel || "AA";
-    const d = new Date();
-    const dd = String(d.getDate()).padStart(2, "0"), mm = String(d.getMonth() + 1).padStart(2, "0");
-    const txt = "GSA " + sup + " (" + dd + "/" + mm + "): " + partes.join(", ");
-    navigator.clipboard?.writeText(txt).then(() => { setCopiado(true); setTimeout(() => setCopiado(false), 1500); });
+    if (!texto) return;
+    navigator.clipboard?.writeText(texto).then(() => { setCopiado(true); setTimeout(() => setCopiado(false), 1500); });
   }
 
   const valido = resultado && !resultado.erro;
@@ -123,7 +131,16 @@ export default function Gsa() {
             </div>
           ))}
 
-          <button className="filtro" style={{ padding: "9px 16px", marginTop: 2 }} onClick={copiar}>{copiado ? <><Ico name="check" s={12} style={{ marginRight: 3 }} />Copiado</> : "Copiar texto"}</button>
+          <div className="an-resumo-box" style={{ marginTop: 4 }}>
+            <div className="an-resumo-head">
+              <span className="an-ctx-l">Texto</span>
+              <div style={{ display: "flex", gap: 6 }}>
+                <button className="an-btn" onClick={copiar}>{copiado ? "Copiado!" : "Copiar"}</button>
+                <button className="an-btn" onClick={() => setTexto(textoBase)}>Repor</button>
+              </div>
+            </div>
+            <textarea className="an-resumo-txt" value={texto} onChange={(e) => setTexto(e.target.value)} rows={Math.max(2, Math.ceil((texto.length || 1) / 50))} />
+          </div>
 
           <details style={{ marginTop: 14 }}>
             <summary style={{ fontSize: 13, color: "var(--acento)", cursor: "pointer", fontWeight: 600 }}>Ainda com dúvidas? Como ler uma gasimetria</summary>

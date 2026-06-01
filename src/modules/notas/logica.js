@@ -48,6 +48,14 @@ export function fmtRelativo(iso) {
 export function temSequenciaNumerica(texto) {
   return /\d{5,}/.test(texto || "");
 }
+
+// Limita corridas de algarismos a `max` (impede nº de processo/identificadores).
+// Devolve { texto, cortou } — `cortou` indica se houve algum corte (para avisar).
+export function limitarDigitos(texto, max = 4) {
+  const t = texto || "";
+  const limpo = t.replace(new RegExp(`\\d{${max + 1},}`, "g"), (m) => m.slice(0, max));
+  return { texto: limpo, cortou: limpo !== t };
+}
 export function ocultarSequencias(texto) {
   return (texto || "").replace(/\d{5,}/g, "[REMOVIDO]");
 }

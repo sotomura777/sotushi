@@ -221,7 +221,7 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
     <div style={{ "--acento": accent }}>
       {hero}
       <div className="modulo-corpo">
-        <input className="campo" style={{ width: "100%", marginBottom: 12 }} placeholder="Pesquisar nesta secção…" value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input className="campo" style={{ width: "100%", marginBottom: 12 }} placeholder="Pesquisar por vacina, idade ou doença (ex.: hexavalente, sarampo)…" value={query} onChange={(e) => setQuery(e.target.value)} />
         <div className="vac" ref={ref} dangerouslySetInnerHTML={{ __html: htmlAtual }} />
       </div>
 

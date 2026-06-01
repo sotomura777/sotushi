@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import DB from "@conteudo/saude-infantil/consultas.json";
 import DETAIL from "@conteudo/saude-infantil/detalhes.json";
 import mchat from "@conteudo/saude-infantil/mchat.json";
-import { FASES, CORES_ITEM, ALERTA_INFO, corUrgencia, calcularMCHAT } from "./logica";
+import { FASES, ALERTA_INFO, corUrgencia, calcularMCHAT } from "./logica";
 import Crescimento from "./Crescimento.jsx";
 import Tanner from "./Tanner.jsx";
 import { TensaoArterial, Snellen, Fluor, Referenciar } from "./FerramentasExtra";
@@ -16,6 +16,8 @@ const FERRAMENTAS = [
   ["mchat", "M-CHAT"], ["ta", "T. Arterial"], ["snellen", "Snellen"], ["fluor", "Flúor"], ["referenciar", "Referenciar"],
 ];
 const ICO_FASE = { bebe: "baby", crian: "child", jov: "youth" };
+// Versão saturada das cores dos itens (os CORES_ITEM são pastéis; no mosaico glossy/neon precisam de cor cheia)
+const COR_CHIP = { sky: "#0ea5e9", lav: "#8b5cf6", mint: "#10b981", peach: "#f97316", sun: "#f59e0b", rose: "#f43f5e" };
 const ICO_ALERTA = { red: "siren", orange: "warn", green: "checkCircle" };
 
 function LinhaDetalhe({ rotulo, children }) {
@@ -119,7 +121,7 @@ export default function SaudeInfantil({ accent = "#ec4899", gradiente, onVoltar 
                 const det = DETAIL[idade]?.[tab]?.[i]; const k = tab + i;
                 return (
                   <div key={i} className="si-item" onClick={() => det && toggle(k)}>
-                    <span className="si-ico" style={{ background: CORES_ITEM[it[1]] || "var(--superficie-2)" }}><EmojiIco e={it[0]} s={16} /></span>
+                    <span className="si-ico mg-ictile mg-ictile--sm" style={{ "--ac": COR_CHIP[it[1]] || "#8b5cf6" }}><EmojiIco e={it[0]} c="currentColor" s={18} /></span>
                     <div style={{ flex: 1 }}>
                       <strong>{limparEmojis(it[2])}</strong><span className="si-sub">{limparEmojis(it[3])}</span>
                       {det && abertos[k] && <div className="si-acc"><Detalhe det={det} tab={tab} /></div>}
@@ -151,7 +153,7 @@ export default function SaudeInfantil({ accent = "#ec4899", gradiente, onVoltar 
                     const det = DETAIL[idade]?.vacinas?.[i]; const k = "vac" + i;
                     return (
                       <div key={i} className="si-item" onClick={() => det && toggle(k)}>
-                        <span className="si-ico" style={{ background: "#fce7f3" }}>{I.syringe("#be185d", 16)}</span>
+                        <span className="si-ico mg-ictile mg-ictile--sm" style={{ "--ac": "#be185d" }}>{I.syringe("currentColor", 18)}</span>
                         <div style={{ flex: 1 }}><strong>{it[0]}</strong><span className="si-sub">{it[1]} · PNV</span>{det && abertos[k] && <div className="si-acc"><Detalhe det={det} tab="vacinas" /></div>}</div>
                         {det && <span className="si-arrow">{abertos[k] ? "▲" : "▼"}</span>}
                       </div>

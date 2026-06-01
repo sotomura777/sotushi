@@ -1,3 +1,7 @@
+/* A caixa de pesquisa que vem dentro do HTML do conteúdo não está ligada a nada
+   (o JS original não corre); usamos a pesquisa React por cima. Esconder a morta. */
+.vac .search-wrap { display: none !important; }
+
 /* ============================================================
    MENU INICIAL (cartões de vidro clicáveis)
    ============================================================ */
