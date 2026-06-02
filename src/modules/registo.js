@@ -96,7 +96,7 @@ export const MODULOS = [
   {
     id: "notas",
     nome: "Notas Clínicas",
-    descricao: "Doentes (só iniciais), notas e templates",
+    descricao: "Casos (só iniciais), notas e templates",
     accent: "#475569",
     bg: "#f1f5f9",
     gradiente: "linear-gradient(135deg,#64748b 0%,#475569 55%,#334155 100%)",

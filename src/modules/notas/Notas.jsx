@@ -18,7 +18,7 @@ function avisarNum() {
   const t = Date.now();
   if (t - ultimoAvisoNum > 2500) {
     ultimoAvisoNum = t;
-    toast("Máx. 4 algarismos seguidos — não inserir nº de processo nem identificadores do doente.");
+    toast("Máx. 4 algarismos seguidos — não inserir nº de processo nem identificadores do caso.");
   }
 }
 // Bloqueia o 5.º algarismo seguido ANTES de entrar (não mexe no valor → o cursor
@@ -68,7 +68,7 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
     const { texto: limpo, mascarou } = mascararIdentificadores(nota.texto || "");
     if (mascarou) {
       onUpdate({ ...nota, texto: limpo, atualizadoEm: agora() });
-      toast("Removemos o que parecia um número de identificação — esta é uma ferramenta de estudo, não incluas dados que identifiquem doentes.");
+      toast("Removemos o que parecia um número de identificação — esta é uma ferramenta de estudo, não incluas dados que identifiquem pessoas.");
     }
   };
   return (
@@ -96,7 +96,7 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
         {!rosa && !antigo && onCopiar && <button className="nt-nota-acao" onClick={onCopiar}>Copiar</button>}
         <button className="nt-nota-acao" onClick={onApagar} aria-label="Apagar nota">{I.close("currentColor", 13)}</button>
       </div>
-      {aviso && <div className="nt-aviso-num"><Ico name="warn" s={12} /> Sequência numérica detetada — não inserir identificadores de doente.</div>}
+      {aviso && <div className="nt-aviso-num"><Ico name="warn" s={12} /> Sequência numérica detetada — não inserir identificadores reais.</div>}
       <textarea
         className="nt-textarea"
         value={nota.texto}
@@ -201,9 +201,9 @@ function FormDoente({ inicial, onGuardar, onCancelar, accent }) {
   };
   return (
     <div className="cartao" style={{ padding: 14, marginBottom: 14 }}>
-      <div className="secao-label" style={{ fontSize: 13, fontWeight: 700, textTransform: "none", marginBottom: 10 }}>{editar ? "Editar doente" : "Novo doente"}</div>
+      <div className="secao-label" style={{ fontSize: 13, fontWeight: 700, textTransform: "none", marginBottom: 10 }}>{editar ? "Editar caso" : "Novo caso"}</div>
       <div className="secao-label">Nome <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(convertido em iniciais)</span></div>
-      <input className="campo" style={{ marginBottom: 6 }} placeholder={editar ? `Novo nome (atual: ${inicial.iniciais})` : "Nome do doente"} value={nome} onChange={(e) => setNome(e.target.value)} />
+      <input className="campo" style={{ marginBottom: 6 }} placeholder={editar ? `Novo nome (atual: ${inicial.iniciais})` : "Nome do caso"} value={nome} onChange={(e) => setNome(e.target.value)} />
       {(nome || editar) && <div style={{ fontSize: 12, color: "var(--suave)", marginBottom: 10 }}>Guardado como: <strong style={{ color: accent }}>{iniciaisPrev || "—"}</strong></div>}
       <div className="secao-label">Especialidade</div>
       <select className="campo" style={{ marginBottom: 10 }} value={esp} onChange={(e) => setEsp(e.target.value)}>
@@ -224,7 +224,7 @@ function FormDoente({ inicial, onGuardar, onCancelar, accent }) {
       <div className="secao-label">Nota de apoio <span style={{ fontWeight: 400, textTransform: "none", color: "var(--tenue)" }}>(opcional, aparece a roxo)</span></div>
       <input className="campo" style={{ marginBottom: 10 }} placeholder="Ex.: aguarda TAC" value={apoio} onBeforeInput={bloquearDigito} onChange={(e) => setApoio(entradaSegura(e.target.value))} />
       <div style={{ display: "flex", gap: 8 }}>
-        <button className="nt-nova" style={{ background: accent, flex: 1 }} onClick={guardar} disabled={!podeGuardar}>{editar ? "Guardar alterações" : "+ Adicionar doente"}</button>
+        <button className="nt-nova" style={{ background: accent, flex: 1 }} onClick={guardar} disabled={!podeGuardar}>{editar ? "Guardar alterações" : "+ Adicionar caso"}</button>
         <button className="nt-acao" onClick={onCancelar}>Cancelar</button>
       </div>
     </div>
@@ -412,7 +412,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
 
   const aviso = (
     <div className="nt-aviso">
-      <Ico name="lock" s={13} /> <strong>Guardado só neste dispositivo</strong> (sem cloud, sem conta). Insere <strong>apenas iniciais</strong>; o nome é convertido automaticamente e nunca é guardado. Não inserir dados reais de doentes.
+      <Ico name="lock" s={13} /> <strong>Guardado só neste dispositivo</strong> (sem cloud, sem conta). Insere <strong>apenas iniciais</strong>; o nome é convertido automaticamente e nunca é guardado. Não inserir dados que identifiquem pessoas reais.
     </div>
   );
 
@@ -421,7 +421,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
       <div className="hero-conteudo">
         <button className="voltar" onClick={onVoltar}>← Início</button>
         <div className="hero-titulo">Notas Clínicas</div>
-        <div className="hero-subtitulo">Lista de doentes · só iniciais</div>
+        <div className="hero-subtitulo">Lista de casos · só iniciais</div>
       </div>
     </header>
   );
@@ -447,7 +447,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
           <button className="nt-btn" onClick={() => { setAdicionar(false); setEditId(sel.id); }}>Editar</button>
           <button className="nt-btn" onClick={() => setVisto(sel.id)}>{sel.observado === true ? "Reativar" : "Visto"}</button>
           <button className="nt-btn" onClick={() => setAlta(sel.id)}>{sel.observado === "alta" ? "Reativar" : "Alta"}</button>
-          <button className="nt-btn nt-btn--danger" title="Apagar doente" aria-label="Apagar doente" onClick={() => apagarDoente(sel.id)}>{I.trash("currentColor", 14)}</button>
+          <button className="nt-btn nt-btn--danger" title="Apagar caso" aria-label="Apagar caso" onClick={() => apagarDoente(sel.id)}>{I.trash("currentColor", 14)}</button>
         </div>
         {sel.alergias && <div className="nt-linha-mini" style={{ color: "#E8735A", marginBottom: 10 }}><span className="nt-mini-dot" style={{ background: "#E8735A" }} />Alergias: {sel.alergias}</div>}
 
@@ -506,7 +506,7 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
     <>
       {aviso}
       <div className="nt-topo">
-        <div><div className="nt-h1">Doentes</div><div className="nt-count">{ativosAll.length} ativo{ativosAll.length !== 1 ? "s" : ""}</div></div>
+        <div><div className="nt-h1">Casos</div><div className="nt-count">{ativosAll.length} ativo{ativosAll.length !== 1 ? "s" : ""}</div></div>
         <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
           <button className="nt-btn" onClick={() => setGerir(true)}>Templates</button>
           <button className="nt-nova" style={{ background: accent, width: "auto", padding: "9px 16px" }} onClick={() => { setEditId(null); setAdicionar((v) => !v); }}>+ Adicionar</button>
@@ -516,8 +516,8 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
       <input className="campo" style={{ marginBottom: 12 }} placeholder="Pesquisar por iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />
       {gestorModal}
       {formAtual}
-      {doentes.length === 0 && !adicionar && <div className="nt-vazio">Sem doentes. Clica em “+ Adicionar”.</div>}
-      {doentes.length > 0 && pool.length === 0 && <div className="nt-vazio">Nenhum doente neste filtro.</div>}
+      {doentes.length === 0 && !adicionar && <div className="nt-vazio">Sem casos. Clica em “+ Adicionar”.</div>}
+      {doentes.length > 0 && pool.length === 0 && <div className="nt-vazio">Nenhum caso neste filtro.</div>}
       {grupos2(false)}
       <div className="rodape">
         <strong>Nota:</strong> Separadores e templates vêm do teu ficheiro de conteúdo. Sincronização chega a seguir.
@@ -529,13 +529,13 @@ export default function Notas({ accent = "#475569", gradiente, onVoltar }) {
   const sidebar = (
     <>
       <div className="nt-topo" style={{ marginBottom: 10 }}>
-        <div><div className="nt-h1" style={{ fontSize: 17 }}>Doentes</div><div className="nt-count">{ativosAll.length} ativo{ativosAll.length !== 1 ? "s" : ""}</div></div>
+        <div><div className="nt-h1" style={{ fontSize: 17 }}>Casos</div><div className="nt-count">{ativosAll.length} ativo{ativosAll.length !== 1 ? "s" : ""}</div></div>
         <button className="nt-nova" style={{ background: accent, width: "auto", padding: "7px 13px" }} onClick={() => { voltar(); setAdicionar(true); }}>+ Novo</button>
       </div>
       {filtroTabs}
       <input className="campo" style={{ marginBottom: 10 }} placeholder="Iniciais…" value={busca} onChange={(e) => setBusca(e.target.value)} />
-      {doentes.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Sem doentes.</div>}
-      {doentes.length > 0 && pool.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Nenhum doente neste filtro.</div>}
+      {doentes.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Sem casos.</div>}
+      {doentes.length > 0 && pool.length === 0 && <div className="nt-vazio" style={{ padding: 16 }}>Nenhum caso neste filtro.</div>}
       {grupos2(true)}
       <button className="nt-btn" style={{ textAlign: "center", width: "100%", marginTop: 12 }} onClick={() => setGerir(true)}>Templates</button>
     </>
