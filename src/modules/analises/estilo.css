@@ -182,6 +182,7 @@
 .an-pick-item.on { background: var(--acento); color: #fff; border-color: transparent; }
 
 /* ── Histórico ──────────────────────────────────────────────────────────── */
+.an-hist-enquadra { font-size: 12.5px; line-height: 1.45; color: var(--suave); margin-bottom: 12px; }
 .an-hist-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
 .an-hist-card { position: relative; cursor: pointer; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: var(--sombra-sm); padding: 12px 13px; transition: transform .12s, box-shadow .12s; }
 .an-hist-card:hover { transform: translateY(-2px); box-shadow: var(--sombra-md); }

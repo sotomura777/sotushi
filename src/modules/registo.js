@@ -56,7 +56,7 @@ export const MODULOS = [
   {
     id: "cronicas",
     nome: "Patologias",
-    descricao: "Guias clínicos de patologias",
+    descricao: "Guias de estudo por patologia",
     accent: "#0b6e7f",
     bg: "#eef8fa",
     gradiente: "linear-gradient(135deg,#3DB5B5 0%,#0B6E7F 55%,#0A4D6B 100%)",

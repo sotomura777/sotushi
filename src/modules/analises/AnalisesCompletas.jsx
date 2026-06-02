@@ -102,7 +102,7 @@ export default function AnalisesCompletas({ sexo, setSexo, uRefs, accent, onGuar
               {resultado.alterados.map((a) => (<div key={a.id} className="an-pad-card alt"><div className="an-pad-card-nm">{a.etiqueta}</div><div className="an-pad-card-txt">{a.txt}</div></div>))}
             </>)}
             {resultado.padroes.length > 0 && (<>
-              <div className="an-pad-titulo" style={{ color: accent, marginTop: resultado.alterados.length ? 12 : 0 }}>Padrões reconhecidos</div>
+              <div className="an-pad-titulo" style={{ color: accent, marginTop: resultado.alterados.length ? 12 : 0 }}>Padrões compatíveis (para discussão)</div>
               {resultado.padroes.map((pad) => (
                 <div key={pad.id} className="an-pad-card">
                   <div className="an-pad-card-top"><div className="an-pad-card-nm">{pad.nm}</div>

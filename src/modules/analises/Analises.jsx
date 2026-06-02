@@ -191,7 +191,7 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
                 )}
                 {padroesEncontrados.length > 0 && (
                   <>
-                    <div className="an-pad-titulo" style={{ color: accent, marginTop: alterados.length ? 12 : 0 }}>Padrões reconhecidos</div>
+                    <div className="an-pad-titulo" style={{ color: accent, marginTop: alterados.length ? 12 : 0 }}>Padrões compatíveis (para discussão)</div>
                     {padroesEncontrados.map((pad) => {
                       const url = construirQueryPesquisa(pad.nm, slotIds, slots, parametros, sexo, uRefs);
                       return (

@@ -1,5 +1,14 @@
 /* Urgência — índice. Usa os tokens partilhados. */
 
+.ug-banner-estudo {
+  display: flex; align-items: flex-start; gap: 10px; padding: 11px 14px; margin-bottom: 14px;
+  border: 1px solid color-mix(in srgb, var(--acento) 24%, transparent); border-radius: var(--raio-md);
+  background: color-mix(in srgb, var(--acento) 9%, transparent);
+  font-size: 12.5px; line-height: 1.45; color: var(--suave);
+}
+.ug-banner-estudo svg { flex-shrink: 0; margin-top: 1px; color: var(--acento); }
+.ug-banner-estudo strong { color: var(--texto); }
+
 .ug-letra { font-size: 11px; font-weight: 700; color: var(--tenue); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 6px 2px; }
 .ug-grid { display: flex; flex-direction: column; gap: 8px; }
 .ug-card {
@@ -317,6 +326,9 @@
 .oba-dxcard-n { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; flex-shrink: 0; }
 .oba-dxcard-t { font-family: var(--fonte-display); font-size: 19px; color: var(--texto); line-height: 1.2; }
 .oba-dxcard-st { font-size: 11px; color: var(--suave); text-transform: uppercase; letter-spacing: .05em; }
+.oba-dxcard-titulo { font-family: var(--fonte-display); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--suave); margin-bottom: 8px; }
+.oba-dxcard-lead { font-size: 13px; color: var(--suave); margin-bottom: 10px; }
+.oba-exame-lead { font-size: 12.5px; line-height: 1.4; color: var(--suave); margin-bottom: 8px; }
 .oba-dxinfo { font-size: 13px; line-height: 1.6; color: var(--suave); }
 .oba-rtag { padding: 4px 10px; border-radius: var(--raio-pill); font-size: 12px; }
 .oba-plano { background: var(--superficie-2); border-radius: 10px; padding: 14px; font-size: 13px; line-height: 1.7; color: var(--texto-2); }
@@ -363,6 +375,7 @@
 .oba-nota-panel { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-lg); padding: 14px; box-shadow: var(--sombra-sm), var(--brilho); display: flex; flex-direction: column; }
 .oba-nota-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
 .oba-nota-titulo { font-family: var(--fonte-display); font-size: 16px; color: var(--texto); }
+.oba-nota-enquadra { font-size: 12.5px; line-height: 1.45; color: var(--suave); margin-bottom: 10px; }
 .oba-nota-x { background: none; border: none; font-size: 17px; color: var(--suave); cursor: pointer; line-height: 1; }
 .oba-nota-acts { display: flex; gap: 8px; margin-top: 10px; }
 .oba-novo { width: 100%; margin-top: 8px; color: var(--acento); font-weight: 600; }

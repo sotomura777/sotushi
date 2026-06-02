@@ -120,6 +120,8 @@
 .df-aviso { padding: 13px 16px; border-radius: 10px; margin-bottom: 14px; font-size: 13px; color: var(--texto); line-height: 1.6; }
 .df-aviso.azul { background: color-mix(in srgb, #2E6BC4 8%, transparent); border: 1px solid color-mix(in srgb, #2E6BC4 25%, transparent); }
 .df-aviso.iron { background: color-mix(in srgb, #9E6B3A 9%, transparent); border: 1px solid color-mix(in srgb, #9E6B3A 28%, transparent); }
+.df-aviso-estudo { display: flex; align-items: flex-start; gap: 9px; }
+.df-aviso-estudo svg { flex-shrink: 0; margin-top: 2px; }
 .df-h3 { font-family: var(--fonte-display); font-size: 16px; margin: 0 0 10px; }
 .df-h3.iron { color: #9E6B3A; } .df-h3.accent { color: #B44330; } .df-h3.blue { color: #2E6BC4; } .df-h3.green { color: #2B7A4B; }
 .df-h4 { font-family: var(--fonte-display); font-size: 14px; margin: 0 0 8px; }

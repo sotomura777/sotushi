@@ -50,6 +50,8 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
       return <div style={{ textAlign: "center", padding: 40, color: "var(--tenue)" }}>Nenhuma análise guardada ainda. Gera um resumo nas <strong>Completas</strong> e aparece aqui.</div>;
     }
     return (
+      <>
+      <div className="an-hist-enquadra">Evolução de um caso ao longo do tempo (para estudo).</div>
       <div className="an-hist-grid">
         {historico.map((entry, i) => {
           const nParams = entry.sets[0]?.params?.length || 0;
@@ -62,6 +64,7 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
           );
         })}
       </div>
+      </>
     );
   }
 
@@ -152,7 +155,7 @@ export default function Historico({ historico, setHistorico, sexo, setSexo, uRef
                 {alterados.map((a) => (<div key={a.id} className="an-pad-card alt"><div className="an-pad-card-nm">{a.etiqueta}</div><div className="an-pad-card-txt">{a.txt}</div></div>))}
               </>)}
               {pads.length > 0 && (<>
-                <div className="an-pad-titulo" style={{ color: accent, marginTop: alterados.length ? 12 : 0 }}>Padrões reconhecidos</div>
+                <div className="an-pad-titulo" style={{ color: accent, marginTop: alterados.length ? 12 : 0 }}>Padrões compatíveis (para discussão)</div>
                 {pads.map((pad) => (
                   <div key={pad.id} className="an-pad-card">
                     <div className="an-pad-card-top"><div className="an-pad-card-nm">{pad.nm}</div>

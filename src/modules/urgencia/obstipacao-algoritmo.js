@@ -110,7 +110,7 @@ export function pontuar(D) {
   if (hasFec) { scFec += 6; rFec.push("fecaloma ao toque rectal"); }
   if (hasFdu) { scFec += 3; rFec.push("fezes duras na ampola"); }
   if (has(D.trF, "ach")) { scFec += 2; rFec.push("ampola cheia"); }
-  if (isSU(D)) { scFec += 2; rFec.push("doente acamado/internado"); }
+  if (isSU(D)) { scFec += 2; rFec.push("caso acamado/internado"); }
   if (hasDrCls(D, "Opióides")) { scFec += 2; rFec.push("opióides"); }
   if (D.frq.indexOf("Não evacua") >= 0) { scFec += 2; rFec.push("não evacua há dias"); }
   if (has(D.abd, "dist")) { scFec += 1; rFec.push("distensão"); }
@@ -287,7 +287,7 @@ export function pontuar(D) {
 // ── Geração da nota clínica (porte exato de genNote) ────────────────────────
 export function gerarNota(D) {
   const p = [];
-  let m = "Doente";
+  let m = "Caso";
   if (D.sexo || D.idade) { m += " do sexo " + (D.sexo === "M" ? "masculino" : D.sexo === "F" ? "feminino" : "não especificado"); if (D.idade) m += ", " + D.idade + " anos"; m += ","; }
   m += D.ctx === "ambulatorio" ? " vem por queixas de obstipação" : D.ctx === "acamado" ? " no leito, avaliado por quadro de obstipação" : " avaliado por obstipação";
   if (D.dur === "aguda") { m += " aguda"; if (D.durT) m += " (" + D.durT + " semanas de evolução)"; }

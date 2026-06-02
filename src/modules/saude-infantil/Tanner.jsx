@@ -21,6 +21,11 @@ export default function Tanner({ accent }) {
 
   return (
     <div>
+      <div className="si-alerta" style={{ borderColor: `color-mix(in srgb, ${accent} 26%, transparent)`, background: `color-mix(in srgb, ${accent} 9%, transparent)`, color: "var(--suave)", fontSize: 12.5, lineHeight: 1.45 }}>
+        <Ico name="library" s={18} style={{ flexShrink: 0, marginTop: 1, color: accent }} />
+        <span><strong style={{ color: "var(--texto)" }}>Ferramenta de estudo / referência.</strong> Para aprender o estadiamento de Tanner e o raciocínio associado. Não substitui avaliação clínica.</span>
+      </div>
+
       <div className="an-sexo" style={{ marginBottom: 10 }}>
         <button className={sexo === "F" ? "on" : ""} onClick={() => trocarSexo("F")}><Ico name="female" s={14} style={{ marginRight: 5 }} />Rapariga</button>
         <button className={sexo === "M" ? "on" : ""} onClick={() => trocarSexo("M")}><Ico name="male" s={14} style={{ marginRight: 5 }} />Rapaz</button>
@@ -60,13 +65,13 @@ export default function Tanner({ accent }) {
             )}
             {resultado.conduta?.length > 0 && (
               <div>
-                <div className="tn-h">Conduta</div>
+                <div className="tn-h">Conduta esperada (para estudo)</div>
                 {resultado.conduta.map((t, i) => <div key={i} style={{ fontSize: 12.5, color: "var(--texto)", lineHeight: 1.55, marginBottom: 4, display: "flex", gap: 6 }}><span style={{ color: pi.cor }}>→</span>{t}</div>)}
               </div>
             )}
             {resultado.exames?.length > 0 && (
               <div>
-                <div className="tn-h">Exames a pedir</div>
+                <div className="tn-h">Que exames se considerariam</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
                   {resultado.exames.map((e, i) => <span key={i} style={{ fontSize: 10, fontWeight: 600, padding: "2px 8px", borderRadius: 5, background: "var(--superficie-2)", border: "1px solid var(--borda)" }}>{e}</span>)}
                 </div>

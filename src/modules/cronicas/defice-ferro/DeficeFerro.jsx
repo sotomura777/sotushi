@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import dados from "@conteudo/cronicas/defice-ferro.json";
 import { useAtalhosNumericos } from "@/lib/atalhos";
 import { normalizar } from "@/lib/texto";
+import { Ico } from "@/components/icones";
 import "./estilo.css";
 
 const ALG = dados.algoritmo;
@@ -379,7 +380,7 @@ function Fontes() {
   const corTipo = { "Revisão": "#2E6BC4", "Guideline": "#2B7A4B", "Consenso": "#A8851E", "RCT": "#9E6B3A", "Norma PT": "#B44330", "Base dados": "#9A9DA8" };
   return (
     <div>
-      <div className="df-aviso azul">Algoritmo baseado em guidelines internacionais, revisões de referência e normas portuguesas. Apoio à decisão clínica: não substitui avaliação médica individualizada.</div>
+      <div className="df-aviso azul">Algoritmo baseado em guidelines internacionais, revisões de referência e normas portuguesas. Ferramenta de estudo: não se destina a apoiar decisões clínicas reais.</div>
       <div className="df-refs">
         {dados.referencias.map((r) => {
           const url = r.url || "https://www.google.com/search?q=" + encodeURIComponent(r.t + " " + r.j);
@@ -410,8 +411,12 @@ export default function DeficeFerro() {
         <div className="df-cab-logo">Fe</div>
         <div>
           <h1 className="df-cab-titulo">{dados.meta.nome}</h1>
-          <div className="df-cab-sub">{dados.meta.subtitulo}</div>
+          <div className="df-cab-sub">{dados.meta.subtitulo} · treino de raciocínio</div>
         </div>
+      </div>
+      <div className="df-aviso iron df-aviso-estudo">
+        <Ico name="library" s={16} />
+        <span><strong>Ferramenta de estudo.</strong> Percorre o algoritmo como treino de raciocínio diagnóstico sobre um caso. Não se destina a apoiar decisões sobre doentes reais.</span>
       </div>
       <div className="df-tabs">
         {TABS.map(([id, l]) => <button key={id} className={"df-tab" + (tab === id ? " on" : "")} onClick={() => setTab(id)}>{l}</button>)}

@@ -25,7 +25,7 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
       <div className="hero-conteudo">
         <button className="voltar" onClick={onVoltar}>← Início</button>
         <div className="hero-titulo">Urgência & Sintomas</div>
-        <div className="hero-subtitulo">Abordagem por sintoma e suspeita diagnóstica</div>
+        <div className="hero-subtitulo">Treino de raciocínio diagnóstico · casos de estudo</div>
       </div>
     </header>
   );
@@ -44,6 +44,11 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
       {hero}
 
       <div className="modulo-corpo">
+        <div className="ug-banner-estudo">
+          <Ico name="library" s={18} />
+          <span><strong>Ferramenta de estudo.</strong> Trabalha um caso clínico para treinar o raciocínio diagnóstico. Não se destina a apoiar decisões sobre doentes reais.</span>
+        </div>
+
         <input className="campo" style={{ width: "100%", marginBottom: 10 }} placeholder="Pesquisar sintoma, suspeita ou palavra-chave…" value={query} onChange={(e) => setQuery(e.target.value)} />
 
         <div className="filtros">

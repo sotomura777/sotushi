@@ -103,7 +103,7 @@ export default function ObstipacaoAlgoritmo({ accent }) {
   const passos = {};
 
   passos[0] = (
-    <Card titulo="Contexto do doente">
+    <Card titulo="Dados do caso">
       <div className="oba-row2">
         <div><div className="oba-lbl">Sexo</div><div className="oba-wrap">
           <Pill label="Masculino" on={D.sexo === "M"} onClick={() => up({ sexo: "M" })} />
@@ -114,12 +114,12 @@ export default function ObstipacaoAlgoritmo({ accent }) {
       </div>
       <div className="oba-lbl">Setting</div>
       <div className={"oba-opt" + (D.ctx === "ambulatorio" ? " sel" : "")} onClick={() => up({ ctx: "ambulatorio" })}><div className="oba-opt-l">Ambulatório</div><div className="oba-opt-d">Consulta ou SU a caminhar</div></div>
-      <div className={"oba-opt" + (D.ctx === "acamado" ? " sel" : "")} onClick={() => up({ ctx: "acamado" })}><div className="oba-opt-l">Acamado / Maca / Internado</div><div className="oba-opt-d">Doente no leito</div></div>
+      <div className={"oba-opt" + (D.ctx === "acamado" ? " sel" : "")} onClick={() => up({ ctx: "acamado" })}><div className="oba-opt-l">Acamado / Maca / Internado</div><div className="oba-opt-d">Caso no leito</div></div>
     </Card>
   );
 
   passos[1] = (
-    <Card titulo="Estabilidade hemodinâmica" sub="Avaliar PRIMEIRO — ABC" cor="#dc2626">
+    <Card titulo="Estabilidade hemodinâmica" sub="Numa abordagem real, avalia-se primeiro o ABC" cor="#dc2626">
       <div className="oba-row2" style={{ marginBottom: 12 }}>
         <div className={"oba-opt center" + (D.unst === false ? " sel-g" : "")} onClick={() => up({ unst: false })}><div className="oba-opt-l">Estável</div></div>
         <div className={"oba-opt center" + (D.unst === true ? " sel-r" : "")} onClick={() => up({ unst: true })}><div className="oba-opt-l">Instável</div></div>
@@ -178,7 +178,7 @@ export default function ObstipacaoAlgoritmo({ accent }) {
   );
 
   passos[3] = (
-    <Card titulo="Sinais de alarme" sub="Pesquisar SEMPRE" cor="#dc2626">
+    <Card titulo="Sinais de alarme" sub="O que se pesquisa sempre num caso destes" cor="#dc2626">
       <div className="oba-alert r">Qualquer sinal de alarme presente → investigação prioritária. Não adiar.</div>
       <div className="oba-grid2">{D0.alarmesCronicos.map((s) => <Chk key={s.id} item={s} on={has(D.alm, s.id)} onClick={() => tog("alm", s.id)} alarm />)}</div>
       {has(D.alm, "rec") && (
@@ -343,13 +343,14 @@ function NotaPanel({ texto, onEdit, onRegen, onCopy, onNovo, onClose }) {
   return (
     <div className="oba-nota-panel">
       <div className="oba-nota-head">
-        <span className="oba-nota-titulo">Nota clínica</span>
+        <span className="oba-nota-titulo">Exemplo de nota-modelo</span>
         {onClose && <button className="oba-nota-x" onClick={onClose} aria-label="Fechar">✕</button>}
       </div>
+      <div className="oba-nota-enquadra">Para um caso como este, uma nota poderia ser redigida assim:</div>
       <textarea className="oba-nota" value={texto} onChange={(e) => onEdit(e.target.value)} />
       <div className="oba-nota-acts">
         <button className="oba-btn-out" style={{ flex: 1 }} onClick={onRegen}>Regenerar</button>
-        <button className="oba-btn" style={{ flex: 1 }} onClick={onCopy}>Copiar</button>
+        <button className="oba-btn" style={{ flex: 1 }} onClick={onCopy}>Copiar exemplo</button>
       </div>
       <button className="oba-btn-out oba-novo" onClick={onNovo}>Novo caso</button>
     </div>
@@ -379,7 +380,7 @@ function ClsMech({ mech }) {
 // ── Passo 8: Exame objectivo ────────────────────────────────────────────────
 function ExameObjetivo({ D, up, upN, togN, togNArr, tog, su }) {
   return (
-    <Card titulo="Exame Objectivo" sub="Se normal, não alterar">
+    <Card titulo="Exame Objectivo" sub="No caso, assume-se normal salvo indicação">
       <div className="oba-eo"><div className="oba-eo-t">Sinais vitais</div>
         <div className="oba-grid2">
           {[["pa", "PA (mmHg)", "Ex: 120/80"], ["fc", "FC (bpm)", "Ex: 78"], ["temp", "Temp (°C)", "Ex: 36.5"], ["spo2", "SpO₂ (%)", "Ex: 98"]].map(([k, l, ph]) => (
@@ -494,6 +495,7 @@ function Resultado({ D, up, upN, tog }) {
   const setRxR = (v) => tog("rxR", v);
   const investRx = (
     <div style={{ marginTop: 12 }}>
+      <div className="oba-exame-lead">Num caso assim, o exame que ajudaria a esclarecer seria:</div>
       <div className="oba-lbl">Rx abdómen</div>
       <div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.imgRx.map((r) => <Pill key={r[0]} label={r[1]} on={has(D.rxR, r[0])} onClick={() => setRxR(r[0])} />)}</div>
       {D.rxR.map((rv) => { const rx = D0.imgRx.filter((x) => x[0] === rv)[0]; return rx && rx[2] ? <div key={rv} className="oba-alert y">{rx[2]}</div> : null; })}
@@ -504,7 +506,9 @@ function Resultado({ D, up, upN, tog }) {
     <div>
       {/* Diagnóstico principal */}
       <div className="oba-dxcard" style={{ borderLeftColor: top.cor }}>
-        <div className="oba-dxcard-cab"><div className="oba-dxcard-n" style={{ background: top.cor + "22", color: top.cor }}>Dx</div><div><div className="oba-dxcard-t">{top.l}</div><div className="oba-dxcard-st">Diagnóstico mais provável</div></div></div>
+        <div className="oba-dxcard-titulo">Discussão do caso</div>
+        <div className="oba-dxcard-lead">Neste caso, a hipótese mais provável seria:</div>
+        <div className="oba-dxcard-cab"><div className="oba-dxcard-n" style={{ background: top.cor + "22", color: top.cor }}>Dx</div><div><div className="oba-dxcard-t">{top.l}</div></div></div>
         <Sec titulo="O que significa este diagnóstico?"><div className="oba-dxinfo">{top.info}</div></Sec>
         <div className="oba-lbl">Baseado em:</div>
         <div className="oba-wrap" style={{ marginBottom: 12 }}>{top.r.map((r, i) => <span key={i} className="oba-rtag" style={{ background: top.cor + "1f", color: top.cor }}>{r}</span>)}</div>
@@ -512,15 +516,15 @@ function Resultado({ D, up, upN, tog }) {
         {(top.id === "obstr" || top.id === "emerg" || top.id === "ileus") && investRx}
         {top.id === "fecal" && !hasFec && investRx}
         {(top.id === "obstr" || top.id === "emerg") && (has(D.rxR, "niv") || has(D.rxR, "dil")) && (
-          <div style={{ marginTop: 8 }}><div className="oba-lbl">TC abdominal</div><div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.imgTc.map((r) => <Pill key={r[0]} label={r[1]} on={D.tcR === r[0]} onClick={() => up({ tcR: D.tcR === r[0] ? null : r[0] })} />)}</div>
+          <div style={{ marginTop: 8 }}><div className="oba-exame-lead">Num caso assim, o exame que ajudaria a esclarecer seria:</div><div className="oba-lbl">TC abdominal</div><div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.imgTc.map((r) => <Pill key={r[0]} label={r[1]} on={D.tcR === r[0]} onClick={() => up({ tcR: D.tcR === r[0] ? null : r[0] })} />)}</div>
             {D.tcR && (() => { const tc = D0.imgTc.filter((x) => x[0] === D.tcR)[0]; return tc && tc[2] ? <div className="oba-alert y">{tc[2]}</div> : null; })()}</div>
         )}
         {top.id === "divert" && (
-          <div style={{ marginTop: 12 }}><div className="oba-lbl">TC abdominal</div><div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.imgTc.map((r) => <Pill key={r[0]} label={r[1]} on={D.tcR === r[0]} onClick={() => up({ tcR: D.tcR === r[0] ? null : r[0] })} />)}</div>
+          <div style={{ marginTop: 12 }}><div className="oba-exame-lead">Num caso assim, o exame que ajudaria a esclarecer seria:</div><div className="oba-lbl">TC abdominal</div><div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.imgTc.map((r) => <Pill key={r[0]} label={r[1]} on={D.tcR === r[0]} onClick={() => up({ tcR: D.tcR === r[0] ? null : r[0] })} />)}</div>
             {D.tcR && (() => { const tc = D0.imgTc.filter((x) => x[0] === D.tcR)[0]; return tc && tc[2] ? <div className="oba-alert y">{tc[2]}</div> : null; })()}</div>
         )}
         {top.id === "neo" && (
-          <div style={{ marginTop: 12 }}><div className="oba-lbl">{D.recTipo === "mel" ? "EDA (1.º) → se normal: colonoscopia" : "Colonoscopia"}</div><div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.colRes.map((r) => <Pill key={r[0]} label={r[1]} on={D.colR === r[0]} onClick={() => up({ colR: D.colR === r[0] ? null : r[0] })} />)}</div>
+          <div style={{ marginTop: 12 }}><div className="oba-exame-lead">Num caso assim, o exame que ajudaria a esclarecer seria:</div><div className="oba-lbl">{D.recTipo === "mel" ? "EDA (1.º) → se normal: colonoscopia" : "Colonoscopia"}</div><div className="oba-wrap" style={{ marginBottom: 8 }}>{D0.colRes.map((r) => <Pill key={r[0]} label={r[1]} on={D.colR === r[0]} onClick={() => up({ colR: D.colR === r[0] ? null : r[0] })} />)}</div>
             {D.colR && (() => { const cr = D0.colRes.filter((x) => x[0] === D.colR)[0]; return cr && cr[2] ? <div className="oba-alert y">{cr[2]}</div> : null; })()}</div>
         )}
       </div>
@@ -539,7 +543,7 @@ function Resultado({ D, up, upN, tog }) {
 
       {/* Rastreio >50 */}
       {age50 && !isSU(D) && !hasMassa && !has(D.alm, "rec") && !has(D.alm, "afe") && !has(D.alm, "ppe") && (
-        <div className="oba-alert y" style={{ marginTop: 12 }}>Doente com {D.idade} anos: verificar se rastreio de colonoscopia está actualizado.</div>
+        <div className="oba-alert y" style={{ marginTop: 12 }}>Caso com {D.idade} anos: a considerar se o rastreio de colonoscopia estaria actualizado.</div>
       )}
 
       {/* Analítica */}
@@ -566,7 +570,7 @@ function Resultado({ D, up, upN, tog }) {
       <div className="oba-field"><div className="oba-lbl">Acções rápidas para o plano:</div><div className="oba-wrap" style={{ marginBottom: 10 }}>{D0.accoesRapidas.map((a) => <Pill key={a} label={a} on={has(D.act, a)} onClick={() => togAct(a)} />)}</div></div>
       <div className="oba-field"><div className="oba-lbl">Plano / Notas finais</div><textarea className="oba-textarea" value={D.plN} onChange={(e) => up({ plN: e.target.value })} placeholder="Ex: Alta com macrogol 1 saq 2x/dia. Reavaliação MF 1 semana." /></div>
 
-      <div className="oba-nota-hint">A nota clínica está no painel <b>Nota</b> (ao lado, ou no botão em baixo) — atualiza-se com as tuas seleções.</div>
+      <div className="oba-nota-hint">O exemplo de nota-modelo está no painel <b>Nota</b> (ao lado, ou no botão em baixo) — atualiza-se com as tuas seleções.</div>
     </div>
   );
 }

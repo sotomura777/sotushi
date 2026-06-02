@@ -1,9 +1,9 @@
 {
   "nome": "Patologias",
-  "eyebrow": "Apoio Clínico",
-  "tag": "Guias de apoio à prática clínica baseados em guidelines internacionais. Algoritmos de decisão, farmacologia e dúvidas frequentes.",
+  "eyebrow": "Estudo & Treino",
+  "tag": "Guias de estudo baseados em guidelines internacionais. Algoritmos de decisão, farmacologia e dúvidas frequentes para treinar o raciocínio clínico.",
   "disclaimerTitulo": "Informação importante",
-  "disclaimerTexto": "Este guia ajuda a pensar, mas não pensa por ti. Cada doente é único. A medicina muda. O guia não substitui a avaliação clínica individual nem as guidelines completas.",
+  "disclaimerTexto": "Ferramenta de estudo. Ajuda a treinar o raciocínio, mas não pensa por ti — cada caso de estudo é único e a medicina muda. Não se destina a apoiar decisões clínicas reais nem substitui as guidelines completas.",
   "sistemas": [
     {
       "id": "cardiovascular",

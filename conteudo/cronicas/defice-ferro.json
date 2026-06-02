@@ -1,8 +1,8 @@
 {
   "meta": {
     "nome": "Défice de Ferro & Anemia Ferropénica",
-    "subtitulo": "Ferramenta de apoio à decisão clínica",
-    "disclaimer": "Ferramenta de apoio à decisão. Não substitui avaliação médica individualizada. BSG 2021 · ESC 2021 · DGS · OMS"
+    "subtitulo": "Ferramenta de estudo",
+    "disclaimer": "Ferramenta de estudo. Não se destina a apoiar decisões clínicas reais. BSG 2021 · ESC 2021 · DGS · OMS"
   },
   "algoritmo": {
     "start": {
@@ -10,7 +10,7 @@
       "type": "question",
       "icon": "start",
       "title": "Avaliação Inicial",
-      "text": "O doente apresenta sintomas sugestivos de défice de ferro?",
+      "text": "No caso, há sintomas sugestivos de défice de ferro?",
       "hint": "Fadiga, palidez, taquicardia, dispneia de esforço, coiloníquia, pica, queda de cabelo, síndrome pernas inquietas",
       "options": [
         {
@@ -54,7 +54,7 @@
       "icon": "labs",
       "title": "Resultados Laboratoriais",
       "text": "Qual é o nível de ferritina sérica?",
-      "hint": "Pedir: hemograma, ferritina, saturação de transferrina, ferro sérico, CTFF, PCR",
+      "hint": "O estudo analítico incluiria: hemograma, ferritina, saturação de transferrina, ferro sérico, CTFF, PCR",
       "options": [
         {
           "label": "Ferritina < 30 µg/L",
@@ -105,7 +105,7 @@
         "OMS: ferritina < 70 µg/L com inflamação geral sugere défice",
         "Na IC (ESC): ferritina < 100 ou 100-299 + ST < 20%"
       ],
-      "action": "Considerar ferro IV (melhor resposta que oral em contexto inflamatório). Investigar e tratar a doença de base.",
+      "action": "Num caso assim, ponderar-se-ia ferro IV (melhor resposta que oral em contexto inflamatório); a abordagem passaria por investigar e tratar a doença de base.",
       "next": "investigate_cause",
       "nextLabel": "Investigar causa →"
     },
@@ -141,7 +141,7 @@
         "Saturação de transferrina habitualmente < 20%",
         "Pode ter sintomas: fadiga, queda cabelo, pernas inquietas"
       ],
-      "action": "Tratar a causa + suplementar. Se causa óbvia e plausível (menorragia, dieta, gravidez): reavaliar em 8-12 semanas. Se sem causa óbvia: pedir anti-tTG + H. pylori. Após normalizar Hb, continuar ferro 4-6 meses até ferritina > 50 e ST > 30% (DGS).",
+      "action": "A abordagem passaria por tratar a causa e suplementar. Se causa óbvia e plausível (menorragia, dieta, gravidez): reavaliar-se-ia em 8-12 semanas. Se sem causa óbvia: o estudo incluiria anti-tTG + H. pylori. Após normalizar a Hb, manter-se-ia ferro 4-6 meses até ferritina > 50 e ST > 30% (DGS).",
       "next": "food_tips",
       "nextLabel": "Ver dicas alimentares →",
       "alsoLink": {
@@ -185,7 +185,7 @@
         "VGM < 80 fL (microcitose) + RDW ↑",
         "Sat. Transferrina < 16-20%"
       ],
-      "action": "Ferro oral em 1ª linha. Investigar a causa — intensidade depende do perfil: causa óbvia (menorragia) → anti-tTG + H. pylori + tratar; homem ou pós-menopausa → EDA + colonoscopia obrigatórias. Considerar ferro IV se intolerância ou má absorção.",
+      "action": "Num caso assim, a 1ª linha seria ferro oral. A investigação da causa dependeria do perfil: causa óbvia (menorragia) → anti-tTG + H. pylori e tratamento; homem ou pós-menopausa → a investigação incluiria EDA e colonoscopia. Ponderar-se-ia ferro IV se intolerância ou má absorção.",
       "next": "investigate_cause",
       "nextLabel": "Investigar causa →",
       "alsoLink": {
@@ -204,7 +204,7 @@
         "Hb < 8 g/dL ou sintomática",
         "Microcitose + hipocromia marcadas"
       ],
-      "action": "Ferro IV (carboximaltose ou derisomaltose). Transfusão se Hb < 7 g/dL com instabilidade hemodinâmica. Investigação etiológica URGENTE independentemente do perfil — EDA + colonoscopia + anti-tTG + H. pylori.",
+      "action": "Num caso assim, a opção seria ferro IV (carboximaltose ou derisomaltose). Estaria indicada transfusão se Hb < 7 g/dL com instabilidade hemodinâmica. A investigação etiológica seria urgente, independentemente do perfil — incluiria EDA, colonoscopia, anti-tTG e H. pylori.",
       "next": "red_flags",
       "nextLabel": "Verificar red flags →",
       "alsoLink": {
@@ -223,7 +223,7 @@
         "Ferritina < 70 µg/L define ferropenia na gravidez (DGS)",
         "Ferritina < 30 µg/L confirma défice absoluto"
       ],
-      "action": "Ferro oral se tolerado e Hb >9 g/dL. Ferro IV (carboximaltose) seguro no 2º-3º trimestre se Hb < 9 ou intolerância oral. Alvo: ferritina >30 µg/L.",
+      "action": "Num caso assim, ferro oral se tolerado e Hb >9 g/dL. O ferro IV (carboximaltose) é seguro no 2º-3º trimestre, sendo opção se Hb < 9 ou intolerância oral. Alvo: ferritina >30 µg/L.",
       "next": "food_tips",
       "nextLabel": "Ver dicas alimentares →",
       "alsoLink": {
@@ -244,7 +244,7 @@
       "type": "question",
       "icon": "inv",
       "title": "Investigação Etiológica",
-      "text": "Qual é o perfil do doente?",
+      "text": "Qual é o perfil do caso?",
       "hint": "A anemia ferropénica é um sintoma, não um diagnóstico: SEMPRE investigar a causa",
       "options": [
         {
@@ -356,7 +356,7 @@
       "type": "question",
       "icon": "",
       "title": "Alimentação e Ferro",
-      "text": "Qual o tipo de dieta do doente?",
+      "text": "Qual o tipo de dieta neste caso?",
       "hint": "As recomendações e os conselhos de absorção diferem conforme a dieta",
       "options": [
         {
@@ -937,7 +937,7 @@
             "food": "Tofu grelhado + quinoa + brócolos + pimento vermelho"
           }
         ],
-        "quandoSuplementar": "Se a ferritina está baixa (< 30 µg/L) apesar de dieta optimizada, a suplementação é necessária — a alimentação sozinha raramente corrige um défice já instalado. O ferro bisglicinato (Solgar) ou lipossómico (Fisiogen) são bem tolerados e compatíveis com dieta vegetariana. Manter suplementação 4-6 meses após correcção (DGS). Monitorizar ferritina + Hb a cada 3-6 meses em vegetarianos com histórico de défice."
+        "quandoSuplementar": "Se a ferritina está baixa (< 30 µg/L) apesar de dieta optimizada, a suplementação é necessária — a alimentação sozinha raramente corrige um défice já instalado. O ferro bisglicinato (Solgar) ou lipossómico (Fisiogen) são bem tolerados e compatíveis com dieta vegetariana. Manter-se-ia a suplementação 4-6 meses após correcção (DGS). Monitorizar-se-ia ferritina + Hb a cada 3-6 meses em vegetarianos com histórico de défice."
       }
     },
     "evidencia": [
@@ -1094,11 +1094,11 @@
         }
       ],
       "falha": [
-        "Verificar adesão",
-        "Excluir perdas persistentes",
-        "Excluir má absorção (celíaca, H. pylori)",
-        "Considerar ferro IV",
-        "Referenciar se refractária"
+        "Verificar-se-ia a adesão",
+        "Excluir-se-iam perdas persistentes",
+        "Excluir-se-ia má absorção (celíaca, H. pylori)",
+        "Ponderar-se-ia ferro IV",
+        "Referenciar-se-ia se refractária"
       ]
     }
   },
@@ -1375,27 +1375,27 @@
     {
       "id": "s1",
       "titulo": "1. Suspeitar",
-      "html": "<div class=\"cd\"><h2>Passo 1: Quando Suspeitar</h2><div class=\"al al-a\">O défice de ferro pode estar presente muito antes de causar anemia. Não esperar pela queda da Hb.</div><div class=\"g2\"><div><h3>Sintomas que alertam</h3><ul><li>Fadiga desproporcional</li><li>Queda de cabelo difusa</li><li>Pernas inquietas</li><li>Pica / pagofagia</li><li>Unhas quebradiças / coiloníquia</li><li>Palidez</li><li>Dispneia de esforço / taquicardia</li><li>Dificuldade de concentração</li></ul></div><div><h3>Quando pedir análises</h3><ul><li>Menstruação abundante</li><li>Grávida (DGS: rastreio universal)</li><li>Vegetariano / vegano</li><li>Dador sangue frequente</li><li>IC, DRC, DII</li><li>Pós-bariátrica</li><li>Adolescente em crescimento</li><li>VGM baixo incidental</li></ul></div></div><div class=\"al al-g\"><b>Na prática:</b> fadiga inexplicada → hemograma + ferritina + PCR. Grupo de risco → rastrear mesmo sem sintomas.</div></div>"
+      "html": "<div class=\"cd\"><h2>Passo 1: Quando Suspeitar</h2><div class=\"al al-a\">O défice de ferro pode estar presente muito antes de causar anemia. Num caso assim, não se esperaria pela queda da Hb.</div><div class=\"g2\"><div><h3>Sintomas que alertam</h3><ul><li>Fadiga desproporcional</li><li>Queda de cabelo difusa</li><li>Pernas inquietas</li><li>Pica / pagofagia</li><li>Unhas quebradiças / coiloníquia</li><li>Palidez</li><li>Dispneia de esforço / taquicardia</li><li>Dificuldade de concentração</li></ul></div><div><h3>Quando pedir análises</h3><ul><li>Menstruação abundante</li><li>Grávida (DGS: rastreio universal)</li><li>Vegetariano / vegano</li><li>Dador sangue frequente</li><li>IC, DRC, DII</li><li>Pós-bariátrica</li><li>Adolescente em crescimento</li><li>VGM baixo incidental</li></ul></div></div><div class=\"al al-g\"><b>Na prática:</b> perante fadiga inexplicada, o estudo incluiria hemograma + ferritina + PCR. Num grupo de risco, rastrear-se-ia mesmo sem sintomas.</div></div>"
     },
     {
       "id": "s2",
       "titulo": "2. Análises",
-      "html": "<div class=\"cd\"><h2>Passo 2: O Que Pedir e Como Ler</h2><div class=\"sb\"><b>Pedir (4 exames):</b> Hemograma (Hb, VGM, RDW) + Ferritina + Sat. Transferrina + PCR</div><div class=\"al al-a\">Ferritina é o exame-chave. Ferro sérico isolado tem pouco valor. PCR contextualiza a ferritina.</div><h3>Ferritina</h3><div class=\"rr\"><div class=\"rv r\">< 15 µg/L</div><div class=\"rm\">Défice absoluto — diagnóstico confirmado</div></div><div class=\"rr\"><div class=\"rv y\">15-30 µg/L</div><div class=\"rm\">Depleção — tratar e reavaliar</div></div><div class=\"rr\"><div class=\"rv y\">30-100 + PCR ↑</div><div class=\"rm\">Possível défice mascarado — ver sat. transferrina</div></div><div class=\"rr\"><div class=\"rv y\">< 70 µg/L (grávida)</div><div class=\"rm\">Ferropenia na gravidez (DGS)</div></div><div class=\"rr\"><div class=\"rv a\">< 100 µg/L (IC)</div><div class=\"rm\">Défice na IC (ESC) — ferro IV</div></div><div class=\"rr\"><div class=\"rv g\">> 100, PCR normal</div><div class=\"rm\">Défice improvável</div></div><h3>Sat. Transferrina</h3><div class=\"rr\"><div class=\"rv r\">< 16%</div><div class=\"rm\">Défice grave</div></div><div class=\"rr\"><div class=\"rv y\">< 20%</div><div class=\"rm\">Confirma défice</div></div><div class=\"rr\"><div class=\"rv g\">20-45%</div><div class=\"rm\">Normal</div></div><h3>Hemoglobina</h3><div class=\"rr\"><div class=\"rv r\">< 12 (F) / < 13 (M)</div><div class=\"rm\">Anemia</div></div><div class=\"rr\"><div class=\"rv y\">Normal + ferritina baixa</div><div class=\"rm\">Défice SEM anemia — tratar na mesma</div></div><h3>VGM + RDW</h3><div class=\"rr\"><div class=\"rv a\">VGM<80 + RDW↑</div><div class=\"rm\">Ferro ou talassémia — pedir ferritina</div></div><div class=\"rr\"><div class=\"rv a\">VGM<80 + RDW normal</div><div class=\"rm\">Talassémia minor — pedir electroforese Hb</div></div><h3>PCR</h3><div class=\"rr\"><div class=\"rv g\">Normal</div><div class=\"rm\">Ferritina fidedigna</div></div><div class=\"rr\"><div class=\"rv y\">Elevada</div><div class=\"rm\">Ferritina pode estar falsamente ↑</div></div></div>"
+      "html": "<div class=\"cd\"><h2>Passo 2: O Que Pedir e Como Ler</h2><div class=\"sb\"><b>O estudo (4 exames) incluiria:</b> Hemograma (Hb, VGM, RDW) + Ferritina + Sat. Transferrina + PCR</div><div class=\"al al-a\">Ferritina é o exame-chave. Ferro sérico isolado tem pouco valor. PCR contextualiza a ferritina.</div><h3>Ferritina</h3><div class=\"rr\"><div class=\"rv r\">< 15 µg/L</div><div class=\"rm\">Défice absoluto — diagnóstico confirmado</div></div><div class=\"rr\"><div class=\"rv y\">15-30 µg/L</div><div class=\"rm\">Depleção — a conduta seria tratar e reavaliar</div></div><div class=\"rr\"><div class=\"rv y\">30-100 + PCR ↑</div><div class=\"rm\">Possível défice mascarado — ver sat. transferrina</div></div><div class=\"rr\"><div class=\"rv y\">< 70 µg/L (grávida)</div><div class=\"rm\">Ferropenia na gravidez (DGS)</div></div><div class=\"rr\"><div class=\"rv a\">< 100 µg/L (IC)</div><div class=\"rm\">Défice na IC (ESC) — ferro IV</div></div><div class=\"rr\"><div class=\"rv g\">> 100, PCR normal</div><div class=\"rm\">Défice improvável</div></div><h3>Sat. Transferrina</h3><div class=\"rr\"><div class=\"rv r\">< 16%</div><div class=\"rm\">Défice grave</div></div><div class=\"rr\"><div class=\"rv y\">< 20%</div><div class=\"rm\">Confirma défice</div></div><div class=\"rr\"><div class=\"rv g\">20-45%</div><div class=\"rm\">Normal</div></div><h3>Hemoglobina</h3><div class=\"rr\"><div class=\"rv r\">< 12 (F) / < 13 (M)</div><div class=\"rm\">Anemia</div></div><div class=\"rr\"><div class=\"rv y\">Normal + ferritina baixa</div><div class=\"rm\">Défice SEM anemia — tratar-se-ia na mesma</div></div><h3>VGM + RDW</h3><div class=\"rr\"><div class=\"rv a\">VGM<80 + RDW↑</div><div class=\"rm\">Ferro ou talassémia — pedir-se-ia ferritina</div></div><div class=\"rr\"><div class=\"rv a\">VGM<80 + RDW normal</div><div class=\"rm\">Talassémia minor — pedir-se-ia electroforese Hb</div></div><h3>PCR</h3><div class=\"rr\"><div class=\"rv g\">Normal</div><div class=\"rm\">Ferritina fidedigna</div></div><div class=\"rr\"><div class=\"rv y\">Elevada</div><div class=\"rm\">Ferritina pode estar falsamente ↑</div></div></div>"
     },
     {
       "id": "s3",
       "titulo": "3. Classificar",
-      "html": "<div class=\"cd\"><h2>Passo 3: Classificar e Decidir</h2><div class=\"dx ur\" style=\"margin-top:12px\"><h4><span class=\"tg tg-y\">Ferritina &lt;30, Hb normal</span> Défice SEM anemia</h4><div class=\"dd\"><div class=\"dc\"><b>Fazer:</b><br>• Suplementar oral<br>• Tratar causa<br>• Reavaliar 8-12 sem<br>• Sem endoscopia se causa óbvia</div><div class=\"dn\"><b>Atenção:</b><br>• Pode progredir<br>• Pode ter sintomas</div></div></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Ferritina &lt;30, Hb↓, VGM&lt;80</span> Anemia ferropénica</h4><div class=\"dd\"><div class=\"dc\"><b>Fazer:</b><br>• Ferro oral ou IV<br>• Investigar causa por perfil<br>• Anti-tTG + H. pylori<br>• Reavaliar 2-4 sem (↑≥1 g/dL)</div><div class=\"dn\"><b>Atenção:</b><br>• Homem/pós-menop: não suplementar sem investigar<br>• Continuar 4-6 meses (DGS)</div></div></div><div class=\"dx\"><h4><span class=\"tg tg-a\">Ferritina 30-100+PCR↑+Sat&lt;20%</span> Défice funcional</h4><div class=\"dd\"><div class=\"dc\"><b>Fazer:</b><br>• Ferro IV<br>• Tratar doença base<br>• IC: ESC critérios</div><div class=\"dn\"><b>Atenção:</b><br>• Não excluir défice por ferritina \"normal\"</div></div></div><div class=\"dx ok\"><h4><span class=\"tg tg-g\">Ferritina &gt;100, PCR normal</span> Improvável</h4><p>Considerar: B12, folato, talassémia, doença crónica, mielodisplasia.</p></div></div>"
+      "html": "<div class=\"cd\"><h2>Passo 3: Classificar e Decidir</h2><div class=\"dx ur\" style=\"margin-top:12px\"><h4><span class=\"tg tg-y\">Ferritina &lt;30, Hb normal</span> Défice SEM anemia</h4><div class=\"dd\"><div class=\"dc\"><b>Conduta:</b><br>• Suplementar oral<br>• Tratar causa<br>• Reavaliar 8-12 sem<br>• Sem endoscopia se causa óbvia</div><div class=\"dn\"><b>Atenção:</b><br>• Pode progredir<br>• Pode ter sintomas</div></div></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Ferritina &lt;30, Hb↓, VGM&lt;80</span> Anemia ferropénica</h4><div class=\"dd\"><div class=\"dc\"><b>Conduta:</b><br>• Ferro oral ou IV<br>• Investigar causa por perfil<br>• Anti-tTG + H. pylori<br>• Reavaliar 2-4 sem (↑≥1 g/dL)</div><div class=\"dn\"><b>Atenção:</b><br>• Homem/pós-menop: não suplementar sem investigar<br>• Continuar 4-6 meses (DGS)</div></div></div><div class=\"dx\"><h4><span class=\"tg tg-a\">Ferritina 30-100+PCR↑+Sat&lt;20%</span> Défice funcional</h4><div class=\"dd\"><div class=\"dc\"><b>Conduta:</b><br>• Ferro IV<br>• Tratar doença base<br>• IC: ESC critérios</div><div class=\"dn\"><b>Atenção:</b><br>• Não excluir défice por ferritina \"normal\"</div></div></div><div class=\"dx ok\"><h4><span class=\"tg tg-g\">Ferritina &gt;100, PCR normal</span> Improvável</h4><p>Considerar: B12, folato, talassémia, doença crónica, mielodisplasia.</p></div></div>"
     },
     {
       "id": "s4",
       "titulo": "4. Especiais",
-      "html": "<div class=\"cd\"><h2>Passo 4: Populações Especiais</h2><div class=\"g2\"><div class=\"dx em\"><h4>Gravidez</h4><p>• Ferropenia = ferritina &lt;70 (DGS)<br>• Suplementação universal 30-60 mg/dia<br>• Anemia: Hb &lt;11 (1o/3oT) ou &lt;10.5 (2oT)<br>• Ferro IV seguro 2o-3o T<br>• Tardyferon-Fol ou Ferrum Fol Hausmann</p></div><div class=\"dx bu\"><h4>Insuf. Cardíaca</h4><p>• Ferritina &lt;100 OU 100-299+sat&lt;20%<br>• Ferro IV mesmo SEM anemia (ESC)<br>• Melhora NYHA, reduz hospitalizações<br>• Vigiar hipofosfatemia Ferinject</p></div><div class=\"dx ok\"><h4>DRC</h4><p>• Alvos: ferritina 200-500, sat 20-30%<br>• Ferro IV preferido em HD<br>• Corrigir ferro ANTES de EPO</p></div><div class=\"dx ur\"><h4>DII</h4><p>• Prevalência anemia 30-70%<br>• Ferro IV na doença activa (ECCO)<br>• Oral pode agravar inflamação GI</p></div></div></div>"
+      "html": "<div class=\"cd\"><h2>Passo 4: Populações Especiais</h2><div class=\"g2\"><div class=\"dx em\"><h4>Gravidez</h4><p>• Ferropenia = ferritina &lt;70 (DGS)<br>• Suplementação universal 30-60 mg/dia<br>• Anemia: Hb &lt;11 (1o/3oT) ou &lt;10.5 (2oT)<br>• Ferro IV seguro 2o-3o T<br>• Tardyferon-Fol ou Ferrum Fol Hausmann</p></div><div class=\"dx bu\"><h4>Insuf. Cardíaca</h4><p>• Ferritina &lt;100 OU 100-299+sat&lt;20%<br>• Ferro IV mesmo SEM anemia (ESC)<br>• Melhora NYHA, reduz hospitalizações<br>• Vigiar hipofosfatemia Ferinject</p></div><div class=\"dx ok\"><h4>DRC</h4><p>• Alvos: ferritina 200-500, sat 20-30%<br>• Ferro IV preferido em HD<br>• corrigir-se-ia o ferro ANTES da EPO</p></div><div class=\"dx ur\"><h4>DII</h4><p>• Prevalência anemia 30-70%<br>• Ferro IV na doença activa (ECCO)<br>• Oral pode agravar inflamação GI</p></div></div></div>"
     },
     {
       "id": "s5",
       "titulo": "5. Investigar",
-      "html": "<div class=\"cd\"><h2>Passo 5: Investigar a Causa</h2><div class=\"al al-a\">Nem todo o défice precisa de investigação extensa. Depende de: anemia, causa óbvia, red flags.</div><div class=\"dx ok\"><h4><span class=\"tg tg-g\">Tratar + monitorizar</span> Défice SEM anemia + causa óbvia</h4><p>Reavaliar 8-12 sem. Exemplos: menorragia, vegetariano, dador, grávida.</p></div><div class=\"dx ur\"><h4><span class=\"tg tg-y\">Tratar + Anti-tTG + H. pylori</span> Anemia + causa óbvia</h4><p>Tratar + pesquisar má absorção. Se sem resposta, aprofundar.</p></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Investigação obrigatória</span> Anemia SEM causa óbvia</h4><p>Anti-tTG + H. pylori + EDA + colonoscopia. Homem/pós-menopausa: colonoscopia urgente.</p></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Referenciação urgente</span> Red flags</h4><ul><li>Perda de peso</li><li>Alteração trânsito &gt;4 sem</li><li>Rectorragia/melenas</li><li>Disfagia</li><li>Massa abdominal</li><li>Anemia refractária</li></ul></div><h3>Má absorção — considerar sempre</h3><div class=\"g2\"><div class=\"dx\"><h4>Doença celíaca</h4><p>Anti-tTG IgA+IgA total. 3-5%. Biopsiar mesmo com serologia neg.</p></div><div class=\"dx\"><h4>H. pylori</h4><p>Erradicação melhora absorção mesmo sem úlcera.</p></div><div class=\"dx\"><h4>IBPs crónicos</h4><p>Reduzem acidez para Fe2+. Rever necessidade.</p></div><div class=\"dx\"><h4>Cirurgia bariátrica</h4><p>Má absorção estrutural. Ferro IV pode ser necessário.</p></div></div><h3>Plano por situação</h3><table><tr><th>Situação</th><th>Exames</th></tr><tr><td>Sem anemia, causa óbvia</td><td>Tratar + repetir 8-12 sem</td></tr><tr><td>Anemia + causa aparente</td><td>Tratar + anti-tTG + H. pylori; se sem resposta: EDA+colo</td></tr><tr><td>Homem / pós-menopausa</td><td>Anti-tTG + H. pylori + EDA + colonoscopia (urgente)</td></tr><tr><td>Sem causa após EDA+colo</td><td>Cápsula endoscópica + ref. gastro</td></tr></table></div>"
+      "html": "<div class=\"cd\"><h2>Passo 5: Investigar a Causa</h2><div class=\"al al-a\">Nem todo o défice precisa de investigação extensa. Depende de: anemia, causa óbvia, red flags.</div><div class=\"dx ok\"><h4><span class=\"tg tg-g\">Tratar + monitorizar</span> Défice SEM anemia + causa óbvia</h4><p>Reavaliar-se-ia em 8-12 sem. Exemplos: menorragia, vegetariano, dador, grávida.</p></div><div class=\"dx ur\"><h4><span class=\"tg tg-y\">Tratar + Anti-tTG + H. pylori</span> Anemia + causa óbvia</h4><p>Tratar-se-ia e pesquisar-se-ia má absorção. Se sem resposta, aprofundar-se-ia.</p></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Investigação necessária</span> Anemia SEM causa óbvia</h4><p>A investigação incluiria anti-tTG + H. pylori + EDA + colonoscopia. Em homem/pós-menopausa, a colonoscopia seria urgente.</p></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Referenciação urgente</span> Red flags</h4><ul><li>Perda de peso</li><li>Alteração trânsito &gt;4 sem</li><li>Rectorragia/melenas</li><li>Disfagia</li><li>Massa abdominal</li><li>Anemia refractária</li></ul></div><h3>Má absorção — considerar sempre</h3><div class=\"g2\"><div class=\"dx\"><h4>Doença celíaca</h4><p>Anti-tTG IgA+IgA total. 3-5%. Biopsiar-se-ia mesmo com serologia neg.</p></div><div class=\"dx\"><h4>H. pylori</h4><p>Erradicação melhora absorção mesmo sem úlcera.</p></div><div class=\"dx\"><h4>IBPs crónicos</h4><p>Reduzem acidez para Fe2+. Rever-se-ia a necessidade.</p></div><div class=\"dx\"><h4>Cirurgia bariátrica</h4><p>Má absorção estrutural. Ferro IV pode ser necessário.</p></div></div><h3>Plano por situação</h3><table><tr><th>Situação</th><th>Exames</th></tr><tr><td>Sem anemia, causa óbvia</td><td>Tratar + repetir 8-12 sem</td></tr><tr><td>Anemia + causa aparente</td><td>Tratar + anti-tTG + H. pylori; se sem resposta: EDA+colo</td></tr><tr><td>Homem / pós-menopausa</td><td>Anti-tTG + H. pylori + EDA + colonoscopia (urgente)</td></tr><tr><td>Sem causa após EDA+colo</td><td>Cápsula endoscópica + ref. gastro</td></tr></table></div>"
     }
   ],
   "guiaPraticoNota": "5 passos de acção clínica. Verificado contra DGS 030/2013, BSG 2021, ESC 2021."

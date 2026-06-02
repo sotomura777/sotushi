@@ -4,6 +4,7 @@ import {
   paraIniciais, uid, hojeISO, fmtData, fmtRelativo,
   temSequenciaNumerica, limitarDigitos, criarNota, ordenarNotas, agruparPorData,
 } from "./logica";
+import { mascararIdentificadores, detetarNomeProvavel } from "./anonimizar";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import { toast } from "@/lib/toast";
@@ -60,7 +61,16 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
   const cor = rosa ? KIND.rosa.cor : antigo ? KIND.antigo.cor : tab?.color || "#0F6E56";
   const label = rosa ? KIND.rosa.label : antigo ? KIND.antigo.label : tab?.label || "Diário";
   const aviso = temSequenciaNumerica(nota.texto);
+  const avisoNome = detetarNomeProvavel(nota.texto);
   const editado = nota.atualizadoEm && nota.atualizadoEm !== nota.criadoEm;
+  // Ao sair do campo ("guardar"), mascara números de identificação de alta confiança.
+  const mascararAoSair = () => {
+    const { texto: limpo, mascarou } = mascararIdentificadores(nota.texto || "");
+    if (mascarou) {
+      onUpdate({ ...nota, texto: limpo, atualizadoEm: agora() });
+      toast("Removemos o que parecia um número de identificação — esta é uma ferramenta de estudo, não incluas dados que identifiquem doentes.");
+    }
+  };
   return (
     <div className="nt-nota" style={{ borderLeft: `4px solid ${cor}`, background: `${cor}12`, borderColor: `${cor}33` }}>
       <div className="nt-nota-cab" style={{ background: `${cor}26` }}>
@@ -91,10 +101,11 @@ function NotaCard({ nota, tab, onUpdate, onApagar, onCopiar }) {
         className="nt-textarea"
         value={nota.texto}
         placeholder="Escrever…"
-        onBeforeInput={bloquearDigito}
-        onChange={(e) => onUpdate({ ...nota, texto: entradaSegura(e.target.value), atualizadoEm: agora() })}
+        onChange={(e) => onUpdate({ ...nota, texto: e.target.value, atualizadoEm: agora() })}
+        onBlur={mascararAoSair}
         rows={Math.max(5, (nota.texto || "").split("\n").length + 1)}
       />
+      {avisoNome && <div className="nt-aviso-num"><Ico name="warn" s={12} /> Parece haver um nome no texto. Usa apenas iniciais.</div>}
     </div>
   );
 }

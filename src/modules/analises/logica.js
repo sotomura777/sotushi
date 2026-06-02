@@ -80,7 +80,7 @@ export function construirQueryPesquisa(padraoNm, idsSelecionados, slots, params,
     const status = v.status === "high" ? "elevado" : v.status === "low" ? "baixo" : "normal";
     parts.push(`${p.nm} ${v.val}${p.un ? " " + p.un : ""} (ref ${ref.min}-${ref.max}, ${status})`);
   });
-  const q = `Doente com: ${parts.join(", ")}. Padrão identificado: ${padraoNm}. Quais as causas mais prováveis, que exames pedir a seguir e que diagnósticos considerar?`;
+  const q = `Caso de estudo com: ${parts.join(", ")}. Padrão compatível: ${padraoNm}. Para estudo: que causas considerar, que raciocínio seguir e que diagnósticos diferenciais aprender?`;
   return "https://www.google.com/search?q=" + encodeURIComponent(q);
 }
 

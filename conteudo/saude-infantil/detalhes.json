@@ -5,61 +5,61 @@
     "tecnica": "Iluminar cada olho com oftalmoscópio ou lanterna a ~30cm. Observar reflexo laranja-avermelhado bilateral e simétrico no fundo do olho.",
     "normal": "Reflexo vermelho presente, bilateral, simétrico e homogéneo.",
     "alterado": "Leucocoria (reflexo branco), assimetria ou ausência de reflexo.",
-    "conduta": "Referenciação urgente a Oftalmologia no mesmo dia — excluir catarata congénita, glaucoma ou retinoblastoma."
+    "conduta": "Estaria indicada referenciação urgente a Oftalmologia no mesmo dia — para excluir catarata congénita, glaucoma ou retinoblastoma."
    },
    {
     "tecnica": "Confirmar registo no BSIJ ou contactar a maternidade. Rastreio feito por OAE (emissões otoacústicas) ou PEATE antes da alta.",
     "normal": "Resultado passou em ambos os ouvidos. Registado no BSIJ.",
     "alterado": "Resultado referir ou rastreio não realizado.",
-    "conduta": "Agendar urgentemente em centro de audiologia. Janela terapêutica ideal antes dos 6 meses de vida."
+    "conduta": "Agendar-se-ia urgentemente em centro de audiologia. Janela terapêutica ideal antes dos 6 meses de vida."
    },
    {
     "tecnica": "Confirmar registo no BSIJ. Colheita ideal D3-D6 (picada no calcanhar). Rastreia hipotiroidismo congénito, PKU e outras metabolopatias.",
     "normal": "Colheita realizada, resultado normal recebido.",
     "alterado": "Não realizado ou resultado alterado (notificado pelo laboratório).",
-    "conduta": "Se não realizado: agendar urgentemente. Janela até D15 mas perde sensibilidade. Se alterado: seguir protocolo da doença identificada."
+    "conduta": "Se não realizado: agendar-se-ia urgentemente. Janela até D15, mas perde sensibilidade. Se alterado: seguir-se-ia o protocolo da doença identificada."
    },
    {
     "tecnica": "Pesar em balança calibrada sem roupa. Calcular % de perda: (PN - Patual) / PN × 100.",
     "normal": "Perda até 10% do peso de nascimento. Recuperação até D10-D14.",
     "alterado": "Perda superior a 10% ou não recuperação até D14.",
-    "conduta": "Reavaliar pega e produção de leite. Considerar suplementação. Se perda acima de 15%: observação hospitalar."
+    "conduta": "Reavaliar-se-ia a pega e a produção de leite. Ponderar-se-ia suplementação. Se perda acima de 15%: observação hospitalar."
    },
    {
     "tecnica": "Comprimento com infantómetro em decúbito dorsal. PC com fita métrica inextensível ao nível da fronte e occipital.",
     "normal": "Valores dentro dos percentis esperados para a idade gestacional.",
     "alterado": "Abaixo do P3 ou acima do P97, ou assimetria marcada.",
-    "conduta": "Comparar com dados da maternidade. Macrocefalia ou microcefalia: avaliação neurológica."
+    "conduta": "Comparar-se-ia com os dados da maternidade. Perante macrocefalia ou microcefalia: avaliação neurológica."
    },
    {
     "tecnica": "Confirmar no BSIJ. VHB deve ser administrada nas primeiras 24h. BCG nos grupos de risco definidos pela DGS.",
     "normal": "VHB 1ª dose administrada e registada. BCG se indicado.",
     "alterado": "Vacinação não realizada ou não registada.",
-    "conduta": "Administrar VHB urgentemente se não feita (janela até 7 dias). BCG pode ser feita nos primeiros 2 meses."
+    "conduta": "Administrar-se-ia VHB urgentemente se não feita (janela até 7 dias). A BCG pode ser feita nos primeiros 2 meses."
    },
    {
     "tecnica": "Moro: estimulação súbita — resposta em abdução simétrica. Preensão: toque na palma. Sucção: toque nos lábios. Babinski: estimulação plantar lateral — extensão do hallux.",
     "normal": "Todos presentes e simétricos.",
     "alterado": "Assimetria (paralisia braquial ou fratura da clavícula) ou ausência (lesão neurológica).",
-    "conduta": "Assimetria do Moro: radiografia clavícula + ortopedia. Ausência generalizada: neurologia urgente."
+    "conduta": "Perante assimetria do Moro: radiografia da clavícula + ortopedia. Perante ausência generalizada: neurologia urgente."
    },
    {
     "tecnica": "Observação sistemática: pele, fontanela, olhos, orelhas, palato, clavículas, abdómen, genitais, testículos, membros, coluna. Ortolani e Barlow para a coxofemoral.",
     "normal": "Exame sem alterações. Testículos palpáveis bilateralmente. Coxofemoral sem clique patológico.",
     "alterado": "Qualquer achado fora do normal.",
-    "conduta": "Criptorquidia bilateral: endocrinologia urgente. Displasia da anca: ecografia antes das 6 semanas."
+    "conduta": "Perante criptorquidia bilateral: endocrinologia urgente. Perante displasia da anca: ecografia antes das 6 semanas."
    },
    {
     "tecnica": "Observar pega (boca bem aberta, lábio inferior evertido, aréola abrangida), posição, deglutições audíveis, satisfação pós-mamada.",
     "normal": "Pega correta, 8-12 mamadas/24h, bebé calmo após mamar.",
     "alterado": "Pega superficial, dor persistente, bebé irritado ou sonolento, produção insuficiente.",
-    "conduta": "Ensinar técnica de pega. Referir a consultora de lactação. Avaliar freio lingual se pega difícil persistente."
+    "conduta": "Ensinar-se-ia a técnica de pega. Referir-se-ia a consultora de lactação. Avaliar-se-ia o freio lingual se pega difícil persistente."
    },
    {
     "tecnica": "Observar interação mãe-bebé. Perguntar como se sente, se dorme, se tem apoio. Usar Edinburgh Postnatal Depression Scale (EPDS) se suspeita.",
     "normal": "Mãe responsiva, sorri ao bebé, identifica as suas necessidades, tem apoio familiar.",
     "alterado": "Indiferença ao bebé, choro persistente, sensação de incapacidade, ideação de dano.",
-    "conduta": "Apoio empático. Se depressão pós-parto: referenciação urgente a Saúde Mental."
+    "conduta": "Daria-se apoio empático. Se depressão pós-parto: referenciação urgente a Saúde Mental."
    }
   ],
   "antecipar": [
@@ -103,32 +103,32 @@
    {
     "criterio": "Leucocoria (reflexo branco) pode indicar retinoblastoma — urgência oncológica. Catarata congénita causa ambliopia grave se não tratada nas primeiras semanas. Glaucoma congénito provoca dor e cegueira progressiva.",
     "urgencia": "URGENTE — mesmo dia",
-    "conduta": "Referenciação a Oftalmologia pediátrica ou urgência hospitalar no próprio dia."
+    "conduta": "Estaria indicada referenciação a Oftalmologia pediátrica ou urgência hospitalar no próprio dia."
    },
    {
     "criterio": "Icterícia D1 é sempre patológica — nunca fisiológica. Pode indicar incompatibilidade ABO/Rh, sepsis ou défice de G6PD. A icterícia fisiológica surge após D2 e atinge pico D3-D5.",
     "urgencia": "URGENTE — mesmo dia",
-    "conduta": "Bilirrubina sérica urgente. Internamento se necessário."
+    "conduta": "Pedir-se-ia bilirrubina sérica com urgência; internamento se necessário."
    },
    {
     "criterio": "O rastreio deteta hipotiroidismo congénito (1:3000), fenilcetonúria, fibrose quística e outras metabolopatias tratáveis. Sem tratamento precoce há dano neurológico irreversível.",
     "urgencia": "URGENTE — agendar no próprio dia",
-    "conduta": "Contactar centro de rastreio neonatal regional."
+    "conduta": "Contactar-se-ia o centro de rastreio neonatal regional."
    },
    {
     "criterio": "Criptorquidia bilateral pode indicar DDS (distúrbio do desenvolvimento sexual) ou HSC (hiperplasia suprarrenal congénita) — emergência endocrinológica se genitais ambíguos.",
     "urgencia": "URGENTE bilateral — mesmo dia",
-    "conduta": "Endocrinologia pediátrica ou urgência se HSC suspeita."
+    "conduta": "Estaria indicada endocrinologia pediátrica ou urgência se HSC suspeita."
    },
    {
     "criterio": "Perda acima de 10% indica ingestão insuficiente. Causas: pega incorreta, hipogalactia, anquiloglossia, doença do bebé.",
     "urgencia": "Reavaliar em 24-48h",
-    "conduta": "Reavaliar pega. Considerar suplementação. Se bebé letárgico ou ictérico: observação hospitalar."
+    "conduta": "Reavaliar-se-ia a pega. Ponderar-se-ia suplementação. Se bebé letárgico ou ictérico: observação hospitalar."
    },
    {
     "criterio": "Depressão pós-parto afeta 10-15% das mães. Compromete o vínculo e o desenvolvimento do bebé. Fatores de risco: história prévia, isolamento social, parto difícil.",
     "urgencia": "Urgente se ideação de dano ao bebé",
-    "conduta": "Usar EPDS. Referenciação urgente a Saúde Mental se ideação suicida ou de dano ao bebé."
+    "conduta": "Usar-se-ia a EPDS. Referenciação urgente a Saúde Mental se ideação suicida ou de dano ao bebé."
    }
   ],
   "vacinas": [
@@ -152,37 +152,37 @@
     "tecnica": "Pesar em balança calibrada sem roupa. Medir comprimento com infantómetro em DV. PC com fita inextensível ao nível da fronte e occipital. Registar nas curvas OMS no BSIJ.",
     "normal": "Peso: recuperação do peso nascimento esperada. Ganho médio 150-200g/semana. Comprimento e PC dentro dos percentis.",
     "alterado": "Não recuperou o peso nascimento até D14. Cruzamento descendente de percentis.",
-    "conduta": "Se não recuperou: reavaliar AM, pega, produção. Se cruzamento de 2 percentis: investigar causa orgânica."
+    "conduta": "Se não recuperou: reavaliar-se-iam AM, pega e produção. Se cruzamento de 2 percentis: investigar-se-ia causa orgânica."
    },
    {
     "tecnica": "Mover objeto colorido lentamente a 30cm do rosto em arco horizontal. Observar se os olhos seguem. Iluminar cada olho — reflexo vermelho bilateral. Cover test: cobrir alternadamente cada olho.",
     "normal": "Fixa rosto a 30cm. Segue objeto lentamente. Reflexo vermelho bilateral simétrico.",
     "alterado": "Não fixa, não segue, reflexo vermelho ausente ou assimétrico, estrabismo constante.",
-    "conduta": "Reflexo vermelho alterado: referenciação a Oftalmologia na semana. Não fixa: Oftalmologia urgente."
+    "conduta": "Perante reflexo vermelho alterado: referenciação a Oftalmologia na semana. Se não fixa: Oftalmologia urgente."
    },
    {
     "tecnica": "Verificar no BSIJ o resultado do rastreio OAE ou PEATE realizado na maternidade. Observar se assusta com som forte.",
     "normal": "Resultado 'passou' em ambos os ouvidos registado no BSIJ.",
     "alterado": "Resultado 'referir' ou rastreio não realizado.",
-    "conduta": "Se não realizado ou alterado: Audiologia urgente — janela terapêutica ideal antes dos 6 meses."
+    "conduta": "Se não realizado ou alterado: estaria indicada Audiologia urgente — janela terapêutica ideal antes dos 6 meses."
    },
    {
     "tecnica": "Observar postura em DV e DD. Resistência à mobilização passiva dos membros. Puxar para sentar — observar lag cefálico (cabeça deve tentar acompanhar).",
     "normal": "Tónus simétrico. Em DV tentativa de elevar ligeiramente a cabeça. Lag cefálico presente mas com alguma tentativa de controlo.",
     "alterado": "Hipotonia marcada (membros muito flácidos), hipertonia (extensão exagerada), assimetria.",
-    "conduta": "Hipotonia ou assimetria: avaliação neurológica urgente. Investigar paralisia braquial se assimétrico."
+    "conduta": "Perante hipotonia ou assimetria: avaliação neurológica urgente. Investigar-se-ia paralisia braquial se assimétrico."
    },
    {
     "tecnica": "Auscultar com estetoscópio no foco mitral, pulmonar, aórtico e tricúspide. Avaliar frequência e ritmo. Palpar pulsos femorais.",
     "normal": "Sem sopros patológicos. FC 120-160/min. Pulsos femorais presentes e simétricos.",
     "alterado": "Sopro audível, arritmia, pulsos femorais ausentes ou diminuídos.",
-    "conduta": "Sopro + sintomas (taquipneia, dificuldade alimentar, cianose): urgência. Sopro isolado em bebé assintomático: ecocardiograma em 2-4 semanas."
+    "conduta": "Perante sopro + sintomas (taquipneia, dificuldade alimentar, cianose): urgência. Perante sopro isolado em bebé assintomático: ecocardiograma em 2-4 semanas."
    },
    {
     "tecnica": "Manobra de Ortolani (redução): flexão + abdução com pressão anterior no trocânter. Manobra de Barlow (luxação): flexão + adução com pressão posterior. Observar simetria das pregas cutâneas.",
     "normal": "Sem clique ou ressalto patológico. Abdução simétrica. Pregas cutâneas simétricas.",
     "alterado": "Clique ou ressalto palpável. Limitação da abdução. Assimetria de pregas.",
-    "conduta": "Suspeita: ecografia da anca antes das 6 semanas. Confirmar: referenciação a Ortopedia Pediátrica."
+    "conduta": "Perante suspeita: ecografia da anca antes das 6 semanas. Se confirmado: referenciação a Ortopedia Pediátrica."
    }
   ],
   "antecipar": [
@@ -211,22 +211,22 @@
    {
     "criterio": "Não fixar nem seguir um rosto humano a 30cm aos 4-6 semanas é sinal de défice visual grave. Causas: catarata congénita (tratável nas primeiras semanas), lesão cortical, retinopatia.",
     "urgencia": "🟠 Prioritário — referenciação a Oftalmologia em 1 semana",
-    "conduta": "Referenciação a Oftalmologia Pediátrica. Não adiar — janela de tratamento da catarata congénita fecha rapidamente."
+    "conduta": "Estaria indicada referenciação a Oftalmologia Pediátrica; não convém adiar — a janela de tratamento da catarata congénita fecha rapidamente."
    },
    {
     "criterio": "Hipotonia marcada (membros muito flácidos, cabeça cai sem controlo) pode indicar lesão neurológica central, doença neuromuscular ou causa metabólica. Assimetria sugere paralisia braquial ou fratura da clavícula.",
     "urgencia": "🔴 Urgência — avaliação neurológica no próprio dia",
-    "conduta": "Urgência pediátrica. Se assimetria do Moro: radiografia clavícula."
+    "conduta": "Estaria indicada urgência pediátrica. Perante assimetria do Moro: radiografia da clavícula."
    },
    {
     "criterio": "Icterícia após D14 pode ser fisiológica prolongada (AM) ou colestática. Fezes acólicas (brancas/acinzentadas) + urina escura = colestase = urgência. Atresia das vias biliares tem janela terapêutica estreita (antes das 8 semanas).",
     "urgencia": "🔴 Urgência se fezes acólicas — avaliação hospitalar no próprio dia",
-    "conduta": "Observar cor das fezes. Se acólicas: urgência hospitalar. Se ictérica mas fezes normais: bilirrubina urgente para diferenciar."
+    "conduta": "Observar-se-ia a cor das fezes. Se acólicas: urgência hospitalar. Se ictérica mas fezes normais: bilirrubina urgente para diferenciar."
    },
    {
     "criterio": "Bebé que não tem períodos de alerta nem comunicação, ou que é inconsolável mais de 3h/dia, requer avaliação para excluir causa orgânica (infeção, dor, problemas neurológicos).",
     "urgencia": "🟠 Prioritário — avaliação em 24-48h",
-    "conduta": "Avaliar temperatura, alimentação, hidratação. Se febre: urgência pediátrica. Se sem causa orgânica: avaliar relação cuidador-bebé."
+    "conduta": "Avaliar-se-iam temperatura, alimentação e hidratação. Se febre: urgência pediátrica. Se sem causa orgânica: avaliar a relação cuidador-bebé."
    }
   ],
   "vacinas": [
@@ -349,37 +349,37 @@
     "tecnica": "Pesar, medir e calcular PC. Registar nas curvas OMS. Avaliar tendência — comparar com consultas anteriores.",
     "normal": "Peso médio 6-7 kg. Ganho 100-150g/semana. Crescimento dentro dos percentis.",
     "alterado": "Cruzamento descendente de 2 percentis. Ganho insuficiente ou excessivo.",
-    "conduta": "Se cruzamento descendente: investigar causa orgânica ou social. Se ganho excessivo: reavaliar quantidade de fórmula."
+    "conduta": "Se cruzamento descendente: investigar-se-ia causa orgânica ou social. Se ganho excessivo: reavaliar-se-ia a quantidade de fórmula."
    },
    {
     "tecnica": "Observar sorriso espontâneo ao ver o cuidador. Tentar provocar gargalhada com estimulação suave (cócegas, sons). Observar interesse no ambiente.",
     "normal": "Sorriso social bem estabelecido. Gargalhada presente. Interação ativa e prazerosa.",
     "alterado": "Sorriso ausente ou muito escasso. Sem gargalhada. Indiferença ao cuidador.",
-    "conduta": "Referenciação a consulta de Desenvolvimento. Avaliar visão e audição para excluir défice sensorial."
+    "conduta": "Estaria indicada referenciação a consulta de Desenvolvimento. Avaliar-se-iam visão e audição para excluir défice sensorial."
    },
    {
     "tecnica": "Em DV: observar se eleva a cabeça a 90°, apoia nos antebraços com tronco elevado. Em DD: puxar para sentar — observar controlo cefálico (cabeça deve acompanhar o tronco sem lag marcado).",
     "normal": "Em DV: 90° de elevação cefálica com apoio nos antebraços. Controlo cefálico quase completo.",
     "alterado": "Não eleva a cabeça em DV. Lag cefálico marcado. Hipotonia ou hipertonia.",
-    "conduta": "Avaliação neurológica. Fisioterapia precoce se confirmado atraso motor."
+    "conduta": "Estaria indicada avaliação neurológica. Fisioterapia precoce se confirmado atraso motor."
    },
    {
     "tecnica": "Oferecer brinquedo colorido. Observar se agarra com a mão. Observar se leva à boca. Observar se transfere entre mãos (ainda emergente aos 4 meses).",
     "normal": "Preensão palmar presente. Leva objetos à boca. Início de transferência entre mãos.",
     "alterado": "Sem preensão palmar. Mãos sempre fechadas em punho.",
-    "conduta": "Avaliação neurológica — perseveração de preensão após 4M sugere lesão piramidal."
+    "conduta": "Estaria indicada avaliação neurológica — a perseveração de preensão após 4M sugere lesão piramidal."
    },
    {
     "tecnica": "Mover objeto colorido lentamente em arco de 180°. Testar convergência. Cover test. Reflexo vermelho.",
     "normal": "Segue em 180°. Convergência estável. Sem estrabismo constante. Reflexo vermelho normal.",
     "alterado": "Não segue. Estrabismo constante. Nistagmo. Reflexo vermelho alterado.",
-    "conduta": "Estrabismo constante após 4M: referenciação a Oftalmologia. Reflexo vermelho alterado: referenciação urgente."
+    "conduta": "Perante estrabismo constante após 4M: referenciação a Oftalmologia. Perante reflexo vermelho alterado: referenciação urgente."
    },
    {
     "tecnica": "Vocalizar para o bebé e observar resposta — sons, virar a cabeça. Palreio espontâneo. Reação ao nome.",
     "normal": "Palreio ativo (arrulhos, vogais). Vira a cabeça em direção à voz. Reage ao nome.",
     "alterado": "Sem vocalização espontânea. Sem reação a sons ou à voz.",
-    "conduta": "Rastreio auditivo urgente. Se audição normal: avaliação de Desenvolvimento."
+    "conduta": "Estaria indicado rastreio auditivo urgente. Se audição normal: avaliação de Desenvolvimento."
    }
   ],
   "antecipar": [
@@ -403,22 +403,22 @@
    {
     "criterio": "Sorriso social ausente aos 4 meses — já deveria estar bem estabelecido desde as 6-8 semanas. Causa possível: atraso cognitivo, défice sensorial (visual ou auditivo), perturbação relacional.",
     "urgencia": "🟣 Programado — referenciação a Desenvolvimento em 4-6 semanas",
-    "conduta": "Rastreio visual e auditivo. Referenciação a consulta de Desenvolvimento."
+    "conduta": "Rastreio visual e auditivo; estaria indicada referenciação a consulta de Desenvolvimento."
    },
    {
     "criterio": "Hipotonia marcada ou incapacidade de elevar a cabeça em DV aos 4 meses é atraso motor significativo. Pode indicar paralisia cerebral hipotónica, doença neuromuscular ou causa metabólica.",
     "urgencia": "🟠 Prioritário — avaliação neurológica em 1-2 semanas",
-    "conduta": "Avaliação neurológica. CK se suspeita de miopatia. Iniciar fisioterapia."
+    "conduta": "Estaria indicada avaliação neurológica. CK se suspeita de miopatia. Iniciar-se-ia fisioterapia."
    },
    {
     "criterio": "Incapacidade de seguir objetos após as 6 semanas sugere défice visual grave. Estrabismo constante após os 4 meses é sempre patológico.",
     "urgencia": "🟠 Prioritário — Oftalmologia em 1 semana",
-    "conduta": "Referenciação a Oftalmologia Pediátrica."
+    "conduta": "Estaria indicada referenciação a Oftalmologia Pediátrica."
    },
    {
     "criterio": "Estrabismo intermitente é normal até aos 4 meses (sistema visual ainda imaturo). Após os 4 meses deve ser constante e estável — se mantém estrabismo: referenciação.",
     "urgencia": "🟣 Programado — Oftalmologia em 4-8 semanas",
-    "conduta": "Referenciação a Oftalmologia. Risco de ambliopia se não tratado."
+    "conduta": "Estaria indicada referenciação a Oftalmologia. Risco de ambliopia se não tratado."
    }
   ],
   "vacinas": [
@@ -542,37 +542,37 @@
     "tecnica": "Pesar, medir e calcular PC. Registar nas curvas OMS. Comparar com consulta anterior.",
     "normal": "Crescimento dentro dos percentis. Peso médio 8.5-9.5 kg, comprimento 70-74 cm.",
     "alterado": "Cruzamento de percentis, ganho insuficiente ou excessivo.",
-    "conduta": "Se cruzamento descendente de 2 percentis: investigar causa. Se ganho excessivo: orientar diversificação alimentar."
+    "conduta": "Se cruzamento descendente de 2 percentis: investigar-se-ia a causa. Se ganho excessivo: orientar-se-ia a diversificação alimentar."
    },
    {
     "tecnica": "Observar enquanto brinca. Deve sentar estável sem apoio das mãos, gatinhar ou arrastar-se com propulsão alternada, puxar-se para pé agarrado a móvel, dar passos laterais com apoio.",
     "normal": "Senta sem apoio. Locomoção por gatinhar ou arrastar. Puxa-se para pé.",
     "alterado": "Não senta sem apoio aos 9 meses.",
-    "conduta": "Atraso motor significativo — avaliação neurológica urgente. Investigar hipotonia ou espasticidade."
+    "conduta": "Atraso motor significativo — estaria indicada avaliação neurológica urgente. Investigar-se-ia hipotonia ou espasticidade."
    },
    {
     "tecnica": "Oferecer objeto pequeno (passas, cereais). Observar tipo de preensão: palmer (toda a mão), radial (polegar + dedos), inferior (polegar + ponta do indicador).",
     "normal": "Pinça inferior ou radial bem estabelecida. Transfere objetos entre mãos.",
     "alterado": "Preensão apenas palmar. Não usa o polegar.",
-    "conduta": "Atraso de motor fino — fisioterapia/terapia ocupacional. Avaliar causa neurológica."
+    "conduta": "Atraso de motor fino — fisioterapia/terapia ocupacional. Avaliar-se-ia causa neurológica."
    },
    {
     "tecnica": "Observar lalação espontânea. Perguntar aos pais se diz mamã/papá. Testar compreensão de não. Observar reação ao próprio nome.",
     "normal": "Lalação variada (pa-pa, da-da). Reage ao nome. Compreende não com gesto.",
     "alterado": "Sem lalação, sem reação ao nome, sem compreensão gestual.",
-    "conduta": "Rastreio auditivo urgente. Se audição normal e sem lalação: referenciação a Desenvolvimento."
+    "conduta": "Estaria indicado rastreio auditivo urgente. Se audição normal e sem lalação: referenciação a Desenvolvimento."
    },
    {
     "tecnica": "Observar se aponta para objetos com indicador. Esconder brinquedo sob lenço — observar se procura. Observar se segue o olhar do adulto. Observar ansiedade de separação (sinal positivo de vínculo).",
     "normal": "Aponta com indicador. Procura objeto escondido. Segue o olhar do adulto. Ansiedade de separação presente.",
     "alterado": "Não aponta. Não procura objeto escondido. Não segue o olhar.",
-    "conduta": "Dois ou mais sinais ausentes — rastreio de PEA. Referenciação urgente a Desenvolvimento."
+    "conduta": "Dois ou mais sinais ausentes — rastreio de PEA. Estaria indicada referenciação urgente a Desenvolvimento."
    },
    {
     "tecnica": "Palpação das bolsas escrotais bilateralmente. Observar aspeto dos genitais externos.",
     "normal": "Testículos palpáveis bilateralmente nas bolsas.",
     "alterado": "Testículo não palpável numa ou ambas as bolsas.",
-    "conduta": "Criptorquidia confirmada após 6 meses: referenciação a Cirurgia/Urologia Pediátrica. Cirurgia recomendada antes dos 18 meses."
+    "conduta": "Perante criptorquidia confirmada após 6 meses: referenciação a Cirurgia/Urologia Pediátrica. Cirurgia recomendada antes dos 18 meses."
    }
   ],
   "antecipar": [
@@ -596,17 +596,17 @@
    {
     "criterio": "Não sentar sem apoio aos 9 meses é um atraso motor significativo. Pode indicar hipotonia central (patologia neurológica ou metabólica) ou hipotonia periférica (doença muscular).",
     "urgencia": "URGENTE — referenciação em 2 semanas",
-    "conduta": "Avaliação neurológica. Investigar hipotonia: CK, hemograma, metabolismo."
+    "conduta": "Estaria indicada avaliação neurológica. Investigar-se-ia hipotonia: CK, hemograma, metabolismo."
    },
    {
     "criterio": "Não apontar com o indicador, não imitar e não olhar quando chamam são os 3 sinais cardinais precoces de PEA. A presença de 2 ou mais requer rastreio urgente. O M-CHAT é feito aos 18M mas estes sinais devem ser investigados já.",
     "urgencia": "URGENTE — referenciação em 2-4 semanas",
-    "conduta": "Referenciação a Desenvolvimento Pediátrico. Iniciar rastreio auditivo para excluir hipoacusia."
+    "conduta": "Estaria indicada referenciação a Desenvolvimento Pediátrico. Iniciar-se-ia rastreio auditivo para excluir hipoacusia."
    },
    {
     "criterio": "Ausência de preensão palmar e/ou incapacidade de levar objetos à boca pode indicar lesão neurológica, fraqueza muscular ou défice visual grave.",
     "urgencia": "Referenciação em 4-6 semanas",
-    "conduta": "Avaliação neurológica. Oftalmologia se suspeita de défice visual."
+    "conduta": "Estaria indicada avaliação neurológica. Oftalmologia se suspeita de défice visual."
    }
   ],
   "vacinas": []
@@ -617,43 +617,43 @@
     "tecnica": "Pesar, medir e calcular PC. Aos 12 meses o peso deve ser aproximadamente o triplo do peso de nascimento. Comprimento esperado 74-78 cm.",
     "normal": "Peso 3x PN. Comprimento 74-78 cm. PC 45-47 cm.",
     "alterado": "Desvio significativo dos valores esperados ou cruzamento de percentis.",
-    "conduta": "Cruzamento descendente de 2 percentis: investigar causa orgânica ou social."
+    "conduta": "Perante cruzamento descendente de 2 percentis: investigar-se-ia causa orgânica ou social."
    },
    {
     "tecnica": "Observar marcha com apoio (segura com uma mão). Observar se fica de pé sem apoio. Contar os passos independentes (0-5 são normais nesta fase).",
     "normal": "Marcha com apoio segura. Fica de pé 1-2 seg sem apoio. Alguns passos independentes.",
     "alterado": "Não anda com apoio nem fica de pé.",
-    "conduta": "Atraso motor: avaliação neurológica. Investigar displasia da anca se marcha assimétrica."
+    "conduta": "Perante atraso motor: avaliação neurológica. Investigar-se-ia displasia da anca se marcha assimétrica."
    },
    {
     "tecnica": "Oferecer passas ou cereais. Observar se usa pinça superior (polegar e indicador em oposição precisa).",
     "normal": "Pinça superior com oposição polegar-indicador precisa.",
     "alterado": "Ainda usa preensão palmar ou radial.",
-    "conduta": "Atraso de motor fino: fisioterapia/terapia ocupacional. Avaliação neurológica se assimétrico."
+    "conduta": "Perante atraso de motor fino: fisioterapia/terapia ocupacional. Avaliação neurológica se assimétrico."
    },
    {
     "tecnica": "Perguntar aos pais quais as palavras que o bebé diz e se são usadas com significado consistente (mamã ao ver a mãe, água ao ter sede).",
     "normal": "2-3 palavras com significado consistente. Compreende pedidos simples (dá cá, não).",
     "alterado": "Sem palavras com significado ou apenas ecolalia.",
-    "conduta": "Referenciação a Terapia da Fala. Rastreio auditivo. Rastreio PEA se outros sinais associados."
+    "conduta": "Estaria indicada referenciação a Terapia da Fala. Rastreio auditivo. Rastreio PEA se outros sinais associados."
    },
    {
     "tecnica": "Inspeção visual da cavidade oral. Contar dentes. Observar sinais de cárie (manchas brancas ou castanhas no esmalte). Avaliar higiene oral.",
     "normal": "8 dentes incisivos (4 superiores, 4 inferiores). Ausência de cáries. Higiene oral a ser feita.",
     "alterado": "Cáries precoces (mancha branca no esmalte), menos de 4 dentes.",
-    "conduta": "Cárie precoce: referenciação ao cheque-dentista PNPSO. Menos de 4 dentes além dos 14 meses: investigar hipodontia."
+    "conduta": "Perante cárie precoce: referenciação ao cheque-dentista PNPSO. Com menos de 4 dentes além dos 14 meses: investigar-se-ia hipodontia."
    },
    {
     "tecnica": "Esfigmomanómetro pediátrico com manguito adequado (deve cobrir 2/3 do braço). Criança sentada ou deitada, membro superior ao nível do coração. 3 leituras consecutivas — usar a média.",
     "normal": "PA sistólica abaixo de 100 mmHg. PA diastólica abaixo de 65 mmHg.",
     "alterado": "PA sistólica acima de 100 mmHg ou diastólica acima de 65 mmHg em 3 ocasiões.",
-    "conduta": "Confirmar em 3 consultas diferentes. HTA confirmada: referenciação a Pediatria. Investigar causa secundária."
+    "conduta": "Confirmar-se-ia em 3 consultas diferentes. Perante HTA confirmada: referenciação a Pediatria. Investigar-se-ia causa secundária."
    },
    {
     "tecnica": "Cover test: cobrir alternadamente cada olho — observar se o olho descoberto faz movimento de fixação (sinal de estrabismo). Reflexo vermelho bilateral.",
     "normal": "Sem movimento de refixação ao cover test. Reflexo vermelho bilateral e simétrico.",
     "alterado": "Movimento de refixação, reflexo vermelho alterado ou assimétrico.",
-    "conduta": "Referenciação a Oftalmologia."
+    "conduta": "Estaria indicada referenciação a Oftalmologia."
    }
   ],
   "antecipar": [
@@ -682,22 +682,22 @@
    {
     "criterio": "Não andar com apoio aos 12 meses pode indicar hipotonia, displasia da anca bilateral ou atraso motor de causa neurológica.",
     "urgencia": "Referenciação em 2-4 semanas",
-    "conduta": "Avaliação neurológica. Ecografia das ancas se marcha não iniciada."
+    "conduta": "Estaria indicada avaliação neurológica. Ecografia das ancas se marcha não iniciada."
    },
    {
     "criterio": "A ausência de palavras com significado aos 12 meses é sinal de alerta para atraso de linguagem, hipoacusia ou PEA. Mais preocupante se associado a outros sinais (não aponta, não imita).",
     "urgencia": "Referenciação em 4-6 semanas",
-    "conduta": "Rastreio auditivo. Avaliação de Desenvolvimento. M-CHAT aos 18M se outros sinais."
+    "conduta": "Estariam indicados rastreio auditivo e avaliação de Desenvolvimento. M-CHAT aos 18M se outros sinais."
    },
    {
     "criterio": "Ausência de apontar, imitar e responder ao nome são os 3 sinais cardinais de PEA. A sua presença conjunta requer rastreio urgente mesmo antes dos 18 meses.",
     "urgencia": "URGENTE — referenciação em 2 semanas",
-    "conduta": "M-CHAT antecipado. Referenciação a Desenvolvimento Pediátrico."
+    "conduta": "M-CHAT antecipado. Estaria indicada referenciação a Desenvolvimento Pediátrico."
    },
    {
     "criterio": "A regressão de competências já adquiridas é sempre patológica. Pode indicar epilepsia (síndrome de Rett, síndrome de Lennox-Gastaut), doença metabólica progressiva ou causa estrutural.",
     "urgencia": "URGENTE — avaliação neurológica urgente",
-    "conduta": "Avaliação neurológica urgente. EEG. Estudo metabólico."
+    "conduta": "Estaria indicada avaliação neurológica urgente. EEG. Estudo metabólico."
    }
   ],
   "vacinas": [
@@ -821,43 +821,43 @@
     "tecnica": "Pesar, medir e calcular IMC (peso/altura²). A partir dos 18 meses o IMC começa a ter valor clínico para rastreio de excesso de peso.",
     "normal": "IMC entre P5 e P85 para a idade e sexo. Peso médio 11-12 kg, altura 80-85 cm.",
     "alterado": "IMC acima do P85 (excesso de peso) ou abaixo do P5 (magreza).",
-    "conduta": "IMC acima de P85: orientação alimentar e atividade física. IMC acima de P97: referenciação a Pediatria."
+    "conduta": "Perante IMC acima de P85: orientação alimentar e atividade física. Perante IMC acima de P97: referenciação a Pediatria."
    },
    {
     "tecnica": "Observar marcha espontânea. Pedir para correr. Observar subida e descida de escadas (com apoio bilateral). Pedir para chutar uma bola.",
     "normal": "Corre (instável mas funcional). Sobe e desce escadas com apoio das duas mãos. Chuta bola.",
     "alterado": "Marcha em pontas de pés sistemática, marcha assimétrica ou não corre.",
-    "conduta": "Marcha em pontas de pés: referenciação neurológica/ortopédica. Assimetria: ecografia da anca."
+    "conduta": "Perante marcha em pontas de pés: referenciação neurológica/ortopédica. Perante assimetria: ecografia da anca."
    },
    {
     "tecnica": "Contar palavras com os pais — pedir que listem todas as palavras que o filho diz com significado. Observar combinação de 2 palavras.",
     "normal": "15-20 palavras com significado. Começa a combinar 2 palavras (mamã água, mais papa).",
     "alterado": "Menos de 15 palavras ou sem combinação de 2 palavras.",
-    "conduta": "Menos de 15 palavras: referenciação a Terapia da Fala. Menos de 10 palavras: urgente."
+    "conduta": "Com menos de 15 palavras: referenciação a Terapia da Fala. Com menos de 10 palavras: urgente."
    },
    {
     "tecnica": "Oferecer caixinha com tampa, cubo e orifício, boneco. Observar jogo simbólico (dar comida ao boneco, fingir telefonar). Observar encaixe de formas.",
     "normal": "Jogo simbólico emergente (faz de conta). Encaixa 2-3 formas.",
     "alterado": "Ausência de jogo simbólico. Jogo repetitivo e estereotipado.",
-    "conduta": "Ausência de jogo simbólico com outros sinais: M-CHAT e referenciação a Desenvolvimento."
+    "conduta": "Perante ausência de jogo simbólico com outros sinais: M-CHAT e referenciação a Desenvolvimento."
    },
    {
     "tecnica": "Tabela dos E de Snellen ou Imagens de Mary Sheridan adaptadas para esta idade. Testar cada olho separadamente com o outro ocluído.",
     "normal": "Segue objetos pequenos. Comportamento visual normal para a idade.",
     "alterado": "Não segue, estrabismo ou assimetria de comportamento entre os dois olhos.",
-    "conduta": "Referenciação a Oftalmologia. Risco de ambliopia se não tratado precocemente."
+    "conduta": "Estaria indicada referenciação a Oftalmologia. Risco de ambliopia se não tratado precocemente."
    },
    {
     "tecnica": "Esfigmomanómetro pediátrico com manguito adequado. 3 leituras — usar a média.",
     "normal": "PA sistólica abaixo de 100 mmHg.",
     "alterado": "PA acima dos valores de referência por sexo e percentil de altura.",
-    "conduta": "Confirmar em 3 ocasiões. Se persistente: referenciação a Pediatria."
+    "conduta": "Confirmar-se-ia em 3 ocasiões. Se persistente: referenciação a Pediatria."
    },
    {
     "tecnica": "Aplicar M-CHAT-R/F (Modified Checklist for Autism in Toddlers) — 20 questões aos pais. Score de risco. Se positivo: entrevista de seguimento (Follow-Up).",
     "normal": "Score baixo (0-2 na versão R). Comportamento social adequado para a idade.",
     "alterado": "Score médio (3-7) ou alto (acima de 7) na versão R.",
-    "conduta": "Score médio: aplicar Follow-Up. Score alto ou Follow-Up positivo: referenciação urgente a Desenvolvimento."
+    "conduta": "Perante score médio: aplicar-se-ia o Follow-Up. Perante score alto ou Follow-Up positivo: referenciação urgente a Desenvolvimento."
    }
   ],
   "antecipar": [
@@ -881,27 +881,27 @@
    {
     "criterio": "Menos de 10 palavras com significado aos 18 meses é um atraso severo de linguagem. Causas: hipoacusia, atraso global do desenvolvimento, PEA. Requer avaliação urgente.",
     "urgencia": "URGENTE — referenciação em 2 semanas",
-    "conduta": "Rastreio auditivo urgente. Referenciação a Terapia da Fala e Desenvolvimento."
+    "conduta": "Estaria indicado rastreio auditivo urgente, com referenciação a Terapia da Fala e Desenvolvimento."
    },
    {
     "criterio": "Ausência de apontar, imitar e jogo simbólico são os sinais cardinais de PEA aos 18 meses. O M-CHAT positivo nesta idade requer avaliação urgente — a intervenção precoce antes dos 3 anos tem melhores resultados.",
     "urgencia": "URGENTE — referenciação em 2-4 semanas",
-    "conduta": "M-CHAT-R/F. Se positivo: referenciação a Desenvolvimento Pediátrico urgente."
+    "conduta": "Aplicar-se-ia o M-CHAT-R/F. Se positivo: referenciação a Desenvolvimento Pediátrico urgente."
    },
    {
     "criterio": "Marcha sistemática em pontas de pés (mais de 50% do tempo) após os 18 meses pode indicar paralisia cerebral espástica, PEA ou encurtamento do tendão de Aquiles.",
     "urgencia": "Referenciação em 4-6 semanas",
-    "conduta": "Avaliação neurológica. Ortopedia se suspeita de encurtamento do tendão. Fisioterapia."
+    "conduta": "Estaria indicada avaliação neurológica. Ortopedia se suspeita de encurtamento do tendão. Fisioterapia."
    },
    {
     "criterio": "A regressão de competências já adquiridas é sempre patológica e requer avaliação neurológica urgente.",
     "urgencia": "URGENTE",
-    "conduta": "Avaliação neurológica. EEG. Estudo metabólico."
+    "conduta": "Estaria indicada avaliação neurológica. EEG. Estudo metabólico."
    },
    {
     "criterio": "M-CHAT positivo sem outros sinais óbvios requer entrevista de seguimento (Follow-Up) antes de referenciar. O Follow-Up reduz os falsos positivos do M-CHAT de 50% para 20%.",
     "urgencia": "Referenciação em 4-8 semanas se Follow-Up positivo",
-    "conduta": "Aplicar entrevista Follow-Up. Se positiva: referenciação a Desenvolvimento."
+    "conduta": "Aplicar-se-ia a entrevista Follow-Up. Se positiva: referenciação a Desenvolvimento."
    }
   ],
   "vacinas": [

@@ -33,7 +33,7 @@ function Detalhe({ det, tab }) {
     {det.tecnica && <LinhaDetalhe rotulo="Como avaliar">{det.tecnica}</LinhaDetalhe>}
     {det.normal && <LinhaDetalhe rotulo="Normal"><Tag cor={ALERTA_INFO.green}>Normal</Tag>{det.normal}</LinhaDetalhe>}
     {det.alterado && <LinhaDetalhe rotulo="Alterado"><Tag cor={ALERTA_INFO.red}>Alterado</Tag>{det.alterado}</LinhaDetalhe>}
-    {det.conduta && <LinhaDetalhe rotulo="Conduta">{det.conduta}</LinhaDetalhe>}
+    {det.conduta && <LinhaDetalhe rotulo="Conduta esperada (para estudo)">{det.conduta}</LinhaDetalhe>}
   </>);
   if (tab === "antecipar") return (<>
     {det.mensagem && <LinhaDetalhe rotulo="Mensagem"><strong>{det.mensagem}</strong></LinhaDetalhe>}
@@ -43,7 +43,7 @@ function Detalhe({ det, tab }) {
   if (tab === "alertas") return (<>
     {det.criterio && <LinhaDetalhe rotulo="Detalhe clínico">{det.criterio}</LinhaDetalhe>}
     {det.urgencia && <LinhaDetalhe rotulo="Prioridade"><Tag cor={corUrgencia(det.urgencia)}>{limparEmojis(det.urgencia)}</Tag></LinhaDetalhe>}
-    {det.conduta && det.conduta !== det.criterio && <LinhaDetalhe rotulo="Conduta">{det.conduta}</LinhaDetalhe>}
+    {det.conduta && det.conduta !== det.criterio && <LinhaDetalhe rotulo="Conduta esperada (para estudo)">{det.conduta}</LinhaDetalhe>}
   </>);
   return (<>
     {det.dose_info && <LinhaDetalhe rotulo="Esquema">{det.dose_info}</LinhaDetalhe>}
@@ -165,7 +165,7 @@ export default function SaudeInfantil({ accent = "#ec4899", gradiente, onVoltar 
               ))}
             </div>
 
-            <div className="rodape"><strong>Nota:</strong> Apoio à consulta de vigilância (PNSIJ). Confirma sempre no Boletim de Saúde Infantil e Juvenil.</div>
+            <div className="rodape"><strong>Nota:</strong> Referência de estudo sobre a vigilância infantil (PNSIJ). Confirma sempre no Boletim de Saúde Infantil e Juvenil.</div>
           </>
         )}
       </div>
@@ -202,8 +202,8 @@ function MChatBody({ accent }) {
           <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: ".06em", color: resultado.cor }}>{resultado.etiqueta}</div>
           <div style={{ fontFamily: "var(--fonte-display)", fontSize: 24, color: resultado.cor, margin: "4px 0 8px" }}>Score: {resultado.score} / 20</div>
           <div style={{ fontSize: 13, color: "var(--texto)", marginBottom: 8 }}>{resultado.interpretacao}</div>
-          <div style={{ fontSize: 13, color: "var(--texto-2)" }}><strong>Conduta: </strong>{resultado.conduta}</div>
-          {resultado.aPedir && <div style={{ fontSize: 12.5, color: "var(--suave)", marginTop: 6 }}><strong>A pedir: </strong>{resultado.aPedir}</div>}
+          <div style={{ fontSize: 13, color: "var(--texto-2)" }}><strong>Conduta esperada (para estudo): </strong>{resultado.conduta}</div>
+          {resultado.aPedir && <div style={{ fontSize: 12.5, color: "var(--suave)", marginTop: 6 }}><strong>A considerar: </strong>{resultado.aPedir}</div>}
         </div>
       )}
     </div>
