@@ -14,6 +14,7 @@ import metaAnalises from "@conteudo/analises/meta.json";
 import Vacinacao from "./vacinacao/Vacinacao";
 import SaudeInfantil from "./saude-infantil/SaudeInfantil";
 import Urgencia from "./urgencia/Urgencia";
+import Cronicas from "./cronicas/Cronicas";
 import Notas from "./notas/Notas";
 import Calculadoras from "./calculadoras/Calculadoras";
 import FarmacosGravidez from "./farmacos-gravidez/FarmacosGravidez";
@@ -52,7 +53,16 @@ export const MODULOS = [
     pronto: true,
     Componente: Urgencia,
   },
-  { id: "cronicas", nome: "P. Crónicas", descricao: "Guias de doenças crónicas", accent: "#0b6e7f", bg: "#eef8fa", pronto: false },
+  {
+    id: "cronicas",
+    nome: "Patologias",
+    descricao: "Guias clínicos de patologias",
+    accent: "#0b6e7f",
+    bg: "#eef8fa",
+    gradiente: "linear-gradient(135deg,#3DB5B5 0%,#0B6E7F 55%,#0A4D6B 100%)",
+    pronto: true,
+    Componente: Cronicas,
+  },
   {
     id: "analises",
     nome: metaAnalises.nome,

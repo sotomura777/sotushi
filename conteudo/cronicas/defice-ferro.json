@@ -1,0 +1,1402 @@
+{
+  "meta": {
+    "nome": "Défice de Ferro & Anemia Ferropénica",
+    "subtitulo": "Ferramenta de apoio à decisão clínica",
+    "disclaimer": "Ferramenta de apoio à decisão. Não substitui avaliação médica individualizada. BSG 2021 · ESC 2021 · DGS · OMS"
+  },
+  "algoritmo": {
+    "start": {
+      "id": "start",
+      "type": "question",
+      "icon": "start",
+      "title": "Avaliação Inicial",
+      "text": "O doente apresenta sintomas sugestivos de défice de ferro?",
+      "hint": "Fadiga, palidez, taquicardia, dispneia de esforço, coiloníquia, pica, queda de cabelo, síndrome pernas inquietas",
+      "options": [
+        {
+          "label": "Sim, tem sintomas",
+          "next": "labs",
+          "color": "#B44330"
+        },
+        {
+          "label": "Assintomático mas grupo de risco",
+          "next": "risk_group",
+          "color": "#A8851E"
+        },
+        {
+          "label": "Achado laboratorial incidental",
+          "next": "labs",
+          "color": "#2E6BC4"
+        }
+      ]
+    },
+    "risk_group": {
+      "id": "risk_group",
+      "type": "info",
+      "icon": "risk",
+      "title": "Grupos de Risco – Rastreio Recomendado",
+      "items": [
+        "Mulheres com menstruação abundante",
+        "Grávidas (rastreio universal)",
+        "Dadores de sangue frequentes",
+        "Vegetarianos / veganos",
+        "Doentes com IC, DRC, DII",
+        "Pós-cirurgia bariátrica",
+        "Crianças em crescimento rápido",
+        "Atletas de endurance"
+      ],
+      "nextLabel": "Pedir estudo analítico →",
+      "next": "labs"
+    },
+    "labs": {
+      "id": "labs",
+      "type": "question",
+      "icon": "labs",
+      "title": "Resultados Laboratoriais",
+      "text": "Qual é o nível de ferritina sérica?",
+      "hint": "Pedir: hemograma, ferritina, saturação de transferrina, ferro sérico, CTFF, PCR",
+      "options": [
+        {
+          "label": "Ferritina < 30 µg/L",
+          "next": "check_hb",
+          "color": "#B44330"
+        },
+        {
+          "label": "Ferritina 30–100 µg/L",
+          "next": "check_inflammation",
+          "color": "#A8851E"
+        },
+        {
+          "label": "Ferritina >100 µg/L",
+          "next": "unlikely",
+          "color": "#2B7A4B"
+        }
+      ]
+    },
+    "check_inflammation": {
+      "id": "check_inflammation",
+      "type": "question",
+      "icon": "pcr",
+      "title": "Contexto Inflamatório",
+      "text": "A PCR está elevada ou existe doença crónica activa?",
+      "hint": "Ferritina é reactante de fase aguda – pode estar falsamente normal/elevada na inflamação",
+      "options": [
+        {
+          "label": "Sim, PCR ↑ e Sat.Transf < 20%",
+          "next": "functional_deficiency",
+          "color": "#B44330"
+        },
+        {
+          "label": "Não, sem inflamação",
+          "next": "unlikely",
+          "color": "#2B7A4B"
+        }
+      ]
+    },
+    "functional_deficiency": {
+      "id": "functional_deficiency",
+      "type": "diagnosis",
+      "icon": "alert",
+      "title": "Défice Funcional de Ferro",
+      "severity": "orange",
+      "criteria": [
+        "Ferritina 30–100 µg/L com inflamação activa (PCR elevada)",
+        "Saturação de transferrina < 20%",
+        "OMS: ferritina < 70 µg/L com inflamação geral sugere défice",
+        "Na IC (ESC): ferritina < 100 ou 100-299 + ST < 20%"
+      ],
+      "action": "Considerar ferro IV (melhor resposta que oral em contexto inflamatório). Investigar e tratar a doença de base.",
+      "next": "investigate_cause",
+      "nextLabel": "Investigar causa →"
+    },
+    "check_hb": {
+      "id": "check_hb",
+      "type": "question",
+      "icon": "hb",
+      "title": "Hemoglobina",
+      "text": "Qual é o valor da hemoglobina?",
+      "hint": "Anemia: Hb < 12 g/dL na mulher, < 13 g/dL no homem (OMS)",
+      "options": [
+        {
+          "label": "Hb normal",
+          "next": "iron_deficiency_no_anemia",
+          "color": "#A8851E"
+        },
+        {
+          "label": "Hb < 12 () ou < 13 () g/dL",
+          "next": "check_severity",
+          "color": "#B44330"
+        }
+      ]
+    },
+    "iron_deficiency_no_anemia": {
+      "id": "iron_deficiency_no_anemia",
+      "type": "diagnosis",
+      "icon": "def",
+      "title": "Défice de Ferro SEM Anemia",
+      "severity": "yellow",
+      "criteria": [
+        "Ferritina < 30 µg/L (depleção confirmada, DGS)",
+        "Hemoglobina normal (♀ ≥ 12 / ♂ ≥ 13 g/dL)",
+        "Saturação de transferrina habitualmente < 20%",
+        "Pode ter sintomas: fadiga, queda cabelo, pernas inquietas"
+      ],
+      "action": "Tratar a causa + suplementar. Se causa óbvia e plausível (menorragia, dieta, gravidez): reavaliar em 8-12 semanas. Se sem causa óbvia: pedir anti-tTG + H. pylori. Após normalizar Hb, continuar ferro 4-6 meses até ferritina > 50 e ST > 30% (DGS).",
+      "next": "food_tips",
+      "nextLabel": "Ver dicas alimentares →",
+      "alsoLink": {
+        "label": "Ir para tab Tratamento ",
+        "tab": "treatment"
+      }
+    },
+    "check_severity": {
+      "id": "check_severity",
+      "type": "question",
+      "icon": "sev",
+      "title": "Gravidade da Anemia",
+      "text": "Qual a gravidade e contexto clínico?",
+      "options": [
+        {
+          "label": "Hb 8–12 g/dL, estável",
+          "next": "anemia_mild",
+          "color": "#A8851E"
+        },
+        {
+          "label": "Hb < 8 g/dL ou sintomática grave",
+          "next": "anemia_severe",
+          "color": "#B44330"
+        },
+        {
+          "label": "Grávida com anemia",
+          "next": "anemia_pregnancy",
+          "color": "#2E6BC4"
+        }
+      ]
+    },
+    "anemia_mild": {
+      "id": "anemia_mild",
+      "type": "diagnosis",
+      "icon": "mod",
+      "title": "Anemia Ferropénica Ligeira-Moderada",
+      "severity": "orange",
+      "criteria": [
+        "Ferritina < 30 µg/L (< 15 = défice absoluto, BSG)",
+        "Hb 8–12 g/dL (anemia por critérios OMS)",
+        "VGM < 80 fL (microcitose) + RDW ↑",
+        "Sat. Transferrina < 16-20%"
+      ],
+      "action": "Ferro oral em 1ª linha. Investigar a causa — intensidade depende do perfil: causa óbvia (menorragia) → anti-tTG + H. pylori + tratar; homem ou pós-menopausa → EDA + colonoscopia obrigatórias. Considerar ferro IV se intolerância ou má absorção.",
+      "next": "investigate_cause",
+      "nextLabel": "Investigar causa →",
+      "alsoLink": {
+        "label": "Ir para tab Tratamento ",
+        "tab": "treatment"
+      }
+    },
+    "anemia_severe": {
+      "id": "anemia_severe",
+      "type": "diagnosis",
+      "icon": "grav",
+      "title": "Anemia Ferropénica Grave",
+      "severity": "red",
+      "criteria": [
+        "Ferritina < 15 µg/L",
+        "Hb < 8 g/dL ou sintomática",
+        "Microcitose + hipocromia marcadas"
+      ],
+      "action": "Ferro IV (carboximaltose ou derisomaltose). Transfusão se Hb < 7 g/dL com instabilidade hemodinâmica. Investigação etiológica URGENTE independentemente do perfil — EDA + colonoscopia + anti-tTG + H. pylori.",
+      "next": "red_flags",
+      "nextLabel": "Verificar red flags →",
+      "alsoLink": {
+        "label": "Ir para tab Tratamento ",
+        "tab": "treatment"
+      }
+    },
+    "anemia_pregnancy": {
+      "id": "anemia_pregnancy",
+      "type": "diagnosis",
+      "icon": "preg",
+      "title": "Anemia na Gravidez",
+      "severity": "blue",
+      "criteria": [
+        "Hb < 11 g/dL (1º/3º trimestre) ou < 10.5 g/dL (2º trimestre)",
+        "Ferritina < 70 µg/L define ferropenia na gravidez (DGS)",
+        "Ferritina < 30 µg/L confirma défice absoluto"
+      ],
+      "action": "Ferro oral se tolerado e Hb >9 g/dL. Ferro IV (carboximaltose) seguro no 2º-3º trimestre se Hb < 9 ou intolerância oral. Alvo: ferritina >30 µg/L.",
+      "next": "food_tips",
+      "nextLabel": "Ver dicas alimentares →",
+      "alsoLink": {
+        "label": "Ir para tab Tratamento ",
+        "tab": "treatment"
+      }
+    },
+    "unlikely": {
+      "id": "unlikely",
+      "type": "result",
+      "icon": "ok",
+      "title": "Défice de Ferro Improvável",
+      "text": "Ferritina >100 µg/L sem inflamação torna o défice de ferro muito improvável. Considerar outras causas de anemia se presente (B12, folato, doença crónica, hemoglobinopatia, mielodisplasia).",
+      "final": true
+    },
+    "investigate_cause": {
+      "id": "investigate_cause",
+      "type": "question",
+      "icon": "inv",
+      "title": "Investigação Etiológica",
+      "text": "Qual é o perfil do doente?",
+      "hint": "A anemia ferropénica é um sintoma, não um diagnóstico: SEMPRE investigar a causa",
+      "options": [
+        {
+          "label": "Mulher pré-menopausa",
+          "next": "cause_gynae",
+          "color": "#2E6BC4"
+        },
+        {
+          "label": "Homem ou mulher pós-menopausa",
+          "next": "cause_gi",
+          "color": "#B44330"
+        },
+        {
+          "label": "Jovem / vegetariano / dador sangue",
+          "next": "cause_diet",
+          "color": "#2B7A4B"
+        },
+        {
+          "label": "Doença crónica (IC, DRC, DII)",
+          "next": "cause_chronic",
+          "color": "#A8851E"
+        }
+      ]
+    },
+    "cause_gynae": {
+      "id": "cause_gynae",
+      "type": "info",
+      "icon": "gyn",
+      "title": "Causas Ginecológicas",
+      "items": [
+        "Menorragia (causa mais frequente)",
+        "Miomas uterinos",
+        "DIU de cobre",
+        "Endometriose",
+        "Avaliar com score PBAC"
+      ],
+      "alert": "Se >50 anos, sintomas GI, ou ferritina muito baixa → investigar TAMBÉM causa GI",
+      "next": "red_flags",
+      "nextLabel": "Verificar red flags →"
+    },
+    "cause_gi": {
+      "id": "cause_gi",
+      "type": "info",
+      "icon": "alert",
+      "title": "Investigação GI – OBRIGATÓRIA",
+      "items": [
+        "EDA + Colonoscopia (excluir neoplasia!)",
+        "Biópsia duodenal (doença celíaca – anti-tTG)",
+        "Teste H. pylori",
+        "Cápsula endoscópica se EDA + colonoscopia normais",
+        "AINEs? Anticoagulantes? Álcool?"
+      ],
+      "alert": "Homem ou mulher pós-menopausa com anemia ferropénica = neoplasia GI até prova em contrário",
+      "next": "red_flags",
+      "nextLabel": "Verificar red flags →"
+    },
+    "cause_diet": {
+      "id": "cause_diet",
+      "type": "info",
+      "icon": "diet",
+      "title": "Causas Dietéticas / Perdas não-GI",
+      "items": [
+        "Causa dietética óbvia (vegano, dador de sangue, atleta): suplementar + aconselhar",
+        "Anti-tTG + H. pylori mesmo assim (exclusão de má absorção)",
+        "Boa resposta ao tratamento em 8-12 semanas confirma a causa",
+        "Se sem resposta adequada: investigar GI mesmo com causa aparente"
+      ],
+      "next": "food_tips",
+      "nextLabel": "Ver dicas alimentares →"
+    },
+    "cause_chronic": {
+      "id": "cause_chronic",
+      "type": "info",
+      "icon": "chr",
+      "title": "Défice de Ferro na Doença Crónica",
+      "items": [
+        "IC: screening ferritina + sat.transf. (ESC 2021)",
+        "DRC: perdas crónicas + EPO resistência; ferro IV preferido",
+        "DII: prevalência 30-70%; ferro IV na doença activa",
+        "Neoplasia: défice funcional frequente"
+      ],
+      "next": "food_tips",
+      "nextLabel": "Ver dicas alimentares →",
+      "alsoLink": {
+        "label": "Ir para tab Tratamento ",
+        "tab": "treatment"
+      }
+    },
+    "red_flags": {
+      "id": "red_flags",
+      "type": "alert",
+      "icon": "flag",
+      "title": "Red Flags – Referenciação Urgente",
+      "flags": [
+        "Homem qualquer idade com anemia ferropénica de novo",
+        "Mulher pós-menopausa com anemia ferropénica",
+        "Perda de peso inexplicada",
+        "Alteração do trânsito intestinal >4 semanas",
+        "Rectorragia ou melenas",
+        "Massa abdominal palpável",
+        "Disfagia progressiva",
+        "Anemia refractária ao tratamento correcto"
+      ],
+      "next": "food_tips",
+      "nextLabel": "Ver dicas alimentares →"
+    },
+    "food_tips": {
+      "id": "food_tips",
+      "type": "question",
+      "icon": "",
+      "title": "Alimentação e Ferro",
+      "text": "Qual o tipo de dieta do doente?",
+      "hint": "As recomendações e os conselhos de absorção diferem conforme a dieta",
+      "options": [
+        {
+          "label": "Dieta omnívora (inclui carne e peixe)",
+          "next": "food_normal",
+          "color": "#9E6B3A"
+        },
+        {
+          "label": "Vegetariano ou vegano",
+          "next": "food_veg",
+          "color": "#2B7A4B"
+        }
+      ]
+    },
+    "food_normal": {
+      "id": "food_normal",
+      "type": "food",
+      "icon": "",
+      "title": "Alimentação — Dieta Omnívora",
+      "combos": [
+        {
+          "meal": "Bife + salada tomate/limão",
+          "why": "Ferro heme + vitamina C = absorção máxima"
+        },
+        {
+          "meal": "Lentilhas + pimento vermelho",
+          "why": "Ferro vegetal + vitamina C: até 6x"
+        },
+        {
+          "meal": "Espinafres cozidos + sumo de laranja",
+          "why": "Vitamina C anula oxalatos"
+        },
+        {
+          "meal": "Sardinhas + brócolos",
+          "why": "Peixe + vitamina C"
+        },
+        {
+          "meal": "Aveia + morangos (peq.-almoço)",
+          "why": "Ferro + vitamina C logo de manhã"
+        }
+      ],
+      "caution": [
+        {
+          "item": "Café e chá",
+          "tip": "Taninos reduzem absorção. Nesta fase, espaçar 1-2h das refeições com ferro"
+        },
+        {
+          "item": "Leite e derivados",
+          "tip": "Cálcio compete com ferro. Não tomar com o suplemento — separar 2h"
+        },
+        {
+          "item": "Antiácidos e IBPs",
+          "tip": "Reduzem a acidez necessária. Separar 2h da toma de ferro"
+        },
+        {
+          "item": "Cereais integrais em excesso",
+          "tip": "Fitatos reduzem absorção. Demolhar leguminosas e preferir pão de massa mãe"
+        }
+      ],
+      "lifestyle": [
+        "Exercício moderado melhora circulação e apetite",
+        "Dormir 7-9h — produção de glóbulos vermelhos",
+        "Reduzir stress — inflamação prejudica absorção"
+      ],
+      "final": true,
+      "alsoLink": {
+        "label": "Ir para tab Tratamento",
+        "tab": "treatment"
+      }
+    },
+    "food_veg": {
+      "id": "food_veg",
+      "type": "food",
+      "icon": "",
+      "title": "Alimentação — Vegetariano / Vegano",
+      "combos": [
+        {
+          "meal": "Lentilhas + pimento vermelho",
+          "why": "Ferro vegetal + vitamina C: até 6x mais absorção"
+        },
+        {
+          "meal": "Espinafres cozidos + sumo de laranja",
+          "why": "Vitamina C anula oxalatos"
+        },
+        {
+          "meal": "Grão-de-bico + tomate (húmus com limão)",
+          "why": "Ferro + vitamina C no mesmo prato"
+        },
+        {
+          "meal": "Aveia + morangos ou kiwi (peq.-almoço)",
+          "why": "Ferro + vitamina C logo de manhã"
+        },
+        {
+          "meal": "Feijão preto + brócolos + tofu",
+          "why": "Múltiplas fontes vegetais + vitamina C"
+        }
+      ],
+      "veg_sources": [
+        {
+          "food": "Sem. abóbora",
+          "mg": "8.8"
+        },
+        {
+          "food": "Tofu firme",
+          "mg": "5.4"
+        },
+        {
+          "food": "Sem. sésamo",
+          "mg": "4.7"
+        },
+        {
+          "food": "Aveia",
+          "mg": "4.0"
+        },
+        {
+          "food": "Espinafres coz.",
+          "mg": "3.6"
+        },
+        {
+          "food": "Chocolate >70%",
+          "mg": "3.4"
+        },
+        {
+          "food": "Lentilhas coz.",
+          "mg": "3.3"
+        },
+        {
+          "food": "Grão-de-bico",
+          "mg": "2.9"
+        }
+      ],
+      "veg_tips": [
+        "Vitamina C em TODAS as refeições com ferro — indispensável na dieta vegetariana",
+        "Demolhar leguminosas 8-12h — reduz fitatos que prendem o ferro",
+        "Preferir pão de massa mãe e tempeh — fermentação degrada fitatos",
+        "Separar cálcio (leite vegetal fortificado) das refeições com ferro",
+        "Cozinhar espinafres sempre — crus os oxalatos bloqueiam o ferro"
+      ],
+      "caution": [
+        {
+          "item": "Café e chá",
+          "tip": "Taninos reduzem muito a absorção. Nesta fase, beber 1-2h depois de comer"
+        },
+        {
+          "item": "Leite vegetal com cálcio",
+          "tip": "Cálcio compete com ferro. Separar em refeições diferentes"
+        },
+        {
+          "item": "Cereais integrais em excesso",
+          "tip": "Fitatos prendem ferro. Demolhar, germinar e fermentar ajuda"
+        },
+        {
+          "item": "Espinafres crus",
+          "tip": "Oxalatos bloqueiam absorção. Cozinhar reduz significativamente"
+        }
+      ],
+      "lifestyle": [
+        "Exercício moderado melhora circulação e apetite",
+        "Dormir 7-9h — produção de glóbulos vermelhos",
+        "Se ferritina < 30: suplementar (bisglicinato ou lipossómico)"
+      ],
+      "final": true,
+      "alsoLink": {
+        "label": "Ir para tab Tratamento",
+        "tab": "treatment"
+      }
+    }
+  },
+  "tratamento": {
+    "oral": [
+      {
+        "name": "Sulfato Ferroso",
+        "sub": "Fe²⁺ — sais ferrosos",
+        "form": "Comprimidos libertação prolongada",
+        "fe": "65-105 mg Fe²⁺/comp",
+        "rx": true,
+        "color": "#9E6B3A",
+        "brands": "Tardyferon® (80 mg) · Ferro-Gradumet® (105 mg) · Genéricos",
+        "back": {
+          "posologia": "1 comp/dia (ou dias alternados)\n2 comp/dia em anemia grave (3 sem, depois 1/dia)",
+          "horario": "Em jejum, 1h antes de comer. Engolir inteiro, nunca mastigar. Com sumo de laranja.",
+          "duracao": "4-6 meses após normalizar Hb (DGS)",
+          "aviso": "Gold standard. Mais eficaz mas mais efeitos GI. Comparticipado. Fezes escuras = normal."
+        }
+      },
+      {
+        "name": "Ferripolimaltose",
+        "sub": "Fe³⁺ — complexo hidróxido férrico polimaltose",
+        "form": "Comprimidos mastigáveis · Gotas · Xarope",
+        "fe": "100 mg Fe³⁺/comp · 50 mg/mL gotas",
+        "rx": true,
+        "color": "#7C3AED",
+        "brands": "Ferrum Hausmann® (mastigável, gotas, xarope) · Ferrum Fol Hausmann® (+folato) · Maltofer®",
+        "back": {
+          "posologia": "Mastigável: 1-3 comp/dia conforme gravidade\nGotas: 40-120 gotas/dia (adulto) · 2.5-5 mg/kg/dia (criança)",
+          "horario": "Mastigar ou dissolver na boca. Pode tomar com alimentos. Não mancha dentes.",
+          "duracao": "3-5 meses + 2-3 meses manutenção",
+          "aviso": "Melhor tolerado que sulfato. Pode tomar com refeições sem perder absorção. Sabor chocolate nos mastigáveis. Comparticipado. Ferrum Fol: ideal na gravidez (ferro+folato)."
+        }
+      },
+      {
+        "name": "Pirofosfato Férrico Lipossómico",
+        "sub": "Fe³⁺ — tecnologia Sucrossomial®",
+        "form": "Cápsulas · Saquetas granulado",
+        "fe": "14-30 mg Fe³⁺/cáps",
+        "rx": false,
+        "color": "#2B7A4B",
+        "brands": "Fisiogen Ferro Forte® (30 mg) · SiderAL® · Fisiogen Ferro® (14 mg)",
+        "back": {
+          "posologia": "1-2 cáps/dia conforme necessidade",
+          "horario": "A QUALQUER hora. Pode tomar com alimentos, café, leite — o lipossoma protege.",
+          "duracao": "Mínimo 8-12 semanas",
+          "aviso": "Melhor tolerado de todos. Venda livre. Absorção via M cells (independente de DMT-1). Dose de ferro por cápsula baixa — pode não bastar em anemias graves."
+        }
+      },
+      {
+        "name": "Ferro Bisglicinato",
+        "sub": "Fe²⁺ — quelado com glicina",
+        "form": "Cápsulas",
+        "fe": "14-28 mg Fe²⁺/cáps",
+        "rx": false,
+        "color": "#2B7A4B",
+        "brands": "Solgar® Gentle Iron (25 mg) · Solaray® · Now Foods® · Difensil Ferro® (gotas)",
+        "back": {
+          "posologia": "1 cáps/dia",
+          "horario": "Entre refeições de preferência. Pode tomar com alimentos se necessário.",
+          "duracao": "Suplementação contínua ou conforme indicação",
+          "aviso": "Quelado = boa absorção e menos efeitos GI. Venda livre. Dose baixa — mais para manutenção ou défice ligeiro. Compatível com dieta vegetariana."
+        }
+      },
+      {
+        "name": "Gluconato Ferroso",
+        "sub": "Fe²⁺ — sal ferroso",
+        "form": "Ampolas bebíveis 10 mL",
+        "fe": "35 mg Fe²⁺/ampola",
+        "rx": false,
+        "color": "#A8851E",
+        "brands": "Hemototal®",
+        "back": {
+          "posologia": "1-2 ampolas/dia\nDiluir em meio copo de água ou sumo",
+          "horario": "Em jejum ou entre refeições",
+          "duracao": "8-12 semanas, reavaliar",
+          "aviso": "Prático para quem não engole comprimidos. Pode ser administrado por sonda."
+        }
+      }
+    ],
+    "ivFormulacoes": [
+      {
+        "name": "Carboximaltose Férrica",
+        "sub": "Fe³⁺ IV — complexo de carboximaltose",
+        "form": "Ampolas IV 2/10/20 mL",
+        "fe": "Máx 1000 mg/sessão",
+        "rx": true,
+        "color": "#B44330",
+        "brands": "Ferinject® (Vifor)",
+        "back": {
+          "posologia": "Dose por peso + Hb:\n<70kg Hb>=10: 1000mg · <70kg Hb<10: 1500mg\n>=70kg Hb>=10: 1500mg · >=70kg Hb<10: 2000mg\nMáx 1000mg/sessão, min 1 sem intervalo",
+          "horario": "Infusão IV 15 min (>500mg). Diluir NaCl 0.9%.",
+          "duracao": "1-2 sessões",
+          "aviso": "Mais usado em PT. Seguro no 2-3 trimestre. USO HOSPITALAR. Monitorizar 30 min. Vigiar hipofosfatemia (50-75% transitória)."
+        }
+      },
+      {
+        "name": "Derisomaltose Férrica",
+        "sub": "Fe³⁺ IV — complexo de derisomaltose",
+        "form": "Ampolas IV 1/5/10 mL",
+        "fe": "Até 20 mg/kg (sem limite/sessão)",
+        "rx": true,
+        "color": "#B44330",
+        "brands": "Monofer® (Pharmacosmos)",
+        "back": {
+          "posologia": "Dose total numa infusão\nAté 20 mg/kg sem limite máximo",
+          "horario": "Infusão IV min 15 min. Diluir NaCl 0.9%.",
+          "duracao": "Sessão ÚNICA",
+          "aviso": "Reposição total numa ida. SEM risco de hipofosfatemia (vs Ferinject). USO HOSPITALAR."
+        }
+      },
+      {
+        "name": "Sacarose de Ferro",
+        "sub": "Fe³⁺ IV — complexo de sacarose",
+        "form": "Ampolas IV 5 mL",
+        "fe": "200 mg/sessão máx",
+        "rx": true,
+        "color": "#B44330",
+        "brands": "Venofer® (Vifor)",
+        "back": {
+          "posologia": "200 mg/sessão, máx 3x/semana",
+          "horario": "Infusão IV lenta 30 min. NÃO em bolus.",
+          "duracao": "5-10 sessões típico",
+          "aviso": "Longa experiência em DRC/HD. Mais sessões que Ferinject/Monofer. USO HOSPITALAR."
+        }
+      }
+    ],
+    "iv": [
+      {
+        "name": "Ferinject®",
+        "sub": "Carboximaltose Férrica 50 mg/mL",
+        "form": "Ampolas IV",
+        "fe": "Máx 1000 mg/sessão",
+        "rx": true,
+        "color": "#B44330",
+        "back": {
+          "posologia": "Dose por peso + Hb:\n<70kg Hb>=10: 1000mg\n<70kg Hb<10: 1500mg\n>=70kg Hb>=10: 1500mg\n>=70kg Hb<10: 2000mg\nMáx 1000mg/sessão, min 1 sem intervalo",
+          "horario": "Infusão IV 15 min (>500mg). Diluir NaCl 0.9%.",
+          "duracao": "1-2 sessões",
+          "aviso": "USO HOSPITALAR. Monitorizar 30 min. Seguro 2-3 trimestre gravidez. Vigiar fosfato."
+        }
+      },
+      {
+        "name": "Monofer®",
+        "sub": "Derisomaltose Férrica 100 mg/mL",
+        "form": "Ampolas IV",
+        "fe": "Até 20 mg/kg",
+        "rx": true,
+        "color": "#B44330",
+        "back": {
+          "posologia": "Dose total numa infusão\nAté 20 mg/kg",
+          "horario": "Infusão IV min 15 min. Diluir NaCl 0.9%.",
+          "duracao": "Sessão ÚNICA",
+          "aviso": "Reposição total numa ida. USO HOSPITALAR. Monitorizar 30 min."
+        }
+      },
+      {
+        "name": "Venofer®",
+        "sub": "Sacarose de Ferro 20 mg/mL",
+        "form": "Ampolas IV 5 mL",
+        "fe": "200 mg/sessão máx",
+        "rx": true,
+        "color": "#B44330",
+        "back": {
+          "posologia": "200 mg/sessão\nMáx 3x/semana",
+          "horario": "Infusão IV lenta 30 min. NÃO em bolus.",
+          "duracao": "5-10 sessões típico",
+          "aviso": "USO HOSPITALAR. Experiência longa DRC/hemodiálise."
+        }
+      }
+    ],
+    "quandoIV": [
+      "Intolerância ou falha oral",
+      "DII activa",
+      "DRC em hemodiálise",
+      "IC com défice de ferro (ESC 2021)",
+      "Hb < 8 g/dL",
+      "Pré-operatório urgente",
+      "Pós-parto com anemia significativa",
+      "Gravidez 2-3 T com intolerância oral"
+    ],
+    "qualFormulacao": [
+      {
+        "label": "Adulto padrão",
+        "text": "Sulfato ferroso (Tardyferon / Ferro-Gradumet)"
+      },
+      {
+        "label": "Intolerância GI",
+        "text": "Ferripolimaltose mastigável (Ferrum Hausmann) ou lipossómico (Fisiogen)"
+      },
+      {
+        "label": "Gravidez",
+        "text": "Sulfato ferroso + folato (Tardyferon-Fol) ou ferripolimaltose + folato (Ferrum Fol Hausmann)"
+      },
+      {
+        "label": "Crianças / disfagia / sonda",
+        "text": "Ferripolimaltose gotas (Ferrum Hausmann) ou gluconato (Hemototal)"
+      },
+      {
+        "label": "Anemia grave / DII / IC",
+        "text": "Carboximaltose (Ferinject) ou derisomaltose (Monofer) IV"
+      },
+      {
+        "label": "Vegetariano / défice leve",
+        "text": "Bisglicinato (Solgar) ou lipossómico (Fisiogen)"
+      }
+    ],
+    "horario": [
+      {
+        "title": "Ideal: De manhã em jejum",
+        "text": "30-60 min antes do pequeno-almoço, com sumo de laranja. Esperar 1h ou mais antes de café, chá ou leite.",
+        "color": "#2B7A4B"
+      },
+      {
+        "title": "Alternativa: Entre refeições",
+        "text": "2h após uma refeição e 1h antes da seguinte.",
+        "color": "#A8851E"
+      },
+      {
+        "title": "Se intolerância gástrica",
+        "text": "Tomar com refeição ligeira (absorção diminui mas tolerância aumenta muito). Nunca parar sem falar com médico.",
+        "color": "#B44330"
+      },
+      {
+        "title": "Grávidas com náuseas",
+        "text": "Tomar ao final do dia. Consistência importa mais que o horário perfeito.",
+        "color": "#7C3AED"
+      }
+    ],
+    "diasAlternados": "Estudos (Stoffel 2017) demonstraram que dias alternados resultam em absorção semelhante com menos efeitos GI. A hepcidina sobe após cada dose e demora cerca de 24h a normalizar.",
+    "alimentacao": {
+      "heme": "Animal: absorção 15-35%",
+      "naoHeme": "Vegetal: absorção 2-20%",
+      "foods": [
+        {
+          "n": "Ameijoas (100g)",
+          "fe": 28,
+          "t": "h"
+        },
+        {
+          "n": "Mexilhões (100g)",
+          "fe": 6.7,
+          "t": "h"
+        },
+        {
+          "n": "Fígado de vaca (100g)",
+          "fe": 6.5,
+          "t": "h"
+        },
+        {
+          "n": "Tofu firme (100g)",
+          "fe": 5.4,
+          "t": "nh"
+        },
+        {
+          "n": "Aveia (100g)",
+          "fe": 4.7,
+          "t": "nh"
+        },
+        {
+          "n": "Sementes de abóbora (30g)",
+          "fe": 4.2,
+          "t": "nh"
+        },
+        {
+          "n": "Espinafres cozidos (100g)",
+          "fe": 3.6,
+          "t": "nh"
+        },
+        {
+          "n": "Carne de vaca (100g)",
+          "fe": 3.5,
+          "t": "h"
+        },
+        {
+          "n": "Chocolate negro >70% (30g)",
+          "fe": 3.4,
+          "t": "nh"
+        },
+        {
+          "n": "Lentilhas cozidas (100g)",
+          "fe": 3.3,
+          "t": "nh"
+        },
+        {
+          "n": "Sardinhas (100g)",
+          "fe": 2.9,
+          "t": "h"
+        },
+        {
+          "n": "Grão-de-bico (100g)",
+          "fe": 2.9,
+          "t": "nh"
+        },
+        {
+          "n": "Feijão preto (100g)",
+          "fe": 2.1,
+          "t": "nh"
+        },
+        {
+          "n": "Castanha de caju (30g)",
+          "fe": 2,
+          "t": "nh"
+        },
+        {
+          "n": "Quinoa cozida (100g)",
+          "fe": 1.5,
+          "t": "nh"
+        }
+      ],
+      "facilitam": [
+        "Vitamina C (citrinos, kiwi)",
+        "Proteína animal",
+        "Ácidos orgânicos (tomate)",
+        "Fermentação (massa mãe)"
+      ],
+      "inibem": [
+        "Chá e café (taninos)",
+        "Leite e cálcio",
+        "Fitatos (cereais integrais)",
+        "IBPs e antiácidos"
+      ],
+      "vegGuia": {
+        "intro": "O ferro vegetal (não-heme) tem absorção de apenas 2-20%, vs 15-35% do ferro animal (heme). É possível manter níveis adequados, mas exige atenção redobrada à combinação de alimentos e à suplementação quando necessário.",
+        "fontes": [
+          {
+            "name": "Tofu firme",
+            "fe": "5.4 mg",
+            "tip": "Uma das melhores fontes vegetais"
+          },
+          {
+            "name": "Aveia",
+            "fe": "4.7 mg",
+            "tip": "Ao peq.-almoço com vitamina C"
+          },
+          {
+            "name": "Sementes de abóbora",
+            "fe": "4.2 mg/30g",
+            "tip": "Snack ou saladas"
+          },
+          {
+            "name": "Espinafres cozidos",
+            "fe": "3.6 mg",
+            "tip": "Cozinhar reduz oxalatos"
+          },
+          {
+            "name": "Lentilhas cozidas",
+            "fe": "3.3 mg",
+            "tip": "Demolhar antes reduz fitatos"
+          },
+          {
+            "name": "Grão-de-bico",
+            "fe": "2.9 mg",
+            "tip": "Húmus com limão = ferro + vit. C"
+          },
+          {
+            "name": "Quinoa cozida",
+            "fe": "1.5 mg",
+            "tip": "Proteína completa + ferro"
+          },
+          {
+            "name": "Chocolate negro >70%",
+            "fe": "3.4 mg/30g",
+            "tip": "Sim, conta"
+          }
+        ],
+        "estrategias": [
+          {
+            "tip": "Vitamina C em TODAS as refeições com ferro",
+            "detail": "Laranja, kiwi, morango, pimento, tomate, limão. Aumenta absorção do ferro não-heme até 6 vezes."
+          },
+          {
+            "tip": "Demolhar e germinar leguminosas e cereais",
+            "detail": "Reduz os fitatos (ácido fítico) que prendem o ferro e impedem absorção. 8-12h de demolho, escorrer e cozer."
+          },
+          {
+            "tip": "Fermentar (pão de massa mãe, tempeh, miso)",
+            "detail": "A fermentação degrada fitatos. Pão de massa mãe tem ferro mais biodisponível que pão normal."
+          },
+          {
+            "tip": "Separar cálcio das refeições ricas em ferro",
+            "detail": "Leites vegetais fortificados com cálcio e suplementos de cálcio competem com ferro. Tomar em refeições diferentes."
+          },
+          {
+            "tip": "Chá e café longe das refeições principais",
+            "detail": "Esperar pelo menos 1h após a refeição. Os taninos e polifenóis reduzem absorção em 60-90%."
+          },
+          {
+            "tip": "Cozinhar em panela de ferro fundido",
+            "detail": "Transfere pequenas quantidades de ferro para os alimentos, especialmente ácidos (molho tomate)."
+          }
+        ],
+        "exemploDia": [
+          {
+            "meal": "Peq.-almoço",
+            "food": "Aveia com sementes de abóbora + morangos"
+          },
+          {
+            "meal": "Meio da manhã",
+            "food": "Castanhas de caju + laranja"
+          },
+          {
+            "meal": "Almoço",
+            "food": "Lentilhas com espinafres cozidos + arroz + salada tomate-limão"
+          },
+          {
+            "meal": "Lanche",
+            "food": "Húmus (grão + limão) com cenoura + chocolate negro"
+          },
+          {
+            "meal": "Jantar",
+            "food": "Tofu grelhado + quinoa + brócolos + pimento vermelho"
+          }
+        ],
+        "quandoSuplementar": "Se a ferritina está baixa (< 30 µg/L) apesar de dieta optimizada, a suplementação é necessária — a alimentação sozinha raramente corrige um défice já instalado. O ferro bisglicinato (Solgar) ou lipossómico (Fisiogen) são bem tolerados e compatíveis com dieta vegetariana. Manter suplementação 4-6 meses após correcção (DGS). Monitorizar ferritina + Hb a cada 3-6 meses em vegetarianos com histórico de défice."
+      }
+    },
+    "evidencia": [
+      {
+        "drug": "Sulfato Ferroso",
+        "level": "Gold standard",
+        "color": "#9E6B3A",
+        "studies": [
+          {
+            "ref": "Meta-análise (8 RCTs, 495 doentes)",
+            "result": "Sulfato ferroso aumenta Hb significativamente mais que ferripolimaltose (MD 0.53 g/dL, P<0.001)",
+            "source": "Systematic Review, PMC 2021"
+          },
+          {
+            "ref": "Meta-análise GI side effects (43 RCTs, 6831 adultos)",
+            "result": "Efeitos GI: OR 2.32 vs placebo (P<0.0001) e OR 3.05 vs ferro IV (P<0.0001)",
+            "source": "Tolkien 2015, PLoS One"
+          },
+          {
+            "ref": "Stoffel 2017 (2 RCTs, Lancet Haematol)",
+            "result": "Dias alternados: absorção fraccional ↑ 35-50% vs dias consecutivos (P=0.0013). Hepcidina como mecanismo.",
+            "source": "Lancet Haematol 2017;4:e524-e533"
+          },
+          {
+            "ref": "Stoffel 2020 (Haematologica)",
+            "result": "Confirmado em mulheres com anemia: absorção ↑ com dias alternados para doses de 100 e 200 mg",
+            "source": "Haematologica 2020;105:1232-1239"
+          }
+        ]
+      },
+      {
+        "drug": "Ferripolimaltose (IPC)",
+        "level": "Alternativa com melhor tolerância",
+        "color": "#7C3AED",
+        "studies": [
+          {
+            "ref": "RCT pediátrico (103 crianças, 4 meses)",
+            "result": "Eficácia comparável ao sulfato ferroso na subida de Hb. Efeitos GI: 26.9% IPC vs 50.9% sulfato (P=0.012)",
+            "source": "Yasa 2011, Int J Pediatr"
+          },
+          {
+            "ref": "Meta-análise (8 RCTs, 493 doentes)",
+            "result": "IPC menos eficaz que sulfato na subida de Hb (MD -0.81, P<0.001) e ferritina (MD -21.2). Sem diferença em efeitos secundários.",
+            "source": "Defined 2021, PMC 7811280"
+          },
+          {
+            "ref": "Estudo dadores de sangue (159 doentes)",
+            "result": "Ambas as formas igualmente disponíveis para recuperação de Hb. 20% desistiram do sulfato por GI vs 0% do IPC.",
+            "source": "Bagna 2016"
+          }
+        ]
+      },
+      {
+        "drug": "Ferro Lipossómico (Sucrossomial)",
+        "level": "Evidência crescente",
+        "color": "#2B7A4B",
+        "studies": [
+          {
+            "ref": "Revisão (Pharmaceuticals 2023)",
+            "result": "Absorção via M cells (DMT-1 independente). Biodisponibilidade comparável ao sulfato. Tolerância GI excelente.",
+            "source": "Gómez-Ramírez 2023, Pharmaceuticals"
+          },
+          {
+            "ref": "Estudo DII (prospectivo)",
+            "result": "96.6% completaram 12 semanas. Apenas 17% efeitos GI ligeiros. Bem tolerado em intolerantes ao sulfato.",
+            "source": "Haematologica 2024, review"
+          },
+          {
+            "ref": "Estudo in vitro (Caco-2)",
+            "result": "Absorção de ferro 3x superior ao sulfato ferroso em cultura celular",
+            "source": "PMC 6316120, Nutrients 2018"
+          }
+        ]
+      },
+      {
+        "drug": "Carboximaltose Férrica (Ferinject)",
+        "level": "Forte evidência IV",
+        "color": "#B44330",
+        "studies": [
+          {
+            "ref": "FAIR-HF (RCT, 459 doentes IC)",
+            "result": "Melhoria significativa NYHA, 6MWD e qualidade de vida vs placebo. Independente da presença de anemia.",
+            "source": "Anker 2009, NEJM"
+          },
+          {
+            "ref": "CONFIRM-HF (RCT, 304 doentes IC)",
+            "result": "Melhoria sustentada 6MWD às 52 semanas. Redução hospitalizações por IC.",
+            "source": "Ponikowski 2015, Eur Heart J"
+          },
+          {
+            "ref": "Meta-análise gravidez (9 RCTs)",
+            "result": "Superior a sacarose de ferro na subida de Hb (SMD 0.89 g/dL) e ferritina.",
+            "source": "PMC 11075392, 2024"
+          },
+          {
+            "ref": "PHOSPHARE-IDA",
+            "result": "Hipofosfatemia em 50-75% (geralmente transitória e assintomática) vs <1% com derisomaltose",
+            "source": "Wolf 2020, JBMR"
+          }
+        ]
+      },
+      {
+        "drug": "Derisomaltose Férrica (Monofer)",
+        "level": "Forte evidência IV",
+        "color": "#B44330",
+        "studies": [
+          {
+            "ref": "FERWON-IDA (RCT, 1512 doentes)",
+            "result": "Não-inferior à carboximaltose na correção de Hb. Dose total possível numa sessão única.",
+            "source": "Auerbach 2021, Lancet Haematol"
+          },
+          {
+            "ref": "PHOSPHARE-IDA (RCT)",
+            "result": "Hipofosfatemia < 1% vs 50-75% com carboximaltose (P<0.0001). Vantagem de segurança.",
+            "source": "Wolf 2020, JBMR"
+          }
+        ]
+      },
+      {
+        "drug": "Sacarose de Ferro (Venofer)",
+        "level": "Longa experiência clínica",
+        "color": "#B44330",
+        "studies": [
+          {
+            "ref": "Experiência clínica > 25 anos em DRC",
+            "result": "Standard of care em hemodiálise. Perfil de segurança bem estabelecido.",
+            "source": "Múltiplos estudos observacionais"
+          },
+          {
+            "ref": "Meta-análise DRC",
+            "result": "Eficaz na manutenção de reservas de ferro em doentes em HD. Alvos ferritina 200-500.",
+            "source": "KDIGO guidelines"
+          }
+        ]
+      }
+    ],
+    "followup": {
+      "marcos": [
+        {
+          "t": "4 semanas",
+          "a": "Hb deve subir ≥ 1 g/dL"
+        },
+        {
+          "t": "8-12 semanas",
+          "a": "Repetir Hb + ferritina + sat. transf."
+        },
+        {
+          "t": "3-6 meses",
+          "a": "Confirmar reposição (ferritina >50)"
+        },
+        {
+          "t": "12 meses",
+          "a": "Vigiar recidiva"
+        }
+      ],
+      "falha": [
+        "Verificar adesão",
+        "Excluir perdas persistentes",
+        "Excluir má absorção (celíaca, H. pylori)",
+        "Considerar ferro IV",
+        "Referenciar se refractária"
+      ]
+    }
+  },
+  "faq": [
+    {
+      "cat": "Diagnóstico e Interpretação Laboratorial",
+      "qs": [
+        {
+          "q": "Qual o cut-off de ferritina para diagnóstico de défice de ferro?",
+          "a": "Depende do contexto. Sem inflamação: ferritina < 30 µg/L é diagnóstica com boa sensibilidade e especificidade; < 15 µg/L é virtualmente patognomónico. Com inflamação activa (PCR elevada, doença crónica, neoplasia): a ferritina pode estar falsamente elevada — é reactante de fase aguda. Neste contexto, ferritina < 100 µg/L + saturação de transferrina < 20% sugere défice funcional. Na IC (ESC 2021): ferritina < 100 µg/L ou 100-299 µg/L com sat. transf. < 20% define défice de ferro independentemente da Hb."
+        },
+        {
+          "q": "Doente com ferritina 45 µg/L e PCR 35 mg/L com anemia — é défice de ferro?",
+          "a": "Provavelmente sim — défice funcional de ferro. Com inflamação, 45 µg/L pode mascarar reservas realmente baixas. Complementar com: saturação de transferrina (< 20% apoia diagnóstico), receptor solúvel da transferrina/sTfR (sobe no défice real, não na anemia de doença crónica), percentagem de eritrócitos hipocrómicos. É frequente coexistência de anemia de doença crónica e défice de ferro — os dois não se excluem."
+        },
+        {
+          "q": "Posso ter défice de ferro com ferritina e Hb normais?",
+          "a": "Sim — estadio 1 (depleção de reservas). Ferritina no limite inferior normal (ex: 30-50 µg/L) com saturação de transferrina já reduzida. Clinicamente relevante em: sintomas sem anemia (fadiga, síndrome pernas inquietas, queda de cabelo), grávidas (reservas esgotam antes de baixar a Hb). Neste estadio, suplementação é benéfica mesmo sem anemia."
+        },
+        {
+          "q": "VGM baixo e RDW elevado — são suficientes para presumir anemia ferropénica?",
+          "a": "São sugestivos mas não diagnósticos. VGM < 80 fL + RDW > 14.5% com anemia apontam para défice de ferro, mas requerem confirmação com ferritina. Diagnóstico diferencial obrigatório: talassémia minor (VGM baixo, RDW normal, ferritina normal, eletroforese alterada) e anemia sideroblástica. O ferro sérico e saturação de transferrina completam mas são menos fidedignos pela variação diurna."
+        }
+      ]
+    },
+    {
+      "cat": "Quando e Como Investigar a Causa",
+      "qs": [
+        {
+          "q": "Homem de 52 anos, ferritina 12 µg/L, Hb 10.8 g/dL, sem queixas. Que faço?",
+          "a": "Anemia ferropénica num homem = investigação GI obrigatória. Não começar apenas a suplementar sem saber a causa — pode ser um cancro colorretal. Pedir anti-tTG IgA + IgA total, pesquisa H. pylori, e referenciar para EDA + colonoscopia. A suplementação pode iniciar-se em paralelo com a investigação mas não a substitui."
+        },
+        {
+          "q": "Mulher de 28 anos com menorragia, ferritina 8 µg/L, Hb 11.2 g/dL — preciso de colonoscopia?",
+          "a": "Não de imediato, neste perfil. A menorragia é a causa mais plausível neste grupo etário. Conduta: confirmar e quantificar a menorragia (score PBAC), tratar a menorragia + suplementar, pedir anti-tTG + H. pylori (causas de má absorção frequentemente associadas), repetir análises em 8-12 semanas. Se sem resposta adequada, ou ferritina inexplicavelmente baixa para o grau de menorragia, investigar GI."
+        },
+        {
+          "q": "Quando é que uma mulher jovem com menorragia precisa de endoscopia?",
+          "a": "Quando: (1) não responde ao tratamento após 12 semanas correctas; (2) tem red flags (perda de peso, alteração de trânsito, rectorragia); (3) ferritina muito baixa (< 5-10 µg/L) desproporcional ao grau de menorragia; (4) tem > 45-50 anos. A menorragia não exclui patologia GI concomitante."
+        },
+        {
+          "q": "Homem de 65 anos, ferritina 22 µg/L, Hb 13.8 g/dL (normal). Investigo?",
+          "a": "Sim. Défice de ferro num homem idoso mesmo sem anemia deve levantar suspeita de patologia GI. A Hb pode ainda estar compensada. Pedir anti-tTG + H. pylori e considerar EDA + colonoscopia, especialmente sem causa alternativa óbvia. Não assumir causa dietética."
+        },
+        {
+          "q": "Quando peço cápsula endoscópica?",
+          "a": "Quando EDA e colonoscopia são normais e persiste anemia ferropénica sem causa identificada. Visualiza o intestino delgado: angiodisplasias, tumores, Crohn do delgado, divertículo de Meckel. Deve ser pedida em contexto de gastroenterologia após endoscopias convencionais."
+        }
+      ]
+    },
+    {
+      "cat": "Prescrição de Ferro Oral",
+      "qs": [
+        {
+          "q": "Sulfato ferroso vs ferripolimaltose vs ferro lipossómico — quando uso cada um?",
+          "a": "Sulfato ferroso (Tardyferon, Ferro-Gradumet): 1ª linha, melhor absorção em jejum, mais económico, comparticipado — usar quando tolerado. Ferripolimaltose (Ferrum Hausmann, mastigável): intolerância GI ao sulfato, disfagia, gravidez com náuseas — Fe³⁺ não-iónico, menos irritação, toma com alimentos, não mancha dentes. Ferro lipossómico (Fisiogen): intolerância marcada a ambos, IBPs que não é possível suspender, ou preferência. Encapsulamento protege a mucosa. Dose de ferro elementar por toma mais baixa (30 mg) — pode não ser suficiente em anemias graves."
+        },
+        {
+          "q": "Posso prescrever ferro oral a um doente a fazer IBP crónico?",
+          "a": "Pode, mas a absorção está comprometida — IBPs aumentam pH gástrico e o Fe²⁺ precisa de acidez. Estratégias: (1) Suspender ou reduzir o IBP se ainda indicado; (2) Usar ferro lipossómico ou ferripolimaltose (menos dependentes de pH); (3) Separar a toma do IBP mais de 2h; (4) Se resposta inadequada: ferro IV."
+        },
+        {
+          "q": "Qual a evidência dos dias alternados?",
+          "a": "Stoffel et al. (Lancet Haematol 2017): após cada dose de ferro oral, a hepcidina sobe e demora ~24h a normalizar. Se dado no dia seguinte, absorção está comprometida pela hepcidina elevada. Dias alternados resulta em absorção total semelhante ou superior com menos efeitos GI e melhor adesão. Excepção: anemias graves onde se pretende correcção mais rápida pode justificar dose diária."
+        },
+        {
+          "q": "Obstipação com ferro — o que ofereço ao doente?",
+          "a": "Por ordem: (1) Mudar para dias alternados — menos ferro não absorvido no cólon; (2) Trocar para ferripolimaltose mastigável ou ferro lipossómico; (3) Adicionar macrogol se necessário; (4) Se nada resultar e anemia grave: ferro IV. Nunca deixar parar sem alternativa — a adesão é o factor crítico."
+        },
+        {
+          "q": "Quando considero que o ferro oral falhou?",
+          "a": "A Hb deve subir ≥ 1 g/dL às 4 semanas. Se não: (1) verificar adesão; (2) excluir causa persistente de perdas; (3) excluir má absorção (celíaca, H. pylori, IBPs); (4) verificar se toma com inibidores. Só após excluídas estas causas é que se considera falha verdadeira e se passa ao IV. Não concluir falha antes de 4 semanas com esquema correcto."
+        }
+      ]
+    },
+    {
+      "cat": "Ferro Intravenoso — Indicações e Prática",
+      "qs": [
+        {
+          "q": "Como calculo a dose de Ferinject?",
+          "a": "Por peso e Hb: < 70 kg com Hb ≥ 10: 1000 mg; < 70 kg com Hb < 10: 1500 mg; ≥ 70 kg com Hb ≥ 10: 1500 mg; ≥ 70 kg com Hb < 10: 2000 mg. Máximo 1000 mg por sessão, mínimo 1 semana de intervalo. Alternativa: fórmula de Ganzoni — dose Fe (mg) = peso (kg) × (Hb alvo − Hb actual) × 2.4 + 500 mg (reservas)."
+        },
+        {
+          "q": "Ferinject vs Monofer vs Venofer — qual escolher?",
+          "a": "Ferinject: mais usado em Portugal, até 1000 mg/sessão em 15 min, seguro no 2º-3º T gravidez. Atenção: hipofosfatemia transitória em 50-75% — vigiar. Monofer: dose total (até 20 mg/kg sem limite por sessão) numa única infusão — vantagem logística, sem problema de hipofosfatemia. Venofer: longa experiência em DRC/HD, mais fraccionado (200 mg/sessão). Em geral: Ferinject para a maioria; Monofer quando convém dose total numa ida; Venofer em DRC em HD."
+        },
+        {
+          "q": "Doente com IC e ferritina de 85 µg/L mas Hb normal. Trato o ferro?",
+          "a": "Sim — indicação específica ESC 2021. Na IC, défice de ferro define-se como ferritina < 100 µg/L ou 100-299 µg/L com sat. transf. < 20%, independentemente da Hb. Ferro IV (carboximaltose) demonstrou melhorar NYHA, qualidade de vida e reduzir hospitalizações mesmo sem anemia. Este critério é específico da IC — não aplicar a outros contextos."
+        },
+        {
+          "q": "Posso dar ferro IV em ambulatório e na grávida?",
+          "a": "Ambulatório: sim, com monitorização durante e 30 min após (reacções de hipersensibilidade raras mas possíveis). Na grávida: seguro no 2º-3º trimestre (Ferinject e Monofer aprovados). 1º trimestre: evitar por dados insuficientes. Indicações na gravidez: Hb < 9 g/dL, intolerância oral, necessidade de correcção pré-parto, 3º T com anemia moderada."
+        }
+      ]
+    },
+    {
+      "cat": "Situações Clínicas Específicas",
+      "qs": [
+        {
+          "q": "DII em crise com Hb 8.5 g/dL — oral ou IV?",
+          "a": "Ferro IV na DII activa. O ferro oral: (1) pode agravar inflamação pelo ferro não absorvido no lúmen (citotóxico); (2) tem absorção muito reduzida pela inflamação da mucosa; (3) piora sintomas GI. ECCO recomenda IV quando: DII activa, Hb < 10 g/dL, intolerância oral, ou anemia grave. Em remissão com anemia ligeira pode tentar oral com vigilância."
+        },
+        {
+          "q": "O H. pylori pode sozinho causar anemia ferropénica?",
+          "a": "Sim. Causa gastrite que: (1) aumenta perdas de ferro pela inflamação; (2) reduz acidez necessária para absorção de Fe²⁺; (3) a bactéria compete com o hospedeiro pelo ferro. A erradicação do H. pylori por si só melhora os níveis de ferro e a resposta à suplementação. Em anemia refractária ao oral, pesquisar e erradicar pode ser a chave."
+        },
+        {
+          "q": "Quando suspeitar de doença celíaca numa anemia ferropénica?",
+          "a": "Prevalência 3-5% nas anemias investigadas. Suspeitar em: mulher jovem sem menorragia suficiente, défice combinado ferro + B12/folato, anemia refractária ao oral, sintomas GI (diarreia, distensão), historia familiar de celíaca, osteoporose em jovem. Pedir: anti-tTG IgA + IgA total. Biopsiar duodeno mesmo com serologia negativa se suspeita alta (10% têm serologia negativa)."
+        },
+        {
+          "q": "Anemia ferropénica refractária a 3 meses de ferro oral correcto — próximo passo?",
+          "a": "Investigar antes do IV: (1) Confirmar adesão real; (2) Excluir má absorção: celíaca, H. pylori, IBPs, gastrite atrófica; (3) Excluir perdas persistentes: menorragia não controlada, hemorragia GI oculta activa; (4) Verificar se toma com inibidores. Se tudo excluído: ferro IV. A refractariedade é frequentemente sinal de causa não tratada, não de falha do ferro."
+        }
+      ]
+    },
+    {
+      "cat": "Monitorização e Follow-up",
+      "qs": [
+        {
+          "q": "A Hb normalizou mas a ferritina está em 25 µg/L. Continuo o ferro?",
+          "a": "Sim — é um erro frequente parar aqui. A normalização da Hb é o 1º objectivo; repor as reservas é o objectivo final. A DGS define como alvo: ferritina > 50 µg/L e saturação de transferrina > 30%. Continuar o ferro 4-6 meses após normalização da Hb. Parar cedo é uma das causas mais frequentes de recidiva, especialmente se a causa persiste (ex: menorragia). Repetir hemograma e ferritina no mínimo 1 semana após o fim da terapêutica."
+        },
+        {
+          "q": "Quando considero falha terapêutica?",
+          "a": "Hb não sobe ≥ 1 g/dL às 4 semanas com tratamento adequado. Causas por frequência: (1) má adesão; (2) perdas persistentes; (3) má absorção; (4) diagnóstico incorrecto (talassémia, anemia de doença crónica, mielodisplasia). Investigar sistematicamente antes de concluir refractariedade."
+        },
+        {
+          "q": "Com que frequência repetir análises após resolução?",
+          "a": "Causa resolvida definitivamente: Hb + ferritina a 12 meses. Causa persistente ou estrutural (DII, DRC): ferritina + Hb cada 3-6 meses. Grávidas: cada trimestre. IC: a cada consulta de follow-up conforme ESC."
+        }
+      ]
+    }
+  ],
+  "referencias": [
+    {
+      "id": 1,
+      "a": "Camaschella C.",
+      "t": "Iron-Deficiency Anemia",
+      "j": "N Engl J Med 2015; 372:1832-43",
+      "type": "Revisão",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMra1401038"
+    },
+    {
+      "id": 2,
+      "a": "Cappellini MD et al.",
+      "t": "Iron deficiency anaemia revisited",
+      "j": "J Intern Med 2020; 287:153-170",
+      "type": "Revisão",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31429118/"
+    },
+    {
+      "id": 3,
+      "a": "Snook J et al.",
+      "t": "BSG guidelines for the management of iron deficiency anaemia in adults",
+      "j": "Gut 2021; 70:2030-2051",
+      "type": "Guideline",
+      "url": "https://gut.bmj.com/content/70/11/2030"
+    },
+    {
+      "id": 4,
+      "a": "Dignass A et al.",
+      "t": "European Consensus on Iron Deficiency and Anaemia in IBD",
+      "j": "J Crohns Colitis 2015; 9:211-222",
+      "type": "Consenso",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25518052/"
+    },
+    {
+      "id": 5,
+      "a": "Ponikowski P et al.",
+      "t": "2016 ESC Guidelines – Heart Failure",
+      "j": "Eur Heart J 2016; 37:2129-2200",
+      "type": "Guideline",
+      "url": "https://academic.oup.com/eurheartj/article/37/27/2129/1748921"
+    },
+    {
+      "id": 6,
+      "a": "Stoffel NU et al.",
+      "t": "Iron absorption: consecutive vs alternate days",
+      "j": "Lancet Haematol 2017; 4:e524-e533",
+      "type": "RCT",
+      "url": "https://www.thelancet.com/article/S2352-3026(17)30182-5/abstract"
+    },
+    {
+      "id": 7,
+      "a": "Muñoz M et al.",
+      "t": "International consensus on peri-operative anaemia",
+      "j": "Anaesthesia 2017; 72:233-247",
+      "type": "Consenso",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27996086/"
+    },
+    {
+      "id": 8,
+      "a": "DGS Portugal",
+      "t": "Norma 030/2013 – Ferropenia no Adulto",
+      "j": "Normas de Orientação Clínica",
+      "type": "Norma PT",
+      "url": "https://normas.dgs.min-saude.pt/2013/12/31/abordagem-diagnostico-e-tratamento-da-ferropenia-no-adulto/"
+    },
+    {
+      "id": 9,
+      "a": "WHO",
+      "t": "Iron Deficiency Anaemia: Assessment, Prevention and Control",
+      "j": "WHO 2001",
+      "type": "Guideline",
+      "url": "https://www.who.int/publications/m/item/ids-iron-deficiency-anaemia-assessment-prevention-and-control"
+    },
+    {
+      "id": 10,
+      "a": "INSA",
+      "t": "Tabela de Composição de Alimentos Portuguesa",
+      "j": "PortFIR 2023",
+      "type": "Base dados",
+      "url": "https://portfir.insa.pt/"
+    },
+    {
+      "id": 11,
+      "a": "ARS Norte – CFT",
+      "t": "Newsletter Anemia Ferropénica – Formulações disponíveis em PT",
+      "j": "Newsletter CFT",
+      "type": "Norma PT"
+    },
+    {
+      "id": 12,
+      "a": "Stoffel NU et al.",
+      "t": "Iron absorption from oral supplements: alternate vs consecutive days (confirmação)",
+      "j": "Haematologica 2020; 105:1232-1239",
+      "type": "RCT",
+      "url": "https://haematologica.org/article/view/9379"
+    },
+    {
+      "id": 13,
+      "a": "Anker SD et al.",
+      "t": "Ferric Carboxymaltose in Patients with Heart Failure and Iron Deficiency (FAIR-HF)",
+      "j": "N Engl J Med 2009; 361:2436-2448",
+      "type": "RCT",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMoa0908355"
+    },
+    {
+      "id": 14,
+      "a": "Ponikowski P et al.",
+      "t": "Ferric carboxymaltose in symptomatic heart failure (CONFIRM-HF)",
+      "j": "Eur Heart J 2015; 36:657-668",
+      "type": "RCT",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25176939/"
+    },
+    {
+      "id": 15,
+      "a": "Wolf M et al.",
+      "t": "Iron isomaltoside vs ferric carboxymaltose e hipofosfatemia (PHOSPHARE-IDA)",
+      "j": "JBMR 2020",
+      "type": "RCT",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31793066/"
+    },
+    {
+      "id": 16,
+      "a": "Auerbach M et al.",
+      "t": "Ferric derisomaltose vs ferric carboxymaltose (FERWON-IDA)",
+      "j": "Lancet Haematol 2021",
+      "type": "RCT",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33242443/"
+    },
+    {
+      "id": 17,
+      "a": "Tolkien Z et al.",
+      "t": "Ferrous sulfate supplementation e efeitos GI: meta-análise",
+      "j": "PLoS One 2015",
+      "type": "Revisão",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25700159/"
+    }
+  ],
+  "guiaPratico": [
+    {
+      "id": "s1",
+      "titulo": "1. Suspeitar",
+      "html": "<div class=\"cd\"><h2>Passo 1: Quando Suspeitar</h2><div class=\"al al-a\">O défice de ferro pode estar presente muito antes de causar anemia. Não esperar pela queda da Hb.</div><div class=\"g2\"><div><h3>Sintomas que alertam</h3><ul><li>Fadiga desproporcional</li><li>Queda de cabelo difusa</li><li>Pernas inquietas</li><li>Pica / pagofagia</li><li>Unhas quebradiças / coiloníquia</li><li>Palidez</li><li>Dispneia de esforço / taquicardia</li><li>Dificuldade de concentração</li></ul></div><div><h3>Quando pedir análises</h3><ul><li>Menstruação abundante</li><li>Grávida (DGS: rastreio universal)</li><li>Vegetariano / vegano</li><li>Dador sangue frequente</li><li>IC, DRC, DII</li><li>Pós-bariátrica</li><li>Adolescente em crescimento</li><li>VGM baixo incidental</li></ul></div></div><div class=\"al al-g\"><b>Na prática:</b> fadiga inexplicada → hemograma + ferritina + PCR. Grupo de risco → rastrear mesmo sem sintomas.</div></div>"
+    },
+    {
+      "id": "s2",
+      "titulo": "2. Análises",
+      "html": "<div class=\"cd\"><h2>Passo 2: O Que Pedir e Como Ler</h2><div class=\"sb\"><b>Pedir (4 exames):</b> Hemograma (Hb, VGM, RDW) + Ferritina + Sat. Transferrina + PCR</div><div class=\"al al-a\">Ferritina é o exame-chave. Ferro sérico isolado tem pouco valor. PCR contextualiza a ferritina.</div><h3>Ferritina</h3><div class=\"rr\"><div class=\"rv r\">< 15 µg/L</div><div class=\"rm\">Défice absoluto — diagnóstico confirmado</div></div><div class=\"rr\"><div class=\"rv y\">15-30 µg/L</div><div class=\"rm\">Depleção — tratar e reavaliar</div></div><div class=\"rr\"><div class=\"rv y\">30-100 + PCR ↑</div><div class=\"rm\">Possível défice mascarado — ver sat. transferrina</div></div><div class=\"rr\"><div class=\"rv y\">< 70 µg/L (grávida)</div><div class=\"rm\">Ferropenia na gravidez (DGS)</div></div><div class=\"rr\"><div class=\"rv a\">< 100 µg/L (IC)</div><div class=\"rm\">Défice na IC (ESC) — ferro IV</div></div><div class=\"rr\"><div class=\"rv g\">> 100, PCR normal</div><div class=\"rm\">Défice improvável</div></div><h3>Sat. Transferrina</h3><div class=\"rr\"><div class=\"rv r\">< 16%</div><div class=\"rm\">Défice grave</div></div><div class=\"rr\"><div class=\"rv y\">< 20%</div><div class=\"rm\">Confirma défice</div></div><div class=\"rr\"><div class=\"rv g\">20-45%</div><div class=\"rm\">Normal</div></div><h3>Hemoglobina</h3><div class=\"rr\"><div class=\"rv r\">< 12 (F) / < 13 (M)</div><div class=\"rm\">Anemia</div></div><div class=\"rr\"><div class=\"rv y\">Normal + ferritina baixa</div><div class=\"rm\">Défice SEM anemia — tratar na mesma</div></div><h3>VGM + RDW</h3><div class=\"rr\"><div class=\"rv a\">VGM<80 + RDW↑</div><div class=\"rm\">Ferro ou talassémia — pedir ferritina</div></div><div class=\"rr\"><div class=\"rv a\">VGM<80 + RDW normal</div><div class=\"rm\">Talassémia minor — pedir electroforese Hb</div></div><h3>PCR</h3><div class=\"rr\"><div class=\"rv g\">Normal</div><div class=\"rm\">Ferritina fidedigna</div></div><div class=\"rr\"><div class=\"rv y\">Elevada</div><div class=\"rm\">Ferritina pode estar falsamente ↑</div></div></div>"
+    },
+    {
+      "id": "s3",
+      "titulo": "3. Classificar",
+      "html": "<div class=\"cd\"><h2>Passo 3: Classificar e Decidir</h2><div class=\"dx ur\" style=\"margin-top:12px\"><h4><span class=\"tg tg-y\">Ferritina &lt;30, Hb normal</span> Défice SEM anemia</h4><div class=\"dd\"><div class=\"dc\"><b>Fazer:</b><br>• Suplementar oral<br>• Tratar causa<br>• Reavaliar 8-12 sem<br>• Sem endoscopia se causa óbvia</div><div class=\"dn\"><b>Atenção:</b><br>• Pode progredir<br>• Pode ter sintomas</div></div></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Ferritina &lt;30, Hb↓, VGM&lt;80</span> Anemia ferropénica</h4><div class=\"dd\"><div class=\"dc\"><b>Fazer:</b><br>• Ferro oral ou IV<br>• Investigar causa por perfil<br>• Anti-tTG + H. pylori<br>• Reavaliar 2-4 sem (↑≥1 g/dL)</div><div class=\"dn\"><b>Atenção:</b><br>• Homem/pós-menop: não suplementar sem investigar<br>• Continuar 4-6 meses (DGS)</div></div></div><div class=\"dx\"><h4><span class=\"tg tg-a\">Ferritina 30-100+PCR↑+Sat&lt;20%</span> Défice funcional</h4><div class=\"dd\"><div class=\"dc\"><b>Fazer:</b><br>• Ferro IV<br>• Tratar doença base<br>• IC: ESC critérios</div><div class=\"dn\"><b>Atenção:</b><br>• Não excluir défice por ferritina \"normal\"</div></div></div><div class=\"dx ok\"><h4><span class=\"tg tg-g\">Ferritina &gt;100, PCR normal</span> Improvável</h4><p>Considerar: B12, folato, talassémia, doença crónica, mielodisplasia.</p></div></div>"
+    },
+    {
+      "id": "s4",
+      "titulo": "4. Especiais",
+      "html": "<div class=\"cd\"><h2>Passo 4: Populações Especiais</h2><div class=\"g2\"><div class=\"dx em\"><h4>Gravidez</h4><p>• Ferropenia = ferritina &lt;70 (DGS)<br>• Suplementação universal 30-60 mg/dia<br>• Anemia: Hb &lt;11 (1o/3oT) ou &lt;10.5 (2oT)<br>• Ferro IV seguro 2o-3o T<br>• Tardyferon-Fol ou Ferrum Fol Hausmann</p></div><div class=\"dx bu\"><h4>Insuf. Cardíaca</h4><p>• Ferritina &lt;100 OU 100-299+sat&lt;20%<br>• Ferro IV mesmo SEM anemia (ESC)<br>• Melhora NYHA, reduz hospitalizações<br>• Vigiar hipofosfatemia Ferinject</p></div><div class=\"dx ok\"><h4>DRC</h4><p>• Alvos: ferritina 200-500, sat 20-30%<br>• Ferro IV preferido em HD<br>• Corrigir ferro ANTES de EPO</p></div><div class=\"dx ur\"><h4>DII</h4><p>• Prevalência anemia 30-70%<br>• Ferro IV na doença activa (ECCO)<br>• Oral pode agravar inflamação GI</p></div></div></div>"
+    },
+    {
+      "id": "s5",
+      "titulo": "5. Investigar",
+      "html": "<div class=\"cd\"><h2>Passo 5: Investigar a Causa</h2><div class=\"al al-a\">Nem todo o défice precisa de investigação extensa. Depende de: anemia, causa óbvia, red flags.</div><div class=\"dx ok\"><h4><span class=\"tg tg-g\">Tratar + monitorizar</span> Défice SEM anemia + causa óbvia</h4><p>Reavaliar 8-12 sem. Exemplos: menorragia, vegetariano, dador, grávida.</p></div><div class=\"dx ur\"><h4><span class=\"tg tg-y\">Tratar + Anti-tTG + H. pylori</span> Anemia + causa óbvia</h4><p>Tratar + pesquisar má absorção. Se sem resposta, aprofundar.</p></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Investigação obrigatória</span> Anemia SEM causa óbvia</h4><p>Anti-tTG + H. pylori + EDA + colonoscopia. Homem/pós-menopausa: colonoscopia urgente.</p></div><div class=\"dx em\"><h4><span class=\"tg tg-r\">Referenciação urgente</span> Red flags</h4><ul><li>Perda de peso</li><li>Alteração trânsito &gt;4 sem</li><li>Rectorragia/melenas</li><li>Disfagia</li><li>Massa abdominal</li><li>Anemia refractária</li></ul></div><h3>Má absorção — considerar sempre</h3><div class=\"g2\"><div class=\"dx\"><h4>Doença celíaca</h4><p>Anti-tTG IgA+IgA total. 3-5%. Biopsiar mesmo com serologia neg.</p></div><div class=\"dx\"><h4>H. pylori</h4><p>Erradicação melhora absorção mesmo sem úlcera.</p></div><div class=\"dx\"><h4>IBPs crónicos</h4><p>Reduzem acidez para Fe2+. Rever necessidade.</p></div><div class=\"dx\"><h4>Cirurgia bariátrica</h4><p>Má absorção estrutural. Ferro IV pode ser necessário.</p></div></div><h3>Plano por situação</h3><table><tr><th>Situação</th><th>Exames</th></tr><tr><td>Sem anemia, causa óbvia</td><td>Tratar + repetir 8-12 sem</td></tr><tr><td>Anemia + causa aparente</td><td>Tratar + anti-tTG + H. pylori; se sem resposta: EDA+colo</td></tr><tr><td>Homem / pós-menopausa</td><td>Anti-tTG + H. pylori + EDA + colonoscopia (urgente)</td></tr><tr><td>Sem causa após EDA+colo</td><td>Cápsula endoscópica + ref. gastro</td></tr></table></div>"
+    }
+  ],
+  "guiaPraticoNota": "5 passos de acção clínica. Verificado contra DGS 030/2013, BSG 2021, ESC 2021."
+}

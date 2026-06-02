@@ -5,7 +5,7 @@ const COR = {
   "ajuste-renal": ["#2E9E8F", "#2af5c0"],
   "atb-ambulatorio": ["#C58A3D", "#ffc24d"],
   urgencia: ["#DB6A5B", "#ff5c7a"],
-  cronicas: ["#4E7CA8", "#4db5ff"],
+  cronicas: ["#0B6E7F", "#2ff0e0"],
   analises: ["#8674C9", "#b07cff"],
   calculadoras: ["#3FA178", "#3df59a"],
   vacinacao: ["#34A7A0", "#2ff0d8"],

@@ -380,3 +380,7 @@
 .oba-nota-drawer .oba-nota { min-height: 300px; }
 @media (min-width: 880px) { .oba-nota-btn, .oba-nota-drawer, .oba-nota-backdrop { display: none; } }
 @media (max-width: 879px) { .oba-aside { display: none; } }
+
+/* Liquid-glass: frost nas superfícies (alinha com .cartao da app) */
+.ob-card, .ob-painel, .ob-fonte, .ob-nf-card, .ob-faq-item, .ob-aviso,
+.oba-card, .oba-nota-panel, .oba-chk, .oba-sub, .oba-tabs { backdrop-filter: blur(20px) saturate(1.7); -webkit-backdrop-filter: blur(20px) saturate(1.7); }

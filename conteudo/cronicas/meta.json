@@ -1,0 +1,74 @@
+{
+  "nome": "Patologias",
+  "eyebrow": "Apoio Clínico",
+  "tag": "Guias de apoio à prática clínica baseados em guidelines internacionais. Algoritmos de decisão, farmacologia e dúvidas frequentes.",
+  "disclaimerTitulo": "Informação importante",
+  "disclaimerTexto": "Este guia ajuda a pensar, mas não pensa por ti. Cada doente é único. A medicina muda. O guia não substitui a avaliação clínica individual nem as guidelines completas.",
+  "sistemas": [
+    {
+      "id": "cardiovascular",
+      "label": "Cardiovascular",
+      "cor": "#dc2626"
+    },
+    {
+      "id": "dermatologico",
+      "label": "Dermatológico",
+      "cor": "#e11d48"
+    },
+    {
+      "id": "endocrino",
+      "label": "Endócrino",
+      "cor": "#c2410c"
+    },
+    {
+      "id": "gastrointestinal",
+      "label": "Gastrointestinal",
+      "cor": "#d97706"
+    },
+    {
+      "id": "geniturinario",
+      "label": "Geniturinário",
+      "cor": "#0d9488"
+    },
+    {
+      "id": "ginecologico",
+      "label": "Ginecológico",
+      "cor": "#be185d"
+    },
+    {
+      "id": "hematologico",
+      "label": "Hematológico",
+      "cor": "#B44330"
+    },
+    {
+      "id": "musculoesqueletico",
+      "label": "Musculoesquelético",
+      "cor": "#ea580c"
+    },
+    {
+      "id": "neurologico",
+      "label": "Neurológico",
+      "cor": "#7c3aed"
+    },
+    {
+      "id": "oftalmologico",
+      "label": "Oftalmológico",
+      "cor": "#0369a1"
+    },
+    {
+      "id": "orl",
+      "label": "ORL",
+      "cor": "#ca8a04"
+    },
+    {
+      "id": "psiquiatrico",
+      "label": "Psiquiátrico",
+      "cor": "#6d28d9"
+    },
+    {
+      "id": "respiratorio",
+      "label": "Respiratório",
+      "cor": "#2563eb"
+    }
+  ]
+}
