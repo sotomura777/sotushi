@@ -113,7 +113,7 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
           <Cards accent={accent} />
         ) : modo === "biblio" ? (
           <div>
-            <div className="secao-label" style={{ marginTop: 4 }}>Referências utilizadas</div>
+            <div className="secao-label" style={{ marginTop: 4 }}>Referências de apoio e leitura</div>
             <div className="lista">
               {biblio.fontes.map((f, i) => <div key={i} className="lista-item" style={{ fontSize: 13, color: "var(--texto-2)" }}>{f}</div>)}
             </div>

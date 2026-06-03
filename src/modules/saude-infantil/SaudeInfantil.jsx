@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import DB from "@conteudo/saude-infantil/consultas.json";
 import DETAIL from "@conteudo/saude-infantil/detalhes.json";
 import mchat from "@conteudo/saude-infantil/mchat.json";
-import { FASES, ALERTA_INFO, corUrgencia, calcularMCHAT } from "./logica";
+import { FASES, ALERTA_INFO, corUrgencia, interpretarScoreMCHAT } from "./logica";
 import Crescimento from "./Crescimento.jsx";
 import Tanner from "./Tanner.jsx";
 import { TensaoArterial, Snellen, Fluor, Referenciar } from "./FerramentasExtra";
@@ -165,7 +165,7 @@ export default function SaudeInfantil({ accent = "#ec4899", gradiente, onVoltar 
               ))}
             </div>
 
-            <div className="rodape"><strong>Nota:</strong> Referência de estudo sobre a vigilância infantil (PNSIJ). Confirma sempre no Boletim de Saúde Infantil e Juvenil.</div>
+            <div className="rodape"><strong>Fonte:</strong> Programa Nacional de Saúde Infantil e Juvenil (PNSIJ, DGS). Aplicação independente, sem ligação nem endosso da DGS. Ferramenta de estudo — confirma sempre no Boletim de Saúde Infantil e Juvenil. <a href="https://www.dgs.pt/pns-e-programas/programas-de-saude/saude-infantil-e-juvenil.aspx" target="_blank" rel="noopener noreferrer" style={{ color: accent }}>PNSIJ / DGS ↗</a></div>
           </>
         )}
       </div>
@@ -175,29 +175,36 @@ export default function SaudeInfantil({ accent = "#ec4899", gradiente, onVoltar 
 
 // ======================= M-CHAT (corpo) =======================
 function MChatBody({ accent }) {
-  const [respostas, setRespostas] = useState({});
-  const [resultado, setResultado] = useState(null);
-  const responder = (i, v) => { setRespostas((p) => ({ ...p, [i]: v })); setResultado(null); };
-  const calcular = () => setResultado(calcularMCHAT(respostas, mchat.risco_nao, mchat.risco_sim));
+  const [score, setScore] = useState("");
+  const resultado = interpretarScoreMCHAT(score);
+  const vazio = score.trim() === "";
 
   return (
     <div style={{ marginTop: 12 }}>
-      <div style={{ fontSize: 12.5, color: "var(--suave)", marginBottom: 10 }}>Questionário M-CHAT-R (16–30 meses). Responde às 20 perguntas.</div>
-      {mchat.perguntas.map((q, i) => (
-        <div key={i} className="cartao" style={{ padding: "12px 14px", marginBottom: 8 }}>
-          <div style={{ fontSize: 13, color: "var(--texto)", marginBottom: 8, lineHeight: 1.5 }}><span style={{ fontWeight: 700, color: "var(--suave)" }}>{i + 1}. </span>{q}</div>
-          <div style={{ display: "flex", gap: 8 }}>
-            <button className="si-mq" style={respostas[i] === true ? { background: "#10b981", color: "#fff", borderColor: "#10b981" } : undefined} onClick={() => responder(i, true)}>Sim</button>
-            <button className="si-mq" style={respostas[i] === false ? { background: "#fca5a5", color: "#7f1d1d", borderColor: "#fca5a5" } : undefined} onClick={() => responder(i, false)}>Não</button>
-          </div>
-        </div>
-      ))}
-      <button className="filtro filtro--ativo" style={{ background: accent, padding: "10px 20px", marginTop: 4 }} onClick={calcular}>Calcular score</button>
+      <div className="si-alerta" style={{ borderColor: "var(--borda-2)", background: "var(--superficie-2)", color: "var(--suave)", fontSize: 12.5, lineHeight: 1.45, marginBottom: 12 }}>
+        <Ico name="library" s={18} style={{ flexShrink: 0, marginTop: 1 }} />
+        <span><strong style={{ color: "var(--texto)" }}>{mchat.nome} · {mchat.faixa}.</strong> {mchat.descricao} {mchat.creditos}</span>
+      </div>
 
-      {resultado?.faltam && (
-        <div className="si-alerta" style={{ background: "#fffbeb", borderColor: "#fde68a", marginTop: 12 }}><Ico name="warn" c="#92400e" s={16} /><div><strong style={{ color: "#92400e" }}>Faltam respostas</strong><div className="si-sub">Em falta: {resultado.faltam.join(", ")}</div></div></div>
+      <a className="filtro" href={mchat.url} target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 14, borderColor: accent, color: accent }}>
+        <Ico name="search" s={13} /> Abrir o questionário oficial (mchatscreen.com) ↗
+      </a>
+
+      <div className="secao-label">{mchat.nota}</div>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 6 }}>
+        <input
+          type="number" min={0} max={20} inputMode="numeric"
+          className="campo" style={{ width: 110 }}
+          placeholder="Score 0–20" value={score}
+          onChange={(e) => setScore(e.target.value)}
+        />
+        <span style={{ fontSize: 12.5, color: "var(--tenue)" }}>/ 20</span>
+      </div>
+
+      {!vazio && !resultado && (
+        <div className="si-alerta" style={{ background: "#fffbeb", borderColor: "#fde68a", marginTop: 12 }}><Ico name="warn" c="#92400e" s={16} /><div><strong style={{ color: "#92400e" }}>Score inválido</strong><div className="si-sub">Introduz um número entre 0 e 20.</div></div></div>
       )}
-      {resultado && !resultado.faltam && (
+      {resultado && (
         <div className="cartao" style={{ padding: 16, marginTop: 12, borderLeft: `4px solid ${resultado.cor}` }}>
           <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: ".06em", color: resultado.cor }}>{resultado.etiqueta}</div>
           <div style={{ fontFamily: "var(--fonte-display)", fontSize: 24, color: resultado.cor, margin: "4px 0 8px" }}>Score: {resultado.score} / 20</div>

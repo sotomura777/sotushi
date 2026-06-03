@@ -151,6 +151,12 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
     </header>
   );
 
+  const rodapeFonte = (
+    <div className="rodape">
+      <strong>Fonte:</strong> Programa Nacional de Vacinação e Livro Azul de Vacinas (DGS). Aplicação independente, sem ligação nem endosso da DGS. Ferramenta de estudo — confirma sempre no Boletim de Vacinas / Livro Azul. <a href="https://www.dgs.pt/publicacoes/livro-azul-de-vacinas-programa-nacional-de-vacinacao-e-outras-estrategias-de-imunizacao.aspx" target="_blank" rel="noopener noreferrer" style={{ color: "var(--acento)" }}>Livro Azul (DGS) ↗</a>
+    </div>
+  );
+
   // ---------- HOME ----------
   if (!vista) {
     return (
@@ -168,9 +174,7 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
               </button>
             ))}
           </div>
-          <div className="rodape">
-            <strong>Nota:</strong> Conteúdo do PNV 2025 para consulta de estudo. Confirma sempre com o Boletim de Vacinas / Livro Azul da DGS antes de qualquer decisão.
-          </div>
+          {rodapeFonte}
         </div>
       </div>
     );
@@ -224,6 +228,7 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
       <div className="modulo-corpo">
         <input className="campo" style={{ width: "100%", marginBottom: 12 }} placeholder="Pesquisar por vacina, idade ou doença (ex.: hexavalente, sarampo)…" value={query} onChange={(e) => setQuery(e.target.value)} />
         <div className="vac" ref={ref} dangerouslySetInnerHTML={{ __html: htmlAtual }} />
+        {rodapeFonte}
       </div>
 
       {pop && (

@@ -32,16 +32,13 @@ export function corUrgencia(urgencia) {
   return ALERTA_INFO.green;
 }
 
-// ---- M-CHAT scoring (fiel ao calcMCHAT original) ----
-export function calcularMCHAT(respostas, riscoNao, riscoSim) {
-  let score = 0;
-  const faltam = [];
-  for (let i = 0; i < 20; i++) {
-    if (respostas[i] === undefined) { faltam.push(i + 1); continue; }
-    if (riscoNao.indexOf(i) >= 0 && respostas[i] === false) score++;
-    if (riscoSim.indexOf(i) >= 0 && respostas[i] === true) score++;
-  }
-  if (faltam.length > 0) return { faltam };
+// ---- M-CHAT-R/F: interpretação do score total ----
+// O questionário oficial (perguntas + folha de pontuação) é aplicado fora da app,
+// no recurso oficial dos autores. Aqui só se interpreta o score total (0-20),
+// com os limiares de risco validados. Devolve null se o score for inválido.
+export function interpretarScoreMCHAT(scoreBruto) {
+  const score = Math.round(Number(scoreBruto));
+  if (Number.isNaN(score) || score < 0 || score > 20) return null;
 
   if (score <= 2)
     return {
