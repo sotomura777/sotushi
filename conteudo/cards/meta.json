@@ -1,0 +1,25 @@
+{
+  "tipos": {
+    "Farmacologia":   { "cor": "#B45309", "label": "DOSE" },
+    "Fisiopatologia": { "cor": "#7C3AED", "label": "CHAVE" },
+    "Calculadora":    { "cor": "#2563EB", "label": "CRITÉRIOS" },
+    "Procedimento":   { "cor": "#0F766E", "label": "TÉCNICA" }
+  },
+  "especialidades": {
+    "cardiologia":       { "label": "Cardiologia",      "cor": "#C0392B" },
+    "pneumologia":       { "label": "Pneumologia",      "cor": "#16A085" },
+    "gastroenterologia": { "label": "Gastroenterologia","cor": "#B7770D" },
+    "neurologia":        { "label": "Neurologia",       "cor": "#7D3C98" },
+    "endocrinologia":    { "label": "Endocrinologia",   "cor": "#1E8449" },
+    "infecciologia":     { "label": "Infecciologia",    "cor": "#117A65" },
+    "nefrologia":        { "label": "Nefrologia",       "cor": "#1F618D" },
+    "reumatologia":      { "label": "Reumatologia",     "cor": "#A569BD" },
+    "psiquiatria":       { "label": "Psiquiatria",      "cor": "#5B2C6F" },
+    "medicina_interna":  { "label": "Med. Interna",     "cor": "#1A56A0" },
+    "urgencia":          { "label": "Urgência",         "cor": "#8B1A3A" },
+    "pediatria":         { "label": "Pediatria",        "cor": "#F39C12" },
+    "cirurgia_geral":    { "label": "Cirurgia Geral",   "cor": "#B5960A" },
+    "ortopedia":         { "label": "Ortopedia",        "cor": "#0E9080" },
+    "dermatologia":      { "label": "Dermatologia",     "cor": "#E07B39" }
+  }
+}

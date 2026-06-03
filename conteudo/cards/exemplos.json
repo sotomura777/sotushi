@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "tipo": "Farmacologia",
+    "especialidade": "infecciologia",
+    "titulo": "Amoxicilina",
+    "subtitulo": "Clamoxyl® · Amoxicilina Generis®",
+    "tags": ["OMA", "1ª LINHA"],
+    "tagColors": ["#3B82F6", "#E85D4A"],
+    "favorito": true,
+    "front": {
+      "dose": "80–90 mg/kg/dia, 8/8h (ped.) · 500 mg–1 g 8/8h (adulto)",
+      "ea": "Diarreia, exantema, candidíase"
+    },
+    "back": {
+      "label": "AMINOPENICILINA",
+      "mecanismo": "Inibe a síntese da parede celular bacteriana ligando-se às PBPs. Bactericida.",
+      "dica": "Dose alta em OMA para vencer a resistência intermédia do pneumococo.",
+      "fonte": "SPP 2024 · EUCAST 2025"
+    },
+    "criadoEm": "2026-05-01T08:00:00Z"
+  },
+  {
+    "id": 2,
+    "tipo": "Farmacologia",
+    "especialidade": "endocrinologia",
+    "titulo": "Metformina",
+    "subtitulo": "Stagid® · Risidon®",
+    "tags": ["DM2", "1ª LINHA"],
+    "tagColors": ["#1E8449", "#B45309"],
+    "favorito": false,
+    "front": {
+      "dose": "500–2000 mg/dia (titular cada 1–2 sem)",
+      "ea": "Intolerância GI; acidose láctica (rara)"
+    },
+    "back": {
+      "label": "BIGUANIDA",
+      "mecanismo": "Reduz a produção hepática de glucose e melhora a sensibilidade periférica à insulina.",
+      "dica": "Suspender se TFGe <30. Monitorizar B12 em uso prolongado.",
+      "fonte": "ADA/EASD 2024"
+    },
+    "criadoEm": "2026-05-01T08:05:00Z"
+  },
+  {
+    "id": 3,
+    "tipo": "Farmacologia",
+    "especialidade": "cardiologia",
+    "titulo": "Ramipril",
+    "subtitulo": "Triatec® · Ramipril Generis®",
+    "tags": ["HTA", "IC", "IECA"],
+    "tagColors": ["#C0392B", "#B45309", "#475569"],
+    "favorito": true,
+    "front": {
+      "dose": "1,25–10 mg/dia",
+      "ea": "Tosse seca, hiperkaliemia, angioedema (raro)"
+    },
+    "back": {
+      "label": "IECA",
+      "mecanismo": "Inibe a enzima conversora da angiotensina (↓ angiotensina II, ↓ aldosterona).",
+      "dica": "Monitorizar K⁺ e creatinina. Se tosse persistente → trocar para ARA.",
+      "fonte": "ESC HTA 2023 · ESC IC 2023"
+    },
+    "criadoEm": "2026-05-01T08:10:00Z"
+  },
+  {
+    "id": 4,
+    "tipo": "Farmacologia",
+    "especialidade": "cardiologia",
+    "titulo": "Bisoprolol",
+    "subtitulo": "Concor® · Bisoprolol Generis®",
+    "tags": ["IC", "HTA", "β-BLOQ"],
+    "tagColors": ["#C0392B", "#B45309", "#475569"],
+    "favorito": false,
+    "front": {
+      "dose": "1,25–10 mg/dia (titular lentamente na IC)",
+      "ea": "Bradicardia, fadiga, broncospasmo"
+    },
+    "back": {
+      "label": "β-BLOQUEADOR SELETIVO (β1)",
+      "mecanismo": "Bloqueio β1: ↓ frequência cardíaca, ↓ contractilidade e ↓ consumo de O₂.",
+      "dica": "Nunca suspender abruptamente. Contraindicação relativa na asma.",
+      "fonte": "ESC IC 2023"
+    },
+    "criadoEm": "2026-05-01T08:15:00Z"
+  },
+  {
+    "id": 5,
+    "tipo": "Farmacologia",
+    "especialidade": "gastroenterologia",
+    "titulo": "Omeprazol",
+    "subtitulo": "Losec® · Omeprazol Generis®",
+    "tags": ["DRGE", "ÚLCERA", "IBP"],
+    "tagColors": ["#B7770D", "#B45309", "#475569"],
+    "favorito": false,
+    "front": {
+      "dose": "20–40 mg/dia, 30 min antes do pequeno-almoço",
+      "ea": "Cefaleia, diarreia; uso prolongado: ↓ Mg/B12"
+    },
+    "back": {
+      "label": "IBP",
+      "mecanismo": "Inibe irreversivelmente a H⁺/K⁺-ATPase (bomba de protões) das células parietais gástricas.",
+      "dica": "Menor dose pelo menor tempo possível. Desmame gradual.",
+      "fonte": "ACG 2022 · NICE 2023"
+    },
+    "criadoEm": "2026-05-01T08:20:00Z"
+  },
+  {
+    "id": 6,
+    "tipo": "Fisiopatologia",
+    "especialidade": "pneumologia",
+    "titulo": "Pneumonia Adquirida na Comunidade",
+    "subtitulo": "PAC",
+    "tags": ["INFEÇÃO", "RESPIRATÓRIO"],
+    "tagColors": ["#16A085", "#7C3AED"],
+    "favorito": true,
+    "front": {
+      "dose": "Agentes: S. pneumoniae, M. pneumoniae, vírus respiratórios",
+      "ea": "Gravidade pelo CURB-65"
+    },
+    "back": {
+      "label": "CONSOLIDAÇÃO ALVEOLAR",
+      "mecanismo": "Invasão alveolar → exsudado inflamatório → consolidação e alteração das trocas gasosas.",
+      "dica": "CURB-65 ≥2: ponderar internamento; ≥3: considerar UCI.",
+      "fonte": "BTS 2023 · SPP 2024"
+    },
+    "criadoEm": "2026-05-01T08:25:00Z"
+  },
+  {
+    "id": 7,
+    "tipo": "Fisiopatologia",
+    "especialidade": "cardiologia",
+    "titulo": "Insuficiência Cardíaca",
+    "subtitulo": "ICFEr vs ICFEp",
+    "tags": ["IC", "CRÓNICA"],
+    "tagColors": ["#C0392B", "#7C3AED"],
+    "favorito": false,
+    "front": {
+      "dose": "ICFEr (FE ≤40%) vs ICFEp (FE ≥50%)",
+      "ea": "Classe funcional NYHA I–IV"
+    },
+    "back": {
+      "label": "ATIVAÇÃO NEURO-HORMONAL",
+      "mecanismo": "Ativação do SRAA e do sistema simpático → remodelagem e congestão. A terapêutica trava esta cascata.",
+      "dica": "Quatro fantásticos na ICFEr: IECA/ARNI + β-bloqueador + ARM + iSGLT2.",
+      "fonte": "ESC IC 2023"
+    },
+    "criadoEm": "2026-05-01T08:30:00Z"
+  },
+  {
+    "id": 8,
+    "tipo": "Calculadora",
+    "especialidade": "cardiologia",
+    "titulo": "CHA₂DS₂-VASc",
+    "subtitulo": "Risco de AVC na fibrilhação auricular",
+    "tags": ["FA", "AVC", "SCORE"],
+    "tagColors": ["#C0392B", "#2563EB", "#475569"],
+    "favorito": true,
+    "front": {
+      "dose": "IC, HTA, Diabetes, D. vascular, 65–74a, Sexo F = 1 pt · AVC/AIT, ≥75a = 2 pts",
+      "ea": "Pontuação 0–9"
+    },
+    "back": {
+      "label": "DECISÃO TERAPÊUTICA",
+      "mecanismo": "Estratifica o risco tromboembólico na FA não-valvular e orienta a anticoagulação.",
+      "dica": "≥2 (homem) ou ≥3 (mulher): anticoagular. Ponderar o risco hemorrágico (HAS-BLED).",
+      "fonte": "ESC FA 2024"
+    },
+    "criadoEm": "2026-05-01T08:35:00Z"
+  },
+  {
+    "id": 9,
+    "tipo": "Procedimento",
+    "especialidade": "gastroenterologia",
+    "titulo": "Paracentese Diagnóstica",
+    "subtitulo": "Avaliação de ascite",
+    "tags": ["PROCEDIMENTO", "ASCITE"],
+    "tagColors": ["#B7770D", "#0F766E"],
+    "favorito": false,
+    "front": {
+      "dose": "Quadrante inferior esquerdo; técnica em Z; agulha 22G",
+      "ea": "Enviar para citoquímico, GASA e culturas"
+    },
+    "back": {
+      "label": "INTERPRETAÇÃO",
+      "mecanismo": "GASA ≥1,1 g/dL: hipertensão portal. GASA <1,1: outras causas (neoplásica, infeciosa, pancreática).",
+      "dica": "PBE se PMN ≥250/mm³ no líquido ascítico — iniciar antibiótico empírico.",
+      "fonte": "EASL 2023 · AASLD 2021"
+    },
+    "criadoEm": "2026-05-01T08:40:00Z"
+  }
+]

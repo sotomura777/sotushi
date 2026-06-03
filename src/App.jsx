@@ -5,6 +5,9 @@ import IconeModulo from "./components/IconeModulo.jsx";
 import { useEstadoLocal } from "./lib/persistencia";
 import { normalizar } from "./lib/texto";
 import Toaster from "./components/Toaster.jsx";
+import Biblioteca from "./modules/cards/Biblioteca.jsx";
+import CriarCard from "./modules/cards/CriarCard.jsx";
+import CARDS_EXEMPLO from "@conteudo/cards/exemplos.json";
 
 const ABAS = [
   { id: "inicio", label: "Início", icon: I.home },
@@ -19,6 +22,8 @@ export default function App() {
   const [abertoId, setAbertoId] = useEstadoLocal("medguia:nav:aberto", null);
   const [recentes, setRecentes] = useEstadoLocal("medguia:recentes", []);
   const [procura, setProcura] = useState("");
+  const [cards, setCards] = useEstadoLocal("medguia:cards", CARDS_EXEMPLO);
+  const [editCardId, setEditCardId] = useState(null);
 
   // Cores literais (hex) para ícones SVG e estilos que dependem do tema.
   const tema = dark
@@ -132,19 +137,6 @@ export default function App() {
     );
   }
 
-  // ── BIBLIOTECA / CRIAR (Fase 3 — em breve) ──
-  function renderEmBreve(titulo, msg) {
-    return (
-      <div className="aba">
-        <h1 className="aba-titulo" style={{ marginBottom: 16 }}>{titulo}</h1>
-        <div className="vazio" style={{ paddingTop: 48 }}>
-          <div style={{ display: "flex", justifyContent: "center", marginBottom: 10 }}>{I.construction(tema.tx2, 36)}</div>
-          {msg}
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className={"app" + (dark ? " dark" : "")}>
       <div className="app-conteudo">
@@ -155,9 +147,9 @@ export default function App() {
         ) : aba === "procurar" ? (
           renderProcurar()
         ) : aba === "biblioteca" ? (
-          renderEmBreve("Biblioteca", "As tuas notas e cards de estudo chegam aqui em breve.")
+          <Biblioteca cards={cards} setCards={setCards} accent={tema.ac} onEditar={(id) => { setEditCardId(id); setAbertoId(null); setAba("criar"); }} />
         ) : (
-          renderEmBreve("Criar", "Criar notas e cards de estudo chega em breve.")
+          <CriarCard key={editCardId ?? "novo"} cards={cards} setCards={setCards} editId={editCardId} accent={tema.ac} onDone={() => { setEditCardId(null); setAba("biblioteca"); }} />
         )}
       </div>
 
@@ -168,7 +160,7 @@ export default function App() {
             <button
               key={tb.id}
               className={"nav-btn" + (ativo ? " ativo" : "")}
-              onClick={() => { setAbertoId(null); setAba(tb.id); }}
+              onClick={() => { setAbertoId(null); setAba(tb.id); setEditCardId(null); }}
             >
               {tb.icon(ativo ? tema.ac : tema.tx2, 21)}
               <span style={{ color: ativo ? tema.ac : tema.tx2 }}>{tb.label}</span>
