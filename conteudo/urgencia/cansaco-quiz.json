@@ -1,0 +1,926 @@
+{
+ "titulo": "Cansaço — treina os teus conhecimentos",
+ "sub": "Casos clínicos fictícios para treinares a abordagem da fadiga. A ordem adapta-se ao histórico: vês primeiro os que não fizeste, depois os que erraste.",
+ "disclaimer": "<b>Conteúdo educativo</b> — casos clínicos fictícios para treino.",
+ "onboarding": {
+  "eyebrow": "Antes de começar",
+  "titulo": "Como treinar com casos clínicos",
+  "contexto": "<strong>Contexto clínico:</strong> O cansaço é uma das queixas mais frequentes em ambulatório — presente em 5–10% das consultas de cuidados de saúde primários. O diagnóstico diferencial inclui mais de 80 causas possíveis, desde patologias orgânicas (hipotiroidismo, anemia, SAOS, doenças autoimunes) a funcionais (depressão, síndrome de fadiga crónica, privação de sono). Cerca de 30% ficam sem diagnóstico etiológico identificável. Uma abordagem estruturada — história detalhada, reconhecimento de alarmes e investigação dirigida — é essencial para não falhar diagnósticos importantes.",
+  "passos": [
+   "<b>Lê a vinheta com atenção</b> — inclui contexto clínico, dados do exame físico e analítica relevante. Simula o que encontrarias em consulta.",
+   "<b>Formula a tua hipótese antes de escolher</b> — identifica os dados mais relevantes, pensa no diagnóstico mais provável e o porquê dos distractores serem menos prováveis.",
+   "<b>Escolhe e lê a correcção</b> — após responder vês imediatamente o raciocínio por trás de cada opção, incluindo porque os distractores estão errados.",
+   "<b>Activa o Modo PNA</b> (botão discreto no topo) para ver dicas de memorização para o exame — buzzwords, cut-offs e armadilhas clássicas."
+  ],
+  "cta": "Começar os casos →"
+ },
+ "dicas": {
+  "Pistas clássicas": [
+   "<span class=\"key\">Sintomas B + adenopatia indolor supraclavicular</span> → <span class=\"then\">linfoma</span>. Biópsia <span class=\"key\">excisional</span>, não PAAF.",
+   "<span class=\"key\">Jovem + amigdalite + rash após amoxicilina + esplenomegalia</span> → <span class=\"then\">mononucleose (EBV)</span>. Monospot / anti-VCA IgM.",
+   "<span class=\"key\">Mulher jovem + artrite + rash malar + citopénias</span> → <span class=\"then\">LES</span>. ANA primeiro, depois anti-dsDNA.",
+   "<span class=\"key\">Hipertiroidismo + oftalmopatia + bócio difuso</span> → <span class=\"then\">Graves</span>. TRAb confirma.",
+   "<span class=\"key\">Idoso + dor cinturas + rigidez matinal &gt;45 min + VS muito elevada</span> → <span class=\"then\">polimialgia reumática</span>. Sempre pensar em arterite temporal.",
+   "<span class=\"key\">Hiperpigmentação + hipoNa + hiperK + hipotensão postural</span> → <span class=\"then\">Addison</span>. Cortisol matinal + ACTH.",
+   "<span class=\"key\">Macrocítica + parestesias + glossite</span> em vegetariano/IBP/metformina → <span class=\"then\">défice B12</span> (não folato).",
+   "<span class=\"key\">Microcítica + RDW↑ + mulher pré-menopausa + menorragia</span> → <span class=\"then\">ferropenia</span>.",
+   "<span class=\"key\">Roncopatia + apneias testemunhadas + sonolência diurna + Epworth↑</span> → <span class=\"then\">SAOS</span>.",
+   "<span class=\"key\">Fadiga + intolerância ao frio + obstipação + pele seca + bradicardia</span> → <span class=\"then\">hipotiroidismo</span>."
+  ],
+  "Cut-offs para decorar": [
+   "<span class=\"key\">PHQ-9</span>: ≥10 sugere depressão, ≥15 moderada-grave, ≥20 grave.",
+   "<span class=\"key\">GAD-7</span>: ≥10 ansiedade clinicamente significativa.",
+   "<span class=\"key\">STOP-BANG</span>: ≥3 risco intermédio, ≥5 risco alto de SAOS.",
+   "<span class=\"key\">Epworth</span>: ≥11 sonolência excessiva diurna.",
+   "<span class=\"key\">PEM em POTS</span>: aumento ≥30 bpm da FC em 10 min ortostático (≥40 bpm em adolescentes).",
+   "<span class=\"key\">CK por estatina</span>: &gt;3× LSN com sintomas ou &gt;5× sem sintomas → suspender.",
+   "<span class=\"key\">VS na polimialgia/arterite</span>: tipicamente &gt;50 mm/h (frequentemente &gt;100).",
+   "<span class=\"key\">Fadiga aguda</span> &lt;4 sem; <span class=\"key\">prolongada</span> ≥1 mês; <span class=\"key\">crónica</span> ≥6 meses (EM/SFC).",
+   "<span class=\"key\">PEM (post-exertional malaise)</span> em EM/SFC e long COVID: piora ≥24h após esforço mínimo.",
+   "<span class=\"key\">Anemia OMS</span>: Hb &lt;13 g/dL homem, &lt;12 g/dL mulher."
+  ],
+  "1ª coisa a pedir": [
+   "Fadiga persistente sem alarmes → <span class=\"then\">hemograma + TSH + ferro/ferritina + glicose + ALT + creatinina</span>.",
+   "Suspeita de hipotiroidismo → <span class=\"then\">TSH</span> (depois T4 livre se TSH alterada).",
+   "Suspeita de SAOS (STOP-BANG ≥5) → <span class=\"then\">polissonografia</span>, não CPAP empírico.",
+   "Suspeita de Graves → <span class=\"then\">TRAb</span> (alternativa: cintigrafia).",
+   "Suspeita de LES → <span class=\"then\">ANA</span>; se positivo: anti-dsDNA + anti-Sm + C3/C4.",
+   "Suspeita de Addison → <span class=\"then\">cortisol matinal + ACTH</span> (depois prova de estímulo com ACTH).",
+   "Suspeita de mononucleose → <span class=\"then\">monospot ou anti-VCA IgM</span>.",
+   "Suspeita de DII → <span class=\"then\">ileocolonoscopia com biópsias</span>.",
+   "Hepatite C + estigmas cirrose → <span class=\"then\">eco + fibroscan + EDA varizes + rastreio CHC 6/6 meses</span>.",
+   "Suspeita de fadiga oncológica → <span class=\"then\">exercício adaptado</span> (1ª linha, mais evidência)."
+  ],
+  "Armadilhas clássicas": [
+   "Rash com amoxicilina em amigdalite jovem = <span class=\"trap\">mononucleose, não alergia</span> (&gt;70% dos casos).",
+   "EM/SFC com PEM → <span class=\"then\">pacing</span>. <span class=\"trap\">NUNCA exercício graduado</span> (NICE retirou GET em 2021).",
+   "Fibromialgia → exercício aeróbico + CBT + higiene sono. <span class=\"trap\">Opióides e BZD: TIRAR</span>, não aumentar.",
+   "ICFEr → <span class=\"then\">quadrupla terapia já</span> (ARNI/IECA + BB + MRA + iSGLT2). <span class=\"trap\">Furosemida não melhora mortalidade</span>.",
+   "Idoso + luto + fadiga + PHQ-9↑ → <span class=\"then\">depressão + apoio social</span>. <span class=\"trap\">Não logo TC-CE</span>.",
+   "Fadiga aguda &lt;4 sem sem alarmes → <span class=\"then\">observar 2-4 sem</span>. <span class=\"trap\">Não investigar tudo logo</span>.",
+   "~30% das fadigas em CSP devem-se a <span class=\"key\">hábitos</span> (sono &lt;6h, cafeína ≥4/dia, álcool diário). <span class=\"then\">Mudar hábitos primeiro</span>.",
+   "Distinguir <span class=\"key\">fadiga</span> (falta de energia) de <span class=\"key\">sonolência</span> (adormecer involuntário) — muda diagnóstico.",
+   "Linfoma → biópsia <span class=\"trap\">excisional, não PAAF</span> (preciso da arquitectura ganglionar).",
+   "Celíaca + fadiga 6 meses após GFD → <span class=\"then\">repor ferro/B12/vitD + verificar adesão</span> (contaminação cruzada)."
+  ],
+  "Long COVID / EM-SFC": [
+   "Fadiga &gt;3 meses pós-COVID + sintomas multissistémicos = <span class=\"key\">long COVID</span>. Diagnóstico clínico.",
+   "Long COVID + taquicardia ortostática (Δ ≥30 bpm em 10 min) = <span class=\"then\">POTS sobreposto</span>. Sal + hidratação + compressão.",
+   "Long COVID com PEM → <span class=\"then\">pacing</span>, mesmo framework que EM/SFC (Bateman Horne 2025).",
+   "EM/SFC: <span class=\"key\">fadiga &gt;6m + PEM + sono não reparador + névoa cognitiva ou intolerância ortostática</span>.",
+   "Sobreposição clínica long COVID ↔ EM/SFC é significativa, sobretudo com PEM e fadiga &gt;6 meses."
+  ]
+ },
+ "casos": [
+  {
+   "id": "f1",
+   "vignette": "Mulher de 38 anos, secretária, recorre à consulta de Medicina Geral e Familiar por cansaço há 3 semanas, com início após quadro gripal. Refere que dorme 7-8h por noite mas acorda cansada. Sem perda ponderal, sem febre, sem sudorese nocturna. Exame objectivo sem alterações.",
+   "stem": "Qual é a atitude inicial mais adequada?",
+   "options": [
+    {
+     "text": "Pedir analítica alargada incluindo TSH, hemograma, ferritina, vitamina B12, vitamina D e serologias virais",
+     "why": "<b>Excessivo em fadiga aguda (&lt;4 semanas) sem alarmes.</b> A AAFP 2023 sugere investigar apenas se a fadiga persistir além de 4 semanas ou surgirem sinais de alarme. Investigar tudo precocemente leva a falsos positivos e a circuitos diagnósticos desnecessários.",
+     "correct": false
+    },
+    {
+     "text": "Tranquilizar, reavaliar em 2-4 semanas, considerar investigação se persistir",
+     "why": "<b>Resposta adequada para fadiga pós-viral inicial.</b> A maioria resolve em 2-4 semanas. A AAFP 2023 descreve uma janela de observação como apropriada em fadiga aguda sem sinais de alarme, com analítica básica apenas se persistir.",
+     "correct": true
+    },
+    {
+     "text": "Iniciar suplemento multivitamínico empiricamente",
+     "why": "<b>Sem fundamento.</b> Não há evidência de défice. A literatura desencoraja suplementação empírica em pessoa sem défice documentado — efeito de placebo apenas.",
+     "correct": false
+    },
+    {
+     "text": "Prescrever fluoxetina 20 mg/dia para fadiga associada a humor",
+     "why": "<b>Sem critérios de depressão descritos.</b> Iniciar antidepressivo sem PHQ-9 nem entrevista estruturada é inadequado em fadiga aguda pós-viral.",
+     "correct": false
+    },
+    {
+     "text": "Pedir TC tórax-abdómen-pélvico para excluir neoplasia",
+     "why": "<b>Investigação desproporcional.</b> Não há sinais de alarme. Imagiologia avançada só em fadiga >4 semanas com sinais de alarme ou alterações analíticas que a justifiquem.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Fadiga <4 sem pós-viral sem alarmes = observar 2-4 sem. Não pedir nada.",
+   "keyConcept": "A AAFP 2023 sugere uma janela inicial de 2-4 semanas em fadiga aguda sem alarmes. Investigação básica (hemograma, TSH, ferro/ferritina, glicose, ALT, creatinina) entra se a fadiga persistir além desse tempo ou se surgirem sinais de alarme (perda ponderal &gt;5%, sudorese nocturna, febre persistente, adenopatias)."
+  },
+  {
+   "id": "f2",
+   "vignette": "Homem de 52 anos recorre à consulta por cansaço progressivo há 4 meses, com perda ponderal não intencional de 6 kg, sudorese nocturna que encharca a roupa, e adenopatias cervicais palpáveis bilaterais. Não fuma, sem antecedentes relevantes. Ao exame: adenopatias indolores de 2-3 cm, sem hepatoesplenomegalia óbvia.",
+   "stem": "Qual é o passo seguinte mais adequado?",
+   "options": [
+    {
+     "text": "Tranquilizar e reavaliar em 1 mês",
+     "why": "<b>Inaceitável.</b> Estão presentes pelo menos 3 sinais de alarme (perda ponderal &gt;5%, sudorese nocturna, adenopatias). A literatura descreve investigação imediata, não observação.",
+     "correct": false
+    },
+    {
+     "text": "Investigação dirigida com hemograma, VS, LDH, Rx tórax e referenciação a hematologia para considerar biópsia ganglionar",
+     "why": "<b>Abordagem correta.</b> Sintomas B + adenopatias indolores num adulto sugerem fortemente linfoma. A literatura descreve hemograma, VS/LDH e Rx tórax como rastreio inicial, com biópsia excisional ganglionar como confirmação. Encaminhamento urgente a hematologia.",
+     "correct": true
+    },
+    {
+     "text": "Iniciar antibiótico de largo espectro para adenite reactiva",
+     "why": "<b>Adenopatias indolores há 4 meses não são infecciosas.</b> Antibiótico não está indicado e pode atrasar diagnóstico oncológico.",
+     "correct": false
+    },
+    {
+     "text": "Pedir PHQ-9 e tratar como depressão",
+     "why": "<b>Risco grave de subdiagnóstico.</b> Embora a depressão possa coexistir, ignorar os sinais de alarme oncológicos é um erro grave.",
+     "correct": false
+    },
+    {
+     "text": "Pedir apenas serologia VIH e aguardar resultado",
+     "why": "<b>Insuficiente.</b> VIH é um diferencial relevante, mas a investigação descrita é multimodal (incluir hemograma, LDH, imagem) — não se aguarda só um teste.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Sintomas B (febre + sudorese nocturna + perda peso) + adenopatia indolor = linfoma. Biópsia excisional, não PAAF.",
+   "keyConcept": "A presença de qualquer sinal de alarme (perda ponderal &gt;5%, sudorese nocturna, febre persistente, adenopatias, dispneia de novo, fraqueza muscular progressiva, cefaleias matinais com vómitos) baixa o limiar para investigação dirigida. Sintomas B + adenopatias indolores em adulto têm linfoma como diferencial obrigatório."
+  },
+  {
+   "id": "f3",
+   "vignette": "Mulher de 45 anos refere cansaço há 8 meses, intolerância ao frio, obstipação, ganho ponderal de 4 kg sem alteração da alimentação, pele seca e queda de cabelo. Refere também enlentecimento do pensamento. Antecedentes: tiroidite de Hashimoto diagnosticada há 5 anos, atualmente sem medicação porque \"estava controlada\".",
+   "stem": "Qual é o exame inicial mais adequado?",
+   "options": [
+    {
+     "text": "TSH e T4 livre",
+     "why": "<b>Resposta correcta.</b> O quadro é altamente sugestivo de hipotiroidismo em pessoa com tiroidite autoimune conhecida. A TSH é o teste de rastreio de primeira linha; T4 livre complementa para classificar como subclínico ou franco.",
+     "correct": true
+    },
+    {
+     "text": "Anticorpos anti-TPO e anti-tireoglobulina",
+     "why": "<b>Já confirmados pelo diagnóstico de Hashimoto.</b> Repeti-los não muda a abordagem. O que falta é avaliar a função actual com TSH + T4 livre.",
+     "correct": false
+    },
+    {
+     "text": "Ecografia tiroideia",
+     "why": "<b>Não é o exame de primeira linha para fadiga em pessoa com Hashimoto.</b> A ecografia avalia estrutura, não função. Útil apenas se nódulos palpáveis ou bócio.",
+     "correct": false
+    },
+    {
+     "text": "Cintigrafia tiroideia com I-123",
+     "why": "<b>Não está indicada.</b> Útil em hipertiroidismo (para distinguir Graves de adenoma tóxico), não em hipotiroidismo.",
+     "correct": false
+    },
+    {
+     "text": "PHQ-9 para excluir depressão antes de investigação tiroideia",
+     "why": "<b>Inverte a sequência.</b> Em pessoa com tiroidite conhecida e sintomas clássicos de hipotiroidismo, investiga-se primeiro a tiróide. Depressão pode coexistir mas não é a primeira hipótese aqui.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Fadiga + intolerância ao frio + obstipação + pele seca + bradicardia = TSH primeiro.",
+   "keyConcept": "A TSH é o teste de função tiroideia de primeira linha em hipotiroidismo suspeito (sensibilidade superior à T4 livre isolada). Em hipertiroidismo, TSH suprimida + T4/T3 livres elevadas. Em doença hipofisária, TSH pode ser normal ou baixa com T4 livre baixa (raro)."
+  },
+  {
+   "id": "f4",
+   "vignette": "Homem de 48 anos, IMC 34 kg/m², refere cansaço diurno marcado há 1 ano, com sonolência ao ler ou ver televisão, mesmo após dormir 8h. A esposa refere que ronca alto e ocasionalmente pára de respirar durante o sono. Tem HTA resistente sob 3 anti-hipertensores. Epworth 14/24, STOP-BANG 6/8.",
+   "stem": "Qual é o exame mais adequado para confirmar o diagnóstico?",
+   "options": [
+    {
+     "text": "Iniciar empiricamente CPAP sem mais investigação",
+     "why": "<b>Não se inicia CPAP sem confirmação polissonográfica.</b> O CPAP só é validado e adaptado após documentação do índice apneia-hipopneia (IAH).",
+     "correct": false
+    },
+    {
+     "text": "Polissonografia (estudo do sono)",
+     "why": "<b>Exame de confirmação.</b> A literatura descreve a polissonografia como gold standard para diagnóstico de SAOS. STOP-BANG ≥5 indica risco alto — exame confirmatório está claramente indicado.",
+     "correct": true
+    },
+    {
+     "text": "Pedir TSH e iniciar levotiroxina empírica",
+     "why": "<b>Fora do contexto clínico.</b> Apesar de SAOS poder coexistir com hipotiroidismo, o quadro descrito (roncopatia + apneias testemunhadas + obesidade + Epworth elevado) é típico de SAOS.",
+     "correct": false
+    },
+    {
+     "text": "Espirometria com prova de broncodilatação",
+     "why": "<b>Avalia obstrução das vias aéreas inferiores</b>, não o sono. Não é o teste para SAOS.",
+     "correct": false
+    },
+    {
+     "text": "TC torácica de alta resolução",
+     "why": "<b>Não tem indicação.</b> Não avalia eventos respiratórios durante o sono.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Roncopatia + apneias testemunhadas + Epworth↑ + STOP-BANG ≥5 = polissonografia (não CPAP empírico).",
+   "keyConcept": "SAOS suspeita-se perante a tríade roncopatia + apneias testemunhadas + sonolência diurna excessiva. Escalas: STOP-BANG (≥3 = risco intermédio, ≥5 = alto) e Epworth (&gt;10 = sonolência significativa). HTA resistente é red flag para SAOS. A confirmação é polissonográfica antes de iniciar CPAP."
+  },
+  {
+   "id": "f5",
+   "vignette": "Mulher de 22 anos, estudante de medicina, com amigdalite há 2 semanas, tratada com amoxicilina pelo médico de família. Três dias após início do antibiótico, desenvolveu rash maculopapular generalizado pruriginoso. Refere cansaço marcado, dor de garganta persistente e adenopatias cervicais. Ao exame: adenopatias cervicais posteriores volumosas, esplenomegalia palpável.",
+   "stem": "Qual é a hipótese diagnóstica mais provável?",
+   "options": [
+    {
+     "text": "Reacção alérgica à amoxicilina mediada por IgE",
+     "why": "<b>Quase certamente NÃO é alergia.</b> Rash com amoxicilina em pessoa jovem com amigdalite é descrito como praticamente patognomónico de mononucleose. Ocorre em 70-100% dos casos de mono expostos a amoxicilina, e não é mediado por IgE — a toma futura é considerada segura.",
+     "correct": false
+    },
+    {
+     "text": "Mononucleose infecciosa por EBV",
+     "why": "<b>Diagnóstico clássico.</b> Adolescente/jovem adulto com amigdalite + adenopatias posteriores + esplenomegalia + rash com amoxicilina é a apresentação típica. Confirmação: Paul-Bunnell/Monotest, serologia EBV (VCA IgM).",
+     "correct": true
+    },
+    {
+     "text": "Doença de Kawasaki",
+     "why": "<b>Doença pediátrica</b> (geralmente &lt;5 anos), com critérios específicos (febre &gt;5 dias, conjuntivite, alterações mucocutâneas, etc.). Não se enquadra em adulto jovem.",
+     "correct": false
+    },
+    {
+     "text": "Síndrome de Stevens-Johnson",
+     "why": "<b>Reacção cutânea grave</b> com envolvimento mucoso e descolamento epidérmico — não corresponde a rash maculopapular ligeiro descrito.",
+     "correct": false
+    },
+    {
+     "text": "Faringite estreptocócica complicada",
+     "why": "<b>Não explica esplenomegalia nem o rash com amoxicilina.</b> Strep responde a amoxicilina, não desencadeia rash típico.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Jovem + amigdalite + rash após amoxicilina + esplenomegalia = mononucleose (EBV). Monospot / anti-VCA IgM.",
+   "keyConcept": "O rash com amoxicilina em pessoa com mononucleose ocorre em 70-100% dos casos e não é mediado por IgE. Confirmação serológica com Paul-Bunnell/Monotest ou anticorpos VCA-IgM. Evicção de actividade física de contacto e levantamento de pesos durante 3-4 semanas pelo risco de rotura esplénica."
+  },
+  {
+   "id": "f6",
+   "vignette": "Mulher de 28 anos refere fadiga há 7 meses, não aliviada pelo repouso, sono não reparador apesar de dormir 9-10h por noite, dificuldades de concentração (\"brain fog\"), e dor difusa. Refere que após uma caminhada de 20 minutos fica acamada 2-3 dias. Analítica básica (hemograma, TSH, ferro, B12, vitamina D, ALT) sem alterações. Quadro iniciou após infecção respiratória.",
+   "stem": "Qual é a abordagem terapêutica mais adequada?",
+   "options": [
+    {
+     "text": "Programa estruturado de exercício graduado (graded exercise therapy)",
+     "why": "<b>Não recomendado pela NICE 2021.</b> A guideline retirou explicitamente o exercício graduado como tratamento curativo na EM/SFC por evidência de danos (agravamento do PEM). Aplicado em quem tem PEM pode causar deterioração permanente.",
+     "correct": false
+    },
+    {
+     "text": "Pacing (gestão de energia) + apoio sintomático multidisciplinar",
+     "why": "<b>Abordagem actual.</b> A NICE NG206 (2021) e o Bateman Horne Clinical Care Guide 2025 descrevem o pacing como pilar do tratamento da EM/SFC — manter actividade abaixo do limiar de PEM. Apoio para sono, dor, ortostatismo.",
+     "correct": true
+    },
+    {
+     "text": "Antidepressivo (SSRI) como primeira linha",
+     "why": "<b>Não é tratamento curativo da EM/SFC.</b> SSRI podem ser considerados se depressão comórbida, mas não tratam a EM/SFC em si.",
+     "correct": false
+    },
+    {
+     "text": "Corticoterapia oral em baixa dose continuada",
+     "why": "<b>Sem evidência</b> de benefício na EM/SFC. Pode causar efeitos adversos sem ganho clínico.",
+     "correct": false
+    },
+    {
+     "text": "Não há nada a fazer, é uma doença psicossomática",
+     "why": "<b>Conceptualização ultrapassada.</b> A EM/SFC é reconhecida como doença biológica complexa (NAM 2015, NICE 2021). Estigmatizar como psicossomática é descrito como inadequado e prejudicial.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Fadiga >6 meses + PEM + sono não reparador + névoa cognitiva = EM/SFC. Pacing. NUNCA exercício graduado (NICE 2021).",
+   "keyConcept": "EM/SFC = fadiga crónica (&gt;6 meses) + PEM (mal-estar pós-esforço) + sono não reparador + brain fog. Critérios NAM 2015. A NICE 2021 e o Bateman Horne Center 2025 descrevem o pacing como abordagem central — manter actividade abaixo do limiar que precipita PEM. O exercício graduado foi retirado por evidência de danos."
+  },
+  {
+   "id": "f7",
+   "vignette": "Mulher de 30 anos, vegetariana estrita há 6 anos, refere fadiga progressiva há 1 ano, parestesias em \"meia\" nos pés, dificuldades de concentração e queixas de memória. Ao exame: palidez das mucosas, glossite atrófica, alterações sensitivas distais bilaterais simétricas. Hemograma: Hb 10,2 g/dL, VGM 108 fL.",
+   "stem": "Qual é o exame mais adequado?",
+   "options": [
+    {
+     "text": "Ferritina e ferro sérico",
+     "why": "<b>Não corresponde ao quadro.</b> Anemia ferropénica é microcítica (VGM &lt;80). Aqui o VGM é 108 (macrocítico), o que orienta para défice de B12/folato.",
+     "correct": false
+    },
+    {
+     "text": "Vitamina B12 e ácido fólico séricos",
+     "why": "<b>Exames adequados.</b> Anemia macrocítica + glossite + parestesias + dieta vegetariana estrita = défice de B12 até prova em contrário. B12 sérica é o rastreio inicial; ácido metilmalónico pode confirmar défice tecidular em casos limítrofes.",
+     "correct": true
+    },
+    {
+     "text": "TSH e T4 livre",
+     "why": "<b>Hipotiroidismo pode causar macrocitose ligeira</b>, mas não explica as parestesias nem o quadro neurológico.",
+     "correct": false
+    },
+    {
+     "text": "Reticulócitos e LDH",
+     "why": "<b>Úteis em anemia hemolítica</b>, não no quadro descrito (macrocítico com sintomas neurológicos).",
+     "correct": false
+    },
+    {
+     "text": "Electroforese das proteínas séricas",
+     "why": "<b>Útil para mieloma</b>, mas a doente é jovem com dieta restritiva — défice nutricional é muito mais provável.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Anemia macrocítica + parestesias + glossite + vegetariano/IBP/metformina = défice B12 (não folato).",
+   "keyConcept": "O défice de B12 manifesta-se com anemia macrocítica + sintomas neurológicos (parestesias, ataxia, alterações cognitivas, degenerescência combinada subaguda da medula). Risco aumentado em vegetarianos/veganos, idosos, uso crónico de IBP/metformina, gastrectomia. Tratamento é reposição parentérica em défice grave/neurológico, oral em ligeiro sem sintomas neurológicos."
+  },
+  {
+   "id": "f8",
+   "vignette": "Homem de 65 anos, viúvo há 8 meses, refere cansaço persistente há 5 meses, dificuldade em adormecer, despertar precoce (4h da manhã), perda de apetite com 4 kg, anedonia, sentimentos de culpa e desesperança. Sem ideação suicida estruturada. Analítica básica normal. PHQ-9: 18/27.",
+   "stem": "Qual é a atitude mais adequada?",
+   "options": [
+    {
+     "text": "Iniciar terapêutica antidepressiva (SSRI) e considerar psicoterapia; reavaliar em 2-4 semanas",
+     "why": "<b>Resposta adequada.</b> Depressão major em adulto (PHQ-9 ≥15 = depressão moderada-grave). Tratamento combinado farmacológico + psicoterápico é o descrito como mais eficaz. Avaliação regular pelo risco de suicídio é essencial.",
+     "correct": true
+    },
+    {
+     "text": "Aguardar resolução espontânea — é luto natural",
+     "why": "<b>Critérios para depressão major foram cumpridos</b> (PHQ-9 18, duração &gt;3 meses, anedonia, alterações neurovegetativas). O luto não impede o diagnóstico de depressão se preenche critérios.",
+     "correct": false
+    },
+    {
+     "text": "Pedir TC cerebral para excluir causa orgânica",
+     "why": "<b>Sem indicação neurológica</b> (exame neurológico não descreve alterações). Não é rastreio de rotina em depressão.",
+     "correct": false
+    },
+    {
+     "text": "Prescrever benzodiazepina para o sono e reavaliar em 6 meses",
+     "why": "<b>BZD não tratam a depressão.</b> No idoso aumentam risco de quedas, fracturas, deterioração cognitiva. Adiar tratamento da depressão em 6 meses é inaceitável face ao risco de suicídio.",
+     "correct": false
+    },
+    {
+     "text": "Internamento psiquiátrico urgente",
+     "why": "<b>Sem critérios.</b> Não há ideação suicida estruturada, plano, intenção, nem incapacidade de auto-cuidado. Tratamento ambulatório é apropriado.",
+     "correct": false
+    }
+   ],
+   "quickTip": "PHQ-9 ≥15 + duração >3 meses = depressão major. Idoso queixa-se de fadiga, não de tristeza.",
+   "keyConcept": "A AAFP 2023 e a literatura descrevem o PHQ-9 como instrumento de rastreio de depressão (≥10 sugere depressão; ≥15 moderada-grave). Critérios DSM-5 incluem: humor deprimido OU anedonia + ≥4 sintomas adicionais (alterações sono, apetite, energia, concentração, psicomotor, culpa, ideação suicida) durante ≥2 semanas. Em idoso, depressão apresenta-se frequentemente como queixa somática (fadiga, dor)."
+  },
+  {
+   "id": "f9",
+   "vignette": "Mulher de 35 anos refere fadiga marcada nas últimas semanas, com tonturas ao levantar-se, palpitações em pequenos esforços, e queixas de dispneia ao subir escadas. Refere menstruações abundantes desde sempre, mas com agravamento progressivo. Ao exame: palidez cutaneomucosa, taquicardia 102 bpm em repouso. Hemograma: Hb 8,4 g/dL, VGM 68 fL, RDW 18%.",
+   "stem": "Qual é o passo seguinte mais adequado?",
+   "options": [
+    {
+     "text": "Transfusão urgente de concentrado eritrocitário",
+     "why": "<b>Não está indicada.</b> Anemia ferropénica crónica em pessoa estável e jovem é tratada com ferro oral. Transfusão reserva-se para Hb &lt;7 g/dL com instabilidade hemodinâmica ou anemia sintomática grave que não permita aguardar.",
+     "correct": false
+    },
+    {
+     "text": "Doseamento de ferritina, ferro sérico e capacidade total de fixação do ferro; iniciar reposição com ferro oral se confirmar ferropenia",
+     "why": "<b>Abordagem adequada.</b> Anemia microcítica (VGM &lt;80) + RDW elevado em mulher com menorragia é típica de ferropenia. Confirmação por ferritina (gold standard) + ferro/capacidade fixação. Iniciar reposição oral em primeira linha.",
+     "correct": true
+    },
+    {
+     "text": "Endoscopia digestiva alta e colonoscopia urgentes",
+     "why": "<b>Em mulher jovem com menorragia, a causa ginecológica é a hipótese principal.</b> Investigação digestiva fica reservada para homens, mulheres pós-menopausa, ou quando a causa ginecológica não justifica a anemia.",
+     "correct": false
+    },
+    {
+     "text": "Pedir mielograma para excluir mielodisplasia",
+     "why": "<b>Investigação invasiva sem indicação.</b> Mielodisplasia entra em consideração em anemia macrocítica do idoso ou bicitopénia/pancitopénia, não em microcítica com causa óbvia.",
+     "correct": false
+    },
+    {
+     "text": "Tranquilizar e reavaliar daqui a 3 meses",
+     "why": "<b>Inaceitável.</b> Hb 8,4 g/dL com sintomas (taquicardia, dispneia) requer tratamento activo, não observação passiva.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Microcítica + RDW elevado + mulher pré-menopausa + menorragia = ferropenia. Ferritina + ferro oral.",
+   "keyConcept": "Anemia ferropénica: microcítica (VGM &lt;80), hipocrómica, RDW elevado. Confirmação por ferritina baixa (gold standard; lembrar que é proteína de fase aguda, podendo ser falsamente normal em inflamação). Causas: perdas (menorragia, GI), absorção reduzida (celíaca, gastrectomia, IBP), aumento das necessidades (gravidez). Tratamento: ferro oral primeira linha; IV se intolerância, malabsorção, ou perda contínua."
+  },
+  {
+   "id": "f10",
+   "vignette": "Mulher de 58 anos, com diagnóstico de cancro da mama há 1 ano (em tratamento adjuvante com tamoxifeno), refere fadiga incapacitante há 6 meses. Refere que mesmo tarefas pequenas a deixam exausta. Sem perda ponderal recente, sem sinais de recidiva imagiológicos. Analítica básica: TSH 2,1, Hb 11,8, função hepática e renal normais.",
+   "stem": "Qual é a abordagem mais adequada à fadiga?",
+   "options": [
+    {
+     "text": "Iniciar metilfenidato para fadiga relacionada com cancro",
+     "why": "<b>Sem evidência robusta.</b> A literatura sobre psicostimulantes na fadiga oncológica é inconsistente. Reservados para casos refractários e não primeira linha.",
+     "correct": false
+    },
+    {
+     "text": "Abordagem multimodal: exercício adaptado e gradual, gestão do sono, suporte psicológico, revisão de medicação",
+     "why": "<b>Abordagem adequada.</b> A literatura oncológica descreve exercício adaptado como a intervenção com evidência mais consistente para fadiga relacionada com cancro. Combina-se com gestão do sono, apoio psicológico e revisão de fármacos que possam contribuir.",
+     "correct": true
+    },
+    {
+     "text": "Suspender o tamoxifeno",
+     "why": "<b>Não suspender adjuvância sem indicação oncológica.</b> O tamoxifeno reduz risco de recidiva — a decisão de suspender é multidisciplinar e não tomada apenas por fadiga.",
+     "correct": false
+    },
+    {
+     "text": "Aguardar resolução espontânea — é normal após o cancro",
+     "why": "<b>Postura passiva inadequada.</b> A fadiga oncológica é tratável com intervenções estruturadas, e atinge qualidade de vida.",
+     "correct": false
+    },
+    {
+     "text": "Repetir todos os exames oncológicos para excluir recidiva",
+     "why": "<b>Sem indicação.</b> Já estão excluídas alterações analíticas e imagiológicas. Repetir tudo amplifica ansiedade sem benefício.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Fadiga oncológica → exercício adaptado é a 1ª linha (mais evidência). Não começar por fármaco.",
+   "keyConcept": "A fadiga relacionada com cancro afecta 50-90% dos doentes durante e após tratamento. A literatura descreve exercício aeróbico adaptado e treino de resistência como as intervenções com evidência mais robusta. Abordagem multimodal: exercício + gestão do sono + apoio psicológico (mindfulness, CBT) + revisão farmacológica + tratamento de comorbilidades (anemia, hipotiroidismo)."
+  },
+  {
+   "id": "f11",
+   "vignette": "Homem de 70 anos, com história de diabetes tipo 2, dislipidemia e fibrilhação auricular paroxística. Medicação: metformina 1000 mg 2x/dia, atorvastatina 40 mg, bisoprolol 5 mg, varfarina, omeprazol. Refere fadiga e mialgias proximais há 3 meses, com agravamento após escalada da estatina de 20 para 40 mg. CK: 580 U/L (normal &lt;200).",
+   "stem": "Qual é a atitude mais adequada?",
+   "options": [
+    {
+     "text": "Suspender a atorvastatina e reavaliar sintomas e CK em 4-6 semanas; considerar reintrodução em dose mais baixa ou rosuvastatina",
+     "why": "<b>Resposta correcta.</b> A miopatia por estatina é dose-dependente. A descrição é suspender, esperar resolução, e considerar reintrodução em dose mais baixa ou outra estatina (rosuvastatina, pravastatina) com melhor perfil de miopatia.",
+     "correct": true
+    },
+    {
+     "text": "Manter atorvastatina e adicionar coenzima Q10",
+     "why": "<b>Evidência para Q10 é modesta e inconsistente.</b> Em CK &gt;3× LSN com sintomas, a literatura descreve suspender a estatina, não acrescentar suplementos.",
+     "correct": false
+    },
+    {
+     "text": "Suspender a metformina (suspeita de acidose lática)",
+     "why": "<b>Sem evidência de acidose</b> (sem hiperlactatémia descrita). CK elevada aponta para miopatia, não acidose.",
+     "correct": false
+    },
+    {
+     "text": "Pedir biópsia muscular urgente",
+     "why": "<b>Investigação invasiva sem indicação.</b> A primeira atitude é suspender o fármaco suspeito. Biópsia reserva-se para suspeita de miopatia inflamatória autoimune (anticorpos anti-HMGCR, etc.).",
+     "correct": false
+    },
+    {
+     "text": "Trocar para sinvastatina",
+     "why": "<b>A sinvastatina tem maior risco de miopatia</b> do que atorvastatina ou rosuvastatina. Não é boa escolha de troca.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Mialgia + CK >3× LSN com estatina = suspender. Reintroduzir com rosuvastatina ou pravastatina em dose baixa.",
+   "keyConcept": "Miopatia por estatina manifesta-se com mialgias proximais e/ou elevação da CK. Classificação: ligeira (CK &lt;3× LSN, manter/reduzir dose), moderada (CK 3-10×, suspender), grave (rabdomiólise CK &gt;10× ou &gt;5× com sintomas, suspender e investigar). Estatinas com menor risco: rosuvastatina e pravastatina. Interacções: aumentar risco se combinada com fibratos (gemfibrozil), macrólidos, antifúngicos azólicos, ciclosporina."
+  },
+  {
+   "id": "f12",
+   "vignette": "Homem de 30 anos refere fadiga progressiva há 4 meses, dor articular nas mãos e joelhos, rash malar que aparece com exposição solar, queda de cabelo, e duas úlceras orais indolores nas últimas semanas. Analítica: leucopénia 3000, linfopénia 800, anemia hemolítica autoimune Coombs positivo, creatinina 1,4 mg/dL com proteinúria.",
+   "stem": "Qual é o exame mais adequado?",
+   "options": [
+    {
+     "text": "ANA (anticorpos antinucleares) e, se positivo, painel de anticorpos específicos (anti-dsDNA, anti-Sm, anti-Ro/La, anti-RNP) + complemento (C3, C4)",
+     "why": "<b>Abordagem adequada.</b> O quadro preenche múltiplos critérios de LES (artrite, rash malar fotosensível, úlceras orais, citopénias, envolvimento renal). ANA é o teste de rastreio (sensibilidade ~95%); painel específico confirma e estratifica.",
+     "correct": true
+    },
+    {
+     "text": "Factor reumatóide e anti-CCP",
+     "why": "<b>Úteis para artrite reumatóide</b>, não para LES. O quadro multissistémico aponta para LES, não AR.",
+     "correct": false
+    },
+    {
+     "text": "Biópsia cutânea da lesão facial",
+     "why": "<b>Não é a primeira linha.</b> A serologia (ANA) é menos invasiva e mais sensível como rastreio.",
+     "correct": false
+    },
+    {
+     "text": "TC tórax-abdómen-pélvico para excluir neoplasia",
+     "why": "<b>Sem alarmes oncológicos específicos.</b> O quadro multissistémico autoimune justifica investigação reumatológica primeiro.",
+     "correct": false
+    },
+    {
+     "text": "Hemoculturas para excluir endocardite",
+     "why": "<b>Sem febre nem sopro de novo descritos.</b> Endocardite explica mal proteinúria + úlceras orais + rash malar.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Mulher jovem + artrite + rash malar + citopénias = ANA em primeiro (depois anti-dsDNA, anti-Sm, C3/C4).",
+   "keyConcept": "O LES afecta predominantemente mulheres jovens (15-45 anos, 9:1). Critérios EULAR/ACR 2019: ANA ≥1:80 como critério de entrada, seguido de domínios clínicos (cutâneo, articular, neurológico, hematológico, serosite, renal) e imunológicos (anti-dsDNA, anti-Sm, complemento, antifosfolípido). ANA negativa torna LES muito improvável (sensibilidade ~95%)."
+  },
+  {
+   "id": "f13",
+   "vignette": "Mulher de 75 anos refere fadiga, perda de apetite, perda ponderal de 3 kg em 2 meses, e fragilidade progressiva. Vive sozinha desde a morte do marido há 4 meses. Refere \"não ter vontade de cozinhar\". Caminha menos. PHQ-9: 12/27. Analítica: Hb 10,5 (normocítica), albumina 3,1 g/dL, restantes parâmetros sem alterações major.",
+   "stem": "Qual é a abordagem mais adequada?",
+   "options": [
+    {
+     "text": "Iniciar SSRI e referenciar à assistência social para apoio domiciliário; rever nutrição",
+     "why": "<b>Abordagem multimodal correcta.</b> PHQ-9 12 sugere depressão moderada. A literatura geriátrica descreve abordagem combinada: farmacológica + apoio social + reabilitação nutricional + avaliação de fragilidade.",
+     "correct": true
+    },
+    {
+     "text": "Investigação oncológica exaustiva (TC, endoscopias, marcadores)",
+     "why": "<b>Perda ponderal de 3 kg em 2 meses é &lt;5%</b> — não preenche estritamente red flag, mas vigiar evolução. Investigação oncológica completa antes de tentar abordagem da depressão e luto pode ser desproporcional como primeira linha.",
+     "correct": false
+    },
+    {
+     "text": "Internamento para reabilitação nutricional",
+     "why": "<b>Não há malnutrição grave descrita.</b> Albumina ligeiramente baixa pode reflectir inflamação, não necessariamente desnutrição grave. Apoio domiciliário é primeira linha.",
+     "correct": false
+    },
+    {
+     "text": "Aguardar resolução natural — é luto, não depressão",
+     "why": "<b>PHQ-9 12, duração ≥2 meses, anorexia, perda ponderal e isolamento</b> preenchem critérios para depressão major em luto. Não esperar.",
+     "correct": false
+    },
+    {
+     "text": "Prescrever megestrol para estimular apetite",
+     "why": "<b>Risco de tromboembolismo em idosa frágil.</b> Não tratar causa subjacente (depressão, isolamento).",
+     "correct": false
+    }
+   ],
+   "quickTip": "Idoso + luto recente + perda peso ligeira + PHQ-9↑ = depressão + apoio social. Não logo TC-CE.",
+   "keyConcept": "Na depressão geriátrica, queixas somáticas (fadiga, dor, perda de apetite) podem dominar o quadro. A abordagem é multimodal: farmacológica (SSRI com bom perfil em idoso, como sertralina; evitar paroxetina pelo anticolinérgico), psicoterapêutica, social (combate ao isolamento) e nutricional. Fragilidade no idoso é factor de risco e prognóstico independente."
+  },
+  {
+   "id": "f14",
+   "vignette": "Homem de 60 anos, fumador (40 UMA), recorre por fadiga há 3 meses com dispneia de esforço progressiva, tosse com expectoração mucopurulenta e infecções respiratórias recorrentes. Ao exame: tórax em tonel, expiração prolongada, sibilos esparsos. Espirometria: FEV1 52% do previsto, FEV1/FVC 0,55 pós-broncodilatador (não reversível). Hemograma sem anemia.",
+   "stem": "A fadiga deste doente está mais provavelmente associada a:",
+   "options": [
+    {
+     "text": "Anemia ferropénica oculta",
+     "why": "<b>Hemograma sem anemia descrita.</b> Não explica os sintomas respiratórios obstructivos.",
+     "correct": false
+    },
+    {
+     "text": "DPOC moderada com hipoxémia de esforço e descondicionamento",
+     "why": "<b>Resposta correcta.</b> Fumador pesado + obstrução não reversível + clínica = DPOC. A fadiga em DPOC é multifactorial: hipoxémia (avaliar SpO2 em esforço/repouso), aumento do trabalho respiratório, descondicionamento, inflamação sistémica, comorbilidades.",
+     "correct": true
+    },
+    {
+     "text": "Hipotiroidismo subclínico",
+     "why": "<b>Não há sintomas tiroideus descritos.</b> Pode coexistir, mas não explica o padrão obstructivo.",
+     "correct": false
+    },
+    {
+     "text": "Depressão major",
+     "why": "<b>Não há critérios descritos.</b> Pode coexistir com DPOC (e deve ser rastreada), mas a fadiga aqui é primariamente respiratória.",
+     "correct": false
+    },
+    {
+     "text": "Síndrome de fadiga crónica (EM/SFC)",
+     "why": "<b>Não preenche critérios.</b> EM/SFC requer fadiga &gt;6 meses, PEM, sono não reparador, brain fog — e exclusão de causas orgânicas. Aqui há causa orgânica óbvia.",
+     "correct": false
+    }
+   ],
+   "quickTip": "DPOC com fadiga desproporcional ≠ só pulmão. Avaliar SpO2 esforço + comorbilidades + descondicionamento + depressão.",
+   "keyConcept": "A fadiga em DPOC tem origem multifactorial: hipoxémia (avaliar SpO2 em repouso e durante esforço com walk test), hipercapnia crónica, aumento do trabalho respiratório, descondicionamento muscular periférico, inflamação sistémica, comorbilidades (anemia, IC, depressão, SAOS sobreposto). A reabilitação respiratória é a intervenção com melhor evidência para reduzir dispneia e fadiga."
+  },
+  {
+   "id": "f15",
+   "vignette": "Mulher de 50 anos refere fadiga há 9 meses, intolerância ao calor, palpitações, perda ponderal de 8 kg apesar de bom apetite, e diarreia. Ao exame: taquicardia 110 bpm em repouso, tremor fino distal, bócio difuso, exoftalmia bilateral. TSH suprimida (&lt;0,01), T4 livre elevada, T3 livre elevada.",
+   "stem": "Qual é o exame mais adequado para esclarecer a etiologia?",
+   "options": [
+    {
+     "text": "Anticorpos anti-receptor TSH (TRAb) ou cintigrafia tiroideia",
+     "why": "<b>Resposta correcta.</b> O quadro é típico de doença de Graves: hipertiroidismo + bócio difuso + oftalmopatia. TRAb confirma o diagnóstico autoimune; cintigrafia mostra captação difusa aumentada (vs. focal em adenoma tóxico ou nula em tiroidite).",
+     "correct": true
+    },
+    {
+     "text": "Anti-TPO apenas",
+     "why": "<b>Mais associado a tiroidite de Hashimoto (hipotiroidismo)</b>; pode estar positivo em Graves mas TRAb é o teste específico.",
+     "correct": false
+    },
+    {
+     "text": "TC tiroideia",
+     "why": "<b>Sem indicação.</b> A ecografia é o exame imagiológico de eleição para a tiróide; TC reserva-se para extensão retrosternal em alguns casos.",
+     "correct": false
+    },
+    {
+     "text": "Biópsia tiroideia urgente",
+     "why": "<b>Não é primeira linha em hipertiroidismo.</b> Biópsia é para nódulos suspeitos de malignidade.",
+     "correct": false
+    },
+    {
+     "text": "Repetir TSH em 6 meses sem investigar agora",
+     "why": "<b>Inaceitável.</b> Hipertiroidismo sintomático com perda ponderal de 8 kg requer tratamento, não observação.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Hipertiroidismo + oftalmopatia + bócio difuso = Graves. Confirmar com TRAb (alternativa: cintigrafia com captação aumentada).",
+   "keyConcept": "A doença de Graves é a causa mais comum de hipertiroidismo (60-80%). Clínica: hipertiroidismo + bócio difuso + oftalmopatia (40%) + dermopatia (raro). Confirmação: TRAb (sensibilidade ~95%) ou cintigrafia (captação difusa aumentada). Tratamento: anti-tiroideus (tionamidas: metimazol), iodo radioactivo, ou tiroidectomia. Beta-bloqueante (propranolol) controla sintomas adrenérgicos enquanto se espera resposta."
+  },
+  {
+   "id": "f16",
+   "vignette": "Homem de 55 anos, com hepatite C crónica não tratada, refere fadiga progressiva há 1 ano, prurido, e icterícia ligeira. Ao exame: hepatomegalia firme, telangiectasias no tronco, eritema palmar, ginecomastia ligeira. Analítica: bilirrubina 2,8 mg/dL, INR 1,3, albumina 3,2 g/dL, ALT 80, GGT 120. Plaquetas 110.000.",
+   "stem": "Qual é o passo seguinte mais adequado?",
+   "options": [
+    {
+     "text": "Iniciar tratamento antiviral imediatamente sem mais investigação",
+     "why": "<b>Tratar a hepatite C é prioritário</b>, mas o doente tem sinais sugestivos de cirrose já estabelecida — necessário estadiar e avaliar complicações antes de avançar isoladamente.",
+     "correct": false
+    },
+    {
+     "text": "Investigação de cirrose: ecografia abdominal, score MELD/Child-Pugh, EDA para varizes, tratamento antiviral em coordenação com hepatologia",
+     "why": "<b>Abordagem adequada.</b> Estigmas de cirrose + plaquetopénia + alterações analíticas sugerem cirrose. A literatura descreve estadiamento (ecografia, fibroscan), rastreio de varizes (EDA), avaliação de função (MELD/Child-Pugh) e tratamento antiviral pan-genotípico em coordenação com hepatologia. Rastreio semestral de CHC com ecografia.",
+     "correct": true
+    },
+    {
+     "text": "Encaminhar para transplante hepático urgente",
+     "why": "<b>Sem critérios urgentes.</b> Critérios MELD ou Child-Pugh permitem decisão; doente não está descompensado agudamente.",
+     "correct": false
+    },
+    {
+     "text": "Apenas paracetamol e tranquilizar",
+     "why": "<b>Inaceitável.</b> Hepatite C tratável (curativa) com antivirais directos modernos. Não tratar é falha de cuidado.",
+     "correct": false
+    },
+    {
+     "text": "Biópsia hepática como primeira investigação",
+     "why": "<b>Não é primeira linha actual.</b> A elastografia (fibroscan) tornou a biópsia desnecessária na maioria dos casos de hepatite viral crónica.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Hepatite C + estigmas cirrose → eco + fibroscan + EDA varizes + AAD + rastreio CHC 6/6 meses.",
+   "keyConcept": "A cirrose suspeita-se perante estigmas (telangiectasias, eritema palmar, ginecomastia, ascite) + alterações analíticas (plaquetopénia por hipertensão portal, INR aumentado, albumina baixa, bilirrubina elevada). Estadiamento por MELD (transplante) e Child-Pugh (prognóstico). Complicações a rastrear: varizes esofágicas (EDA), carcinoma hepatocelular (ecografia ± AFP semestral), encefalopatia, ascite. Antivirais directos curam &gt;95% das hepatites C."
+  },
+  {
+   "id": "f17",
+   "vignette": "Mulher de 26 anos refere fadiga, dor abdominal recorrente, diarreia intermitente com episódios de sangue, perda ponderal de 5 kg em 4 meses, e aftas orais. Antecedentes familiares de doença inflamatória intestinal. Ao exame: dor na fossa ilíaca direita à palpação, sem massa palpável. Hb 10,8 (microcítica), VS 65, PCR 48, ferritina baixa, albumina 3,0.",
+   "stem": "Qual é o exame mais adequado para confirmar o diagnóstico?",
+   "options": [
+    {
+     "text": "Coprocultura e parasitológico apenas",
+     "why": "<b>Cronicidade e antecedentes familiares apontam para DII</b>, não infecção aguda. Coprocultura é útil em surtos para excluir sobreposição infecciosa, mas não confirma DII.",
+     "correct": false
+    },
+    {
+     "text": "Colonoscopia total com ileoscopia e biópsias múltiplas",
+     "why": "<b>Exame de confirmação.</b> Em suspeita de DII (sobretudo doença de Crohn dada a localização ileocecal e aftas orais), a colonoscopia com ileoscopia e biópsias é gold standard, permitindo classificação, extensão e gravidade.",
+     "correct": true
+    },
+    {
+     "text": "TC abdominal sem contraste",
+     "why": "<b>Não é primeira linha.</b> Útil em complicações agudas (perfuração, abcesso, obstrução). A endoscopia é mais específica para DII.",
+     "correct": false
+    },
+    {
+     "text": "Cápsula endoscópica imediatamente",
+     "why": "<b>Reservada para investigação do intestino delgado</b> após colonoscopia normal. Não primeira linha.",
+     "correct": false
+    },
+    {
+     "text": "Anticorpos ASCA e p-ANCA isoladamente",
+     "why": "<b>Suporte serológico, não diagnóstico.</b> Têm sensibilidade limitada e não substituem endoscopia + biópsia.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Jovem + dor abdominal + diarreia com sangue + perda peso + HF DII = ileocolonoscopia + biópsias.",
+   "keyConcept": "Doença inflamatória intestinal (Crohn vs. colite ulcerosa): clínica de fadiga, diarreia, dor abdominal, perda ponderal, sintomas extra-intestinais (artrite, uveíte, eritema nodoso, pioderma gangrenoso, espondilite anquilosante). Marcadores: PCR, calprotectina fecal (alta utilidade), ferritina, albumina. Confirmação por endoscopia + biópsia. Calprotectina fecal &gt;50 µg/g sugere inflamação intestinal e é útil para triagem."
+  },
+  {
+   "id": "f18",
+   "vignette": "Homem de 24 anos, ex-praticante de atletismo, refere fadiga progressiva há 8 meses, com dispneia em decúbito, ortopneia, episódios paroxísticos nocturnos de dispneia, e edemas dos membros inferiores. Ao exame: estase jugular, fervores crepitantes bibasais, S3 audível, ponta cardíaca desviada lateralmente, edemas com sinal de godet. ECG: BRE com QRS largo. Ecocardiograma: FEVE 25%, dilatação biventricular.",
+   "stem": "Qual é a abordagem inicial mais adequada?",
+   "options": [
+    {
+     "text": "Tranquilizar — é descondicionamento por paragem de exercício",
+     "why": "<b>Quadro completo de IC sistólica avançada.</b> Não é descondicionamento.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar quadrupla terapêutica de IC com fracção de ejecção reduzida (IECA/ARNI + beta-bloqueante + MRA + iSGLT2), e investigar etiologia (RM cardíaca, screening miocardiopatias)",
+     "why": "<b>Abordagem actual.</b> ICFEr requer \"quadrupla terapia\" desde o diagnóstico (com titulação rápida). Em jovem com miocardiopatia dilatada, investigar etiologias: idiopática, familiar (genética), viral, toxicidade (álcool, quimioterapia), endocrinológica (taquimiopatia).",
+     "correct": true
+    },
+    {
+     "text": "Iniciar apenas furosemida e reavaliar em 6 meses",
+     "why": "<b>Diurético controla congestão mas NÃO altera mortalidade.</b> Em ICFEr, mortalidade reduz com terapêutica modificadora (IECA/ARNI + BB + MRA + iSGLT2).",
+     "correct": false
+    },
+    {
+     "text": "Referenciar para transplante cardíaco imediatamente",
+     "why": "<b>Transplante é reservado para IC avançada refractária a terapêutica otimizada.</b> Primeiro otimizar tratamento médico e DAI/CRT-D conforme indicação.",
+     "correct": false
+    },
+    {
+     "text": "Pedir prova de esforço para excluir doença coronária e tranquilizar",
+     "why": "<b>Investigação coronária faz parte</b>, mas o tratamento da IC é imediato (não esperar).",
+     "correct": false
+    }
+   ],
+   "quickTip": "ICFEr = quadrupla terapia já: ARNI/IECA + BB + MRA + iSGLT2. Furosemida só congestão (não mortalidade).",
+   "keyConcept": "IC com fracção de ejecção reduzida (FEVE ≤40%): terapêutica modificadora de mortalidade (\"quadrupla terapia\") — IECA/ARA ou ARNI (sacubitril/valsartan), beta-bloqueante (bisoprolol, carvedilol, nebivolol, succinato metoprolol), antagonista mineralocorticoide (espironolactona, eplerenona), inibidor SGLT2 (dapagliflozina, empagliflozina). Diurético de ansa para congestão. Em jovem investigar etiologia genética e tóxica."
+  },
+  {
+   "id": "f19",
+   "vignette": "Mulher de 40 anos, sem antecedentes relevantes, refere fadiga, sonolência diurna e cefaleias matinais. Trabalha por turnos rotativos há 5 anos (3 noites seguidas, depois folgas variáveis). Refere que adormece a ver TV à tarde nos dias de folga. STOP-BANG 1, IMC 23. Polissonografia: sem apneia do sono significativa.",
+   "stem": "Qual é a abordagem mais adequada?",
+   "options": [
+    {
+     "text": "Iniciar modafinil em uso contínuo",
+     "why": "<b>Não primeira linha.</b> Em transtorno do trabalho por turnos, a primeira abordagem é melhorar higiene do sono e considerar mudanças no calendário. Modafinil reserva-se para casos refractários.",
+     "correct": false
+    },
+    {
+     "text": "Educação para higiene do sono, optimização das pausas, considerar reorganização dos turnos, melatonina para auxiliar adaptação ao sono diurno",
+     "why": "<b>Abordagem actual.</b> A literatura descreve o transtorno do trabalho por turnos como causa frequente de fadiga e sonolência. Intervenções: higiene do sono, sesta protetora (\"power nap\" antes do turno), exposição à luz brilhante no início do turno, melatonina baixa dose antes do sono diurno.",
+     "correct": true
+    },
+    {
+     "text": "Iniciar antidepressivo SSRI",
+     "why": "<b>Sem critérios para depressão.</b> O quadro é circadiano, não depressivo.",
+     "correct": false
+    },
+    {
+     "text": "Repetir polissonografia em 6 meses",
+     "why": "<b>Já normal.</b> Repetir não acrescenta informação.",
+     "correct": false
+    },
+    {
+     "text": "Aconselhar mudança de profissão como única solução",
+     "why": "<b>Drástico e não justificado.</b> Há intervenções estruturadas antes de uma decisão profissional.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Trabalho por turnos + fadiga + SAOS excluída = transtorno circadiano. Luz brilhante + melatonina + higiene do sono.",
+   "keyConcept": "Transtorno do trabalho por turnos é causa frequente de fadiga e sonolência diurna. Intervenções com evidência: higiene do sono adaptada (escuridão e silêncio durante o sono diurno), sesta curta protetora antes do turno (10-20 min), exposição à luz brilhante no início do turno e evicção 2h antes do sono, melatonina baixa dose (0,5-3 mg) 30 min antes do sono diurno. Modafinil/armodafinil em casos refractários (não primeira linha em ambulatório)."
+  },
+  {
+   "id": "f20",
+   "vignette": "Homem de 35 anos refere fadiga, irritabilidade, dificuldades de concentração, e queixas de memória há 6 meses. Refere consumir 6-8 cafés/dia, 1 garrafa de vinho/noite, e dormir 5h por noite por \"trabalhar muito\". Sem outras queixas. Analítica básica e exame normais.",
+   "stem": "Qual é a abordagem mais adequada?",
+   "options": [
+    {
+     "text": "Pedir analítica alargada incluindo cortisol, doseamentos hormonais e ressonância magnética cerebral",
+     "why": "<b>Desproporcional sem alarmes.</b> O quadro tem causa óbvia em hábitos. Primeiro intervir em hábitos, depois investigar se não melhorar.",
+     "correct": false
+    },
+    {
+     "text": "Intervenção em hábitos: redução de cafeína, redução de álcool, higiene do sono; reavaliar em 6-8 semanas",
+     "why": "<b>Abordagem adequada.</b> A Stadje 2016 e a AAFP 2023 descrevem aproximadamente 1/3 das fadigas como atribuíveis a hábitos (privação de sono, cafeína, álcool, sedentarismo). Intervenção comportamental é a primeira linha em casos sem alarmes.",
+     "correct": true
+    },
+    {
+     "text": "Iniciar SSRI empiricamente",
+     "why": "<b>Sem critérios para depressão.</b> Os sintomas explicam-se por hábitos antes de medicar.",
+     "correct": false
+    },
+    {
+     "text": "Prescrever benzodiazepina para o sono",
+     "why": "<b>BZD não tratam a causa</b> e geram dependência. Não primeira linha em insónia comportamental.",
+     "correct": false
+    },
+    {
+     "text": "Encaminhar imediatamente para neurologia",
+     "why": "<b>Sem indicação neurológica.</b> Exame normal, queixas explicáveis por hábitos.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Sono <6h + cafeína ≥4/dia + álcool diário + sedentarismo = mudar hábitos primeiro, depois investigar.",
+   "keyConcept": "Cerca de 30% das fadigas em cuidados primários são atribuíveis a hábitos: privação de sono crónica (&lt;6-7h/noite), excesso de cafeína (≥4 cafés/dia), álcool diário, sedentarismo, dieta desequilibrada. A intervenção comportamental estruturada (higiene do sono, redução de cafeína gradual, redução de álcool, exercício aeróbico moderado) é primeira linha. Reavaliação em 6-8 semanas; persistência indica analítica básica e investigação dirigida."
+  },
+  {
+   "id": "f21",
+   "vignette": "Mulher de 32 anos, com diagnóstico recente de doença celíaca (anti-transglutaminase positivo, biópsia duodenal com atrofia vilositária), em dieta sem glúten estrita há 6 meses. Refere persistência de fadiga e dor abdominal ocasional. Ferritina 8 ng/mL, Hb 11,1 g/dL, vitamina D 12 ng/mL, B12 200 pg/mL.",
+   "stem": "Qual é a abordagem mais adequada?",
+   "options": [
+    {
+     "text": "Repetir biópsia duodenal urgente para excluir refractariedade",
+     "why": "<b>Não é primeira atitude.</b> Persistência de défices nutricionais aos 6 meses é comum; suplementar défices e reavaliar adesão dietética antes de considerar refractariedade.",
+     "correct": false
+    },
+    {
+     "text": "Suplementar ferro, vitamina D e B12; reforçar educação alimentar sem glúten; reavaliar serologia e estado nutricional em 3-6 meses",
+     "why": "<b>Abordagem correcta.</b> Doença celíaca causa malabsorção generalizada — défices de ferro, vit D, B12, folato, cálcio são frequentes mesmo após dieta correta. Suplementar até normalização; reavaliar adesão (contaminação cruzada é causa frequente de sintomas persistentes).",
+     "correct": true
+    },
+    {
+     "text": "Voltar a introduzir glúten para testar a sensibilidade",
+     "why": "<b>Contra-indicado.</b> Em celíaca confirmada, dieta sem glúten é para toda a vida.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar corticoides orais para celíaca",
+     "why": "<b>Sem indicação na celíaca clássica.</b> Reservados para celíaca refractária após exclusão de causas comuns (não adesão, contaminação).",
+     "correct": false
+    },
+    {
+     "text": "Tranquilizar — fadiga vai melhorar sozinha",
+     "why": "<b>Insuficiente.</b> Os défices documentados requerem reposição activa.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Celíaca + fadiga 6 meses após dieta sem glúten = repor ferro/B12/vitD + verificar adesão (contaminação cruzada).",
+   "keyConcept": "A doença celíaca causa malabsorção do duodeno e jejuno proximal — défice de ferro, ácido fólico, vit D, cálcio (osteoporose), B12 (se atrofia extensa). Persistência de sintomas em dieta sem glúten: causas habituais — não adesão/contaminação cruzada (mais comum), défices nutricionais não repostos, intolerância à lactose secundária, sobreposição com SII. Celíaca refractária verdadeira é rara."
+  },
+  {
+   "id": "f22",
+   "vignette": "Homem de 45 anos, com diagnóstico de fibromialgia há 2 anos, refere fadiga incapacitante, dor difusa, sono não reparador, dificuldades cognitivas. Está medicado com tramadol 50 mg 4x/dia há 1 ano, lorazepam 1 mg ao deitar, e amitriptilina 25 mg. Refere agravamento progressivo da fadiga e queixa-se de sintomas de desabituação se não toma o tramadol.",
+   "stem": "Qual é a abordagem mais adequada à fadiga deste doente?",
+   "options": [
+    {
+     "text": "Aumentar o tramadol para 100 mg 4x/dia",
+     "why": "<b>Inadequado.</b> Opióides estão associados a fadiga (sedação central + hipogonadismo). Aumentar agrava a causa.",
+     "correct": false
+    },
+    {
+     "text": "Revisão farmacológica: desmame gradual de tramadol e lorazepam, otimização da abordagem multimodal não farmacológica (exercício aeróbico graduado, sono, CBT)",
+     "why": "<b>Abordagem adequada.</b> A DGS Norma 017/2016 e a literatura descrevem o tratamento da fibromialgia como predominantemente não farmacológico — exercício aeróbico, educação, CBT. Opióides e BZD não estão recomendados; ambos contribuem para fadiga.",
+     "correct": true
+    },
+    {
+     "text": "Adicionar metilfenidato para combater fadiga",
+     "why": "<b>Não recomendado.</b> Sem evidência robusta em fibromialgia; adicionar fármaco sem rever os existentes é inadequado.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar corticoides orais para reduzir dor e fadiga",
+     "why": "<b>Sem indicação.</b> Fibromialgia não é doença inflamatória sistémica.",
+     "correct": false
+    },
+    {
+     "text": "Encaminhar para acupunctura como única abordagem",
+     "why": "<b>Pode ser adjuvante, não única.</b> Evidência modesta; não substitui exercício e abordagem multimodal.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Fibromialgia: exercício aeróbico + CBT + higiene sono. Opióides e BZD: TIRAR, não aumentar.",
+   "keyConcept": "A fibromialgia (DGS Norma 017/2016): dor difusa crónica, fadiga, sono não reparador, sintomas cognitivos. Tratamento dominado por intervenções não farmacológicas — exercício aeróbico graduado (com cuidado se sobreposição com EM/SFC e PEM), educação, CBT. Farmacoterapia adjuvante: amitriptilina, duloxetina, pregabalina. Opióides, benzodiazepinas e AINEs em uso crónico estão associados a piores desfechos."
+  },
+  {
+   "id": "f23",
+   "vignette": "Mulher de 67 anos refere fadiga e fraqueza muscular proximal há 3 meses, com dificuldade em pentear o cabelo e subir escadas. Refere rigidez matinal das cinturas escapular e pélvica que dura cerca de 1 hora. Sem cefaleias, sem alterações visuais. Ao exame: dor à mobilização de ombros e ancas, sem sinovite. VS 78 mm/h, PCR 60 mg/L, CK normal, anemia normocítica ligeira.",
+   "stem": "Qual é a hipótese diagnóstica mais provável e o passo terapêutico?",
+   "options": [
+    {
+     "text": "Polimialgia reumática — iniciar prednisolona 15 mg/dia",
+     "why": "<b>Resposta correcta.</b> A polimialgia reumática (PMR) afecta tipicamente &gt;50 anos, com rigidez matinal &gt;30 min nas cinturas escapular e pélvica + VS/PCR elevadas. A literatura descreve prednisolona 15 mg/dia com resposta dramática em 24-72h, praticamente diagnóstica. Vigiar arterite temporal (cefaleia, claudicação mandibular, alterações visuais).",
+     "correct": true
+    },
+    {
+     "text": "Polimiosite — iniciar imunossupressão",
+     "why": "<b>CK normal torna polimiosite improvável.</b> CK eleva-se em miopatias inflamatórias.",
+     "correct": false
+    },
+    {
+     "text": "Fibromialgia — iniciar pregabalina",
+     "why": "<b>VS 78 e PCR 60 contradizem fibromialgia</b>, que cursa com inflamação ausente.",
+     "correct": false
+    },
+    {
+     "text": "Hipotiroidismo — pedir TSH e iniciar levotiroxina empírica",
+     "why": "<b>Não cursa com VS/PCR tão elevadas.</b> TSH deve ser pedida, mas não é a primeira hipótese.",
+     "correct": false
+    },
+    {
+     "text": "Tranquilizar — é envelhecimento natural",
+     "why": "<b>Inaceitável.</b> Sinais inflamatórios marcados (VS 78) exigem investigação e tratamento.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Idoso + dor cinturas + rigidez matinal >45 min + VS muito elevada = polimialgia. Prednisolona 15 mg. Sempre pensar em arterite temporal.",
+   "keyConcept": "PMR: ≥50 anos, dor + rigidez matinal &gt;30 min nas cinturas, VS ≥40 mm/h, resposta dramática a prednisolona baixa dose. Associada a arterite de células gigantes (15-30%) — rastrear cefaleia nova, claudicação mandibular, alterações visuais (URGENTE, risco de cegueira). Desmame de corticoide ao longo de 1-2 anos. Reavaliar perante recorrência. Não dar AINEs como primeira linha (eficácia inferior)."
+  },
+  {
+   "id": "f24",
+   "vignette": "Homem de 28 anos refere fadiga há 1 ano, com tonturas posturais frequentes, hiperpigmentação cutânea (sobretudo nos punhos, vincos palmares e mucosa oral), perda ponderal de 7 kg, e episódios de náusea com dor abdominal. Ao exame: TA 92/58 com queda ortostática de 22 mmHg, pigmentação descrita. Analítica: Na 128, K 5,8, glicemia 68 em jejum.",
+   "stem": "Qual é o diagnóstico mais provável e o passo seguinte?",
+   "options": [
+    {
+     "text": "Anemia ferropénica — pedir ferritina",
+     "why": "<b>Não explica hiponatrémia, hipercaliémia, hiperpigmentação e hipotensão postural.</b>",
+     "correct": false
+    },
+    {
+     "text": "Doença de Addison (insuficiência suprarrenal primária) — cortisol matinal + ACTH; teste de Synacthen; iniciar reposição imediata em suspeita clínica forte",
+     "why": "<b>Diagnóstico provável.</b> Tríade clássica de Addison: hiperpigmentação + hipotensão + alterações electrolíticas (hipoNa, hiperK, hipoglicemia). Ao quadro junta-se astenia e perda ponderal. Cortisol matinal &lt;3 µg/dL é sugestivo; ACTH elevado confirma origem primária. Reposição com hidrocortisona (urgente se descompensado) e fludrocortisona.",
+     "correct": true
+    },
+    {
+     "text": "Síndrome de Cushing — teste de supressão dexametasona",
+     "why": "<b>Quadro oposto.</b> Cushing dá HTA, hipernatrémia, hipocaliémia, ganho ponderal, estrias purpúricas.",
+     "correct": false
+    },
+    {
+     "text": "Doença celíaca — pedir anti-transglutaminase",
+     "why": "<b>Não explica hiperpigmentação, hipercaliémia nem o padrão hormonal.</b>",
+     "correct": false
+    },
+    {
+     "text": "Hipotiroidismo grave — iniciar levotiroxina",
+     "why": "<b>Não dá hiperpigmentação (dá pele seca pálida).</b> TSH deve ser pedida (pode coexistir poliendocrinopatia autoimune), mas não é o diagnóstico primário.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Hiperpigmentação + hipoNa + hiperK + hipotensão postural + astenia = Addison. Cortisol matinal + ACTH.",
+   "keyConcept": "Insuficiência suprarrenal primária (doença de Addison): défice de cortisol + aldosterona. Clínica: astenia, perda ponderal, hipotensão postural, hiperpigmentação (ACTH alta, melanocortina), hiponatrémia, hipercaliémia, hipoglicemia. Causa autoimune é a mais comum. Diagnóstico: cortisol matinal &lt;3 µg/dL é sugestivo; teste de Synacthen é confirmatório. Tratamento: glicocorticoide (hidrocortisona) + mineralocorticoide (fludrocortisona). Crise adrenal é emergência (hidrocortisona IV)."
+  },
+  {
+   "id": "f25",
+   "vignette": "Mulher de 33 anos refere fadiga persistente há 5 meses após COVID-19 confirmado. Refere brain fog, palpitações ao levantar-se, tonturas posturais, e que mesmo tarefas simples a esgotam por 2-3 dias. Sintomas pioram com esforço físico/mental. Analítica básica e ECG normais. Ao exame: ao levantar, FC sobe de 70 para 132 bpm sem queda tensional significativa.",
+   "stem": "Qual é a abordagem mais adequada?",
+   "options": [
+    {
+     "text": "Tranquilizar — é ansiedade pós-COVID e vai passar",
+     "why": "<b>Sintomas objectivos (taquicardia ortostática)</b> são incompatíveis com tranquilização passiva. Long COVID com POTS sobreposto é descrito na literatura.",
+     "correct": false
+    },
+    {
+     "text": "Abordagem multimodal de long COVID com POTS sobreposto: pacing, hidratação e sal, meias de compressão, evicção de gatilhos, considerar fármacos (beta-bloqueante baixa dose ou ivabradina) se sintomas refractários, reabilitação adaptada ao limiar de PEM",
+     "why": "<b>Abordagem actual.</b> POTS pós-viral é diagnóstico clínico (subida ≥30 bpm em 10 min em ortostatismo sem hipotensão). Bateman Horne 2025 e a literatura sobre long COVID descrevem pacing + medidas não farmacológicas (sal, hidratação, compressão, exercício de decúbito) e farmacoterapia em refractários.",
+     "correct": true
+    },
+    {
+     "text": "Exercício graduado intensivo para \"recondicionar\"",
+     "why": "<b>Contra-indicado em PEM.</b> O exercício acima do limiar agrava sintomas. NICE 2021 e Bateman Horne 2025 descrevem o pacing como abordagem.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar SSRI como tratamento principal",
+     "why": "<b>Não é tratamento de long COVID nem POTS.</b> Pode ser considerado se comorbilidade depressiva, mas não é o principal.",
+     "correct": false
+    },
+    {
+     "text": "Repetir análises todas as semanas até identificar uma alteração",
+     "why": "<b>Ansiogénico e sem benefício.</b> Long COVID é diagnóstico clínico — não há teste único.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Pós-COVID + brain fog + taquicardia ortostática (Δ ≥30 bpm em 10 min) = long COVID com POTS. Sal + hidratação + compressão + pacing.",
+   "keyConcept": "Long COVID: sintomas (incluindo fadiga, brain fog, PEM, disautonomia) persistentes &gt;3 meses após COVID-19. POTS sobreposto: subida sustentada da FC ≥30 bpm em 10 min em ortostatismo sem hipotensão significativa. Tratamento multimodal: pacing (especialmente se PEM), aumento de sal e fluidos, meias de compressão, evicção de gatilhos (calor, álcool, refeições copiosas), exercício de decúbito (recumbente), beta-bloqueante baixa dose ou ivabradina em refractários. Bateman Horne 2025 fornece o framework actual."
+  }
+ ]
+}

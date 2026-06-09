@@ -165,7 +165,8 @@
     "fraqueza",
     "exaustão",
     "burnout"
-   ]
+   ],
+   "active": true
   },
   {
    "id": "cefaleia",

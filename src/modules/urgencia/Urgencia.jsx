@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import indice from "@conteudo/urgencia/indice.json";
 import { filtrarItens } from "./logica";
 import Obstipacao from "./Obstipacao.jsx";
+import Cansaco from "./Cansaco.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import "./estilo.css";
@@ -30,11 +31,13 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
     </header>
   );
 
-  if (aberto === "obstipacao") {
+  const SUBMODULOS = { obstipacao: Obstipacao, cansaco: Cansaco };
+  const Sub = SUBMODULOS[aberto];
+  if (Sub) {
     return (
       <div style={{ "--acento": accent }}>
         {hero}
-        <div className="modulo-corpo"><Obstipacao accent={accent} voltar={() => setAberto(null)} /></div>
+        <div className="modulo-corpo"><Sub accent={accent} voltar={() => setAberto(null)} /></div>
       </div>
     );
   }

@@ -1,0 +1,1335 @@
+{
+ "id": "cansaco",
+ "titulo": "Cansaço / Fadiga",
+ "menu": {
+  "pill": "Sintoma · Cansaço & Fadiga",
+  "heroSub": "Guia de estudo sobre fadiga em ambulatório — definições, etiologia, sinais de alarme, investigação e tratamento. Com treino de anamnese, cards de revisão e casos clínicos.",
+  "eyebrow": "Quatro caminhos",
+  "label": "Escolhe como queres estudar",
+  "cartoes": [
+   {
+    "destino": "guia",
+    "badge": "01 · Teoria",
+    "eyebrow": "Fundação",
+    "titulo": "Guia teórico",
+    "sub": "A matéria organizada por temas — definições, causas, sinais de alarme, diagnósticos diferenciais, investigação e tratamento.",
+    "features": [
+     "Definição · fadiga vs sonolência",
+     "Causas · orgânicas e funcionais",
+     "Tratamento · por etiologia",
+     "Fontes · glossário · escalas"
+    ],
+    "cta": "Estudar matéria"
+   },
+   {
+    "destino": "anamnese",
+    "badge": "02 · Anamnese",
+    "eyebrow": "Treino clínico",
+    "titulo": "Anamnese",
+    "sub": "Treino interativo de anamnese para consulta de fadiga. Pratica a colheita de história clínica estruturada.",
+    "features": [
+     "Colheita de história estruturada",
+     "Perguntas por sistema",
+     "Sinais de alarme a identificar",
+     "Feedback em tempo real"
+    ],
+    "cta": "Treinar anamnese"
+   },
+   {
+    "destino": "cards",
+    "badge": "03 · Cards",
+    "eyebrow": "Revisão",
+    "titulo": "Cards de estudo",
+    "sub": "Dois formatos de revisão: cards de diagnóstico do guia e flashcards com pergunta-resposta tipo flip card.",
+    "features": [
+     "Cards · diagnósticos no guia",
+     "Flashcards · 25 exemplos prontos",
+     "Cria os teus próprios flashcards",
+     "Auto-avaliação · ✓ e ✗"
+    ],
+    "cta": "Abrir cards"
+   },
+   {
+    "destino": "quiz",
+    "badge": "04 · Quiz",
+    "eyebrow": "Auto-avaliação",
+    "titulo": "Casos clínicos",
+    "sub": "Casos clínicos para testar os teus conhecimentos. Activa o Modo PNA para ver a correcção detalhada e dicas para memorizar.",
+    "features": [
+     "Casos clínicos variados · formato SBA",
+     "Correcção detalhada por opção",
+     "Modo PNA com dicas para a prova",
+     "Score e histórico em tempo real"
+    ],
+    "cta": "Fazer casos"
+   }
+  ],
+  "rodape": {
+   "comoTitulo": "Como foi construído",
+   "comoTexto": "Cada secção foi cruzada com guidelines internacionais e nacionais (AAFP 2023, NICE 2021, Bateman Horne 2025, DGS). Sem reproduzir texto verbatim, sem opiniões pessoais, sem casos reais de doentes.",
+   "legal": "Conteúdo exclusivamente educativo · Não constitui dispositivo médico no âmbito do Reg. (UE) 2017/745 · Não emite diagnósticos nem recomendações individualizadas · Em decisões clínicas reais, consultar sempre as fontes primárias e julgamento clínico próprio."
+  }
+ },
+ "guiaSub": "Guia de estudo sobre fadiga em ambulatório — definições, causas, sinais de alarme, investigação e tratamento. Baseado nas guidelines internacionais mais recentes.",
+ "guia": [
+  {
+   "id": "definicao",
+   "label": "Definição",
+   "html": "<div class=\"g-card\"><h2>O que é fadiga?</h2><p>Fadiga é uma sensação subjectiva de cansaço, falta de energia ou exaustão, não aliviada pelo repouso habitual. É uma das queixas mais frequentes em ambulatório, presente em <b>5-10% das consultas</b> (AAFP 2023, Stadje 2016).</p><h3>Definições essenciais</h3><div class=\"g-grid2\"><div class=\"g-dx routine ca-bl-a\"><h4>Fadiga aguda</h4><p>Menos de 4 semanas. Causa mais frequente: infecção viral recente.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Fadiga prolongada</h4><p>1 a 6 meses. Maior probabilidade de causa orgânica identificável.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Fadiga crónica</h4><p>Mais de 6 meses. Pensar em EM/SFC, depressão, doenças autoimunes.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>EM/SFC</h4><p>Síndrome de fadiga crónica + PEM (mal-estar pós-esforço) + sono não reparador + brain fog.</p></div></div><h3>Tipos de fadiga</h3><table><tr><th>Tipo</th><th>Descrição</th><th>Pensa em...</th></tr><tr><td>Fadiga verdadeira</td><td>Cansaço global, falta de energia</td><td>Causa generalizada (depressão, anemia, hipotiroidismo)</td></tr><tr><td>Sonolência diurna</td><td>Tendência a adormecer</td><td>SAOS, privação sono, narcolepsia</td></tr><tr><td>Intolerância ao esforço</td><td>Dispneia com esforços</td><td>IC, anemia, DPOC, descondicionamento</td></tr><tr><td>Fraqueza muscular</td><td>Falta de força objectiva</td><td>Miopatia, miastenia, neuropatia</td></tr></table><h3>Epidemiologia</h3><p>Aproximadamente <b>20-30% dos adultos</b> reportam fadiga clinicamente significativa em algum momento. Mulheres mais afectadas que homens (2:1). É motivo principal de consulta em 5-10% dos casos e sintoma associado em ~25%.</p><div class=\"g-alert g-alert-a ca-ac-soft ca-bl-a\">A fadiga é sempre <b>subjectiva</b>. O desafio clínico é distinguir fadiga funcional (mais comum) de fadiga com causa orgânica subjacente, evitando tanto sobre-investigação como falsas reasseguranças.</div></div>"
+  },
+  {
+   "id": "causas",
+   "label": "Causas",
+   "html": "<div class=\"g-card\"><h2>Etiologia da fadiga</h2><p>Aproximadamente <b>1/3 dos casos não têm diagnóstico médico/psiquiátrico identificável</b> e enquadram-se em fadiga funcional ou ligada a hábitos (Stadje 2016).</p><h3>Distribuição etiológica (Stadje 2016)</h3><table><tr><th>Causa</th><th>Frequência (%)</th></tr><tr><td>Depressão</td><td>~18%</td></tr><tr><td>Funcional / hábitos</td><td>~30%</td></tr><tr><td>Anemia</td><td>~3%</td></tr><tr><td>Hipotiroidismo</td><td>~1-2%</td></tr><tr><td>Neoplasia</td><td>~0.6%</td></tr><tr><td>Outras (diabetes, insuficiência cardíaca, autoimune, etc.)</td><td>~10%</td></tr><tr><td>Sem diagnóstico</td><td>~35%</td></tr></table><h3>Causas primárias</h3><div class=\"g-grid2\"><div class=\"g-dx routine ca-bl-a2\"><h4>Funcional / hábitos</h4><p>Privação sono, sedentarismo, cafeína, álcool, dieta. A mais comum.</p></div><div class=\"g-dx routine ca-bl-a2\"><h4>Depressão major</h4><p>~18% dos casos. Critérios DSM-5. PHQ-9.</p></div><div class=\"g-dx routine ca-bl-a2\"><h4>Ansiedade</h4><p>PAG. Cafeína agrava. GAD-7.</p></div><div class=\"g-dx routine ca-bl-a2\"><h4>EM/SFC</h4><p>Crónica + PEM. NICE 2021: não exercício graduado.</p></div></div><h3>Causas secundárias</h3><div class=\"g-sec\" id=\"sec_c_endo\"><div class=\"g-sec-h\"><span>Endócrinas / metabólicas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Causa</th><th>Mecanismo / pistas</th><th>Investigação</th></tr><tr><td>Hipotiroidismo</td><td>Intolerância ao frio, pele seca, obstipação, aumento de peso, queda cabelo</td><td>TSH + T4 livre</td></tr><tr><td>DM descompensada</td><td>Poliúria, polidipsia, perda de peso</td><td>Glicose jejum + HbA1c</td></tr><tr><td>Insuficiência suprarrenal</td><td>Hipotensão postural, hiperpigmentação, hiponatremia</td><td>Cortisol matinal, teste Synacthen</td></tr><tr><td>Hipogonadismo (M)</td><td>diminuição da libido, disfunção eréctil</td><td>Testosterona matinal</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_hema\"><div class=\"g-sec-h\"><span>Hematológicas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Causa</th><th>Pistas clínicas</th><th>Investigação</th></tr><tr><td>Anemia ferropénica</td><td>Mucosas descoradas, pernas inquietas, menorragia</td><td>Hemograma + ferro + ferritina</td></tr><tr><td>Anemia megaloblástica</td><td>Parestesias, vegetariano, álcool</td><td>B12 + folato + homocisteína</td></tr><tr><td>Doença mieloproliferativa</td><td>Esplenomegália, pletora, prurido aquagénico</td><td>Hemograma + esfregaço</td></tr><tr><td>Linfoma</td><td>Sintomas B: febre, sudorese, perda de peso</td><td>LDH, β2-microglobulina, TC</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_inf\"><div class=\"g-sec-h\"><span>Infecciosas / Pós-infecciosas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Causa</th><th>Pistas</th><th>Investigação</th></tr><tr><td>Mononucleose (vírus Epstein-Barr, EBV)</td><td>Jovem + amigdalite + adenopatias + rash com amox</td><td>Paul-Bunnell + hemograma + AST/ALT</td></tr><tr><td>CMV</td><td>Quadro mono-like</td><td>Serologia CMV IgM/IgG</td></tr><tr><td>VIH (primoinfecção/crónico)</td><td>Exposição de risco, sintomas constitucionais</td><td>Serologia 4.ª geração, RNA VIH se janela</td></tr><tr><td>Hepatite crónica VHB/VHC</td><td>Icterícia, alcoolismo, factores de risco</td><td>Serologias hepatites</td></tr><tr><td>Long COVID</td><td>Fadiga >3m pós-COVID</td><td>Dx clínico, excluir outras causas</td></tr><tr><td>TB</td><td>Febre, sudorese, perda de peso, contexto epidemiológico</td><td>Rx tórax, BAAR, IGRA</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_card\"><div class=\"g-sec-h\"><span>Cardiovasculares e respiratórias</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Causa</th><th>Pistas</th><th>Investigação</th></tr><tr><td>Insuficiência cardíaca</td><td>Ortopneia, dispneia paroxística nocturna (DPN), edemas, crepitações basais</td><td>BNP/NT-proBNP, Rx tórax, ecocardiograma</td></tr><tr><td>SAOS</td><td>Roncopatia, apneias testemunhadas, sonolência diurna, obesidade</td><td>Polisonografia, STOP-BANG, Epworth</td></tr><tr><td>DPOC</td><td>Tabagismo, dispneia de esforço, tosse crónica</td><td>Espirometria</td></tr><tr><td>HTP</td><td>Dispneia desproporcional, S2 forte</td><td>Eco + cateterismo direito</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_auto\"><div class=\"g-sec-h\"><span>Auto-imunes / reumatológicas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Causa</th><th>Pistas</th><th>Investigação</th></tr><tr><td>LES</td><td>Mulher jovem, rash malar, artralgias, alopécia</td><td>ANA, anti-dsDNA, complemento</td></tr><tr><td>AR</td><td>Artralgias simétricas pequenas articulações, rigidez >30min</td><td>FR, anti-CCP, VS</td></tr><tr><td>Polimialgia reumática</td><td>>50a + rigidez cintura escapular/pélvica</td><td>VS >40, resposta dramática a prednisolona</td></tr><tr><td>Fibromialgia</td><td>Dor difusa crónica, sono não reparador, tender points</td><td>Dx clínico (critérios ACR)</td></tr><tr><td>Síndrome Sjögren</td><td>Xerostomia, xeroftalmia, fadiga</td><td>Anti-Ro/SSA, anti-La/SSB, Schirmer</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_farm\"><div class=\"g-sec-h\"><span>Farmacológicas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Classe</th><th>Exemplos</th><th>Mecanismo</th></tr><tr><td>Beta-bloqueantes</td><td>Propranolol, metoprolol</td><td>diminuição do débito cardíaco; atravessam a barreira hematoencefálica</td></tr><tr><td>Estatinas</td><td>Sinvastatina, atorvastatina</td><td>Depleção CoQ10 muscular</td></tr><tr><td>BZD</td><td>Diazepam, alprazolam, lorazepam</td><td>Potenciação GABA, sedação</td></tr><tr><td>Opióides</td><td>Tramadol, morfina</td><td>Sedação + hipogonadismo</td></tr><tr><td>Antidepressivos sedativos</td><td>Amitriptilina, mirtazapina, trazodona</td><td>Anti-H1, anticolinérgico</td></tr><tr><td>Anti-histamínicos 1.ª ger</td><td>Hidroxizina, clemastina</td><td>Anti-H1 central</td></tr><tr><td>Anticonvulsivantes</td><td>Gabapentina, pregabalina, valproato</td><td>GABAérgica</td></tr><tr><td>Diuréticos</td><td>Furosemida, indapamida</td><td>Hipocaliemia, hiponatremia, hipovolemia</td></tr><tr><td>Corticóides crónicos</td><td>Prednisolona</td><td>Miopatia + supressão HHA</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_renal\"><div class=\"g-sec-h\"><span>Renais / hepáticas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>IRC:</b> anemia renal (redução de eritropoietina), uremia, distúrbios electrolíticos. Pedir creatinina + TFG.</p><p><b>Hepatopatia crónica:</b> hepatite vírica, álcool, NAFLD, hemocromatose. Pedir ALT, GGT, ferritina, sat. transferrina.</p></div></div><div class=\"g-sec\" id=\"sec_c_neoplasia\"><div class=\"g-sec-h\"><span>Neoplasias</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p>Prevalência ~0.6%. Mais frequente em homens ≥70 anos com fadiga (White 2025, BJGP).</p><p><b>Pistas:</b> sintomas B (febre, sudorese nocturna, perda de peso), adenopatias, massa palpável, anorexia, sangue nas fezes.</p><p><b>Investigação:</b> hemograma, VS, LDH, β2-microglobulina, electroforese proteínas, Rx tórax, ecografia abdominal. Se suspeita: TC + biópsia.</p></div></div><h3 class=\"ca-mt24\">Síndromes menos comuns mas relevantes</h3><p>Entidades em que a fadiga pode ser a queixa principal mas que se identificam sobretudo pelo conjunto de achados associados ao exame objectivo ou anamnese. Reconhecer estas combinações evita atrasos diagnósticos.</p><div class=\"g-sec\" id=\"sec_c_extra_endo\"><div class=\"g-sec-h\"><span>Endócrinas adicionais</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Hipertireoidismo</td><td>Taquicardia + tremor + intolerância calor + perda peso + bócio</td><td>TSH suprimida, T4 e T3 livres</td></tr><tr><td>Síndrome de Cushing</td><td>Fácies em lua cheia, gibosidade, estrias purpúricas, HTA, obesidade central</td><td>Cortisol livre urinário 24h, teste supressão dexametasona</td></tr><tr><td>Doença de Addison</td><td>Hiperpigmentação + hipotensão postural + hiponatremia + perda peso</td><td>Cortisol matinal, ACTH, teste Synacthen</td></tr><tr><td>Feocromocitoma</td><td>HTA paroxística + sudorese + palpitações + cefaleias</td><td>Metanefrinas plasmáticas ou urinárias 24h</td></tr><tr><td>Acromegalia</td><td>Mãos e pés grandes, fácies grosseira, prognatismo</td><td>IGF-1, teste tolerância à glicose</td></tr><tr><td>Síndrome de Sheehan</td><td>Pós-parto + agalactia + amenorreia + fadiga</td><td>Pan-hipopituitarismo: cortisol, TSH, FSH/LH, prolactina</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_hema\"><div class=\"g-sec-h\"><span>Hematológicas / oncológicas adicionais</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Mieloma múltiplo</td><td>Dor óssea + anemia + insuficiência renal + hipercalcemia + idoso</td><td>Electroforese proteínas, imunofixação, β2-microglobulina, cadeias leves</td></tr><tr><td>Leucemia</td><td>Palidez + petéquias + adenopatias + hepatoesplenomegalia</td><td>Hemograma com fórmula, esfregaço, LDH</td></tr><tr><td>Anemia hemolítica</td><td>Icterícia + esplenomegalia + palidez</td><td>Hemograma, reticulócitos, LDH, bilirrubina, haptoglobina, Coombs</td></tr><tr><td>Síndrome paraneoplásico</td><td>Cushing ectópico, SIADH, hipercalcemia maligna em doente com neoplasia</td><td>Conforme síndrome (cortisol, sódio, cálcio), TC para tumor primário</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_card\"><div class=\"g-sec-h\"><span>Cardiovasculares adicionais</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Endocardite infecciosa</td><td>Febre + sopro de novo + petéquias + nódulos de Osler / manchas de Janeway</td><td>Hemoculturas seriadas (3), ecocardiograma transtorácico e transesofágico</td></tr><tr><td>Pericardite</td><td>Dor torácica pleurítica + atrito pericárdico + redução sons cardíacos</td><td>ECG (supradesnivelamento difuso), eco, PCR, troponina</td></tr><tr><td>Estenose aórtica</td><td>Sopro sistólico ejectivo + síncope esforço + angina + dispneia</td><td>Ecocardiograma</td></tr><tr><td>Hipertensão pulmonar</td><td>S2 forte + dispneia desproporcional + ICD</td><td>Ecocardiograma, cateterismo direito</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_neuro\"><div class=\"g-sec-h\"><span>Neurológicas</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Miastenia gravis</td><td>Fraqueza flutuante + ptose + diplopia + agravamento ao fim do dia</td><td>Anti-AChR, anti-MuSK, EMG (jitter)</td></tr><tr><td>Esclerose múltipla</td><td>Sinais piramidais + ataxia + nevrite óptica + sintomas disseminados</td><td>RM cerebral e medular, bandas oligoclonais LCR</td></tr><tr><td>Doença de Parkinson</td><td>Tremor de repouso + bradicinesia + rigidez + instabilidade postural</td><td>Diagnóstico clínico; DaTscan se dúvida</td></tr><tr><td>Polineuropatia</td><td>Parestesias em meia/luva + arreflexia + défice distal simétrico</td><td>EMG/condução nervosa, B12, glicose, TSH, eletroforese</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_reuma\"><div class=\"g-sec-h\"><span>Reumatológicas adicionais</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Arterite temporal</td><td>>50 anos + cefaleia temporal + claudicação mandibular + artéria endurecida + alterações visuais</td><td>VS muito elevada, PCR, biópsia artéria temporal (URGENTE — risco cegueira)</td></tr><tr><td>Esclerodermia</td><td>Espessamento cutâneo + Raynaud + microstomia + telangiectasias</td><td>ANA, anti-Scl-70, anti-centrómero, capilaroscopia</td></tr><tr><td>Dermatomiosite</td><td>Fraqueza proximal + rash em heliotropo + pápulas de Gottron</td><td>CK, anti-Jo1, EMG, biópsia muscular</td></tr><tr><td>Vasculite</td><td>Púrpura palpável + úlceras + livedo + sintomas constitucionais</td><td>ANCA, complemento, biópsia da lesão</td></tr><tr><td>Espondilite anquilosante</td><td>Lombalgia inflamatória + rigidez matinal + limitação flexão lombar + uveíte</td><td>VS, PCR, HLA-B27, Rx sacroilíacas, RM se duvida</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_gi\"><div class=\"g-sec-h\"><span>Gastrointestinais / hepáticas adicionais</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Doença celíaca</td><td>Perda peso + anemia + sintomas GI + dermatite herpetiforme</td><td>Anti-transglutaminase IgA, IgA total, biópsia duodenal</td></tr><tr><td>Hemocromatose</td><td>Pigmentação cutânea bronze + hepatomegalia + diabetes + artropatia</td><td>Ferritina muito elevada, saturação transferrina > 45%, genótipo HFE</td></tr><tr><td>Doença de Wilson</td><td>Anel Kayser-Fleischer + alterações neurológicas + hepatopatia em jovem</td><td>Ceruloplasmina baixa, cobre urinário 24h aumentado</td></tr><tr><td>Cirrose</td><td>Eritema palmar + telangiectasias + ginecomastia + ascite + encefalopatia</td><td>ALT, GGT, bilirrubina, INR, albumina, ecografia, fibroscan</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_inf\"><div class=\"g-sec-h\"><span>Infecciosas adicionais</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Tuberculose</td><td>Sintomas B + tosse > 3 semanas + contacto epidemiológico</td><td>Rx tórax, BAAR escarro, IGRA, TC se dúvida</td></tr><tr><td>VIH avançado</td><td>Caquexia + adenopatias + candidíase oral + sarcoma de Kaposi</td><td>Serologia VIH 4.ª geração, CD4, carga viral</td></tr><tr><td>Doença de Lyme</td><td>Eritema migrans + artralgias + paralisia facial + contexto rural</td><td>Serologia Borrelia (ELISA + Western blot)</td></tr><tr><td>Sarcoidose</td><td>Adenopatias hilares + eritema nodoso + uveíte + fadiga</td><td>Rx/TC tórax, ECA sérica, cálcio, biópsia ganglionar</td></tr></table></div></div><div class=\"g-sec\" id=\"sec_c_extra_renal\"><div class=\"g-sec-h\"><span>Renais / outras</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><table><tr><th>Entidade</th><th>Achado-chave</th><th>Investigação inicial</th></tr><tr><td>Síndrome nefrótico</td><td>Edema generalizado + anasarca + ascite + espuma na urina</td><td>Proteinúria 24h, albumina sérica, perfil lipídico, biópsia renal</td></tr><tr><td>Síndrome de veia cava superior</td><td>Edema facial + circulação colateral torácica + estridor</td><td>TC tórax com contraste (suspeita neoplasia mediastínica)</td></tr></table></div></div></div>"
+  },
+  {
+   "id": "alarmes",
+   "label": "Sinais de Alarme",
+   "html": "<div class=\"g-card\"><h2>Sinais de alarme — Red Flags</h2><p>Sinais que devem acelerar a investigação e baixar o limiar para imagiologia/referenciação.</p><div class=\"g-alert g-alert-r\">A presença de QUALQUER sinal de alarme justifica investigação dirigida, mesmo que o scoring não atinja threshold para um dx específico.</div><h3>Os 7 sinais de alarme</h3><table><tr><th>Sinal</th><th>O que preocupa</th><th>Como investigar</th></tr><tr><td>Perda ponderal >5%</td><td>Neoplasia, hipertiroidismo, malabsorção, depressão grave</td><td>TC tórax-abdómen, hemograma, VS, LDH, TSH. Se sem causa: EDA + colonoscopia</td></tr><tr><td>Sudorese nocturna</td><td>Linfoma, TB, endocardite, VIH</td><td>TC tórax-abdómen, hemograma, VS, LDH, Rx tórax, hemoculturas, serologia VIH</td></tr><tr><td>Febre persistente >3 sem</td><td>Febre de origem indeterminada (FOI): infecção, neoplasia, autoimune</td><td>Protocolo de febre de origem indeterminada: hemoculturas x3, ecocardiograma, TC tórax-abdómen-pélvico, serologias alargadas</td></tr><tr><td>Adenopatias</td><td>Linfoma, neoplasia metastática, infecção</td><td>Se >2cm/duras/fixas/supraclaviculares: biópsia excisional. TC. Hemograma + VS + LDH</td></tr><tr><td>Dispneia de novo</td><td>IC, anemia grave, TEP</td><td>D-dímeros, Rx tórax, BNP, ecocardiograma</td></tr><tr><td>Fraqueza muscular progressiva</td><td>Miopatia, miastenia, esclerose múltipla, ELA</td><td>CK + EMG. Se proximal: RM muscular. Se flutuante: anti-AChR</td></tr><tr><td>Cefaleias matinais + vómitos</td><td>HIC (massa cerebral)</td><td>RM cerebral URGENTE. Fundoscopia (papiledema)</td></tr></table><h3>Combinações especialmente preocupantes</h3><div class=\"g-grid2\"><div class=\"g-dx emergency\"><h4>Sintomas B (linfoma)</h4><p>Febre + sudorese nocturna + perda peso >10% em 6 meses. Investigação urgente.</p></div><div class=\"g-dx emergency\"><h4>Síndrome consumptivo</h4><p>Perda peso + anorexia + adenopatias. Neoplasia até prova em contrário.</p></div><div class=\"g-dx urgent\"><h4>Adenopatia supraclavicular</h4><p>Sempre patológica. Esquerda (Virchow) = neoplasia GI. Biópsia URGENTE.</p></div><div class=\"g-dx urgent\"><h4>HIC franca</h4><p>Cefaleia matinal + vómitos + edema papila. RM urgente.</p></div></div></div>"
+  },
+  {
+   "id": "diagnosticos",
+   "label": "Diagnósticos",
+   "html": "<div class=\"g-card\"><h2>Diagnósticos diferenciais</h2><p>As 14 entidades mais relevantes para fadiga em ambulatório. Para cada uma, conhecer as pistas clínicas (anamnese, exame objectivo, hábitos) que aumentam a suspeita.</p><h3>Depressão major</h3><p><b>Critérios DSM-5:</b> 5 ou mais sintomas durante pelo menos 2 semanas, obrigatoriamente humor deprimido OU anedonia. Aplicar PHQ-9 para quantificar.</p><p><b>Pistas:</b> humor deprimido, anedonia (mesmo parcial), insónia terminal, anorexia, irritabilidade, dificuldade de concentração, perda de libido. Em homens e adolescentes manifesta-se como irritabilidade.</p><p><b>Investigação:</b> PHQ-9. Excluir hipotiroidismo (TSH), anemia.</p><h3>Perturbação de ansiedade generalizada</h3><p><b>Critérios:</b> preocupação excessiva mais de 6 meses + 3 ou mais de: inquietação, fadiga, dificuldade concentração, irritabilidade, tensão muscular, perturbação sono. GAD-7 para quantificar.</p><p><b>Pistas:</b> ansiedade, palpitações, insónia inicial, irritabilidade. Cafeína excessiva agrava significativamente.</p><h3>SAOS (apneia obstrutiva do sono)</h3><p><b>Pistas:</b> roncopatia, apneias testemunhadas, sonolência diurna, sono não reparador, cefaleias matinais. Frequente em obesos, homens, mais de 50 anos.</p><p><b>Rastreio:</b> STOP-BANG (3 ou mais = risco intermédio), Epworth (mais de 10 = sonolência significativa).</p><p><b>Confirmação:</b> polisonografia.</p><h3>Hipotiroidismo</h3><p><b>Pistas:</b> intolerância ao frio, pele seca, queda de cabelo, obstipação, aumento de peso, edema facial, bradicardia, bócio/nódulo. Hashimoto é a causa mais frequente.</p><p><b>Investigação:</b> TSH (mais sensível) + T4 livre. Anti-TPO se suspeita autoimune.</p><h3>Anemia</h3><p><b>Pistas:</b> mucosas descoradas, palidez, dispneia de esforço, palpitações, pernas inquietas, menorragia. Ferritina abaixo de 30 já causa sintomas mesmo sem anemia laboratorial.</p><p><b>Investigação:</b> hemograma + ferro + ferritina + transferrina + saturação. Se macrocítica: B12 + folato.</p><h3>DM descompensada</h3><p><b>Pistas:</b> em doente com DM conhecida. Poliúria, polidipsia, perda de peso, parestesias, alterações visuais.</p><p><b>Investigação:</b> glicose em jejum + HbA1c.</p><h3>Insuficiência cardíaca</h3><p><b>Pistas:</b> ortopneia, DPN, edemas, dispneia de esforço, crepitações basais. Mais provável em doentes com mais de 50 anos ou com IC conhecida.</p><p><b>Investigação:</b> BNP/NT-proBNP, Rx tórax, ECG, ecocardiograma.</p><h3>Suspeita de neoplasia</h3><p><b>Pistas:</b> perda ponderal não intencional, sudorese nocturna, adenopatias suspeitas, massa palpável, anorexia. Risco aumentado em homens com mais de 70 anos (White 2025, BJGP).</p><p><b>Investigação:</b> hemograma, VS, LDH, β2-microglobulina, electroforese, Rx tórax, ecografia abdominal. TC se confirmação necessária.</p><h3>Infecção crónica</h3><p><b>Pistas:</b> febre persistente, sudorese nocturna, adenopatias, exposição de risco, antecedentes VIH/hepatite. Mononucleose em jovens com amigdalite + rash com amoxicilina.</p><p><b>Investigação:</b> hemograma, PCR, transaminases, serologias dirigidas (VIH 4.ª geração, VHB, VHC, EBV, CMV).</p><h3>Causa medicamentosa</h3><p><b>Pistas:</b> relação temporal entre início/aumento de dose e fadiga. Causa muito frequente e subdiagnosticada.</p><p><b>Fármacos típicos:</b> beta-bloqueantes (sobretudo propranolol, metoprolol), estatinas, BZD, opióides, antidepressivos sedativos (amitriptilina, mirtazapina), antipsicóticos, anticonvulsivantes, anti-histamínicos 1.ª geração, diuréticos, corticóides crónicos.</p><h3>Doença autoimune</h3><p><b>Pistas:</b> artralgias, rigidez matinal mais de 30 minutos, mialgias, lesões cutâneas, alopécia, sintomas constitucionais. História familiar de autoimunidade.</p><p><b>Investigação:</b> ANA, FR, anti-CCP, VS, PCR. Em maiores de 50 anos com rigidez de cintura: VS urgente (suspeita polimialgia reumática).</p><h3>EM/SFC (encefalomielite miálgica / síndrome de fadiga crónica)</h3><p><b>Critérios NAM 2015:</b> fadiga mais de 6 meses + PEM (mal-estar pós-esforço) + sono não reparador + (brain fog OU intolerância ortostática).</p><p><b>PEM</b> é patognomónico: agravamento desproporcional após esforço com recuperação prolongada (24-72h ou mais).</p><p><b>Importante:</b> NICE 2021 e Bateman Horne Center 2025 não recomendam exercício graduado se PEM presente — pode causar deterioração permanente. Tratamento é pacing.</p><h3>Fadiga pós-infecciosa / Long COVID</h3><p><b>Pistas:</b> infecção recente. Long COVID se fadiga mais de 3 meses pós-COVID.</p><p><b>Evolução:</b> 2-4 semanas é normal. Mais de 4-8 semanas ampliar investigação. Mais de 6 meses com PEM: considerar EM/SFC.</p><h3>Fadiga funcional / hábitos</h3><p><b>Pistas:</b> jovem, sem alarmes, exame objectivo normal, hábitos modificáveis (sono insuficiente, sedentarismo, álcool, cafeína, dieta inadequada).</p><p>É a causa mais frequente em ambulatório. Cerca de 30 a 35% dos casos não têm diagnóstico médico/psiquiátrico identificável (Stadje 2016).</p></div>"
+  },
+  {
+   "id": "exame",
+   "label": "Exame Objectivo",
+   "html": "<div class=\"g-card\"><h2>Exame objectivo dirigido</h2><p>Em fadiga, o EO é frequentemente <b>normal</b>. Mas há achados específicos que mudam radicalmente o raciocínio diagnóstico.</p><h3>Sinais vitais</h3><div class=\"g-step ca-ac-soft\"><b>PA:</b> hipotensão postural (insuficiência suprarrenal, desidratação, depleção). Hipertensão arterial (HTA) + roncopatia → suspeitar de SAOS resistente.</div><div class=\"g-step ca-ac-soft\"><b>FC:</b> bradicardia → hipotiroidismo, beta-bloqueantes. Taquicardia → anemia, hipertiroidismo, infecção, ansiedade.</div><div class=\"g-step ca-ac-soft\"><b>Temperatura:</b> febre objectiva → investigar infecção, neoplasia, autoimune.</div><div class=\"g-step ca-ac-soft\"><b>SpO₂:</b> hipoxemia → DPOC, IC, SAOS grave, anemia muito severa.</div><h3>Mucosas e pele</h3><div class=\"g-grid2\"><div class=\"g-dx routine ca-bl-a\"><h4>Mucosas descoradas</h4><p>Anemia provável. Hemograma + ferro/ferritina.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Icterícia</h4><p>Hepatite, hemólise, cirrose. Bilirrubina + transaminases.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Hiperpigmentação</h4><p>Insuficiência suprarrenal (Addison). Cortisol matinal.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Rash malar / fotossensibilidade</h4><p>LES. ANA + anti-dsDNA + complemento.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Edema facial / mixedema</h4><p>Hipotiroidismo. TSH + T4 livre.</p></div><div class=\"g-dx routine ca-bl-a\"><h4>Palidez sem mucosas descoradas</h4><p>Inespecífico. Pode ser anemia, hipotensão, vasoconstrição.</p></div></div><h3>Auscultação cardíaca</h3><p><b>S1+S2 rítmicos regulares sem sopros</b> é o normal. Achados patológicos:</p><ul><li><b>Arritmia (ex: fibrilhação auricular):</b> pode causar IC ou ser consequência. ECG + ecocardiograma.</li><li><b>Sopro de fluxo:</b> anemia significativa (Hb < 8-9 g/dL).</li><li><b>S3 (galope):</b> IC descompensada. BNP urgente.</li><li><b>Sopro novo:</b> endocardite (se febre), valvulopatia.</li></ul><h3>Auscultação pulmonar</h3><ul><li><b>Crepitações basais bilaterais:</b> edema pulmonar / IC.</li><li><b>Sibilos:</b> asma, DPOC.</li><li><b>Diminuição global:</b> DPOC, derrame, enfisema.</li></ul><h3>Abdómen</h3><ul><li><b>Hepatomegália:</b> hepatopatia, IC direita, neoplasia metastática.</li><li><b>Esplenomegália:</b> mono, malária, leishmaniose, linfoma, doenças hematológicas.</li><li><b>Massa palpável:</b> neoplasia até prova em contrário. TC.</li><li><b>Ascite:</b> cirrose, IC direita, neoplasia.</li></ul><h3>Tiróide</h3><p>Palpar sistematicamente. <b>Bócio difuso</b> sugere Hashimoto/Graves. <b>Nódulo</b> requer ecografia + TSH; se >1cm ou suspeito (TIRADS), CAAF.</p><h3>Adenopatias</h3><p>Palpar cervicais, supraclaviculares (sempre patológicas), axilares, inguinais. <b>Características preocupantes:</b> >2cm, duras, fixas, indolores, supraclaviculares.</p><h3>Membros inferiores</h3><ul><li><b>Edema bilateral simétrico:</b> IC, hipoalbuminemia, insuficiência venosa.</li><li><b>Edema unilateral:</b> TVP até prova em contrário.</li><li><b>Atrofia muscular:</b> caquexia, desuso, miopatia.</li></ul><div class=\"g-alert g-alert-g ca-ac-soft ca-bl-a2\">Um exame objectivo totalmente normal numa pessoa jovem sem alarmes é descrito como tranquilizador e aponta para fadiga funcional. Mas a literatura sublinha que um EO normal não exclui doença grave em todos os contextos — o contexto clínico orienta sempre a interpretação.</div></div>"
+  },
+  {
+   "id": "investigacao",
+   "label": "Investigação",
+   "html": "<div class=\"g-card\"><h2>Investigação laboratorial e imagiológica</h2><h3>Analítica de rotina (habitualmente solicitada)</h3><div class=\"g-step ca-ac-soft\"><b>Hemograma:</b> anemia, leucocitose/leucopenia, trombocitopenia.</div><div class=\"g-step ca-ac-soft\"><b>VS / PCR:</b> inflamação, infecção, neoplasia, autoimune. VS >40 + idoso → pensar polimialgia reumática (PMR) ou arterite temporal.</div><div class=\"g-step ca-ac-soft\"><b>TSH:</b> hipo/hipertiroidismo. Mais sensível que T4.</div><div class=\"g-step ca-ac-soft\"><b>Glicose jejum + HbA1c:</b> DM ou pré-DM.</div><div class=\"g-step ca-ac-soft\"><b>Ferro + ferritina:</b> défice ferro (ferritina <30 = défice, <50 mesmo sem anemia pode causar fadiga).</div><div class=\"g-step ca-ac-soft\"><b>Creatinina + ionograma:</b> IRC, hipo/hiperK, hipo/hiperNa.</div><div class=\"g-step ca-ac-soft\"><b>ALT, GGT:</b> hepatite, hepatopatia alcoólica, NAFLD.</div><h3>Analítica dirigida (consoante suspeita)</h3><div class=\"g-sec\" id=\"sec_i_dep\"><div class=\"g-sec-h\"><span>Depressão / ansiedade</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>PHQ-9</b> (depressão) e <b>GAD-7</b> (ansiedade) — escalas validadas. Não são análises, mas habitualmente são aplicadas na avaliação inicial.</p></div></div><div class=\"g-sec\" id=\"sec_i_saos\"><div class=\"g-sec-h\"><span>SAOS</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>Polisonografia</b> (PSG) é o gold standard. <b>STOP-BANG</b> e <b>Epworth</b> são escalas de rastreio.</p></div></div><div class=\"g-sec\" id=\"sec_i_anem\"><div class=\"g-sec-h\"><span>Anemia</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>Estudo de anemia:</b> ferro, ferritina, transferrina, saturação. Se macrocítica: B12, folato, homocisteína, MMA. Se microcítica sem défice ferro: electroforese Hb (talassemia).</p><p><b>Investigação de perdas (habitual):</b> sangue oculto fezes; em idade >45 anos, menorragia ou sangue nas fezes, a literatura indica colonoscopia.</p></div></div><div class=\"g-sec\" id=\"sec_i_ic\"><div class=\"g-sec-h\"><span>Insuficiência cardíaca</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>BNP / NT-proBNP:</b> BNP <100 ou NT-proBNP <300 exclui IC (VPN >95%).</p><p><b>Rx tórax</b> (cardiomegália, congestão), <b>ECG</b>, <b>ecocardiograma</b> (FE, função diastólica).</p></div></div><div class=\"g-sec\" id=\"sec_i_inf\"><div class=\"g-sec-h\"><span>Infecção crónica</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>Serologias:</b> VIH 4.ª geração (se janela: RNA VIH), VHB, VHC, EBV (Paul-Bunnell), CMV.</p><p><b>Se febre persistente:</b> hemoculturas x3, ecocardiograma (endocardite), Rx tórax, TC, IGRA/Mantoux (TB).</p></div></div><div class=\"g-sec\" id=\"sec_i_neo\"><div class=\"g-sec-h\"><span>Neoplasia</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>LDH, β2-microglobulina, electroforese proteínas, imunofixação.</b></p><p><b>Imagiologia:</b> Rx tórax, ecografia abdominal. Se suspeita confirmada: TC tórax-abdómen-pélvico.</p><p><b>Adenopatias:</b> biópsia EXCISIONAL (não aspirativa) se suspeita linfoma.</p></div></div><div class=\"g-sec\" id=\"sec_i_auto\"><div class=\"g-sec-h\"><span>Auto-imune</span><span class=\"g-arr\">+</span></div><div class=\"g-sec-body\"><p><b>ANA, anti-dsDNA (LES), FR + anti-CCP (AR), complemento (C3, C4).</b></p><p><b>Se mialgias:</b> CK, aldolase. Se proximal + CK elevada: RM muscular + biópsia.</p></div></div></div>"
+  }
+ ],
+ "tratamento": {
+  "introHtml": "<div class=\"g-card\"><h2 >Abordagem segundo guidelines</h2><p class=\"ca-lead\">Esta secção resume as abordagens descritas nas guidelines internacionais para fadiga e nas suas causas mais frequentes. <b>É conteúdo de referência educativo</b> — não constitui recomendação terapêutica personalizada. Para decisões clínicas reais, consultar sempre as fontes primárias.</p><div class=\"g-alert g-alert-a ca-ac-soft ca-bl-a ca-ac-text\">A literatura aponta consistentemente para a importância de <b>sono, exercício, nutrição e álcool/cafeína</b> na abordagem da fadiga inespecífica. Intervenções específicas pressupõem identificação prévia da causa.</div></div>",
+  "paineis": [
+   {
+    "label": "Medidas gerais",
+    "html": "<div class=\"nf-grid\"><div class=\"nf-card cansaco-card\"><div class=\"nf-card-icon cansaco-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"/></svg></div><div class=\"nf-card-title\">Higiene do sono</div><div class=\"nf-card-desc\">As guidelines indicam <b>7-9h/noite</b>, horário regular (mesmo ao fim de semana), evitar ecrãs na hora antes de dormir, quarto fresco (18-20°C) e escuro, evitar cafeína após as 14h. Em casos de insónia, a restrição de sono (deitar apenas quando sonolento) é uma técnica reconhecida. Técnicas como a respiração 4-7-8 podem ajudar a induzir o sono.</div><div class=\"nf-card-note\">A privação de sono é descrita como a causa mais frequente de fadiga em ambulatório.</div></div><div class=\"nf-card cansaco-card\"><div class=\"nf-card-icon cansaco-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"/></svg></div><div class=\"nf-card-title\">Exercício graduado</div><div class=\"nf-card-desc\">A literatura aponta para aeróbio cerca de 30 min/dia, 5x/semana, com progressão a partir de 15-20 min em pessoas sedentárias. <b>Paradoxalmente</b>, o exercício consome energia mas melhora a fadiga (meta-análise Cochrane, 2019).</div><div class=\"nf-card-note\">⚠ Excepção importante: se houver mal-estar pós-esforço (PEM), característico de EM/SFC, as guidelines NICE 2021 e Bateman Horne 2025 contraindicam exercício graduado — a abordagem recomendada é o pacing.</div></div><div class=\"nf-card cansaco-card\"><div class=\"nf-card-icon cansaco-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 14s1.5 2 4 2 4-2 4-2\"/><line x1=\"9\" y1=\"9\" x2=\"9.01\" y2=\"9\"/><line x1=\"15\" y1=\"9\" x2=\"15.01\" y2=\"9\"/></svg></div><div class=\"nf-card-title\">Dieta equilibrada</div><div class=\"nf-card-desc\">Proteína adequada, hidratos complexos, hidratação adequada. A avaliação habitual inclui ferro, B12, vitamina D e folato; a suplementação é considerada perante défice documentado.</div><div class=\"nf-card-note\">Em pessoas com dieta vegetariana/vegan, a literatura aponta para suplementação rotineira de B12.</div></div><div class=\"nf-card cansaco-card\"><div class=\"nf-card-icon cansaco-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M18 8h1a4 4 0 0 1 0 8h-1\"/><path d=\"M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z\"/></svg></div><div class=\"nf-card-title\">Cafeína</div><div class=\"nf-card-desc\">A literatura indica máximo de 2-3 cafés/dia, evitando consumo após as 14h (semi-vida 5-6h). A redução é descrita como gradual (cerca de 1/dia por semana) para evitar cefaleias de privação.</div><div class=\"nf-card-note\">Paradoxalmente, o consumo excessivo agrava a fadiga a longo prazo (perturbação do sono).</div></div><div class=\"nf-card cansaco-card\"><div class=\"nf-card-icon cansaco-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M3 21l9-9\"/><path d=\"M3 12l9 9\"/><circle cx=\"12\" cy=\"12\" r=\"10\"/></svg></div><div class=\"nf-card-title\">Álcool</div><div class=\"nf-card-desc\">A literatura aponta para redução ou eliminação. O álcool fragmenta o sono (reduz fase REM) mesmo quando não há queixa de insónia. O AUDIT-C é uma das ferramentas de rastreio mais utilizadas.</div><div class=\"nf-card-note\">Causa frequentemente subdiagnosticada de fadiga em ambulatório.</div></div><div class=\"nf-card cansaco-card\"><div class=\"nf-card-icon cansaco-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/></svg></div><div class=\"nf-card-title\">Stress / CBT</div><div class=\"nf-card-desc\">Técnicas de relaxamento (respiração 4-7-8, relaxamento muscular progressivo, mindfulness) são intervenções descritas para a gestão do stress. A <b>CBT</b> (terapia cognitivo-comportamental) é reconhecida como abordagem de primeira linha para depressão ligeira, ansiedade e insónia.</div><div class=\"nf-card-note\">Intervenção segura com perfil favorável de efeitos adversos.</div></div></div></div>"
+   },
+   {
+    "label": "Suplementos",
+    "html": "<div class=\"nf-grid\"><div class=\"nf-card supl-card\"><div class=\"nf-card-icon supl-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0891b2\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2\"/><path d=\"M12 20v2\"/><path d=\"M5 5l1.5 1.5\"/><path d=\"M17.5 17.5L19 19\"/><path d=\"M2 12h2\"/><path d=\"M20 12h2\"/><path d=\"M5 19l1.5-1.5\"/><path d=\"M17.5 6.5L19 5\"/></svg></div><div class=\"supl-badge\">Evidência forte se défice</div><div class=\"nf-card-title\">Vitamina D</div><div class=\"nf-card-desc\"><b>Indicação habitual:</b> défice documentado (25(OH)D <30 ng/mL).<br><b>Posologia descrita:</b> 1000-2000 UI/dia ou bolus 50.000 UI/sem durante 8 semanas.</div><div class=\"nf-card-note\">Défice descrito como frequente em Portugal. Reavaliação habitual a 3 meses.</div></div><div class=\"nf-card supl-card\"><div class=\"nf-card-icon supl-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0891b2\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M12 2L2 7v10l10 5 10-5V7z\"/><path d=\"M2 7l10 5 10-5\"/><path d=\"M12 22V12\"/></svg></div><div class=\"supl-badge\">Evidência forte se défice</div><div class=\"nf-card-title\">B12</div><div class=\"nf-card-desc\"><b>Indicação habitual:</b> dieta vegetariana/vegan, idade avançada, défice laboratorial, parestesias, anemia macrocítica.<br><b>Posologia descrita:</b> 1000 µg/dia oral ou IM mensal.</div><div class=\"nf-card-note\">A literatura recomenda confirmação laboratorial antes de iniciar suplementação empírica.</div></div><div class=\"nf-card supl-card\"><div class=\"nf-card-icon supl-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0891b2\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M14.5 4l5.5 5.5L14.5 15l-5.5-5.5z\"/><path d=\"M9 15l-5 5\"/></svg></div><div class=\"supl-badge\">Evidência forte se défice</div><div class=\"nf-card-title\">Ferro</div><div class=\"nf-card-desc\"><b>Indicação habitual:</b> ferritina <30 ng/mL (ou <50 mesmo sem anemia), pernas inquietas, dieta inadequada.<br><b>Posologia descrita:</b> sulfato ferroso 325 mg/dia com vitamina C. Estudos recentes mostram melhor absorção e tolerância em dias alternados.</div><div class=\"nf-card-note\">Absorção optimizada em jejum, separado de café, chá ou cálcio.</div></div><div class=\"nf-card supl-card\"><div class=\"nf-card-icon supl-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0891b2\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M12 2v20\"/><path d=\"M2 12h20\"/><circle cx=\"12\" cy=\"12\" r=\"9\"/></svg></div><div class=\"supl-badge supl-badge-weak\">Evidência limitada</div><div class=\"nf-card-title\">CoQ10 (Coenzima Q10)</div><div class=\"nf-card-desc\"><b>Indicação habitual:</b> contexto de uso de estatinas com mialgias/fadiga; meta-análise Tsai et al. 2022 (Frontiers in Pharmacology, 13 RCTs, n=1126) descreve redução significativa de scores de fadiga.<br><b>Posologia descrita:</b> 100-200 mg/dia.</div><div class=\"nf-card-note\">Perfil de segurança favorável; evidência modesta mas crescente, sobretudo em fadiga crónica e fadiga associada a estatinas.</div></div><div class=\"nf-card supl-card\"><div class=\"nf-card-icon supl-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0891b2\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/></svg></div><div class=\"supl-badge supl-badge-weak\">Evidência limitada</div><div class=\"nf-card-title\">Magnésio</div><div class=\"nf-card-desc\"><b>Indicação habitual:</b> cãibras, ansiedade, insónia.<br><b>Posologia descrita:</b> 200-400 mg/dia (a literatura prefere glicinato pela melhor tolerância).</div><div class=\"nf-card-note\">Forma óxido descrita como mais laxante; glicinato com melhor absorção.</div></div><div class=\"nf-card supl-card\"><div class=\"nf-card-icon supl-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0891b2\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 8v4l3 2\"/></svg></div><div class=\"supl-badge supl-badge-weak\">Evidência caso a caso</div><div class=\"nf-card-title\">Melatonina</div><div class=\"nf-card-desc\"><b>Indicação habitual:</b> dificuldade em adormecer, jet lag, trabalho por turnos.<br><b>Posologia descrita:</b> 0.5-3 mg, 1h antes de deitar. A literatura aponta para maior eficácia em doses baixas.</div><div class=\"nf-card-note\">Sem dependência descrita. Particularmente útil em idade avançada.</div></div></div></div>"
+   },
+   {
+    "label": "Por problema",
+    "html": "<div class=\"nf-grid\"><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Depressão</div><div class=\"nf-card-title ca-mt8\">Abordagem por gravidade (NICE / AAFP)</div><div class=\"nf-card-desc\">As guidelines descrevem a estratificação pela gravidade, avaliada com o questionário PHQ-9 (0 a 27).<br><br>Na depressão ligeira (PHQ-9 <10), a literatura aponta para psicoterapia cognitivo-comportamental e medidas de estilo de vida (sono, exercício, integração social).<br><br>Na depressão moderada (PHQ-9 10-19), as guidelines descrevem a associação de psicoterapia + antidepressivo. Os ISRS de primeira linha mais citados são a sertralina (50 mg/dia) e o escitalopram (10 mg/dia).<br><br>Na depressão grave (PHQ-9 ≥20), a abordagem descrita inclui antidepressivo + referenciação a psiquiatria, com avaliação do risco de suicídio.</div><div class=\"nf-card-note\">A literatura recomenda manutenção ≥12 meses em casos de ≥2 episódios prévios, para reduzir o risco de recaída.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Ansiedade</div><div class=\"nf-card-title ca-mt8\">Perturbação de ansiedade</div><div class=\"nf-card-desc\">As guidelines descrevem a psicoterapia cognitivo-comportamental como primeira linha, com evidência sólida.<br><br>Em casos moderados a graves ou com comorbilidade depressiva, a literatura descreve a associação de um ISRS (sertralina ou escitalopram).<br><br>A redução do consumo de cafeína é descrita como medida com impacto clínico, dada a sobreposição entre o efeito estimulante e os sintomas ansiosos.</div><div class=\"nf-card-note\">As guidelines desaconselham o uso crónico de benzodiazepinas pelo risco de dependência. O uso descrito limita-se a crises agudas e curtos períodos.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">SAOS</div><div class=\"nf-card-title ca-mt8\">Apneia obstrutiva do sono</div><div class=\"nf-card-desc\">As guidelines descrevem o CPAP como primeira linha — pressão positiva que mantém a via aérea aberta durante o sono. Para eficácia descrita, a literatura aponta para uso superior a 4h/noite em ≥70% das noites.<br><br>A perda de peso é descrita como intervenção com impacto significativo em casos de excesso de peso (redução de 10% do peso pode diminuir o índice de apneias em cerca de 50%).<br><br>Várias substâncias são descritas como agravantes ao deitar — álcool, benzodiazepinas e opióides — pelo relaxamento da musculatura da via aérea.</div><div class=\"nf-card-note\">A literatura sublinha a importância de monitorizar a adesão ao CPAP, uma vez que o abandono nos primeiros meses é frequente.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Hipotiroidismo</div><div class=\"nf-card-title ca-mt8\">Reposição com levotiroxina</div><div class=\"nf-card-desc\">A abordagem descrita nas guidelines é a reposição hormonal com levotiroxina. A dose inicial habitual descrita é 25-50 µg/dia. Em idade avançada ou cardiopatia, a literatura recomenda iniciar com 25 µg para evitar descompensação cardíaca.<br><br>A toma habitualmente descrita é em jejum, 30 min antes do pequeno-almoço, separada de café e cálcio (que reduzem a absorção).<br><br>O ajuste descrito é a cada 6-8 semanas com base na TSH, com alvo descrito entre 0,5 e 2,5 mUI/L.</div><div class=\"nf-card-note\">No hipotiroidismo subclínico (TSH elevada, T4 livre normal), as guidelines apontam para tratamento apenas se TSH >10 ou sintomas claros.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Anemia ferropénica</div><div class=\"nf-card-title ca-mt8\">Suplementação e investigação da causa</div><div class=\"nf-card-desc\">A suplementação descrita é com sulfato ferroso 325 mg/dia + vitamina C (sumo de laranja) para melhor absorção. Estudos recentes descrevem a toma em dias alternados como mais eficaz e melhor tolerada.<br><br>A literatura sublinha a importância de investigar a causa, não bastando repor o ferro. Em mulheres, procurar menorragia. As guidelines descrevem a solicitação de pesquisa de sangue oculto nas fezes e, acima dos 45 anos, colonoscopia para excluir neoplasia colorrectal.<br><br>Em anemia refractária à via oral, a literatura descreve o ferro endovenoso (carboximaltose férrica) como opção.</div><div class=\"nf-card-note\">A reavaliação descrita do hemograma é a 4-6 semanas após início da suplementação para confirmar resposta.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge prob-badge-alert\">EM/SFC</div><div class=\"nf-card-title ca-mt8\">Gestão de energia (pacing)</div><div class=\"nf-card-desc\">⚠ Em 2021, a guideline NICE NG206 <b>retirou a recomendação de exercício graduado</b> na presença de mal-estar pós-esforço (PEM), por evidência de agravamento.<br><br>A estratégia descrita é o <i>pacing</i>: gestão do \"envelope energético\" diário com tarefas em blocos curtos e pausas planeadas, evitando o limiar de agravamento sintomático.<br><br>A abordagem descrita inclui ainda tratamento sintomático (sono, dor, lentificação cognitiva). A literatura sublinha a importância do reconhecimento e validação do diagnóstico como parte do cuidado.</div><div class=\"nf-card-note\">A mesma abordagem é descrita no Long COVID com PEM, dada a sobreposição clínica.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Fármacos</div><div class=\"nf-card-title ca-mt8\">Revisão da medicação</div><div class=\"nf-card-desc\">A literatura recomenda revisão temporal sempre que a fadiga surge ou agrava após início de fármaco.<br><br><b>β-bloqueantes:</b> o nebivolol é descrito como melhor tolerado em termos de fadiga, comparativamente a propranolol ou metoprolol.<br><br><b>Estatinas:</b> a rosuvastatina é descrita com menor incidência de mialgias do que a sinvastatina. A associação com coenzima Q10 (100-200 mg/dia) é descrita como benéfica em alguns casos.<br><br><b>Benzodiazepinas:</b> a desabituação descrita é gradual, com reduções de 10-25% a cada 2-4 semanas. A suspensão abrupta é desaconselhada pelo risco de convulsões.<br><br><b>Anti-histamínicos:</b> os de 2.ª geração (bilastina, fexofenadina) são descritos como menos sedativos do que os de 1.ª geração.</div><div class=\"nf-card-note\">Em pessoas sob opióides crónicos, a literatura descreve frequência aumentada de hipogonadismo — o doseamento de testosterona é referido como apropriado em homens com fadiga + diminuição da libido.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Long COVID</div><div class=\"nf-card-title ca-mt8\">Fadiga persistente após COVID</div><div class=\"nf-card-desc\">Suspeita-se quando a fadiga (ou outros sintomas) persiste >3 meses após infecção por SARS-CoV-2. É descrito como diagnóstico clínico — sem teste específico.<br><br>A literatura recomenda exclusão prévia de outras causas tratáveis com analítica básica: TSH, hemograma, ferro e ferritina, vitamina D.<br><br>A abordagem descrita é sintomática e individualizada. A higiene do sono é descrita como medida central. Em presença de PEM, é descrito o uso de <i>pacing</i> à semelhança da EM/SFC.<br><br>Programas estruturados de reabilitação são descritos como benéficos, com a ressalva de não os aplicar em presença de PEM.</div><div class=\"nf-card-note\">Há sobreposição clínica significativa com a EM/SFC, sobretudo na presença de PEM e fadiga >6 meses.</div></div><div class=\"nf-card prob-card\"><div class=\"prob-badge\">Polimialgia reumática</div><div class=\"nf-card-title ca-mt8\">Corticoterapia oral</div><div class=\"nf-card-desc\">A literatura descreve suspeita acima dos 50 anos (geralmente >65) perante rigidez matinal das cinturas escapular e pélvica >30 min, fadiga marcada e VS >40 mm/h.<br><br>A abordagem descrita é prednisolona 15 mg/dia, com resposta dramática em 24-72h descrita como praticamente diagnóstica.<br><br>A literatura sublinha a importância de excluir arterite temporal (vasculite associada com risco de cegueira) — procurar cefaleias novas, claudicação mandibular, alterações visuais; a VS urgente e referenciação são descritas como apropriadas em caso de suspeita.</div><div class=\"nf-card-note\">O desmame de prednisolona descrito é lento, ao longo de 1-2 anos, com reduções pequenas para evitar recaídas.</div></div></div></div>"
+   }
+  ]
+ },
+ "escalas": {
+  "titulo": "Escalas clínicas",
+  "sub": "Questionários validados para rastreio e avaliação de gravidade no contexto de fadiga.",
+  "interativas": [
+   {
+    "id": "phq9",
+    "tab": "PHQ-9",
+    "fonte": "Domínio público · Pfizer",
+    "nome": "PHQ-9 — Patient Health Questionnaire",
+    "desc": "Rastreio e avaliação da gravidade da depressão. 9 perguntas, score 0-27. Validada em cuidados primários.",
+    "itens": [
+     "Pouco interesse ou prazer em fazer as coisas",
+     "Sentir-se em baixo, deprimido(a) ou sem esperança",
+     "Dificuldade em adormecer ou manter o sono, ou dormir demais",
+     "Sentir-se cansado(a) ou com pouca energia",
+     "Pouco apetite ou comer em excesso",
+     "Sentir-se mal consigo próprio(a) — ou sentir que é um(a) fracassado(a) ou que desapontou a si ou à sua família",
+     "Dificuldade em concentrar-se, por exemplo a ler o jornal ou a ver televisão",
+     "Mover-se ou falar tão lentamente que outras pessoas notaram — ou o oposto, estar tão agitado(a) que anda de um lado para o outro mais do que o habitual",
+     "Pensamentos de que estaria melhor morto(a) ou de se magoar de alguma forma"
+    ],
+    "opcoes": [
+     "Nunca",
+     "Vários dias",
+     "Mais de metade dos dias",
+     "Quase todos os dias"
+    ],
+    "max": 27,
+    "cabecalho": "Nas últimas 2 semanas, com que frequência...",
+    "interp": [
+     {
+      "ate": 4,
+      "label": "Depressão mínima"
+     },
+     {
+      "ate": 9,
+      "label": "Depressão ligeira"
+     },
+     {
+      "ate": 14,
+      "label": "Depressão moderada"
+     },
+     {
+      "ate": 19,
+      "label": "Depressão moderadamente grave"
+     },
+     {
+      "ate": 27,
+      "label": "Depressão grave"
+     }
+    ],
+    "cutoffs": "0-4 mínima · 5-9 ligeira (watchful waiting) · 10-14 moderada (considerar tratamento) · 15-19 moderadamente grave (tratamento activo) · 20-27 grave (tratamento + referenciação)",
+    "avisoQ9": "Qualquer resposta >0 na pergunta sobre ideação suicida exige avaliação directa do risco. Não desvalorizar mesmo com score total baixo."
+   },
+   {
+    "id": "gad7",
+    "tab": "GAD-7",
+    "fonte": "Domínio público · Pfizer",
+    "nome": "GAD-7 — Generalized Anxiety Disorder",
+    "desc": "Rastreio de perturbação de ansiedade generalizada. 7 perguntas, score 0-21.",
+    "itens": [
+     "Sentir-se nervoso(a), ansioso(a) ou muito tenso(a)",
+     "Não ser capaz de parar ou controlar as preocupações",
+     "Preocupar-se demasiado com diversas coisas",
+     "Dificuldade em descontrair",
+     "Estar tão inquieto(a) que é difícil ficar parado(a)",
+     "Ficar facilmente irritado(a) ou aborrecido(a)",
+     "Sentir medo como se algo terrível pudesse acontecer"
+    ],
+    "opcoes": [
+     "Nunca",
+     "Vários dias",
+     "Mais de metade dos dias",
+     "Quase todos os dias"
+    ],
+    "max": 21,
+    "cabecalho": "Nas últimas 2 semanas, com que frequência...",
+    "interp": [
+     {
+      "ate": 4,
+      "label": "Ansiedade mínima"
+     },
+     {
+      "ate": 9,
+      "label": "Ansiedade ligeira"
+     },
+     {
+      "ate": 14,
+      "label": "Ansiedade moderada"
+     },
+     {
+      "ate": 21,
+      "label": "Ansiedade grave"
+     }
+    ],
+    "cutoffs": "0-4 mínima · 5-9 ligeira · 10-14 moderada (considerar tratamento) · 15-21 grave (tratamento activo)"
+   },
+   {
+    "id": "phq15",
+    "tab": "PHQ-15",
+    "fonte": "Domínio público · Pfizer",
+    "nome": "PHQ-15 — Sintomas somáticos",
+    "desc": "Avalia a gravidade de 15 sintomas somáticos comuns. Score 0-30. Útil para quantificar carga somática e rastrear perturbação de somatização.",
+    "itens": [
+     "Dor de estômago",
+     "Dor nas costas",
+     "Dor nos braços, pernas ou articulações (joelhos, ancas, etc.)",
+     "Cólicas menstruais ou outros problemas menstruais",
+     "Dor de cabeça",
+     "Dor no peito",
+     "Tonturas",
+     "Desmaios",
+     "Sentir o coração a bater depressa ou com força",
+     "Falta de ar",
+     "Dor ou problemas durante as relações sexuais",
+     "Obstipação, fezes moles ou diarreia",
+     "Náuseas, gases ou indigestão",
+     "Sentir-se cansado(a) ou com pouca energia",
+     "Dificuldade em dormir"
+    ],
+    "opcoes": [
+     "Nada",
+     "Um pouco",
+     "Bastante"
+    ],
+    "max": 30,
+    "cabecalho": "Nas últimas 4 semanas, quanto foi incomodado(a) por...",
+    "interp": [
+     {
+      "ate": 4,
+      "label": "Gravidade somática mínima"
+     },
+     {
+      "ate": 9,
+      "label": "Gravidade somática baixa"
+     },
+     {
+      "ate": 14,
+      "label": "Gravidade somática média"
+     },
+     {
+      "ate": 30,
+      "label": "Gravidade somática alta"
+     }
+    ],
+    "cutoffs": "0-4 mínima · 5-9 baixa · 10-14 média · 15-30 alta. Scores elevados associam-se a maior utilização de serviços de saúde e incapacidade funcional."
+   }
+  ],
+  "outras": {
+   "intro": "Estas escalas têm restrições de copyright. Aqui encontras a explicação, cut-offs e link para a fonte oficial. Clica no card para aceder.",
+   "cards": [
+    {
+     "url": "https://www.google.com/search?q=Escala+Epworth+Sleepiness+Scale",
+     "eyebrow": "Sonolência diurna · Copyright protegido",
+     "nome": "Epworth Sleepiness Scale (ESS)",
+     "desc": "8 situações do dia-a-dia, score 0-24. Diferencia sonolência (SAOS, narcolepsia) de fadiga. <b>Score >10</b> = sonolência diurna significativa.",
+     "cutoffs": "0-7 normal · 8-9 borderline · 10-15 moderada · 16-24 grave"
+    },
+    {
+     "url": "https://www.google.com/search?q=Escala+STOP-BANG+Questionnaire",
+     "eyebrow": "Rastreio SAOS · Uso clínico livre",
+     "nome": "STOP-BANG Questionnaire",
+     "desc": "8 perguntas sim/não para rastreio de apneia obstrutiva do sono. Não substitui polissonografia.",
+     "cutoffs": "0-2 baixo risco · 3-4 intermédio · 5-8 alto risco"
+    },
+    {
+     "url": "https://www.google.com/search?q=Escala+Fatigue+Severity+Scale+FSS",
+     "eyebrow": "Gravidade da fadiga · Krupp 1989",
+     "nome": "Fatigue Severity Scale (FSS)",
+     "desc": "9 afirmações sobre impacto da fadiga, escala 1-7. Muito usada em EM/SFC, esclerose múltipla e lúpus. Avalia gravidade funcional, não causa.",
+     "cutoffs": "Média ≥4 = fadiga significativa · ≥5 = fadiga grave"
+    },
+    {
+     "url": "https://www.google.com/search?q=Escala+Insomnia+Severity+Index+ISI",
+     "eyebrow": "Insónia · Morin 2001",
+     "nome": "Insomnia Severity Index (ISI)",
+     "desc": "7 perguntas sobre gravidade da insónia, score 0-28. Avalia dificuldade em adormecer, manter o sono, acordar cedo e interferência diurna.",
+     "cutoffs": "0-7 sem insónia · 8-14 subclínica · 15-21 moderada · 22-28 grave"
+    }
+   ]
+  }
+ },
+ "cards": {
+  "titulo": "Cards rápidos",
+  "sub": "Cartas para relembrar pontos-chave sobre fadiga. Toca duas vezes para virar. Edita, adiciona e organiza os teus cards.",
+  "cats": {
+   "causas": {
+    "label": "Causas",
+    "color": "#0891b2",
+    "badge": "tip"
+   },
+   "alarme": {
+    "label": "Sinais de alarme",
+    "color": "#dc2626",
+    "badge": "tip"
+   },
+   "tratamento": {
+    "label": "Tratamento",
+    "color": "#10b981",
+    "badge": "tip"
+   },
+   "abordagem": {
+    "label": "Abordagem",
+    "color": "#4c1d95",
+    "badge": "tip"
+   }
+  },
+  "defaults": [
+   {
+    "cat": "abordagem",
+    "fav": false,
+    "title": "Pedir analítica em fadiga?",
+    "sub": "Persistente (>4 sem) ou com alarmes → quase sempre",
+    "sections": [
+     {
+      "key": "Regra prática",
+      "rows": [
+       "Fadiga <b>>4 semanas</b> ou com alarmes → analítica básica no 1º contacto",
+       "Fadiga aguda jovem sem alarmes → aguardar <b>2-4 semanas</b>"
+      ]
+     },
+     {
+      "key": "Analítica básica",
+      "rows": [
+       "Hemograma, TSH, ferro/ferritina, glicose",
+       "Ionograma, creatinina, ALT/GGT"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe (AAFP 2023)",
+    "backHtml": "<p>Em fadiga aguda sem sinais de alarme, é razoável observar 2-4 semanas antes de investigar. Se persistir, analítica básica no primeiro contacto.</p>"
+   },
+   {
+    "cat": "abordagem",
+    "fav": false,
+    "title": "Fadiga vs sonolência",
+    "sub": "Fadiga = falta de energia. Sonolência = adormece.",
+    "sections": [
+     {
+      "key": "Distinção",
+      "rows": [
+       "<b>Fadiga:</b> falta de energia, quer descansar",
+       "<b>Sonolência:</b> adormece em situações inapropriadas"
+      ]
+     },
+     {
+      "key": "Orientação",
+      "rows": [
+       "Sonolência → polissonografia, Epworth",
+       "Fadiga sem sonolência → hipotiroidismo, anemia, depressão, EM/SFC"
+      ]
+     }
+    ],
+    "backTitle": "Porque importa",
+    "backHtml": "<p>Sonolência diurna sugere SAOS, narcolepsia ou privação de sono. Fadiga sem sonolência aponta para outras causas (hipotiroidismo, anemia, depressão, EM/SFC).</p>"
+   },
+   {
+    "cat": "abordagem",
+    "fav": false,
+    "title": "Funcional vs orgânica",
+    "sub": "Funcional: jovem, sem alarmes, analítica normal",
+    "sections": [
+     {
+      "key": "Favorece funcional",
+      "rows": [
+       "Jovem, sem alarmes, exame normal",
+       "Melhora com repouso e hábitos",
+       "Analítica normal"
+      ]
+     },
+     {
+      "key": "Favorece orgânica",
+      "rows": [
+       "Sinais de alarme, exame alterado",
+       "Idade >65, perda ponderal",
+       "Sintomas progressivos, sem melhoria com repouso"
+      ]
+     }
+    ],
+    "backTitle": "Pistas",
+    "backHtml": "<p>Boa resposta a medidas de estilo de vida (sono, álcool, cafeína, exercício) favorece funcional. Sinais de alarme, exame objectivo alterado → investigar orgânica.</p>"
+   },
+   {
+    "cat": "abordagem",
+    "fav": false,
+    "title": "Pedir VS na fadiga?",
+    "sub": "Sim. VS >50-100 → autoimune, infecção, neoplasia",
+    "sections": [
+     {
+      "key": "Quando é mais informativo",
+      "rows": [
+       "Idade avançada + fadiga + rigidez de cintura",
+       "Alta especificidade para doença autoimune activa",
+       "Infecção crónica, mieloma, polimialgia reumática"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Em idade avançada com fadiga + rigidez de cintura, a VS é o exame inicial mais informativo. Alta especificidade para doença autoimune activa, infecção crónica, mieloma e polimialgia reumática.</p>"
+   },
+   {
+    "cat": "abordagem",
+    "fav": false,
+    "title": "Pedir vitamina D?",
+    "sub": "Sim, sobretudo em mulheres, idosos, pele escura",
+    "sections": [
+     {
+      "key": "Cut-offs",
+      "rows": [
+       "<b>Défice:</b> <20 ng/mL",
+       "<b>Insuficiência:</b> 20-30 ng/mL",
+       "Muito frequente em Portugal"
+      ]
+     },
+     {
+      "key": "Conduta",
+      "rows": [
+       "Suplementar se <30 ng/mL",
+       "Reavaliar a 3 meses"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Défice muito frequente em Portugal. A literatura indica suplementação se <30, com reavaliação a 3 meses.</p>"
+   },
+   {
+    "cat": "causas",
+    "fav": false,
+    "title": "EM/SFC — critérios",
+    "sub": "Fadiga crónica >6m + PEM + sono não reparador + brain fog",
+    "sections": [
+     {
+      "key": "Critérios NAM 2015",
+      "rows": [
+       "Fadiga crónica <b>>6 meses</b>",
+       "<b>PEM</b> (post-exertional malaise)",
+       "Sono <b>não reparador</b>",
+       "<b>Brain fog</b> ou intolerância ortostática"
+      ]
+     },
+     {
+      "key": "Conduta",
+      "rows": [
+       "Diagnóstico de exclusão",
+       "Analítica básica normal",
+       "Abordagem: <b>pacing</b>"
+      ]
+     }
+    ],
+    "backTitle": "NAM 2015 + NICE 2021",
+    "backHtml": "<p>NICE 2021 retirou exercício graduado e CBT como tratamentos curativos por evidência de danos. Abordagem descrita: pacing.</p>"
+   },
+   {
+    "cat": "causas",
+    "fav": false,
+    "title": "PEM — o que é",
+    "sub": "Post-Exertional Malaise: agravamento desproporcional após esforço",
+    "sections": [
+     {
+      "key": "Definição",
+      "rows": [
+       "Agravamento desproporcional após esforço (físico ou mental)",
+       "Recuperação <b>24-72h+</b>"
+      ]
+     },
+     {
+      "key": "Importância",
+      "rows": [
+       "Patognomónico de EM/SFC",
+       "Marcador-chave do long COVID",
+       "Em presença de PEM, exercício graduado pode causar <b>deterioração permanente</b>"
+      ]
+     }
+    ],
+    "backTitle": "Central no diagnóstico",
+    "backHtml": "<p>Patognomónico de EM/SFC e marcador-chave do long COVID. Em presença de PEM, o exercício graduado pode causar deterioração permanente — pacing é a abordagem indicada.</p>"
+   },
+   {
+    "cat": "causas",
+    "fav": false,
+    "title": "Long COVID",
+    "sub": "Fadiga >3 meses após COVID. Diagnóstico clínico.",
+    "sections": [
+     {
+      "key": "Definição",
+      "rows": [
+       "Fadiga (ou outros sintomas) <b>>3 meses</b> após COVID",
+       "Diagnóstico clínico, sem teste específico"
+      ]
+     },
+     {
+      "key": "Investigação",
+      "rows": [
+       "Excluir outras causas (TSH, hemograma, ferro)",
+       "Em presença de PEM → sobreposição com EM/SFC",
+       "POTS é comum (taquicardia ortostática Δ ≥30 bpm em 10 min)"
+      ]
+     }
+    ],
+    "backTitle": "Sobreposição",
+    "backHtml": "<p>Excluir outras causas. Em presença de PEM: sobreposição com EM/SFC, mesma abordagem de pacing.</p>"
+   },
+   {
+    "cat": "causas",
+    "fav": false,
+    "title": "Rash com amoxicilina",
+    "sub": "Jovem + amigdalite + rash = quase sempre mononucleose",
+    "sections": [
+     {
+      "key": "Clínica",
+      "rows": [
+       "Jovem + amigdalite + rash após amoxi",
+       "Ocorre em <b>70-100%</b> dos casos de mono expostos a amoxicilina",
+       "<b>Não é alergia</b> (não mediado por IgE)"
+      ]
+     },
+     {
+      "key": "Confirmação",
+      "rows": [
+       "Paul-Bunnell / serologia EBV (anti-VCA IgM)",
+       "Toma futura de amoxicilina é considerada segura"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Ocorre em 70-100% dos casos de mononucleose expostos a amoxicilina. Não mediado por IgE. Toma futura de amoxicilina é considerada segura.</p>"
+   },
+   {
+    "cat": "causas",
+    "fav": false,
+    "title": "Hipogonadismo masculino",
+    "sub": "Fadiga + ↓ libido + DE → testosterona total matinal",
+    "sections": [
+     {
+      "key": "Quando suspeitar",
+      "rows": [
+       "Fadiga + <b>↓ libido</b> + disfunção eréctil",
+       "Pedir <b>testosterona total matinal</b> (8-10h) em jejum"
+      ]
+     },
+     {
+      "key": "Confirmação",
+      "rows": [
+       "Se baixa → 2ª colheita + LH/FSH",
+       "Em uso crónico de opióides → hipogonadismo secundário frequente"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Se baixa, confirmar com 2ª colheita + LH/FSH. Em uso crónico de opióides, o hipogonadismo secundário é frequente e subdiagnosticado.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "Referenciação urgente — quando",
+    "sub": "Alarmes não esclarecidos, suspeita de neoplasia",
+    "sections": [
+     {
+      "key": "Indicações",
+      "rows": [
+       "Alarmes não esclarecidos",
+       "Suspeita de neoplasia, IC descompensada",
+       "Autoimune grave, ideação suicida"
+      ]
+     },
+     {
+      "key": "Alarmes-chave",
+      "rows": [
+       "Perda ponderal <b>>5%</b>, sudorese nocturna",
+       "Febre >3 sem, adenopatias suspeitas",
+       "Dispneia de novo, fraqueza progressiva",
+       "Cefaleias matinais com vómitos"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Em depressão major, ideação suicida activa = urgência. Perda ponderal >5%, sudorese nocturna, febre >3 sem são alarmes-chave.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "Homem ≥70 com fadiga isolada",
+    "sub": "Mesmo sem outros alarmes → risco aumentado de neoplasia",
+    "sections": [
+     {
+      "key": "Evidência",
+      "rows": [
+       "White et al. 2025 (BJGP): risco significativamente aumentado",
+       "Mesmo sem outros alarmes"
+      ]
+     },
+     {
+      "key": "Investigação",
+      "rows": [
+       "Analítica completa, Rx tórax, ecografia abdominal",
+       "Considerar TC se persistir"
+      ]
+     }
+    ],
+    "backTitle": "White et al. 2025",
+    "backHtml": "<p>Estudo recente descreveu risco significativamente aumentado de neoplasia em homens ≥70 com fadiga isolada. Investigação: analítica completa, Rx tórax, ecografia abdominal.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "SAOS — quando suspeitar",
+    "sub": "Roncopatia + apneias testemunhadas + sonolência diurna",
+    "sections": [
+     {
+      "key": "Clínica",
+      "rows": [
+       "Roncopatia + apneias testemunhadas + sonolência",
+       "<b>STOP-BANG ≥5</b> ou <b>Epworth >10</b>",
+       "Obesidade, HTA resistente, cefaleias matinais"
+      ]
+     },
+     {
+      "key": "Confirmação",
+      "rows": [
+       "<b>Polissonografia</b> (não CPAP empírico)",
+       "STOP-BANG ≥3 risco intermédio, ≥5 alto"
+      ]
+     }
+    ],
+    "backTitle": "Cut-offs",
+    "backHtml": "<p>STOP-BANG ≥3 risco intermédio, ≥5 alto. Epworth >10 sonolência significativa. Confirmação: polissonografia.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "Polimialgia reumática",
+    "sub": ">50a + rigidez matinal cinturas >30 min + VS muito elevada",
+    "sections": [
+     {
+      "key": "Tríade",
+      "rows": [
+       ">50 anos",
+       "Rigidez matinal cinturas <b>>30 min</b>",
+       "VS muito elevada (<b>>40-50</b>)"
+      ]
+     },
+     {
+      "key": "Tratamento",
+      "rows": [
+       "<b>Prednisolona 15 mg/dia</b> → resposta dramática em 24-72h",
+       "SEMPRE excluir arterite temporal"
+      ]
+     }
+    ],
+    "backTitle": "Armadilha",
+    "backHtml": "<p>Prednisolona 15 mg/dia → resposta dramática em 24-72h (quase diagnóstica). SEMPRE excluir arterite temporal (cefaleias, claudicação mandibular, alterações visuais — VS urgente, biópsia da temporal).</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "EM/SFC — pacing, não GET",
+    "sub": "Em presença de PEM, exercício graduado pode piorar",
+    "sections": [
+     {
+      "key": "NICE 2021",
+      "rows": [
+       "GET (Graded Exercise Therapy) <b>retirado</b> por evidência de danos",
+       "<b>Pacing</b> = adequar actividade ao envelope energético",
+       "CBT já não é considerada curativa, apenas adjuvante"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>NICE retirou GET por evidência de danos. Pacing = adequar actividade ao envelope energético, evitar ultrapassar limiar de PEM. CBT já não é considerada curativa, apenas adjuvante para gestão.</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "Fibromialgia — TIRAR opióides e BZD",
+    "sub": "Exercício aeróbico + CBT + higiene do sono",
+    "sections": [
+     {
+      "key": "1ª linha",
+      "rows": [
+       "Exercício aeróbico de baixo impacto",
+       "Terapia cognitivo-comportamental",
+       "Higiene do sono"
+      ]
+     },
+     {
+      "key": "Fármacos",
+      "rows": [
+       "Considerar <b>duloxetina</b> ou <b>pregabalina</b> se necessário",
+       "Opióides e BZD: <b>não têm benefício, têm dano</b>",
+       "Desmame progressivo se em uso"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>A literatura sublinha desmame progressivo de opióides e BZD. Primeira linha não farmacológica: exercício, CBT, higiene do sono.</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "Fadiga oncológica — exercício",
+    "sub": "Exercício adaptado é a 1ª linha (maior evidência)",
+    "sections": [
+     {
+      "key": "Evidência",
+      "rows": [
+       "Programas estruturados de exercício aeróbico + resistência",
+       "<b>Maior nível de evidência</b> para fadiga oncológica",
+       "Funciona durante e após tratamento"
+      ]
+     },
+     {
+      "key": "Adjuvantes",
+      "rows": [
+       "Suporte psicológico e gestão do sono",
+       "Fármacos (metilfenidato, modafinil) para casos seleccionados"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Programas estruturados de exercício apresentam o maior nível de evidência. Suporte psicológico e gestão do sono também relevantes. Fármacos ficam para casos seleccionados.</p>"
+   }
+  ]
+ },
+ "flashcards": {
+  "eyebrow": "Flashcards",
+  "titulo": "Cansaço.",
+  "exemplos": [
+   {
+    "q": "Fadiga inexplicada — 1ª linha analítica?",
+    "a": "Hemograma · VS · PCR · glicose · TSH · ureia · creatinina · ALT · ferritina",
+    "e": "<b>Não pedir tudo de início.</b> A esta base junta-se conforme contexto: B12, fólico, HbA1c, vit D, urina II, Ca²⁺. Orientar pelos sintomas/exame."
+   },
+   {
+    "q": "TSH elevada + T4 livre normal — diagnóstico?",
+    "a": "Hipotiroidismo subclínico",
+    "e": "<b>Diferenciar PNA:</b> TSH ↑ + T4N = subclínico; TSH ↑ + T4↓ = manifesto. <b>Tratar se:</b> TSH &gt;10 mU/L · sintomas evidentes · planeamento gravidez. Causa mais frequente: tiroidite de Hashimoto (anti-TPO+)."
+   },
+   {
+    "q": "Levotiroxina — dose, timing e interacções?",
+    "a": "1,6 µg/kg/dia em jejum, 30 min antes do pequeno-almoço. Reavaliar TSH em 6-8 semanas.",
+    "e": "Idoso/cardiopata: começar 25 µg e titular. <b>Interacções (separar 4h):</b> cálcio, ferro, IBP, soja. Sinal de Hertoghe: queda do terço externo da sobrancelha (clássico)."
+   },
+   {
+    "q": "STOP-BANG — cut-off para risco intermédio-alto de SAOS?",
+    "a": "≥3 critérios → polissonografia",
+    "e": "Snoring · Tired · Observed apnea · Pressure (HTA) · BMI &gt;35 · Age &gt;50 · Neck &gt;40 cm · Gender M. <b>Tratamento SAOS:</b> CPAP em moderada-grave (IAH ≥15) ou ligeira com sintomas significativos."
+   },
+   {
+    "q": "PHQ-9 — cut-off para depressão e gravidade?",
+    "a": "≥10 sugere depressão · ≥15 = moderada-grave",
+    "e": "9 itens, score 0-27. <b>Inclui sempre questão sobre ideação suicida</b> — avaliar. Resposta significativa = queda ≥5 pontos. SSRI 1ª linha + psicoterapia."
+   },
+   {
+    "q": "Critérios DSM-5 de depressão major?",
+    "a": "≥5 sintomas durante ≥2 semanas, incluindo 1 de: humor deprimido OU anedonia",
+    "e": "Sintomas: humor deprimido · anedonia · alteração sono/apetite/peso · fadiga · lentificação · culpa · concentração · ideação suicida. <b>Armadilha PNA:</b> tem de ser ≥5 + obrigatório humor deprimido ou anedonia."
+   },
+   {
+    "q": "SSRI — primeira linha em qual paciente?",
+    "a": "Depressão e ansiedade (1ª linha). Em idoso preferir sertralina ou escitalopram",
+    "e": "<b>Doses iniciais:</b> sertralina 50 mg/dia, escitalopram 10 mg/dia, fluoxetina 20 mg/dia. <b>Evitar paroxetina em idoso</b> (anticolinérgico, sedação, ↑ risco quedas)."
+   },
+   {
+    "q": "Fibromialgia — fármaco de 1ª linha?",
+    "a": "Duloxetina (SNRI) ou pregabalina/gabapentina",
+    "e": "Duloxetina actua simultaneamente sobre fadiga e dor crónica neuropática. <b>Evitar opióides</b> (sem eficácia e dependência). Exercício aeróbico + TCC têm evidência forte."
+   },
+   {
+    "q": "Ferritina &lt;30 ng/mL — significado?",
+    "a": "Défice de ferro confirmado, MESMO sem anemia",
+    "e": "<b>Armadilha PNA:</b> ferritina é proteína de fase aguda — pode estar falsamente normal/alta em inflamação (avaliar PCR/VS conjuntamente). Ferritina 30-100 com saturação &lt;20% = ainda compatível com ferropénia."
+   },
+   {
+    "q": "Suplementação de ferro oral — melhor regime?",
+    "a": "Sulfato ferroso 325 mg/dia em <b>dias alternados</b> (maior absorção e melhor tolerância)",
+    "e": "Estudos recentes (Stoffel 2017, Lancet Haematol): dias alternados &gt; diários (a hepcidina sobe após dose; bloqueia absorção 24-48h). EA frequentes: obstipação, dispepsia, fezes escuras. Tomar com vit C ↑ absorção."
+   },
+   {
+    "q": "Ferropénia em homem adulto — investigação obrigatória?",
+    "a": "EDA + colonoscopia (bidirecional) — mesmo com SOF negativo",
+    "e": "<b>Regra de ouro PNA.</b> Ferropénia em ♂ adulto ou ♀ pós-menopausa = neoplasia GI até prova em contrário. Cancro do cólon direito apresenta-se classicamente assim. SOF tem sens só 60-70%."
+   },
+   {
+    "q": "Défice de B12 — quando é o nível \"intermédio\" (200-300) significativo?",
+    "a": "Pedir ácido metilmalónico (MMA) — se elevado, confirma défice",
+    "e": "B12 &lt;200 = défice. 200-300 = zona cinzenta → MMA ou homocisteína. <b>Sintoma neurológico clássico:</b> parestesias e ataxia (degenerescência combinada subaguda) — pode preceder a anemia. Causas: anemia perniciosa (anti-FI+), gastrectomia, IBP crónico, vegetarianos."
+   },
+   {
+    "q": "EM/SFC — critérios diagnósticos (IOM 2015)?",
+    "a": "Fadiga incapacitante &gt;6 meses + mal-estar pós-esforço + sono não reparador + ≥1 de (disfunção cognitiva OU intolerância ortostática)",
+    "e": "Diagnóstico clínico após exclusão de causas orgânicas. <b>Armadilha:</b> exercício gradual progressivo PODE piorar (ao contrário da fibromialgia). Tratamento: <b>pacing</b> (gestão energética), sintomático. Sem cura."
+   },
+   {
+    "q": "Long COVID — definição OMS?",
+    "a": "Sintomas ≥3 meses após COVID-19, com duração ≥2 meses, sem outra explicação",
+    "e": "Sintomas top: fadiga, dispneia, \"brain fog\", insónia, intolerância ao esforço. <b>Excluir miocardite e TEP</b> em sintomas cardiopulmonares. Tratamento sintomático + reabilitação progressiva."
+   },
+   {
+    "q": "Insuficiência cardíaca em ambulatório — biomarcador para excluir?",
+    "a": "BNP &lt;35 ou NT-proBNP &lt;125 pg/mL (valor não agudo)",
+    "e": "<b>Cut-off de exclusão</b> ambulatório (não-agudo). Se elevado → ecocardiograma para confirmar e classificar FEVE. HFpEF (FE preservada) é frequente em idoso, mulher, HTA, DM."
+   },
+   {
+    "q": "Cortisol baixo de manhã + ACTH ALTA — diagnóstico?",
+    "a": "Insuficiência adrenal primária (Addison)",
+    "e": "<b>Diferenciar PNA:</b> ACTH ↑ = primária (Addison — autoimune, mais frequente); ACTH ↓ = secundária (hipofisária). Confirmar com teste de estimulação com ACTH. Tratamento Addison: hidrocortisona + fludrocortisona."
+   },
+   {
+    "q": "Síndrome de Cushing — primeiro rastreio?",
+    "a": "Cortisol urinário livre de 24h OU teste de supressão com dexametasona 1 mg overnight",
+    "e": "Sugere se: ganho ponderal central, estrias purpúricas, fácies em lua cheia, fraqueza proximal, HTA, DM secundária. <b>Confirmação:</b> ACTH (alto = ACTH-dep; baixo = adrenal). Investigação dirigida em centros especializados."
+   },
+   {
+    "q": "Mononucleose — teste de rastreio inicial?",
+    "a": "Anticorpos heterófilos (Paul-Bunnell / Monospot)",
+    "e": "Confirmação: IgM anti-VCA (infecção aguda). <b>Evitar contacto físico desportivo 4-6 semanas</b> (risco de rotura esplénica). Falsos negativos no início dos sintomas (≤7 dias)."
+   },
+   {
+    "q": "Doença celíaca — rastreio na fadiga inexplicada?",
+    "a": "Anti-transglutaminase IgA (tTG-IgA) + IgA total",
+    "e": "<b>Armadilha PNA:</b> se IgA total baixa → tTG IgA pode ser falso negativo → pedir <b>anti-tTG IgG</b>. Confirmação: biópsia duodenal SOB dieta com glúten (se já em dieta sem glúten, biópsia normal não exclui)."
+   },
+   {
+    "q": "PMR / arterite temporal — fármaco-prova diagnóstica?",
+    "a": "Prednisolona 15 mg/dia → resposta &lt;24-72h é quase patognomónica",
+    "e": "Idoso + fadiga + rigidez matinal de cinturas + VS muito elevada (frequentemente &gt;50 mm/h). <b>Arterite temporal (Horton):</b> cefaleia + claudicação mandibular + amaurose → URGENTE → metilprednisolona 1 g EV. Biópsia da temporal &lt;2 semanas."
+   },
+   {
+    "q": "ANA positivo isolado em pessoa saudável — relevância?",
+    "a": "5-10% da população geral. Só relevante se clínica sugestiva (artralgias, rash, Raynaud, alopécia, úlceras orais)",
+    "e": "<b>Armadilha PNA:</b> ANA+ isolado SEM clínica → não alarmismo, repetir em 6 meses. <b>Padrão e título orientam:</b> anti-dsDNA + (LES), anti-Scl70 (esclerodermia), anti-Ro/La (Sjögren)."
+   },
+   {
+    "q": "Vitamina D — défice vs insuficiência?",
+    "a": "&lt;20 ng/mL (50 nmol/L) = défice · 20-30 = insuficiência",
+    "e": "<b>Tratamento défice:</b> 50.000 UI/semana × 8 semanas (bolus). <b>Manutenção:</b> 800-2000 UI/dia. Associação com fadiga inespecífica é fraca mas comum em prática."
+   },
+   {
+    "q": "Causas medicamentosas de fadiga — top 5?",
+    "a": "Beta-bloqueantes · benzodiazepinas · anti-histamínicos · estatinas · opióides",
+    "e": "Também: anti-hipertensores em geral, antipsicóticos sedativos, anticonvulsivantes, antidepressivos sedativos (mirtazapina, amitriptilina). <b>Sempre pedir lista completa</b> (OTC + suplementos)."
+   },
+   {
+    "q": "Estatinas e fadiga — qual o mecanismo principal e cuidados?",
+    "a": "Depleção de coenzima Q10 mitocondrial → miopatia. Sinvastatina e atorvastatina são as mais miotóxicas.",
+    "e": "<b>Substituir por rosuvastatina ou pravastatina</b> (menos miotoxicidade). Interacção: gemfibrozil + estatina ↑ rabdomiólise (evitar). <b>CK elevada + sintomas musculares = suspender, repetir CK</b>."
+   },
+   {
+    "q": "Sono recomendado no adulto e 1ª linha em insónia crónica?",
+    "a": "7-9 h/noite. 1ª linha = TCC para insónia (antes de fármacos)",
+    "e": "Higiene do sono: horário regular, evitar ecrãs 1h antes, quarto fresco/escuro, evitar cafeína após 14h, sem álcool/refeições pesadas à noite. <b>Benzodiazepinas/Z-drugs</b>: curto prazo, não crónico (dependência, declínio cognitivo, quedas no idoso)."
+   },
+   {
+    "q": "Fadiga + adenopatias generalizadas — DDx prioritários?",
+    "a": "Mononucleose · linfoma · VIH · tuberculose · sarcoidose · doenças autoimunes",
+    "e": "Investigação: hemograma + esfregaço, serologias (EBV, CMV, VIH, hepatites), Rx tórax, LDH. <b>Biópsia se:</b> adenopatia &gt;2 cm persistente &gt;4 semanas OU supraclavicular (sempre maligna até prova em contrário)."
+   },
+   {
+    "q": "Fadiga + perda ponderal involuntária &gt;5% em 6 meses — investigar o quê?",
+    "a": "Neoplasia oculta, doença autoimune ou infecção crónica",
+    "e": "Investigação: hemograma, VS, PCR, função tiroideia, glicose, ferritina, LDH, função hepática/renal, urina II, Rx tórax. <b>Em ♂ adulto ou ♀ pós-menopausa + ferropénia:</b> SOF + colonoscopia + EDA."
+   },
+   {
+    "q": "TSH alterada — quando intervir no subclínico?",
+    "a": "Tratar se: TSH &gt;10 mU/L · sintomas evidentes · planeamento gravidez · anti-TPO+ jovem",
+    "e": "<b>Subclínico assintomático com TSH 4,5-10:</b> vigiar (re-doseamento 3-6 meses). <b>Hipertiroidismo subclínico</b> (TSH baixa, T4N): tratar se &gt;65a (risco FA, osteoporose) ou TSH &lt;0,1."
+   },
+   {
+    "q": "Modafinil — quando indicado?",
+    "a": "Sonolência diurna refractária (narcolepsia, SAOS pós-CPAP refractária)",
+    "e": "<b>Não é 1ª linha em fadiga inespecífica.</b> Casos especiais, prescrição especializada. Mecanismo: ↑ dopamina e noradrenalina no SNC. EA: cefaleia, insónia, ansiedade. Interage com OCS (reduz eficácia)."
+   },
+   {
+    "q": "Cansaço numa criança/adolescente — armadilha clássica?",
+    "a": "Não esquecer mononucleose, leucemia, hipotiroidismo, depressão, abuso, transtorno alimentar",
+    "e": "<b>Armadilha PNA:</b> em adolescente nunca atribuir só a \"preguiça\" ou \"adolescência\". Investigar sempre: hemograma + esfregaço, VS, TSH, ferritina, função hepática, glicose. Investigação social: bullying, abuso, alimentação."
+   }
+  ]
+ },
+ "fontes": {
+  "intro": "As referências deste guia são guidelines, revisões sistemáticas e literatura primária. Ao clicar em <b>\"Pesquisar\"</b>, abre uma pesquisa Google pelo título e autores, para localizares o documento original. <b>Esta é uma ferramenta de estudo</b> — para decisões clínicas reais, consultar sempre as fontes primárias.",
+  "nota": "<b>Nota:</b> O Bateman Horne Center Clinical Care Guide 2025 é a guideline mais recente especificamente para ME/CFS, Long COVID e síndromes pós-virais relacionadas. A literatura sobre fadiga em ambulatório é heterogénea — diferentes estudos usam definições diferentes (1 mês vs 6 meses), o que dificulta comparações directas.",
+  "grupos": [
+   {
+    "titulo": "Guidelines clínicas internacionais",
+    "itens": [
+     {
+      "num": "01",
+      "autores": "Bateman Horne Center",
+      "titulo": "Clinical Care Guide: Managing ME/CFS, Long COVID & IACCs (First Edition 2025)",
+      "fonte": "Bateman Horne Center, Maio 2025",
+      "badge": "Guideline 2025",
+      "badgeTipo": "forte",
+      "url": "https://batemanhornecenter.org/wp-content/uploads/2025/05/Clinical-Care-Guide-First-Edition-2025-1.pdf"
+     },
+     {
+      "num": "02",
+      "autores": "NICE — National Institute for Health and Care Excellence",
+      "titulo": "Myalgic encephalomyelitis (or encephalopathy)/chronic fatigue syndrome: diagnosis and management — NG206",
+      "fonte": "NICE Guideline, 2021 (em vigor)",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://www.nice.org.uk/guidance/ng206"
+     },
+     {
+      "num": "03",
+      "autores": "Latimer KM (American Family Physician)",
+      "titulo": "Fatigue in Adults: Evaluation and Management",
+      "fonte": "AAFP — American Family Physician, 2023;108(1):58-69",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://www.aafp.org/pubs/afp/issues/2023/0700/fatigue-adults.html"
+     },
+     {
+      "num": "04",
+      "autores": "Institute of Medicine (NAM)",
+      "titulo": "Beyond Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness",
+      "fonte": "National Academies Press, 2015 (critérios em vigor)",
+      "badge": "Critérios diagnósticos",
+      "badgeTipo": "forte",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK274235/"
+     }
+    ]
+   },
+   {
+    "titulo": "Guidelines portuguesas (DGS)",
+    "itens": [
+     {
+      "num": "PT1",
+      "autores": "Direção-Geral da Saúde",
+      "titulo": "Norma nº 002/2022 — Abordagem Clínica da Condição pós-COVID-19",
+      "fonte": "DGS, 2022",
+      "badge": "Norma DGS",
+      "badgeTipo": "forte",
+      "url": ""
+     },
+     {
+      "num": "PT2",
+      "autores": "Direção-Geral da Saúde",
+      "titulo": "Norma nº 017/2016 (atualizada 2017) — Abordagem Diagnóstica e Terapêutica da Fibromialgia",
+      "fonte": "DGS, 2016/2017",
+      "badge": "Norma DGS",
+      "badgeTipo": "forte",
+      "url": ""
+     }
+    ]
+   },
+   {
+    "titulo": "Literatura primária recente (2024-2025)",
+    "itens": [
+     {
+      "num": "05",
+      "autores": "White B, Renzi C, Rafiq M, Abel GA, Jensen H, Lyratzopoulos G",
+      "titulo": "Risk of cancer following primary care presentation with fatigue: a population-based cohort study",
+      "fonte": "British Journal of General Practice (BJGP), 2025",
+      "badge": "Artigo 2025",
+      "badgeTipo": "condicional",
+      "url": "https://bjgp.org/content/early/2025/02/24/BJGP.2024.0511"
+     },
+     {
+      "num": "06",
+      "autores": "Komaroff AL, Davis R, et al.",
+      "titulo": "Patient-reported treatment outcomes in ME/CFS and long COVID (3900+ doentes)",
+      "fonte": "PNAS, 2025;122(28):e2426874122",
+      "badge": "Artigo 2025",
+      "badgeTipo": "condicional",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2426874122"
+     },
+     {
+      "num": "07",
+      "autores": "Walitt B, Singh K, LaMunion SR, Hallett M, et al. (NIH)",
+      "titulo": "Deep phenotyping of post-infectious myalgic encephalomyelitis/chronic fatigue syndrome",
+      "fonte": "Nature Communications, 2024;15:907",
+      "badge": "Artigo 2024",
+      "badgeTipo": "condicional",
+      "url": "https://www.nature.com/articles/s41467-024-45107-3"
+     },
+     {
+      "num": "08",
+      "autores": "Eaton-Fitch N, Rudd P, et al.",
+      "titulo": "Immune exhaustion in ME/CFS and long COVID",
+      "fonte": "JCI Insight, 2024;9:e183810",
+      "badge": "Artigo 2024",
+      "badgeTipo": "condicional",
+      "url": "https://insight.jci.org/articles/view/183810"
+     },
+     {
+      "num": "09",
+      "autores": "Greenhalgh T, Sivan M, Perlowski A, Nikolich J",
+      "titulo": "Long COVID: A clinical update",
+      "fonte": "The Lancet, 2024;404:707-724",
+      "badge": "Revisão 2024",
+      "badgeTipo": "condicional",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01136-X"
+     }
+    ]
+   },
+   {
+    "titulo": "Revisões sistemáticas",
+    "itens": [
+     {
+      "num": "10",
+      "autores": "Stadje R, Dornieden K, Baum E, Becker A, Biroga T, Bösner S, et al.",
+      "titulo": "The differential diagnosis of tiredness: a systematic review",
+      "fonte": "BMC Family Practice, 2016;17:147",
+      "badge": "Revisão sistemática",
+      "badgeTipo": "condicional",
+      "url": "https://bmcprimcare.biomedcentral.com/articles/10.1186/s12875-016-0545-5"
+     },
+     {
+      "num": "11",
+      "autores": "Larun L, Brurberg KG, Odgaard-Jensen J, Price JR",
+      "titulo": "Exercise therapy for chronic fatigue syndrome",
+      "fonte": "Cochrane Database of Systematic Reviews, 2019",
+      "badge": "Cochrane",
+      "badgeTipo": "condicional",
+      "url": ""
+     },
+     {
+      "num": "11b",
+      "autores": "Tsai IC, Hsu CW, Chang CH, Tseng PT, Chang KV",
+      "titulo": "Effectiveness of Coenzyme Q10 Supplementation for Reducing Fatigue: Systematic Review and Meta-Analysis of 13 RCTs (n=1126)",
+      "fonte": "Frontiers in Pharmacology, 2022;13:883251",
+      "badge": "Meta-análise Q10",
+      "badgeTipo": "condicional",
+      "url": ""
+     },
+     {
+      "num": "11c",
+      "autores": "Systematic Review and Meta-Analysis",
+      "titulo": "Coenzyme Q10 supplementation: limited and inconsistent effects on exercise performance, modest reduction in subjective fatigue",
+      "fonte": "British Journal of Nutrition, 2025",
+      "badge": "Meta-análise 2025",
+      "badgeTipo": "condicional",
+      "url": ""
+     }
+    ]
+   },
+   {
+    "titulo": "Escalas de avaliação validadas",
+    "itens": [
+     {
+      "num": "12",
+      "autores": "Kroenke K, Spitzer RL, Williams JB",
+      "titulo": "The PHQ-9: validity of a brief depression severity measure",
+      "fonte": "Journal of General Internal Medicine, 2001;16:606-13",
+      "badge": "Escala",
+      "badgeTipo": "condicional",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/"
+     },
+     {
+      "num": "13",
+      "autores": "Spitzer RL, Kroenke K, Williams JB, Löwe B",
+      "titulo": "A brief measure for assessing generalized anxiety disorder: the GAD-7",
+      "fonte": "Archives of Internal Medicine, 2006;166:1092-7",
+      "badge": "Escala",
+      "badgeTipo": "condicional",
+      "url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/410326"
+     },
+     {
+      "num": "14",
+      "autores": "Chung F, Yegneswaran B, Liao P, et al.",
+      "titulo": "STOP questionnaire: a tool to screen patients for obstructive sleep apnea",
+      "fonte": "Anesthesiology, 2008;108:812-21",
+      "badge": "Escala",
+      "badgeTipo": "condicional",
+      "url": "https://pubs.asahq.org/anesthesiology/article/108/5/812/9426/"
+     },
+     {
+      "num": "15",
+      "autores": "Johns MW",
+      "titulo": "A new method for measuring daytime sleepiness: the Epworth sleepiness scale",
+      "fonte": "Sleep, 1991;14:540-5",
+      "badge": "Escala",
+      "badgeTipo": "condicional",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1798888/"
+     }
+    ]
+   },
+   {
+    "titulo": "Manuais de referência",
+    "itens": [
+     {
+      "num": "16",
+      "autores": "Stern SDC, Cifu AS, Altkorn D",
+      "titulo": "Symptom to Diagnosis: An Evidence-Based Guide (4th ed.) — Cap. Fatigue",
+      "fonte": "McGraw-Hill Education, 2020",
+      "badge": "Manual",
+      "badgeTipo": "fraca",
+      "url": "https://accessmedicine.mhmedical.com/book.aspx?bookid=2715"
+     }
+    ]
+   }
+  ],
+  "termos": "Este guia destina-se exclusivamente a estudo e referência educativa. Não é dispositivo médico no âmbito do Regulamento (UE) 2017/745. Não emite diagnósticos nem recomendações terapêuticas personalizadas — apresenta o que as guidelines e a literatura descrevem como abordagens habituais. Não substitui avaliação clínica directa. O utilizador é responsável pela aplicação adequada do conhecimento em contexto profissional."
+ },
+ "glossario": {
+  "titulo": "Glossário",
+  "sub": "Siglas, escalas e conceitos usados neste guia. Pesquisa a partir de 2 letras.",
+  "termos": [
+   {
+    "term": "CBT",
+    "full": "Cognitive Behavioural Therapy",
+    "desc": "Terapia Cognitivo-Comportamental — psicoterapia estruturada que ajuda a identificar e modificar padrões de pensamento e comportamento. Na fadiga crónica, já não é considerada curativa (NICE 2021), apenas adjuvante.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "PEM",
+    "full": "Post-Exertional Malaise",
+    "desc": "Mal-estar pós-esforço — agravamento desproporcional dos sintomas após esforço físico ou mental, com recuperação prolongada (24-72h ou mais). Característica patognomónica da EM/SFC e marcador-chave do Long COVID.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "EM/SFC",
+    "full": "Encefalomielite Miálgica / Síndrome de Fadiga Crónica",
+    "desc": "Doença crónica multissistémica com fadiga profunda, PEM, sono não reparador e disfunção cognitiva. Critérios NAM 2015. Diagnóstico de exclusão.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "SAOS",
+    "full": "Síndrome de Apneia Obstrutiva do Sono",
+    "desc": "Colapso repetido da via aérea superior durante o sono → apneias/hipopneias → dessaturação → sono fragmentado → sonolência diurna e fadiga. Confirmação por polissonografia.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "ISRS",
+    "full": "Inibidores Selectivos da Recaptação da Serotonina",
+    "desc": "Classe de antidepressivos (sertralina, fluoxetina, escitalopram). Primeira linha na depressão e ansiedade. Mecanismo: bloqueio selectivo da recaptação de serotonina na fenda sináptica.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "BZD",
+    "full": "Benzodiazepinas",
+    "desc": "Classe farmacológica (diazepam, alprazolam, lorazepam). Contraindicadas na fibromialgia e EM/SFC — sem benefício demonstrado e risco de dependência. Desmame progressivo se em uso.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "IRSN",
+    "full": "Inibidores da Recaptação de Serotonina e Noradrenalina",
+    "desc": "Duloxetina, venlafaxina. Úteis na fibromialgia (duloxetina é 1ª linha farmacológica). Duplo mecanismo: serotonina + noradrenalina.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "GET",
+    "full": "Graded Exercise Therapy",
+    "desc": "Exercício graduado — RETIRADO pelo NICE 2021 como tratamento da EM/SFC por evidência de danos. Em presença de PEM, pode causar deterioração permanente. Substituído por pacing.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "POTS",
+    "full": "Postural Orthostatic Tachycardia Syndrome",
+    "desc": "Taquicardia ortostática (Δ FC ≥30 bpm em 10 min de ortostatismo). Frequente no Long COVID e EM/SFC. Sintomas: tonturas, palpitações, fadiga ao levantar.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "TSH",
+    "full": "Thyroid-Stimulating Hormone",
+    "desc": "Hormona estimulante da tiróide. Primeiro exame na suspeita de disfunção tiroideia. TSH elevada → hipotiroidismo (causa frequente de fadiga). TSH baixa → hipertiroidismo.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "VS",
+    "full": "Velocidade de Sedimentação",
+    "desc": "Marcador inflamatório inespecífico. VS >50-100 mm/h sugere doença autoimune activa, infecção crónica, mieloma ou polimialgia reumática. Muito informativo em idoso com fadiga + rigidez.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "PCR",
+    "full": "Proteína C-Reactiva",
+    "desc": "Marcador de inflamação aguda. Mais específica que a VS para infecção/inflamação activa. Elevação marcada em infecções bacterianas, doenças autoimunes activas.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "ANA",
+    "full": "Anticorpos Antinucleares",
+    "desc": "Rastreio de doenças autoimunes sistémicas (LES, Sjögren, esclerose sistémica). ANA positivo não é diagnóstico isolado — deve ser interpretado no contexto clínico.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "LES",
+    "full": "Lúpus Eritematoso Sistémico",
+    "desc": "Doença autoimune sistémica com fadiga, artrite, rash malar, nefrite. Diagnóstico: ANA + anti-dsDNA + complemento baixo + clínica compatível.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "HTA",
+    "full": "Hipertensão Arterial",
+    "desc": "Pressão arterial sustentadamente elevada (≥140/90 mmHg). Relevante na fadiga: HTA resistente é red flag para SAOS.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "IC",
+    "full": "Insuficiência Cardíaca",
+    "desc": "Incapacidade do coração de manter débito adequado. Fadiga e dispneia de esforço são sintomas cardinais. Pro-BNP/NT-proBNP é o biomarcador de rastreio.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "RCIU",
+    "full": "Restrição do Crescimento Intrauterino",
+    "desc": "Feto com peso estimado <percentil 10. Complicação possível da asma/doenças crónicas descontroladas na gravidez.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "EBV",
+    "full": "Epstein-Barr Virus",
+    "desc": "Vírus da mononucleose infecciosa. Causa fadiga prolongada (semanas a meses). Diagnóstico: Paul-Bunnell ou serologia (anti-VCA IgM). Rash com amoxicilina em 70-100%.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "CPAP",
+    "full": "Continuous Positive Airway Pressure",
+    "desc": "Ventilação por pressão positiva contínua — tratamento de 1ª linha da SAOS moderada a grave. Requer polissonografia prévia (não iniciar empiricamente).",
+    "cat": "Sigla"
+   },
+   {
+    "term": "NNT",
+    "full": "Number Needed to Treat",
+    "desc": "Número de doentes que é necessário tratar para prevenir um evento adverso. Quanto menor o NNT, mais eficaz o tratamento.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "IACCs",
+    "full": "Infection-Associated Chronic Conditions",
+    "desc": "Condições crónicas associadas a infecção — termo que engloba EM/SFC, Long COVID e outras síndromes pós-infecciosas. Usado no Bateman Horne Center Clinical Care Guide 2025.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "PHQ-9",
+    "full": "Patient Health Questionnaire-9",
+    "desc": "Questionário de 9 perguntas para rastreio e avaliação da gravidade da depressão. Score 0-27. ≥10 sugere depressão moderada. ≥15 grave. Validado em cuidados primários. Pergunta 9 avalia ideação suicida.",
+    "cat": "Escala"
+   },
+   {
+    "term": "GAD-7",
+    "full": "Generalized Anxiety Disorder-7",
+    "desc": "Questionário de 7 perguntas para rastreio de ansiedade generalizada. Score 0-21. ≥10 sugere ansiedade moderada. Muito usado em conjunto com PHQ-9.",
+    "cat": "Escala"
+   },
+   {
+    "term": "STOP-BANG",
+    "full": "Snoring, Tiredness, Observed apnea, Pressure, BMI, Age, Neck, Gender",
+    "desc": "Questionário de 8 itens para rastreio de SAOS. Score ≥3 risco intermédio, ≥5 risco elevado. Não substitui polissonografia para diagnóstico.",
+    "cat": "Escala"
+   },
+   {
+    "term": "Epworth",
+    "full": "Epworth Sleepiness Scale",
+    "desc": "Escala de sonolência diurna — 8 situações do dia-a-dia, score 0-24. >10 sugere sonolência diurna significativa. Diferencia sonolência (SAOS) de fadiga (outras causas).",
+    "cat": "Escala"
+   },
+   {
+    "term": "CARAT",
+    "full": "Control of Allergic Rhinitis and Asthma Test",
+    "desc": "Ferramenta validada em Portugal para avaliar controlo simultâneo de rinite alérgica e asma. Útil no seguimento em cuidados primários.",
+    "cat": "Escala"
+   },
+   {
+    "term": "Pacing",
+    "full": "Activity pacing / Gestão do envelope energético",
+    "desc": "Estratégia de gestão de atividade na EM/SFC e Long COVID. Consiste em adequar a atividade ao \"envelope energético\" disponível, evitando ultrapassar o limiar que desencadeia PEM. Substituiu o GET como abordagem recomendada (NICE 2021).",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Envelope energético",
+    "full": "Energy envelope theory",
+    "desc": "Conceito usado no pacing: cada pessoa com EM/SFC tem um limite de energia disponível (envelope). Ultrapassar esse limite desencadeia PEM. O objectivo é manter-se dentro do envelope.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Fadiga crónica",
+    "full": "Fadiga com duração >6 meses",
+    "desc": "Fadiga persistente >6 meses que interfere com a funcionalidade. Não é sinónimo de EM/SFC — é um sintoma que pode ter múltiplas causas (orgânicas, psiquiátricas, funcionais).",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Fadiga subaguda",
+    "full": "Fadiga com duração 1-6 meses",
+    "desc": "Fadiga que persiste entre 1 e 6 meses. Período em que se justifica investigação analítica se não realizada. Muitas causas virais resolvem neste período.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "MART",
+    "full": "Maintenance And Reliever Therapy",
+    "desc": "Terapia de manutenção e alívio com o mesmo inalador (ICS-formoterol). Usado na asma — cada dose de alívio traz automaticamente corticosteroide inalado.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Polimialgia reumática",
+    "full": "PMR",
+    "desc": "Doença inflamatória >50 anos com rigidez matinal nas cinturas >30 min e VS muito elevada (>40-50). Resposta dramática a prednisolona 15mg/dia em 24-72h. Excluir sempre arterite temporal.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Tríade de Samter",
+    "full": "AERD — Aspirin-Exacerbated Respiratory Disease",
+    "desc": "Asma + polipose nasal + reação respiratória a AINEs. Não é alergia IgE-mediada. Inibição da COX-1 desvia metabolismo para leucotrienos. Paracetamol ≤1g habitualmente tolerado.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Fibromialgia",
+    "full": "Síndrome de dor crónica generalizada",
+    "desc": "Dor musculoesquelética difusa + fadiga + sono não reparador + disfunção cognitiva. Diagnóstico clínico. 1ª linha: exercício aeróbico + CBT + higiene do sono. Opióides e BZD contraindicados.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Long COVID",
+    "full": "Condição pós-COVID-19",
+    "desc": "Fadiga (ou outros sintomas) persistente >3 meses após infecção por SARS-CoV-2. Diagnóstico clínico. Em presença de PEM → sobreposição com EM/SFC, mesma abordagem de pacing.",
+    "cat": "Conceito"
+   }
+  ]
+ }
+}
