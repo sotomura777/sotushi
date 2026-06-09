@@ -1291,3 +1291,35 @@ mark {
 .vac h1, .vac h2, .vac h3, .vac .page-title { font-family: var(--fonte-display); font-weight: 600; }
 .vac .view { display: block; }            /* renderizamos uma vista de cada vez */
 .vac .toolbar { display: none; }          /* navegação tratada pela app */
+
+/* ============================================================
+   MODO NOTURNO — remapeia os tokens do módulo (claro→escuro)
+   e corrige as superfícies que tinham branco fixo.
+   ============================================================ */
+.dark .vac, .dark .vac-menu {
+  --ink: #f0f2f5;
+  --ink-soft: #c2c8d2;
+  --ink-mute: #8a92a6;
+  --line: #2a2f3d;
+  --line-soft: #222630;
+  --bg: transparent;
+  --card: #1b1f29;
+  --teal-soft: rgba(91, 196, 184, 0.16);
+  --teal-light: rgba(91, 196, 184, 0.28);
+  --warn-bg: rgba(245, 200, 66, 0.12);
+  --warn-text: #e6cf8f;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+/* superfícies com cor fixa (não usam os tokens acima) */
+.dark .vac .sp-matrix tbody td:first-child { background: var(--card); color: var(--ink-soft); }
+.dark .vac .region-panel-header { background: var(--card); }
+.dark .vac .region-detail-hero::before { background: linear-gradient(135deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.12) 100%); }
+.dark .vac .region-detail-hero .stat { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.14); }
+.dark .vac .region-side-card-warn,
+.dark .vac .travel-disclaimer { background: var(--warn-bg); border-color: var(--warn-border); }
+.dark .vac .region-side-card-warn h4,
+.dark .vac .region-side-card-warn p,
+.dark .vac .travel-disclaimer,
+.dark .vac .travel-disclaimer strong { color: var(--warn-text); }
