@@ -1,10 +1,11 @@
 import { useState, useMemo } from "react";
 import dados from "@conteudo/urgencia/cansaco-anamnese.json";
 import { normalizar } from "@/lib/texto";
-import { estadoInicial, ageNum, pontuar, genNote, sonoInsuf } from "./cansaco-anamnese-logica.js";
+import { estadoInicial, ageNum, genNote, sonoInsuf } from "./cansaco-anamnese-logica.js";
 
 const { ageBuckets: AGE_BUCKETS, symCats: SYM_CATS, syms: SYMS, alms: ALMS, drgcls: DRGCLS, ants: ANTS, ui } = dados;
-const PASSOS = [0, 1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Sem passo de discussão de hipóteses (decisão de produto): EO → nota-exemplo → bibliografia.
+const PASSOS = [0, 1, 1.5, 2, 3, 4, 5, 6, 7, 9, 10];
 const has = (a, v) => a.indexOf(v) >= 0;
 const tog = (a, v) => (has(a, v) ? a.filter((x) => x !== v) : [...a, v]);
 
@@ -61,7 +62,6 @@ export default function CansacoAnamnese({ accent = "#e85d4a", voltar, embutido =
   const irPara = (i) => { setD({ step: PASSOS[Math.max(0, Math.min(PASSOS.length - 1, i))] }); window.scrollTo({ top: 0 }); };
   const podeAvancar = D.step !== 0 || (D.sexo && D.idade);
 
-  const disc = useMemo(() => (D.step === 8 ? pontuar(D) : null), [D]);
   const nota = useMemo(() => genNote(D, D.step), [D]);
 
   // ── passos ──
@@ -476,88 +476,6 @@ export default function CansacoAnamnese({ accent = "#e85d4a", voltar, embutido =
     </Passo>
   );
 
-  const passo8 = disc && (
-    <Passo titulo="Discussão de hipóteses" sub="Organiza o teu raciocínio">
-      <Html className="ca-an-disclaimer" html={ui.disc.disclaimer} />
-      {D.alm.length > 0 && (
-        <div className="ca-an-alm-box">
-          <button className="ca-an-alm-head" onClick={() => setD({ almOpen: !D.almOpen })}>
-            <span>⚠ {D.alm.length === 1 ? "Sinal de alarme presente" : `Sinais de alarme presentes (${D.alm.length})`}</span>
-            <span>{D.almOpen ? "▲" : "▼"}</span>
-          </button>
-          {D.almOpen && (
-            <div className="ca-an-alm-body">
-              <Html html={ui.disc.almIntro} />
-              <div className="ca-an-alm-lista">
-                {D.alm.map((a) => (
-                  <div key={a} className="ca-an-alm-item">
-                    <div className="ca-an-alm-nome">{ui.disc.almLabels[a] || a}</div>
-                    <div>{ui.disc.almHints[a] || ""}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-      {disc.ordered.length === 0
-        ? <div className="ca-an-vazio">{ui.disc.semHipoteses}</div>
-        : (
-          <>
-            <div className="ca-an-disc-header">{ui.disc.header}</div>
-            {disc.ordered.map((d) => {
-              const aberto = D.expCard === d.id;
-              const info = ui.dxFull[d.id];
-              return (
-                <div key={d.id} className={"ca-an-dx" + (d.fail ? " fail" : "") + (aberto ? " aberto" : "")}>
-                  <button className="ca-an-dx-head" onClick={() => setD({ expCard: aberto ? null : d.id })}>
-                    <span className="ca-an-dx-nome">{d.l}</span>
-                    <span className="ca-an-dx-ver">{aberto ? "fechar ▲" : "ver mais ▼"}</span>
-                  </button>
-                  {d.triade && !aberto && <div className="ca-an-triade">⚡ {d.triade}</div>}
-                  {d.pos.length > 0 && <div className="ca-an-dx-pts"><span className="ca-ok">A favor:</span> {d.pos.join(", ")}.</div>}
-                  {d.neg.length > 0 && <div className="ca-an-dx-pts"><span className="ca-err">Contra:</span> {d.neg.join(", ")}.</div>}
-                  {d.failMsg && <div className="ca-an-failmsg">{d.failMsg}</div>}
-                  {aberto && (
-                    <div className="ca-an-dx-det">
-                      {d.triade && <div className="ca-an-triade destaque">⚡ {d.triade}</div>}
-                      {d.nota && <Html className="ca-an-nota-dx" html={d.nota} />}
-                      {info ? (
-                        <>
-                          {info.desc && <div className="ca-an-dx-desc">{info.desc}</div>}
-                          {info.sintomas?.length > 0 && (<><div className="ca-an-dx-sec">Sintomas e sinais a procurar</div><ul>{info.sintomas.map((s, i) => <li key={i}>{s}</li>)}</ul></>)}
-                          {info.escalas?.length > 0 && (<><div className="ca-an-dx-sec">Escalas e instrumentos</div><ul>{info.escalas.map((s, i) => <li key={i}>{s}</li>)}</ul></>)}
-                          {info.inv?.length > 0 && (<><div className="ca-an-dx-sec">Investigação dirigida</div><ul>{info.inv.map((s, i) => <li key={i}>{s}</li>)}</ul></>)}
-                        </>
-                      ) : <div className="ca-an-dx-desc">{ui.disc.dxDetailFallback}</div>}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </>
-        )}
-      {disc.factores.length > 0 && (
-        <div className="ca-an-factores">
-          <div className="ca-an-fact-t">{ui.disc.factoresTitulo}</div>
-          <div className="ca-an-fact-sub">{ui.disc.factoresSub}</div>
-          {disc.factores.map((f) => (
-            <div key={f.id} className="ca-an-fact">
-              <div className="ca-an-fact-nome">{f.name}</div>
-              <div>{f.txt}</div>
-            </div>
-          ))}
-          {disc.factores.some((f) => f.tipo === "hab") && (
-            <div className="ca-an-q10">
-              <div className="ca-an-fact-nome">{ui.disc.q10Titulo}</div>
-              <Html html={ui.disc.q10Texto} />
-            </div>
-          )}
-        </div>
-      )}
-    </Passo>
-  );
-
   const passo9 = (
     <Passo titulo="Exemplo de nota clínica" sub="Estrutura pedagógica">
       <div className="ca-an-como"><Html html={ui.notaIntro} /></div>
@@ -592,7 +510,7 @@ export default function CansacoAnamnese({ accent = "#e85d4a", voltar, embutido =
     </Passo>
   );
 
-  const conteudo = { 0: passo0, 1: passo1, 1.5: passo15, 2: passo2, 3: passo3, 4: passo4, 5: passo5, 6: passo6, 7: passo7, 8: passo8, 9: passo9, 10: passo10 }[D.step];
+  const conteudo = { 0: passo0, 1: passo1, 1.5: passo15, 2: passo2, 3: passo3, 4: passo4, 5: passo5, 6: passo6, 7: passo7, 9: passo9, 10: passo10 }[D.step];
 
   return (
     <div className={embutido ? undefined : "ca ob-page"}>
@@ -619,7 +537,7 @@ export default function CansacoAnamnese({ accent = "#e85d4a", voltar, embutido =
         {idx > 0 && <button className="ca-btn-out" onClick={() => irPara(idx - 1)}>← Anterior</button>}
         {idx < PASSOS.length - 1 && (
           <button className="ca-btn" style={{ flex: 1 }} disabled={!podeAvancar} onClick={() => podeAvancar && irPara(idx + 1)}>
-            {D.step === 8 ? "Ver exemplo de nota clínica →" : D.step === 9 ? "Ver bibliografia →" : "Continuar →"}
+            {D.step === 7 ? "Ver exemplo de nota clínica →" : D.step === 9 ? "Ver bibliografia →" : "Continuar →"}
           </button>
         )}
       </div>
