@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import dados from "@conteudo/urgencia/cansaco-quiz.json";
+import { Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 
 const LETRAS = "ABCDE";
@@ -36,7 +37,7 @@ export default function CansacoQuiz({ accent = "#e85d4a", voltar }) {
   const [onboardVisto, setOnboardVisto] = useEstadoLocal("medguia:cansaco:quiz:onboard", false);
   const [modoPna, setModoPna] = useEstadoLocal("medguia:cansaco:quiz:pna", false);
   const [sabidas, setSabidas] = useEstadoLocal("medguia:cansaco:quiz:dicas-sabidas", []);
-  const [aba, setAba] = useState("quiz");
+  const [dicasAbertas, setDicasAbertas] = useState(false);
   const [sessao, setSessao] = useState(() => novaSessao(historico));
   const [atual, setAtual] = useState(0);
   const [respostas, setRespostas] = useState({});
@@ -67,13 +68,13 @@ export default function CansacoQuiz({ accent = "#e85d4a", voltar }) {
   const total = sessao.ordem.length;
 
   return (
-    <div className="ca ob-page" style={{ "--acento": accent }}>
+    <div className="ca ob-page">
       {!onboardVisto && (
         <div className="ca-onboard-bg">
           <div className="ca-onboard">
             <div className="ca-menu-eyebrow">{dados.onboarding.eyebrow}</div>
             <div className="ca-onboard-titulo">{dados.onboarding.titulo}</div>
-            <p className="ca-onboard-contexto">{dados.onboarding.contexto}</p>
+            <p className="ca-onboard-contexto" dangerouslySetInnerHTML={{ __html: dados.onboarding.contexto }} />
             {dados.onboarding.passos.map((p, i) => (
               <div key={i} className="ca-onboard-passo"><span className="ca-onboard-num">{i + 1}</span><span dangerouslySetInnerHTML={{ __html: p }} /></div>
             ))}
@@ -85,39 +86,53 @@ export default function CansacoQuiz({ accent = "#e85d4a", voltar }) {
       <button className="ob-voltar" onClick={voltar}>‹ Menu Cansaço</button>
       <h1 className="ob-titulo">{dados.titulo}</h1>
       <p className="ca-hero-sub">{dados.sub}</p>
-      <div className="ob-aviso">{dados.disclaimer}</div>
+      <div className="ob-aviso" dangerouslySetInnerHTML={{ __html: dados.disclaimer }} />
 
-      <div className="ob-sub">
-        <button className={"ob-sub-btn" + (aba === "quiz" ? " ativo" : "")} onClick={() => setAba("quiz")}>Casos clínicos</button>
-        <button className={"ob-sub-btn" + (aba === "dicas" ? " ativo" : "")} onClick={() => setAba("dicas")}>Dicas de estudo</button>
-        <button className={"ob-sub-btn ca-pna" + (modoPna ? " ativo" : "")} onClick={() => setModoPna((m) => !m)} title="Mostra a dica de memorização após responder">Modo PNA {modoPna ? "✓" : ""}</button>
+      <div className="ca-pna-wrap">
+        <button className={"ca-pna-btn" + (modoPna ? " on" : "")} onClick={() => setModoPna((m) => !m)} title="Activa para ver dicas de memorização para o exame">
+          <span className="ca-pna-dot" />Modo PNA
+        </button>
       </div>
 
-      {aba === "dicas" && (
-        <>
-          <div className="filtros" style={{ marginBottom: 14 }}>
-            {Object.keys(dados.dicas).map((c) => (
-              <button key={c} className={"filtro" + (dicaCat === c ? " filtro--ativo" : "")} style={dicaCat === c ? { background: "var(--acento)" } : undefined} onClick={() => setDicaCat(c)}>{c}</button>
-            ))}
-          </div>
-          <div className="ca-dicas">
-            {dados.dicas[dicaCat].map((d, i) => {
-              const id = dicaCat + "::" + i;
-              const sabe = sabidas.includes(id);
-              return (
-                <div key={i} className={"ca-dica" + (sabe ? " sabida" : "")}>
-                  <div className="ca-dica-texto" dangerouslySetInnerHTML={{ __html: d }} />
-                  <button className="ca-dica-sei" onClick={() => setSabidas((s) => (sabe ? s.filter((x) => x !== id) : [...s, id]))}>
-                    {sabe ? "Já sei ✓" : "Marcar como sabida"}
+      {modoPna && (
+        <div className={"ca-tips" + (dicasAbertas ? " open" : "")}>
+          <button className="ca-tips-toggle" onClick={() => setDicasAbertas((a) => !a)}>
+            <Ico name="bulb" s={18} />
+            <span className="ca-tips-label">Dicas</span>
+            <span className="ca-tips-arrow">▼</span>
+          </button>
+          {dicasAbertas && (
+            <>
+              <div className="ca-tips-tabs">
+                {Object.keys(dados.dicas).map((c) => (
+                  <button key={c} className={"ca-tips-tab" + (dicaCat === c ? " ativo" : "")} onClick={() => setDicaCat(c)}>
+                    {c}<span className="ca-tips-count">{dados.dicas[c].length}</span>
                   </button>
-                </div>
-              );
-            })}
-          </div>
-        </>
+                ))}
+              </div>
+              <div className="ca-tips-content">
+                {dados.dicas[dicaCat].map((d, i) => {
+                  const id = dicaCat + "::" + i;
+                  const sabe = sabidas.includes(id);
+                  return (
+                    <div key={i} className={"ca-tips-item" + (sabe ? " sabida" : "")}>
+                      <button className="ca-tips-check" title={sabe ? "Desmarcar" : "Marcar como sabida"}
+                        onClick={() => setSabidas((s) => (sabe ? s.filter((x) => x !== id) : [...s, id]))}>{sabe ? "✓" : ""}</button>
+                      <div className="ca-tips-texto" dangerouslySetInnerHTML={{ __html: d }} />
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="ca-tips-footer">
+                <span className="ca-tips-progress">{sabidas.length} {sabidas.length === 1 ? "sabida" : "sabidas"}</span>
+                <button className="ca-tips-reset" onClick={() => setSabidas([])}>Repor dicas iniciais</button>
+              </div>
+            </>
+          )}
+        </div>
       )}
 
-      {aba === "quiz" && vista === "resultados" && (
+      {vista === "resultados" && (
         <div className="ca-resultados">
           <div className="ca-res-pct">{total ? Math.round((score.certas / total) * 100) : 0}%</div>
           <div className="ca-res-label">{score.certas} de {total} corretas</div>
@@ -145,15 +160,8 @@ export default function CansacoQuiz({ accent = "#e85d4a", voltar }) {
         </div>
       )}
 
-      {aba === "quiz" && vista === "pergunta" && (
+      {vista === "pergunta" && (
         <>
-          <div className="ca-scorebar">
-            <span>Caso <b>{Math.min(atual + 1, total)}</b>/{total}</span>
-            <span className="ca-ok">✓ {score.certas}</span>
-            <span className="ca-err">✗ {score.erradas}</span>
-            <span>{score.certas + score.erradas > 0 ? Math.round((score.certas / (score.certas + score.erradas)) * 100) : 0}%</span>
-          </div>
-
           <div className="ca-qcard">
             <div className="ca-qnum">Caso clínico {atual + 1} de {total}</div>
             <div className="ca-vignette">{caso.vignette}</div>
@@ -209,6 +217,13 @@ export default function CansacoQuiz({ accent = "#e85d4a", voltar }) {
                 </div>
               </>
             )}
+          </div>
+
+          <div className="ca-q-stats">
+            <div><strong className="roxo">{Math.min(atual + 1, total)}</strong><span>Pergunta</span></div>
+            <div><strong className="ok">{score.certas}</strong><span>Corretas</span></div>
+            <div><strong className="err">{score.erradas}</strong><span>Erradas</span></div>
+            <div><strong>{score.certas + score.erradas > 0 ? Math.round((score.certas / (score.certas + score.erradas)) * 100) : 0}%</strong><span>Acerto</span></div>
           </div>
         </>
       )}

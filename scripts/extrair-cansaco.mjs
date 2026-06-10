@@ -270,8 +270,20 @@ function menuCard(cls, destino) {
     cta: grab(seg, /class="card-cta">([^<]+)</, cls + "-cta"),
   };
 }
+// modal "Como queres estudar?" (cartão Cards do menu)
+const moCards = [...homeSrc.matchAll(/class="mo-badge">([^<]+)<\/span>\s*<div class="mo-name">([^<]+)<\/div>\s*<div class="mo-desc">([^<]+)<\/div>[\s\S]*?class="mo-cta">([^<]+)</g)]
+  .map((m) => ({ badge: m[1], nome: m[2], desc: clean(m[3]), cta: m[4] }));
+if (moCards.length !== 2) throw new Error("esperava 2 opções no modal de cards, vieram " + moCards.length);
+const modalCards = {
+  eyebrow: grab(homeSrc, /class="modal-eyebrow">([^<]+)</, "modal-eyebrow"),
+  titulo: clean(grab(homeSrc, /class="modal-title">([\s\S]*?)<\/h2>/, "modal-titulo")).replace(/<\/?em>/g, ""),
+  sub: grab(homeSrc, /class="modal-sub">([^<]+)</, "modal-sub"),
+  opcoes: moCards,
+};
+
 const menu = {
   pill: clean(grab(homeSrc, /class="hero-pill-text">([\s\S]*?)<\/span>/, "pill")).replace(/&middot;/g, "·").replace(/&amp;/g, "&"),
+  modalCards,
   heroSub: clean(grab(homeSrc, /class="hero-sub">([\s\S]*?)<\/p>/, "heroSub")),
   eyebrow: grab(homeSrc, /class="cards-eyebrow">([^<]+)</, "menu-eyebrow"),
   label: clean(grab(homeSrc, /class="cards-label">([\s\S]*?)<\/div>/, "menu-label")).replace(/<\/?em>/g, ""),

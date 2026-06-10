@@ -3,6 +3,25 @@
  "titulo": "Cansaço / Fadiga",
  "menu": {
   "pill": "Sintoma · Cansaço & Fadiga",
+  "modalCards": {
+   "eyebrow": "Card 03 · Cards de Estudo",
+   "titulo": "Como queres estudar?",
+   "sub": "Dois modos: cards de diagnóstico do guia ou flashcards de pergunta-resposta.",
+   "opcoes": [
+    {
+     "badge": "Diagnósticos",
+     "nome": "Cards",
+     "desc": "Diagnósticos diferenciais em accordion no guia teórico. Clínica, investigação e tratamento de cada um.",
+     "cta": "Abrir cards"
+    },
+    {
+     "badge": "Revisão rápida",
+     "nome": "Flashcards",
+     "desc": "Pergunta-resposta com flip animado. 25 prontos + cria os teus próprios livremente.",
+     "cta": "Abrir flashcards"
+    }
+   ]
+  },
   "heroSub": "Guia de estudo sobre fadiga em ambulatório — definições, etiologia, sinais de alarme, investigação e tratamento. Com treino de anamnese, cards de revisão e casos clínicos.",
   "eyebrow": "Quatro caminhos",
   "label": "Escolhe como queres estudar",

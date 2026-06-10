@@ -204,7 +204,7 @@ export default function Vacinacao({ accent = "#3DA89C", gradiente, onVoltar }) {
                   </div>
                   <span className={"vacc-priority " + v.priority} style={{ fontSize: 11, fontWeight: 700, whiteSpace: "nowrap" }}>{ROTULO_PRIO[v.priority] || "Recomendada"}</span>
                 </div>
-                <div style={{ fontSize: 13, color: "var(--texto-2)", marginTop: 6, lineHeight: 1.5 }}>{v.info}</div>
+                <div style={{ fontSize: 13, color: "var(--texto-2)", marginTop: 6, lineHeight: 1.5 }} dangerouslySetInnerHTML={{ __html: v.info }} />
               </div>
             ))}
           </div>

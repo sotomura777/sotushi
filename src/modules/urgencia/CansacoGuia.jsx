@@ -1,10 +1,13 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import dados from "@conteudo/urgencia/cansaco.json";
 import { useEstadoLocal } from "@/lib/persistencia";
 import { useAtalhosNumericos } from "@/lib/atalhos";
 import { normalizar } from "@/lib/texto";
+import CansacoAnamnese from "./CansacoAnamnese.jsx";
+import CansacoCards from "./CansacoCards.jsx";
 
-const TABS = ["Guia Teórico", "Tratamento", "Escalas", "Fontes", "Glossário"];
+// Ordem dos separadores como no original: Cards e Anamnese entre Escalas e Fontes.
+const TABS = ["Guia Teórico", "Tratamento", "Escalas", "Cards", "Anamnese", "Fontes", "Glossário"];
 
 // HTML do conteúdo com acordeões (.g-sec): o clique no cabeçalho alterna a secção.
 function Html({ html, className }) {
@@ -29,20 +32,23 @@ function Escala({ esc }) {
         <h3>{esc.nome}</h3>
         <p>{esc.desc}</p>
       </div>
-      <div className="ca-esc-cab">{esc.cabecalho}</div>
-      {esc.itens.map((item, i) => (
-        <div key={i} className="ca-esc-item">
-          <div className="ca-esc-q"><span className="ca-esc-num">{i + 1}</span>{item}</div>
-          <div className="ca-esc-opts">
-            {esc.opcoes.map((o, v) => (
-              <button key={v} className={"ca-esc-opt" + (resp[i] === v ? " on" : "")}
-                onClick={() => setResp((r) => r.map((x, j) => (j === i ? v : x)))}>
-                {o} <span className="ca-esc-pts">{v}</span>
-              </button>
+      <div className="ca-esc-matriz">
+        <div className="ca-esc-mrow head">
+          <div className="ca-esc-cab">{esc.cabecalho}</div>
+          {esc.opcoes.map((o, v) => <div key={v} className="ca-esc-col">{o}<span>({v})</span></div>)}
+        </div>
+        {esc.itens.map((item, i) => (
+          <div key={i} className="ca-esc-mrow">
+            <div className="ca-esc-q"><span className="ca-esc-num">{i + 1}.</span>{item}</div>
+            {esc.opcoes.map((_, v) => (
+              <div key={v} className="ca-esc-cel">
+                <button className={"ca-esc-circ" + (resp[i] === v ? " on" : "")} title={esc.opcoes[v]}
+                  onClick={() => setResp((r) => r.map((x, j) => (j === i ? v : x)))}>{v}</button>
+              </div>
             ))}
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <div className="ca-esc-res">
         <div className="ca-esc-score">
           <span>{completa ? "Score total" : `${respondidas}/${esc.itens.length} respondidas`}</span>
@@ -61,13 +67,16 @@ function Escala({ esc }) {
   );
 }
 
-export default function CansacoGuia({ accent = "#e85d4a", voltar }) {
+export default function CansacoGuia({ accent = "#e85d4a", voltar, tabInicial }) {
   const [tab, setTab] = useEstadoLocal("medguia:cansaco:guia:tab", 0);
   const [gt, setGt] = useState(0);
   const [tx, setTx] = useState(0);
   const [esc, setEsc] = useState(0);
   const [glosQuery, setGlosQuery] = useState("");
-  useAtalhosNumericos(TABS.length, setTab);
+  const mudarTab = (i) => { setTab(i); window.scrollTo({ top: 0 }); };
+  useAtalhosNumericos(TABS.length, mudarTab);
+  // os cartões do menu são atalhos para separadores respetivos
+  useEffect(() => { if (tabInicial != null) mudarTab(tabInicial); }, [tabInicial]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const termosFiltrados = useMemo(() => {
     const q = normalizar(glosQuery).trim();
@@ -78,14 +87,14 @@ export default function CansacoGuia({ accent = "#e85d4a", voltar }) {
   const escTabs = [...dados.escalas.interativas.map((e) => e.tab), "Outras escalas"];
 
   return (
-    <div className="ca ob-page" style={{ "--acento": accent }}>
+    <div className="ca ob-page">
       <button className="ob-voltar" onClick={voltar}>‹ Menu Cansaço</button>
       <h1 className="ob-titulo">{dados.titulo}</h1>
       <p className="ca-hero-sub">{dados.guiaSub}</p>
 
       <div className="ob-tabs">
         {TABS.map((t, i) => (
-          <button key={i} className={"ob-tab" + (tab === i ? " ativo" : "")} onClick={() => setTab(i)}>
+          <button key={i} className={"ob-tab" + (tab === i ? " ativo" : "")} onClick={() => mudarTab(i)}>
             <span className="ob-tabnum">{i + 1}</span>{t}
           </button>
         ))}
@@ -121,9 +130,9 @@ export default function CansacoGuia({ accent = "#e85d4a", voltar }) {
         <>
           <div className="ob-section-label">{dados.escalas.titulo}</div>
           <p className="ca-lead">{dados.escalas.sub}</p>
-          <div className="ob-sub">
+          <div className="ca-esc-tabs">
             {escTabs.map((t, i) => (
-              <button key={i} className={"ob-sub-btn" + (esc === i ? " ativo" : "")} onClick={() => setEsc(i)}>{t}</button>
+              <button key={i} className={"ca-esc-tab" + (esc === i ? " ativo" : "")} onClick={() => setEsc(i)}>{t}</button>
             ))}
           </div>
           {esc < dados.escalas.interativas.length
@@ -146,10 +155,16 @@ export default function CansacoGuia({ accent = "#e85d4a", voltar }) {
         </>
       )}
 
-      {/* TAB 3 — Fontes */}
-      {tab === 3 && (
+      {/* TAB 3 — Cards (cards rápidos + flashcards) */}
+      {tab === 3 && <CansacoCards accent={accent} embutido />}
+
+      {/* TAB 4 — Treino de Anamnese */}
+      {tab === 4 && <CansacoAnamnese accent={accent} embutido />}
+
+      {/* TAB 5 — Fontes */}
+      {tab === 5 && (
         <>
-          <div className="ob-aviso">{dados.fontes.intro}</div>
+          <div className="ob-aviso" dangerouslySetInnerHTML={{ __html: dados.fontes.intro }} />
           <Html className="ca-guia" html={`<div class="g-alert g-alert-a">${dados.fontes.nota}</div>`} />
           {dados.fontes.grupos.map((g, gi) => (
             <div key={gi}>
@@ -173,8 +188,8 @@ export default function CansacoGuia({ accent = "#e85d4a", voltar }) {
         </>
       )}
 
-      {/* TAB 4 — Glossário */}
-      {tab === 4 && (
+      {/* TAB 6 — Glossário */}
+      {tab === 6 && (
         <>
           <div className="ob-section-label">{dados.glossario.titulo}</div>
           <p className="ca-lead">{dados.glossario.sub}</p>
@@ -188,7 +203,7 @@ export default function CansacoGuia({ accent = "#e85d4a", voltar }) {
                   <span className="ca-glos-cat">{t.cat}</span>
                 </div>
                 {t.full && t.full !== t.term && <div className="ca-glos-full">{t.full}</div>}
-                <div className="ca-glos-desc">{t.desc}</div>
+                <div className="ca-glos-desc" dangerouslySetInnerHTML={{ __html: t.desc }} />
               </div>
             ))}
           </div>

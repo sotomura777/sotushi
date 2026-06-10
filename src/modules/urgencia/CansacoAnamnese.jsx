@@ -52,7 +52,7 @@ function Passo({ titulo, sub, num, cor, children }) {
 
 const Lbl = ({ children }) => <div className="ca-an-lbl">{children}</div>;
 
-export default function CansacoAnamnese({ accent = "#e85d4a", voltar }) {
+export default function CansacoAnamnese({ accent = "#e85d4a", voltar, embutido = false }) {
   const [D, setDState] = useState(estadoInicial);
   const [notaAberta, setNotaAberta] = useState(false);
   const setD = (patch) => setDState((d) => ({ ...d, ...(typeof patch === "function" ? patch(d) : patch) }));
@@ -595,9 +595,9 @@ export default function CansacoAnamnese({ accent = "#e85d4a", voltar }) {
   const conteudo = { 0: passo0, 1: passo1, 1.5: passo15, 2: passo2, 3: passo3, 4: passo4, 5: passo5, 6: passo6, 7: passo7, 8: passo8, 9: passo9, 10: passo10 }[D.step];
 
   return (
-    <div className="ca ob-page" style={{ "--acento": accent }}>
-      <button className="ob-voltar" onClick={voltar}>‹ Menu Cansaço</button>
-      <h1 className="ob-titulo">Treino de Anamnese — Cansaço</h1>
+    <div className={embutido ? undefined : "ca ob-page"}>
+      {!embutido && <button className="ob-voltar" onClick={voltar}>‹ Menu Cansaço</button>}
+      {!embutido && <h1 className="ob-titulo">Treino de Anamnese — Cansaço</h1>}
       <p className="ca-hero-sub">Constrói um caso fictício passo a passo e treina o raciocínio diferencial. Ferramenta de estudo — não usar com dados de doentes reais.</p>
 
       <div className="ca-an-topo">

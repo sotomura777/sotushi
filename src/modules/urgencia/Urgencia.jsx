@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import indice from "@conteudo/urgencia/indice.json";
 import { filtrarItens } from "./logica";
 import Obstipacao from "./Obstipacao.jsx";
@@ -15,6 +15,9 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
   const [favoritos, setFavoritos] = useEstadoLocal("medguia:urgencia:favoritos", []);
   const [query, setQuery] = useState("");
   const [aberto, setAberto] = useEstadoLocal("medguia:urgencia:aberto", null);
+
+  // abrir/fechar um submódulo repõe sempre o scroll no topo
+  useEffect(() => { window.scrollTo({ top: 0 }); }, [aberto]);
 
   const toggleFav = (id) => setFavoritos((f) => (f.includes(id) ? f.filter((x) => x !== id) : [...f, id]));
   const { total, grupos } = useMemo(() => filtrarItens(ITENS, sistemas, { filtro, favoritos, query }), [filtro, favoritos, query]);
