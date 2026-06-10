@@ -868,3 +868,55 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
 .ca-edit-bar button:hover { color: var(--texto); border-color: var(--borda-2); }
 .ca-edit-bar button.guardar { background: var(--acento); border-color: var(--acento); color: #fff; }
 .ob-drug-back .ca-edit { margin: 0; }
+.ca-flash-form { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 14px 16px; margin-bottom: 14px; }
+
+/* ============================================================================
+   DOR ABDOMINAL — submódulo. Reusa todo o sistema .ca-* com acento laranja
+   (identidade dos ficheiros originais: #c2410c).
+   ============================================================================ */
+.da { --acento: #c2410c; }
+.dark .da { --acento: #fb923c; }
+/* grelha 3x3 de quadrantes abdominais */
+.da-qgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; max-width: 340px; }
+.da-qcell { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 12px 4px; border: 1.5px solid var(--borda); border-radius: 10px; background: var(--superficie); color: var(--texto); font-size: 13px; font-weight: 800; cursor: pointer; font-family: var(--fonte-corpo); transition: all .12s; }
+.da-qcell:hover { border-color: color-mix(in srgb, var(--acento) 45%, transparent); }
+.da-qcell.on { background: var(--acento); border-color: var(--acento); color: #fff; }
+.da-qf { font-size: 9px; font-weight: 600; opacity: .75; text-align: center; line-height: 1.2; }
+.da-quad-layout { display: grid; grid-template-columns: 340px 1fr; gap: 14px; align-items: start; }
+@media (max-width: 700px) { .da-quad-layout { grid-template-columns: 1fr; } }
+.da-quad-info .ca-an-alert { margin: 0 0 6px; }
+/* intensidade 1-10 em bolinhas */
+.da-intens { display: flex; flex-wrap: wrap; gap: 6px; }
+.da-intens-dot { width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid var(--borda-2); background: var(--superficie); color: var(--suave); font-size: 13px; font-weight: 700; cursor: pointer; font-family: var(--fonte-corpo); display: flex; align-items: center; justify-content: center; transition: all .12s; }
+.da-intens-dot:hover { border-color: var(--acento); color: var(--acento); }
+.da-intens-dot.on { background: #059669; border-color: #059669; color: #fff; }
+.da-intens-dot.on.media { background: #d97706; border-color: #d97706; }
+.da-intens-dot.on.alta { background: #dc2626; border-color: #dc2626; }
+/* linha de modulação alivia/agrava */
+.da-mod-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; font-size: 13px; color: var(--texto-2); }
+.da-mod-row > span:first-child { flex: 1; }
+/* sinais especiais */
+.da-sinal { background: var(--superficie-2); border: 1px solid var(--borda); border-radius: 8px; padding: 8px 10px; margin-bottom: 6px; }
+.da-sinal-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.da-sinal-nome { font-weight: 600; font-size: 13px; color: var(--texto); }
+/* bloco "doente instável" (HTML do original) */
+.da-instavel { margin: 12px 0; font-size: 13px; line-height: 1.65; color: var(--texto-2); }
+.da-instavel ul { margin: 0 0 12px; padding-left: 20px; }
+.da-instavel > div { border-radius: var(--raio-md); }
+
+/* ── Guia da Dor Abdominal: tokens do original → tokens da app ──── */
+.da-guia { --text: var(--texto); --muted: var(--suave); --faint: var(--tenue); --border: var(--borda); --border2: var(--borda-2); --surface: var(--superficie); --s2: var(--superficie-2); --s3: var(--superficie-2); --bg: transparent; --radius: var(--raio-lg); }
+.da-guia .qgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; max-width: 360px; }
+.da-guia .qcell, .da-guia .qcell-diff { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 12px 4px; border: 1.5px solid var(--borda); border-radius: 10px; background: var(--superficie); color: var(--texto); font-size: 13px; font-weight: 800; cursor: pointer; text-align: center; transition: all .12s; }
+.da-guia .qcell:hover, .da-guia .qcell-diff:hover { border-color: color-mix(in srgb, var(--acento) 45%, transparent); }
+.da-guia .qcell.on, .da-guia .qcell-diff.on { background: var(--acento); border-color: var(--acento); color: #fff; }
+.da-guia .qcell .qf, .da-guia .qcell-diff .qf, .da-guia .qsub { font-size: 9px; font-weight: 600; opacity: .75; line-height: 1.2; }
+.da-guia .quad-info { background: color-mix(in srgb, var(--acento) 6%, transparent); border-left: 3px solid var(--acento); border-radius: 0 10px 10px 0; padding: 12px 14px; font-size: 12.5px; line-height: 1.6; color: var(--texto-2); margin-top: 10px; }
+.ca-esc-opt-mini { font-size: 11px; font-weight: 600; padding: 5px 9px; border-radius: var(--raio-pill); border: 1px solid var(--borda); background: var(--superficie-2); color: var(--suave); cursor: pointer; font-family: var(--fonte-corpo); }
+.ca-esc-opt-mini.on { background: var(--acento); border-color: var(--acento); color: #fff; }
+.da-ddx-zona { border: 1.5px dashed color-mix(in srgb, var(--acento) 35%, transparent); border-radius: var(--raio-md); padding: 12px 14px; margin-bottom: 14px; background: color-mix(in srgb, var(--acento) 4%, transparent); }
+.da-ddx-zona-h { display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--acento); margin-bottom: 8px; }
+.da-ddx-comp { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 1fr); gap: 10px; overflow-x: auto; margin-top: 14px; padding-bottom: 6px; }
+.da-ddx-col { border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); min-width: 220px; }
+.da-ddx-col-h { border-top: 3px solid var(--acento); border-radius: var(--raio-md) var(--raio-md) 0 0; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.da-ddx-row { padding: 8px 12px; border-top: 1px solid var(--borda); font-size: 12px; line-height: 1.5; color: var(--texto-2); }

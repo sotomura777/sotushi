@@ -1,0 +1,1748 @@
+{
+ "titulo": "Dor Abdominal.",
+ "sub": "50 casos clínicos no formato SBA — apendicite, pancreatite, colangite, isquemia, obstrução, cólica renal, ginecológicas, SII, DII, alarmes e analgesia.",
+ "dicas": {
+  "Apendicite": [
+   "<b>AIR ≥9</b> = cirurgia direta. 5-8 = ecografia (TC se inconclusiva). ≤4 = baixo risco.",
+   "<b>Alvarado ≥7</b> = alta probabilidade. 5-6 = zona cinzenta → imagem. ≤4 = improvável.",
+   "Grávida + eco inconclusiva: <span class=\"then\">RM</span> → TC (último recurso). Nunca atrasar diagnóstico.",
+   "Apêndice normal na laparoscopia: explorar sistematicamente + apendicectomia. <b>30% têm inflamação histológica.</b>",
+   "<span class=\"trap\">Beta-hCG obrigatório</span> em toda mulher fértil antes de qualquer cirurgia."
+  ],
+  "Biliar / Pâncreas": [
+   "<b>Cólica biliar vs colecistite:</b> cólica = sem febre, <6h, Murphy negativo. Colecistite = febre + Murphy + persistente.",
+   "<b>Reynolds</b> = Charcot (dor+febre+icterícia) + hipotensão + confusão = colangite Grade III → CPRE urgente.",
+   "TG18 Grade I/II → colecistectomia <72h. Grade III → estabilizar + bridge.",
+   "<b>Pancreatite (Atlanta 2012):</b> 2 de 3 = dor típica + lipase ≥3× + TC. Lipase <3× não é pancreatite.",
+   "<span class=\"trap\">Antibiótico profilático na pancreatite = ERRADO</span> (armadilha PNA clássica).",
+   "Pancreatite biliar ligeira = colecistectomia antes da alta. Grave = 4-6 semanas depois.",
+   "<b>Murphy em idosos:</b> sensibilidade <50%. Não excluir colecistite com Murphy negativo."
+  ],
+  "Isquemia / Vascular": [
+   "FA + dor desproporcional ao exame + lactato ↑ = <span class=\"then\">isquemia mesentérica</span>. Angio-TC urgente.",
+   "\"Tempo é intestino\" — mortalidade >70% sem diagnóstico precoce.",
+   "<b>AAA roto instável:</b> POCUS → bloco sem TC. Hipotensão permissiva até controlo cirúrgico.",
+   "<b>AAA eletivo:</b> homem ≥5,5cm; mulher ≥5,0cm → reparação (EVAR ou aberta)."
+  ],
+  "Obstrução / Diverticulite": [
+   "OIA por aderências sem sofrimento: <span class=\"then\">SNG + jejum + fluidos + vigiar 24-72h</span>.",
+   "Sofrimento de alça (pneumatose, líquido livre, ausência de reforço) = <span class=\"trap\">cirurgia urgente</span>.",
+   "<b>Ogilvie:</b> dilatação colónica sem obstrução mecânica → neostigmina 2mg EV. Ceco ≥12cm = urgência.",
+   "Hinchey Ia → ambulatório + antibiótico oral. Hinchey III/IV → Hartmann.",
+   "Colonoscopia 6-8 semanas após diverticulite — <span class=\"trap\">nunca na fase aguda</span>.",
+   "Lavagem laparoscópica em Hinchey III: <span class=\"trap\">não recomendada</span> (RCTs LADIES/SCANDIV)."
+  ],
+  "Alarmes / Diagnóstico": [
+   "<b>Beta-hCG SEMPRE</b> em mulher fértil com dor abdominal/pélvica. Regra absoluta.",
+   "<b>Ferropénia em ♂ adulto ou pós-menopausa</b> = endoscopia bidirecional. SOF negativo não exclui.",
+   "<b>Morfina NÃO mascara</b> o diagnóstico abdominal — mito refutado. <span class=\"then\">Analgesia é obrigatória.</span>",
+   "AINE contraindicado: úlcera activa, HDig, TFG<30, anticoagulação, ICC, suspeita de perfuração.",
+   "Corticóides mascaram febre, peritonismo, leucocitose → <span class=\"trap\">baixo limiar para TC</span>.",
+   "Epigastralgia + sudorese = SCA até prova em contrário → ECG + troponinas.",
+   "IBP pré-EDA: melhora achados endoscópicos mas NÃO reduz mortalidade (pergunta PNA frequente).",
+   "Safety netting obrigatório na alta com dor abdominal inespecífica."
+  ]
+ },
+ "casos": [
+  {
+   "id": "dab01",
+   "vignette": "Homem de 22 anos recorre ao SU por <b>dor periumbilical há 8h que migrou para a fossa ilíaca direita</b>. Anorexia, náuseas, T 38,1°C. McBurney positivo, Rovsing positivo. <b>Leucócitos 13 800 · % PMN 84% · PCR 46 mg/L</b>.",
+   "stem": "Qual o Score AIR e a conduta mais adequada?",
+   "options": [
+    {
+     "text": "AIR 5 — ecografia urgente antes de decidir",
+     "correct": false,
+     "why": "Score AIR 5 é zona intermédia, mas a combinação aqui (PMN 84%, dor FID, rebound, PCR, febre) ultrapassa esse valor."
+    },
+    {
+     "text": "AIR 9 — cirurgia sem imagiologia adicional",
+     "correct": true,
+     "why": "Score AIR: dor FID (1) + rebound médio (2) + T>38,5 (1) + PMN 70-84% (1) + PCR 10-49 (1) + vómitos (1) = 9. AIR ≥9 → alta probabilidade → cirurgia sem TC."
+    },
+    {
+     "text": "AIR 7 — TC abdominopélvica urgente",
+     "correct": false,
+     "why": "TC é para score 5-8 com eco inconclusiva. AIR ≥9 vai direto ao bloco."
+    },
+    {
+     "text": "AIR 4 — alta com antibiótico oral",
+     "correct": false,
+     "why": "O quadro não suporta alta."
+    },
+    {
+     "text": "AIR 8 — antibioterapia EV e reavaliar",
+     "correct": false,
+     "why": "AIR ≥9 = cirurgia. Não esperar evolução sob antibiótico."
+    }
+   ],
+   "keyConcept": "<b>Score AIR (Appendicitis Inflammatory Response):</b> vómitos (1) + dor FID (1) + rebound: ligeiro (1)/médio (2)/forte (3) + T>38,5°C (1) + PMN 70-84% (1) / ≥85% (2) + PCR 10-49 mg/L (1) / ≥50 (2). <b>≤4 = baixa probabilidade; 5-8 = intermédio → imagiologia; ≥9 = alta probabilidade → cirurgia sem TC.</b> Mais específico que Alvarado porque inclui PMN% e PCR.",
+   "quickTip": "AIR ≥9 = cirurgia direta. 5-8 = ecografia (TC se eco inconclusiva). ≤4 = baixo risco."
+  },
+  {
+   "id": "dab02",
+   "vignette": "Mulher de 26 anos, grávida de <b>20 semanas</b>, dor na FID há 10h, febre 38,3°C, leucocitose 16 200. Ecografia abdominal <b>inconclusiva</b> (apêndice não visualizado).",
+   "stem": "Qual o exame de imagem de 2ª linha mais adequado na grávida?",
+   "options": [
+    {
+     "text": "TC abdominopélvica com contraste",
+     "correct": false,
+     "why": "TC tem excelente rendimento mas expõe o feto a radiação ionizante. Na grávida, preferir RM se disponível."
+    },
+    {
+     "text": "RM abdominopélvica sem gadolínio",
+     "correct": true,
+     "why": "Na grávida com eco inconclusiva, a RM (sem contraste) é o exame de 2ª linha: sem radiação, sensibilidade >90% para apendicite, segura em qualquer trimestre."
+    },
+    {
+     "text": "PET-scan abdominal",
+     "correct": false,
+     "why": "PET não tem indicação e emite radiação."
+    },
+    {
+     "text": "Laparoscopia diagnóstica imediata sem imagem",
+     "correct": false,
+     "why": "Precipitado — a RM ainda não foi tentada."
+    },
+    {
+     "text": "Repetir ecografia com sonda endovaginal",
+     "correct": false,
+     "why": "Eco endovaginal não visualiza o apêndice. Repetir a mesma modalidade inconclusiva não é a solução."
+    }
+   ],
+   "keyConcept": "<b>Apendicite na grávida — algoritmo de imagem:</b> 1ª linha = ecografia; 2ª linha = RM (sem gadolínio, sensibilidade >90%); 3ª linha = TC (se RM indisponível e urgência clínica). A apendicite não tratada na grávida tem mortalidade fetal elevada — nunca atrasar por receio de radiação quando a situação é urgente.",
+   "quickTip": "Grávida + eco inconclusiva → RM. TC só se RM indisponível e urgência. Nunca atrasar o diagnóstico."
+  },
+  {
+   "id": "dab03",
+   "vignette": "Homem de 34 anos. TC confirma <b>apendicite não complicada</b>: apêndice 9 mm, sem perfuração, sem abcesso, sem fecalito. Score AIR 8. Hemodinâmicamente estável, sem peritonismo.",
+   "stem": "Qual o tratamento mais adequado?",
+   "options": [
+    {
+     "text": "Antibioterapia oral (amoxicilina-clavulanato × 10 dias) e alta",
+     "correct": false,
+     "why": "Antibioterapia oral em ambulatório sem vigilância não é o padrão. Antibiótico isolado tem 20-30% de falência em 5 anos."
+    },
+    {
+     "text": "Apendicectomia laparoscópica",
+     "correct": true,
+     "why": "A apendicectomia laparoscópica é o tratamento gold standard (WSES Jerusalem 2025). A antibioterapia isolada EV é alternativa em selecionados (sem fecalito, sem peritonismo, doente informado), mas a cirurgia elimina a recidiva."
+    },
+    {
+     "text": "Drenagem percutânea guiada por TC",
+     "correct": false,
+     "why": "Drenagem é para abcesso periapendicular, não para apendicite não complicada."
+    },
+    {
+     "text": "Observação 48h — a maioria resolve espontaneamente",
+     "correct": false,
+     "why": "Sem tratamento, a apendicite progride para perfuração. Não há resolução espontânea fiável."
+    },
+    {
+     "text": "Antibioterapia EV (pip-tazo) + laparoscopia em 72h",
+     "correct": false,
+     "why": "Não há motivo para adiar a cirurgia 72h em apendicite confirmada sem complicação."
+    }
+   ],
+   "keyConcept": "<b>Apendicite não complicada:</b> apendicectomia laparoscópica é o standard (WSES 2025). A antibioterapia isolada EV é alternativa em casos muito selecionados (sem fecalito, recusa cirúrgica), mas com 15-30% de recidiva a 5 anos. Profilaxia cirúrgica: 1 dose de cefazolina + metronidazol.",
+   "quickTip": "Apendicite não complicada = cirurgia (gold standard). Antibiótico isolado: alternativa selecionada, mas 20% recidivam em 5 anos."
+  },
+  {
+   "id": "dab04",
+   "vignette": "Mulher de 19 anos, dor na FID, febre 38°C, leucocitose, score Alvarado 7. O cirurgião quer activar o bloco. Antes de qualquer decisão cirúrgica, qual exame é <b>indispensável</b>?",
+   "stem": "Qual o exame obrigatório antes de qualquer cirurgia nesta doente?",
+   "options": [
+    {
+     "text": "TC abdominopélvica",
+     "correct": false,
+     "why": "Útil para diagnóstico, mas há um exame ainda mais urgente que pode mudar completamente a conduta."
+    },
+    {
+     "text": "Beta-hCG sérico",
+     "correct": true,
+     "why": "Toda a mulher em idade fértil com dor abdominal aguda DEVE ter beta-hCG antes de qualquer cirurgia. A gravidez ectópica pode imitar apendicite — e a conduta é completamente diferente."
+    },
+    {
+     "text": "Ecografia pélvica",
+     "correct": false,
+     "why": "Importante para DDx ginecológico, mas o beta-hCG tem prioridade absoluta — é o primeiro passo."
+    },
+    {
+     "text": "Hemoculturas",
+     "correct": false,
+     "why": "Úteis se suspeita de sépsis, mas não é o exame que pode mudar radicalmente a conduta cirúrgica."
+    },
+    {
+     "text": "Urina tipo II e urocultura",
+     "correct": false,
+     "why": "Úteis para excluir ITU, mas não são o teste prioritário neste contexto."
+    }
+   ],
+   "keyConcept": "<b>Beta-hCG obrigatório em toda a mulher fértil:</b> gravidez ectópica pode imitar apendicite (dor FID + febre + leucocitose). Operar uma gravidez ectópica como apendicite é um erro major. Regra absoluta: beta-hCG → se positivo → ecografia TV para localizar a gravidez → conduta adequada. Só depois se avança para imagiologia dirigida a apendicite.",
+   "quickTip": "Mulher fértil + dor abdominal aguda = beta-hCG SEMPRE antes de qualquer cirurgia. Regra absoluta. Ectópica imita apendicite."
+  },
+  {
+   "id": "dab05",
+   "vignette": "Homem de 58 anos, dor no HCD há 16h após jantar pesado, febre 38,3°C, Murphy positivo. Leucócitos 14 600, PCR 82 mg/L, bilirrubinas normais. Ecografia: litíase vesicular, parede vesicular 6mm, líquido pericistítico. <b>Tokyo Grade II</b>.",
+   "stem": "Qual a conduta mais adequada segundo as Tokyo TG18?",
+   "options": [
+    {
+     "text": "Drenagem percutânea da vesícula como 1ª linha",
+     "correct": false,
+     "why": "Colecistostomia percutânea é para Tokyo Grade III com contraindicação cirúrgica, ou bridge. Grade II em candidato cirúrgico → colecistectomia precoce."
+    },
+    {
+     "text": "Antibioterapia EV + colecistectomia laparoscópica precoce (<72h)",
+     "correct": true,
+     "why": "Tokyo TG18 Grade II: inflamação significativa sem disfunção orgânica. Tratamento: antibioterapia + colecistectomia precoce (<72h). Reduz estadia hospitalar vs diferida."
+    },
+    {
+     "text": "Alta com amoxicilina-clavulanato oral e cirurgia em 6 semanas",
+     "correct": false,
+     "why": "Risco de progressão para Grade III e recidiva precoce. Colecistectomia precoce é superior em Grade II."
+    },
+    {
+     "text": "CPRE urgente",
+     "correct": false,
+     "why": "Bilirrubinas normais — sem indicação de coledocolitíase. CPRE não é indicada na colecistite isolada."
+    },
+    {
+     "text": "Cirurgia aberta imediata",
+     "correct": false,
+     "why": "Laparoscopia é preferida na colecistite; conversão a cirurgia aberta apenas se tecnicamente necessário."
+    }
+   ],
+   "keyConcept": "<b>Tokyo TG18:</b> Grade I (ligeiro) e Grade II (moderado) → colecistectomia laparoscópica precoce (<72h idealmente). Grade III (grave, com disfunção orgânica) → estabilizar, ponderar colecistostomia como bridge. Quando há icterícia + febre + dor = colangite → CPRE urgente.",
+   "quickTip": "TG18 Grade I/II → colecistectomia <72h. Grade III → estabilizar + colecistostomia bridge. Bilirrubina ↑ + FA ↑ → investigar colédoco."
+  },
+  {
+   "id": "dab06",
+   "vignette": "Mulher de 68 anos, diabética. Dor HCD há 18h, febre 39,4°C, <b>icterícia</b> e <b>confusão mental</b>. PA 86/52, FC 120. Ecografia: dilatação da via biliar, cálculo no colédoco.",
+   "stem": "Qual a conduta mais urgente neste contexto?",
+   "options": [
+    {
+     "text": "Colecistectomia de urgência",
+     "correct": false,
+     "why": "O problema é a obstrução do colédoco com sépsis (Reynolds). CPRE urgente é a prioridade, não a colecistectomia."
+    },
+    {
+     "text": "Ressuscitação + CPRE urgente + antibioterapia EV",
+     "correct": true,
+     "why": "Pêntade de Reynolds = colangite grave (TG18 Grade III). Mortalidade sem drenagem >50%. CPRE é a prioridade: drenagem biliar + esfincterotomia. Colecistectomia diferida para quando estabilizado."
+    },
+    {
+     "text": "Antibioterapia EV e aguardar 12h",
+     "correct": false,
+     "why": "Antibiótico sem drenagem biliar é insuficiente na colangite grave. Sem drenagem = continua a deteriorar."
+    },
+    {
+     "text": "ColangioRM urgente para planear",
+     "correct": false,
+     "why": "ColangioRM é diagnóstico (não terapêutico). O diagnóstico está feito clinicamente. Não perder tempo."
+    },
+    {
+     "text": "Drenagem percutânea transhepática",
+     "correct": false,
+     "why": "Alternativa à CPRE se esta falhar ou não estiver disponível — não é 1ª linha quando CPRE está acessível."
+    }
+   ],
+   "keyConcept": "<b>Pêntade de Reynolds:</b> tríade de Charcot (dor + febre + icterícia) + hipotensão + confusão mental = colangite aguda grave (TG18 Grade III). Mortalidade sem tratamento >50%. Conduta: ressuscitação imediata + CPRE urgente + antibioterapia EV largo espectro. Colecistectomia electiva após estabilização.",
+   "quickTip": "Charcot + hipotensão + confusão = Reynolds = colangite Grade III. CPRE urgente. Sem drenagem = mortalidade >50%."
+  },
+  {
+   "id": "dab07",
+   "vignette": "Homem de 46 anos, etilista. Dor epigástrica <b>\"em cinturão\" com irradiação para o dorso</b>, vómitos incoercíveis, posição antálgica. <b>Lipase 1240 U/L (>3× normal) · leucócitos 14 200 · PCR 22 mg/L</b>. Estável.",
+   "stem": "Qual o diagnóstico e o tratamento inicial correcto?",
+   "options": [
+    {
+     "text": "Pancreatite aguda — nutrição parenteral total imediata",
+     "correct": false,
+     "why": "Nutrição parenteral está ultrapassada. Nutrição enteral precoce (quando tolerada) é superior — preserva a barreira intestinal."
+    },
+    {
+     "text": "Pancreatite aguda — antibioterapia profilática com imipenem EV",
+     "correct": false,
+     "why": "Antibioterapia profilática na pancreatite NÃO está recomendada (ACG 2024). Só se infecção comprovada."
+    },
+    {
+     "text": "Pancreatite aguda — hidratação EV agressiva (250-500 mL/h) + analgesia",
+     "correct": true,
+     "why": "Diagnóstico de Atlanta: dor típica + lipase >3×. Tratamento: cristaloides 250-500 mL/h nas 1as horas (Ringer lactato preferido), analgesia eficaz, retomar alimentação oral quando tolerada."
+    },
+    {
+     "text": "Úlcera péptica perfurada — Rx tórax urgente",
+     "correct": false,
+     "why": "Irradiação dorsal + lipase >3× + contexto alcoólico = pancreatite. Perfuração tem peritonismo e abdómen rígido."
+    },
+    {
+     "text": "Pancreatite aguda — CPRE urgente",
+     "correct": false,
+     "why": "CPRE é para pancreatite biliar com colangite associada — não para pancreatite alcoólica."
+    }
+   ],
+   "keyConcept": "<b>Pancreatite aguda (Atlanta 2012): 2 de 3</b> critérios: dor epigástrica típica + lipase/amilase ≥3× normal + TC compatível. Tratamento: hidratação EV agressiva (pilar principal) + analgesia (opióides se necessário) + jejum inicial transitório + alimentação precoce. <b>Antibiótico profilático = armadilha clássica da PNA — ERRADO.</b>",
+   "quickTip": "Pancreatite: 2 de 3 (dor + lipase ≥3× + TC). Fluidos agressivos + analgesia. Antibiótico profilático = ERRADO. Nutrição enteral precoce > parenteral."
+  },
+  {
+   "id": "dab08",
+   "vignette": "Mulher de 54 anos. Pancreatite aguda biliar ligeira (BISAP 1). Após 48h: melhoria clínica, aceita dieta, afebril. Ecografia: litíase vesicular confirmada como causa.",
+   "stem": "Qual a conduta mais adequada relativamente à litíase?",
+   "options": [
+    {
+     "text": "Alta e colecistectomia electiva em 8 semanas",
+     "correct": false,
+     "why": "Adiar após pancreatite biliar ligeira aumenta risco de recidiva de pancreatite (17% em 6 semanas). Cirurgia no mesmo internamento é recomendada."
+    },
+    {
+     "text": "Colecistectomia laparoscópica no mesmo internamento, antes da alta",
+     "correct": true,
+     "why": "Pancreatite biliar ligeira: colecistectomia no mesmo internamento (ACG 2024, WSES). Reduz recidiva de pancreatite de 17% para <2%. Formas moderadas/graves: adiar 4-6 semanas."
+    },
+    {
+     "text": "CPRE + esfincterotomia como alternativa à colecistectomia",
+     "correct": false,
+     "why": "CPRE trata o colédoco, não a vesícula. Sem colecistectomia, a recidiva por novos cálculos biliares é inevitável."
+    },
+    {
+     "text": "Colecistostomia e ponderar colecistectomia tardia",
+     "correct": false,
+     "why": "Sem indicação para colecistostomia. Colecistectomia laparoscópica é segura neste contexto."
+    },
+    {
+     "text": "Alta sem tratar — recidiva de pancreatite é rara",
+     "correct": false,
+     "why": "Sem tratar a causa, recidiva de pancreatite ou colecistite aguda é previsível. Taxa de 17% em 6 semanas."
+    }
+   ],
+   "keyConcept": "<b>Pancreatite biliar ligeira:</b> colecistectomia no mesmo internamento — reduz recidiva de pancreatite. <b>Pancreatite biliar grave/necrosante:</b> adiar 4-6 semanas. CPRE: apenas se colangite ou obstrução persistente do colédoco.",
+   "quickTip": "Pancreatite biliar ligeira = colecistectomia antes da alta. Grave/necrosante = 4-6 semanas depois. CPRE só se colangite."
+  },
+  {
+   "id": "dab09",
+   "vignette": "Homem de 67 anos, pancreatite necrosante. TC 12 dias após início: necrose 40%, <b>gás intra-pancreático</b>. Febre 39°C, deterioração, leucocitose 22 000, PCR 310 mg/L.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Cirurgia aberta urgente — necrosectomia imediata",
+     "correct": false,
+     "why": "Necrosectomia aberta imediata tem mortalidade de 40-60% e está ultrapassada. Abordagem step-up é superior."
+    },
+    {
+     "text": "Antibioterapia profilática com imipenem e aguardar",
+     "correct": false,
+     "why": "Não é \"profilática\" — há forte suspeita de necrose infectada. Imipenem é adequado como terapêutico, mas o diagnóstico deve ser confirmado e a abordagem step-up aplicada."
+    },
+    {
+     "text": "PAAF guiada para cultura + antibioterapia EV + abordagem step-up se necessário",
+     "correct": true,
+     "why": "Gás intra-pancreático = necrose infectada quase certa. Confirmar com PAAF + cultura → antibiótico EV (imipenem/meropenem — boa penetração pancreática) → step-up: drenagem percutânea → endoscópica transgástrica → necrosectomia cirúrgica só se falha."
+    },
+    {
+     "text": "Alta com antibioterapia oral",
+     "correct": false,
+     "why": "Totalmente inadequado."
+    },
+    {
+     "text": "TC de controlo em 72h e reavaliar",
+     "correct": false,
+     "why": "Gás intra-pancreático é uma urgência — expectativa é perigosa."
+    }
+   ],
+   "keyConcept": "<b>Necrose pancreática infectada:</b> gás na TC = infecção por anaeróbios (Clostridium). Abordagem step-up: PAAF + cultura → antibioterapia (imipenem/meropenem) → drenagem percutânea → endoscópica transgástrica → cirurgia. Adiar desbridamento ≥4 semanas (necrose organizada). Cirurgia aberta = último recurso.",
+   "quickTip": "Necrose infectada (gás na TC): PAAF + imipenem + step-up (perc → endoscópica → cirurgia). Cirurgia aberta = último recurso."
+  },
+  {
+   "id": "dab10",
+   "vignette": "Homem de 73 anos, <b>fibrilação auricular crónica</b> não anticoagulado. Dor abdominal difusa de início súbito há 3h. Ao exame: dor intensa mas <b>abdómen mole</b> (desproporção). FC 115, PA 118/72. <b>Lactato 3,4 mmol/L · leucócitos 18 800</b>.",
+   "stem": "Qual o diagnóstico mais provável e exame de eleição?",
+   "options": [
+    {
+     "text": "Apendicite aguda — ecografia FID",
+     "correct": false,
+     "why": "Apendicite não explica dor difusa + FA + abdómen mole desproporcional + lactato elevado."
+    },
+    {
+     "text": "Isquemia mesentérica aguda — angio-TC urgente",
+     "correct": true,
+     "why": "FA (fonte embólica) + dor difusa desproporcional ao exame + lactato elevado = isquemia mesentérica aguda. Angio-TC: sensibilidade >93%, especificidade >96%. \"Tempo é intestino.\""
+    },
+    {
+     "text": "Pancreatite aguda — lipase urgente",
+     "correct": false,
+     "why": "Pancreatite tem dor epigástrica em cinturão com irradiação dorsal. Aqui o abdómen mole + FA + lactato apontam para isquemia."
+    },
+    {
+     "text": "Cetoacidose diabética — glicemia e gasimetria",
+     "correct": false,
+     "why": "Sem contexto diabético. FA + abdómen desproporcional + lactato = isquemia."
+    },
+    {
+     "text": "Obstrução intestinal — Rx abdómen",
+     "correct": false,
+     "why": "Obstrução tem distensão, ruídos metálicos. Aqui o abdómen está mole — fase precoce de isquemia."
+    }
+   ],
+   "keyConcept": "<b>Isquemia mesentérica aguda:</b> tríade clássica: dor intensa + exame abdominal pobre (desproporção) + factor de risco vascular (FA, aterosclerose). Lactato elevado = hipoperfusão. Angio-TC de eleição. Conduta: antibiótico EV + anticoagulação (se embólica) + revascularização + ressecção de ansa inviável. Mortalidade >70% sem diagnóstico precoce.",
+   "quickTip": "FA + dor desproporcional ao exame + lactato ↑ = isquemia mesentérica. Angio-TC urgente. Mortalidade >70% sem tto precoce."
+  },
+  {
+   "id": "dab11",
+   "vignette": "Homem de 69 anos, PA 76/50, FC 132, pele fria. <b>Massa pulsátil periumbilical</b>. Dor abdominal e lombar de início súbito. Instável.",
+   "stem": "Qual a conduta correcta no doente instável com suspeita de AAA roto?",
+   "options": [
+    {
+     "text": "TC abdominal com contraste — confirmação antes de cirurgia",
+     "correct": false,
+     "why": "Em instável com tríade clássica de AAA roto, a TC atrasa cirurgia salvadora de vida. POCUS à cabeceira + bloco."
+    },
+    {
+     "text": "POCUS à cabeceira — se confirmar AAA > cirurgia imediata sem TC",
+     "correct": true,
+     "why": "AAA roto instável: POCUS confirma aneurisma em <3 min → bloco sem TC. Hipotensão permissiva (PA sistólica 50-80 mmHg) até controlo cirúrgico. TC só no doente estabilizável."
+    },
+    {
+     "text": "Ressuscitação com 3L de cristaloides e TC depois",
+     "correct": false,
+     "why": "Ressuscitação agressiva em AAA roto aumenta pressão e pode agravar a hemorragia. Hipotensão permissiva até cirurgia."
+    },
+    {
+     "text": "Alta com referenciação urgente para cirurgia vascular",
+     "correct": false,
+     "why": "Completamente inadequado."
+    },
+    {
+     "text": "Angiografia diagnóstica e terapêutica electiva",
+     "correct": false,
+     "why": "EVAR urgente pode ser opção em centros especializados no doente estabilizável — não como angiografia diagnóstica electiva."
+    }
+   ],
+   "keyConcept": "<b>AAA roto — tríade:</b> dor abdominal/lombar súbita + hipotensão + massa pulsátil. Doente instável: POCUS → bloco sem TC. Doente estável: angio-TC → EVAR vs cirurgia aberta. Hipotensão permissiva (PAS 50-80 mmHg) até controlo cirúrgico.",
+   "quickTip": "AAA roto instável: POCUS → bloco sem TC. Hipotensão permissiva. AAA estável: angio-TC → EVAR vs aberta."
+  },
+  {
+   "id": "dab12",
+   "vignette": "Homem de 45 anos. Dor no flanco direito súbita irradiando para a virilha, agitado, posições variadas. Hematúria macroscópica. T 36,8°C, sem peritonismo. TC sem contraste: cálculo ureteral 4 mm no ureter distal direito.",
+   "stem": "Qual o tratamento analgésico de 1ª linha e conduta?",
+   "options": [
+    {
+     "text": "Morfina EV 4mg em bolus",
+     "correct": false,
+     "why": "Morfina é 2ª linha na cólica renal. AINE tem superior eficácia e menos efeitos secundários."
+    },
+    {
+     "text": "AINE (cetorolaco 30mg IV) + tamsulosina 0,4mg/dia",
+     "correct": true,
+     "why": "AINE é 1ª linha na cólica renal (cetorolaco IV ou diclofenac IM). Tamsulosina (alfa-bloqueante): relaxa o músculo liso ureteral, aumenta taxa de eliminação espontânea de cálculos 5-10mm no ureter distal."
+    },
+    {
+     "text": "Antibioterapia empírica imediata",
+     "correct": false,
+     "why": "Sem febre, sem sinais de infecção — antibiótico não está indicado. Febre + cólica = obstrução infectada (urgência urológica)."
+    },
+    {
+     "text": "Nefrostomia percutânea urgente",
+     "correct": false,
+     "why": "Nefrostomia é para obstrução infectada ou falência renal — não para cólica não complicada afebril."
+    },
+    {
+     "text": "Litotrícia urgente",
+     "correct": false,
+     "why": "Litotrícia extracorpórea é electiva, não urgente. Cálculo 4mm tem >90% de eliminação espontânea."
+    }
+   ],
+   "keyConcept": "<b>Cólica renal:</b> AINE é 1ª linha (superior aos opióides). Cálculo ≤4mm: eliminação espontânea em ~90%. <b>Tamsulosina 0,4mg/dia:</b> terapêutica expulsiva para cálculos 5-10mm no ureter distal. <b>Febre + cólica = obstrução infectada → emergência urológica → drenagem urgente (stent ureteral ou nefrostomia).</b>",
+   "quickTip": "Cólica renal: AINE 1ª linha. Cálculo ≤4mm → eliminação espontânea. 5-10mm ureter distal → tamsulosina. Febre + obstrução → drenar urgente."
+  },
+  {
+   "id": "dab13",
+   "vignette": "Mulher de 29 anos, atraso menstrual de 6 semanas. Dor pélvica direita aguda, FC 112, PA 102/68. Beta-hCG 3600 mUI/mL. Ecografia transvaginal: <b>saco gestacional na trompa direita sem batimento cardíaco fetal</b>, líquido livre na escavação.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Metotrexato IM dose única e alta",
+     "correct": false,
+     "why": "Metotrexato está contraindicado: há instabilidade relativa (FC 112) + líquido livre (hemoperitoneu) + massa >3,5cm provável. Metotrexato é para ectópica estável, sem rotura, hCG <5000 e massa <3,5cm."
+    },
+    {
+     "text": "Laparoscopia urgente (salpingostomia ou salpingectomia)",
+     "correct": true,
+     "why": "Ectópica com sinais de complicação (líquido livre, instabilidade relativa) → cirurgia urgente. Laparoscopia é preferida se relativa estabilidade. Salpingectomia ou salpingostomia conforme fertilidade futura desejada."
+    },
+    {
+     "text": "Observação 24h com beta-hCG seriado",
+     "correct": false,
+     "why": "Líquido livre + instabilidade = não é seguro observar. Cirurgia urgente."
+    },
+    {
+     "text": "Curetagem uterina",
+     "correct": false,
+     "why": "Gravidez ectópica é extracavitária. Curetagem uterina é ineficaz e perigosa."
+    },
+    {
+     "text": "TC pélvica para confirmar localização exacta",
+     "correct": false,
+     "why": "Diagnóstico confirmado. TC acrescenta radiação sem benefício adicional — cirurgia imediata."
+    }
+   ],
+   "keyConcept": "<b>Gravidez ectópica complicada:</b> instabilidade + hemoperitoneu → laparoscopia urgente. <b>Metotrexato (conservador):</b> só em ectópica estável + hCG <5000 + sem batimento fetal + massa <3,5cm + sem líquido livre. Beta-hCG obrigatório em toda mulher fértil com dor pélvica — regra absoluta.",
+   "quickTip": "Ectópica + líquido livre + instabilidade = laparoscopia urgente. Metotrexato: apenas estável + sem batimento + hCG <5000 + massa <3,5cm."
+  },
+  {
+   "id": "dab14",
+   "vignette": "Mulher de 25 anos, dor pélvica esquerda súbita, vómitos. Sem febre. Ecografia pélvica com Doppler: ovário esquerdo aumentado 5,5cm, <b>fluxo Doppler presente</b>.",
+   "stem": "O fluxo Doppler presente exclui torção ovárica?",
+   "options": [
+    {
+     "text": "Sim — Doppler presente exclui torção com alta segurança",
+     "correct": false,
+     "why": "FALSO. A sensibilidade do Doppler para torção ovárica é de apenas 60-70%. Torção pode ser intermitente — o fluxo pode estar temporariamente restabelecido."
+    },
+    {
+     "text": "Não — Doppler presente não exclui torção; se suspeita clínica alta → laparoscopia urgente",
+     "correct": true,
+     "why": "Doppler presente NÃO exclui torção (sensibilidade 60-70%). A suspeita clínica (dor súbita + vómitos + ovário aumentado) é suficiente para laparoscopia urgente. Atrasar causa necrose irreversível."
+    },
+    {
+     "text": "Depende — se Doppler arterial presente, excluída; se só venoso, suspeitar",
+     "correct": false,
+     "why": "Na prática clínica, a distinção arterial/venoso não tem valor diagnóstico suficiente para excluir torção com segurança."
+    },
+    {
+     "text": "Sim, mas repetir eco em 4h para confirmar",
+     "correct": false,
+     "why": "Aguardar 4h com suspeita de torção pode resultar em necrose ovárica irreversível."
+    },
+    {
+     "text": "Não relevante — aguardar cirurgiã ginecologista para 2ª opinião",
+     "correct": false,
+     "why": "Torção ovárica é urgência — não aguardar consulta eletiva."
+    }
+   ],
+   "keyConcept": "<b>Torção ovárica:</b> dor pélvica súbita + vómitos + ovário aumentado (≥5cm) = torção até prova em contrário. <b>Doppler presente NÃO exclui torção</b> (sensibilidade 60-70%). Laparoscopia urgente — destorção mesmo que aparentemente necrosado (viabilidade em 90% dos casos com destorção precoce). Tempo é ovário.",
+   "quickTip": "Torção ovárica: Doppler normal não exclui. Dor súbita + ovário aumentado = laparoscopia urgente. Detorção precoce salva o ovário em 90%."
+  },
+  {
+   "id": "dab15",
+   "vignette": "Mulher de 23 anos. Dor pélvica bilateral há 5 dias, febre 38,1°C, corrimento vaginal amarelado, dispareunia. Ao exame bimanual: dor à mobilização do colo uterino. Beta-hCG negativo.",
+   "stem": "Qual o esquema antibiótico de 1ª linha em ambulatório?",
+   "options": [
+    {
+     "text": "Amoxicilina-clavulanato 875/125mg 2×/dia × 14 dias",
+     "correct": false,
+     "why": "Amoxicilina-clavulanato não cobre adequadamente Chlamydia trachomatis — principal causa de DIP em jovens sexualmente activas."
+    },
+    {
+     "text": "Ceftriaxona 500mg IM dose única + doxiciclina 100mg 2×/dia + metronidazol 500mg 2×/dia × 14 dias",
+     "correct": true,
+     "why": "DIP: cobertura obrigatória para Neisseria gonorrhoeae (ceftriaxona IM), Chlamydia (doxiciclina) e anaeróbios (metronidazol). Esquema recomendado por CDC/ECDC × 14 dias."
+    },
+    {
+     "text": "Azitromicina 1g dose única",
+     "correct": false,
+     "why": "Cobre Chlamydia mas não Neisseria adequadamente, nem anaeróbios. Insuficiente para DIP."
+    },
+    {
+     "text": "Ciprofloxacina 500mg × 7 dias",
+     "correct": false,
+     "why": "Resistência crescente de N. gonorrhoeae à ciprofloxacina. Não cobre Chlamydia nem anaeróbios. Não adequado para DIP."
+    },
+    {
+     "text": "Fluconazol + metronidazol × 7 dias",
+     "correct": false,
+     "why": "Fluconazol é para candidíase vaginal. Sem indicação em DIP bacteriana."
+    }
+   ],
+   "keyConcept": "<b>DIP (Doença Inflamatória Pélvica):</b> cobertura para Neisseria + Chlamydia + anaeróbios. Ambulatório: ceftriaxona 500mg IM (1 dose) + doxiciclina 100mg 2×/dia + metronidazol 500mg 2×/dia × 14 dias. Internamento: piperacilina-tazobactam EV se abcesso tubo-ovárico, doença grave ou falha oral. Rastrear e tratar parceiro.",
+   "quickTip": "DIP: ceftriaxona IM + doxiciclina + metronidazol × 14 dias. Internamento se abcesso tubo-ovárico ou falha oral."
+  },
+  {
+   "id": "dab16",
+   "vignette": "Homem de 38 anos. Dor abdominal recorrente há 8 meses, aliviada pela defecação, alternância diarreia/obstipação, distensão. Sem febre, perda ponderal, sangue. Análises e colonoscopia: normais. <b>Calprotectina fecal 18 µg/g</b>.",
+   "stem": "Qual o diagnóstico e conduta inicial?",
+   "options": [
+    {
+     "text": "Colonoscopia com biópsias sistemáticas — excluir DII",
+     "correct": false,
+     "why": "Colonoscopia normal + calprotectina normal (<50) tornam DII muito improvável. Repetir colonoscopia sem nova indicação é desnecessário."
+    },
+    {
+     "text": "SII pelos critérios de Rome IV — dieta baixa em FODMAP + antiespasmódico",
+     "correct": true,
+     "why": "Rome IV: dor ≥1×/semana, 3 meses, + ≥2 de: relação com defecação, alteração frequência, alteração forma. Calprotectina normal + sem alarmes = SII. Diagnóstico positivo — não exige mais exames. FODMAP + antiespasmódico (mebeverina, butilescopolamina)."
+    },
+    {
+     "text": "Síndrome de má absorção — D-xilose e biópsias duodenais",
+     "correct": false,
+     "why": "Má absorção cursa com diarreia, défices vitamínicos, perda ponderal — não é este quadro."
+    },
+    {
+     "text": "Parasitose — tratamento empírico com metronidazol",
+     "correct": false,
+     "why": "Sem factores de risco de parasitose. Não indicado empiricamente."
+    },
+    {
+     "text": "Referenciação urgente a gastrenterologia",
+     "correct": false,
+     "why": "Sem alarmes com exames normais — MGF pode gerir o SII."
+    }
+   ],
+   "keyConcept": "<b>SII — Rome IV:</b> dor abdominal ≥1 dia/semana nos últimos 3 meses + ≥2 de: (1) relacionada com defecação, (2) associada a alteração da frequência das fezes, (3) associada a alteração da forma das fezes. Calprotectina <50 µg/g exclui DII activa com alta especificidade. Diagnóstico positivo — não de exclusão extensa.",
+   "quickTip": "Rome IV: dor ≥1×/semana + 2 de 3 (defecação, frequência, forma) × 3 meses. Calprotectina <50 = SII provável. FODMAP + antiespasmódico."
+  },
+  {
+   "id": "dab17",
+   "vignette": "Mulher de 42 anos com SII diagnosticado há 3 anos. Referencia <b>alteração do padrão habitual há 6 semanas</b>: dor mais intensa e noturna, fezes com <b>sangue</b>. Perda de 3 kg. PCR 38 mg/L.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Reforçar a dieta FODMAP — agravamento do SII",
+     "correct": false,
+     "why": "Sangue nas fezes + perda ponderal + PCR elevada + dor noturna são alarmes que obrigam a investigação urgente — nunca tratar como SII."
+    },
+    {
+     "text": "Colonoscopia urgente",
+     "correct": true,
+     "why": "Alarmes em doente com SII prévio: sangue, perda ponderal, PCR elevada, dor noturna, início >50 anos = colonoscopia obrigatória. SII não causa sangue, febre nem calprotectina/PCR elevadas. NICE NG12: hematoquézia >40 anos → colonoscopia em 2 semanas."
+    },
+    {
+     "text": "Calprotectina e aguardar",
+     "correct": false,
+     "why": "Com sangue visível e perda ponderal, a colonoscopia está indicada independentemente da calprotectina."
+    },
+    {
+     "text": "Iniciar mesalazina empírica",
+     "correct": false,
+     "why": "Tratamento empírico sem diagnóstico histológico pode mascarar neoplasia."
+    },
+    {
+     "text": "RM pélvica para excluir endometriose",
+     "correct": false,
+     "why": "Sangue nas fezes + perda ponderal + PCR = investigar neoplasia colorrectal e DII — não endometriose."
+    }
+   ],
+   "keyConcept": "<b>Alarmes em doente com SII:</b> sangue nas fezes, perda ponderal >5%, dor noturna, PCR/calprotectina elevadas, início pós 50 anos, história familiar de CCR/DII = colonoscopia urgente. O diagnóstico de SII não protege de outras doenças. \"Red flags\" invalidam o SII.",
+   "quickTip": "SII + alarme novo (sangue, perda ponderal, PCR ↑, >50 anos) = colonoscopia urgente. SII não causa sangue."
+  },
+  {
+   "id": "dab18",
+   "vignette": "Mulher de 34 anos com colite ulcerosa há 4 anos em remissão. Recorre com diarreia com sangue <b>>6×/dia há 4 dias</b>, T 38,5°C, FC 106, Hb 10,2 g/dL, PCR 92 mg/L.",
+   "stem": "Qual a classificação de Truelove-Witts e conduta?",
+   "options": [
+    {
+     "text": "Moderada — aumentar mesalazina oral para 4g/dia e reavaliar em ambulatório",
+     "correct": false,
+     "why": "Truelove-Witts grave: >6 dejeções sanguinolentas/dia + pelo menos 1 sistémico (febre, taquicardia, Hb baixa). Não pode ser tratada em ambulatório."
+    },
+    {
+     "text": "Grave — internamento + corticóide EV (metilprednisolona 60mg/dia)",
+     "correct": true,
+     "why": "CU grave (Truelove-Witts): ≥6 dejeções sanguinolentas + T>37,8, FC>90, Hb<10,5, VS>30. Tratamento: internamento + corticóide EV. Ao 3º dia sem resposta → rescue (infliximab ou ciclosporina EV). Sem resposta → colectomia."
+    },
+    {
+     "text": "Ligeira — prednisolona oral 40mg/dia e reavaliação em 1 semana",
+     "correct": false,
+     "why": "Oral é insuficiente para CU grave com sinais sistémicos."
+    },
+    {
+     "text": "Grave — infliximab imediato sem tentar corticóide",
+     "correct": false,
+     "why": "Infliximab é rescue (2ª linha) se falência do corticóide ao 3º dia — não 1ª linha."
+    },
+    {
+     "text": "Ligeira — mesalazina supositório + oral",
+     "correct": false,
+     "why": "Supositório para doença distal ligeira/moderada. Este quadro é grave com sinais sistémicos."
+    }
+   ],
+   "keyConcept": "<b>Truelove-Witts grave:</b> ≥6 dejeções sanguinolentas + ≥1 de: T>37,8°C, FC>90, Hb<10,5g/dL, VS>30mm/h. Conduta: internamento + corticóide EV + excluir infecção (C. difficile, CMV) + avaliar ao 3º dia: sem melhoria → infliximab/ciclosporina; sem resposta → colectomia.",
+   "quickTip": "CU grave (Truelove-Witts): ≥6 dejeções + sistémico → corticóide EV. Dia 3 sem resposta → infliximab/ciclosporina. Falha → colectomia."
+  },
+  {
+   "id": "dab19",
+   "vignette": "Homem de 44 anos com doença de Crohn ileocólica em remissão sob azatioprina. TC urgente: <b>abcesso intra-abdominal de 4,5cm na FID</b>. Febre 38,9°C, leucocitose, sem peritonismo.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Intensificar para infliximab urgente",
+     "correct": false,
+     "why": "CONTRAINDICADO. Anti-TNF com abcesso activo não drenado pode mascarar sépsis e agravar."
+    },
+    {
+     "text": "Drenagem percutânea + antibioterapia EV; cirurgia electiva após resolução",
+     "correct": true,
+     "why": "Abcesso ≥3cm no Crohn: drenagem percutânea guiada + antibioterapia EV + suspender imunossupressor (azatioprina). Anti-TNF só após controlo do foco. Cirurgia electiva (ressecção ileocecal) 4-8 semanas depois."
+    },
+    {
+     "text": "Cirurgia de urgência — ressecção ileocecal imediata",
+     "correct": false,
+     "why": "Cirurgia imediata com abcesso activo e imunossupressão tem risco alto de complicações. Drenagem percutânea é o primeiro passo."
+    },
+    {
+     "text": "Antibioterapia EV isolada sem drenagem",
+     "correct": false,
+     "why": "Abcesso ≥3cm raramente resolve apenas com antibiótico. Drenagem é necessária."
+    },
+    {
+     "text": "Aumentar azatioprina e adicionar prednisolona EV",
+     "correct": false,
+     "why": "Imunossupressão com abcesso activo não drenado é perigosa."
+    }
+   ],
+   "keyConcept": "<b>Abcesso na doença de Crohn:</b> step-down: (1) Drenagem percutânea + antibioterapia EV; (2) Suspender imunossupressor; (3) Anti-TNF só após controlo completo do abcesso; (4) Cirurgia electiva 4-8 semanas depois. Cirurgia urgente apenas se peritonite/rotura.",
+   "quickTip": "Crohn + abcesso: drenar percutaneamente + antibiótico. Suspender imunossupressor. Anti-TNF só após resolver. Regra: controlar a sépsis antes da doença."
+  },
+  {
+   "id": "dab20",
+   "vignette": "Homem de 64 anos, antecedentes de <b>úlcera duodenal</b>. Dor epigástrica súbita de máxima intensidade, \"em facada\". Abdómen em tábua, sem ruídos intestinais. T 37,2°C, PA 110/74.",
+   "stem": "Qual o exame inicial mais rápido e diagnóstico?",
+   "options": [
+    {
+     "text": "TC abdominopélvica com contraste",
+     "correct": false,
+     "why": "TC é mais sensível mas demora mais. Rx tórax em pé é mais rápido, disponível em qualquer urgência, e diagnóstico em 75-80% das perfurações."
+    },
+    {
+     "text": "Radiografia do tórax em pé — ar subdiafragmático",
+     "correct": true,
+     "why": "Úlcera perfurada: Rx tórax em pé detecta pneumoperitoneu em 75-80%. Rápido, barato, diagnóstico. Se negativo e suspeita alta → TC (sensibilidade >95%). Cirurgia urgente após diagnóstico."
+    },
+    {
+     "text": "Endoscopia digestiva alta urgente",
+     "correct": false,
+     "why": "EDA contraindicada na suspeita de perfuração activa — o ar insuflado agrava o pneumoperitoneu."
+    },
+    {
+     "text": "Ecografia abdominal urgente",
+     "correct": false,
+     "why": "Eco tem sensibilidade de 40-70% para ar livre — muito inferior ao Rx e TC."
+    },
+    {
+     "text": "Alta com IBP EV e reavaliar em 2h",
+     "correct": false,
+     "why": "Abdómen em tábua + dor súbita máxima + úlcera prévia = perfuração até prova em contrário. Alta inaceitável."
+    }
+   ],
+   "keyConcept": "<b>Úlcera perfurada:</b> Rx tórax em pé = ar subdiafragmático em 75-80%. Se negativo → TC (>95% sensibilidade). EDA contraindicada. Conduta: jejum + SNG + antibiótico + IBP + cirurgia urgente (sutura de Graham ± omentalização).",
+   "quickTip": "Perfuração: Rx tórax em pé → ar subdiafragmático em 75%. Negativo → TC. EDA = contraindicada. Cirurgia urgente."
+  },
+  {
+   "id": "dab21",
+   "vignette": "Homem de 57 anos. Hematémese de 150mL de sangue vivo. PA 98/64, FC 118. Hb 8,0 g/dL. <b>Glasgow-Blatchford Score 10</b>.",
+   "stem": "Qual a conduta correcta?",
+   "options": [
+    {
+     "text": "Alta com IBP oral e EDA eletiva em 48h",
+     "correct": false,
+     "why": "GBS ≥1 indica internamento. GBS 10 é de alto risco — EDA urgente necessária."
+    },
+    {
+     "text": "Internamento, IBP EV (omeprazol 80mg bolus + 8mg/h), EDA em <12h",
+     "correct": true,
+     "why": "GBS ≥6 = alto risco → IBP EV pré-endoscópico + EDA em <12h. IBP melhora achados endoscópicos (menos estigmas de alto risco) facilitando hemostase. Não reduz mortalidade mas simplifica o procedimento."
+    },
+    {
+     "text": "Transfusão de 4U CE imediata",
+     "correct": false,
+     "why": "Estratégia restritiva: transfundir se Hb <7 g/dL (ou <8 com cardiopatia). Hb 8,0 num doente relativamente estável não exige transfusão imediata — a EDA é prioridade."
+    },
+    {
+     "text": "Colonoscopia urgente — pode ser origem baixa",
+     "correct": false,
+     "why": "Hematémese = HDA (acima do ângulo de Treitz). Colonoscopia não está indicada."
+    },
+    {
+     "text": "Aguardar estabilização e EDA amanhã de manhã",
+     "correct": false,
+     "why": "EDA em <12h em HDA de alto risco — atrasar aumenta mortalidade."
+    }
+   ],
+   "keyConcept": "<b>HDA — Glasgow-Blatchford Score:</b> GBS ≥1 = internamento. GBS ≥6 = alto risco → IBP EV + EDA urgente <12h. IBP pré-EDA: melhora achados endoscópicos mas NÃO reduz mortalidade (ponto PNA frequente). Estratégia restritiva de transfusão (alvo Hb 7-8) reduz mortalidade.",
+   "quickTip": "HDA: GBS ≥1 = internamento. GBS ≥6 = IBP EV + EDA <12h. IBP pré-EDA melhora achados mas NÃO reduz mortalidade."
+  },
+  {
+   "id": "dab22",
+   "vignette": "Cirrótico Child-Pugh B. Hematémese activa. EDA: <b>varizes esofágicas de grande calibre com sangramento</b>.",
+   "stem": "Para além da ressuscitação e EDA, qual o tratamento farmacológico prioritário?",
+   "options": [
+    {
+     "text": "IBP EV em bolus + perfusão",
+     "correct": false,
+     "why": "IBP é para hemorragia ulcerosa, não varicosa. Não tem papel na hemorragia varicosa."
+    },
+    {
+     "text": "Terlipressina EV + antibiótico profilático (ceftriaxona)",
+     "correct": true,
+     "why": "Terlipressina (vasoconstritor esplâncnico, ↓ pressão portal) + ceftriaxona (reduz bacteriémia e mortalidade em 22%). Laqueação endoscópica é o tratamento endoscópico de eleição. TIPS se falência endoscópica."
+    },
+    {
+     "text": "Propranolol oral 40mg imediato",
+     "correct": false,
+     "why": "Propranolol é profilaxia primária e secundária — não tratamento agudo."
+    },
+    {
+     "text": "Balão de Sengstaken imediato",
+     "correct": false,
+     "why": "Balão de tamponamento é bridge temporária em falência endoscópica major — não 1ª linha."
+    },
+    {
+     "text": "Vitamina K IV e plasma fresco para corrigir coagulopatia",
+     "correct": false,
+     "why": "Coagulopatia cirrótica é multifactorial; vitamina K tem efeito limitado. Terlipressina + antibiótico é a prioridade."
+    }
+   ],
+   "keyConcept": "<b>Hemorragia varicosa:</b> (1) Terlipressina 2mg EV 4/4h (↓ pressão portal, ↓ mortalidade 34%); (2) Antibiótico profiláctico (ceftriaxona — ↓ mortalidade 22% em cirróticos com hemorragia); (3) Laqueação endoscópica urgente <12h; (4) TIPS se falência. Transfusão restritiva (Hb 7-8): transfusão agressiva ↑ pressão portal e piora.",
+   "quickTip": "Varizes: terlipressina + ceftriaxona + laqueação <12h. Alvo Hb 7-8 (transfusão agressiva piora). TIPS se falência."
+  },
+  {
+   "id": "dab23",
+   "vignette": "Homem de 44 anos, etilista crónico. Dor epigástrica intensa \"em cinturão\". <b>Lipase 180 U/L</b> (normal <60 U/L, portanto = 3× o limite superior). Médico confunde com \"lipase normal porque é <200\".",
+   "stem": "Qual a interpretação correcta do valor da lipase?",
+   "options": [
+    {
+     "text": "Lipase normal — 180 U/L está dentro dos limites normais alargados",
+     "correct": false,
+     "why": "O limite superior da lipase é 60 U/L neste laboratório. 180 U/L = 3× o limite superior = critério de pancreatite."
+    },
+    {
+     "text": "Lipase ≥3× o limite superior → satisfaz o critério laboratorial de pancreatite aguda",
+     "correct": true,
+     "why": "Atlanta 2012: lipase (ou amilase) ≥3× o limite superior da normalidade do laboratório local satisfaz o critério laboratorial. 180 U/L = 3× de 60 = satisfaz. Fundamental: usar o limite LOCAL, não um valor absoluto fixo."
+    },
+    {
+     "text": "Lipase elevada mas insuficiente — requerer >500 U/L para diagnóstico",
+     "correct": false,
+     "why": "Não existe um limiar absoluto de 500 U/L. O critério de Atlanta é ≥3× o limite superior do laboratório local."
+    },
+    {
+     "text": "Lipase moderadamente elevada — não diagnostica pancreatite sem TC",
+     "correct": false,
+     "why": "Com dor típica + lipase ≥3× = 2 de 3 critérios de Atlanta → diagnóstico confirmado. TC não é necessária nas primeiras 48h."
+    },
+    {
+     "text": "Lipase ligeiramente elevada — pode ser causa extrapancreática",
+     "correct": false,
+     "why": "3× o limite superior não é \"ligeiramente elevada\". Abaixo de 3× podem existir causas extrapancreáticas (DRC, macrolipasemia, cetoacidose)."
+    }
+   ],
+   "keyConcept": "<b>Critério laboratorial de pancreatite (Atlanta 2012):</b> lipase ou amilase ≥3× o limite superior da normalidade do laboratório local. O limiar é relativo ao laboratório, não um valor absoluto. Lipase <3× pode ter causas extrapancreáticas (DRC, cetoacidose, macrolipasemia). TC: só após 48-72h se não melhora.",
+   "quickTip": "Pancreatite: lipase ≥3× limite superior LOCAL. Não usar 500 U/L como corte fixo — usar o 3× do laboratório."
+  },
+  {
+   "id": "dab24",
+   "vignette": "Mulher de 53 anos, operada a laparotomia há 5 anos. Recorre com dor abdominal em cólica, vómitos biliosos, obstipação há 16h. Rx abdómen: <b>múltiplos níveis hidroaéreos, padrão de delgado</b>. TC abdominal: dilatação do delgado com ponto de transição no flanco, <b>sem pneumatose, sem líquido livre, sem ausência de reforço da parede</b>.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Cirurgia de urgência — oclusão em doente com cirurgia prévia",
+     "correct": false,
+     "why": "Sem sinais de sofrimento de alça (sem pneumatose, sem líquido livre, sem ausência de reforço) — a maioria resolve com tratamento conservador."
+    },
+    {
+     "text": "Tratamento conservador: SNG + jejum + fluidos EV + vigilância 24-72h",
+     "correct": true,
+     "why": "OIA por aderências sem sofrimento: conservador 24-72h (WSES Bologna Guidelines). Taxa de resolução espontânea 65-80%. Cirurgia se: sofrimento de alça, falência conservador, OIA completa sem resolução em 72h."
+    },
+    {
+     "text": "Colonoscopia urgente descompressiva",
+     "correct": false,
+     "why": "Colonoscopia é para pseudo-obstrução/vólvulo do cólon — não para obstrução do delgado por aderências."
+    },
+    {
+     "text": "Alta com laxante oral",
+     "correct": false,
+     "why": "Obstrução intestinal confirmada com vómitos → internamento obrigatório."
+    },
+    {
+     "text": "Laparoscopia diagnóstica imediata",
+     "correct": false,
+     "why": "Sem sofrimento de alça — conservador primeiro. Cirurgia se falência após 24-72h."
+    }
+   ],
+   "keyConcept": "<b>Obstrução intestinal alta (OIA) por aderências sem sofrimento:</b> conservador 24-72h (SNG + fluidos + jejum + vigilância). Sofrimento = pneumatose intestinal, líquido livre, ausência de reforço após contraste, peritonismo, deterioração clínica → cirurgia urgente. Taxa de resolução espontânea: 65-80%.",
+   "quickTip": "OIA por aderências sem sofrimento → SNG + jejum + fluidos + vigiar 24-72h. Sofrimento (pneumatose, líquido livre) = cirurgia urgente."
+  },
+  {
+   "id": "dab25",
+   "vignette": "Homem de 71 anos, internado por pneumonia. Ao 4º dia: <b>distensão abdominal progressiva, obstipação, sem vómitos, sem dor intensa</b>. T 37,1°C, leucócitos 9800. Rx abdómen: <b>cólon dilatado até 12cm</b>. TC: sem ponto de transição, sem espessamento parietal.",
+   "stem": "Qual o diagnóstico e tratamento?",
+   "options": [
+    {
+     "text": "Oclusão por neoplasia — colonoscopia urgente",
+     "correct": false,
+     "why": "TC sem ponto de transição + contexto de internamento + sem febre = Ogilvie, não neoplasia."
+    },
+    {
+     "text": "Pseudo-obstrução aguda do cólon (Ogilvie) — neostigmina 2mg EV",
+     "correct": true,
+     "why": "Ogilvie: dilatação colónica massiva sem obstrução mecânica. Contexto: imobilização, analgésicos, cirurgia, pneumonia. Tratamento: (1) Corrigir causas reversíveis; (2) Neostigmina 2mg EV lento (eficácia 80-90%, monitorizar bradicardia). Ceco ≥12cm = risco de perfuração iminente — urgência."
+    },
+    {
+     "text": "Obstrução por vólvulo do cólon — colonoscopia descompressiva",
+     "correct": false,
+     "why": "Vólvulo tem sinal do \"grão de café\" na TC com ponto de torção. Aqui a dilatação é difusa sem ponto de transição."
+    },
+    {
+     "text": "Enema de alta pressão",
+     "correct": false,
+     "why": "Baixa eficácia e risco de perfuração num cólon com 12cm de dilatação."
+    },
+    {
+     "text": "Alta com laxante oral",
+     "correct": false,
+     "why": "Ceco 12cm = risco de perfuração iminente. Internamento e tratamento imediatos."
+    }
+   ],
+   "keyConcept": "<b>Síndrome de Ogilvie (pseudo-obstrução colónica aguda):</b> dilatação colónica sem causa mecânica. Factores: imobilização, analgésicos opiáceos, pós-operatório, infecções. Tratamento: (1) Corrigir electrólitos, suspender opiáceos/anticolinérgicos; (2) Neostigmina 2mg EV lento (monitorizar bradicardia); (3) Se falência → descompressão colonoscópica; (4) Ceco >12cm = urgência por risco de perfuração.",
+   "quickTip": "Ogilvie: dilatação cólica sem obstrução → neostigmina 2mg EV. Ceco >12cm = perfuração iminente. Colonoscopia se falha neostigmina."
+  },
+  {
+   "id": "dab26",
+   "vignette": "Homem de 66 anos. Dor na fossa ilíaca esquerda há 3 dias, febre 37,9°C. TC: <b>diverticulite Hinchey Ia</b> (espessamento parietal + gordura pericólica, sem abcesso). Leucócitos 12 400. Tolera dieta líquida.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Cirurgia urgente — sigmoidectomia",
+     "correct": false,
+     "why": "Hartmann/sigmoidectomia é para Hinchey III/IV (peritonite). Hinchey Ia responde a tratamento médico."
+    },
+    {
+     "text": "Internamento, antibioterapia EV, jejum",
+     "correct": false,
+     "why": "Sem comorbilidades major, tolerando oral — ambulatório com antibiótico oral é seguro e custo-eficaz em Hinchey Ia não complicado."
+    },
+    {
+     "text": "Ambulatório: dieta líquida + antibiótico oral + reavaliação 48-72h",
+     "correct": true,
+     "why": "Diverticulite Hinchey Ia sem comorbilidades major, tolerando oral → ambulatório com antibiótico oral (amoxicilina-clavulanato ou ciprofloxacina + metronidazol) × 7-10 dias. Colonoscopia 6-8 semanas depois."
+    },
+    {
+     "text": "Drenagem percutânea do flegmão",
+     "correct": false,
+     "why": "Drenagem é para abcesso ≥3-4cm (Hinchey II). Flegmão não tem coleção líquida para drenar."
+    },
+    {
+     "text": "Alta sem antibiótico — dieta e repouso",
+     "correct": false,
+     "why": "Sem antibiótico pode ser considerado em estudos recentes (Hinchey Ia sem leucocitose), mas não é o padrão actual em Portugal."
+    }
+   ],
+   "keyConcept": "<b>Diverticulite Hinchey Ia:</b> ambulatório + antibiótico oral + dieta líquida + reavaliação 48-72h se sem comorbilidades. Internamento se: febre alta, incapacidade de oral, imunossupressão, comorbilidade major, piora. Colonoscopia: 6-8 semanas depois (excluir neoplasia de base). <b>Nunca colonoscopia na fase aguda.</b>",
+   "quickTip": "Hinchey Ia → ambulatório + antibiótico oral. Colonoscopia 6-8 semanas depois (nunca na fase aguda). Hinchey III/IV → cirurgia urgente."
+  },
+  {
+   "id": "dab27",
+   "vignette": "Homem de 69 anos, Hinchey III (peritonite purulenta). PA 88/56, FC 124, T 39,2°C, lactato 3,8 mmol/L. Instável.",
+   "stem": "Qual a conduta cirúrgica correcta?",
+   "options": [
+    {
+     "text": "Lavagem laparoscópica + drenagem sem ressecção",
+     "correct": false,
+     "why": "Lavagem laparoscópica foi inferior à ressecção em RCTs (LADIES, SCANDIV) — maior re-operação e mortalidade. Não recomendada actualmente para Hinchey III."
+    },
+    {
+     "text": "Ressecção do sigmoide + anastomose primária + ileostomia de protecção",
+     "correct": false,
+     "why": "Em doente instável, anastomose tem risco alto de deiscência. Hartmann é mais seguro."
+    },
+    {
+     "text": "Ressuscitação + operação de Hartmann (ressecção + colostomia terminal)",
+     "correct": true,
+     "why": "Hinchey III/IV instável: operação de Hartmann (ressecção do sigmoide + colostomia terminal + encerramento do recto). Elimina o foco, sem risco de anastomose. Reversão do Hartmann: 3-6 meses depois (em ~50% dos doentes)."
+    },
+    {
+     "text": "Drenagem percutânea + antibiótico e cirurgia electiva",
+     "correct": false,
+     "why": "Peritonite purulenta generalizada não é tratável com drenagem percutânea — requer controlo cirúrgico."
+    },
+    {
+     "text": "Antibioterapia tripla EV e reavaliar em 12h",
+     "correct": false,
+     "why": "Peritonite + choque séptico não podem ser tratados apenas com antibiótico."
+    }
+   ],
+   "keyConcept": "<b>Hinchey III/IV instável:</b> operação de Hartmann (ressecção + colostomia). Estável + cirurgião experiente: anastomose primária + ileostomia de protecção (mortalidade similar). Lavagem laparoscópica: ultrapassada (RCTs mostraram inferioridade).",
+   "quickTip": "Hinchey III instável = Hartmann. Estável + experiente = anastomose + ileostomia. Lavagem laparoscópica não recomendada."
+  },
+  {
+   "id": "dab28",
+   "vignette": "Homem de 35 anos com dor abdominal aguda. O residente propõe não dar morfina \"para não mascarar o diagnóstico\". O interno questiona esta prática.",
+   "stem": "Qual a abordagem correcta segundo a evidência científica actual?",
+   "options": [
+    {
+     "text": "O residente tem razão — morfina suprime peritonismo e deve ser evitada",
+     "correct": false,
+     "why": "Esta crença, originada em 1926 (Cope), foi refutada por >20 RCTs e meta-análises (Cochrane 2006, Manterola 2007)."
+    },
+    {
+     "text": "O interno tem razão — morfina não mascara o diagnóstico; analgesia é um direito e uma obrigação ética",
+     "correct": true,
+     "why": "Múltiplos RCTs confirmam: opióides IV no abdómen agudo NÃO aumentam erros diagnósticos, NÃO atrasam cirurgia, NÃO aumentam mortalidade. Pelo contrário, melhoram a cooperação e facilitam o exame. Negar analgesia = má prática. PONTO PNA CLÁSSICO."
+    },
+    {
+     "text": "Dependendo do contexto — AINE sim, morfina não",
+     "correct": false,
+     "why": "A distinção AINE/opióide não tem base científica neste contexto. O princípio é universal."
+    },
+    {
+     "text": "A morfina pode ser dada após o cirurgião observar o doente",
+     "correct": false,
+     "why": "O doente não deve esperar pela observação do cirurgião para ter analgesia. Negar analgesia é inaceitável."
+    },
+    {
+     "text": "Dar paracetamol EV — sem risco de mascarar",
+     "correct": false,
+     "why": "Paracetamol também alivia a dor. O problema não é o fármaco — o mito é que \"qualquer analgesia mascara\". Esse mito está refutado."
+    }
+   ],
+   "keyConcept": "<b>Morfina e abdómen agudo — mito refutado:</b> Cochrane 2006 + Manterola 2007 + múltiplos RCTs: a analgesia opióide não aumenta erros diagnósticos, não atrasa cirurgia, não mascara o diagnóstico. Melhora a cooperação e facilita o exame. Negar analgesia ao doente com dor abdominal aguda é má prática e antiético. PONTO CLÁSSICO DA PNA.",
+   "quickTip": "Morfina NÃO mascara o diagnóstico abdominal. Evidência nível I (Cochrane). Negar analgesia = má prática. Ponto PNA obrigatório."
+  },
+  {
+   "id": "dab29",
+   "vignette": "Mulher de 45 anos com antecedentes de <b>úlcera gástrica</b> e dor lombar. Tomou ibuprofeno 600mg 3×/dia durante 10 dias. Recorre ao SU com hematémese de 80mL e melenas.",
+   "stem": "Qual a contraindicação mais relevante neste caso?",
+   "options": [
+    {
+     "text": "Paracetamol está contraindicado — hepatotoxicidade",
+     "correct": false,
+     "why": "Sem contexto de doença hepática. Paracetamol é o analgésico de eleição neste caso."
+    },
+    {
+     "text": "AINE está contraindicado — úlcera péptica activa/recente + hemorragia digestiva activa",
+     "correct": true,
+     "why": "AINE contraindicado: úlcera activa, hemorragia digestiva, DRC (TFG<30), anticoagulação, ICC descompensada. Aqui: úlcera prévia + AINE como causa provável da hemorragia = AINE absolutamente contraindicado. Paracetamol + IBP é a alternativa."
+    },
+    {
+     "text": "Morfina contraindicada — espasmo pilórico",
+     "correct": false,
+     "why": "Morfina não tem contraindicação formal na úlcera péptica. O espasmo do piloro com morfina não é clinicamente relevante."
+    },
+    {
+     "text": "Tramadol contraindicado — interacção com omeprazol",
+     "correct": false,
+     "why": "Não há contraindicação farmacológica relevante tramadol-omeprazol neste contexto."
+    },
+    {
+     "text": "Nenhum analgésico pode ser dado antes da EDA",
+     "correct": false,
+     "why": "Analgesia é obrigatória e segura. Paracetamol EV pode e deve ser dado."
+    }
+   ],
+   "keyConcept": "<b>AINE contraindicado em:</b> (1) Úlcera péptica activa/recente; (2) Hemorragia digestiva; (3) DRC (TFG<30); (4) Suspeita de perfuração; (5) Anticoagulação; (6) ICC descompensada. Alternativa: paracetamol ± opióide. AINE + IBP não elimina completamente o risco mas reduz-o significativamente na profilaxia.",
+   "quickTip": "AINE contraindicado: úlcera activa, HDig, TFG<30, anticoagulação, ICC. Na dúvida: paracetamol + IBP."
+  },
+  {
+   "id": "dab30",
+   "vignette": "Mulher de 32 anos com colecistite aguda confirmada. Após colecistectomia laparoscópica bem sucedida, a cirurgiã nota que o <b>apêndice tem aspecto normal</b>. Deve realizar apendicectomia?",
+   "stem": "O que deve fazer o cirurgião perante apêndice macroscopicamente normal durante laparoscopia?",
+   "options": [
+    {
+     "text": "Fechar o abdómen — apêndice normal não deve ser removido",
+     "correct": false,
+     "why": "Apêndice macroscopicamente normal pode ter inflamação histológica. Além disso, a apendicectomia incidental elimina a apendicite futura e evita confusão diagnóstica."
+    },
+    {
+     "text": "Apendicectomia + exploração abdominal sistemática",
+     "correct": true,
+     "why": "Durante laparoscopia, apêndice macroscopicamente normal: realizar apendicectomia (profilaxia de apendicite futura + 30% têm inflamação histológica) + exploração sistemática (excluir: Meckel, patologia ginecológica, Crohn, adenite mesentérica)."
+    },
+    {
+     "text": "Biópsia do apêndice e aguardar histologia intra-operatória",
+     "correct": false,
+     "why": "Biópsia sem exérese não é o standard. Apendicectomia completa é preferida."
+    },
+    {
+     "text": "Laparotomia exploradora para melhor visão",
+     "correct": false,
+     "why": "Laparoscopia permite exploração abdominal completa. Conversão não está indicada apenas por apêndice normal."
+    },
+    {
+     "text": "Fechar e TC pós-operatória se aparecerem sintomas",
+     "correct": false,
+     "why": "TC pós-operatória não substitui a exploração intra-operatória."
+    }
+   ],
+   "keyConcept": "<b>Apêndice normal na laparoscopia:</b> (1) Exploração abdominal sistemática: últimos 60cm de íleon (Meckel), patologia ginecológica, Crohn, adenite mesentérica; (2) Apendicectomia: 30% têm inflamação histológica não visível macroscopicamente, e evita confusão diagnóstica futura. Na colecistite + apendicite incidental: apendicectomia é geralmente realizada se tecnicamente fácil.",
+   "quickTip": "Apêndice normal na laparoscopia: explorar sistematicamente + apendicectomia. 30% têm inflamação histológica. Meckel: últimos 60cm de íleon."
+  },
+  {
+   "id": "dab31",
+   "vignette": "Mulher de 19 anos. Dor na FID há 8h, febre 38°C, leucocitose. Score Alvarado 6. O cirurgião lembra-se de algo.",
+   "stem": "Qual exame é SEMPRE obrigatório antes de qualquer cirurgia nesta doente?",
+   "options": [
+    {
+     "text": "TC abdominopélvica",
+     "correct": false,
+     "why": "Útil, mas não é o teste que pode mudar radicalmente a conduta cirúrgica."
+    },
+    {
+     "text": "Beta-hCG",
+     "correct": true,
+     "why": "REGRA ABSOLUTA: toda a mulher fértil com dor abdominal aguda → beta-hCG ANTES de qualquer decisão cirúrgica. Gravidez ectópica imita apendicite. Operar uma ectópica como apendicite é um erro grave."
+    },
+    {
+     "text": "Ecografia pélvica",
+     "correct": false,
+     "why": "Importante para DDx ginecológico, mas o beta-hCG tem prioridade — é o primeiro passo."
+    },
+    {
+     "text": "Hemoculturas",
+     "correct": false,
+     "why": "Não é o exame que pode mudar radicalmente a conduta."
+    },
+    {
+     "text": "Glicemia e gasimetria",
+     "correct": false,
+     "why": "Não são os exames prioritários neste contexto."
+    }
+   ],
+   "keyConcept": "<b>Beta-hCG obrigatório em toda a mulher fértil com dor abdominal aguda.</b> A gravidez ectópica pode apresentar-se identicamente à apendicite (dor FID + febre + leucocitose). A conduta é completamente diferente. Nunca operar sem beta-hCG.",
+   "quickTip": "Mulher fértil + dor abdominal = beta-hCG ANTES de qualquer decisão. Regra absoluta. Ectópica = dor FID + febre + leucocitose."
+  },
+  {
+   "id": "dab32",
+   "vignette": "Homem de 78 anos, Murphy negativo ao exame. Leucócitos 14 400, febre 38,1°C, dor HCD. Ecografia: <b>espessamento parietal 6mm, líquido pericistítico, sinal de Murphy ecográfico positivo</b>. (Tokyo Grade I)",
+   "stem": "Murphy negativo no exame clínico exclui colecistite neste doente?",
+   "options": [
+    {
+     "text": "Sim — Murphy negativo tem alto valor preditivo negativo",
+     "correct": false,
+     "why": "FALSO em idosos. A sensibilidade do sinal de Murphy cai para <50% após os 65 anos."
+    },
+    {
+     "text": "Não — em idosos a sensibilidade do Murphy clínico cai para <50%; os achados ecográficos são mais fiáveis",
+     "correct": true,
+     "why": "Em idosos, o sinal de Murphy clínico tem sensibilidade <50% (vs >90% em jovens). Causas: neuropatia, corticóides, analgésicos crónicos. Os achados ecográficos (espessamento parietal + líquido pericistítico + Murphy ecográfico) têm mais peso diagnóstico."
+    },
+    {
+     "text": "Sim — se Murphy negativo E ecografia com líquido pericistítico, é outra causa",
+     "correct": false,
+     "why": "A colecistite pode existir mesmo sem Murphy clínico positivo. Os achados ecográficos prevalecem."
+    },
+    {
+     "text": "Depende — apenas se o doente for diabético",
+     "correct": false,
+     "why": "A neuropatia autonómica dos diabéticos atenua ainda mais os sinais, mas a diminuição da sensibilidade do Murphy em idosos é independente da diabetes."
+    },
+    {
+     "text": "Murphy negativo + ecografia positiva = colecistite crónica, não aguda",
+     "correct": false,
+     "why": "Errado. Colecistite aguda pode ter Murphy negativo em idosos apesar de achados ecográficos típicos de inflamação activa."
+    }
+   ],
+   "keyConcept": "<b>Murphy em idosos:</b> sensibilidade cai para <50% (vs >90% em jovens) por neuropatia, corticóides, analgésicos. Em idosos, os achados ecográficos (espessamento >4mm, líquido pericistítico, Murphy ecográfico, dilatação da vesícula) são mais fiáveis do que o sinal clínico. Também: colecistite gangrenosa pode ter exame quase normal (\"colecistite silenciosa\").",
+   "quickTip": "Murphy em idosos (<50% sensibilidade). Não excluir colecistite com Murphy negativo. Ecografia > exame clínico no idoso."
+  },
+  {
+   "id": "dab33",
+   "vignette": "Mulher de 52 anos, <b>corticoterapia crónica</b> por DII + imunossupressão. Recorre com dor abdominal há 24h, moderada. T 37,3°C, exame abdominal discretamente doloroso sem defesa. Leucócitos 9600, PCR 68 mg/L.",
+   "stem": "Qual o risco clínico major neste contexto?",
+   "options": [
+    {
+     "text": "Exame tranquilizador — alta com AINE",
+     "correct": false,
+     "why": "Em imunossuprimido com corticóide, o exame pode ser falsamente tranquilizador. PCR 68 sob corticóides é muito significativo."
+    },
+    {
+     "text": "Corticóides atenuam febre, peritonismo e leucocitose — baixo limiar para TC urgente",
+     "correct": true,
+     "why": "Corticóides e imunossupressores suprimem a resposta inflamatória — um doente com peritonite pode ter T 37,3°C, exame quase normal e leucócitos normais. PCR elevada sob corticóides é sinal de alarme. TC urgente para excluir complicação grave."
+    },
+    {
+     "text": "Exacerbação da DII — aumentar mesalazina",
+     "correct": false,
+     "why": "Sem EDA/colonoscopia recente, não se pode atribuir a exacerbação da DII sem excluir complicação cirúrgica."
+    },
+    {
+     "text": "ITU complicada — urina tipo II e urocultura",
+     "correct": false,
+     "why": "Pode fazer parte do DDx, mas a preocupação principal é complicação intra-abdominal mascarada pela imunossupressão."
+    },
+    {
+     "text": "Síndrome de Cushing iatrogénico — reduzir prednisolona",
+     "correct": false,
+     "why": "Não é o problema agudo aqui."
+    }
+   ],
+   "keyConcept": "<b>\"Corticóides mascaram o abdómen\":</b> a corticoterapia suprime febre, peritonismo e leucocitose. PCR elevada sob corticóides é sinal de alarme forte — o limiar para TC urgente deve ser muito baixo. Diagnósticos a excluir: megacólon tóxico, perfuração, abcesso, isquemia, peritonite bacteriana espontânea.",
+   "quickTip": "Corticóides mascaram: febre, peritonismo, leucocitose. PCR elevada sob corticóide = alarme. TC urgente + baixo limiar."
+  },
+  {
+   "id": "dab34",
+   "vignette": "Homem de 55 anos, sem antecedentes de doença cardíaca. Recorre ao SU com <b>dor epigástrica + sudorese profusa</b> há 1h. Ao exame: dor à palpação epigástrica moderada, sem peritonismo.",
+   "stem": "Qual o exame MAIS urgente neste contexto?",
+   "options": [
+    {
+     "text": "Ecografia abdominal urgente",
+     "correct": false,
+     "why": "Útil para excluir causa biliar, mas não é o exame mais urgente dado o quadro (sudorese + dor epigástrica)."
+    },
+    {
+     "text": "ECG de 12 derivações + troponinas",
+     "correct": true,
+     "why": "Epigastralgia + sudorese = SCA até prova em contrário. O enfarte da parede inferior (artéria coronária direita ou circunflexa) irradia para o epigastro e pode simular abdómen agudo. ECG + troponinas são obrigatórios antes de atribuir a dor a causa gástrica."
+    },
+    {
+     "text": "IBP EV empírico",
+     "correct": false,
+     "why": "Tratar empiricamente sem excluir SCA é potencialmente fatal."
+    },
+    {
+     "text": "TC abdominal",
+     "correct": false,
+     "why": "Mais invasivo e lento. ECG é o primeiro exame."
+    },
+    {
+     "text": "EDA urgente",
+     "correct": false,
+     "why": "EDA sem excluir SCA é perigosa — esforço + sedação podem agravar isquemia miocárdica activa."
+    }
+   ],
+   "keyConcept": "<b>Enfarte agudo do miocárdio inferior/posterior:</b> pode apresentar-se como epigastralgia + náuseas + sudorese — simula abdómen agudo. Causa: oclusão da artéria coronária direita (D2, V1-V4 invertidas, V7-9) ou circunflexa. <b>ECG obrigatório em todo o adulto com epigastralgia inexplicada</b>, especialmente com sudorese ou factores de risco cardiovasculares. \"Não há abdómen agudo sem ECG no adulto.\"",
+   "quickTip": "Epigastralgia + sudorese = SCA até prova em contrário. ECG + troponinas obrigatórios antes de atribuir a causa gástrica."
+  },
+  {
+   "id": "dab35",
+   "vignette": "Mulher de 27 anos, diabética tipo 1. Recorre ao SU com <b>dor abdominal difusa, náuseas e vómitos</b>. T 37,2°C, exame abdominal difusamente doloroso sem defesa. <b>Glicemia 428 mg/dL, cetonas +++, pH 7,16, HCO₃ 7 mEq/L</b>.",
+   "stem": "Qual a relação entre cetoacidose e dor abdominal?",
+   "options": [
+    {
+     "text": "A CAD não causa dor abdominal — investigar causa cirúrgica urgente",
+     "correct": false,
+     "why": "A CAD causa dor abdominal em 50-70% dos casos — é uma manifestação directa, não acidental."
+    },
+    {
+     "text": "A dor abdominal é manifestação directa da CAD (acidose, distensão gástrica, hipocalemia); resolve com o tratamento da CAD",
+     "correct": true,
+     "why": "CAD causa dor abdominal em 50-70% por acidose metabólica + gastroparésia + hipomotilidade. Se dor resolve com tratamento da CAD → era manifestação desta. Se dor persiste após normalização metabólica → investigar causa cirúrgica."
+    },
+    {
+     "text": "CAD causa pancreatite em >50% — pedir lipase urgente",
+     "correct": false,
+     "why": "CAD pode elevar moderadamente a lipase sem pancreatite verdadeira (confundidor). Pancreatite também pode precipitar CAD, mas não é a causa mais frequente de dor abdominal na CAD."
+    },
+    {
+     "text": "Cirurgia urgente — dor abdominal + CAD = complicação fatal",
+     "correct": false,
+     "why": "Cirurgia na CAD tem mortalidade elevada. A dor abdominal da CAD resolve >80% com tratamento médico."
+    },
+    {
+     "text": "Dar opióide e tratar a CAD em simultâneo",
+     "correct": false,
+     "why": "A analgesia pode ser dada, mas o ponto é que a dor abdominal é manifestação da CAD e resolve com o seu tratamento."
+    }
+   ],
+   "keyConcept": "<b>Dor abdominal na CAD:</b> presente em 50-70% dos doentes por acidose + distensão gástrica + hipomotilidade + hipopotassemia. <b>Resolve habitualmente com tratamento da CAD.</b> Algoritmo: (1) Tratar a CAD; (2) Se dor resolve → era manifestação desta; (3) Se persiste após normalização metabólica → investigar causa cirúrgica.",
+   "quickTip": "CAD + dor abdominal: tratar CAD primeiro. Se persiste após normalizar → causa cirúrgica. Lipase pode subir na CAD sem pancreatite."
+  },
+  {
+   "id": "dab36",
+   "vignette": "Mulher de 50 anos, dor no HCD há 2 dias, febre. Ao exame: dor no HCD e base torácica direita. <b>Rx tórax: opacidade e derrame pleural basais direitos</b>.",
+   "stem": "Qual o diagnóstico mais provável e conduta?",
+   "options": [
+    {
+     "text": "Abcesso sub-frénico — TC urgente e drenagem",
+     "correct": false,
+     "why": "Abcesso sub-frénico causaria elevação da cúpula + massa sub-diafragmática na TC. Rx com opacidade + derrame basal direito aponta para pneumonia."
+    },
+    {
+     "text": "Pneumonia da base direita simulando abdómen agudo — antibioterapia para pneumonia comunitária",
+     "correct": true,
+     "why": "Pneumonia da base direita irradia para o HCD por irritação diafragmática — simula colecistite. Rx tórax: opacidade + derrame basal = pneumonia. Tratar a pneumonia resolve a dor abdominal. Rx tórax obrigatório na dor HCD/epigástrica."
+    },
+    {
+     "text": "Colecistite aguda — internamento + antibiótico",
+     "correct": false,
+     "why": "Sem dados ecográficos de colecistite. O Rx tórax com opacidade basal direita aponta para causa torácica."
+    },
+    {
+     "text": "Hepatite aguda — transaminases e serologias",
+     "correct": false,
+     "why": "Hepatite não tem opacidade no Rx tórax."
+    },
+    {
+     "text": "TEP — angio-TC torácica urgente",
+     "correct": false,
+     "why": "TEP pode dar dor torácica, mas raramente simula tão claramente dor no HCD com opacidade consolidativa basal."
+    }
+   ],
+   "keyConcept": "<b>Pneumonia da base direita simula abdómen agudo:</b> irritação diafragmática → dor referida ao HCD (confundida com colecistite/hepatite). <b>Rx tórax obrigatório</b> na dor HCD/epigástrica para excluir causa torácica. Outros imitadores torácicos: empiema, TEP, pericardite. Tratar a pneumonia = resolver a dor abdominal.",
+   "quickTip": "Dor HCD + febre + Rx tórax com opacidade basal = pneumonia base direita. Rx tórax obrigatório na dor HCD/epigástrica."
+  },
+  {
+   "id": "dab37",
+   "vignette": "Homem de 30 anos, de origem subsaariana, recorre ao SU com <b>dor abdominal difusa intensa recorrente desde a adolescência</b>, sem causa identificada em múltiplas investigações. Urina com coloração avermelhada escura. Hiper-natremia 126 mEq/L. Exame abdominal: dor intensa mas abdómen mole (desproporção).",
+   "stem": "Qual o diagnóstico mais provável e exame diagnóstico?",
+   "options": [
+    {
+     "text": "Cólica renal — TC sem contraste",
+     "correct": false,
+     "why": "TC foi normal em investigações prévias. A urina escura na cólica renal é hematúria — aqui é por porfirinas."
+    },
+    {
+     "text": "Porfíria aguda intermitente — doseamento de porfobilinogénio urinário durante a crise",
+     "correct": true,
+     "why": "Porfíria aguda: dor intensa recorrente + exame pobre (desproporção) + urina escura (avermelhada/acastanhada por porfirinas) + hiponatremia (SIADH) + sintomas neuropsiquiátricos. Diagnóstico: PBG urinário elevado durante a crise. Tratamento: hemina EV + glucose."
+    },
+    {
+     "text": "Anemia falciforme — esfregaço de sangue periférico",
+     "correct": false,
+     "why": "Anemia falciforme tem dor vaso-oclusiva + hemólise, mas a urina escura aqui é por porfirinas, não hemoglobinúria. Além disso, hiponatremia não é característica da crise falciforme."
+    },
+    {
+     "text": "Isquemia mesentérica — angio-TC urgente",
+     "correct": false,
+     "why": "Múltiplas investigações normais prévias afastam isquemia recorrente. Não explica a urina escura."
+    },
+    {
+     "text": "Síndrome funcional — referenciação a psiquiatria",
+     "correct": false,
+     "why": "Antes de qualquer rótulo funcional, causas orgânicas como porfíria têm de ser excluídas. A porfíria é frequentemente diagnosticada tarde por este motivo."
+    }
+   ],
+   "keyConcept": "<b>Porfíria aguda intermitente:</b> dor abdominal intensa + exame pobre (desproporção dor/exame) + urina escura (porfirinas, não sangue) + hiponatremia (SIADH) + neuropatia ± sintomas neuropsiquiátricos. Diagnóstico: PBG urinário elevado durante a crise. Desencadeadores: fármacos (barbitúricos, sulfonamidas, contraceptivos), álcool, jejum. Tratamento: hemina EV + glucose.",
+   "quickTip": "Dor intensa recorrente + exame pobre + urina escura (porfirinas) + hiponatremia = porfíria. PBG urinário confirma."
+  },
+  {
+   "id": "dab38",
+   "vignette": "Homem de 76 anos, anticoagulado com varfarina (INR 3,4), após episódio de tosse intensa. Recorre com dor na FID progressiva há 3 dias. Ao exame: massa dolorosa na FID, <b>sinal de Carnett positivo</b>. Sem febre, leucócitos normais. TC: <b>hematoma da bainha do recto de 5cm</b>.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Cirurgia urgente com drenagem do hematoma",
+     "correct": false,
+     "why": "A maioria dos hematomas da bainha do recto resolve conservadoramente. Cirurgia tem indicação apenas se expansão activa/instabilidade refractária ao suporte."
+    },
+    {
+     "text": "Tratamento conservador: suspender/reverter anticoagulação temporariamente + analgesia + vigilância Hb",
+     "correct": true,
+     "why": "HBR sem instabilidade: (1) Suspender/reverter anticoagulação (vitamin K ou CCP se urgente); (2) Paracetamol (evitar AINE + anticoagulado!); (3) Compressão local; (4) Vigilância Hb e clínica seriada; (5) Se expansão → embolização arterial transcateter. Cirurgia: raramente necessária."
+    },
+    {
+     "text": "Alta com ibuprofeno e compressão abdominal",
+     "correct": false,
+     "why": "AINE contraindicado em anticoagulado com hematoma activo. Alta de hematoma de 5cm sem vigilância é arriscado."
+    },
+    {
+     "text": "Colonoscopia urgente para excluir neoplasia",
+     "correct": false,
+     "why": "TC confirmou o diagnóstico de hematoma. Colonoscopia não tem indicação aqui."
+    },
+    {
+     "text": "Laparotomia exploradora",
+     "correct": false,
+     "why": "Sem instabilidade hemodinâmica ou expansão activa — laparotomia não está indicada."
+    }
+   ],
+   "keyConcept": "<b>Hematoma da bainha do recto (HBR):</b> anticoagulação + esforço/tosse = causa clássica. Carnett positivo = causa parietal. Tratamento: reverter anticoagulação + analgesia (paracetamol — evitar AINE!) + vigilância. Embolização se expansão. Cirurgia raramente necessária. Resolução em semanas.",
+   "quickTip": "HBR: Carnett + + anticoagulado + tosse. Tto conservador: reverter anticoagulação + paracetamol. Embolização se expansão. AINE contraindicado."
+  },
+  {
+   "id": "dab39",
+   "vignette": "Mulher de 38 anos com dispepsia, teste de H. pylori (urease respiratória) <b>positivo</b>. <50 anos, sem alarmes, análises normais.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "EDA urgente antes de qualquer tratamento",
+     "correct": false,
+     "why": "Em <50 anos sem alarmes, as guidelines (ACG/NICE) recomendam \"testar e tratar\" sem EDA prévia."
+    },
+    {
+     "text": "Triterapêutica de erradicação (IBP + amoxicilina + claritromicina × 14 dias) + confirmar erradicação após 4 semanas",
+     "correct": true,
+     "why": "H. pylori positivo + dispepsia: estratégia \"testar e tratar\" (<50 anos sem alarmes). Triterapia: IBP dose alta + amoxicilina 1g + claritromicina 500mg, 2×/dia × 14 dias. Confirmar erradicação: UBT ou antígeno fecal 4-6 semanas após antibiótico. NÃO usar serologia (não confirma erradicação)."
+    },
+    {
+     "text": "IBP isolado × 4 semanas",
+     "correct": false,
+     "why": "IBP sem erradicar H. pylori tem recidiva alta. Com H. pylori positivo, a erradicação é mandatória."
+    },
+    {
+     "text": "Dieta sem glúten empiricamente",
+     "correct": false,
+     "why": "Sem indicação de doença celíaca."
+    },
+    {
+     "text": "Antibiótico × 3 dias e reavaliar",
+     "correct": false,
+     "why": "Erradicação de H. pylori requer 14 dias (triterapia) ou 10-14 dias (quadriterapia). 3 dias é insuficiente."
+    }
+   ],
+   "keyConcept": "<b>H. pylori + dispepsia: \"testar e tratar\"</b> (<50 anos, sem alarmes). Triterapia × 14 dias. Confirmar erradicação: UBT (teste ureia respiratória) ou antígeno fecal, 4-6 semanas após fim do antibiótico. NÃO serologia (permanece positiva mesmo após erradicação). EDA: se falha ou alarmes.",
+   "quickTip": "H. pylori + dispepsia <50a sem alarmes: triterapia 14 dias. Confirmar com UBT 4-6 semanas depois. Não usar serologia para confirmar."
+  },
+  {
+   "id": "dab40",
+   "vignette": "Homem de 52 anos com colecistite aguda Grade I (Tokyo TG18). Internado, melhorou com antibioterapia. No 3º dia, o internista questiona se deve operar agora ou \"deixar para daqui a 6 semanas\".",
+   "stem": "Qual é a abordagem de maior benefício segundo a evidência actual?",
+   "options": [
+    {
+     "text": "Colecistectomia electiva em 6-8 semanas — menor risco cirúrgico",
+     "correct": false,
+     "why": "Múltiplos RCTs (ACALC, entre outros) mostram que colecistectomia precoce (<72h) tem MENOS complicações e MENOR estadia hospitalar do que a diferida."
+    },
+    {
+     "text": "Colecistectomia laparoscópica precoce no internamento (<72h)",
+     "correct": true,
+     "why": "Colecistite aguda Grade I/II: colecistectomia precoce (idealmente <72h) é superior à diferida (menor reconversão a laparotomia, menor estadia, menores complicações). Após 72h, a inflamação torna a dissecção mais difícil."
+    },
+    {
+     "text": "Drenagem percutânea + colecistectomia electiva",
+     "correct": false,
+     "why": "Drenagem percutânea é para doentes de alto risco cirúrgico. Neste doente candidato cirúrgico, a colecistectomia é preferida."
+    },
+    {
+     "text": "Alta com antibiótico oral e consulta em 3 meses",
+     "correct": false,
+     "why": "Sem colecistectomia, o risco de recidiva de colecistite em 3 meses é de 20-30%."
+    },
+    {
+     "text": "Colecistostomia e aguardar 3 meses",
+     "correct": false,
+     "why": "Colecistostomia é bridge para cirurgia em doentes de alto risco — não a conduta padrão."
+    }
+   ],
+   "keyConcept": "<b>Colecistite aguda Grade I/II:</b> colecistectomia laparoscópica precoce (<72h) é superior à diferida em múltiplos RCTs: menor taxa de reconversão, menor estadia, menores complicações. Após 72h a inflamação e a fibrose tornam a dissecção mais difícil. Grade III (grave): estabilizar + decidir timing individualizado.",
+   "quickTip": "Colecistite Grade I/II → colecistectomia <72h (melhor que diferida). Grade III → estabilizar primeiro."
+  },
+  {
+   "id": "dab41",
+   "vignette": "Mulher de 24 anos, grávida de <b>16 semanas</b>, dor FID há 10h, febre 38,2°C, leucocitose. Ecografia abdominal inconclusiva. <b>RM</b> disponível mas o residente diz \"a RM é segura mas não é obrigatória — podemos ir direto à laparoscopia\".",
+   "stem": "Qual a abordagem mais correcta?",
+   "options": [
+    {
+     "text": "O residente tem razão — laparoscopia direta sem RM",
+     "correct": false,
+     "why": "Laparoscopia sem diagnóstico imagiológico expõe a grávida e o feto a um procedimento cirúrgico desnecessário se o diagnóstico for outro (torção ovárica, pielonefrite, etc.)."
+    },
+    {
+     "text": "RM primeiro — confirmar diagnóstico antes de cirurgia; laparoscopia se RM confirmar ou for inconclusiva",
+     "correct": true,
+     "why": "Na grávida com eco inconclusiva, a RM é o exame de 2ª linha preferido (sem radiação, sensibilidade >90%). Confirmar diagnóstico antes de cirurgia. Laparoscopia urgente se RM confirmar apendicite ou quadro agravar."
+    },
+    {
+     "text": "TC imediata — mais rápida que RM",
+     "correct": false,
+     "why": "TC expõe o feto a radiação. A RM é preferida. TC só se RM indisponível e urgência extrema."
+    },
+    {
+     "text": "Antibioterapia empírica sem imagem e reavaliar em 24h",
+     "correct": false,
+     "why": "Antibioterapia sem diagnóstico na grávida com suspeita de apendicite é arriscado — apendicite não tratada tem alta mortalidade fetal."
+    },
+    {
+     "text": "Alta — dor inespecífica na gravidez",
+     "correct": false,
+     "why": "Febre + leucocitose + dor FID na grávida = investigação urgente. Alta sem diagnóstico é perigosa."
+    }
+   ],
+   "keyConcept": "<b>Algoritmo de imagem na grávida com suspeita de apendicite:</b> ecografia → RM (se eco inconclusiva) → TC (se RM indisponível e urgência). A cirurgia laparoscópica é segura na gravidez (todos os trimestres) mas deve ser precedida de diagnóstico imagiológico para evitar procedimentos desnecessários.",
+   "quickTip": "Grávida + eco inconclusiva → RM (sem radiação). TC só se RM indisponível. Cirurgia laparoscópica é segura na gravidez, mas confirmar diagnóstico antes."
+  },
+  {
+   "id": "dab42",
+   "vignette": "Doente de 67 anos com cirrose hepática Child-Pugh B, ascite moderada. Recorre por <b>dor abdominal difusa e febre</b>. Paracentese: <b>PMN 310/mm³</b>.",
+   "stem": "Qual o tratamento imediato?",
+   "options": [
+    {
+     "text": "Cefotaxima 2g EV 8/8h + albumina EV (1,5g/kg no dia 1 e 1g/kg no dia 3)",
+     "correct": true,
+     "why": "PBE: PMN ≥250/mm³. Tratamento: cefotaxima (ou ceftriaxona) + albumina EV (reduz síndrome hepatorrenal em 44% → mortalidade de 30% para 10%). Profilaxia secundária: norfloxacina ou ciprofloxacina oral."
+    },
+    {
+     "text": "Antibioterapia oral (amoxicilina-clavulanato) e alta",
+     "correct": false,
+     "why": "PBE requer antibioterapia EV e internamento. Tratamento oral é insuficiente."
+    },
+    {
+     "text": "Paracentese terapêutica de alívio + antibiótico EV",
+     "correct": false,
+     "why": "Albumina EV (não paracentese) é o tratamento adjuvante que previne a síndrome hepatorrenal na PBE."
+    },
+    {
+     "text": "Antibiótico EV sem albumina",
+     "correct": false,
+     "why": "Albumina EV é obrigatória quando há critérios (bilirrubina >3mg/dL ou creatinina >1mg/dL) — reduz síndrome hepatorrenal e mortalidade."
+    },
+    {
+     "text": "TC urgente para excluir peritonite secundária",
+     "correct": false,
+     "why": "Com PMN 310, PBE está confirmada. TC é para excluir peritonite secundária se: glicose <50, LDH muito elevada ou PMN muito alto + polimicrobiano nas culturas."
+    }
+   ],
+   "keyConcept": "<b>PBE:</b> PMN ≥250/mm³ no líquido ascítico. Tratamento: cefotaxima EV + albumina (1,5g/kg dia 1, 1g/kg dia 3) — previne síndrome hepatorrenal. Profilaxia secundária: norfloxacina oral indefinidamente. Profilaxia primária: norfloxacina se Child C ou ascite com proteínas baixas.",
+   "quickTip": "PBE: PMN ≥250 → cefotaxima + albumina EV. Albumina previne síndrome hepatorrenal (mortalidade 30→10%). Profilaxia 2ª: norfloxacina."
+  },
+  {
+   "id": "dab43",
+   "vignette": "Homem de 45 anos com hematémese abundante e instabilidade. <b>Cirrose Child-Pugh C</b>. Após CPRE e laqueação de varizes por 2 vezes, ressangra. Lactato 5,2 mmol/L.",
+   "stem": "Qual a opção de rescue mais adequada?",
+   "options": [
+    {
+     "text": "3ª tentativa de laqueação endoscópica",
+     "correct": false,
+     "why": "Após 2 falências endoscópicas em cirrótico grave, a 3ª tentativa endoscópica tem baixa probabilidade de sucesso e atrasa o tratamento definitivo."
+    },
+    {
+     "text": "TIPS (Transjugular Intrahepatic Portosystemic Shunt) urgente",
+     "correct": true,
+     "why": "TIPS urgente (<72h) é o tratamento de rescue recomendado na hemorragia varicosa refractária à endoscopia. Reduz pressão portal directamente. Em cirróticos com risco alto (Child-Pugh C ou MELD >19), o TIPS precoce (<72h) melhora a sobrevivência (Baveno VII)."
+    },
+    {
+     "text": "Cirurgia — anastomose portocava de urgência",
+     "correct": false,
+     "why": "Cirurgia de shunt porta em cirrótico grave tem mortalidade perioperatória extremamente alta. TIPS é a opção minimamente invasiva preferida."
+    },
+    {
+     "text": "Balão de Sengstaken permanente",
+     "correct": false,
+     "why": "Balão de Sengstaken é bridge temporária (<24h) enquanto se organiza o TIPS — não é tratamento definitivo."
+    },
+    {
+     "text": "Octreotido em perfusão contínua × 5 dias",
+     "correct": false,
+     "why": "Octreotido é adjuvante farmacológico — insuficiente como único tratamento na falência endoscópica com ressangramento activo."
+    }
+   ],
+   "keyConcept": "<b>Hemorragia varicosa refractária à endoscopia:</b> TIPS urgente (<72h). Em cirróticos de alto risco (Child-Pugh C ou MELD >19), TIPS precoce (<72h) melhora sobrevivência vs tratamento standard (Baveno VII). Balão de Sengstaken = bridge temporária para TIPS.",
+   "quickTip": "Varizes refractárias à endoscopia → TIPS urgente. Child-Pugh C/MELD >19 → TIPS precoce <72h (Baveno VII). Balão = bridge, não definitivo."
+  },
+  {
+   "id": "dab44",
+   "vignette": "Mulher de 60 anos com <b>aneurisma da aorta abdominal de 5,5cm</b> assintomático, detectado em rastreio ecográfico.",
+   "stem": "Qual a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Vigilância ecográfica semestral — 5,5cm ainda não atingiu o limiar cirúrgico",
+     "correct": false,
+     "why": "O limiar de intervenção em homens é ≥5,5cm; em mulheres é ≥5,0cm. 5,5cm numa mulher está claramente acima do limiar."
+    },
+    {
+     "text": "Referenciação a cirurgia vascular para reparação electiva (EVAR ou aberta)",
+     "correct": true,
+     "why": "AAA ≥5,5cm em homem ou ≥5,0cm em mulher = reparação electiva. Ou crescimento rápido (≥1cm/ano) independente do diâmetro. Duas opções: EVAR (menor mortalidade peri-operatória 0,5-1,5%, mais follow-up) ou cirurgia aberta (maior mortalidade 3-5%, mais durável)."
+    },
+    {
+     "text": "Alta — assintomático, pode vigilar indefinidamente",
+     "correct": false,
+     "why": "AAA ≥5cm em mulher tem risco de rotura significativo (3-5%/ano). Assintomático não significa sem indicação cirúrgica."
+    },
+    {
+     "text": "Cirurgia urgente imediata",
+     "correct": false,
+     "why": "AAA electivo em doente assintomável tem tempo para preparação. Urgência não está indicada."
+    },
+    {
+     "text": "Iniciar aspirina + estatina e reavaliar em 1 ano",
+     "correct": false,
+     "why": "Medidas cardiovasculares são complementares mas não substituem a reparação quando o limiar está atingido."
+    }
+   ],
+   "keyConcept": "<b>Limiares de reparação do AAA:</b> homem ≥5,5cm; mulher ≥5,0cm; crescimento ≥1cm/ano. EVAR: menor mortalidade peri-operatória (0,5-1,5%) mas requer follow-up vitalício por endoleaks. Cirurgia aberta: maior mortalidade peri-operatória (3-5%) mas mais durável. Controlar: PA, colesterol, tabagismo.",
+   "quickTip": "AAA: homem ≥5,5cm → operar. Mulher ≥5,0cm → operar. EVAR: menos invasivo, mais follow-up. Aberta: mais durável."
+  },
+  {
+   "id": "dab45",
+   "vignette": "Homem de 29 anos recorre ao SU com dor abdominal moderada. Após avaliação completa (análises, ecografia, TC) sem causa identificada. Exame normal, sem alarmes. Diagnóstico: <b>dor abdominal inespecífica</b>.",
+   "stem": "O que é OBRIGATÓRIO comunicar ao doente antes da alta?",
+   "options": [
+    {
+     "text": "Que não tem nada e pode fazer a sua vida normal",
+     "correct": false,
+     "why": "Dizer \"não tem nada\" sem safety netting é perigoso — algumas condições (apendicite precoce, isquemia inicial) podem ter exame normal nas primeiras horas."
+    },
+    {
+     "text": "Safety netting: sinais de alarme que justificam regresso urgente ao SU",
+     "correct": true,
+     "why": "Safety netting obrigatório: (1) Dor que agrava ou se torna constante; (2) Febre; (3) Vómitos persistentes; (4) Sangue nas fezes; (5) Distensão abdominal nova; (6) Incapacidade de tolerar líquidos. A apendicite precoce pode ter exame normal nas primeiras 6-12h."
+    },
+    {
+     "text": "Prescrever AINE por 5 dias empiricamente",
+     "correct": false,
+     "why": "Sem diagnóstico específico, AINE empírico pode mascarar progressão (p. ex. apendicite) e causa úlcera."
+    },
+    {
+     "text": "Referenciação urgente a gastrenterologia",
+     "correct": false,
+     "why": "Sem alarmes, com exame e análises normais — MGF e follow-up ambulatório são adequados."
+    },
+    {
+     "text": "Repetir TC em 48h por precaução",
+     "correct": false,
+     "why": "TC sem nova indicação clínica não é custo-efectiva e expõe a radiação desnecessária."
+    }
+   ],
+   "keyConcept": "<b>Safety netting:</b> em todo o doente com alta por dor abdominal inespecífica, é obrigatório explicar os sinais de alarme para regresso urgente. A apendicite precoce pode ter exame normal nas primeiras 6-12h — o \"return instructions\" é parte do standard of care. Documentar sempre no processo clínico.",
+   "quickTip": "Alta por dor abdominal inespecífica → safety netting OBRIGATÓRIO. Apendicite pode ter exame normal nas primeiras horas."
+  },
+  {
+   "id": "dab46",
+   "vignette": "Homem de 53 anos com dor na FID há 2 dias após episódio de gastroenterite confirmada há 1 mês. Colonoscopia normal. <b>TC: adenopatias mesentéricas na FID</b>. Score Alvarado 3.",
+   "stem": "Qual o diagnóstico mais provável?",
+   "options": [
+    {
+     "text": "Apendicite atípica — cirurgia",
+     "correct": false,
+     "why": "Score Alvarado 3 = baixa probabilidade. Adenopatias mesentéricas após gastroenterite recente = adenite mesentérica."
+    },
+    {
+     "text": "Adenite mesentérica — vigilância clínica, sem cirurgia",
+     "correct": true,
+     "why": "Adenite mesentérica: após infecção viral GI, adenopatias mesentéricas inflamadas → dor FID. Colonoscopia normal + TC (sem apendicite, só adenopatias) + história de gastroenterite recente + score baixo. Tratamento: AINE + vigilância. Resolução espontânea em 2-4 semanas."
+    },
+    {
+     "text": "Doença de Crohn — colonoscopia com biópsias terminais",
+     "correct": false,
+     "why": "Crohn possível, mas colonoscopia recente foi normal. Adenite mesentérica pós-gastroenterite é mais provável."
+    },
+    {
+     "text": "Linfoma mesentérico — TC com contraste e biopsia",
+     "correct": false,
+     "why": "Adenopatias reativas em contexto de gastroenterite recente são muito mais comuns do que linfoma. Biopsia se adenopatias persistem ou crescem após 4 semanas."
+    },
+    {
+     "text": "Neoplasia cecal — colonoscopia urgente",
+     "correct": false,
+     "why": "Colonoscopia recente foi normal. Adenopatias reativas em contexto de infecção são mais prováveis."
+    }
+   ],
+   "keyConcept": "<b>Adenite mesentérica:</b> causa comum de dor FID em jovens após gastroenterite viral (Yersinia, Campylobacter, vírus). Adenopatias mesentéricas na TC + colonoscopia normal + história de infecção recente = diagnóstico provável. Tratamento: AINE + vigilância + resolução espontânea em 2-4 semanas. Score baixo de Alvarado é tranquilizador.",
+   "quickTip": "Dor FID + adenopatias TC + gastroenterite recente + score baixo = adenite mesentérica. AINE + vigilância. Resolução em 2-4 semanas."
+  },
+  {
+   "id": "dab47",
+   "vignette": "Mulher de 35 anos com <b>dor pélvica crónica há 2 anos</b>, dismenorreia grave (EVA 9/10), dispareunia profunda. Ecografia pélvica: <b>normal</b>.",
+   "stem": "Qual o diagnóstico mais provável e exame mais adequado?",
+   "options": [
+    {
+     "text": "SII — dieta FODMAP e antiespasmódico",
+     "correct": false,
+     "why": "SII não causa dismenorreia progressiva nem dispareunia profunda. A relação clara com o ciclo menstrual aponta para endometriose."
+    },
+    {
+     "text": "Endometriose — RM pélvica para estadiamento",
+     "correct": true,
+     "why": "Dismenorreia progressiva + dispareunia profunda em jovem com ecografia normal = endometriose até prova em contrário. A ecografia deteta endometriomas mas tem limitações para endometriose profunda (septo rectovaginal, ligamentos útero-sacros). RM pélvica > ecografia para endometriose profunda infiltrante (DIE)."
+    },
+    {
+     "text": "DIP crónica — antibioterapia oral prolongada",
+     "correct": false,
+     "why": "DIP tem febre, corrimento, cervicite — ausentes. Não é o quadro."
+    },
+    {
+     "text": "Ovário poliquístico — androgénios + ecografia dirigida",
+     "correct": false,
+     "why": "SOP causa irregularidade menstrual, não dismenorreia progressiva com dispareunia."
+    },
+    {
+     "text": "Cisto ovárico — reavaliar eco em 6 semanas",
+     "correct": false,
+     "why": "Ecografia normal. A clínica aponta para endometriose que pode ser ecograficamente normal (lesões peritoneais superficiais)."
+    }
+   ],
+   "keyConcept": "<b>Endometriose:</b> dismenorreia progressiva + dispareunia profunda + dor pélvica crónica. Ecografia pode ser normal (lesões superficiais). <b>RM pélvica</b> é superior para endometriose profunda (DIE). Laparoscopia = gold standard diagnóstico. Diagnóstico médio atrasa 7-10 anos.",
+   "quickTip": "Dismenorreia progressiva + dispareunia + eco normal = endometriose. RM pélvica para DIE (ecografia deteta só endometriomas)."
+  },
+  {
+   "id": "dab48",
+   "vignette": "Homem de 58 anos, sem antecedentes, análises de rotina: <b>Hb 10,2 g/dL · VGM 74 fL · ferritina 9 ng/mL</b>. Sem queixas digestivas. Sangue oculto nas fezes negativo (1 amostra).",
+   "stem": "Qual a investigação prioritária?",
+   "options": [
+    {
+     "text": "Iniciar ferro oral e reavaliar Hb em 3 meses",
+     "correct": false,
+     "why": "Tratar sem investigar a causa em homem adulto com ferropénia mascara neoplasia potencialmente curável."
+    },
+    {
+     "text": "Repetir sangue oculto com 3 amostras",
+     "correct": false,
+     "why": "Sangue oculto negativo NÃO exclui neoplasia colorrectal (sensibilidade 60-70%). Em homem adulto com ferropénia, a endoscopia bidirecional é obrigatória independentemente do sangue oculto."
+    },
+    {
+     "text": "Colonoscopia + EDA (endoscopia bidirecional)",
+     "correct": true,
+     "why": "Ferropénia em homem adulto ou mulher pós-menopausa = neoplasia GI até prova em contrário. EDA + colonoscopia obrigatórias mesmo sem queixas e mesmo com sangue oculto negativo. Cancro do cólon direito apresenta-se classicamente assim."
+    },
+    {
+     "text": "Ecografia abdominal",
+     "correct": false,
+     "why": "Ecografia não visualiza lesões mucosas (pólipos, carcinoma precoce). Endoscopia é mandatória."
+    },
+    {
+     "text": "Serologia de doença celíaca como 1ª linha",
+     "correct": false,
+     "why": "Celíaca pode causar ferropénia, mas num homem de 58 anos, a neoplasia GI é muito mais prioritária."
+    }
+   ],
+   "keyConcept": "<b>Ferropénia em homem adulto ou mulher pós-menopausa:</b> EDA + colonoscopia obrigatórias, mesmo sem queixas e mesmo com sangue oculto negativo. Sangue oculto negativo NÃO exclui neoplasia (sensibilidade 60-70%). Cancro do cólon direito = anemia ferropénica isolada sem queixas.",
+   "quickTip": "Ferropénia em homem adulto = endoscopia bidirecional. Sangue oculto negativo não exclui cancro. Regra de ouro da PNA."
+  },
+  {
+   "id": "dab49",
+   "vignette": "Homem de 71 anos com peritonite difusa. Lactato 4,8 mmol/L, PA 86/52, T 39,3°C. A equipa prepara cirurgia urgente.",
+   "stem": "Segundo o bundle da Surviving Sepsis Campaign, o que deve ser feito na 1ª hora?",
+   "options": [
+    {
+     "text": "Aguardar resultados das análises antes de antibiótico",
+     "correct": false,
+     "why": "Análises devem ser colhidas mas o antibiótico não pode esperar pelos resultados — iniciar dentro de 1h."
+    },
+    {
+     "text": "Hemoculturas (sem atrasar antibiótico) + antibiótico EV largo espectro + fluidos 30mL/kg + vasopressor se PA não responde",
+     "correct": true,
+     "why": "Bundle de 1h (SSC 2018): (1) Medir lactato; (2) Hemoculturas antes de antibiótico (se não atrasar >15-30min); (3) Antibiótico EV de largo espectro dentro de 1h; (4) Fluidos 30mL/kg cristalóides se hipotensão/lactato >4; (5) Vasopressor (noradrenalina) se PA não responde. Controlo do foco cirúrgico: urgente."
+    },
+    {
+     "text": "Cirurgia imediata sem ressuscitação prévia",
+     "correct": false,
+     "why": "Anestesia em choque séptico sem ressuscitação mínima tem mortalidade muito elevada. 1-2h de estabilização antes de cirurgia."
+    },
+    {
+     "text": "TC abdominal antes de qualquer antibiótico",
+     "correct": false,
+     "why": "TC pode ser necessária para localizar o foco mas não deve atrasar o antibiótico e a ressuscitação."
+    },
+    {
+     "text": "IBP EV e corticóide para a sépsis",
+     "correct": false,
+     "why": "IBP não tem papel na sépsis. Corticóide em sépsis: hidrocortisona 200mg/dia se refractária à ressuscitação (choque séptico refractário)."
+    }
+   ],
+   "keyConcept": "<b>Bundle de 1h da Surviving Sepsis Campaign (2018):</b> (1) Medir lactato; (2) Hemoculturas; (3) Antibiótico EV de largo espectro dentro de 1h; (4) 30mL/kg cristalóides se hipotensão ou lactato ≥4; (5) Vasopressor se PA não responde. Controlo do foco: obrigatório (cirurgia, drenagem). Antibiótico: piperacilina-tazo ou carbapenemos na peritonite.",
+   "quickTip": "Sépsis bundle 1h: hemoculturas + antibiótico EV <1h + fluidos 30mL/kg + vasopressor se necessário. Controlo cirúrgico do foco."
+  },
+  {
+   "id": "dab50",
+   "vignette": "Mulher de 62 anos, pós-menopausa, análises de rotina: <b>CA 19-9 280 U/mL</b> (normal <37), <b>FA 390 U/L, GGT 460 U/L, bilirrubina total 3,2 mg/dL</b>. Sem sintomas major. Ecografia: <b>dilatação da via biliar principal e do canal de Wirsung (\"dupla via\")</b>.",
+   "stem": "Qual o diagnóstico mais provável e próximo passo?",
+   "options": [
+    {
+     "text": "Colangiocarcinoma hiliar — colangioRM",
+     "correct": false,
+     "why": "Colangiocarcinoma hiliar obstrui a bifurcação hepática, não causa o sinal da dupla via. Este sinal (dilatação simultânea da VBP e do Wirsung) indica obstrução na cabeça do pâncreas."
+    },
+    {
+     "text": "Adenocarcinoma da cabeça do pâncreas — TC trifásica + referenciação urgente",
+     "correct": true,
+     "why": "Sinal da dupla via + CA 19-9 muito elevado + colestase obstrutiva = adenocarcinoma da cabeça do pâncreas até prova em contrário. TC trifásica para estadiamento (ressecabilidade). CA 19-9 >200 em contexto de colestase = altamente sugestivo."
+    },
+    {
+     "text": "Coledocolitíase — CPRE urgente",
+     "correct": false,
+     "why": "Coledocolitíase não causa CA 19-9 elevado nem dupla via. Sinal da dupla via aponta para massa na cabeça pancreática."
+    },
+    {
+     "text": "Cirrose biliar primária — biópsia hepática",
+     "correct": false,
+     "why": "CBP cursa com colestase crónica, mas não com CA 19-9 muito elevado nem dupla via."
+    },
+    {
+     "text": "Hepatite autoimune — ANA e anti-músculo liso",
+     "correct": false,
+     "why": "Hepatite autoimune tem padrão hepatocelular (ALT/AST ↑), não obstrutivo. Não explica CA 19-9 elevado nem dupla via."
+    }
+   ],
+   "keyConcept": "<b>Adenocarcinoma da cabeça do pâncreas:</b> sinal da dupla via (dilatação simultânea via biliar + canal de Wirsung) + CA 19-9 elevado + colestase obstrutiva. Tríade clínica clássica: icterícia indolor + perda ponderal + dor dorsal. Estadiamento: TC trifásica (ressecabilidade). Cirurgia curativa (Whipple): apenas 15-20% dos casos. CA 19-9 >200 em colestase = altamente suspeito.",
+   "quickTip": "Dupla via + CA 19-9 alto + colestase obstrutiva = adenocarcinoma pâncreas. TC trifásica para estadiamento. Whipple em 15-20%."
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "id": "dor_abdominal",
+ "titulo": "Dor Abdominal",
+ "menu": {
+  "pill": "Sintoma · Dor Abdominal",
+  "modalCards": {
+   "eyebrow": "Cards de Estudo",
+   "titulo": "Escolhe o formato.",
+   "sub": "Dois modos de revisão para consolidar a matéria de dor abdominal.",
+   "opcoes": [
+    {
+     "badge": "Cards do guia",
+     "nome": "Cards de diagnóstico",
+     "desc": "Os 19 cards de diagnóstico diferencial integrados no guia teórico. Cada card expande com clínica, investigação, tratamento e sinais de alarme.",
+     "cta": "Abrir cards de diagnóstico"
+    },
+    {
+     "badge": "Flashcards",
+     "nome": "Flashcards de revisão",
+     "desc": "Cards de pergunta-resposta com flip animado. 25 pré-feitos cobrindo toda a matéria, mais os teus próprios flashcards criados livremente.",
+     "cta": "Abrir flashcards de revisão"
+    }
+   ]
+  },
+  "heroSub": "Guia de estudo sobre dor abdominal — definições, causas por quadrante e sistema, sinais de alarme, investigação e tratamento. Com treino de anamnese, cards de revisão e casos clínicos.",
+  "eyebrow": "Quatro caminhos",
+  "label": "Escolhe como queres estudar",
+  "cartoes": [
+   {
+    "destino": "guia",
+    "badge": "01 · Teoria",
+    "eyebrow": "Fundação",
+    "titulo": "Guia teórico",
+    "sub": "A matéria organizada por temas — definições, causas, sinais de alarme, diagnósticos diferenciais, exame objectivo, investigação e tratamento.",
+    "features": [
+     "Causas · por quadrante e sistema",
+     "Sinais de alarme · agudos e crónicos",
+     "Analgesia · ambulatório e internamento",
+     "Fontes · glossário · escalas"
+    ],
+    "cta": "Estudar matéria"
+   },
+   {
+    "destino": "anamnese",
+    "badge": "02 · Anamnese",
+    "eyebrow": "Treino clínico",
+    "titulo": "Anamnese",
+    "sub": "Treino interativo de anamnese para um doente com dor abdominal. Pratica a colheita de história clínica estruturada por passos.",
+    "features": [
+     "Caracterização da dor · SOCRATES",
+     "Quadrantes · irradiação · alarmes",
+     "Diagnósticos diferenciais com scoring",
+     "Nota clínica gerada em tempo real"
+    ],
+    "cta": "Treinar anamnese"
+   },
+   {
+    "destino": "cards",
+    "badge": "03 · Cards",
+    "eyebrow": "Revisão",
+    "titulo": "Cards de estudo",
+    "sub": "Dois formatos de revisão: cards de diagnóstico do guia e flashcards com pergunta-resposta tipo flip card.",
+    "features": [
+     "Cards · 19 diagnósticos no guia",
+     "Flashcards · 25 exemplos prontos",
+     "Cria os teus próprios flashcards",
+     "Auto-avaliação · ✓ e ✗"
+    ],
+    "cta": "Abrir cards"
+   },
+   {
+    "destino": "quiz",
+    "badge": "04 · Quiz",
+    "eyebrow": "Auto-avaliação",
+    "titulo": "Casos clínicos",
+    "sub": "Casos clínicos para testar os teus conhecimentos. Activa o Modo PNA para ver a correcção detalhada e dicas para memorizar.",
+    "features": [
+     "Casos clínicos variados · formato SBA",
+     "Correcção detalhada por opção",
+     "Modo PNA com dicas para a prova",
+     "Score e histórico em tempo real"
+    ],
+    "cta": "Fazer casos"
+   }
+  ],
+  "rodape": {
+   "comoTitulo": "Como foi construído",
+   "comoTexto": "Cada secção foi cruzada com guidelines internacionais (WSES Jerusalem 2025, Tokyo Guidelines TG18, ACG 2024, Rome IV, EAU urolitíase, NICE NG12). Sem reproduzir texto verbatim, sem opiniões pessoais, sem casos reais de doentes.",
+   "legal": "Conteúdo exclusivamente educativo · Não constitui dispositivo médico no âmbito do Reg. (UE) 2017/745 · Não emite diagnósticos nem recomendações individualizadas · Em decisões clínicas reais, consultar sempre as fontes primárias e julgamento clínico próprio."
+  }
+ },
+ "flashcards": {
+  "eyebrow": "Flashcards",
+  "titulo": "Dor Abdominal.",
+  "exemplos": [
+   {
+    "q": "Score AIR ≥9 — conduta?",
+    "a": "Cirurgia (apendicectomia) sem imagiologia adicional",
+    "e": "AIR inclui: dor FID, rebound, T, %PMN, PCR. ≥9 = alta probabilidade → bloco directo. 5-8 = ecografia (TC se inconclusiva). ≤4 = baixa probabilidade. <b>Armadilha PNA:</b> AIR é mais específico que Alvarado (inclui PCR e %PMN)."
+   },
+   {
+    "q": "Score Alvarado — interpretação dos 3 níveis?",
+    "a": "≤4 improvável · 5-6 zona cinzenta (eco/TC) · ≥7 cirurgia",
+    "e": "Inclui: migração dor, anorexia, náusea, dor FID, rebound, febre, leucocitose, neutrofilia. <b>5-6 = imagiologia obrigatória.</b> AIR é preferido por incluir PCR."
+   },
+   {
+    "q": "Mulher fértil com dor abdominal — exame obrigatório ANTES de cirurgia?",
+    "a": "Beta-hCG (sangue ou urina)",
+    "e": "<b>Armadilha PNA clássica:</b> gravidez ectópica imita apendicite (dor FID + febre + leucocitose). Sem beta-hCG pode operar-se uma ectópica como apendicite — erro major. Regra absoluta, sem excepções."
+   },
+   {
+    "q": "Tríade de Charcot — define que entidade?",
+    "a": "Colangite aguda — dor HCD + febre + icterícia",
+    "e": "Tokyo TG18 Grade I-II. Obstrução biliar + infecção ascendente. <b>Com hipotensão + confusão = pêntade de Reynolds</b> (Grade III, mortalidade >50% sem drenagem). Conduta: ressuscitação + CPRE urgente + antibioterapia EV."
+   },
+   {
+    "q": "Critérios de pancreatite aguda (Atlanta 2012)?",
+    "a": "2 de 3: dor típica + lipase/amilase ≥3× normal + achados TC",
+    "e": "TC NÃO necessária nas primeiras 48h se 2 critérios presentes. <b>Armadilha:</b> lipase &lt;3× pode ter causas extrapancreáticas (DRC, cetoacidose, macrolipasemia)."
+   },
+   {
+    "q": "Antibiótico profilático em pancreatite aguda — sim ou não?",
+    "a": "NÃO — só se infecção comprovada",
+    "e": "<b>Armadilha PNA recorrente.</b> ACG 2024 + meta-análises: antibioterapia profilática NÃO reduz mortalidade, infecção ou cirurgia. Só em: necrose infectada comprovada (gás na TC ou PAAF +), colangite associada. Nutrição enteral precoce é mais eficaz na prevenção."
+   },
+   {
+    "q": "Pancreatite biliar ligeira — quando colecistectomia?",
+    "a": "No mesmo internamento, antes da alta",
+    "e": "Reduz recidiva de 17% (se adiar 6 semanas) para &lt;2%. Pancreatite biliar moderada/grave ou necrosante: adiar 4-6 semanas. CPRE: apenas se colangite ou obstrução biliar persistente."
+   },
+   {
+    "q": "Colecistite Tokyo TG18 Grade I/II — timing colecistectomia?",
+    "a": "Laparoscópica precoce &lt;72h",
+    "e": "Múltiplos RCTs: precoce supera diferida (menor conversão, estadia, complicações). Após 72h: fibrose/inflamação dificultam dissecção. Grade III (grave): estabilizar primeiro."
+   },
+   {
+    "q": "Sinal de Murphy em idoso (&gt;65 anos) — sensibilidade?",
+    "a": "&lt;50% — Murphy negativo NÃO exclui colecistite",
+    "e": "No jovem: sensibilidade &gt;90%. No idoso cai por neuropatia, corticóides, analgésicos. <b>Murphy ecográfico</b> é mais fiável que clínico. Colecistite gangrenosa pode ter exame quase normal (\"silenciosa\")."
+   },
+   {
+    "q": "Analgesia 1ª linha em cólica renal?",
+    "a": "AINE — cetorolaco 30 mg IV ou diclofenac 75 mg IM",
+    "e": "AINE supera morfina (Cochrane). Morfina é 2ª linha. <b>Cálculo ≤4mm:</b> 90% eliminação espontânea. <b>5-10mm:</b> tamsulosina 0,4 mg/dia (terapêutica expulsiva)."
+   },
+   {
+    "q": "Febre + cólica renal — emergência?",
+    "a": "Obstrução urinária infectada → drenagem urgente (nefrostomia ou stent duplo-J)",
+    "e": "Rim obstruído + infecção = abcesso fechado. Antibiótico isolado é insuficiente. <b>Mesmo cálculos pequenos com febre = urgência urológica.</b> Pode evoluir para urosépsis rapidamente."
+   },
+   {
+    "q": "Isquemia mesentérica aguda — tríade?",
+    "a": "Dor desproporcional ao exame + factor de risco vascular (FA) + lactato elevado",
+    "e": "<b>Dor intensa com abdómen mole = desproporção</b> — sinal-chave. FA é fonte embólica mais frequente. Angio-TC sens &gt;93%. Mortalidade sem diagnóstico precoce &gt;70%. \"Tempo é intestino\"."
+   },
+   {
+    "q": "AAA roto com doente instável — TC ou cirurgia?",
+    "a": "POCUS confirma → cirurgia imediata sem TC. Hipotensão permissiva (PAS 50-80)",
+    "e": "Tríade: dor lombar/abdominal + massa pulsátil + hipotensão. Ressuscitação agressiva = aumenta hemorragia. Doente estável: angio-TC → EVAR vs cirurgia aberta."
+   },
+   {
+    "q": "A morfina mascara o diagnóstico no abdómen agudo?",
+    "a": "NÃO — mito refutado (Cochrane 2006). Analgesia é obrigatória.",
+    "e": "<b>Armadilha PNA recorrente.</b> Múltiplos RCTs: opióides NÃO aumentam erros, NÃO atrasam cirurgia, NÃO aumentam mortalidade. Melhoram cooperação do doente. <b>Negar analgesia = má prática.</b>"
+   },
+   {
+    "q": "5 contraindicações dos AINE na dor abdominal?",
+    "a": "Úlcera activa · HDig · TFG &lt;30 · anticoagulação · ICC descompensada",
+    "e": "Também: suspeita de perfuração, idoso frágil, gravidez 3º trimestre. Alternativa: paracetamol ± opióide. IBP co-prescrito reduz risco ulcerativo ~60% mas não elimina."
+   },
+   {
+    "q": "Síndrome de Ogilvie — tratamento de eleição?",
+    "a": "Neostigmina 2 mg EV lento (monitorizar bradicardia). Ceco ≥12cm = urgência",
+    "e": "Pseudo-obstrução colónica sem causa mecânica. 1º: corrigir causas (electrólitos, suspender anticolinérgicos/opiáceos). 2º: neostigmina (eficácia 80-90%). 3º: colonoscopia descompressiva se falha. <b>Ceco &gt;14cm = risco de perfuração iminente.</b>"
+   },
+   {
+    "q": "Diverticulite Hinchey III/IV em doente instável — cirurgia?",
+    "a": "Operação de Hartmann (ressecção + colostomia terminal)",
+    "e": "Hinchey III = peritonite purulenta; IV = peritonite fecal. Instável → Hartmann. Estável + cirurgião experiente → anastomose primária + ileostomia de protecção. <b>Lavagem laparoscópica: ultrapassada</b> (RCTs LADIES/SCANDIV)."
+   },
+   {
+    "q": "Colonoscopia pós-diverticulite — quando?",
+    "a": "6-8 semanas depois — NUNCA na fase aguda",
+    "e": "Fase aguda: risco de perfuração pelo processo inflamatório. 6-8 semanas: excluir neoplasia (1-2% dos casos mascarados pela diverticulite, sobretudo &gt;50a, 1º episódio)."
+   },
+   {
+    "q": "Perfuração de úlcera — 1º exame diagnóstico?",
+    "a": "Rx tórax em pé — ar subdiafragmático em 75%",
+    "e": "Rápido, disponível. Se negativo e suspeita alta → TC (sens &gt;95%). <b>EDA contraindicada na suspeita de perfuração</b> (agrava pneumoperitoneu). Tratamento: cirurgia urgente (sutura de Graham)."
+   },
+   {
+    "q": "GBS ≥1 na HDA — significa?",
+    "a": "Internamento. GBS ≥6 = alto risco → IBP EV + EDA &lt;12h",
+    "e": "Glasgow-Blatchford: Hb, ureia, PA, FC, síncope, hepatopatia. GBS 0: alta segura. ≥1: internamento. <b>IBP pré-EDA melhora achados endoscópicos mas NÃO reduz mortalidade</b> (ponto PNA frequente)."
+   },
+   {
+    "q": "Varizes esofágicas — tratamento farmacológico agudo?",
+    "a": "Terlipressina 2 mg EV 4/4h + ceftriaxona profilática",
+    "e": "Terlipressina ↓ pressão portal (↓ mortalidade 34%). <b>Ceftriaxona</b> (ou norfloxacina) reduz bacteriémia e mortalidade 22% em cirrótico com HDA. Laqueação endoscópica &lt;12h. <b>Alvo Hb 7-8</b> (transfusão agressiva ↑ pressão portal)."
+   },
+   {
+    "q": "SII (Roma IV) — critérios?",
+    "a": "Dor ≥1×/semana × 3 meses + ≥2 de: relação defecação, alteração frequência, alteração forma",
+    "e": "<b>Diagnóstico positivo</b> (não exclusão). Calprotectina fecal &lt;50 µg/g exclui DII activa. Sem alarmes (sangue, febre, perda ponderal, &gt;50a) → não precisa colonoscopia. Tto: FODMAP + antiespasmódicos + loperamida (SII-D) ou PEG (SII-O)."
+   },
+   {
+    "q": "Epigastralgia + sudorese — que excluir PRIMEIRO?",
+    "a": "SCA — ECG + troponinas obrigatórios",
+    "e": "<b>Armadilha PNA clássica:</b> enfarte da parede inferior (coronária direita) irradia para epigastro, pode imitar abdómen agudo (epigastralgia + náuseas + sudorese sem dor torácica). <b>\"Não há abdómen agudo sem ECG no adulto.\"</b>"
+   },
+   {
+    "q": "Ferropénia em homem adulto — investigação obrigatória?",
+    "a": "EDA + colonoscopia (bidirecional) — mesmo com SOF negativo",
+    "e": "<b>Regra de ouro da PNA.</b> Ferropénia em ♂ adulto ou ♀ pós-menopausa = neoplasia GI até prova em contrário. Cancro do cólon direito apresenta-se classicamente como anemia ferropénica isolada sem queixas. SOF sensibilidade só 60-70%."
+   },
+   {
+    "q": "CU grave (critérios de Truelove-Witts) — tratamento de 1ª linha?",
+    "a": "Metilprednisolona 60 mg/dia EV (ou hidrocortisona 400 mg/dia EV)",
+    "e": "Critérios: ≥6 dejeções com sangue + ≥1 de (T &gt;37,8; FC &gt;90; Hb &lt;10,5; VS &gt;30). <b>Sem resposta ao 3º dia (score de Oxford) → rescue:</b> infliximab ou ciclosporina. Cirurgia se falha ou megacólon."
+   },
+   {
+    "q": "Diverticulite ambulatória Hinchey Ia — antibioterapia?",
+    "a": "Amoxicilina-clavulanato 875/125 12/12h × 7-10 dias (ou ciprofloxacina + metronidazol)",
+    "e": "Hinchey Ia = inflamação pericólica sem abcesso. Doente estável, sem comorbilidades, capacidade oral. <b>Estudos recentes (DIABOLO):</b> diverticulite não complicada pode tratar-se sem antibiótico — depende da guideline local."
+   },
+   {
+    "q": "Hemorragia digestiva alta + ácido fólico-style fórmula?",
+    "a": "NÃO existe — armadilha! Tratamento HDA: ressuscitação + IBP + EDA",
+    "e": "<b>Armadilha PNA tipo gancho.</b> Não há mnemónica falsa. Sequência real: ABC → 2 acessos EV largos → fluidos → IBP EV (omeprazol 80 mg bolus + 8 mg/h) → EDA precoce (≤24h, ≤12h se alto risco) ± transfusão (alvo Hb 7-8)."
+   },
+   {
+    "q": "Cólica biliar simples — tratamento de eleição?",
+    "a": "AINE (cetorolaco 30 mg IV ou diclofenac IM). Colecistectomia electiva",
+    "e": "Diferenciar de colecistite (febre, leucocitose, Murphy positivo, espessamento vesicular). Cólica simples: episódio &lt;6h, sem inflamação. Colecistectomia &lt;6 semanas após episódio."
+   },
+   {
+    "q": "Crise de porfíria aguda intermitente — tratamento?",
+    "a": "Hemina EV + glicose IV (carga hidrocarbonada)",
+    "e": "Apresentação: dor abdominal intensa + sintomas neuropsiquiátricos + urina escura (porfobilinogénio). <b>Evitar fármacos porfirinogénicos</b> (barbituricos, sulfamidas, etanol, OCS). Hemina reduz síntese hepática de ALA."
+   },
+   {
+    "q": "Pancreatite necrosante infectada — antibioterapia?",
+    "a": "Imipenem ou meropenem EV (boa penetração pancreática)",
+    "e": "Confirmar infecção: gás na TC ou PAAF positiva. Carbapenemas têm melhor penetração pancreática. <b>Drenagem necessária</b> — abordagem \"step-up\" (drenagem percutânea → necrosectomia minimamente invasiva → cirurgia aberta se falha). Mortalidade ainda 20-30%."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1065 @@
+{
+ "ageBuckets": [
+  {
+   "k": "jovem",
+   "l": "Jovem",
+   "r": "15-30 anos",
+   "rep": 23
+  },
+  {
+   "k": "adulto",
+   "l": "Adulto",
+   "r": "31-49 anos",
+   "rep": 40
+  },
+  {
+   "k": "meia",
+   "l": "Meia-idade",
+   "r": "50-64 anos",
+   "rep": 58
+  },
+  {
+   "k": "idoso",
+   "l": "Idoso",
+   "r": "≥65 anos",
+   "rep": 72
+  }
+ ],
+ "quadrantes": [
+  {
+   "id": "hcd",
+   "l": "HCD",
+   "full": "Hipocôndrio dto"
+  },
+  {
+   "id": "epi",
+   "l": "EPI",
+   "full": "Epigástrio"
+  },
+  {
+   "id": "hce",
+   "l": "HCE",
+   "full": "Hipocôndrio esq"
+  },
+  {
+   "id": "fld",
+   "l": "FLD",
+   "full": "Flanco dto"
+  },
+  {
+   "id": "peri",
+   "l": "PERI",
+   "full": "Periumbilical"
+  },
+  {
+   "id": "fle",
+   "l": "FLE",
+   "full": "Flanco esq"
+  },
+  {
+   "id": "fid",
+   "l": "FID",
+   "full": "Fossa ilíaca dta"
+  },
+  {
+   "id": "hipo",
+   "l": "HIPO",
+   "full": "Hipogástrio"
+  },
+  {
+   "id": "fie",
+   "l": "FIE",
+   "full": "Fossa ilíaca esq"
+  }
+ ],
+ "symCats": [
+  {
+   "id": "GIalto",
+   "label": "Gastrointestinal alto"
+  },
+  {
+   "id": "GIbaixo",
+   "label": "Gastrointestinal baixo"
+  },
+  {
+   "id": "Hepato",
+   "label": "Hepatobiliar"
+  },
+  {
+   "id": "Urin",
+   "label": "Urinário"
+  },
+  {
+   "id": "Gineco",
+   "label": "Ginecológico"
+  },
+  {
+   "id": "Sist",
+   "label": "Sistémico / constitucional"
+  },
+  {
+   "id": "Cardio",
+   "label": "Cardiovascular"
+  }
+ ],
+ "syms": [
+  {
+   "id": "nauseas",
+   "l": "Náuseas",
+   "d": "Enjoo, sensação de vómito iminente",
+   "h": "Inespecíficas, acompanham quase toda a patologia abdominal aguda. Mais valor quando precedem (apendicite) ou seguem (gastroenterite) a dor.",
+   "cat": "GIalto"
+  },
+  {
+   "id": "vomitos",
+   "l": "Vómitos",
+   "d": "Expulsão do conteúdo gástrico",
+   "h": "O conteúdo orienta: alimentar/gástrico é inespecífico; bilioso sugere obstrução abaixo da papila; fecalóide aponta para obstrução distal ou íleus avançado.",
+   "cat": "GIalto",
+   "sub": [
+    {
+     "v": "alim",
+     "l": "Alimentares"
+    },
+    {
+     "v": "bil",
+     "l": "Biliosos"
+    },
+    {
+     "v": "fec",
+     "l": "Fecalóides"
+    }
+   ]
+  },
+  {
+   "id": "hematemese",
+   "l": "Hematemese",
+   "d": "Vómito com sangue",
+   "h": "Hemorragia digestiva alta. Característico de úlcera péptica, varizes, Mallory-Weiss. Em sangue vivo abundante é alarme.",
+   "cat": "GIalto"
+  },
+  {
+   "id": "pirose",
+   "l": "Pirose",
+   "d": "Ardor retroesternal ascendente",
+   "h": "Sugere doença de refluxo ou úlcera péptica. Útil para distinguir dor epigástrica de origem péptica.",
+   "cat": "GIalto"
+  },
+  {
+   "id": "sacprec",
+   "l": "Saciedade precoce",
+   "d": "Enche-se com pouca comida",
+   "h": "Característico de obstrução de saída gástrica, neoplasia gástrica ou gastroparésia.",
+   "cat": "GIalto"
+  },
+  {
+   "id": "diarreia",
+   "l": "Diarreia",
+   "d": "Fezes líquidas ou frequentes",
+   "h": "Aguda sugere causa infecciosa. Crónica ou com sangue/muco orienta para DII; alternância com obstipação sugere SII.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "obstip",
+   "l": "Obstipação",
+   "d": "Trânsito lento, dificuldade em evacuar",
+   "h": "Inespecífica, mas em contexto de dor e distensão pode ser pista de suboclusão.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "paragem",
+   "l": "Paragem de gases e fezes",
+   "d": "Ausência de emissão",
+   "h": "Sinal cardinal de oclusão intestinal quando completa e mantida. Diferenciar de obstipação simples.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "distensao",
+   "l": "Distensão abdominal",
+   "d": "Abdómen aumentado, timpanizado",
+   "h": "Característico de oclusão, íleus ou ascite. Mais marcada quanto mais distal a obstrução.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "rectorr",
+   "l": "Rectorragia",
+   "d": "Sangue vivo pelo recto",
+   "h": "Característico de patologia colorrectal baixa. Abundante é alarme. Associada a dor e diarreia, característico de colite/DII ou isquemia.",
+   "cat": "GIbaixo",
+   "h_age": [
+    {
+     "cond": "young",
+     "txt": "Em jovem: mais característico de hemorróidas/fissura anal e DII."
+    },
+    {
+     "cond": "old",
+     "txt": "Em adulto > 50 anos: neoplasia colorrectal até prova em contrário (NICE NG12: referenciação)."
+    }
+   ]
+  },
+  {
+   "id": "melena",
+   "l": "Melenas",
+   "d": "Fezes negras, pastosas e fétidas",
+   "h": "Hemorragia digestiva alta (sangue digerido). Característico de úlcera péptica.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "muco",
+   "l": "Muco nas fezes",
+   "d": "Emissão de muco",
+   "h": "Característico de DII ou SII. Em conjunto com rectorragia, valoriza causa inflamatória.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "tenesmo",
+   "l": "Tenesmo",
+   "d": "Vontade de evacuar sem evacuação eficaz",
+   "h": "Característico de proctite, patologia rectal ou inflamação pélvica.",
+   "cat": "GIbaixo"
+  },
+  {
+   "id": "icter",
+   "l": "Icterícia",
+   "d": "Pele e escleróticas amareladas",
+   "h": "Característico de obstrução biliar, hepatite ou hemólise. Associada a febre e dor no HCD: suspeitar colangite (tríade de Charcot).",
+   "cat": "Hepato"
+  },
+  {
+   "id": "coluria",
+   "l": "Colúria",
+   "d": "Urina escura (cor de chá)",
+   "h": "Bilirrubina conjugada na urina. Acompanha icterícia obstrutiva ou hepatocelular.",
+   "cat": "Hepato"
+  },
+  {
+   "id": "acolia",
+   "l": "Acolia / hipocolia",
+   "d": "Fezes descoradas",
+   "h": "Ausência de bilirrubina nas fezes. Sugere obstrução biliar completa.",
+   "cat": "Hepato"
+  },
+  {
+   "id": "prurido",
+   "l": "Prurido",
+   "d": "Comichão generalizada",
+   "h": "Característico de colestase. Acompanha icterícia obstrutiva crónica.",
+   "cat": "Hepato"
+  },
+  {
+   "id": "disuria",
+   "l": "Disúria",
+   "d": "Dor ou ardor a urinar",
+   "h": "Característico de infecção urinária. Se com febre alta e dor lombar, suspeitar pielonefrite.",
+   "cat": "Urin"
+  },
+  {
+   "id": "hematuria",
+   "l": "Hematúria",
+   "d": "Sangue na urina",
+   "h": "Característico de litíase renal (clássico com dor tipo cólica) ou infecção. Indolor: investigar neoplasia urológica.",
+   "cat": "Urin",
+   "h_age": [
+    {
+     "cond": "young",
+     "txt": "Em jovem: mais característico de litíase ou infecção urinária."
+    },
+    {
+     "cond": "old",
+     "txt": "Em adulto > 50 anos, sobretudo se indolor: investigar neoplasia urotelial (vesical, renal)."
+    }
+   ]
+  },
+  {
+   "id": "polaq",
+   "l": "Polaquiúria",
+   "d": "Urinar muitas vezes, em pequena quantidade",
+   "h": "Característico de infecção urinária baixa ou irritação vesical (apendicite/abcesso pélvico podem irritar a bexiga).",
+   "cat": "Urin"
+  },
+  {
+   "id": "oliguria",
+   "l": "Oligúria",
+   "d": "Diminuição do volume urinário",
+   "h": "Característico de desidratação, hipoperfusão ou obstrução urinária. Em contexto de dor intensa, valorizar repercussão sistémica.",
+   "cat": "Urin"
+  },
+  {
+   "id": "dismen",
+   "l": "Dismenorreia",
+   "d": "Dor menstrual",
+   "h": "Característico de endometriose se progressiva e intensa. Caracterizar relação com o ciclo.",
+   "cat": "Gineco",
+   "h_age": [
+    {
+     "cond": "postmeno",
+     "txt": "Em mulher pós-menopausa com dor pélvica/sangramento: peso oncológico maior (endométrio, ovário): investigação dirigida."
+    }
+   ]
+  },
+  {
+   "id": "dispar",
+   "l": "Dispareunia",
+   "d": "Dor com as relações sexuais",
+   "h": "Característico de endometriose, DIP ou patologia anexial.",
+   "cat": "Gineco"
+  },
+  {
+   "id": "corrim",
+   "l": "Corrimento vaginal",
+   "d": "Leucorreia anómala",
+   "h": "Característico de doença inflamatória pélvica, sobretudo se com febre e dor pélvica bilateral.",
+   "cat": "Gineco"
+  },
+  {
+   "id": "amen",
+   "l": "Amenorreia / atraso menstrual",
+   "d": "Ausência de menstruação",
+   "h": "Em mulher fértil com dor pélvica, EXCLUIR SEMPRE gravidez (e gravidez ectópica). Teste de gravidez é obrigatório.",
+   "cat": "Gineco"
+  },
+  {
+   "id": "hemanormal",
+   "l": "Hemorragia uterina anormal",
+   "d": "Metrorragias, spotting",
+   "h": "Característico de gravidez ectópica (com atraso), patologia uterina ou anexial.",
+   "cat": "Gineco"
+  },
+  {
+   "id": "febre",
+   "l": "Febre",
+   "d": "Temperatura elevada",
+   "h": "Sugere causa infecciosa/inflamatória. A localização da dor orienta: HCD com icterícia (colangite), FID (apendicite), FIE (diverticulite), lombar (pielonefrite).",
+   "cat": "Sist"
+  },
+  {
+   "id": "calafrios",
+   "l": "Calafrios / arrepios",
+   "d": "Tremor com sensação de frio",
+   "h": "Sugerem bacteriémia. Em contexto biliar, valorizam colangite; em contexto urinário, pielonefrite.",
+   "cat": "Sist"
+  },
+  {
+   "id": "anorexia",
+   "l": "Anorexia",
+   "d": "Perda de apetite",
+   "h": "Inespecífica mas frequente na patologia aguda. Na apendicite, a anorexia é quase a regra.",
+   "cat": "Sist",
+   "h_age": [
+    {
+     "cond": "old",
+     "txt": "Em idoso, anorexia arrastada com perda ponderal: peso oncológico maior: investigação dirigida."
+    }
+   ]
+  },
+  {
+   "id": "astenia",
+   "l": "Astenia / mal-estar",
+   "d": "Cansaço, prostração",
+   "h": "Inespecífica. Valorizar como sinal de repercussão sistémica ou doença arrastada.",
+   "cat": "Sist"
+  },
+  {
+   "id": "sudn",
+   "l": "Sudorese nocturna",
+   "d": "Encharca a roupa de noite",
+   "h": "Em dor abdominal crónica, característico de causa neoplásica, infecção crónica (TB) ou DII.",
+   "cat": "Sist"
+  },
+  {
+   "id": "sincope",
+   "l": "Síncope / lipotimia",
+   "d": "Perda transitória de consciência",
+   "h": "Alarme. Em dor abdominal pode traduzir hipovolémia (rotura de aneurisma, gravidez ectópica rota, hemorragia) ou sépsis.",
+   "cat": "Cardio"
+  },
+  {
+   "id": "dispneia",
+   "l": "Dispneia",
+   "d": "Falta de ar",
+   "h": "Característico de repercussão de choque/sépsis, em patologia torácica a simular abdómen, ou em distensão que limita a ventilação.",
+   "cat": "Cardio"
+  }
+ ],
+ "alms": [
+  {
+   "id": "peritonismo",
+   "l": "Defesa / peritonismo",
+   "d": "Contractura à palpação, dor à descompressão",
+   "h": "Sinal de irritação peritoneal. Aponta para abdómen cirúrgico. Avaliar se localizada ou generalizada."
+  },
+  {
+   "id": "tabua",
+   "l": "Abdómen em tábua",
+   "d": "Rigidez generalizada involuntária",
+   "h": "Sugere peritonite difusa, frequentemente por perfuração de víscera oca. Emergência cirúrgica."
+  },
+  {
+   "id": "choque",
+   "l": "Hipotensão / choque",
+   "d": "PA baixa, taquicardia, má perfusão",
+   "h": "Característico de hemorragia (aneurisma, ectópica), sépsis (colangite, peritonite) ou isquemia mesentérica. Reanimação imediata."
+  },
+  {
+   "id": "subitamax",
+   "l": "Dor súbita de intensidade máxima",
+   "d": "Dor no auge desde o início",
+   "h": "Característico de perfuração, rotura de aneurisma, torção ou evento vascular. O início instantâneo é uma pista temporal forte."
+  },
+  {
+   "id": "despro",
+   "l": "Dor desproporcional ao exame",
+   "d": "Dor intensa com abdómen pouco doloroso",
+   "h": "Sinal clássico de isquemia mesentérica em fase precoce. A discrepância dor/exame deve fazer soar o alarme vascular."
+  },
+  {
+   "id": "paragemabs",
+   "l": "Paragem absoluta de gases e fezes",
+   "d": "Sem emissão, com distensão e vómitos",
+   "h": "Sugere oclusão intestinal completa. Avaliar sinais de estrangulamento (dor contínua, febre, peritonismo)."
+  },
+  {
+   "id": "vomfec",
+   "l": "Vómitos fecalóides",
+   "d": "Vómito de aspecto e cheiro fecal",
+   "h": "Sugere oclusão intestinal distal ou íleus avançado. Risco de aspiração."
+  },
+  {
+   "id": "hemorragia",
+   "l": "Hematemese / rectorragia abundante",
+   "d": "Hemorragia digestiva volumosa",
+   "h": "Característico de úlcera péptica complicada, varizes ou patologia colorrectal. Avaliar instabilidade e necessidade de transfusão."
+  },
+  {
+   "id": "charcot",
+   "l": "Icterícia com febre",
+   "d": "Icterícia + febre (± dor no HCD)",
+   "h": "Tríade de Charcot: colangite aguda até prova em contrário. Urgência de drenagem biliar."
+  },
+  {
+   "id": "perdaponderal",
+   "l": "Perda ponderal não intencional",
+   "d": "Emagrecimento sem dieta",
+   "h": "Em dor abdominal arrastada, característico de neoplasia, DII ou doença crónica. Sinal de alarme oncológico."
+  },
+  {
+   "id": "massaalm",
+   "l": "Massa abdominal palpável",
+   "d": "Massa nova ao exame",
+   "h": "Característico de neoplasia, abcesso, aneurisma (pulsátil) ou plastrão inflamatório. Caracterizar e investigar."
+  },
+  {
+   "id": "anemiaferr",
+   "l": "Anemia ferropénica nova",
+   "d": "Palidez, astenia, Hb baixa",
+   "h": "Em adulto, característico de perda digestiva crónica oculta: neoplasia colorrectal até prova em contrário."
+  }
+ ],
+ "drgcls": [
+  {
+   "cls": "AINEs",
+   "mech": "Lesão directa e inibição das prostaglandinas protectoras da mucosa: gastrite, úlcera e perfuração. Causa major de hemorragia digestiva alta.",
+   "drugs": [
+    "Ibuprofeno",
+    "Diclofenac",
+    "Naproxeno",
+    "Cetorolac",
+    "Aspirina (dose anti-inflamatória)",
+    "Etoricoxib",
+    "Indometacina"
+   ]
+  },
+  {
+   "cls": "Anticoagulantes / antiagregantes",
+   "mech": "Aumentam o risco e a gravidade de hemorragia digestiva e de hematomas (parede, retroperitoneu).",
+   "drugs": [
+    "Varfarina",
+    "Apixabano",
+    "Rivaroxabano",
+    "Edoxabano",
+    "Dabigatrano",
+    "Clopidogrel",
+    "Aspirina (antiagregante)",
+    "Enoxaparina"
+   ]
+  },
+  {
+   "cls": "Corticóides",
+   "mech": "Mascaram os sinais inflamatórios e o peritonismo: uma perfuração pode cursar com exame pobre. Aumentam risco de úlcera.",
+   "drugs": [
+    "Prednisolona",
+    "Metilprednisolona",
+    "Dexametasona",
+    "Hidrocortisona",
+    "Deflazacort"
+   ]
+  },
+  {
+   "cls": "Opióides",
+   "mech": "Reduzem a motilidade: obstipação, íleus e impactação fecal. Também atenuam a percepção da dor e mascaram o quadro.",
+   "drugs": [
+    "Morfina",
+    "Tramadol",
+    "Codeína",
+    "Oxicodona",
+    "Fentanilo",
+    "Tapentadol"
+   ]
+  },
+  {
+   "cls": "Antibióticos",
+   "mech": "Disbiose e colite por Clostridioides difficile: diarreia, dor e distensão, sobretudo após uso recente ou hospitalização.",
+   "drugs": [
+    "Amoxicilina-clavulanato",
+    "Clindamicina",
+    "Ciprofloxacina",
+    "Cefuroxima",
+    "Azitromicina"
+   ]
+  },
+  {
+   "cls": "Metformina",
+   "mech": "Intolerância gastrointestinal (dor epigástrica, diarreia). Em hipoperfusão, risco de acidose láctica que pode simular abdómen agudo.",
+   "drugs": [
+    "Metformina"
+   ]
+  },
+  {
+   "cls": "Ferro oral",
+   "mech": "Irritação directa da mucosa: epigastralgia, náuseas, obstipação e fezes escuras (a não confundir com melenas).",
+   "drugs": [
+    "Sulfato ferroso",
+    "Ferro fumarato",
+    "Ferro gluconato"
+   ]
+  },
+  {
+   "cls": "Bifosfonatos",
+   "mech": "Esofagite e úlcera esofágica, sobretudo se tomados deitado ou com pouca água: dor retroesternal/epigástrica.",
+   "drugs": [
+    "Alendronato",
+    "Risedronato",
+    "Ibandronato"
+   ]
+  },
+  {
+   "cls": "Quimioterapia / imunoterapia",
+   "mech": "Mucosite, enterite e colite (incluindo colite imuno-mediada por inibidores de checkpoint): diarreia e dor que exigem reconhecimento precoce.",
+   "drugs": [
+    "Fluorouracilo",
+    "Irinotecano",
+    "Capecitabina",
+    "Pembrolizumab",
+    "Nivolumab",
+    "Ipilimumab"
+   ]
+  },
+  {
+   "cls": "Imunossupressores",
+   "mech": "Podem mascarar a infecção e a inflamação: perfurações e abcessos com apresentação atenuada e tardia.",
+   "drugs": [
+    "Azatioprina",
+    "Micofenolato",
+    "Ciclosporina",
+    "Tacrolimus",
+    "Metotrexato"
+   ]
+  },
+  {
+   "cls": "Outros",
+   "mech": "",
+   "drugs": [
+    "Colchicina",
+    "Octreótido",
+    "Eritromicina",
+    "Sais de potássio",
+    "Verapamil"
+   ]
+  }
+ ],
+ "ants": [
+  {
+   "id": "litb",
+   "l": "Litíase biliar",
+   "d": "Cálculos na vesícula"
+  },
+  {
+   "id": "litr",
+   "l": "Litíase renal",
+   "d": "Cálculos urinários / cólicas prévias"
+  },
+  {
+   "id": "ulcera",
+   "l": "Úlcera péptica",
+   "d": "Doença ulcerosa conhecida"
+  },
+  {
+   "id": "pancr",
+   "l": "Pancreatite prévia",
+   "d": "Episódio anterior",
+   "sub": [
+    {
+     "v": "aguda",
+     "l": "Aguda"
+    },
+    {
+     "v": "cronica",
+     "l": "Crónica"
+    }
+   ]
+  },
+  {
+   "id": "dii",
+   "l": "Doença inflamatória intestinal",
+   "d": "Crohn ou colite ulcerosa",
+   "sub": [
+    {
+     "v": "crohn",
+     "l": "Crohn"
+    },
+    {
+     "v": "cu",
+     "l": "Colite ulcerosa"
+    }
+   ]
+  },
+  {
+   "id": "sii",
+   "l": "Síndrome do intestino irritável",
+   "d": "SII conhecido"
+  },
+  {
+   "id": "divert",
+   "l": "Diverticulose",
+   "d": "Divertículos do cólon"
+  },
+  {
+   "id": "divprev",
+   "l": "Diverticulite prévia",
+   "d": "Episódio anterior"
+  },
+  {
+   "id": "endo",
+   "l": "Endometriose",
+   "d": "Diagnóstico conhecido"
+  },
+  {
+   "id": "hernia",
+   "l": "Hérnia da parede abdominal",
+   "d": "Inguinal, umbilical, incisional"
+  },
+  {
+   "id": "cirur",
+   "l": "Cirurgia abdominal prévia",
+   "d": "Laparotomia/laparoscopia anterior",
+   "sub": [
+    {
+     "v": "apend",
+     "l": "Apendicectomia"
+    },
+    {
+     "v": "cole",
+     "l": "Colecistectomia"
+    },
+    {
+     "v": "hist",
+     "l": "Histerectomia"
+    },
+    {
+     "v": "outra",
+     "l": "Outra"
+    }
+   ]
+  },
+  {
+   "id": "neoP",
+   "l": "Neoplasia digestiva ou ginecológica",
+   "d": "Cancro conhecido/tratado"
+  },
+  {
+   "id": "hepato",
+   "l": "Hepatopatia crónica",
+   "d": "Cirrose, hepatite crónica"
+  },
+  {
+   "id": "irc",
+   "l": "Insuficiência renal crónica",
+   "d": "TFG reduzida"
+  },
+  {
+   "id": "dm",
+   "l": "Diabetes mellitus",
+   "d": "Pode mascarar/atrasar o quadro"
+  },
+  {
+   "id": "fa",
+   "l": "Fibrilhação auricular",
+   "d": "Risco de embolia mesentérica"
+  },
+  {
+   "id": "aaa",
+   "l": "Aneurisma da aorta abdominal",
+   "d": "AAA conhecido"
+  },
+  {
+   "id": "dap",
+   "l": "Doença arterial periférica",
+   "d": "Aterosclerose difusa"
+  },
+  {
+   "id": "imuno",
+   "l": "Imunossupressão",
+   "d": "Fármacos, VIH, transplante"
+  },
+  {
+   "id": "grav",
+   "l": "Gravidez actual",
+   "d": "Gestação em curso"
+  }
+ ],
+ "ui": {
+  "intro": {
+   "comoTitulo": "Como funciona",
+   "comoTexto": "Constrói um <b>caso clínico fictício</b> de alguém com dor abdominal. À medida que avanças, a ferramenta destaca o que pensar perante cada característica e cada sintoma, organiza as hipóteses e a investigação dirigida a considerar. No fim, vê-se um <b>exemplo pedagógico</b> de como estruturar a nota clínica deste tipo de caso.",
+   "aviso": "<b>⚠ Não introduzir dados de doentes reais.</b> Os campos abaixo destinam-se à construção de um perfil fictício para treino. Esta ferramenta não é dispositivo médico e não emite diagnósticos nem recomendações terapêuticas.",
+   "faixaHint": "Escolhe uma faixa em vez de uma idade exacta: a ferramenta usa categorias clínicas, não modela doentes individuais.",
+   "instavelHtml": "<div style=\"background:rgba(220,38,38,0.06);border:1.5px solid rgba(220,38,38,0.25);border-radius:12px;padding:18px;margin-bottom:16px\"><div style=\"font-size:15px;font-weight:700;color:var(--rd);margin-bottom:12px\">Doente instável: estabilizar ANTES de investigar</div><div style=\"font-size:13px;line-height:1.7;color:var(--tx)\"><div style=\"font-weight:700;color:var(--rd);margin-bottom:6px\">1. ABC + Monitorização</div><ul style=\"margin:0 0 12px;padding-left:20px\"><li>Via aérea permeável, O2 se SpO2 &lt;94%</li><li>2 acessos venosos periféricos de grande calibre (14-16G)</li><li>Monitorização contínua: PA, FC, SpO2, FR, diurese</li></ul><div style=\"font-weight:700;color:var(--rd);margin-bottom:6px\">2. Ressuscitação volémica*</div><ul style=\"margin:0 0 12px;padding-left:20px\"><li>Cristaloides (NaCl 0,9% ou Lactato de Ringer): bolus 500 mL em 15-20 min</li><li>Reavaliar PA, FC, perfusão → repetir 250-500 mL se necessário</li><li>Se suspeita de hemorragia: tipagem + prova cruzada, ponderar transfusão</li><li>Objectivo: PA sistólica >90 mmHg, FC &lt;100, diurese >0,5 mL/kg/h</li></ul><div style=\"font-weight:700;color:var(--rd);margin-bottom:6px\">3. Colheitas urgentes</div><ul style=\"margin:0 0 12px;padding-left:20px\"><li>Hemograma, grupo + prova cruzada, coagulação</li><li>Lactato + gasimetria (perfusão tecidular)</li><li>Função renal, ionograma, glicose</li><li>beta-hCG se mulher fértil</li></ul><div style=\"font-weight:700;color:var(--rd);margin-bottom:6px\">4. Causas a excluir de imediato</div><ul style=\"margin:0 0 12px;padding-left:20px\"><li><b>Rotura de aneurisma da aorta:</b> dor abdominal/dorsal + hipotensão + massa pulsátil</li><li><b>Gravidez ectópica rota:</b> mulher fértil + dor pélvica + choque</li><li><b>Hemorragia digestiva maciça:</b> hematemese/melenas + instabilidade</li><li><b>Sépsis abdominal:</b> febre + taquicardia + hipotensão (colangite, peritonite)</li><li><b>Perfuração:</b> dor súbita + peritonismo + choque</li></ul><div style=\"font-weight:700;color:var(--rd);margin-bottom:6px\">5. Acção imediata</div><ul style=\"margin:0;padding-left:20px\"><li>Chamar cirurgia / equipa de reanimação precocemente</li><li>Não atrasar por exames: POCUS à cabeceira se disponível</li><li>TC só quando minimamente estável (PA sistólica >90 após bolus)</li><li>Analgesia: não adiar, titular com cuidado (morfina IV)</li></ul></div></div><div style=\"background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:12px;line-height:1.7;color:var(--tx)\"><div style=\"font-weight:700;color:var(--rd);margin-bottom:8px\">* Como funciona a ressuscitação volémica na prática</div><b>O bolus é um teste, não uma prescrição fixa.</b> Dar → parar → reavaliar → decidir.<br><br><b>1.</b> Bolus 500 mL de cristaloide em 15-20 min<br><b>2.</b> Parar e reavaliar: a PA subiu? A FC desceu? Há diurese?<br><b>3a.</b> Se respondeu → repetir 250-500 mL se ainda não atingiu os objectivos<br><b>3b.</b> Se não respondeu → o doente está a perder activamente (precisa de sangue) ou está em choque distributivo (precisa de vasopressor). Não insistir em cristaloides sem resposta.<br><br><b>Limite razoável:</b> 1-2 L nas primeiras horas (≈30 mL/kg). Ultrapassar sem reavaliação arrisca sobrecarga hídrica.<br><b>Após estabilizar:</b> manutenção ≈25-30 mL/kg/dia (ex: 70 kg → 80-85 mL/h em perfusão contínua). Ajustar conforme contexto (sépsis: mais; IC: menos).<br><br><span style=\"color:var(--rd);font-weight:600\">O erro mais comum: dar o bolus e não reavaliar, ou dar litros sem parar.</span></div><div class=\"inf-alert inf-alert-y\" style=\"margin-bottom:8px\">Podes continuar a anamnese mesmo com doente instável: a história clínica orienta a causa e ajuda a priorizar a abordagem.</div>",
+   "instavelNota": "Podes continuar a anamnese mesmo com doente instável: a história clínica orienta a causa e ajuda a priorizar a abordagem."
+  },
+  "caract": {
+   "socrates": "<b>Método SOCRATES</b> — framework para caracterização sistemática da dor: <b>S</b>ite (localização) · <b>O</b>nset (início) · <b>C</b>haracter (tipo) · <b>R</b>adiation (irradiação) · <b>A</b>ssociations (sintomas associados) · <b>T</b>ime (duração/padrão) · <b>E</b>xacerbating/relieving (modulação) · <b>S</b>everity (intensidade). Os passos seguintes seguem esta estrutura.",
+   "inicioSubito": "<b>Início súbito:</b> característico de evento agudo. Em segundos: perfuração, rotura de aneurisma, torção. Em horas: apendicite, colecistite, cólica renal/biliar, pancreatite.",
+   "inicioGradual": "<b>Início gradual:</b> característico de processo inflamatório crónico, funcional ou neoplásico. Excluir sempre alarmes (perda de peso, anemia, sangue, massa).",
+   "durAguda": "<b>Aguda (&lt;7 dias):</b> excluir emergências cirúrgicas (apendicite, perfuração, obstrução, isquemia) e causas vasculares (aneurisma, ectópica). A dor em segundos aponta para perfuração/rotura; em horas para apendicite/colecistite/cólica.",
+   "durSubaguda": "<b>Subaguda (7 dias – 3 sem):</b> processos inflamatórios em evolução (diverticulite, DII, pancreatite arrastada). Importante reavaliar: uma urgência cirúrgica pode ter apresentação subaguda em idosos ou imunodeprimidos.",
+   "durCronica": "<b>Crónica (&gt;3 semanas):</b> causas funcionais (SII, dispepsia) são as mais frequentes, mas excluir sempre alarmes (perda ponderal, anemia, sangue, massa). Dor crónica com alarmes obriga a investigação dirigida.",
+   "intens7": "<b>Dor intensa (≥7/10):</b> considerar opióide IV (morfina titulada). Dor intensa desproporcional ao exame é pista de isquemia mesentérica.",
+   "tipos": {
+    "colica": "Dor tipo cólica (em ondas): característico de órgão oco com peristaltismo contra obstáculo: víscera (oclusão), via biliar (litíase) ou ureter (cólica renal).",
+    "continua": "Dor contínua: processo inflamatório estabelecido (colecistite, apendicite já fixa, peritonite) ou distensão capsular (hepatite, congestão hepática).",
+    "queimor": "Dor em queimor: mucosa irritada: úlcera, gastrite, refluxo. Também pode ser dor neuropática.",
+    "facada": "Dor em facada, sobretudo se súbita: característico de perfuração, dissecção/rotura vascular ou evento isquémico.",
+    "opressiva": "Dor opressiva: <b>atenção redobrada</b>: pode ser dor cardíaca a simular abdominal. O enfarte da parede inferior dá epigastralgia.",
+    "surda": "Dor surda/vaga: processo profundo, retroperitoneal, neoplásico ou crónico. Exige reavaliação programada."
+   },
+   "quadrantes": {
+    "hcd": "<b>HCD</b>: característico de patologia biliar (cólica/colecistite/colangite), hepatite, ângulo hepático do cólon. Não esquecer pneumonia da base direita a simular abdómen.",
+    "epi": "<b>Epigástrio</b>: característico de pancreatite, úlcera péptica, dispepsia, refluxo. Atenção ao enfarte da parede inferior a simular epigastralgia.",
+    "hce": "<b>HCE</b>: característico de patologia esplénica (rotura, enfarte), ângulo esplénico do cólon. Pneumonia da base esquerda também pode dar dor neste quadrante.",
+    "fld": "<b>Flanco direito</b>: característico de cólica renal direita, pielonefrite direita, patologia do cólon ascendente. Litíase ureteral é causa clássica.",
+    "peri": "<b>Periumbilical</b>: fase inicial da apendicite (dor visceral antes da migração para a FID), gastroenterite, isquemia mesentérica precoce.",
+    "fle": "<b>Flanco esquerdo</b>: característico de cólica renal esquerda, pielonefrite esquerda, patologia do cólon descendente.",
+    "fid": "<b>FID</b>: apendicite (causa cirúrgica mais frequente), patologia ginecológica direita (ovário/trompa), gravidez ectópica, Crohn ileal, cólica renal com cálculo baixo.",
+    "hipo": "<b>Hipogástrio</b>: característico de patologia urinária (retenção, cistite), ginecológica, sigmoide.",
+    "fie": "<b>FIE</b>: diverticulite (a \"apendicite à esquerda\"), patologia ginecológica esquerda, patologia do sigmoide."
+   },
+   "difusa": "<b>Dor difusa / mal localizada</b>: característico de peritonite generalizada, isquemia mesentérica avançada, oclusão intestinal, gastroenterite, cetoacidose diabética, porfíria. Pista forte para causa sistémica ou peritonite estabelecida.",
+   "quadVazio": "Selecciona um quadrante para ver as pistas clínicas.",
+   "irrad": {
+    "dorso": "Irradiação para o dorso: característico de pancreatite (dor \"em barra\"), úlcera penetrante ou patologia da aorta.",
+    "virilha": "Irradiação para a virilha/genitais: típica de cólica renal (loin to groin).",
+    "ombrod": "Irradiação para a escápula/ombro direito: sugestiva de patologia biliar (dor referida pelo nervo frénico).",
+    "ombroe": "Irradiação para o ombro esquerdo (<b>sinal de Kehr</b>): irritação diafragmática por hemoperitoneu: característico de rotura esplénica, rotura de gravidez ectópica, hemorragia intra-abdominal.",
+    "retro": "Irradiação retroesternal: causa torácica a manifestar-se abaixo do diafragma (refluxo, enfarte, dissecção aórtica) ou esofagite/úlcera.",
+    "flancos": "Irradiação em cintura/flancos: típica da pancreatite (\"em barra\") e da dissecção/rotura de aneurisma da aorta."
+   },
+   "padrao": {
+    "constante": "Constante: inflamação contínua (colecistite, apendicite estabelecida, peritonite). Não cede sozinha.",
+    "intermit": "Intermitente: característica da cólica: espasmo contra obstáculo (biliar, renal, oclusão intestinal). Períodos de alívio entre crises.",
+    "crescendo": "Em crescendo: processo em progressão: apendicite a evoluir, isquemia a instalar-se, abcesso a colectar. Sinal importante de agravamento.",
+    "resolucao": "Em resolução: cólica que cedeu (cálculo passou?) ou abcesso drenado. <b>Atenção</b> ao \"calm before the storm\": a isquemia mesentérica pode dar falsa melhoria antes do enfarte transmural."
+   },
+   "mod": {
+    "alimAlivia": "Dor que alivia a comer: sugestiva de úlcera duodenal.",
+    "alimAgrava": "Dor que agrava a comer: característico de úlcera gástrica, patologia biliar (refeição gorda) ou isquemia mesentérica crónica (angina intestinal).",
+    "jejumAlivia": "Dor que alivia em jejum: sugere causa pós-prandial: patologia biliar (refeição gorda como trigger), isquemia mesentérica crónica ou úlcera gástrica.",
+    "jejumAgrava": "Dor que agrava em jejum ou de madrugada: sugestiva de úlcera duodenal (ácido gástrico sem tampão alimentar).",
+    "defecAlivia": "Dor que alivia com a defecação: critério de Rome IV para SII. Também pode aliviar em cólica intestinal inespecífica.",
+    "defecAgrava": "Dor que agrava com a defecação: característico de patologia anorrectal (fissura, hemorróidas complicadas, proctite) ou abcesso pélvico.",
+    "movAgrava": "Dor que agrava com o movimento e a tosse: sugere irritação peritoneal (o doente fica imóvel).",
+    "posAlivia": "Dor que alivia ao curvar-se para a frente: postura antálgica clássica da pancreatite aguda (reduz tensão na cápsula retroperitoneal).",
+    "posAgrava": "Dor que agrava com a posição: sugere processo retroperitoneal (pancreatite, aneurisma) ou componente músculo-esquelético/parede abdominal."
+   }
+  },
+  "contexto": {
+   "aviso": "Há frequentemente um contexto que desencadeia ou orienta a dor abdominal: uma refeição, um fármaco, um esforço, o ciclo menstrual. Vamos averiguar.",
+   "pergunta": "Há algum factor desencadeante ou contexto relevante?",
+   "perguntaHint": "Relação com refeições, uso de fármacos (AINEs), álcool, esforço ou ciclo menstrual",
+   "semCtx": "<b>Sem contexto desencadeante identificado</b>: ficará registado na nota. Continua para o próximo passo.",
+   "relLogoapos": "Dor logo após comer (minutos): característico de <b>úlcera gástrica</b> (a comida agrava). Em quadro arrastado com perda ponderal e factores de risco vasculares, considerar <b>isquemia mesentérica crónica</b> (angina intestinal: dor 15-30 min após comer, medo de comer).",
+   "relGordura": "Dor após refeição gorda: típica de patologia biliar (cólica biliar / colecistite). A vesícula contrai com a gordura.",
+   "relJejum": "Dor que surge horas depois de comer ou em jejum, aliviada por comer: sugestiva de úlcera duodenal.",
+   "aines": "<b>AINEs recentes</b> são uma das principais causas de gastrite, úlcera e perfuração. Aumentam o risco de hemorragia digestiva. Valorizar muito num quadro epigástrico.",
+   "alcool": "Álcool recente, sobretudo em excesso, é desencadeante clássico de <b>pancreatite aguda</b> (segunda causa, a seguir à litíase) e de gastrite.",
+   "movImobiliza": "O doente que fica imóvel porque tudo o que mexe dói está a proteger um <b>peritoneu inflamado</b> (peritonismo).",
+   "movAgita": "O doente que se contorce e não encontra posição tem tipicamente <b>dor de tipo cólico</b> (cólica renal ou biliar), não peritonismo.",
+   "menstrPeri": "Dor peri-menstrual: característico de dismenorreia/endometriose. Não esquecer de excluir gravidez.",
+   "menstrMeio": "Dor a meio do ciclo: pode ser dor ovulatória (Mittelschmerz). Diagnóstico de exclusão após afastar causas agudas."
+  },
+  "alm": {
+   "intro": "Qualquer sinal de alarme → reavaliação e investigação prioritárias. Vários em conjunto sugerem abdómen agudo.",
+   "perdaPonderal": "<b>Perda ponderal significativa:</b> >5% do peso corporal em 6-12 meses, não intencional. Exemplos práticos: num doente de 60 kg, perder >3 kg é significativo; num de 80 kg, >4 kg. Obriga a investigação dirigida (hemograma, VS, função hepática, TC/endoscopia)."
+  },
+  "hab": {
+   "alcExc": "Álcool excessivo: factor de risco para pancreatite, gastrite, hepatopatia e úlcera.",
+   "tabaco": "Tabagismo: factor de risco para úlcera péptica, Crohn, doença arterial (isquemia mesentérica, aneurisma) e neoplasia.",
+   "dietaGordura": "Dieta rica em gordura: associada a litíase biliar e a crises de cólica biliar.",
+   "dietaPobreFibra": "Dieta pobre em fibra: associada a doença diverticular e obstipação."
+  },
+  "eo": {
+   "mucDesc": "Mucosas descoradas: anemia: característico de perda hemorrágica (digestiva alta ou baixa). Hemograma e tipagem.",
+   "mucDesid": "Mucosas desidratadas: característico de vómitos prolongados, terceiro espaço (peritonite, pancreatite, oclusão), perdas digestivas. Avaliar repercussão hemodinâmica.",
+   "mucIct": "Icterícia: obstrução biliar, hepatite ou hemólise. Se com febre, suspeitar colangite.",
+   "acrArr": "<b>Arrítmico</b>: característico de fibrilhação auricular. Em dor abdominal súbita num doente com FA, suspeitar de <b>isquemia mesentérica embólica</b>: baixo limiar para angio-TC.",
+   "acrTaq": "Taquicardia: característico de hipovolemia (hemorragia, terceiro espaço), sépsis, anemia ou dor intensa. Avaliar repercussão hemodinâmica.",
+   "acrBra": "Bradicardia: pode reflectir uso de β-bloqueante (atenção à mascara da dor e do choque), reflexo vagal, ou patologia do nodo sinusal.",
+   "apMvDim": "MV diminuído na base: característico de derrame pleural reactivo (pancreatite, abcesso subfrénico) ou pneumonia da base a simular abdómen agudo. Rx tórax pode esclarecer.",
+   "apCrep": "Crepitações basais: característico de IC com congestão (atenção a IC direita que pode dar hepatomegália dolorosa) ou pneumonia. Pode também acompanhar pancreatite grave (SDRA).",
+   "eoQuadSufixo": " A localização da dor à palpação aponta para o órgão correspondente. Comparar com a localização referida pelo doente: concordância reforça a hipótese.",
+   "defesaLocalizada": "<b>Defesa localizada</b>: peritoneu inflamado na área correspondente. Orienta para o órgão (FID → apêndice; HCD → vesícula; FIE → sigmoide).",
+   "defesaGeneralizada": "<b>Peritonismo generalizado</b>: peritonite difusa estabelecida. Investigar perfuração, isquemia transmural ou abdómen agudo. Avaliação cirúrgica urgente.",
+   "defesaTabua": "<b>Abdómen em tábua</b>: contractura involuntária generalizada. Característico de perfuração de víscera oca com peritonite química/séptica. Emergência cirúrgica.",
+   "rhaAum": "RHA aumentados: fase inicial de oclusão intestinal (peristaltismo a tentar vencer obstáculo) ou gastroenterite.",
+   "rhaDim": "RHA diminuídos: íleus paralítico reactivo (pancreatite, peritonite localizada, pós-operatório). Não é específico.",
+   "rhaAus": "RHA ausentes: íleus paralítico avançado, peritonite estabelecida ou isquemia intestinal com enfarte. Sinal preocupante.",
+   "rhaMet": "RHA metálicos / de luta: oclusão intestinal mecânica (peristaltismo intenso a tentar vencer o obstáculo). Imagiologia para identificar o nível.",
+   "massaPalpavel": "Massa palpável: caracterizar: dolorosa com febre sugere abcesso/plastrão; indolor pode ser neoplasia; em FIE característico de plastrão diverticular.",
+   "hepatomegalia": "Hepatomegália: característico de hepatite (vírica, alcoólica, tóxica), IC direita com congestão hepática (fígado pulsátil, sensível), infiltração neoplásica.",
+   "esplenomegalia": "Esplenomegália: característico de hipertensão portal (hepatopatia), patologia linfoproliferativa, infecção (mononucleose). Atenção a rotura em trauma mínimo.",
+   "massaPulsatil": "<b>Massa pulsátil e expansível</b>: suspeitar de aneurisma da aorta abdominal. Se com dor e hipotensão, emergência: ecografia à cabeceira ou angio-TC imediata.",
+   "globoVesical": "Globo vesical: retenção urinária aguda. Pode ser causa primária de dor no hipogástrio.",
+   "sinaisInfo": [
+    {
+     "id": "murphy",
+     "l": "Murphy",
+     "how": "Palpar profundamente o HCD por baixo do rebordo costal e pedir ao doente que respire fundo. <b>Positivo</b> se a inspiração pára por dor."
+    },
+    {
+     "id": "mcburney",
+     "l": "McBurney",
+     "how": "Pressão no ponto a 1/3 da linha umbigo–EIAS direita. <b>Positivo</b> se dor exquisita nesse ponto."
+    },
+    {
+     "id": "rovsing",
+     "l": "Rovsing",
+     "how": "Palpar profundamente a FIE. <b>Positivo</b> se a pressão à esquerda provoca dor referida à FID."
+    },
+    {
+     "id": "blumberg",
+     "l": "Blumberg (descompressão)",
+     "how": "Pressão lenta e profunda seguida de libertação brusca. <b>Positivo</b> se a libertação dói mais que a pressão (irritação peritoneal)."
+    },
+    {
+     "id": "psoas",
+     "l": "Psoas",
+     "how": "Doente em decúbito lateral esquerdo. Extensão passiva da coxa direita. <b>Positivo</b> se dor (apêndice retrocecal, abcesso do psoas)."
+    },
+    {
+     "id": "obturador",
+     "l": "Obturador",
+     "how": "Doente em decúbito dorsal, anca e joelho a 90°. Rotação interna passiva da coxa direita. <b>Positivo</b> se dor (apêndice pélvico)."
+    },
+    {
+     "id": "punhod",
+     "l": "Punho-percussão lombar direita",
+     "how": "Pancada com a borda cubital do punho no ângulo costovertebral direito. <b>Positivo</b> se dor viva (cólica/pielonefrite direita)."
+    },
+    {
+     "id": "punhoe",
+     "l": "Punho-percussão lombar esquerda",
+     "how": "Pancada no ângulo costovertebral esquerdo. <b>Positivo</b> se dor viva (cólica/pielonefrite esquerda)."
+    }
+   ],
+   "sinaisNota": "Para cada sinal: marca se está <b>positivo</b>, <b>negativo</b>, ou deixa em branco se não foi avaliado.",
+   "trSangue": "Sangue vivo ao TR: característico de patologia colorrectal baixa (hemorróidas, fissura, neoplasia) ou colite. Em quadro agudo com dor, considerar isquemia mesentérica.",
+   "trMelena": "Melenas ao TR: hemorragia digestiva alta confirmada (sangue digerido). Avaliar estabilidade e considerar endoscopia digestiva alta urgente.",
+   "trMassa": "Massa ao TR: característico de neoplasia rectal até prova em contrário. Investigação dirigida.",
+   "trDor": "Dor / abaulamento ao TR: característico de fossa de Douglas inflamada (abcesso pélvico) ou DIP.",
+   "miEd": "Edema: característico de IC, hepatopatia (hipoalbuminemia), síndrome nefrótico ou TVP (se assimétrico).",
+   "miTvp": "Sinais de TVP: considerar TEP como diagnóstico alternativo a abdómen agudo (TEP pode dar dor abdominal alta por enfarte pulmonar basal).",
+   "obesoOb": "Obesidade: factor de risco para litíase biliar, hérnia da parede abdominal, doença do refluxo, esteatohepatite e pancreatite biliar. Também dificulta a palpação.",
+   "peleEquimoses": "Equimoses do flanco (Grey-Turner) ou periumbilical (Cullen): sugerem hemorragia retroperitoneal: pancreatite necro-hemorrágica grave ou rotura de aneurisma. Sinais tardios."
+  },
+  "notaIntro": "Exemplo pedagógico de como a informação deste caso poderia ser organizada numa nota clínica estruturada."
+ },
+ "biblio": {
+  "grupos": [
+   {
+    "titulo": "Guidelines actuais por entidade",
+    "itens": [
+     {
+      "num": "01",
+      "autor": "Podda M, Di Saverio S, De Simone B, et al. (WSES)",
+      "titulo": "Diagnosis and Treatment of Acute Appendicitis: 2025 Edition of the WSES Jerusalem Guidelines",
+      "fonte": "JAMA Surgery, 2025",
+      "tipo": "Guideline 2025"
+     },
+     {
+      "num": "02",
+      "autor": "Tenner S, Vege SS, Sheth SG, et al. (ACG)",
+      "titulo": "ACG Clinical Guideline: Management of Acute Pancreatitis",
+      "fonte": "American Journal of Gastroenterology, 2024;119(3):419-437",
+      "tipo": "Guideline 2024"
+     },
+     {
+      "num": "03",
+      "autor": "Yokoe M, Hata J, Takada T, et al.",
+      "titulo": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis",
+      "fonte": "Journal of Hepato-Biliary-Pancreatic Sciences, 2018;25(1):41-54",
+      "tipo": "Guideline (TG18)"
+     },
+     {
+      "num": "04",
+      "autor": "Kiriyama S, Kozaka K, Takada T, et al.",
+      "titulo": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis",
+      "fonte": "Journal of Hepato-Biliary-Pancreatic Sciences, 2018;25(1):17-30",
+      "tipo": "Guideline (TG18)"
+     },
+     {
+      "num": "05",
+      "autor": "Sartelli M, Weber DG, Kluger Y, et al. (WSES)",
+      "titulo": "2020 update of the WSES guidelines for the management of acute colonic diverticulitis in the emergency setting",
+      "fonte": "World Journal of Emergency Surgery, 2020;15:32",
+      "tipo": "Guideline 2020"
+     },
+     {
+      "num": "06",
+      "autor": "Lacy BE, Pimentel M, Brenner DM, et al. (ACG)",
+      "titulo": "ACG Clinical Guideline: Management of Irritable Bowel Syndrome",
+      "fonte": "American Journal of Gastroenterology, 2021;116(1):17-44",
+      "tipo": "Guideline 2021"
+     },
+     {
+      "num": "07",
+      "autor": "Moayyedi P, Lacy BE, Andrews CN, et al. (ACG/CAG)",
+      "titulo": "ACG and CAG Clinical Guideline: Management of Dyspepsia",
+      "fonte": "American Journal of Gastroenterology, 2017;112(7):988-1013",
+      "tipo": "Guideline 2017"
+     },
+     {
+      "num": "08",
+      "autor": "Torres J, Bonovas S, Doherty G, et al. (ECCO)",
+      "titulo": "ECCO Guidelines on Therapeutics in Crohn Disease: Medical Treatment",
+      "fonte": "Journal of Crohn and Colitis, 2020;14(1):4-22",
+      "tipo": "Guideline (ECCO)"
+     },
+     {
+      "num": "09",
+      "autor": "European Association of Urology",
+      "titulo": "EAU Guidelines on Urolithiasis (edição em vigor)",
+      "fonte": "European Association of Urology, actualização anual",
+      "tipo": "Guideline (EAU)"
+     },
+     {
+      "num": "10",
+      "autor": "Bala M, Catena F, Kashuk J, et al. (WSES)",
+      "titulo": "Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery",
+      "fonte": "World Journal of Emergency Surgery, 2022;17:54",
+      "tipo": "Guideline 2022"
+     },
+     {
+      "num": "11",
+      "autor": "Tarasconi A, Coccolini F, Biffl WL, et al. (WSES)",
+      "titulo": "Perforated and bleeding peptic ulcer: WSES guidelines",
+      "fonte": "World Journal of Emergency Surgery, 2020;15:3",
+      "tipo": "Guideline 2020"
+     },
+     {
+      "num": "12",
+      "autor": "Ten Broek RPG, Krielen P, Di Saverio S, et al. (WSES)",
+      "titulo": "Bologna guidelines for diagnosis and management of adhesive small bowel obstruction (ASBO): 2017 update",
+      "fonte": "World Journal of Emergency Surgery, 2018;13:24",
+      "tipo": "Guideline 2018"
+     },
+     {
+      "num": "13",
+      "autor": "Wanhainen A, Van Herzeele I, Bastos Goncalves F, et al. (ESVS)",
+      "titulo": "European Society for Vascular Surgery (ESVS) Clinical Practice Guidelines on the Management of Abdominal Aorto-Iliac Artery Aneurysms",
+      "fonte": "European Journal of Vascular and Endovascular Surgery, 2024",
+      "tipo": "Guideline 2024"
+     }
+    ]
+   },
+   {
+    "titulo": "Documentos NICE e EASL",
+    "itens": [
+     {
+      "num": "14",
+      "autor": "NICE: National Institute for Health and Care Excellence",
+      "titulo": "Suspected cancer: recognition and referral: NG12",
+      "fonte": "NICE Guideline (actualizada periodicamente)",
+      "tipo": "Guideline"
+     },
+     {
+      "num": "15",
+      "autor": "NICE: National Institute for Health and Care Excellence",
+      "titulo": "Ectopic pregnancy and miscarriage: diagnosis and initial management: NG126",
+      "fonte": "NICE Guideline, 2019",
+      "tipo": "Guideline"
+     },
+     {
+      "num": "16",
+      "autor": "European Association for the Study of the Liver (EASL)",
+      "titulo": "EASL Clinical Practice Guidelines on the Prevention, Diagnosis and Treatment of Gallstones",
+      "fonte": "Journal of Hepatology, 2016;65(1):146-181",
+      "tipo": "Guideline (EASL)"
+     },
+     {
+      "num": "17",
+      "autor": "Centers for Disease Control and Prevention (CDC)",
+      "titulo": "Sexually Transmitted Infections Treatment Guidelines: Pelvic Inflammatory Disease (PID)",
+      "fonte": "CDC, 2021",
+      "tipo": "Guideline"
+     }
+    ]
+   },
+   {
+    "titulo": "Escalas e critérios",
+    "itens": [
+     {
+      "num": "18",
+      "autor": "Alvarado A",
+      "titulo": "A practical score for the early diagnosis of acute appendicitis",
+      "fonte": "Annals of Emergency Medicine, 1986;15(5):557-564",
+      "tipo": "Escala"
+     },
+     {
+      "num": "19",
+      "autor": "Drossman DA, Hasler WL",
+      "titulo": "Rome IV: Functional GI Disorders: Disorders of Gut-Brain Interaction",
+      "fonte": "Gastroenterology, 2016;150(6):1257-1261",
+      "tipo": "Critérios"
+     },
+     {
+      "num": "20",
+      "autor": "Banks PA, Bollen TL, Dervenis C, et al.",
+      "titulo": "Classification of acute pancreatitis 2012: revision of the Atlanta classification",
+      "fonte": "Gut, 2013;62(1):102-111",
+      "tipo": "Critérios"
+     }
+    ]
+   },
+   {
+    "titulo": "Manuais e revisões",
+    "itens": [
+     {
+      "num": "21",
+      "autor": "Silen W (ed.)",
+      "titulo": "Cope Early Diagnosis of the Acute Abdomen",
+      "fonte": "Oxford University Press, 22.ª edição",
+      "tipo": "Manual de referência"
+     },
+     {
+      "num": "22",
+      "autor": "Cartwright SL, Knudson MP",
+      "titulo": "Evaluation of Acute Abdominal Pain in Adults",
+      "fonte": "American Family Physician, 2015;91(7):452-459",
+      "tipo": "Revisão"
+     }
+    ]
+   }
+  ],
+  "nota": "As guidelines do WSES (apendicite 2025, diverticulite 2020, isquemia mesentérica 2022, úlcera perfurada 2020, oclusão por aderências 2018) e do ACG (pancreatite 2024, SII 2021, dispepsia 2017) constituem o núcleo da evidência usada nesta ferramenta. Os Critérios de Tóquio (TG18) mantêm-se a referência para colecistite e colangite. As escalas (Alvarado, Roma IV, Atlanta) foram incluídas pelo papel didáctico na estruturação do raciocínio.",
+  "termos": "Esta ferramenta destina-se exclusivamente a treino de raciocínio clínico em contexto educativo. Não é dispositivo médico no âmbito do Regulamento (UE) 2017/745. Não emite diagnósticos, não recomenda tratamentos personalizados e não substitui avaliação clínica directa. O utilizador é responsável pela aplicação adequada do conhecimento em contexto profissional."
+ }
+}
