@@ -1,0 +1,851 @@
+{
+ "eyebrow": "Asma · Espaço de estudo",
+ "titulo": "Os meus cards",
+ "sub": "O teu espaço de estudo sobre asma. Toca duas vezes para virar. Edita, adiciona e organiza os teus cards.",
+ "sevLabels": {
+  "mild": "Crise ligeira / moderada",
+  "severe": "Crise grave",
+  "arrest": "Iminente paragem"
+ },
+ "decks": [
+  {
+   "id": "cronica",
+   "label": "Asma Crónica",
+   "cats": {
+    "controlo": {
+     "label": "Controlo",
+     "color": "#0891b2",
+     "badge": "tip"
+    },
+    "tratamento": {
+     "label": "Tratamento",
+     "color": "#059669",
+     "badge": "tip"
+    },
+    "degraus": {
+     "label": "Degraus & fármacos",
+     "color": "#7c3aed",
+     "badge": "tip"
+    },
+    "especiais": {
+     "label": "Situações esp.",
+     "color": "#d97706",
+     "badge": "tip"
+    },
+    "diagnostico": {
+     "label": "Diagnóstico",
+     "color": "#6366f1",
+     "badge": "tip"
+    }
+   },
+   "defaults": [
+    {
+     "cat": "controlo",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Asma bem controlada",
+     "sub": "0 das 4 perguntas é \"Sim\" nas últimas 4 semanas",
+     "sections": [
+      {
+       "key": "Critérios GINA",
+       "rows": [
+        "Sem sintomas diurnos >2×/semana",
+        "Sem despertares noturnos",
+        "Sem necessidade de reliever >2×/semana",
+        "Sem limitação de atividade"
+       ]
+      },
+      {
+       "key": "Conduta",
+       "rows": [
+        "Considerar <b>step-down</b> após 2–3 meses estáveis",
+        "Reduzir ICS 25–50% a cada 2–3 meses",
+        "Mínimo absoluto: ICS-formoterol em SOS (degrau 1, Track 1)"
+       ]
+      }
+     ],
+     "backTitle": "Nunca parar ICS",
+     "backHtml": "<p>A inflamação brônquica persiste mesmo na ausência total de sintomas. Nunca parar ICS completamente no adulto.</p><p><b>Mínimo:</b> degrau 1 Track 1 — ICS-formoterol em SOS. Garante que cada dose de reliever traz corticosteroide.</p>"
+    },
+    {
+     "cat": "controlo",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Parcialmente controlada",
+     "sub": "1–2 das 4 perguntas GINA é \"Sim\"",
+     "sections": [
+      {
+       "key": "Antes de subir degrau — verificar sempre",
+       "rows": [
+        "<b>Técnica inalatória</b> — pedir demonstração prática",
+        "<b>Adesão real</b> — verificar dispensas na farmácia",
+        "<b>Comorbilidades</b>: rinite alérgica, DRGE, SAOS",
+        "<b>Trigger</b> ambiental: tabaco, exposição ocupacional"
+       ]
+      }
+     ],
+     "backTitle": "Até 80% têm técnica incorreta",
+     "backHtml": "<p>Subir de degrau prematuramente expõe a efeitos adversos sem benefício. A literatura descreve que até 80% dos doentes têm técnica inalatória incorreta.</p><p><b>Regra:</b> só subir após otimizar técnica + adesão + comorbilidades.</p>"
+    },
+    {
+     "cat": "controlo",
+     "sev": "severe",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Não controlada",
+     "sub": "3–4 das 4 perguntas são \"Sim\" · step-up urgente",
+     "sections": [
+      {
+       "key": "Escada de step-up",
+       "rows": [
+        "D1–2 → D3: <b>MART dose baixa</b> (budesonida-formoterol)",
+        "D3 → D4: <b>MART dose média + LAMA</b> (tiotrópio)",
+        "D4 otimizado → D5: <b>referenciação</b> para biológicos"
+       ]
+      },
+      {
+       "key": "Verificar sempre antes de subir",
+       "rows": [
+        "Técnica + adesão + comorbilidades + diagnóstico correto"
+       ]
+      }
+     ],
+     "backTitle": "Pearl",
+     "backHtml": "<p>Subir degrau sem verificar os 4 pontos (técnica, adesão, comorbilidades, diagnóstico) é o erro mais frequente no manejo da asma crónica.</p><p>Um doente \"não controlado\" pode simplesmente ter técnica incorreta ou rinite não tratada.</p>"
+    },
+    {
+     "cat": "controlo",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Fatores de risco de exacerbação",
+     "sub": "Independente do nível de controlo sintomático",
+     "sections": [
+      {
+       "key": "Documentar no processo",
+       "rows": [
+        "<b>≥1 SABA/mês</b> (≥3 inaladores/ano = alarme)",
+        "UCI ou intubação prévia por asma",
+        "≥2 exacerbações graves no último ano",
+        "Sem ICS / má adesão / técnica incorreta",
+        "FeNO elevado em doente com ICS",
+        "Eosinófilos séricos elevados"
+       ]
+      }
+     ],
+     "backTitle": "GINA 2026 — duas dimensões",
+     "backHtml": "<p><b>Controlo ≠ ausência de risco.</b> GINA avalia duas dimensões separadamente: controlo sintomático e risco futuro.</p><p>Um doente pode estar <b>bem controlado</b> e ter <b>risco elevado</b> de exacerbação. Tratar as duas dimensões.</p>"
+    },
+    {
+     "cat": "diagnostico",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "4 perguntas GINA de controlo",
+     "sub": "Aplicar a cada consulta — últimas 4 semanas",
+     "sections": [
+      {
+       "key": "As 4 perguntas",
+       "rows": [
+        "Sintomas diurnos <b>>2×/semana</b>?",
+        "Algum <b>despertar noturno</b> por asma?",
+        "Necessidade de <b>reliever >2×/semana</b>?",
+        "Alguma <b>limitação de atividade</b> por asma?"
+       ]
+      },
+      {
+       "key": "Interpretação",
+       "rows": [
+        "<b>0 Sim</b> = bem controlada",
+        "<b>1–2 Sim</b> = parcialmente controlada",
+        "<b>3–4 Sim</b> = não controlada"
+       ]
+      }
+     ],
+     "backTitle": "Importância",
+     "backHtml": "<p>Estas 4 perguntas são a base da avaliação do controlo em cada consulta. São simples, rápidas e padronizadas pelo GINA.</p><p>Devem ser aplicadas <b>antes</b> de qualquer decisão de step-up ou step-down.</p>"
+    },
+    {
+     "cat": "diagnostico",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Espirometria · critérios diagnósticos",
+     "sub": "Obstrução variável documentada",
+     "sections": [
+      {
+       "key": "Critérios",
+       "rows": [
+        "<b>FEV₁/FVC</b> <0.75–0.80 (adulto)",
+        "<b>Broncodilatação positiva:</b> ↑FEV₁ ≥200 mL E ≥12%",
+        "<b>Variabilidade PEF</b> diário >10%",
+        "<b>Teste de provocação:</b> queda FEV₁ ≥20% (metacolina)"
+       ]
+      },
+      {
+       "key": "Atenção",
+       "rows": [
+        "Espirometria normal <b>não exclui</b> asma",
+        "Repetir se alta suspeita clínica"
+       ]
+      }
+     ],
+     "backTitle": "Diagnóstico",
+     "backHtml": "<p>É necessária pelo menos <b>uma</b> evidência de variabilidade/reversibilidade para confirmar o diagnóstico.</p><p>Quanto maior a variabilidade documentada, mais confiante o diagnóstico. Espirometria durante período sintomático aumenta a sensibilidade.</p>"
+    },
+    {
+     "cat": "tratamento",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Degrau 1–2 · ICS-formoterol SOS",
+     "sub": "Track 1 — mínimo terapêutico no adulto",
+     "sections": [
+      {
+       "key": "Fármaco",
+       "rows": [
+        "<b>Budesonida-formoterol 200/6 µg</b> · 1 inalação SOS",
+        "Máximo: 8 inalações/dia (72 µg formoterol)"
+       ]
+      },
+      {
+       "key": "Track 2 (alternativa)",
+       "rows": [
+        "D2: ICS baixo diário + SABA SOS",
+        "<b>SABA isolado: contraindicado</b> como monoterapia"
+       ]
+      }
+     ],
+     "backTitle": "Estudos SYGMA 1 & 2",
+     "backHtml": "<p>ICS-formoterol SOS reduz exacerbações vs SABA isolado, mesmo em doentes com sintomas raros.</p><p><b>Vantagem:</b> cada vez que o doente precisa de alívio, recebe automaticamente ICS — garante adesão mínima à anti-inflamatória.</p>"
+    },
+    {
+     "cat": "tratamento",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Degrau 3–4 · MART",
+     "sub": "Manutenção e alívio com o mesmo inalador",
+     "sections": [
+      {
+       "key": "Doses MART",
+       "rows": [
+        "D3: <b>budesonida-formoterol 200/6 µg</b> · 1 inalação 2×/dia + SOS",
+        "D4: <b>dose média</b> 2×/dia + SOS + <b>tiotrópio</b> add-on"
+       ]
+      },
+      {
+       "key": "Incompatíveis com MART",
+       "rows": [
+        "Salmeterol (Seretide®) — não é reliever",
+        "Vilanterol (Relvar®) — 1×/dia, início lento"
+       ]
+      }
+     ],
+     "backTitle": "Porquê MART",
+     "backHtml": "<p>MART (Maintenance And Reliever Therapy) usa o mesmo inalador ICS-formoterol para manutenção e alívio. Reduz exacerbações vs ICS-LABA fixo + SABA SOS.</p><p><b>Só funciona com formoterol</b> — início rápido permite uso como reliever.</p>"
+    },
+    {
+     "cat": "tratamento",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Degrau 5 · Biológicos",
+     "sub": "Após D4 otimizado sem controlo — fenotipagem obrigatória",
+     "sections": [
+      {
+       "key": "Biológicos disponíveis",
+       "rows": [
+        "<b>Anti-IgE:</b> omalizumab (asma alérgica, IgE elevada)",
+        "<b>Anti-IL-5:</b> mepolizumab, benralizumab (eosinofílica)",
+        "<b>Anti-IL-4/13:</b> dupilumab (T2, dermatite atópica)",
+        "<b>Anti-TSLP:</b> tezepelumab (qualquer fenótipo, incl. não-T2)"
+       ]
+      },
+      {
+       "key": "Perfil T2",
+       "rows": [
+        "Eosinófilos ≥150–300/µL e/ou FeNO ≥25 ppb"
+       ]
+      }
+     ],
+     "backTitle": "Tezepelumab",
+     "backHtml": "<p>Único biológico com eficácia demonstrada <b>independente do fenótipo</b> (T2 e não-T2). Atua a montante, bloqueando TSLP — uma citocina epitelial que inicia a cascata inflamatória.</p>"
+    },
+    {
+     "cat": "degraus",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Track 1 vs Track 2",
+     "sub": "Track 1 preferido em todos os degraus — GINA 2026",
+     "sections": [
+      {
+       "key": "Diferença fundamental",
+       "rows": [
+        "<b>Track 1:</b> ICS-formoterol como reliever (todos os degraus)",
+        "<b>Track 2:</b> ICS fixo diário + SABA como reliever"
+       ]
+      },
+      {
+       "key": "Porque Track 1 é preferido",
+       "rows": [
+        "Reduz exacerbações mesmo no degrau 1",
+        "Garante ICS em cada dose de alívio",
+        "Simplifica: um inalador para tudo (MART)"
+       ]
+      }
+     ],
+     "backTitle": "GINA 2026",
+     "backHtml": "<p>Track 1 é o padrão preferido para adolescentes e adultos. Track 2 mantém-se como alternativa quando ICS-formoterol não está disponível ou não é tolerado.</p>"
+    },
+    {
+     "cat": "especiais",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Grávida com asma",
+     "sub": "Nunca step-down · risco da asma >> risco do ICS",
+     "sections": [
+      {
+       "key": "2 regras absolutas",
+       "rows": [
+        "<b>Nunca step-down</b> durante a gravidez",
+        "<b>Budesonida</b> tem mais dados de segurança"
+       ]
+      },
+      {
+       "key": "Monitorização",
+       "rows": [
+        "Reavaliar a cada 4–6 semanas",
+        "Manter todo o esquema terapêutico prévio"
+       ]
+      }
+     ],
+     "backTitle": "Risco real",
+     "backHtml": "<p>Asma descontrolada na gravidez: <b>hipóxia fetal, pré-eclâmpsia, RCIU, parto pré-termo.</b></p><p>O risco do ICS inalado é mínimo comparado. A literatura descreve consistentemente que o risco de não tratar é muito superior ao risco da medicação.</p>"
+    },
+    {
+     "cat": "especiais",
+     "sev": "arrest",
+     "sevBadge": "",
+     "fav": false,
+     "title": "β-bloqueantes na asma",
+     "sub": "Contraindicados — mesmo os cardiosseletivos",
+     "sections": [
+      {
+       "key": "Todos contraindicados",
+       "rows": [
+        "Propranolol, bisoprolol, atenolol, metoprolol",
+        "Seletividade <b>perde-se com a dose</b>"
+       ]
+      },
+      {
+       "key": "Alternativas para HTA",
+       "rows": [
+        "<b>IECA</b> (ramipril)",
+        "<b>ARA-II</b> (losartan)",
+        "<b>Antagonistas do cálcio</b> (amlodipina)",
+        "<b>Diuréticos tiazídicos</b>"
+       ]
+      }
+     ],
+     "backTitle": "Porquê",
+     "backHtml": "<p>Bloqueio dos recetores β₂ no músculo liso brônquico → perda do tónus broncodilatador basal → broncospasmo.</p><p><b>Casos fatais documentados</b> em doentes asmáticos previamente bem controlados, mesmo com β-bloqueantes \"cardiosseletivos\".</p>"
+    }
+   ]
+  },
+  {
+   "id": "crise",
+   "label": "Crise Asmática",
+   "cats": {
+    "identificar": {
+     "label": "Identificação",
+     "color": "#0891b2",
+     "badge": "tip"
+    },
+    "tratamento": {
+     "label": "Tratamento",
+     "color": "#059669",
+     "badge": "tip"
+    },
+    "erros": {
+     "label": "Erros a evitar",
+     "color": "#dc2626",
+     "badge": "tip"
+    }
+   },
+   "defaults": [
+    {
+     "cat": "identificar",
+     "sev": "mild",
+     "sevBadge": "mild",
+     "fav": false,
+     "title": "Doente que ainda fala em frases",
+     "sub": "Crise ligeira / moderada — resposta inicial habitual",
+     "sections": [
+      {
+       "key": "Sinais clínicos",
+       "rows": [
+        "<b>Fala:</b> em frases completas",
+        "<b>FR:</b> aumentada, até ~30/min",
+        "<b>FC:</b> 100–120/min",
+        "<b>SpO₂:</b> 90–95% em ar ambiente",
+        "<b>PEF:</b> >50% do previsto/melhor",
+        "<b>Postura:</b> consegue manter-se sentado"
+       ]
+      }
+     ],
+     "backTitle": "O que está por trás",
+     "backHtml": "<p><b>Broncoconstrição parcial</b> — via aérea ainda funcional. A taquipneia e taquicardia refletem a resposta simpática à hipoxemia ligeira.</p><p><b>Sinal favorável:</b> capacidade de manter conversação indica reserva ventilatória preservada.</p><p><b>Atenção:</b> pode evoluir rapidamente — reavaliação seriada é essencial.</p>"
+    },
+    {
+     "cat": "identificar",
+     "sev": "severe",
+     "sevBadge": "severe",
+     "fav": false,
+     "title": "Doente que fala em palavras soltas",
+     "sub": "Crise grave — requer abordagem hospitalar urgente",
+     "sections": [
+      {
+       "key": "Sinais clínicos",
+       "rows": [
+        "<b>Fala:</b> só palavras isoladas",
+        "<b>FR:</b> >30/min",
+        "<b>FC:</b> >120/min",
+        "<b>SpO₂:</b> <90% em ar ambiente",
+        "<b>PEF:</b> ≤50% do previsto/melhor",
+        "<b>Postura:</b> inclinado para a frente, agitado",
+        "<b>Musculatura acessória:</b> uso evidente"
+       ]
+      }
+     ],
+     "backTitle": "Obstrução grave com fadiga muscular",
+     "backHtml": "<p>Obstrução tão marcada que recruta musculatura acessória (escalenos, ECM). A incapacidade de falar reflete o tempo expiratório prolongado.</p><p><b>Agitação</b> pode preceder alteração da consciência. Postura em tripé maximiza recrutamento muscular.</p><p>Sem resposta em 1–2h → internamento e escalada terapêutica.</p>"
+    },
+    {
+     "cat": "identificar",
+     "sev": "arrest",
+     "sevBadge": "arrest",
+     "fav": false,
+     "title": "Tórax silencioso · bradicardia · sonolência",
+     "sub": "Iminente paragem — emergência absoluta — UCI / via aérea",
+     "sections": [
+      {
+       "key": "Sinais clínicos",
+       "rows": [
+        "<b>Fala:</b> não fala, sonolento ou confuso",
+        "<b>Auscultação:</b> tórax silencioso (sem sibilos!)",
+        "<b>FC:</b> bradicardia (após período de taquicardia)",
+        "<b>SpO₂:</b> <90% mesmo com O₂ suplementar",
+        "<b>Pele:</b> cianose, sudorese profusa",
+        "<b>Respiração:</b> paradoxal toraco-abdominal",
+        "<b>Consciência:</b> alteração — exaustão"
+       ]
+      }
+     ],
+     "backTitle": "Porque é tão grave",
+     "backHtml": "<p><b>Tórax silencioso ≠ melhoria.</b> O fluxo aéreo é tão reduzido que já não há ar suficiente para gerar sibilos. Sinal de obstrução máxima.</p><p><b>Bradicardia após taquicardia:</b> descompensação cardiovascular — hipoxemia profunda + acidose.</p><p><b>Conduta:</b> ativação imediata de equipa de via aérea avançada / UCI.</p>"
+    },
+    {
+     "cat": "identificar",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Fatores que aumentam risco de morte",
+     "sub": "Doente \"habitualmente ligeiro\" pode ter crise fatal",
+     "sections": [
+      {
+       "key": "Red flags",
+       "rows": [
+        "Crise <b>quase-fatal</b> prévia (intubação, UCI)",
+        "Hospitalização ou SU por asma <b>no último ano</b>",
+        "Uso atual ou recente de <b>corticosteroide oral</b>",
+        "<b>Sem ICS</b> de fundo",
+        "Uso excessivo de SABA (<b>≥3 inaladores/ano</b>)",
+        "Má adesão / falta de plano de ação escrito",
+        "Comorbilidades: alergia alimentar grave, doença psiquiátrica"
+       ]
+      }
+     ],
+     "backTitle": "Risco ≠ gravidade habitual",
+     "backHtml": "<p>Doentes com asma \"ligeira\" representam uma proporção significativa das mortes. A gravidade <b>habitual</b> não prediz a gravidade da próxima crise.</p><p>Identificar estes fatores é parte da avaliação inicial em qualquer crise.</p>"
+    },
+    {
+     "cat": "tratamento",
+     "sev": "mild",
+     "sevBadge": "mild",
+     "fav": false,
+     "title": "Broncodilatador + corticoide oral",
+     "sub": "Crise ligeira/moderada — reavaliar aos 60 minutos",
+     "sections": [
+      {
+       "key": "SABA · alta dose repetida",
+       "rows": [
+        "<b>Salbutamol</b> pMDI + câmara: <b>4–10 puffs</b>, repetir cada 20 min × 1ª hora",
+        "Alternativa: nebulização 2,5–5 mg em 3 mL SF"
+       ]
+      },
+      {
+       "key": "Corticosteroide oral · precoce",
+       "rows": [
+        "<b>Prednisolona 40–50 mg/dia</b> · 5–7 dias (adulto)",
+        "Criança: 1–2 mg/kg/dia (máx 40 mg) · 3–5 dias"
+       ]
+      },
+      {
+       "key": "Oxigénio",
+       "rows": [
+        "Se SpO₂ <93% — titular para 93–95%"
+       ]
+      }
+     ],
+     "backTitle": "Pontos-chave",
+     "backHtml": "<ul><li><b>pMDI + câmara</b> equivale à nebulização nesta gravidade — preferir por menor risco infeccioso.</li><li><b>Ipratrópio não por rotina</b> — reservar para crise grave.</li><li>Corticoide oral <b>5–7 dias sem desmame</b>.</li><li>Reavaliação ao final da 1ª hora: PEF, sintomas, SpO₂.</li></ul>"
+    },
+    {
+     "cat": "tratamento",
+     "sev": "severe",
+     "sevBadge": "severe",
+     "fav": false,
+     "title": "SABA + ipratrópio + corticoide IV",
+     "sub": "Crise grave — + MgSO₄ IV se sem resposta a 1h",
+     "sections": [
+      {
+       "key": "Broncodilatadores combinados",
+       "rows": [
+        "<b>Salbutamol 2,5–5 mg</b> + <b>ipratrópio 0,5 mg</b> nebulização, cada 20 min × 1ª hora"
+       ]
+      },
+      {
+       "key": "Corticosteroide sistémico",
+       "rows": [
+        "<b>Prednisolona oral 40–50 mg</b> ou hidrocortisona/metilprednisolona IV"
+       ]
+      },
+      {
+       "key": "Oxigénio",
+       "rows": [
+        "Titular para SpO₂ 93–95% (adulto), 94–98% (criança)"
+       ]
+      },
+      {
+       "key": "Sulfato de magnésio",
+       "rows": [
+        "<b>MgSO₄ 2 g IV em 20 min</b> · se sem resposta à 1ª hora"
+       ]
+      }
+     ],
+     "backTitle": "Pontos-chave",
+     "backHtml": "<ul><li><b>Ipratrópio adiciona benefício</b> nesta gravidade (sinérgico com SABA).</li><li>Corticoide IV e oral são <b>equivalentes</b> — IV só se intolerância oral.</li><li><b>Aminofilina IV não por rotina</b> — pouco benefício, mais efeitos adversos.</li><li>Internamento se PEF <60% ou sinais persistentes após 1–2h.</li></ul>"
+    },
+    {
+     "cat": "tratamento",
+     "sev": "arrest",
+     "sevBadge": "arrest",
+     "fav": false,
+     "title": "Anestesia / UCI · via aérea avançada",
+     "sub": "Iminente paragem — tudo simultâneo · transferir",
+     "sections": [
+      {
+       "key": "Equipa",
+       "rows": [
+        "<b>Contactar anestesia/medicina intensiva imediatamente</b>"
+       ]
+      },
+      {
+       "key": "Suporte ventilatório",
+       "rows": [
+        "O₂ alto débito (máscara reservatório) — SpO₂ ≥93%",
+        "Preparar via aérea avançada (intubação)"
+       ]
+      },
+      {
+       "key": "Farmacoterapia",
+       "rows": [
+        "<b>SABA + ipratrópio</b> nebulização <b>contínua</b>",
+        "<b>Corticosteroide IV</b>",
+        "<b>MgSO₄ 2 g IV</b> em 20 min"
+       ]
+      },
+      {
+       "key": "Destino",
+       "rows": [
+        "Transferir para <b>UCI</b>"
+       ]
+      }
+     ],
+     "backTitle": "Pontos-chave",
+     "backHtml": "<ul><li>Tudo simultâneo, sem esperar resposta a uma medida.</li><li>Nebulização <b>contínua</b> (não intermitente).</li><li>Adrenalina IM <b>não indicada na crise asmática</b> (sim na anafilaxia).</li><li>Intubação na asma é tecnicamente difícil — hipotensão pós-intubação frequente.</li></ul>"
+    },
+    {
+     "cat": "erros",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "O que não fazer na crise",
+     "sub": "Intervenções sem benefício ou prejudiciais",
+     "sections": [
+      {
+       "key": "Contraindicado / sem benefício",
+       "rows": [
+        "<b>Antibióticos por rotina</b> — só se infeção bacteriana documentada",
+        "<b>Sedativos / ansiolíticos</b> — agravam depressão respiratória",
+        "<b>Mucolíticos</b> — agravam tosse no agudo",
+        "<b>Fisioterapia respiratória</b> no agudo",
+        "<b>Hidratação IV agressiva</b> — risco de edema pulmonar",
+        "<b>β-bloqueantes</b> (mesmo cardiosseletivos)",
+        "<b>Adrenalina IM</b> (sim na anafilaxia, não na crise isolada)",
+        "<b>Aminofilina IV</b> por rotina"
+       ]
+      }
+     ],
+     "backTitle": "Erros frequentes em exame",
+     "backHtml": "<p>Distractores clássicos: ATB porque \"há expetoração\", ansiolítico porque \"está agitado\", fisioterapia porque \"ajuda a expelir secreções\".</p><p>A agitação é <b>sinal de hipoxemia</b>, não de ansiedade primária — sedar é prejudicial.</p>"
+    }
+   ]
+  },
+  {
+   "id": "pearls",
+   "label": "Pearls",
+   "cats": {
+    "pearl": {
+     "label": "Pearl",
+     "color": "#b45309",
+     "badge": "pearl"
+    },
+    "farmaco": {
+     "label": "Farmacologia",
+     "color": "#7c3aed",
+     "badge": "tip"
+    },
+    "exame": {
+     "label": "Exame",
+     "color": "#0891b2",
+     "badge": "tip"
+    }
+   },
+   "defaults": [
+    {
+     "cat": "pearl",
+     "sev": "arrest",
+     "sevBadge": "arrest",
+     "fav": false,
+     "title": "Tórax silencioso = obstrução máxima",
+     "sub": "Pergunta clássica de exame",
+     "sections": [
+      {
+       "key": "Conceito",
+       "rows": [
+        "Ausência de sibilos numa crise <b>não é melhoria</b>",
+        "Significa fluxo aéreo insuficiente para gerar som",
+        "Sinal de <b>iminente paragem respiratória</b>",
+        "Conduta: anestesia/UCI <b>imediatamente</b>"
+       ]
+      }
+     ],
+     "backTitle": "Como aparece em exame",
+     "backHtml": "<p>Caso de crise grave que \"agora já não tem sibilos audíveis\".</p><p><b>Distractor errado:</b> \"crise resolvida — broncospasmo cedeu\".</p><p><b>Resposta certa:</b> obstrução máxima com fluxo aéreo crítico — emergência.</p>"
+    },
+    {
+     "cat": "pearl",
+     "sev": "arrest",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Bradicardia após taquicardia",
+     "sub": "Sinal de descompensação iminente",
+     "sections": [
+      {
+       "key": "Sequência",
+       "rows": [
+        "FC inicialmente sobe com a crise (resposta simpática)",
+        "Quando começa a <b>baixar</b> = sinal de <b>exaustão</b>",
+        "Acompanha tórax silencioso + alteração da consciência"
+       ]
+      }
+     ],
+     "backTitle": "Fisiopatologia",
+     "backHtml": "<p>A bradicardia neste contexto significa:</p><ul><li>Falência do sistema simpático</li><li>Hipoxemia profunda com efeito vagal</li><li>Acidose metabólica grave</li></ul><p>Sinal de pré-paragem cardíaca, normalmente com hipotensão.</p>"
+    },
+    {
+     "cat": "pearl",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "SABA ≥3 inaladores/ano = alarme",
+     "sub": "≥1/mês → referenciar urgente",
+     "sections": [
+      {
+       "key": "Perguntar sempre",
+       "rows": [
+        "Quantos inaladores azuis usou este ano?",
+        "Verificar dispensas na farmácia",
+        "Não confiar só no autorrelato do doente"
+       ]
+      },
+      {
+       "key": "Significado",
+       "rows": [
+        "Fator de risco <b>independente</b> de exacerbação grave e morte",
+        "SABA isolado já não é tratamento da asma — GINA 2026"
+       ]
+      }
+     ],
+     "backTitle": "GINA 2026",
+     "backHtml": "<p>O uso excessivo de SABA é o <b>marcador mais forte</b> de risco de exacerbação grave. Está associado a maior mortalidade, independentemente do nível de controlo sintomático.</p>"
+    },
+    {
+     "cat": "pearl",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Controlo ≠ ausência de risco",
+     "sub": "GINA avalia 2 dimensões separadas",
+     "sections": [
+      {
+       "key": "Exemplos",
+       "rows": [
+        "Doente sem sintomas mas <b>sem ICS</b>",
+        "Eosinófilos altos <b>sem biológico</b>",
+        "Bem controlado + <b>>3 SABA/ano</b>"
+       ]
+      }
+     ],
+     "backTitle": "Pearl de exame",
+     "backHtml": "<p>Um doente pode estar <b>bem controlado sintomaticamente</b> e ter <b>risco elevado</b> de exacerbação futura.</p><p>GINA obriga a avaliar as duas dimensões separadamente a cada consulta. Tratar ambas.</p>"
+    },
+    {
+     "cat": "farmaco",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "AERD · tríade de Samter",
+     "sub": "Asma + polipose nasal + reação a AINEs",
+     "sections": [
+      {
+       "key": "Tríade",
+       "rows": [
+        "<b>Asma</b> (frequentemente grave)",
+        "<b>Polipose nasal</b>",
+        "<b>Reação respiratória a AINEs</b> (incluindo aspirina)"
+       ]
+      },
+      {
+       "key": "Tratamento",
+       "rows": [
+        "<b>Paracetamol ≤1g</b> habitualmente tolerado",
+        "Antileucotrienos (montelucaste) têm benefício particular"
+       ]
+      }
+     ],
+     "backTitle": "Fisiopatologia",
+     "backHtml": "<p><b>Não é alergia IgE-mediada.</b> Inibição da COX-1 desvia o metabolismo do ácido araquidónico para a via dos leucotrienos → broncoconstrição + inflamação nasal.</p><p><b>Em exame:</b> asma grave + polipose + crise após ibuprofeno → AERD.</p>"
+    },
+    {
+     "cat": "farmaco",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "β-bloqueantes na asma",
+     "sub": "Mesmo cardiosseletivos — contraindicado",
+     "sections": [
+      {
+       "key": "Todos",
+       "rows": [
+        "Propranolol, bisoprolol, atenolol, metoprolol — <b>todos</b>"
+       ]
+      },
+      {
+       "key": "Alternativas HTA",
+       "rows": [
+        "IECA, ARA-II, antagonistas do cálcio, diuréticos"
+       ]
+      },
+      {
+       "key": "Exceção",
+       "rows": [
+        "IC grave / pós-EAM: avaliar caso a caso, só em cardiologia"
+       ]
+      }
+     ],
+     "backTitle": "Mecanismo",
+     "backHtml": "<p>Bloqueio β₂ brônquico → perda do tónus broncodilatador basal → broncospasmo. A seletividade β₁ perde-se em doses mais elevadas.</p><p>Casos fatais documentados em doentes previamente bem controlados.</p>"
+    },
+    {
+     "cat": "exame",
+     "sev": "mild",
+     "sevBadge": "",
+     "fav": false,
+     "title": "pMDI + câmara vs nebulização",
+     "sub": "Equivalentes em crise ligeira/moderada",
+     "sections": [
+      {
+       "key": "Comparação",
+       "rows": [
+        "<b>Eficácia equivalente</b> em crise ligeira/moderada",
+        "pMDI + câmara: <b>menor risco infeccioso</b>, mais rápido",
+        "Nebulização: <b>crise grave</b>, doente exausto, pré-hospitalar",
+        "Dose pMDI: 4–10 puffs com pausa entre cada"
+       ]
+      }
+     ],
+     "backTitle": "Pergunta clássica",
+     "backHtml": "<p>Em crise ligeira a moderada, a resposta certa pode ser pMDI + câmara — <b>não é obrigatoriamente nebulização.</b></p><p>Nebulização tem maior risco de aerossolização infecciosa (relevante pós-COVID).</p>"
+    },
+    {
+     "cat": "exame",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Antes da alta · checklist",
+     "sub": "A alta começa antes da alta",
+     "sections": [
+      {
+       "key": "Critérios",
+       "rows": [
+        "<b>PEF/FEV₁ ≥60–80%</b> do previsto/melhor",
+        "<b>SpO₂ ≥94%</b> em ar ambiente",
+        "Sem dispneia em repouso"
+       ]
+      },
+      {
+       "key": "Ações obrigatórias",
+       "rows": [
+        "Iniciar ou rever <b>ICS de fundo</b>",
+        "Manter <b>corticoide oral 5–7 dias</b>",
+        "Fornecer <b>plano de ação escrito</b>",
+        "Verificar <b>técnica inalatória</b>",
+        "Reavaliação <b>em 2–7 dias</b>"
+       ]
+      }
+     ],
+     "backTitle": "Janela pós-crise",
+     "backHtml": "<p>Risco de recaída elevado nas primeiras <b>2–4 semanas</b> após crise. A otimização do tratamento de fundo nesta janela é descrita como prioritária.</p><p><b>Em exame:</b> \"Qual o passo seguinte na alta?\" → ICS + plano de ação + reavaliação curta.</p>"
+    },
+    {
+     "cat": "exame",
+     "sev": "neutral",
+     "sevBadge": "",
+     "fav": false,
+     "title": "Grávida com asma em exame",
+     "sub": "Distractor típico: \"suspender ICS na gravidez\"",
+     "sections": [
+      {
+       "key": "Factos",
+       "rows": [
+        "Asma descontrolada → <b>pré-eclâmpsia, RCIU, prematuridade</b>",
+        "Risco do ICS << risco da asma descontrolada",
+        "<b>Nunca step-down</b> na gravidez",
+        "Budesonida com mais dados de segurança"
+       ]
+      }
+     ],
+     "backTitle": "Resposta certa",
+     "backHtml": "<p>Manter o esquema atual. O risco de <b>hipoxia fetal</b> por crise descontrolada é muito superior ao risco descrito do corticosteroide inalado.</p><p><b>Distractor errado:</b> \"suspender ICS durante a gravidez e usar apenas SABA SOS\".</p>"
+    }
+   ]
+  }
+ ]
+}

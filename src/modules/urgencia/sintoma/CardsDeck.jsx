@@ -80,7 +80,7 @@ function FormNovoCard({ cats, onGuardar, onFechar }) {
   );
 }
 
-function CardRapido({ card, cor, catLabel, edicao, onIniciarEdicao, onFav, onApagar, sortMode, dragProps, onMover }) {
+function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, onFav, onApagar, sortMode, dragProps, onMover }) {
   const [viradoLocal, setVirado] = useState(false);
   const emEdicao = !!edicao;
   const virado = emEdicao ? edicao.verso : viradoLocal;
@@ -106,6 +106,7 @@ function CardRapido({ card, cor, catLabel, edicao, onIniciarEdicao, onFav, onApa
       )}
       <div className="ob-drug-inner">
         <div className="ob-drug-front" style={{ borderTopColor: cor }}>
+          {sevLabel && <span className={"ca-card-sev sev-" + card.sevBadge}>{sevLabel}</span>}
           <span className="ca-card-cat" style={{ color: cor, background: `color-mix(in srgb, ${cor} 12%, transparent)` }}>{catLabel}</span>
           {emEdicao && !edicao.verso ? (
             <div className="ca-edit" onDoubleClick={(e) => e.stopPropagation()}>
@@ -162,7 +163,8 @@ function CardRapido({ card, cor, catLabel, edicao, onIniciarEdicao, onFav, onApa
 
 // Biblioteca de cards do guia — partilhada pelos módulos de sintomas.
 // Lixo 30 dias, edição inline com repor, pesquisa, ordenação, tipos próprios.
-export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, prefixo }) {
+// sevLabels (opcional): {sevBadge: rótulo} — badge de severidade no card (cards de crise da Asma).
+export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, prefixo, sevLabels }) {
   const [filtro, setFiltro] = useState("todas");
   const [deck, setDeck] = useEstadoLocal(prefixo + ":deck", deckInicial(defaults));
   const [lixo, setLixo] = useEstadoLocal(prefixo + ":lixo", []);
@@ -372,6 +374,7 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
           <div className="ob-drug-grid">
             {visiveis.map(({ c, i }) => (
               <CardRapido key={i + ":" + c.title} card={c} cor={cats[c.cat]?.color || "var(--acento)"} catLabel={cats[c.cat]?.label || c.cat}
+                sevLabel={(sevLabels && c.sevBadge && sevLabels[c.sevBadge]) || null}
                 edicao={edicaoDe(i)} onIniciarEdicao={() => iniciarEdicao(i)}
                 onFav={() => toggleFav(i)} onApagar={() => apagarCard(i)}
                 sortMode={sortMode} dragProps={dragProps(i)}

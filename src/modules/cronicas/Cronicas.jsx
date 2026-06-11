@@ -5,11 +5,13 @@ import { filtrarAgrupar, pesquisar } from "./logica";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import DeficeFerro from "./defice-ferro/DeficeFerro.jsx";
+import Asma from "./asma/Asma.jsx";
 import "./estilo.css";
 
 // Mapa de componentes por doença (chave = id da doença em doencas.json).
 const COMPONENTES = {
   "defice-ferro": DeficeFerro,
+  asma: Asma,
 };
 
 export default function Cronicas({ accent = "#0b6e7f", gradiente, onVoltar }) {

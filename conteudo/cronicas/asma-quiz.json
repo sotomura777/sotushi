@@ -1,0 +1,894 @@
+{
+ "titulo": "Asma — treina os teus conhecimentos",
+ "sub": "Casos clínicos fictícios para treinares. A ordem adapta-se ao histórico: vês primeiro os que não fizeste, depois os que erraste.",
+ "dicas": {
+  "Diagnóstico": [
+   "BD positiva: FEV₁ ≥12% E ≥200 mL",
+   "Espirometria normal não exclui asma",
+   "FeNO >25 ppb sugere T2",
+   "Broncoprovocação: queda FEV₁ ≥20% metacolina"
+  ],
+  "Tratamento": [
+   "SABA isolado já não é tratamento",
+   "Antes de step-up: técnica · adesão · comorbilidades",
+   "Step-down após 2–3 meses. Mínimo: ICS-formoterol SOS",
+   "MART só com formoterol",
+   "LABA isolado sem ICS contraindicado"
+  ],
+  "Crise": [
+   "Ipratrópio apenas na crise GRAVE",
+   "MgSO₄ IV se sem resposta a SABA+ipratrópio+OCS",
+   "Tórax silencioso ≠ melhoria",
+   "Bradicardia em crise = pré-paragem",
+   "Aminofilina IV: não usar"
+  ],
+  "Especiais": [
+   "Grávida: nunca step-down",
+   "β-bloqueantes contraindicados",
+   "AERD: asma+pólipos+AINEs. Paracetamol ≤1g",
+   "ACO: manter sempre ICS",
+   "Asma ocupacional: melhora nas férias?"
+  ],
+  "Pearls": [
+   "≥3 SABA/ano = risco de morte",
+   "ICS criança: ~0,5 cm 1º ano, NÃO cumulativo",
+   "Controlo ≠ ausência de risco",
+   "<6 anos: diagnóstico clínico",
+   "25–35% rotulados não confirmáveis"
+  ]
+ },
+ "dicasEditaveis": true,
+ "dicasHint": "Carrega Enter no fim de uma dica para adicionar nova. Clica no texto para editar.",
+ "casos": [
+  {
+   "id": "c1",
+   "vignette": "Homem de 28 anos, não fumador, recorre à consulta de Medicina Geral e Familiar por tosse seca e sibilância intermitentes há 6 meses, que agravam com exercício e exposição a pó. Tem antecedentes de rinite alérgica desde a infância. Ao exame objetivo: auscultação pulmonar com sibilos expiratórios bilaterais dispersos. Realizou espirometria que revelou FEV₁ 78% do previsto, FEV₁/FVC 0,68. Após broncodilatação com salbutamol, FEV₁ subiu para 91% do previsto (aumento de 16% e 320 mL).",
+   "stem": "Qual dos seguintes é o passo mais adequado na abordagem deste doente?",
+   "options": [
+    {
+     "text": "Prescrever salbutamol em SOS e reavaliar em 3 meses",
+     "why": "SABA isolado já não é considerado tratamento de asma na GINA 2026 — aumenta risco de exacerbação e mortalidade. Todo doente deve ter terapêutica contendo ICS, mesmo com sintomas raros.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar ICS-formoterol em SOS (Track 1, degrau 1–2)",
+     "why": "Diagnóstico confirmado: sintomas variáveis + prova de broncodilatação positiva (≥12% e ≥200 mL). Sintomas intermitentes com rinite alérgica enquadram-se no degrau 1–2 do Track 1.",
+     "correct": true
+    },
+    {
+     "text": "Pedir TC torácica para excluir bronquiectasias",
+     "why": "Não há indicação para TC torácica com clínica típica e espirometria compatível com asma. Sem sinais de alarme (expetoração purulenta crónica, infeções recorrentes) não se justifica.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar montelucaste 10 mg/dia como primeira linha",
+     "why": "Montelucaste é 2ª linha, não primeira. ICS (isolado ou em combinação ICS-formoterol) é sempre a base do tratamento.",
+     "correct": false
+    },
+    {
+     "text": "Pedir broncoprovocação com metacolina para confirmar diagnóstico",
+     "why": "Não é necessária — o diagnóstico já está confirmado pela espirometria com BD positiva. A broncoprovocação reserva-se para casos com clínica forte mas BD negativa.",
+     "correct": false
+    }
+   ],
+   "quickTip": "BD positiva + sintomas variáveis = diagnóstico feito. Iniciar sempre ICS, nunca SABA sozinho.",
+   "keyConcept": "SABA isolado já não é tratamento de asma na GINA 2026. Todo doente deve ter terapêutica contendo ICS, mesmo com sintomas raros."
+  },
+  {
+   "id": "c2",
+   "vignette": "Mulher de 45 anos, asmática conhecida desde os 20 anos, em tratamento com budesonida-formoterol 200/6 µg 1 inalação 2x/dia + 1 em SOS (regime MART). Vem à consulta de reavaliação e refere sintomas diurnos na maioria dos dias, despertar noturno 2–3 vezes por semana e limitação para subir escadas. Usou o inalador em SOS mais de 10 vezes na última semana. Espirometria: FEV₁ 65% do previsto.",
+   "stem": "Antes de subir de degrau, qual é a primeira atitude a tomar?",
+   "options": [
+    {
+     "text": "Duplicar a dose de manutenção para 2 inalações 2x/dia (MART dose média)",
+     "why": "Seria o passo seguinte se todos os outros pontos estivessem otimizados — mas subir prematuramente expõe a efeitos adversos sem benefício se a causa for técnica ou adesão.",
+     "correct": false
+    },
+    {
+     "text": "Adicionar tiotrópio (Spiriva Respimat) ao regime atual",
+     "why": "Add-on LAMA pode considerar-se em degrau 4, mas não antes de verificar técnica, adesão e comorbilidades.",
+     "correct": false
+    },
+    {
+     "text": "Verificar técnica inalatória, adesão real e comorbilidades não tratadas",
+     "why": "A GINA 2026 exige sempre, antes de step-up: (1) verificar técnica — pedir demonstração; (2) adesão real — verificar dispensas na farmácia; (3) comorbilidades — rinite, DRGE, obesidade; (4) exposição a desencadeantes; (5) diagnóstico correto. Até 80% dos doentes têm técnica incorreta.",
+     "correct": true
+    },
+    {
+     "text": "Referenciar a pneumologia para biológico",
+     "why": "Prematuro — degrau 5 só após falência confirmada do degrau 4 otimizado, com fenotipagem.",
+     "correct": false
+    },
+    {
+     "text": "Substituir budesonida-formoterol por fluticasona furoato-vilanterol (Relvar)",
+     "why": "Relvar não pode ser MART — vilanterol tem início lento, não serve como reliever.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Antes de subir degrau: técnica correta? Toma mesmo? Rinite ou DRGE por tratar?",
+   "keyConcept": "Até 80% dos doentes têm técnica inalatória incorreta. Subir prematuramente expõe a efeitos adversos sem benefício. Corrigir primeiro."
+  },
+  {
+   "id": "c3",
+   "vignette": "Rapaz de 8 anos trazido à urgência pela mãe por agravamento progressivo de dispneia e sibilância nas últimas 6 horas, após infeção respiratória alta. Antecedentes de asma diagnosticada aos 5 anos, medicado com budesonida 200 µg/dia. Ao exame: consciente, ansioso, fala em frases curtas, FR 32/min, FC 128/min, SpO₂ 89% em ar ambiente, sibilos expiratórios bilaterais marcados, tiragem subcostal.",
+   "stem": "Qual é o tratamento mais adequado na primeira hora?",
+   "options": [
+    {
+     "text": "Salbutamol 2 puffs pMDI + câmara a cada 20 min e observar",
+     "why": "Dose insuficiente para crise grave. Sem OCS nem ipratrópio, não cobre os critérios de gravidade desta criança.",
+     "correct": false
+    },
+    {
+     "text": "Salbutamol nebulização 2,5 mg q20min × 3 + ipratrópio 0,25 mg q20min × 3 + prednisolona oral 1–2 mg/kg",
+     "why": "Critérios de crise grave: fala em frases curtas, FR >30, FC >120, SpO₂ <90%, tiragem. Protocolo descrito: SABA intensivo + ipratrópio (reduz hospitalizações em crise grave) + corticosteroide sistémico precoce (início de ação 4–6h).",
+     "correct": true
+    },
+    {
+     "text": "Salbutamol nebulização 2,5 mg dose única + paracetamol 15 mg/kg",
+     "why": "Paracetamol não faz parte do protocolo da crise. Dose única de SABA é insuficiente para crise grave.",
+     "correct": false
+    },
+    {
+     "text": "Sulfato de magnésio IV 50 mg/kg como primeira linha",
+     "why": "MgSO₄ é reservado para crise refratária ao tratamento inicial (SABA + ipratrópio + OCS), não primeira linha.",
+     "correct": false
+    },
+    {
+     "text": "Aminofilina IV em perfusão contínua",
+     "why": "Aminofilina já não é descrita como rotina no protocolo de crise — pouca eficácia adicional e muitos efeitos adversos.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Ipratrópio só entra na crise grave. Na ligeira, SABA + OCS precoce chega.",
+   "keyConcept": "Ipratrópio só se adiciona em crise grave — em crises ligeiras não tem benefício adicional. Prednisolona deve ser iniciada o mais precocemente possível. Alvo SpO₂ na criança: 94–98%."
+  },
+  {
+   "id": "c4",
+   "vignette": "Mulher de 34 anos, grávida de 24 semanas, com asma desde os 15 anos. Estava controlada com fluticasona propionato 250 µg 2x/dia + salbutamol em SOS. Na última consulta de obstetrícia, a obstetra sugeriu reduzir a medicação \"por causa do bebé\". A doente deixou de tomar o ICS há 3 semanas e teve 2 episódios de dispneia noturna e passou a usar salbutamol diariamente.",
+   "stem": "Qual é a atitude mais adequada?",
+   "options": [
+    {
+     "text": "Concordar com a redução e manter apenas salbutamol em SOS",
+     "why": "Perigoso — deixar grávida sem ICS com asma descontrolada. Riscos da asma mal controlada (parto pré-termo, baixo peso, mortalidade perinatal) superam largamente o risco do ICS.",
+     "correct": false
+    },
+    {
+     "text": "Retomar ICS imediatamente e monitorizar a cada 4–6 semanas",
+     "why": "Na grávida, manter ICS sempre. Os riscos da asma mal controlada superam largamente o risco da medicação. Nunca fazer step-down durante a gravidez. Monitorizar a cada 4–6 semanas — o controlo varia frequentemente ao longo da gestação.",
+     "correct": true
+    },
+    {
+     "text": "Substituir ICS por montelucaste, que é mais seguro na gravidez",
+     "why": "Montelucaste não é primeira linha. ICS é seguro na gravidez (budesonida tem mais dados de segurança, categoria B).",
+     "correct": false
+    },
+    {
+     "text": "Suspender toda a medicação e referenciar à pneumologia com urgência",
+     "why": "Não há necessidade de suspender — o ICS é seguro. Suspender expõe a exacerbações com hipóxia fetal.",
+     "correct": false
+    },
+    {
+     "text": "Manter sem ICS mas iniciar prednisolona oral em dose baixa",
+     "why": "Prednisolona sistémica tem mais riscos que ICS inalado. ICS é a base, sistémicos só em exacerbações.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Na grávida, o risco de asma descontrolada é sempre maior que o risco do ICS.",
+   "keyConcept": "Na gravidez, nunca fazer step-down de ICS. Monitorizar a cada 4–6 semanas. Tratar exacerbações agressivamente."
+  },
+  {
+   "id": "c5",
+   "vignette": "Homem de 52 anos, motorista, fumador de 25 UMA, recorre por dispneia de esforço progressiva há 2 anos e tosse produtiva matinal. Refere episódios intermitentes de sibilância que melhoram parcialmente com salbutamol. Espirometria: FEV₁ 58% do previsto, FEV₁/FVC 0,62. Após broncodilatação, FEV₁ melhora para 67% (aumento de 14% e 250 mL) mas FEV₁/FVC mantém-se em 0,66.",
+   "stem": "Qual é o diagnóstico mais provável?",
+   "options": [
+    {
+     "text": "Asma alérgica",
+     "why": "Improvável em fumador de 25 UMA com obstrução fixa (FEV₁/FVC <0,70 pós-BD).",
+     "correct": false
+    },
+    {
+     "text": "DPOC isolada",
+     "why": "A reversibilidade significativa (≥12% e ≥200 mL) sugere componente asmático associado.",
+     "correct": false
+    },
+    {
+     "text": "Sobreposição asma-DPOC (ACO)",
+     "why": "Fumador com carga tabágica significativa + obstrução fixa (FEV₁/FVC <0,70 pós-BD) + reversibilidade significativa (≥12% e ≥200 mL) = ACO. Tem pior prognóstico que asma ou DPOC isoladas. Obriga a manter sempre ICS — LABA ou LAMA isolados estão contraindicados.",
+     "correct": true
+    },
+    {
+     "text": "Insuficiência cardíaca congestiva",
+     "why": "A ICC não explica a obstrução espirométrica; daria padrão restritivo ou normal.",
+     "correct": false
+    },
+    {
+     "text": "Bronquiectasias",
+     "why": "Possíveis como comorbilidade, mas não explicam isoladamente a reversibilidade espirométrica.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Obstrução que melhora mas não normaliza + tabaco = ACO. Manter sempre ICS.",
+   "keyConcept": "ACO tem pior prognóstico que asma ou DPOC isoladas. Manter sempre ICS — nunca LABA ou LAMA isolados. LABA isolado sem ICS aumenta risco de morte."
+  },
+  {
+   "id": "c6",
+   "vignette": "Mulher de 38 anos, professora de padaria num curso profissional, com asma diagnosticada há 1 ano. Nota que os sintomas são piores durante a semana de trabalho e melhoram significativamente nas férias e ao fim de semana. Medicada com ICS-formoterol em MART. Espirometria no trabalho: FEV₁ 72% do previsto. Espirometria em período de férias: FEV₁ 92% do previsto.",
+   "stem": "Qual dos seguintes é o passo mais importante nesta fase?",
+   "options": [
+    {
+     "text": "Subir para degrau 4 com tripla terapêutica",
+     "why": "Não resolve — a causa é a exposição. Sem remover o desencadeante, qualquer step-up tem benefício limitado.",
+     "correct": false
+    },
+    {
+     "text": "Adicionar montelucaste ao regime atual",
+     "why": "Não aborda a causa. Pode ter algum efeito mas não substitui remover a exposição.",
+     "correct": false
+    },
+    {
+     "text": "Identificar e remover a exposição ocupacional o mais cedo possível",
+     "why": "Padrão clássico de asma ocupacional: início no adulto, sintomas melhoram nas férias/fim de semana, espirometria piora no trabalho. A farinha é dos agentes mais frequentes. A remoção da exposição precoce é a intervenção mais importante — quanto mais tempo de exposição, menor a probabilidade de recuperação total.",
+     "correct": true
+    },
+    {
+     "text": "Pedir FeNO para confirmar inflamação eosinofílica",
+     "why": "FeNO pode ajudar na fenotipagem mas não é prioritário face à intervenção principal (remover exposição).",
+     "correct": false
+    },
+    {
+     "text": "Manter tratamento atual e reavaliar em 6 meses",
+     "why": "Adiar aumenta o risco de obstrução fixa irreversível. A intervenção é precoce.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Início no adulto + melhora nas férias/fim de semana = pensar ocupacional. Remover exposição cedo.",
+   "keyConcept": "Perguntar a TODO doente com asma de início no adulto: \"Os sintomas melhoram nas férias?\" A remoção precoce da exposição é decisiva."
+  },
+  {
+   "id": "c7",
+   "vignette": "Rapaz de 4 anos trazido à consulta por episódios recorrentes de sibilância (5 episódios no último ano), exclusivamente durante infeções respiratórias virais. Entre os episódios está completamente assintomático. Sem história pessoal de eczema. Sem história familiar de asma ou atopia. Exame físico entre crises: normal.",
+   "stem": "Qual é a abordagem mais adequada?",
+   "options": [
+    {
+     "text": "Diagnosticar asma e iniciar ICS em dose média diária",
+     "why": "Antes dos 6 anos não há definição precisa de asma — usa-se \"sibilância recorrente\". Dose média é excessiva neste perfil sem atopia.",
+     "correct": false
+    },
+    {
+     "text": "SABA em SOS durante episódios + reavaliar diagnóstico anualmente",
+     "why": "Criança pré-escolar com sibilância exclusivamente vírica, sem atopia. Este perfil corresponde a sibilância vírica transitória — muitos casos resolvem espontaneamente antes dos 6 anos. Reavaliar anualmente.",
+     "correct": true
+    },
+    {
+     "text": "Iniciar montelucaste 4 mg diário como profilaxia",
+     "why": "Pode considerar-se mas não é primeira abordagem sem tentar SABA primeiro e sem atopia significativa.",
+     "correct": false
+    },
+    {
+     "text": "Pedir espirometria para confirmar diagnóstico",
+     "why": "Espirometria não é realizável <6 anos.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar ICS-formoterol em regime MART",
+     "why": "MART não está indicado nesta faixa etária com este padrão.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Sem eczema, sem HF, só sibila com vírus = a maioria resolve sozinha antes dos 6 anos.",
+   "keyConcept": "Antes dos 6 anos: \"sibilância recorrente\". Sem atopia e com padrão exclusivamente vírico → probabilidade menor de asma persistente. Reavaliar anualmente."
+  },
+  {
+   "id": "c8",
+   "vignette": "Mulher de 62 anos, asmática desde os 30 anos, seguida em pneumologia. Medicação atual: budesonida-formoterol 200/6 µg 2 inalações 2x/dia + 1 em SOS (MART dose média) e tiotrópio Respimat 2,5 µg 2 puffs/dia. Apesar de técnica correta e boa adesão (confirmada por dispensas na farmácia), teve 3 exacerbações graves no último ano com 2 ciclos de prednisolona. Eosinófilos no sangue: 450/µL. IgE total: 85 UI/mL. FeNO: 55 ppb.",
+   "stem": "Qual é o passo seguinte mais adequado?",
+   "options": [
+    {
+     "text": "Aumentar ICS para dose alta e reavaliar em 3 meses",
+     "why": "Já em dose média; subir para alta tem benefício marginal e mais efeitos adversos.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar prednisolona oral 10 mg/dia como manutenção",
+     "why": "OCS de manutenção é último recurso — efeitos cumulativos sérios (osteoporose, diabetes, cataratas).",
+     "correct": false
+    },
+    {
+     "text": "Referenciar para biológico — perfil T2 com eosinofilia e FeNO elevado",
+     "why": "Degrau 4 otimizado (MART dose média + LAMA), técnica e adesão confirmadas, 3 exacerbações graves/ano = asma grave não controlada → degrau 5 com fenotipagem. Perfil T2: eosinófilos 450/µL (>150–300), FeNO 55 ppb (>25). IgE baixa exclui omalizumab. Elegível para mepolizumab, benralizumab, dupilumab ou tezepelumab.",
+     "correct": true
+    },
+    {
+     "text": "Adicionar azitromicina 250 mg 3x/semana",
+     "why": "Add-on razoável mas não prioritário face a biológico num perfil T2 claro.",
+     "correct": false
+    },
+    {
+     "text": "Substituir tiotrópio por montelucaste",
+     "why": "Substituir LAMA por montelucaste seria step-down em doente já não controlada — agrava.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Degrau 4 otimizado + eosinófilos + FeNO elevados = perfil T2, hora de referenciar.",
+   "keyConcept": "Perfil T2: eosinófilos ≥150–300/µL e/ou FeNO ≥25 ppb. Asma grave não controlada em degrau 4 otimizado → fenotipagem para biológico."
+  },
+  {
+   "id": "c9",
+   "vignette": "Homem de 22 anos, asmático, vem à consulta para reavaliação. Está em tratamento com budesonida-formoterol 200/6 µg em regime MART (1 inalação 2x/dia + SOS) há 8 meses. Refere: sem sintomas diurnos, sem despertar noturno, sem limitação de atividade e sem uso de reliever nas últimas 4 semanas. Espirometria: FEV₁ 95% do previsto. Não fuma, sem exacerbações no último ano.",
+   "stem": "Qual é a atitude mais adequada?",
+   "options": [
+    {
+     "text": "Manter regime atual indefinidamente",
+     "why": "Manter indefinidamente sem tentar reduzir expõe a efeitos adversos desnecessários quando há controlo bom e estável.",
+     "correct": false
+    },
+    {
+     "text": "Parar toda a medicação — está curado",
+     "why": "Perigoso — a asma é doença crónica, a inflamação persiste mesmo sem sintomas.",
+     "correct": false
+    },
+    {
+     "text": "Reduzir para ICS-formoterol em SOS apenas (step-down para degrau 1–2)",
+     "why": "Após 2–3 meses de controlo bom e estável, considerar step-down. Em Track 1, o step-down do degrau 3 é passar para ICS-formoterol em SOS (degrau 1–2). Nunca parar ICS completamente no adulto/adolescente.",
+     "correct": true
+    },
+    {
+     "text": "Substituir por salbutamol em SOS apenas",
+     "why": "SABA isolado já não é recomendado — aumenta mortalidade.",
+     "correct": false
+    },
+    {
+     "text": "Aumentar para dose média para prevenir exacerbações futuras",
+     "why": "Aumentar sem indicação clínica expõe a efeitos adversos sem benefício.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Estável há meses → descer. Mas o chão é ICS-formoterol SOS, nunca zero.",
+   "keyConcept": "Após 2–3 meses estáveis, considerar step-down. Reduzir ICS 25–50% a cada 2–3 meses. Nunca parar ICS completamente."
+  },
+  {
+   "id": "c10",
+   "vignette": "Mulher de 55 anos recorre à urgência por dispneia intensa de início há 2 horas. Antecedentes de asma grave com internamento em UCI há 3 anos por intubação por crise de asma. Medicação habitual: ICS-LABA em dose alta + tiotrópio. Ao exame: sonolenta, confusa, incapaz de falar, FR 8/min, tórax silencioso à auscultação, bradicardia 48 bpm, SpO₂ 82%.",
+   "stem": "Qual dos seguintes sinais é o mais preocupante e indica iminente paragem respiratória?",
+   "options": [
+    {
+     "text": "SpO₂ de 82%",
+     "why": "É sinal de alarme grave, mas isoladamente não indica iminente paragem — pode haver hipoxemia sem falência ventilatória iminente.",
+     "correct": false
+    },
+    {
+     "text": "Frequência respiratória de 8/min",
+     "why": "Bradipneia em crise asmática é sinal de exaustão — esperar-se-ia taquipneia. É preocupante mas é só um dos sinais.",
+     "correct": false
+    },
+    {
+     "text": "Tórax silencioso à auscultação",
+     "why": "Significa obstrução tão grave que não há fluxo de ar suficiente para gerar sibilos — alarme máximo. É um dos sinais, mas todos os listados são igualmente preocupantes neste contexto.",
+     "correct": false
+    },
+    {
+     "text": "Bradicardia",
+     "why": "Em crise asmática, bradicardia é sinal pré-paragem (esperar-se-ia taquicardia). Mas é apenas um dos sinais.",
+     "correct": false
+    },
+    {
+     "text": "Todos os anteriores indicam iminente paragem respiratória",
+     "why": "Esta doente apresenta TODOS os sinais de iminente paragem: sonolência/confusão, incapacidade de falar, tórax silencioso, bradicardia e hipoxemia grave. Cada sinal isolado já seria preocupante; em conjunto, é emergência absoluta. Conduta: contactar anestesia/UCI, SABA contínuo + ipratrópio + metilprednisolona IV + MgSO₄ IV + preparar intubação.",
+     "correct": true
+    }
+   ],
+   "quickTip": "Sem sibilos numa crise = sem ar suficiente para gerar som. Preparar intubação.",
+   "keyConcept": "Tórax silencioso ≠ melhoria. Bradicardia em crise asmática é sinal pré-paragem. História de intubação prévia é fator de risco de morte."
+  },
+  {
+   "id": "c11",
+   "vignette": "Homem de 30 anos, asmático, vem renovar receita de salbutamol. Ao rever o processo, verifica-se que nos últimos 12 meses levantou na farmácia 8 inaladores de salbutamol 200 doses e nenhum de ICS. Refere que \"usa o spray azul quando precisa e funciona bem\". Nega idas à urgência. Nunca fez espirometria.",
+   "stem": "Qual é a afirmação mais correta sobre este doente?",
+   "options": [
+    {
+     "text": "Está bem controlado pois não teve exacerbações",
+     "why": "Falsa segurança — a ausência de idas à urgência não significa controlo. Significa que está subdiagnosticado e subtratado, com risco elevado de exacerbação grave.",
+     "correct": false
+    },
+    {
+     "text": "O uso de 8 inaladores de SABA por ano é um fator de risco de morte por asma",
+     "why": "A GINA 2026 identifica uso excessivo de SABA (≥3 inaladores de 200 doses/ano) como fator de risco independente de exacerbação grave e morte. Este doente usa 8/ano — quase 1/mês. Mortalidade aumenta com ≥1 inalador/mês. Precisa de espirometria, ICS, plano de ação e educação.",
+     "correct": true
+    },
+    {
+     "text": "Deve manter salbutamol em SOS e iniciar montelucaste",
+     "why": "Montelucaste é 2ª linha; ICS é a primeira escolha — não substituir por antileucotrieno.",
+     "correct": false
+    },
+    {
+     "text": "Deve realizar FeNO antes de qualquer decisão terapêutica",
+     "why": "FeNO não é prioritário face à urgência de iniciar ICS e documentar diagnóstico com espirometria.",
+     "correct": false
+    },
+    {
+     "text": "A ausência de espirometria não é relevante se os sintomas são controlados com SABA",
+     "why": "A espirometria é fundamental para documentar diagnóstico — sem ela, não há base para o tratamento.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Perguntar quantos inaladores azuis usa por ano. ≥3 = sinal de alarme grave.",
+   "keyConcept": "Uso ≥3 inaladores de SABA/ano → risco aumentado de morte. ≥1/mês → referenciar urgentemente. SABA isolado não é tratamento."
+  },
+  {
+   "id": "c12",
+   "vignette": "Rapaz de 10 anos, asmático, medicado com fluticasona propionato 100 µg 2x/dia (Flixotide Diskus). Na consulta de pediatria, a mãe pergunta preocupada se o corticosteroide inalado vai \"atrasar o crescimento do filho\". Ele está no percentil 50 de altura e percentil 50 de peso, sem alterações desde o início do tratamento há 1 ano.",
+   "stem": "Qual é a informação mais correta a transmitir à mãe?",
+   "options": [
+    {
+     "text": "O ICS não tem qualquer efeito no crescimento, pode ficar descansada",
+     "why": "Não é preciso e mina a confiança se os pais pesquisarem. Há um efeito pequeno e transitório, mas a altura final é semelhante.",
+     "correct": false
+    },
+    {
+     "text": "ICS em dose baixa pode reduzir a velocidade de crescimento em ~0,5 cm no primeiro ano, mas o efeito não é cumulativo e a altura final é semelhante",
+     "why": "Dados do estudo CAMP e seguimento a longo prazo: ICS dose baixa reduz velocidade de crescimento ~0,5 cm no 1º ano, mas efeito não é cumulativo e altura final adulta é semelhante. O risco da asma mal controlada supera largamente o do ICS.",
+     "correct": true
+    },
+    {
+     "text": "Deve suspender o ICS e substituir por montelucaste para evitar o risco",
+     "why": "Suspender ICS é perigoso — exacerbações, internamentos, remodelação das vias aéreas. Montelucaste não substitui ICS na asma persistente.",
+     "correct": false
+    },
+    {
+     "text": "O efeito no crescimento é dose-dependente e progressivo — quanto mais tempo usar, maior a redução total de altura",
+     "why": "O efeito NÃO é progressivo nem cumulativo. Há redução pequena no 1º ano e depois estabiliza.",
+     "correct": false
+    },
+    {
+     "text": "Deve fazer doseamentos de cortisol sérico trimestrais para monitorizar supressão suprarrenal",
+     "why": "Doseamento de cortisol não é rotina em dose baixa. Reservado para doses altas prolongadas ou suspeita clínica.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Meio centímetro no 1º ano, depois para. Altura final é a mesma. Não suspender.",
+   "keyConcept": "O risco da asma mal controlada (exacerbações, remodelação, mortalidade) supera largamente o risco do ICS. Monitorizar peso e altura anualmente. Nunca suspender ICS por medo do crescimento."
+  },
+  {
+   "id": "c13",
+   "vignette": "Mulher de 26 anos, atleta federada de atletismo, recorre à consulta por tosse seca e sensação de aperto torácico que surgem 5 a 10 minutos após o início do treino, sobretudo em dias frios e secos. Os sintomas resolvem espontaneamente 30 a 60 minutos após parar. Fora do exercício está completamente assintomática. Sem antecedentes de atopia. Espirometria basal: normal (FEV₁ 102% do previsto, FEV₁/FVC 0,84).",
+   "stem": "Qual é o teste diagnóstico mais adequado para esta doente?",
+   "options": [
+    {
+     "text": "Espirometria com prova de broncodilatação",
+     "why": "A espirometria basal já é normal — BD basal será quase certamente negativa (não há obstrução em repouso a reverter).",
+     "correct": false
+    },
+    {
+     "text": "Prova de broncoprovocação com exercício",
+     "why": "Quadro clássico de broncoconstrição induzida pelo exercício (BIE): sintomas surgem minutos após início do esforço, em ar frio/seco, resolvem após parar. Espirometria basal normal. A broncoprovocação com exercício é o teste de eleição: positiva se queda do FEV₁ ≥10–15% após esforço padronizado.",
+     "correct": true
+    },
+    {
+     "text": "TC torácica de alta resolução",
+     "why": "TC não tem indicação — sem red flags, sem suspeita de patologia estrutural.",
+     "correct": false
+    },
+    {
+     "text": "FeNO basal em repouso",
+     "why": "Pode estar normal se fenótipo não eosinofílico. Não é o teste de eleição para BIE.",
+     "correct": false
+    },
+    {
+     "text": "Variabilidade do PEF durante 2 semanas",
+     "why": "PEF pode falhar se os sintomas são apenas com exercício e ela está bem em repouso.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Se está tudo normal em repouso mas tosse a correr no frio → provocar para diagnosticar.",
+   "keyConcept": "Broncoconstrição induzida pelo exercício: sintomas minutos após início, em ar frio/seco, resolvem após parar. Broncoprovocação com exercício é o teste de eleição."
+  },
+  {
+   "id": "c14",
+   "vignette": "Homem de 70 anos, ex-fumador (cessação há 5 anos, 40 UMA), com diagnóstico de asma feito há 2 anos. Medicado com fluticasona-salmeterol 250/50 µg 2x/dia. Vem por dispneia progressiva e 2 internamentos por agudização no último ano. Ao exame: IMC 32, roncos dispersos, sem sibilos. Espirometria: FEV₁ 48% do previsto, FEV₁/FVC 0,58 pós-BD. FeNO 12 ppb. Eosinófilos 90/µL. TC tórax: enfisema centrolobular.",
+   "stem": "Qual é a reavaliação diagnóstica mais importante?",
+   "options": [
+    {
+     "text": "Confirmar que se trata de asma isolada e subir o degrau",
+     "why": "Subir degrau sem reavaliar diagnóstico é errado num perfil que não bate com asma típica.",
+     "correct": false
+    },
+    {
+     "text": "Reconsiderar diagnóstico — o perfil é mais compatível com DPOC do que com asma",
+     "why": "Carga tabágica pesada (40 UMA), obstrução fixa (FEV₁/FVC 0,58 pós-BD), enfisema na TC, FeNO baixo (12 ppb) e eosinófilos baixos (90/µL) apontam para DPOC, não asma. ICS pode até ser desnecessário em DPOC sem eosinofilia. Referenciar pneumologia.",
+     "correct": true
+    },
+    {
+     "text": "Pedir IgE total para avaliar componente alérgico",
+     "why": "IgE não muda a gestão neste perfil claramente não-T2.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar omalizumab dado os internamentos frequentes",
+     "why": "Omalizumab é para asma alérgica grave — não é o caso aqui (sem perfil T2, sem alergia documentada).",
+     "correct": false
+    },
+    {
+     "text": "Pedir broncofibroscopia para excluir neoplasia",
+     "why": "Sem red flags para neoplasia (hemoptises, perda ponderal, alterações radiológicas suspeitas).",
+     "correct": false
+    }
+   ],
+   "quickTip": "FeNO baixo + eosinófilos baixos + enfisema num fumador = rever rótulo de asma.",
+   "keyConcept": "25–35% dos rotulados com asma nos CSP não têm diagnóstico confirmável. Num idoso ex-fumador com obstrução fixa, FeNO baixo e enfisema — reconsiderar diagnóstico."
+  },
+  {
+   "id": "c15",
+   "vignette": "Mulher de 42 anos, asmática, com polipose nasal bilateral e história de reação com broncospasmo grave após tomar ibuprofeno há 2 anos. Tem asma de difícil controlo apesar de MART dose média + tiotrópio. Eosinófilos: 520/µL. FeNO: 62 ppb.",
+   "stem": "Qual é o fenótipo de asma mais provável e que fármaco deve ser evitado?",
+   "options": [
+    {
+     "text": "Asma alérgica; evitar aspirina apenas",
+     "why": "Incompleto — não é só aspirina, são todos os AINEs não seletivos (inibem COX-1).",
+     "correct": false
+    },
+    {
+     "text": "AERD (doença respiratória exacerbada por AINEs); evitar todos os AINEs e aspirina",
+     "why": "Tríade clássica de AERD (antiga \"tríade de Samter\"): asma + polipose nasal + reação a AINEs/aspirina. Eosinófilos e FeNO elevados confirmam inflamação T2. Evitar TODOS os AINEs não seletivos (ibuprofeno, naproxeno, diclofenac, aspirina). Paracetamol ≤1g geralmente seguro.",
+     "correct": true
+    },
+    {
+     "text": "Asma neutrofílica; evitar betabloqueantes",
+     "why": "O perfil é eosinofílico (eosinófilos 520, FeNO 62), não neutrofílico.",
+     "correct": false
+    },
+    {
+     "text": "Asma e obesidade; evitar IECA",
+     "why": "IECA causa tosse, não broncospasmo. Não explica a reação aos AINEs.",
+     "correct": false
+    },
+    {
+     "text": "Asma ocupacional; evitar exposição no trabalho",
+     "why": "Sem relação com exposição ocupacional descrita. A reação foi a um fármaco.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Tríade clássica: asma + pólipos + ibuprofeno faz crise. Paracetamol ≤1g é seguro.",
+   "keyConcept": "AERD: evitar TODOS os AINEs não seletivos. Paracetamol ≤1g geralmente seguro. Inibidores seletivos COX-2 (celecoxib) testados em ambiente hospitalar."
+  },
+  {
+   "id": "c16",
+   "vignette": "Criança de 3 anos, trazida à urgência por 3º episódio de sibilância em 4 meses. Todos os episódios coincidiram com infeções respiratórias virais. Tem eczema atópico desde os 6 meses e a mãe é asmática. Entre os episódios, os pais referem tosse noturna ocasional e sibilância com o riso. Exame: sibilos expiratórios bilaterais, FR 34/min, SpO₂ 94%.",
+   "stem": "Qual é a abordagem mais adequada após estabilização da crise atual?",
+   "options": [
+    {
+     "text": "Alta com SABA em SOS apenas e reavaliar se repetir",
+     "why": "Insuficiente — tem fatores de risco (eczema, HF) e sintomas entre crises (multitrigger).",
+     "correct": false
+    },
+    {
+     "text": "Iniciar ICS em dose baixa diária e reavaliar em 4–8 semanas",
+     "why": "Múltiplos fatores de probabilidade de asma persistente: sibilância recorrente (3/4 meses), eczema atópico, mãe asmática, sintomas entre episódios (tosse noturna, sibilância com riso = multitrigger). Não é sibilância vírica transitória simples. Justifica prova terapêutica com ICS dose baixa.",
+     "correct": true
+    },
+    {
+     "text": "Pedir espirometria para confirmar asma antes de iniciar tratamento",
+     "why": "Espirometria não é realizável <6 anos.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar ICS-formoterol em regime MART",
+     "why": "MART não está indicado como primeira linha em pré-escolar.",
+     "correct": false
+    },
+    {
+     "text": "Pedir TC torácica para excluir anomalia congénita",
+     "why": "TC sem indicação — não há red flags para anomalia congénita.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Eczema + mãe asmática + sibila entre e durante infeções = iniciar ICS, não esperar.",
+   "keyConcept": "Na criança <6 anos, diagnóstico é clínico e probabilístico. Atopia pessoal + HF asma + multitrigger + sintomas entre episódios → prova terapêutica com ICS."
+  },
+  {
+   "id": "c17",
+   "vignette": "Homem de 35 anos, asmático controlado em degrau 3 (MART com budesonida-formoterol 200/6 µg). Vai iniciar tratamento para hipertensão arterial. O internista propõe bisoprolol 5 mg/dia.",
+   "stem": "Qual é o conselho mais adequado em relação ao bisoprolol?",
+   "options": [
+    {
+     "text": "Não há problema — betabloqueantes cardiosseletivos são seguros na asma",
+     "why": "A \"cardiosseletividade\" é relativa, não absoluta. Mesmo bisoprolol pode precipitar broncospasmo na asma.",
+     "correct": false
+    },
+    {
+     "text": "Betabloqueantes estão contraindicados na asma — mesmo cardiosseletivos podem causar broncospasmo",
+     "why": "A GINA 2026 mantém: betabloqueantes (incluindo cardiosseletivos como bisoprolol, atenolol, metoprolol) estão contraindicados na asma. Mesmo cardiosseletivos não são 100% seletivos e podem causar broncospasmo potencialmente fatal. Para HTA: IECA, ARA-II, antagonistas do cálcio, diuréticos.",
+     "correct": true
+    },
+    {
+     "text": "Pode usar bisoprolol mas apenas em dose baixa (1,25 mg)",
+     "why": "Dose baixa não elimina o risco — a seletividade diminui com a dose, mas mesmo a baixa pode causar broncospasmo.",
+     "correct": false
+    },
+    {
+     "text": "Substituir por atenolol que é mais seguro na asma",
+     "why": "Atenolol também é betabloqueante cardiosseletivo — mesmo problema.",
+     "correct": false
+    },
+    {
+     "text": "Pode usar bisoprolol se associar ipratrópio inalado para prevenir broncospasmo",
+     "why": "Ipratrópio não previne broncospasmo por betabloqueantes de forma fiável. Improvisação inaceitável.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Cardiosseletivo não é sinónimo de seguro na asma. Bisoprolol, atenolol = todos proibidos.",
+   "keyConcept": "Betabloqueantes (mesmo cardiosseletivos) contraindicados na asma. Para HTA: IECA, ARA-II, antagonistas do cálcio, diuréticos."
+  },
+  {
+   "id": "c18",
+   "vignette": "Mulher de 50 anos, obesa (IMC 38), asmática há 10 anos. Medicada com ICS-LABA dose média + montelucaste. Queixa-se de dispneia de esforço persistente e roncopatia. O marido refere apneias durante o sono. CARAT: 18 (sugere mau controlo). Espirometria: FEV₁ 82% do previsto, FEV₁/FVC 0,76. A doente atribui toda a dispneia à asma.",
+   "stem": "Qual é a comorbilidade mais provável que está a contribuir para o mau controlo?",
+   "options": [
+    {
+     "text": "Embolia pulmonar crónica",
+     "why": "Sem fatores de risco trombóticos apresentados nem início agudo.",
+     "correct": false
+    },
+    {
+     "text": "Bronquiectasias não diagnosticadas",
+     "why": "Sem expetoração purulenta crónica nem infeções recorrentes descritas.",
+     "correct": false
+    },
+    {
+     "text": "Síndrome de apneia obstrutiva do sono (SAOS)",
+     "why": "Obesidade (IMC 38) + roncopatia + apneias testemunhadas pelo cônjuge = quadro clássico de SAOS. A espirometria mostra obstrução ligeira mas FEV₁ é 82% — razoável. Não há controlo da asma sem identificar e tratar comorbilidades. Perda ponderal de 5–10% melhora significativamente o controlo. Pedir polissonografia.",
+     "correct": true
+    },
+    {
+     "text": "Fibrose pulmonar idiopática",
+     "why": "FEV₁/FVC normal — padrão não restritivo. Sem crepitações nem padrão fibrótico.",
+     "correct": false
+    },
+    {
+     "text": "Disfunção das cordas vocais",
+     "why": "Possível mas roncopatia + apneias + obesidade apontam mais claramente para SAOS.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Nem toda a dispneia é da asma. IMC alto + ronca + apneias = pedir polissonografia.",
+   "keyConcept": "Não há controlo da asma sem identificar e tratar comorbilidades. Obesidade + SAOS são causas frequentes de \"asma difícil\" que afinal é asma + outra coisa."
+  },
+  {
+   "id": "c19",
+   "vignette": "Homem de 40 anos, asmático grave, medicado com fluticasona furoato + vilanterol 184/22 µg 1x/dia (Relvar dose alta) + tiotrópio + montelucaste. Tem asma eosinofílica grave (eosinófilos 380/µL) com 4 exacerbações/ano. O pneumologista propõe iniciar biológico. O doente pergunta qual a vantagem do benralizumab sobre o mepolizumab.",
+   "stem": "Qual é a diferença fundamental no mecanismo de ação?",
+   "options": [
+    {
+     "text": "Benralizumab bloqueia IL-4 e IL-13, mepolizumab bloqueia IL-5",
+     "why": "IL-4/IL-13 é o dupilumab, não o benralizumab.",
+     "correct": false
+    },
+    {
+     "text": "Benralizumab liga-se ao recetor de IL-5 e depleta eosinófilos diretamente por ADCC, mepolizumab apenas neutraliza a IL-5 circulante",
+     "why": "Mepolizumab neutraliza a citocina IL-5 circulante (reduz sinal de sobrevivência). Benralizumab liga-se ao recetor α de IL-5 nos eosinófilos e, por ser afucosilado, recruta células NK que destroem os eosinófilos por ADCC. Resultado: depleção quase completa. Vantagem prática: posologia q8sem após indução.",
+     "correct": true
+    },
+    {
+     "text": "Benralizumab atua na TSLP, mepolizumab na IL-5",
+     "why": "TSLP é o tezepelumab, não o benralizumab.",
+     "correct": false
+    },
+    {
+     "text": "Não há diferença — têm o mesmo mecanismo",
+     "why": "Diferem no mecanismo: anti-IL-5 (citocina) vs anti-IL-5Rα (recetor + ADCC).",
+     "correct": false
+    },
+    {
+     "text": "Benralizumab é anti-IgE, mepolizumab é anti-IL-5",
+     "why": "Anti-IgE é o omalizumab.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Mepolizumab bloqueia a citocina. Benralizumab mata a célula. Mesmo alvo, mecanismo diferente.",
+   "keyConcept": "Mepolizumab = anti-IL-5 (neutraliza citocina). Benralizumab = anti-IL-5Rα (destrói a célula por ADCC). Ambos para asma eosinofílica grave."
+  },
+  {
+   "id": "c20",
+   "vignette": "Mulher de 25 anos, asmática desde a infância, bem controlada com budesonida-formoterol 200/6 µg em SOS apenas (degrau 2, Track 1). Vem à consulta de rotina. Sem sintomas, sem exacerbações há 2 anos. Espirometria: FEV₁ 98%. Pergunta se pode parar de vez a medicação porque \"já não tem asma\".",
+   "stem": "Qual é a resposta mais adequada?",
+   "options": [
+    {
+     "text": "Sim, após 2 anos sem sintomas pode parar toda a medicação",
+     "why": "Parar expõe a risco de exacerbação grave — a inflamação persiste mesmo sem sintomas.",
+     "correct": false
+    },
+    {
+     "text": "Não — manter ICS-formoterol em SOS; a asma é crónica e a inflamação persiste mesmo sem sintomas",
+     "why": "A doente já está no degrau mais baixo possível em Track 1 (ICS-formoterol em SOS apenas). Não há step-down abaixo disto no adulto. A GINA 2026 diz: nunca parar ICS completamente no adulto/adolescente. A inflamação persiste em períodos assintomáticos.",
+     "correct": true
+    },
+    {
+     "text": "Pode parar o ICS-formoterol e ficar apenas com salbutamol em SOS",
+     "why": "SABA isolado já não é recomendado — aumenta mortalidade.",
+     "correct": false
+    },
+    {
+     "text": "Pode parar tudo mas deve manter montelucaste oral como prevenção",
+     "why": "Montelucaste não substitui ICS na manutenção da asma.",
+     "correct": false
+    },
+    {
+     "text": "Pode parar se o FeNO for normal",
+     "why": "FeNO normal não exclui recidiva futura nem justifica suspender ICS no adulto.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Sem sintomas há anos? A inflamação continua lá. O mínimo é ICS-formoterol quando precisar.",
+   "keyConcept": "A asma é doença inflamatória crónica. Inflamação persiste mesmo em períodos assintomáticos. Degrau 1–2 em Track 1 (ICS-formoterol SOS) é o mínimo — nunca zero."
+  },
+  {
+   "id": "c21",
+   "vignette": "Mulher de 32 anos, asmática conhecida desde os 15 anos, atualmente em budesonida-formoterol 200/6 µg como MART (1+1 SOS, Track 1, degrau 3). Asma habitualmente bem controlada. Vem à consulta porque está grávida de 12 semanas e leu na internet que os corticoides inalados são prejudiciais ao feto. Pergunta se pode parar a medicação durante a gravidez.",
+   "stem": "Qual é a conduta correta?",
+   "options": [
+    {
+     "text": "Suspender ICS-formoterol e usar apenas SABA SOS durante a gravidez",
+     "why": "Expõe a exacerbações — asma descontrolada na grávida associa-se a pré-eclâmpsia, RCIU, prematuridade.",
+     "correct": false
+    },
+    {
+     "text": "Manter ICS-formoterol no esquema atual; o risco de asma descontrolada é claramente maior que o risco do ICS",
+     "why": "Princípio claro: manter o tratamento que mantém o controlo. Asma descontrolada associa-se a hipertensão gestacional, pré-eclâmpsia, RCIU, parto pré-termo, mortalidade perinatal. Budesonida tem mais dados de segurança (categoria B). Nunca step-down na gravidez.",
+     "correct": true
+    },
+    {
+     "text": "Trocar para montelucaste oral durante a gravidez",
+     "why": "Montelucaste tem dados limitados na gravidez e é menos eficaz na maioria — não troca por ICS.",
+     "correct": false
+    },
+    {
+     "text": "Reduzir a dose para metade até ao final do 1º trimestre",
+     "why": "Reduzir expõe a exacerbações — nunca step-down na gravidez.",
+     "correct": false
+    },
+    {
+     "text": "Suspender qualquer terapêutica até consulta com obstetra",
+     "why": "Não parar tratamento sem decisão clínica fundamentada — risco de hipoxia fetal.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Na grávida não se reduz, não se troca, não se suspende. Mantém o que controla.",
+   "keyConcept": "Na grávida: nunca step-down, manter ICS sempre. Budesonida tem mais dados de segurança. Educar sobre o risco real (hipóxia fetal) versus percebido (ICS)."
+  },
+  {
+   "id": "c22",
+   "vignette": "Homem de 55 anos, asmático desde os 30 anos, fumador (40 UMA, ativo), com tosse produtiva matinal há vários anos. Espirometria pós-BD: FEV₁ 62% do previsto, FEV₁/FVC 0,63, reversibilidade de 9% (180 mL). Em tratamento com fluticasona-salmeterol 500/50 µg 1 inalação 2x/dia.",
+   "stem": "Qual é o diagnóstico e a conduta mais adequada?",
+   "options": [
+    {
+     "text": "Asma mal controlada — subir para tripla fixa (ICS-LABA-LAMA)",
+     "why": "A obstrução tem componente fixa, não é só asma mal controlada. Subir sem reconsiderar o diagnóstico é incompleto.",
+     "correct": false
+    },
+    {
+     "text": "DPOC isolada — suspender ICS e iniciar broncodilatador LAMA",
+     "why": "Suspender ICS no ACO aumenta exacerbações — a componente asmática persiste.",
+     "correct": false
+    },
+    {
+     "text": "Sobreposição asma-DPOC (ACO) — manter ICS-LABA, adicionar LAMA e aconselhar cessação tabágica",
+     "why": "Diagnóstico prévio de asma + tabagismo significativo + obstrução fixa (FEV₁/FVC 0,63) + reversibilidade parcial mas não total = ACO. Pior prognóstico que asma ou DPOC isolada. No ACO, manter sempre ICS (proteção contra exacerbações pela componente asmática) e adicionar LAMA. Cessação tabágica é a medida com maior impacto.",
+     "correct": true
+    },
+    {
+     "text": "Bronquiectasias — pedir TC torácica de alta resolução",
+     "why": "Sem expetoração purulenta crónica nem infeções recorrentes descritas que justifiquem.",
+     "correct": false
+    },
+    {
+     "text": "Tuberculose pulmonar — pedir baciloscopias da expetoração",
+     "why": "Sem febre, perda ponderal, suores noturnos, ou contexto epidemiológico descrito.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Asmático + tabaco + obstrução fixa parcialmente reversível = ACO. Manter sempre ICS.",
+   "keyConcept": "No ACO: manter sempre ICS (não suspender como na DPOC pura). Adicionar LAMA. Cessação tabágica tem o maior impacto."
+  },
+  {
+   "id": "c23",
+   "vignette": "Mulher de 38 anos vem ao serviço de urgência por crise de asma. Recebeu salbutamol nebulização 2,5 mg + ipratrópio 0,5 mg, seguido de prednisolona 50 mg oral. Após 1 hora: SpO₂ 91% com O₂ a 4 L/min, FR 28/min, FC 122/min, fala em frases curtas, sibilos difusos, PEF 38% do previsto. Continua com dispneia marcada.",
+   "stem": "Qual é o próximo passo no tratamento?",
+   "options": [
+    {
+     "text": "Adicionar sulfato de magnésio 2 g IV ao longo de 20 minutos",
+     "why": "Crise grave sem resposta a SABA + ipratrópio + corticoide na 1ª hora (PEF <50%, SpO₂ baixa com O₂, taquipneia) é indicação para sulfato de magnésio IV (2 g em 20 min, adulto). Escalada na crise grave: SABA + ipratrópio + OCS → se sem resposta, MgSO₄ IV → considerar UCI.",
+     "correct": true
+    },
+    {
+     "text": "Iniciar aminofilina IV em perfusão contínua",
+     "why": "Aminofilina IV não é recomendada — pouca eficácia adicional e muitos efeitos adversos.",
+     "correct": false
+    },
+    {
+     "text": "Iniciar adrenalina IM 0,3 mg",
+     "why": "Adrenalina IM não está indicada na crise asmática (sim em anafilaxia).",
+     "correct": false
+    },
+    {
+     "text": "Iniciar antibioterapia empírica com amoxicilina + clavulânico",
+     "why": "Antibióticos só se infeção bacteriana clara — não por rotina na crise asmática.",
+     "correct": false
+    },
+    {
+     "text": "Alta com prednisolona 5 dias e SABA SOS",
+     "why": "Alta fora de questão com PEF 38% e SpO₂ marginal com oxigénio — crise ainda grave.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Crise grave sem resposta a SABA + ipratrópio + corticoide → MgSO₄ IV. Aminofilina não.",
+   "keyConcept": "Escalada na crise grave: SABA + ipratrópio + OCS → MgSO₄ IV → UCI. Aminofilina, antibióticos por rotina e adrenalina IM não estão indicados."
+  },
+  {
+   "id": "c24",
+   "vignette": "Homem de 19 anos vem à urgência por dispneia progressiva há 12h. Asma desde os 6 anos. Em fluticasona-salmeterol 250/50 µg 1 inalação 2x/dia há 1 ano, mas a mãe refere que costuma esquecer. Ao exame: alerta, fala palavras isoladas, sentado inclinado para a frente, FR 35/min, FC 132/min, SpO₂ 88%, tórax silencioso bilateral, sem sibilos audíveis.",
+   "stem": "Qual é a interpretação correta do exame objetivo?",
+   "options": [
+    {
+     "text": "Crise ligeira a moderada — pode aguardar avaliação",
+     "why": "Subestimar pode ser fatal — todos os sinais apontam para crise life-threatening.",
+     "correct": false
+    },
+    {
+     "text": "Crise resolvida — sem sibilos significa que o broncospasmo cedeu",
+     "why": "Erro clássico — tórax silencioso é o OPOSTO de melhoria. Significa obstrução máxima com mínimo fluxo aéreo, insuficiente para gerar som.",
+     "correct": false
+    },
+    {
+     "text": "Crise grave com iminente paragem respiratória — emergência, contactar anestesia",
+     "why": "Sinais todos de crise life-threatening: tórax silencioso (sem fluxo aéreo para gerar sibilo), incapacidade de falar em frases, taquipneia/taquicardia extremas, SpO₂ <90%. Conduta: contactar anestesia/UCI, O₂ para SpO₂ ≥93%, SABA contínuo + ipratrópio + corticoide IV + MgSO₄ IV. Preparar intubação.",
+     "correct": true
+    },
+    {
+     "text": "Pneumonia associada — pedir radiografia",
+     "why": "Possível como complicação, mas não justifica atrasar o tratamento da crise life-threatening.",
+     "correct": false
+    },
+    {
+     "text": "Pneumotórax — pedir radiografia urgente",
+     "why": "Possível mas a imagem não pode preceder o tratamento da emergência ventilatória.",
+     "correct": false
+    }
+   ],
+   "quickTip": "Tórax silencioso numa crise NÃO é boa notícia. Significa que já não passa ar para gerar sibilo.",
+   "keyConcept": "Tórax silencioso ≠ melhoria. Outros sinais de pré-paragem: bradicardia, confusão/sonolência, cianose, esforço respiratório paradoxal."
+  },
+  {
+   "id": "c25",
+   "vignette": "Mulher de 50 anos, asmática, vem à consulta com a sua nova medicação prescrita para hipertensão arterial recentemente diagnosticada (165/95 mmHg em várias avaliações). Trouxe a receita: bisoprolol 5 mg/dia. Está medicada também para asma com budesonida-formoterol 200/6 µg MART.",
+   "stem": "Qual é a recomendação mais adequada?",
+   "options": [
+    {
+     "text": "Manter bisoprolol — é cardiosseletivo, é seguro na asma",
+     "why": "Não é seguro — risco real de broncospasmo, mesmo com cardiosseletivos. A \"seletividade\" perde-se em dose mais alta.",
+     "correct": false
+    },
+    {
+     "text": "Substituir por propranolol — tem melhor controlo tensional",
+     "why": "Propranolol é ainda pior (não-seletivo) — agrava o risco de broncospasmo.",
+     "correct": false
+    },
+    {
+     "text": "Substituir bisoprolol por outro anti-hipertensor (IECA, ARA, antagonista do cálcio); os β-bloqueantes, mesmo cardiosseletivos, podem precipitar broncospasmo",
+     "why": "Os β-bloqueantes estão classicamente contraindicados na asma. Mesmo \"cardiosseletivos\" (bisoprolol, atenolol, metoprolol, nebivolol) perdem seletividade em dose mais alta e podem precipitar broncospasmo grave, com casos fatais documentados. Alternativas: IECA, ARA, antagonistas do cálcio, diuréticos.",
+     "correct": true
+    },
+    {
+     "text": "Manter bisoprolol e fazer prova com salbutamol antes de cada toma",
+     "why": "Improvisação inaceitável — não substitui evitar o desencadeante.",
+     "correct": false
+    },
+    {
+     "text": "Adicionar montelucaste 10 mg/dia para prevenir o broncospasmo",
+     "why": "Montelucaste não previne broncospasmo por betabloqueantes de forma fiável.",
+     "correct": false
+    }
+   ],
+   "quickTip": "β-bloqueante na asma = não, mesmo cardiosseletivo. Trocar por IECA/ARA/AC.",
+   "keyConcept": "Em doente asmático com HTA: preferir IECA, ARA, antagonistas do cálcio ou diuréticos. Se houver indicação compelativa (IC grave, pós-EAM), avaliar com cardiologia."
+  }
+ ]
+}

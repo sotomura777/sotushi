@@ -32,18 +32,69 @@ function novaSessao(dados, historico) {
 }
 
 // Quiz de casos clínicos PNA — partilhado pelos módulos de sintomas.
-// dados: {titulo, sub, disclaimer?, onboarding?, dicas, casos}; prefixo: chave localStorage.
+// dados: {titulo, sub, disclaimer?, onboarding?, dicas, dicasEditaveis?, dicasHint?, casos}; prefixo: chave localStorage.
+// Com dicasEditaveis, as dicas vivem em localStorage: clicar no texto edita, Enter no fim
+// acrescenta nova, × (ou texto vazio) apaga — como no original da Asma.
 export default function QuizPNA({ dados, prefixo, rotuloVoltar = "‹ Voltar", classeTema = "ca", voltar }) {
   const [historico, setHistorico] = useEstadoLocal(prefixo + ":historico", {});
   const [onboardVisto, setOnboardVisto] = useEstadoLocal(prefixo + ":onboard", false);
   const [modoPna, setModoPna] = useEstadoLocal(prefixo + ":pna", false);
   const [sabidas, setSabidas] = useEstadoLocal(prefixo + ":dicas-sabidas", []);
+  const [dicasLocais, setDicasLocais] = useEstadoLocal(prefixo + ":dicas", dados.dicas);
   const [dicasAbertas, setDicasAbertas] = useState(false);
   const [sessao, setSessao] = useState(() => novaSessao(dados, historico));
   const [atual, setAtual] = useState(0);
   const [respostas, setRespostas] = useState({});
   const [vista, setVista] = useState("pergunta");
   const [dicaCat, setDicaCat] = useState(Object.keys(dados.dicas)[0]);
+
+  const editaveis = !!dados.dicasEditaveis;
+  const dicas = editaveis ? dicasLocais : dados.dicas;
+
+  // desloca os ids "cat::i" das sabidas quando uma dica é inserida no meio
+  const deslocarSabidas = (cat, idx, delta) => setSabidas((s) => s.map((id) => {
+    const [c, i] = id.split("::");
+    const n = parseInt(i, 10);
+    return c === cat && n > idx ? `${c}::${n + delta}` : id;
+  }));
+  const guardarDica = (cat, idx, texto) => {
+    const t = texto.replace(/<br\s*\/?>/g, "").trim();
+    if (!t) { apagarDica(cat, idx); return; }
+    setDicasLocais((d) => ({ ...d, [cat]: d[cat].map((x, i) => (i === idx ? texto.trim() : x)) }));
+  };
+  const apagarDica = (cat, idx) => {
+    setDicasLocais((d) => ({ ...d, [cat]: d[cat].filter((_, i) => i !== idx) }));
+    setSabidas((s) => s.flatMap((id) => {
+      const [c, i] = id.split("::");
+      if (c !== cat) return [id];
+      const n = parseInt(i, 10);
+      if (n === idx) return [];
+      return [n > idx ? `${c}::${n - 1}` : id];
+    }));
+  };
+  const inserirDica = (cat, idx) => {
+    setDicasLocais((d) => ({ ...d, [cat]: [...d[cat].slice(0, idx + 1), "Nova dica…", ...d[cat].slice(idx + 1)] }));
+    deslocarSabidas(cat, idx, 1);
+    setTimeout(() => {
+      const el = document.querySelector(`.ca-tips-texto[data-cat="${cat}"][data-idx="${idx + 1}"]`);
+      if (el) {
+        el.focus();
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    }, 50);
+  };
+  const reporDicas = () => {
+    if (editaveis) {
+      if (!confirm("Repor todas as dicas ao estado inicial? Vais perder edições e marcações.")) return;
+      setDicasLocais(dados.dicas);
+    }
+    setSabidas([]);
+  };
+  const nSabidasDe = (cat) => dicas[cat].filter((_, i) => sabidas.includes(cat + "::" + i)).length;
 
   const score = useMemo(() => {
     let certas = 0, erradas = 0;
@@ -105,28 +156,41 @@ export default function QuizPNA({ dados, prefixo, rotuloVoltar = "‹ Voltar", c
           {dicasAbertas && (
             <>
               <div className="ca-tips-tabs">
-                {Object.keys(dados.dicas).map((c) => (
+                {Object.keys(dicas).map((c) => (
                   <button key={c} className={"ca-tips-tab" + (dicaCat === c ? " ativo" : "")} onClick={() => setDicaCat(c)}>
-                    {c}<span className="ca-tips-count">{dados.dicas[c].length}</span>
+                    {c}<span className="ca-tips-count">{editaveis ? nSabidasDe(c) + "/" + dicas[c].length : dicas[c].length}</span>
                   </button>
                 ))}
               </div>
               <div className="ca-tips-content">
-                {dados.dicas[dicaCat].map((d, i) => {
+                {dicas[dicaCat].map((d, i) => {
                   const id = dicaCat + "::" + i;
                   const sabe = sabidas.includes(id);
                   return (
-                    <div key={i} className={"ca-tips-item" + (sabe ? " sabida" : "")}>
+                    <div key={editaveis ? id + "::" + dicas[dicaCat].length : i} className={"ca-tips-item" + (sabe ? " sabida" : "")}>
                       <button className="ca-tips-check" title={sabe ? "Desmarcar" : "Marcar como sabida"}
                         onClick={() => setSabidas((s) => (sabe ? s.filter((x) => x !== id) : [...s, id]))}>{sabe ? "✓" : ""}</button>
-                      <div className="ca-tips-texto" dangerouslySetInnerHTML={{ __html: d }} />
+                      {editaveis ? (
+                        <>
+                          <div className="ca-tips-texto" data-cat={dicaCat} data-idx={i} contentEditable suppressContentEditableWarning
+                            onBlur={(e) => guardarDica(dicaCat, i, e.currentTarget.innerHTML)}
+                            onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); guardarDica(dicaCat, i, e.currentTarget.innerHTML); inserirDica(dicaCat, i); } }}
+                            dangerouslySetInnerHTML={{ __html: d }} />
+                          <button className="ca-tips-apagar" title="Apagar" onClick={() => apagarDica(dicaCat, i)}>×</button>
+                        </>
+                      ) : (
+                        <div className="ca-tips-texto" dangerouslySetInnerHTML={{ __html: d }} />
+                      )}
                     </div>
                   );
                 })}
+                {editaveis && dados.dicasHint && <div className="ca-tips-hint">{dados.dicasHint}</div>}
               </div>
               <div className="ca-tips-footer">
-                <span className="ca-tips-progress">{sabidas.length} {sabidas.length === 1 ? "sabida" : "sabidas"}</span>
-                <button className="ca-tips-reset" onClick={() => setSabidas([])}>Repor dicas iniciais</button>
+                <span className="ca-tips-progress">{editaveis
+                  ? Object.keys(dicas).reduce((s, c) => s + nSabidasDe(c), 0) + "/" + Object.values(dicas).reduce((s, l) => s + l.length, 0) + " sabidas"
+                  : sabidas.length + (sabidas.length === 1 ? " sabida" : " sabidas")}</span>
+                <button className="ca-tips-reset" onClick={reporDicas}>Repor dicas iniciais</button>
               </div>
             </>
           )}

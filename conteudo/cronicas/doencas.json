@@ -177,7 +177,7 @@
     "id": "asma",
     "nome": "Asma",
     "sistema": "respiratorio",
-    "disponivel": false
+    "disponivel": true
   },
   {
     "id": "dpoc",

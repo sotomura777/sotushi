@@ -677,6 +677,12 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
 .ca-tips-texto .key { font-weight: 700; color: var(--acento); }
 .ca-tips-texto .then { font-weight: 700; color: #059669; }
 .ca-tips-texto .trap { font-weight: 700; color: #dc2626; }
+/* dicas editáveis (módulos com dicasEditaveis, ex.: Asma) */
+.ca-tips-texto[contenteditable]:focus { outline: 1.5px solid color-mix(in srgb, var(--acento) 50%, transparent); border-radius: 6px; background: var(--superficie); }
+.ca-tips-apagar { border: none; background: none; color: var(--tenue); font-size: 16px; line-height: 1; cursor: pointer; padding: 2px 4px; flex-shrink: 0; opacity: 0; }
+.ca-tips-item:hover .ca-tips-apagar { opacity: 1; }
+.ca-tips-apagar:hover { color: #dc2626; }
+.ca-tips-hint { font-size: 11px; color: var(--tenue); font-style: italic; padding: 8px 8px 2px; }
 .ca-tips-footer { display: flex; justify-content: space-between; align-items: center; padding: 11px 18px; border-top: 1px solid var(--borda); background: var(--superficie-2); }
 .ca-tips-progress { font-size: 11px; font-weight: 700; color: var(--acento); text-transform: uppercase; letter-spacing: .06em; }
 .ca-tips-reset { background: none; border: 1px solid var(--borda-2); color: var(--suave); padding: 6px 12px; border-radius: 6px; font-family: var(--fonte-corpo); font-size: 11px; font-weight: 600; cursor: pointer; }
