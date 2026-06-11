@@ -15,6 +15,14 @@ function Html({ html, className }) {
   const onClick = (e) => {
     const h = e.target.closest(".g-sec-h");
     if (h && h.parentElement) { h.parentElement.classList.toggle("open"); return; }
+    const cz = e.target.closest("[data-cz-tab]");
+    if (cz) {
+      const scope = e.currentTarget;
+      const idx = cz.getAttribute("data-cz-tab");
+      scope.querySelectorAll(".cz-stab").forEach((t) => t.classList.toggle("active", t === cz));
+      scope.querySelectorAll(".cz-panel").forEach((pn) => pn.classList.toggle("active", pn.getAttribute("data-cz") === idx));
+      return;
+    }
     const q = e.target.closest("[data-quad]");
     if (q) {
       const raiz = e.currentTarget;
@@ -28,7 +36,16 @@ function Html({ html, className }) {
       if (d) info.innerHTML = `<div class="quad-info"><b>${d.title}</b><br><span style="font-size:12px;color:var(--suave);display:block;margin:6px 0 8px;">${d.causes}</span>${d.tip}</div>`;
     }
   };
-  return <div className={"ca-guia da-guia " + (className || "")} onClick={onClick} dangerouslySetInnerHTML={{ __html: html }} />;
+  const onInput = (e) => {
+    const inp = e.target.closest("[data-cz-search]");
+    if (!inp) return;
+    const q = (inp.value || "").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    e.currentTarget.querySelectorAll("#czSysTable tbody tr").forEach((r) => {
+      const t = r.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      r.style.display = !q || t.includes(q) ? "" : "none";
+    });
+  };
+  return <div className={"ca-guia da-guia " + (className || "")} onClick={onClick} onInput={onInput} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 function EscalaChecklist({ esc, multi }) {
@@ -67,88 +84,91 @@ function EscalaChecklist({ esc, multi }) {
 }
 
 function Diagnosticos() {
-  const [aberto, setAberto] = useState(null);
   const [sel, setSel] = useState([]);
   const tipos = useMemo(() => guia.dx.lista.map((d, i) => ({
-    id: "dx" + i, ...d, cat: guia.dx.cats[d.t] || "freq",
+    id: "dx" + i, name: d.t, meta: d.s || "", cat: guia.dx.cats[d.t] || "freq",
     pattern: (guia.dx.patterns[d.t] && guia.dx.patterns[d.t].length) ? guia.dx.patterns[d.t]
       : [["Pistas (história)", d.pistas], ["Exame objectivo", d.exame], ["Investigação", d.invest]].filter((x) => x[1]),
   })), []);
-  const porNome = (n) => tipos.find((t) => t.t === n);
-  const togSel = (id) => setSel((s) => (has(s, id) ? s.filter((x) => x !== id) : s.length >= guia.dx.max ? s : [...s, id]));
-  const selecionados = sel.map((id) => tipos.find((t) => t.id === id));
-  const dicasPares = [];
-  for (let i = 0; i < selecionados.length; i++)
-    for (let j = i + 1; j < selecionados.length; j++) {
-      const d = guia.dx.distincoes.find((x) => (x.a === selecionados[i].t && x.b === selecionados[j].t) || (x.a === selecionados[j].t && x.b === selecionados[i].t));
-      if (d) dicasPares.push(d);
+  const togSel = (id) => setSel((s) => {
+    if (has(s, id)) return s.filter((x) => x !== id);
+    const n = s.length >= guia.dx.max ? s.slice(1) : s;
+    return [...n, id];
+  });
+  const tsel = sel.map((id) => tipos.find((t) => t.id === id));
+  const chaves = []; const visto = {};
+  tsel.forEach((t) => t.pattern.forEach(([k]) => { if (!visto[k]) { visto[k] = 1; chaves.push(k); } }));
+  const pares = [];
+  for (let i = 0; i < tsel.length; i++)
+    for (let j = i + 1; j < tsel.length; j++) {
+      const d = guia.dx.distincoes.find((x) => (x.a === tsel[i].name && x.b === tsel[j].name) || (x.a === tsel[j].name && x.b === tsel[i].name));
+      pares.push({ a: tsel[i].name, b: tsel[j].name, tip: d ? d.tip : "Compara as linhas abaixo, em especial <b>pistas (carácter, fatores precipitantes), achados ao exame e exames complementares</b>." });
     }
   return (
     <div className="ca-guia da-guia">
       <div className="g-card">
         <h2>{guia.dx.painel.titulo}</h2>
         <p className="ca-lead" dangerouslySetInnerHTML={{ __html: guia.dx.painel.sub }} />
-        <div className="da-ddx-zona">
-          <div className="da-ddx-zona-h"><span>{guia.dx.painel.zonaTitulo}</span><span>{sel.length} / {guia.dx.max}</span></div>
-          {sel.length === 0 && <div className="ca-an-hint">{guia.dx.painel.hint}</div>}
-          <div className="ca-an-flex">
-            {selecionados.map((t) => (
-              <button key={t.id} className="ca-chip ativo" style={{ background: guia.dx.catColor[t.cat], borderColor: guia.dx.catColor[t.cat], color: "#fff" }} onClick={() => togSel(t.id)}>{t.t} ×</button>
-            ))}
-          </div>
-        </div>
-        {["killer", "grave", "freq"].map((cat) => (
-          <div key={cat} style={{ marginBottom: 10 }}>
-            <div className="ca-an-cat" style={{ color: guia.dx.catColor[cat] }}>{guia.dx.catLabel[cat]}</div>
-            <div className="ca-an-flex">
-              {tipos.filter((t) => t.cat === cat).map((t) => (
-                <button key={t.id} className={"ca-chip" + (has(sel, t.id) ? " ativo" : "")}
-                  style={has(sel, t.id) ? { background: guia.dx.catColor[cat], borderColor: guia.dx.catColor[cat], color: "#fff" } : { borderColor: `color-mix(in srgb, ${guia.dx.catColor[cat]} 45%, transparent)` }}
-                  onClick={() => togSel(t.id)}>{t.t}</button>
+        {sel.length > 0 && (
+          <div className="ddx-zone show">
+            <div className="ddx-zone-h"><span>{guia.dx.painel.zonaTitulo}</span><span className="ddx-count">{sel.length} / {guia.dx.max}</span></div>
+            <div className="ddx-chips">
+              {tsel.map((t) => (
+                <div key={t.id} className="ddx-chip"><span>{t.name}</span><button className="ddx-chip-x" onClick={() => togSel(t.id)}>×</button></div>
               ))}
             </div>
-          </div>
-        ))}
-        {selecionados.length >= 2 && (
-          <div className="da-ddx-comp">
-            {selecionados.map((t) => (
-              <div key={t.id} className="da-ddx-col">
-                <div className="da-ddx-col-h" style={{ borderTopColor: guia.dx.catColor[t.cat] }}>
-                  <span className="ca-card-cat" style={{ color: guia.dx.catColor[t.cat], background: `color-mix(in srgb, ${guia.dx.catColor[t.cat]} 12%, transparent)` }}>{guia.dx.catLabel[t.cat]}</span>
-                  <div className="ca-fonte-titulo">{t.t}</div>
-                  <div className="ca-fonte-revista" dangerouslySetInnerHTML={{ __html: t.s || "" }} />
-                </div>
-                {t.pattern.map(([k, v], i) => (
-                  <div key={i} className="da-ddx-row"><div className="ca-card-sec-key">{k}</div><div dangerouslySetInnerHTML={{ __html: v }} /></div>
-                ))}
-              </div>
-            ))}
+            {sel.length < 2 && <div className="ddx-hint">{guia.dx.painel.hint}</div>}
           </div>
         )}
-        {dicasPares.map((d, i) => (
-          <div key={i} className="ca-keyconcept" style={{ marginTop: 10 }}>
-            <div className="ca-keyconcept-titulo">Como distinguir: {d.a} vs {d.b}</div>
-            <div dangerouslySetInnerHTML={{ __html: d.tip }} />
-          </div>
-        ))}
-      </div>
-      <div className="ob-section-label">Detalhe por diagnóstico</div>
-      {tipos.map((t) => (
-        <div key={t.id} className={"ca-an-dx" + (aberto === t.id ? " aberto" : "")}>
-          <button className="ca-an-dx-head" onClick={() => setAberto(aberto === t.id ? null : t.id)}>
-            <span className="ca-an-dx-nome" style={{ color: guia.dx.catColor[t.cat] }}>{t.t}</span>
-            <span className="ca-an-dx-ver">{aberto === t.id ? "fechar ▲" : "ver mais ▼"}</span>
-          </button>
-          <div className="ca-fonte-revista" dangerouslySetInnerHTML={{ __html: t.s || "" }} />
-          {aberto === t.id && (
-            <div className="ca-an-dx-det">
-              {t.pistas && (<><div className="ca-an-dx-sec">Pistas</div><p dangerouslySetInnerHTML={{ __html: t.pistas }} /></>)}
-              {t.exame && (<><div className="ca-an-dx-sec">Exame</div><p dangerouslySetInnerHTML={{ __html: t.exame }} /></>)}
-              {t.invest && (<><div className="ca-an-dx-sec">Investigação</div><p dangerouslySetInnerHTML={{ __html: t.invest }} /></>)}
+        <div className="ddx-grid">
+          {tipos.map((t) => (
+            <div key={t.id} className={"ddx-card-sel" + (has(sel, t.id) ? " on" : "")} onClick={() => togSel(t.id)}>
+              <div className="ddx-card-name">{t.name}</div>
+              <div className="ddx-card-meta" dangerouslySetInnerHTML={{ __html: t.meta }} />
             </div>
-          )}
+          ))}
         </div>
-      ))}
+        {sel.length > 0 && (
+          <div className="ddx-detail show">
+            {sel.length >= 2 && (
+              <div className="ddx-distinguish">
+                <div className="ddx-distinguish-t">Como distinguir</div>
+                {pares.map((p, i) => (
+                  <div key={i} className="ddx-distinguish-pair">
+                    <span className="ddx-pair-label">{p.a} <span style={{ opacity: .7 }}>vs</span> {p.b}</span>
+                    <div dangerouslySetInnerHTML={{ __html: p.tip }} />
+                  </div>
+                ))}
+              </div>
+            )}
+            <div className="ddx-detail-card">
+              <div className="ddx-detail-head">
+                {sel.length >= 2 && <div className="ddx-detail-eyebrow">Comparação · {sel.length} diagnósticos</div>}
+                <div className="ddx-detail-title">{tsel.map((t) => t.name).join(" · ")}</div>
+              </div>
+              <div className="ddx-section">
+                <div className="ddx-section-t">{sel.length === 1 ? "Padrão clínico" : "Padrões lado a lado"}</div>
+                {sel.length >= 2 && <div style={{ fontSize: "11.5px", color: "var(--suave)", marginBottom: 10, fontStyle: "italic" }}>"não característico" = parâmetro não habitualmente presente nesse diagnóstico (não significa "não avaliado").</div>}
+                <div style={{ overflowX: "auto" }}>
+                  <table className={"ddx-table" + (sel.length >= 2 ? " ddx-table-compare" : "")}>
+                    {sel.length >= 2 && <thead><tr><th>Parâmetro</th>{tsel.map((t) => <th key={t.id}>{t.name}</th>)}</tr></thead>}
+                    <tbody>
+                      {sel.length === 1
+                        ? tsel[0].pattern.map(([k, v], i) => <tr key={i}><td>{k}</td><td dangerouslySetInnerHTML={{ __html: v }} /></tr>)
+                        : chaves.map((k) => (
+                          <tr key={k}><td>{k}</td>{tsel.map((t) => {
+                            const row = t.pattern.find((p) => p[0] === k);
+                            return <td key={t.id} dangerouslySetInnerHTML={{ __html: row ? row[1] : '<span style="color:var(--tenue);font-style:italic;font-size:11.5px">não característico</span>' }} />;
+                          })}</tr>
+                        ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

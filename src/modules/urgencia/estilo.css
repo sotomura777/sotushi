@@ -920,3 +920,92 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
 .da-ddx-col { border: 1px solid var(--borda); border-radius: var(--raio-md); background: var(--superficie); min-width: 220px; }
 .da-ddx-col-h { border-top: 3px solid var(--acento); border-radius: var(--raio-md) var(--raio-md) 0 0; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
 .da-ddx-row { padding: 8px 12px; border-top: 1px solid var(--borda); font-size: 12px; line-height: 1.5; color: var(--texto-2); }
+
+/* ── Guia Dor Abdominal: CSS original (cz/anag/ddx) com tokens ── */
+.da-guia /* Causas sub-sub-tabs (third level inside Guia Teórico > Causas) */
+.cz-subtabs { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 4px; margin: 16px 0 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.da-guia .cz-stab { padding: 8px 16px; font-size: 12.5px; font-weight: 600; color: var(--muted); cursor: pointer; border-radius: 7px; white-space: nowrap; transition: all .15s; user-select: none; }
+.da-guia .cz-stab:hover { color: var(--acento); }
+.da-guia .cz-stab.active { color: #fff; background: var(--acento); }
+.da-guia .cz-panel { display: none; }
+.da-guia .cz-panel.active { display: block; }
+.da-guia /* System causes search */
+.cz-search-wrap { position: relative; margin-bottom: 14px; }
+.da-guia .cz-search-input { width: 100%; padding: 10px 38px 10px 38px; border: 1px solid var(--border2);
+  border-radius: 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;
+  outline: none; box-sizing: border-box; background: var(--surface); color: var(--text);
+  transition: border-color .15s; }
+.da-guia .cz-search-input:focus { border-color: var(--acento); }
+.da-guia .cz-search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--muted); pointer-events: none; }
+.da-guia .cz-search-info { font-size: 11.5px; color: var(--acento); margin: 6px 2px 0; min-height: 14px; }
+.da-guia .cz-sys-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.04em; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
+.da-guia .cz-sys-gi { background: rgba(8,145,178,0.10);  color: #0e7490; }
+.da-guia .cz-sys-hep { background: rgba(217,119,6,0.10);  color: #b45309; }
+.da-guia .cz-sys-uro { background: rgba(76,29,149,0.10);  color: #6d28d9; }
+.da-guia .cz-sys-vasc { background: rgba(220,38,38,0.10);  color: #b91c1c; }
+.da-guia .cz-sys-gin { background: rgba(219,39,119,0.10); color: #be185d; }
+.da-guia .cz-sys-par { background: rgba(120,113,108,0.12); color: #57534e; }
+.da-guia .cz-sys-meta { background: rgba(16,185,129,0.10); color: #047857; }
+.da-guia /* Analgesia ladder (escalonamento) */
+.anag-ladder { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.da-guia .anag-step { display: flex; align-items: stretch; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--surface); overflow: hidden;
+  border-left: 4px solid; }
+.da-guia .anag-step-num { display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Serif Display', serif; font-size: 32px; font-weight: 700;
+  width: 64px; flex-shrink: 0; background: transparent; }
+.da-guia .anag-step-body { padding: 14px 18px; flex: 1; font-size: 13px; line-height: 1.55; }
+.da-guia .anag-step-title { font-family: 'DM Serif Display', serif; font-size: 17px; line-height: 1.2; margin: 0 0 2px; color: var(--text); }
+.da-guia .anag-step-vas { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 10px; }
+.da-guia .anag-step-row { margin-top: 5px; color: var(--text); }
+.da-guia .anag-step-row b { color: var(--muted); font-weight: 600; display: inline-block; min-width: 88px; }
+.da-guia .anag-step-1 { border-left-color: #16a34a; }
+.da-guia .anag-step-1 .anag-step-num { color: #16a34a; }
+.da-guia .anag-step-2 { border-left-color: color-mix(in srgb, var(--acento) 80%, #fff); }
+.da-guia .anag-step-2 .anag-step-num { color: color-mix(in srgb, var(--acento) 80%, #fff); }
+.da-guia .anag-step-3 { border-left-color: #dc2626; }
+.da-guia .anag-step-3 .anag-step-num { color: #dc2626; }
+.da-guia .anag-step-num { width: 48px; font-size: 28px; }
+.da-guia .anag-step-body { padding: 12px 14px; }
+.da-guia .anag-step-row b { min-width: 70px; }
+.da-guia /* ═══ DDX (Diagnósticos lado a lado) ═══ */
+.ddx-zone { display:none; background:var(--surface); border:1.5px solid var(--acento); border-radius:12px; padding:14px 16px; margin-bottom:16px; }
+.da-guia .ddx-zone.show { display:block; }
+.da-guia .ddx-zone-h { font-size:10.5px; font-weight:800; color:var(--acento); text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; }
+.da-guia .ddx-count { color:var(--muted); font-weight:700; }
+.da-guia .ddx-chips { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.da-guia .ddx-chip { background:color-mix(in srgb, var(--acento) calc(0.06 * 100%), transparent); border:1.5px solid var(--acento); border-radius:10px; padding:8px 12px 8px 14px; display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:600; color:#7c2d10; }
+.da-guia .ddx-chip-x { width:20px; height:20px; border-radius:50%; background:var(--acento); color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px; font-weight:700; line-height:1; border:none; padding:0; }
+.da-guia .ddx-chip-x:hover { background:#7c2d10; }
+.da-guia .ddx-clear-btn { margin-left:auto; background:none; border:1.5px solid var(--border); color:var(--muted); padding:6px 12px; border-radius:8px; font-family:inherit; font-size:11.5px; font-weight:700; cursor:pointer; }
+.da-guia .ddx-clear-btn:hover { border-color:var(--acento); color:var(--acento); }
+.da-guia .ddx-hint { font-size:12px; color:var(--muted); margin-top:8px; font-style:italic; }
+.da-guia .ddx-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; margin-bottom:24px; }
+.da-guia .ddx-card-sel { background:var(--surface); border:1.5px solid var(--border); border-radius:12px; padding:16px 18px; cursor:pointer; transition:all .18s; display:flex; flex-direction:column; gap:5px; }
+.da-guia .ddx-card-sel:hover { border-color:var(--acento); transform:translateY(-2px); box-shadow:0 6px 16px color-mix(in srgb, var(--acento) calc(0.10 * 100%), transparent); }
+.da-guia .ddx-card-sel.on { border-color:var(--acento); background:color-mix(in srgb, var(--acento) calc(0.06 * 100%), transparent); box-shadow:0 4px 12px color-mix(in srgb, var(--acento) calc(0.10 * 100%), transparent); }
+.da-guia .ddx-card-cat { font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
+.da-guia .ddx-card-name { font-size:14.5px; font-weight:800; color:var(--text); line-height:1.3; }
+.da-guia .ddx-card-meta { font-size:11.5px; color:var(--muted); font-style:italic; margin-top:2px; }
+.da-guia .ddx-detail { display:none; }
+.da-guia .ddx-detail.show { display:block; }
+.da-guia .ddx-detail-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; margin-bottom:18px; overflow:hidden; }
+.da-guia .ddx-detail-head { background:linear-gradient(135deg,#7c2d10,var(--acento)); color:#fff; padding:16px 22px; }
+.da-guia .ddx-detail-eyebrow { font-size:10.5px; font-weight:800; text-transform:uppercase; letter-spacing:.1em; opacity:.85; }
+.da-guia .ddx-detail-title { font-family:'DM Serif Display',serif; font-size:22px; line-height:1.2; margin-top:4px; }
+.da-guia .ddx-section { padding:18px 22px; border-bottom:1px solid var(--border); }
+.da-guia .ddx-section:last-child { border-bottom:none; }
+.da-guia .ddx-section-t { font-size:11px; font-weight:800; color:var(--acento); text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px; }
+.da-guia .ddx-table { width:100%; border-collapse:collapse; font-size:13px; margin-top:4px; }
+.da-guia .ddx-table td, .da-guia .ddx-table th { padding:9px 12px; border-bottom:1px solid var(--border); vertical-align:top; text-align:left; }
+.da-guia .ddx-table td:first-child { font-weight:700; color:var(--text); width:28%; background:var(--s2); }
+.da-guia .ddx-table thead th { background:color-mix(in srgb, var(--acento) calc(0.06 * 100%), transparent); color:#7c2d10; font-size:12px; font-weight:800; }
+.da-guia .ddx-table tr:last-child td { border-bottom:none; }
+.da-guia .ddx-table-compare th:first-child { width:160px; background:var(--s2); color:var(--text); }
+.da-guia .ddx-distinguish { background:linear-gradient(135deg,color-mix(in srgb, var(--acento) calc(0.05 * 100%), transparent),#fff); border-left:3px solid var(--acento); padding:16px 20px; border-radius:0 10px 10px 0; margin-bottom:18px; font-size:13px; line-height:1.7; }
+.da-guia .ddx-distinguish-t { font-size:11px; font-weight:800; color:var(--acento); text-transform:uppercase; letter-spacing:.08em; margin-bottom:12px; }
+.da-guia .ddx-distinguish-pair { margin-bottom:12px; padding-bottom:12px; border-bottom:1px dashed color-mix(in srgb, var(--acento) calc(0.25 * 100%), transparent); }
+.da-guia .ddx-distinguish-pair:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+.da-guia .ddx-pair-label { display:inline-block; background:var(--acento); color:#fff; font-size:10.5px; font-weight:800; padding:3px 10px; border-radius:999px; text-transform:uppercase; letter-spacing:.04em; margin-bottom:5px; }
+.da-guia .ddx-grid { grid-template-columns:1fr; }

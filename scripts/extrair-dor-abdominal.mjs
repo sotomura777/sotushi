@@ -297,6 +297,9 @@ function transf(html, label) {
   let out = html;
   out = out.replace(/ onclick="toggleGSec\('[^']*'\)"/g, "");
   out = out.replace(/ onclick="showQuad\(this,\\?'(\w+)\\?'\)"/g, ' data-quad="$1"');
+  out = out.replace(/ onclick="switchCzTab\(this,\s*(\d+)\)"/g, ' data-cz-tab="$1"');
+  out = out.replace(/ oninput="czSysSearch\(this\.value\)"/g, ' data-cz-search="1"');
+  out = out.replace(/ oninput="[^"]*"/g, "");
   out = out.replace(/ onclick="[^"]*"/g, "");
   out = out.replace(/stroke="#c2410c"/g, 'stroke="currentColor"');
   out = out.replace(/#c2410c/g, "var(--acento)");
