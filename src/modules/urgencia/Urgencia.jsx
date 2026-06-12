@@ -30,7 +30,7 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
     <header className="hero" style={{ background: gradiente || accent }}>
       <div className="hero-conteudo">
         <button className="voltar" onClick={onVoltar}>← Início</button>
-        <div className="hero-titulo">Urgência & Sintomas</div>
+        <div className="hero-titulo">Sintomas</div>
         <div className="hero-subtitulo">Treino de raciocínio diagnóstico · casos de estudo</div>
       </div>
     </header>

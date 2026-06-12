@@ -47,8 +47,8 @@ export const MODULOS = [
   // ── Próximos módulos a portar (mesmo padrão) ─────────────────────────────
   {
     id: "urgencia",
-    nome: "Urgência",
-    descricao: "Sintomas e suspeitas por sistema",
+    nome: "Sintomas",
+    descricao: "Suspeitas clínicas por sistema",
     accent: "#e85d4a",
     bg: "#fff0ee",
     gradiente: "linear-gradient(135deg,#f08070 0%,#e85d4a 55%,#c2410c 100%)",
