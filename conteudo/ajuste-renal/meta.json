@@ -1,15 +1,68 @@
 {
   "nome": "Ajuste Renal",
-  "subtitulo": "Ajuste farmacológico na insuficiência renal — RCMs, Drugs.com, UpToDate®",
-  "estadios": [
-    { "min": 90, "stage": "G1",  "label": "Normal ou elevada",                  "cor": "#16a34a" },
-    { "min": 60, "stage": "G2",  "label": "Ligeiramente diminuída",             "cor": "#65a30d" },
-    { "min": 45, "stage": "G3a", "label": "Ligeira a moderadamente diminuída",  "cor": "#ca8a04" },
-    { "min": 30, "stage": "G3b", "label": "Moderada a gravemente diminuída",    "cor": "#ea580c" },
-    { "min": 15, "stage": "G4",  "label": "Gravemente diminuída",               "cor": "#dc2626" },
-    { "min": 0,  "stage": "G5",  "label": "Falência renal",                     "cor": "#991b1b" }
+  "titulo": "Ajuste Farmacológico na Insuficiência Renal",
+  "subtitulo": "Ferramenta de estudo · 6 escalões de TFG · Apenas para fins educativos",
+  "eyebrow": "Ferramenta de estudo",
+  "escaloes": [
+    {
+      "key": 0,
+      "label": ">89",
+      "full": "TFG > 89 mL/min/1,73m²",
+      "description": "Função renal normal (G1)"
+    },
+    {
+      "key": 1,
+      "label": "60–89",
+      "full": "TFG 60–89 mL/min/1,73m²",
+      "description": "IR ligeira (G2)"
+    },
+    {
+      "key": 2,
+      "label": "45–60",
+      "full": "TFG 45–60 mL/min/1,73m²",
+      "description": "IR moderada (G3a)"
+    },
+    {
+      "key": 3,
+      "label": "30–45",
+      "full": "TFG 30–45 mL/min/1,73m²",
+      "description": "IR moderada (G3b)"
+    },
+    {
+      "key": 4,
+      "label": "15–30",
+      "full": "TFG 15–30 mL/min/1,73m²",
+      "description": "IR grave (G4)"
+    },
+    {
+      "key": 5,
+      "label": "<15",
+      "full": "TFG < 15 mL/min/1,73m²",
+      "description": "IR terminal / Diálise (G5)"
+    }
   ],
-  "nota": "Tabela apenas aplicável a adultos (>18 anos). O ajuste nos doentes hemodialisados não foi contemplado de forma detalhada. A consulta desta ferramenta não dispensa a leitura atenta dos respetivos RCMs.",
-  "bibliografia": "Resumo das Características do Medicamento (RCMs/SmPCs via Infarmed e EMA), UpToDate® (uptodate.com), Drugs.com, Medscape Drug Reference, GlobalRPh. Estadiamento DRC (G1-G5): KDIGO 2024. Indicações iSGLT2: ensaios DAPA-CKD e EMPA-KIDNEY.",
-  "legenda": "CI = Contraindicado | Td = Titulação de dose | IR = Insuficiência renal | FR = Função renal | DM2 = Diabetes tipo 2 | IC = Insuficiência cardíaca | DRC = Doença renal crónica"
+  "estados": [
+    {
+      "key": "ok",
+      "label": "Sem ajuste",
+      "short": "OK"
+    },
+    {
+      "key": "adjust",
+      "label": "Ajustar dose",
+      "short": "Ajuste"
+    },
+    {
+      "key": "caution",
+      "label": "Precaução",
+      "short": "Cautela"
+    },
+    {
+      "key": "ci",
+      "label": "Contraindicado",
+      "short": "CI"
+    }
+  ],
+  "disclaimer": "Ferramenta de estudo. Este conteúdo destina-se exclusivamente a fins educativos e de apoio ao estudo. Não constitui apoio à prática clínica, recomendação terapêutica ou substituto do juízo clínico profissional. Não deve ser utilizado para tomada de decisões em contexto assistencial. Em zonas de transição entre escalões (ex: cutoffs 45–50, 25–30), confirmar sempre com TFG exata e fontes oficiais.",
+  "bibliografia": "Resumo das Características do Medicamento (Infarmed); UpToDate®; MGFamiliar — Tabela de Ajuste Farmacológico na IR (2023)."
 }

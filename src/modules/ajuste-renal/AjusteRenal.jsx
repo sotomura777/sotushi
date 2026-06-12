@@ -1,229 +1,165 @@
 import { useState, useMemo } from "react";
 import meta from "@conteudo/ajuste-renal/meta.json";
-import farmacos from "@conteudo/ajuste-renal/farmacos.json";
-import { getAjuste, getGravidade, getEstadio, getCatCor } from "./logica";
-import { GRAVIDADE } from "@/design/tokens";
+import FARMACOS from "@conteudo/ajuste-renal/farmacos.json";
+import { grupos as gruposDe, filtrar, contagens, agrupar } from "./logica";
 import { Ico } from "@/components/icones";
-import { limparEmojis } from "@/components/emoji";
-import { normalizar } from "@/lib/texto";
+import "./estilo.css";
 
-const CATEGORIAS = [...new Set(farmacos.map((d) => d.cat))];
+// Cor + ícone de cada estado (apresentação pura; os rótulos vêm do meta.json).
+// A cor "forte" é passada como --cor e o CSS deriva fundos translúcidos
+// (funciona em tema claro e escuro sem pastéis fixos).
+const ESTADO = {
+  ok: { cor: "#16a34a", icone: "checkCircle" },
+  adjust: { cor: "#ca8a04", icone: "alertCircle" },
+  caution: { cor: "#ea580c", icone: "warn" },
+  ci: { cor: "#dc2626", icone: "xCircle" },
+};
+const ROTULO = Object.fromEntries(meta.estados.map((e) => [e.key, e.label]));
+const ORDEM_ESTADO = ["ok", "adjust", "caution", "ci"];
+const GRUPOS = gruposDe(FARMACOS);
+
+function Etiqueta({ s, mini }) {
+  const e = ESTADO[s];
+  return (
+    <span className={"ar-tag" + (mini ? " mini" : "")} style={{ "--cor": e.cor }}>
+      <Ico name={e.icone} s={mini ? 13 : 14} />{!mini && ROTULO[s]}
+    </span>
+  );
+}
 
 export default function AjusteRenal({ accent = "#0f766e", gradiente, onVoltar }) {
-  const [tfg, setTfg] = useState("");
-  const [pesquisa, setPesquisa] = useState("");
-  const [categoria, setCategoria] = useState("Todos");
-  const [soComAjuste, setSoComAjuste] = useState(false);
+  const [escalao, setEscalao] = useState(0);
+  const [query, setQuery] = useState("");
+  const [gruposSel, setGruposSel] = useState([]);
+  const [ocultarOk, setOcultarOk] = useState(false);
+  const [filtrosAbertos, setFiltrosAbertos] = useState(false);
 
-  const tfgNum = tfg === "" ? null : parseInt(tfg, 10);
-  const estadio = useMemo(() => getEstadio(tfgNum, meta.estadios), [tfgNum]);
+  const range = meta.escaloes[escalao];
+  const filtrados = useMemo(
+    () => filtrar(FARMACOS, { query, gruposSel, ocultarOk, escalao }),
+    [query, gruposSel, ocultarOk, escalao]
+  );
+  const cont = useMemo(() => contagens(FARMACOS, { query, gruposSel, escalao }), [query, gruposSel, escalao]);
+  const blocos = useMemo(() => agrupar(filtrados), [filtrados]);
 
-  const filtrados = useMemo(() => {
-    let r = farmacos;
-    if (categoria !== "Todos") r = r.filter((d) => d.cat === categoria);
-    if (pesquisa) {
-      const s = normalizar(pesquisa);
-      r = r.filter(
-        (d) =>
-          normalizar(d.name).includes(s) ||
-          normalizar(d.sub).includes(s) ||
-          normalizar(d.cat).includes(s)
-      );
-    }
-    if (soComAjuste && tfgNum !== null) {
-      r = r.filter((d) => {
-        const a = getAjuste(d, tfgNum);
-        return !a.includes("Sem ajuste") && !a.includes("Sem necessidade");
-      });
-    }
-    return r;
-  }, [categoria, pesquisa, soComAjuste, tfgNum]);
-
-  const agrupados = useMemo(() => {
-    const g = {};
-    filtrados.forEach((d) => {
-      const k = `${d.cat} — ${d.sub}`;
-      if (!g[k]) g[k] = { cat: d.cat, sub: d.sub, drugs: [] };
-      g[k].drugs.push(d);
-    });
-    return Object.values(g);
-  }, [filtrados]);
+  const alternarGrupo = (g) => setGruposSel((s) => (s.includes(g) ? s.filter((x) => x !== g) : [...s, g]));
+  const limpar = () => { setQuery(""); setGruposSel([]); setOcultarOk(false); };
+  const temFiltros = query || gruposSel.length > 0 || ocultarOk;
 
   return (
-    <div style={{ "--acento": accent }}>
+    <div className="ar" style={{ "--acento": accent }}>
       <header className="hero" style={{ background: gradiente || accent }}>
         <div className="hero-conteudo">
-          {onVoltar && (
-            <button className="voltar" onClick={onVoltar}>
-              ← Início
-            </button>
-          )}
-          <div className="hero-titulo">{meta.nome}</div>
+          {onVoltar && <button className="voltar" onClick={onVoltar}>← Início</button>}
+          <div className="secao-label" style={{ color: "var(--acento)", marginBottom: 2 }}>{meta.eyebrow}</div>
+          <div className="hero-titulo">{meta.titulo}</div>
           <div className="hero-subtitulo">{meta.subtitulo}</div>
         </div>
       </header>
 
       <div className="modulo-corpo">
-        {/* Input de TFG */}
-        <div className="cartao" style={{ padding: 20, margin: "16px 0" }}>
-          <label className="secao-label" style={{ marginBottom: 8, display: "block" }}>
-            Taxa de Filtração Glomerular (TFG)
-          </label>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <input
-              type="number"
-              min="0"
-              max="200"
-              value={tfg}
-              onChange={(e) => setTfg(e.target.value)}
-              placeholder="Ex: 45"
-              className="campo"
-              style={{
-                fontSize: 32,
-                fontWeight: 700,
-                color: estadio ? estadio.cor : "var(--texto-2)",
-                background: "#fafbfc",
-              }}
-            />
-            <span style={{ fontSize: 14, color: "var(--tenue)", fontWeight: 500, whiteSpace: "nowrap" }}>
-              mL/min/1.73m²
-            </span>
+        {/* Seletor de TFG — 6 escalões */}
+        <div className="ar-tfg cartao">
+          <div className="ar-tfg-topo">
+            <span className="secao-label" style={{ margin: 0 }}>Taxa de filtração glomerular</span>
+            <span className="ar-tfg-unidade">mL/min/1,73m²</span>
           </div>
+          <div className="ar-tfg-grid">
+            {meta.escaloes.map((r, i) => (
+              <button key={r.key} className={"ar-tfg-btn" + (i === escalao ? " ativo" : "")} onClick={() => setEscalao(i)}>
+                <span className="ar-tfg-label">{r.label}</span>
+                <span className="ar-tfg-stage">{r.description.match(/\(([^)]+)\)/)?.[1] || ""}</span>
+              </button>
+            ))}
+          </div>
+          <input className="ar-tfg-range" type="range" min={0} max={5} step={1} value={escalao}
+            onChange={(e) => setEscalao(Number(e.target.value))} />
+          <div className="ar-tfg-info">
+            <div className="ar-tfg-info-full">{range.full}</div>
+            <div className="ar-tfg-info-desc">{range.description}</div>
+          </div>
+        </div>
 
-          {estadio && (
-            <div
-              style={{
-                marginTop: 12,
-                display: "flex",
-                alignItems: "center",
-                gap: 10,
-                padding: "10px 14px",
-                background: `${estadio.cor}10`,
-                borderRadius: "var(--raio-md)",
-                border: `1px solid ${estadio.cor}25`,
-              }}
-            >
-              <span style={{ background: estadio.cor, color: "#fff", fontWeight: 700, fontSize: 13, padding: "3px 10px", borderRadius: 6 }}>
-                {estadio.stage}
-              </span>
-              <span style={{ fontSize: 14, color: estadio.cor, fontWeight: 500 }}>{estadio.label}</span>
+        {/* Contagens por estado */}
+        <div className="ar-contagens">
+          {ORDEM_ESTADO.map((k) => (
+            <div key={k} className="ar-cont" style={{ "--cor": ESTADO[k].cor }}>
+              <div className="ar-cont-topo"><Ico name={ESTADO[k].icone} s={16} /><span className="ar-cont-num">{cont[k]}</span></div>
+              <div className="ar-cont-label">{ROTULO[k]}</div>
             </div>
-          )}
-        </div>
-
-        {/* Pesquisa + filtro "apenas c/ ajuste" */}
-        <div style={{ display: "flex", gap: 10, marginBottom: 10, flexWrap: "wrap" }}>
-          <input
-            type="text"
-            value={pesquisa}
-            onChange={(e) => setPesquisa(e.target.value)}
-            placeholder="Pesquisar fármaco…"
-            className="campo"
-            style={{ flex: 1, minWidth: 200 }}
-          />
-          {tfgNum !== null && (
-            <button
-              onClick={() => setSoComAjuste((v) => !v)}
-              className="filtro"
-              style={
-                soComAjuste
-                  ? { background: "#f0fdfa", color: accent, border: `1px solid ${accent}`, padding: "10px 16px" }
-                  : { padding: "10px 16px", border: "1px solid var(--borda)" }
-              }
-            >
-              {soComAjuste && <Ico name="check" s={13} style={{ marginRight: 4 }} />}Apenas c/ ajuste
-            </button>
-          )}
-        </div>
-
-        {/* Pílulas de categoria */}
-        <div className="filtros">
-          {["Todos", ...CATEGORIAS].map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setCategoria(cat)}
-              className={"filtro" + (categoria === cat ? " filtro--ativo" : "")}
-              style={categoria === cat ? { background: cat === "Todos" ? accent : getCatCor(cat) } : undefined}
-            >
-              {cat}
-            </button>
           ))}
         </div>
 
-        {/* Contagem */}
-        <div style={{ fontSize: 12, color: "var(--tenue)", margin: "4px 0 12px", fontWeight: 500 }}>
-          {filtrados.length} fármaco{filtrados.length !== 1 ? "s" : ""} encontrado
-          {filtrados.length !== 1 ? "s" : ""}
+        {/* Pesquisa + filtros */}
+        <div className="ar-barra">
+          <div className="ar-busca">
+            <Ico name="search" s={16} c="var(--suave)" />
+            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Pesquisar fármaco ou classe..." />
+          </div>
+          <button className={"ar-btn-filtro" + (filtrosAbertos ? " ativo" : "")} onClick={() => setFiltrosAbertos((v) => !v)}>
+            <Ico name="filtro" s={15} />Filtros{gruposSel.length > 0 && <span className="ar-filtro-badge">{gruposSel.length}</span>}
+          </button>
+          <label className="ar-check">
+            <input type="checkbox" checked={ocultarOk} onChange={(e) => setOcultarOk(e.target.checked)} />
+            Ocultar "sem ajuste"
+          </label>
+          {temFiltros && <button className="ar-btn-limpar" onClick={limpar}><Ico name="close" s={14} />Limpar</button>}
         </div>
 
-        {/* Lista agrupada */}
-        {agrupados.map((grupo, gi) => (
-          <div key={gi} style={{ marginBottom: 16 }}>
-            <div className="secao-label" style={{ color: getCatCor(grupo.cat) }}>
-              {grupo.sub}
+        {filtrosAbertos && (
+          <div className="ar-grupos cartao">
+            <div className="secao-label" style={{ margin: "0 0 8px" }}>Classes terapêuticas</div>
+            <div className="filtros">
+              {GRUPOS.map((g) => (
+                <button key={g} className={"filtro" + (gruposSel.includes(g) ? " filtro--ativo" : "")}
+                  style={gruposSel.includes(g) ? { background: accent, borderColor: accent, color: "#fff" } : undefined}
+                  onClick={() => alternarGrupo(g)}>{g}</button>
+              ))}
             </div>
-            <div className="lista">
-              {grupo.drugs.map((drug, di) => {
-                const adj = tfgNum !== null ? getAjuste(drug, tfgNum) : null;
-                const sev = adj ? getGravidade(adj) : null;
-                const sc = sev ? GRAVIDADE[sev] : null;
-                return (
-                  <div key={di} className="lista-item">
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-                      <div>
-                        <div style={{ fontWeight: 600, fontSize: 15, color: "var(--texto)", display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
-                          {drug.name}
-                          {drug.updated && (
-                            <span style={{ fontSize: 9, fontWeight: 700, background: "#dbeafe", color: "#1d4ed8", padding: "1px 5px", borderRadius: 4, letterSpacing: "0.3px" }}>
-                              ATUALIZADO {drug.updated}
-                            </span>
-                          )}
-                        </div>
-                        <div style={{ fontSize: 12, color: "var(--tenue)", marginTop: 2 }}>{drug.range}</div>
-                      </div>
-                      {sev && (
-                        <div className="badge" style={{ background: sc.fundo, color: sc.texto, border: `1px solid ${sc.borda}` }}>
-                          {sc.etiqueta}
-                        </div>
-                      )}
-                    </div>
-                    {adj && (
-                      <div
-                        style={{
-                          marginTop: 8,
-                          padding: "8px 12px",
-                          borderRadius: "var(--raio-sm)",
-                          background: sc.fundo,
-                          border: `1px solid ${sc.borda}`,
-                          fontSize: 13,
-                          color: sc.texto,
-                          lineHeight: 1.5,
-                          fontWeight: 500,
-                        }}
-                      >
-                        {limparEmojis(adj)}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        ))}
-
-        {filtrados.length === 0 && (
-          <div style={{ textAlign: "center", padding: 40, color: "var(--tenue)" }}>
-            Nenhum fármaco encontrado.
           </div>
         )}
 
-        {/* Nota / bibliografia (conteúdo, vindo do meta.json) */}
-        <div className="rodape">
-          <strong>Nota:</strong> {meta.nota}
-          <br />
-          Bibliografia: {meta.bibliografia}
-          <br />
-          Legenda: {meta.legenda}
+        {/* Resultados */}
+        {filtrados.length === 0 ? (
+          <div className="ar-vazio">
+            <div className="ar-vazio-titulo">Nenhum fármaco corresponde aos filtros</div>
+            <div className="ar-vazio-sub">Tente outro nome, classe ou limpe os filtros.</div>
+          </div>
+        ) : (
+          <div className="ar-blocos">
+            {blocos.map((b, i) => (
+              <div key={i} className="ar-bloco cartao">
+                <div className="ar-bloco-cab">
+                  <span className="ar-bloco-grupo">{b.group}</span>
+                  <span className="ar-bloco-sep">·</span>
+                  <span className="ar-bloco-classe">{b.class}</span>
+                </div>
+                {b.farmacos.map((f, fi) => {
+                  const nivel = f.L[escalao];
+                  return (
+                    <div key={fi} className="ar-farmaco" style={{ "--cor": ESTADO[nivel.s].cor }}>
+                      <div className="ar-farmaco-info">
+                        <div className="ar-farmaco-linha1">
+                          <span className="ar-farmaco-nome">{f.name}</span>
+                          <span className="ar-farmaco-dose">{f.dose}</span>
+                        </div>
+                        <div className="ar-farmaco-nota">{nivel.t}</div>
+                      </div>
+                      <Etiqueta s={nivel.s} />
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="ar-rodape">
+          <div className="ar-rodape-aviso">
+            <Ico name="info" s={14} />
+            <div dangerouslySetInnerHTML={{ __html: meta.disclaimer.replace(/^Ferramenta de estudo\./, "<strong>Ferramenta de estudo.</strong>") }} />
+          </div>
+          <div className="ar-rodape-biblio"><strong>Bibliografia consultada:</strong> {meta.bibliografia}</div>
         </div>
       </div>
     </div>

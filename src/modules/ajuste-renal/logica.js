@@ -1,54 +1,50 @@
 // ============================================================================
-// LÓGICA DO MÓDULO AJUSTE RENAL
-// Funções puras, sem dados clínicos embutidos. Os dados vêm de
-// /conteudo/ajuste-renal/. Comportamento idêntico ao módulo original.
+// LÓGICA — Ajuste Renal (pura, sem dados clínicos embutidos)
+// As funções recebem a lista de fármacos (importada de @conteudo) como dados.
+// Cada fármaco tem L[6]: o estado/nota para cada um dos 6 escalões de TFG.
 // ============================================================================
+import { normalizar } from "@/lib/texto";
 
-// Dado um fármaco e uma TFG, devolve a nota de ajuste correspondente.
-export function getAjuste(farmaco, tfg) {
-  for (const regra of farmaco.adjust) {
-    if (tfg >= regra.min && tfg <= regra.max) return regra.note;
+// Grupos terapêuticos presentes nos dados, pela ordem de 1.ª aparição
+// (mantém o agrupamento clínico do conteúdo, não alfabético).
+export function grupos(farmacos) {
+  return [...new Set(farmacos.map((f) => f.group))];
+}
+
+// Filtra por pesquisa (nome ou classe) + grupos selecionados + ocultar "sem
+// ajuste" no escalão atual.
+export function filtrar(farmacos, { query = "", gruposSel = [], ocultarOk = false, escalao = 0 } = {}) {
+  const q = normalizar(query);
+  const sel = new Set(gruposSel);
+  return farmacos.filter((f) => {
+    if (q && !normalizar(f.name).includes(q) && !normalizar(f.class).includes(q)) return false;
+    if (sel.size > 0 && !sel.has(f.group)) return false;
+    if (ocultarOk && f.L[escalao].s === "ok") return false;
+    return true;
+  });
+}
+
+// Contagem por estado no escalão atual, respeitando pesquisa e grupos
+// (mas ignorando "ocultar OK", para o contador OK continuar a fazer sentido).
+export function contagens(farmacos, { query = "", gruposSel = [], escalao = 0 } = {}) {
+  const q = normalizar(query);
+  const sel = new Set(gruposSel);
+  const c = { ok: 0, adjust: 0, caution: 0, ci: 0 };
+  for (const f of farmacos) {
+    if (q && !normalizar(f.name).includes(q) && !normalizar(f.class).includes(q)) continue;
+    if (sel.size > 0 && !sel.has(f.group)) continue;
+    c[f.L[escalao].s]++;
   }
-  return "Sem dados disponíveis";
+  return c;
 }
 
-// Infere a gravidade a partir do TEXTO da nota.
-// CONVENÇÃO (importante para quem edita o conteúdo):
-//   ⛔  ou "Contraindicado" / "Suspender"                  -> danger  (vermelho)
-//   ⚠️  ou "Não recomendado" / "Evitar" / "Não deve"        -> warning (laranja)
-//       "Sem ajuste" / "Sem necessidade"                    -> safe    (verde)
-//   qualquer outra coisa                                    -> caution (azul)
-export function getGravidade(nota) {
-  if (nota.includes("⛔") || nota.includes("Contraindicado") || nota.includes("Suspender")) return "danger";
-  if (nota.includes("⚠️") || nota.includes("Não recomendado") || nota.includes("Evitar") || nota.includes("Não deve")) return "warning";
-  if (nota.includes("Sem ajuste") || nota.includes("Sem necessidade")) return "safe";
-  return "caution";
-}
-
-// Devolve o estádio DRC para uma dada TFG, a partir da tabela do meta.json.
-// A tabela está ordenada por `min` decrescente; devolve o primeiro estádio
-// cujo limiar a TFG atinge.
-export function getEstadio(tfg, estadios) {
-  if (tfg === null || Number.isNaN(tfg)) return null;
-  for (const e of estadios) {
-    if (tfg >= e.min) return e;
+// Agrupa os fármacos filtrados por (grupo · classe), preservando a ordem do conteúdo.
+export function agrupar(farmacos) {
+  const mapa = new Map();
+  for (const f of farmacos) {
+    const chave = f.group + "|" + f.class;
+    if (!mapa.has(chave)) mapa.set(chave, { group: f.group, class: f.class, farmacos: [] });
+    mapa.get(chave).farmacos.push(f);
   }
-  return null;
-}
-
-// Cores por categoria (apresentação específica deste módulo).
-// Categorias não listadas recebem uma cor neutra.
-export const CAT_CORES = {
-  "Anti-Hipertensores": "#2563eb",
-  "Anti-Dislipidémicos": "#7c3aed",
-  "Anti-Diabéticos": "#0891b2",
-  "Psicofármacos": "#be185d",
-  "Analgésicos": "#dc2626",
-  "Anticoagulantes": "#ea580c",
-  "Antibióticos": "#059669",
-  "Outros": "#4b5563",
-};
-
-export function getCatCor(cat) {
-  return CAT_CORES[cat] || "#4b5563";
+  return [...mapa.values()];
 }

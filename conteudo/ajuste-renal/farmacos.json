@@ -1,2474 +1,5698 @@
 [
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "IECA",
-    "name": "Captopril",
-    "range": "12,5-150 mg/dia",
-    "adjust": [
-      {
-        "min": 21,
-        "max": 40,
-        "note": "100mg/dia"
-      },
-      {
-        "min": 10,
-        "max": 20,
-        "note": "75mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "37,5mg/dia"
-      },
-      {
-        "min": 41,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "IECA",
-    "name": "Enalapril",
-    "range": "2,5-40 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 30,
-        "note": "Dose inicial de 2,5 mg/dia. Titular conforme resposta tensional e eletrolítica"
-      },
-      {
-        "min": 31,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "IECA",
-    "name": "Ramipril",
-    "range": "1,25-10 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 60,
-        "note": "Máx 5mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Iniciar com 1,25mg/dia (máx 5mg/dia)"
-      },
-      {
-        "min": 61,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "IECA",
-    "name": "Lisinopril",
-    "range": "2,5-80 mg/dia",
-    "adjust": [
-      {
-        "min": 10,
-        "max": 29,
-        "note": "Iniciar com 2,5-5mg/dia, titular"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "Iniciar com 2,5mg/dia, titular"
-      },
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "IECA",
-    "name": "Perindopril",
-    "range": "2-10 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 60,
-        "note": "2,5mg/dia"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "2,5mg/dia (dias alternados)"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "2,5mg/dia no dia da diálise"
-      },
-      {
-        "min": 61,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "ARA",
-    "name": "Valsartan",
-    "range": "40-160 mg/dia",
-    "adjust": [
-      {
-        "min": 10,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "ARA",
-    "name": "Losartan",
-    "range": "12,5-100 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "ARA",
-    "name": "Candesartan",
-    "range": "4-32 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "Iniciar 4mg/dia, titular, monitorização apertada da FR, máx 16mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "Sem evidência (considerar suspender)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "ARA",
-    "name": "Olmesartan",
-    "range": "10-40 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 20,
-        "max": 59,
-        "note": "Máx 20mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 19,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "ARA",
-    "name": "Irbesartan",
-    "range": "75-300 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico (Hemodiálise: dose inicial de 75mg)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "β-Bloqueadores",
-    "name": "Bisoprolol",
-    "range": "2,5-10 mg/dia",
-    "adjust": [
-      {
-        "min": 20,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 19,
-        "note": "Máx 10mg/dia (pode dividir em 2 tomas)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "β-Bloqueadores",
-    "name": "Nebivolol",
-    "range": "5-10 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 20,
-        "max": 29,
-        "note": "Dose inicial 2,5mg/dia (máx 5mg/dia)"
-      },
-      {
-        "min": 0,
-        "max": 19,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "β-Bloqueadores",
-    "name": "Propranolol",
-    "range": "10-320 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "IR: iniciar baixa dose e titular com cuidado (monitorizar)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "β-Bloqueadores",
-    "name": "Carvedilol",
-    "range": "6,25-50 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "β-Bloqueadores",
-    "name": "Metoprolol",
-    "range": "100-300 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico (até 200mg/dia)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "Diuréticos",
-    "name": "Furosemida",
-    "range": "20-80 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (iniciar com 40mg, titular e aumentar intervalos). Diálise: manutenção 250–1500mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "Diuréticos",
-    "name": "Espironolactona",
-    "range": "50-200 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Suspender. CI na IR aguda"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "Diuréticos",
-    "name": "Indapamida",
-    "range": "1,5-2,5 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "Diuréticos",
-    "name": "Hidroclorotiazida",
-    "range": "12,5-50 mg/dia",
-    "adjust": [
-      {
-        "min": 10,
-        "max": 999,
-        "note": "Sem ajuste (eficácia diminuída para TFG<30)"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "Bloq. Canais Ca²⁺",
-    "name": "Amlodipina",
-    "range": "5-10 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Hipertensores",
-    "sub": "Bloq. Canais Ca²⁺",
-    "name": "Lercanidipina",
-    "range": "10-20 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "Iniciar com baixa dose, titular"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Estatinas",
-    "name": "Atorvastatina",
-    "range": "10-80 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Estatinas",
-    "name": "Fluvastatina",
-    "range": "20-80 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Titular com cautela se dose > 40mg"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Estatinas",
-    "name": "Pitavastatina",
-    "range": "1-4 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 59,
-        "note": "Iniciar com baixa dose, titular. Dose de 4mg não recomendada"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Estatinas",
-    "name": "Pravastatina",
-    "range": "10-40 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Iniciar com 10mg, titular com cuidado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Estatinas",
-    "name": "Rosuvastatina",
-    "range": "5-40 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Iniciar com 5mg/dia. CI dose 40mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado (qualquer dose)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Estatinas",
-    "name": "Sinvastatina",
-    "range": "10-80 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Precaução para dose > 10mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Inib. absorção colesterol",
-    "name": "Ezetimiba",
-    "range": "10 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Dislipidémicos",
-    "sub": "Fibratos",
-    "name": "Fenofibrato",
-    "range": "145-267 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Não exceder 100mg standard ou 67mg micronizado/dia"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inib. α-glucosidase",
-    "name": "Acarbose",
-    "range": "50-200mg 3x/dia",
-    "adjust": [
-      {
-        "min": 25,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 24,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores SGLT2",
-    "name": "Empagliflozina",
-    "range": "10-25 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "DM2: sem ajuste. IC/DRC: sem ajuste"
-      },
-      {
-        "min": 20,
-        "max": 29,
-        "note": "DM2: ⛔ CI. IC/DRC: sem ajuste (pode iniciar se ≥20)"
-      },
-      {
-        "min": 0,
-        "max": 19,
-        "note": "⛔ Contraindicado (todas as indicações)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores SGLT2",
-    "name": "Dapagliflozina",
-    "range": "10 mg",
-    "adjust": [
-      {
-        "min": 45,
-        "max": 999,
-        "note": "DM2: sem ajuste. IC/DRC: sem ajuste"
-      },
-      {
-        "min": 25,
-        "max": 44,
-        "note": "DM2: ⚠️ não iniciar (ineficaz). IC/DRC: sem ajuste (pode iniciar e manter)"
-      },
-      {
-        "min": 0,
-        "max": 24,
-        "note": "⚠️ Não iniciar. Se já em tratamento por IC/DRC: pode manter até diálise"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores SGLT2",
-    "name": "Ertuglifozina",
-    "range": "5-15 mg/dia",
-    "adjust": [
-      {
-        "min": 45,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 44,
-        "note": "⚠️ Não iniciar"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Suspender"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores SGLT2",
-    "name": "Canaglifozina",
-    "range": "100-300 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Iniciar com 100mg/dia (titular máx 300mg/dia)"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Máx 100mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⚠️ Não iniciar; pode manter em doentes que já estejam a tomar"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Agonistas GLP-1",
-    "name": "Semaglutido",
-    "range": "0,25-2 mg/sem (SC)",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (evidência limitada na IR grave; não recomendado na IRC terminal)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Agonistas GLP-1",
-    "name": "Exenatido",
-    "range": "2 mg/sem (SC)",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Agonistas GLP-1",
-    "name": "Liraglutido",
-    "range": "0,6-1,8 mg/sem (SC)",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (não recomendado na DRC terminal)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Agonistas GLP-1",
-    "name": "Dulaglutido",
-    "range": "0,75-4,5 mg/sem (SC)",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (não recomendado na DRC terminal)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Sulfonilureias",
-    "name": "Gliclazida",
-    "range": "30-320 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste – monitorização cuidadosa"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Sulfonilureias",
-    "name": "Glimepirida",
-    "range": "1-6 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado (IR grave)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Sulfonilureias",
-    "name": "Glipizida",
-    "range": "2,5-50 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado (IR grave)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Biguanida",
-    "name": "Metformina",
-    "range": "500-3000 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 89,
-        "note": "Máx 3g; considerar reduzir se agravamento da FR"
-      },
-      {
-        "min": 45,
-        "max": 59,
-        "note": "Máx 2g"
-      },
-      {
-        "min": 30,
-        "max": 44,
-        "note": "Máx 1g (não iniciar)"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      },
-      {
-        "min": 90,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Glitazona",
-    "name": "Pioglitazona",
-    "range": "15-45 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores DPP-4",
-    "name": "Linagliptina",
-    "range": "5 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores DPP-4",
-    "name": "Saxagliptina",
-    "range": "5 mg/dia",
-    "adjust": [
-      {
-        "min": 45,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 15,
-        "max": 44,
-        "note": "Máx 2,5 mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "⛔ Suspender (IR terminal)"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores DPP-4",
-    "name": "Sitagliptina",
-    "range": "100 mg/dia",
-    "adjust": [
-      {
-        "min": 45,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 44,
-        "note": "50 mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "25 mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores DPP-4",
-    "name": "Vildagliptina",
-    "range": "50-100 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 49,
-        "note": "Reduzir para 50mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Anti-Diabéticos",
-    "sub": "Inibidores DPP-4",
-    "name": "Alogliptina",
-    "range": "25 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "12,5mg/dia (50% da dose)"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "6,25mg/dia (25% da dose)"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRS",
-    "name": "Fluoxetina",
-    "range": "20-60 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRS",
-    "name": "Fluvoxamina",
-    "range": "50-300 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Iniciar com a dose mais baixa e titular com monitorização da FR"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRS",
-    "name": "Sertralina",
-    "range": "50-200 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRS",
-    "name": "Paroxetina",
-    "range": "20-60 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Máx 20mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRS",
-    "name": "Escitalopram",
-    "range": "10-20 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Iniciar com menor dose possível e titular"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRSN",
-    "name": "Venlafaxina",
-    "range": "75-375 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Reduzir a dose em 50%"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "ISRSN",
-    "name": "Duloxetina",
-    "range": "60 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Suspender"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Outros AD",
-    "name": "Amitriptilina",
-    "range": "25-150 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (monitorizar)"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Outros AD",
-    "name": "Vortioxetina",
-    "range": "5-20 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Outros AD",
-    "name": "Mirtazapina",
-    "range": "15-45 mg/dia",
-    "adjust": [
-      {
-        "min": 40,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 39,
-        "note": "Menor dose possível e monitorizar (concentrações aumentadas)"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Outros AD",
-    "name": "Trazodona",
-    "range": "50-300 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (IR grave: monitorização apertada)"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Alprazolam",
-    "range": "0,25-3 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Na IR ligeira-grave: monitorizar e eventual redução"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Bromazepam",
-    "range": "1,5-18 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Iniciar com dose baixa, titular e monitorizar"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Loflazepato de etilo",
-    "range": "1-3 mg",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Redução de dose para metade"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Clorazepato dipotássico",
-    "range": "5-30 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Reduzir dose (5-15mg), iniciar com 5mg, titular com monitorização"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Diazepam",
-    "range": "5-20 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Lorazepam",
-    "range": "0,5-2,5 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (titular, monitorizar)"
-      }
-    ]
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Benzodiazepinas",
-    "name": "Oxazepam",
-    "range": "15-120 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (titular, monitorizar)"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "AINEs",
-    "name": "Celecoxib",
-    "range": "100-400 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Vigilância da função renal"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "AINEs",
-    "name": "Cetoprofeno",
-    "range": "25-75 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 89,
-        "note": "Máx 50mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 59,
-        "note": "⛔ Contraindicado"
-      },
-      {
-        "min": 90,
-        "max": 999,
-        "note": "Sem ajuste"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "AINEs",
-    "name": "Diclofenac",
-    "range": "75-150 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Recomenda-se redução"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "AINEs",
-    "name": "Ibuprofeno",
-    "range": "400-1200 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "AINEs",
-    "name": "Meloxicam",
-    "range": "7,5-15 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "AINEs",
-    "name": "Naproxeno",
-    "range": "500-1500 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Monitorização da função renal"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Não opióides",
-    "name": "Metamizol",
-    "range": "575-3450 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste em ciclos curtos (evitar doses múltiplas/elevadas)"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Não opióides",
-    "name": "Paracetamol",
-    "range": "500-4000 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 49,
-        "note": "500mg 6/6h"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "500mg 8/8h"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Opióides",
-    "name": "Paracetamol + Codeína",
-    "range": "500/20 - 4000/360 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "50-75% da dose"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⚠️ Evitar (se necessário: intervalos ≥ 8h)"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Opióides",
-    "name": "Fentanilo (transdérmico)",
-    "range": "12,5-300 µg/h",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 49,
-        "note": "75% da dose"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "50% da dose"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Opióides",
-    "name": "Morfina",
-    "range": "10-250 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "50-75% da dose e aumento de intervalos"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "⚠️ Evitar (eventualmente 25-50% da dose)"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Opióides",
-    "name": "Tapentadol",
-    "range": "25-600 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Opióides",
-    "name": "Tramadol",
-    "range": "50-400 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Lib. imediata: intervalos 12/12h + máx 200mg/dia. Lib. prolongada: evitar"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "Heparinas",
-    "name": "Heparina Não-Fracionada",
-    "range": "Variável",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "Heparinas",
-    "name": "Enoxaparina (HBPM)",
-    "range": "Variável",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Profilaxia e tratamento: sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "Profilaxia: sem ajuste na maioria. Tratamento: sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Profilaxia: 20-30mg/dia. Tratamento: 1mg/kg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "Heparinas",
-    "name": "Fondaparinux",
-    "range": "2,5-10 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste (clearance diminuída em 25%)"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "Sem ajuste (clearance diminuída em 40%)"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "ACO clássicos",
-    "name": "Acenocumarol",
-    "range": "1-12 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "ACO clássicos",
-    "name": "Varfarina",
-    "range": "2-10 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 59,
-        "note": "Considerar menos 10-20% de dose e avaliar INR com maior frequência"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "NOACs",
-    "name": "Dabigatrano",
-    "range": "110-220 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "FA: 75-150mg/dia. TEV: sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "NOACs",
-    "name": "Rivaroxabano",
-    "range": "10-30 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "Usar com precaução"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "NOACs",
-    "name": "Apixabano",
-    "range": "5-20 mg/dia",
-    "adjust": [
-      {
-        "min": 25,
-        "max": 999,
-        "note": "TEV: sem ajuste. FA: ver critérios (Cr, idade, peso)"
-      },
-      {
-        "min": 0,
-        "max": 24,
-        "note": "⚠️ Precaução"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "NOACs",
-    "name": "Edoxabano",
-    "range": "30-60 mg/dia",
-    "adjust": [
-      {
-        "min": 95,
-        "max": 999,
-        "note": "⚠️ Não usar (menor eficácia vs Varfarina)"
-      },
-      {
-        "min": 50,
-        "max": 94,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 15,
-        "max": 49,
-        "note": "30mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "Antiagregantes",
-    "name": "AAS",
-    "range": "75-4000 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "Antiagregantes",
-    "name": "Clopidogrel",
-    "range": "75-600 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste (IR severa: precaução)"
-      }
-    ]
-  },
-  {
-    "cat": "Anticoagulantes",
-    "sub": "Antiagregantes",
-    "name": "Ticagrelor",
-    "range": "60-90 mg 2x/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Penicilinas",
-    "name": "Amoxicilina",
-    "range": "Até 4g/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "Máx 1000mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "Máx 500mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Penicilinas",
-    "name": "Amoxicilina + Ác. Clavulânico",
-    "range": "Até 2625+375 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "Rácio 5:1: 500/125mg 2x/dia"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "500/125mg 1x/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Penicilinas",
-    "name": "Flucloxacilina",
-    "range": "Até 3g/dia",
-    "adjust": [
-      {
-        "min": 10,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "1000mg 8/8h ou 12/12h"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Cefalosporinas 1ª",
-    "name": "Cefadroxil",
-    "range": "Até 2g/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 25,
-        "max": 49,
-        "note": "500mg 12/12h"
-      },
-      {
-        "min": 10,
-        "max": 24,
-        "note": "500mg 24/24h"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "500mg 36/36h"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Cefalosporinas 2ª",
-    "name": "Cefuroxima",
-    "range": "Até 1g/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "500mg 24/24h"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "500mg 48/48h"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Cefalosporinas 3ª",
-    "name": "Ceftriaxona",
-    "range": "1-4g/dia",
-    "adjust": [
-      {
-        "min": 10,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "Máx 2g/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Tetraciclinas",
-    "name": "Doxiciclina",
-    "range": "100-200 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Macrólidos",
-    "name": "Azitromicina",
-    "range": "500 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Vigilância (poucos estudos)"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Macrólidos",
-    "name": "Claritromicina",
-    "range": "250-500 mg/12h",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Reduzir dose em 50% (máx 250mg/12h)"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Sulfonamidas",
-    "name": "Sulfametoxazol + Trimetoprim",
-    "range": "Até 1600+320 mg/24h",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "50% da dose"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Quinolonas",
-    "name": "Ciprofloxacina",
-    "range": "Até 1500 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Máx 500mg 12/12h"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Máx 500mg 24/24h"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Outros",
-    "name": "Clindamicina",
-    "range": "600-1800 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Outros",
-    "name": "Fosfomicina",
-    "range": "3 g/dia",
-    "adjust": [
-      {
-        "min": 10,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antifúngicos",
-    "name": "Fluconazol",
-    "range": "Até 800 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste (toma única: sem ajuste qualquer TFG)"
-      },
-      {
-        "min": 0,
-        "max": 49,
-        "note": "50% da dose (exceto toma única)"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antifúngicos",
-    "name": "Terbinafina",
-    "range": "250 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 59,
-        "note": "⚠️ Não deve ser utilizado (poucos estudos)"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antivíricos",
-    "name": "Aciclovir",
-    "range": "Até 800mg 5x/dia",
-    "adjust": [
-      {
-        "min": 25,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 24,
-        "note": "800mg 8/8h"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "800mg 12/12h"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antivíricos",
-    "name": "Valaciclovir",
-    "range": "Até 3000 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "Máx 2g/dia"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "Máx 1g/dia"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "Máx 500mg/dia"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antivíricos",
-    "name": "Oseltamivir",
-    "range": "75mg 2x/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "30mg 12/12h"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "30mg 24/24h"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antigotosos",
-    "name": "Alopurinol",
-    "range": "100-800 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "150-300mg/dia (IR ligeira-moderada)"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "Máx 150mg/dia (poucos estudos)"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antigotosos",
-    "name": "Colchicina",
-    "range": "0,5-1 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Iniciar 0,5mg/dia"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "0,5mg de 2/2 dias, monitorização regular"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "IBPs",
-    "name": "Omeprazol",
-    "range": "10-40 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "IBPs",
-    "name": "Pantoprazol",
-    "range": "20-40 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Procinéticos",
-    "name": "Metoclopramida",
-    "range": "10-30 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 15,
-        "max": 59,
-        "note": "Dose reduzida em 50%"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "Dose reduzida em 75%"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Anti-histamínicos",
-    "name": "Cetirizina",
-    "range": "10-40 mg/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "5mg/dia"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "5mg a cada 2 dias"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Anti-histamínicos",
-    "name": "Loratadina",
-    "range": "10-20 mg/dia",
-    "adjust": [
-      {
-        "min": 30,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "10mg a cada 48h"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "Anti-histamínicos",
-    "name": "Hidroxizina",
-    "range": "25-50mg até 4x/dia",
-    "adjust": [
-      {
-        "min": 50,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 10,
-        "max": 49,
-        "note": "50% da dose"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "25-50% da dose"
-      }
-    ]
-  },
-  {
-    "cat": "Outros",
-    "sub": "ARNI",
-    "name": "Sacubitril/Valsartan",
-    "range": "24/26-97/103mg 2x/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Iniciar com 24/26mg 2x/dia"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "Iniciar com 24/26mg 2x/dia (precaução, poucos estudos)"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "⚠️ Não recomendado"
-      }
-    ]
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Gabapentinóides",
-    "name": "Gabapentina",
-    "range": "900-3600 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste (300-1200mg 3x/dia)"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "200-700mg 2x/dia"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "200-700mg 1x/dia"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "100-300mg 1x/dia"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Analgésicos",
-    "sub": "Gabapentinóides",
-    "name": "Pregabalina",
-    "range": "150-600 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Máx 300mg/dia (75-150mg 2x/dia)"
-      },
-      {
-        "min": 15,
-        "max": 29,
-        "note": "Máx 150mg/dia (75mg 1-2x/dia)"
-      },
-      {
-        "min": 0,
-        "max": 14,
-        "note": "Máx 75mg/dia (75mg 1x/dia)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Antibióticos",
-    "sub": "Outros",
-    "name": "Nitrofurantoína",
-    "range": "200-400 mg/dia",
-    "adjust": [
-      {
-        "min": 45,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 30,
-        "max": 44,
-        "note": "⚠️ Evitar (eficácia reduzida e risco de toxicidade)"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⛔ Contraindicado"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Antipsicóticos",
-    "name": "Quetiapina",
-    "range": "25-800 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico (usar com precaução na IR grave)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Antipsicóticos",
-    "name": "Haloperidol",
-    "range": "0,5-20 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Estabilizadores humor",
-    "name": "Lítio",
-    "range": "400-1200 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Sem ajuste (monitorizar níveis)"
-      },
-      {
-        "min": 30,
-        "max": 59,
-        "note": "Reduzir 50-75% da dose, monitorizar níveis frequentemente"
-      },
-      {
-        "min": 0,
-        "max": 29,
-        "note": "⚠️ Evitar (se usado: 25-50% da dose, monitorização apertada)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Estabilizadores humor",
-    "name": "Carbamazepina",
-    "range": "200-1600 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste (metabolização hepática). IR grave: precaução"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Psicofármacos",
-    "sub": "Estabilizadores humor",
-    "name": "Ácido Valpróico",
-    "range": "500-2500 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem ajuste. Monitorizar níveis livres na IR grave (ligação proteica alterada)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Outros",
-    "sub": "Tiróide",
-    "name": "Levotiroxina",
-    "range": "25-200 µg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Outros",
-    "sub": "Antiespasmódicos",
-    "name": "Butilescopolamina",
-    "range": "30-60 mg/dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico (precaução na IR grave)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Outros",
-    "sub": "Suplementos",
-    "name": "Ferro oral (sulfato ferroso)",
-    "range": "100-200mg Fe elem./dia",
-    "adjust": [
-      {
-        "min": 0,
-        "max": 999,
-        "note": "Sem necessidade de ajuste posológico"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Outros",
-    "sub": "ARM não-esteroide",
-    "name": "Finerenona (Kerendia®)",
-    "range": "10-20 mg/dia",
-    "adjust": [
-      {
-        "min": 60,
-        "max": 999,
-        "note": "Iniciar 10mg/dia se K+ <5 mEq/L. Titular para 20mg após 4 sem se K+ <4,8. Apenas DM2+DRC"
-      },
-      {
-        "min": 25,
-        "max": 59,
-        "note": "Iniciar 10mg/dia se K+ <5 mEq/L. Titular para 20mg após 4 sem se K+ <4,8. Apenas DM2+DRC"
-      },
-      {
-        "min": 0,
-        "max": 24,
-        "note": "⚠️ Não recomendado (dados insuficientes)"
-      }
-    ],
-    "updated": "2025"
-  },
-  {
-    "cat": "Outros",
-    "sub": "Anti-histamínicos",
-    "name": "Levocetirizina",
-    "range": "2,5-10 mg/dia",
-    "adjust": [
-      {
-        "min": 80,
-        "max": 999,
-        "note": "Sem ajuste"
-      },
-      {
-        "min": 50,
-        "max": 79,
-        "note": "2,5mg/dia"
-      },
-      {
-        "min": 30,
-        "max": 49,
-        "note": "2,5mg em dias alternados"
-      },
-      {
-        "min": 10,
-        "max": 29,
-        "note": "2,5mg 2x/semana"
-      },
-      {
-        "min": 0,
-        "max": 9,
-        "note": "⛔ Contraindicado"
-      }
-    ]
-  }
+ {
+  "class": "IECA",
+  "group": "Anti-Hipertensores",
+  "name": "Captopril",
+  "dose": "12,5–150 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 21–40: 100 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 21–40: 100 mg/dia · TFG 10–20: 75 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–20: 75 mg/dia · TFG <10: 37,5 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "IECA",
+  "group": "Anti-Hipertensores",
+  "name": "Enalapril",
+  "dose": "2,5–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG ≤30: dose inicial 2,5 mg/dia; Td conforme resposta tensional/eletrolítica"
+   },
+   {
+    "s": "adjust",
+    "t": "Dose inicial 2,5 mg/dia; Td cuidadosa"
+   }
+  ]
+ },
+ {
+  "class": "IECA",
+  "group": "Anti-Hipertensores",
+  "name": "Ramipril",
+  "dose": "1,25–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: máx 5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: máx 5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: iniciar 1,25 mg/dia (máx 5 mg/dia)"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar 1,25 mg/dia (máx 5 mg/dia)"
+   }
+  ]
+ },
+ {
+  "class": "IECA",
+  "group": "Anti-Hipertensores",
+  "name": "Lisinopril",
+  "dose": "2,5–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: iniciar 2,5–5 mg/dia, Td"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: iniciar 2,5 mg/dia, Td"
+   }
+  ]
+ },
+ {
+  "class": "IECA",
+  "group": "Anti-Hipertensores",
+  "name": "Perindopril",
+  "dose": "2–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: 2,5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: 2,5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 15–30: 2,5 mg em dias alternados"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <15: 2,5 mg/dia no dia da diálise"
+   }
+  ]
+ },
+ {
+  "class": "ARA",
+  "group": "Anti-Hipertensores",
+  "name": "Valsartan",
+  "dose": "40–160 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "TFG >10: sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <10 / Diálise: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "ARA",
+  "group": "Anti-Hipertensores",
+  "name": "Losartan",
+  "dose": "12,5–100 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   }
+  ]
+ },
+ {
+  "class": "ARA",
+  "group": "Anti-Hipertensores",
+  "name": "Candesartan",
+  "dose": "4–32 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "TFG >30: sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "TFG >30: sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: iniciar 4 mg/dia, Td; monitorização apertada; máx 16 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <15: sem evidência (considerar suspender)"
+   }
+  ]
+ },
+ {
+  "class": "ARA",
+  "group": "Anti-Hipertensores",
+  "name": "Olmesartan",
+  "dose": "10–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <60: máx 20 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 20 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "TFG 20–30: máx 20 mg/dia · TFG <20: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "ARA",
+  "group": "Anti-Hipertensores",
+  "name": "Irbesartan",
+  "dose": "75–300 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Hemodiálise: dose inicial 75 mg"
+   }
+  ]
+ },
+ {
+  "class": "ARNI",
+  "group": "Anti-Hipertensores",
+  "name": "Sacubitril/Valsartan",
+  "dose": "24/26–97/103 mg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: iniciar 24/26 mg 2x/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: iniciar 24/26 mg 2x/dia"
+   },
+   {
+    "s": "caution",
+    "t": "TFG 15–30: poucos estudos; iniciar 24/26 mg 2x/dia com precaução"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <15: não recomendado"
+   }
+  ]
+ },
+ {
+  "class": "β-Bloqueadores",
+  "group": "Anti-Hipertensores",
+  "name": "Bisoprolol",
+  "dose": "2,5–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <20: máx 10 mg/dia (pode dividir em 2 tomas)"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 10 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "β-Bloqueadores",
+  "group": "Anti-Hipertensores",
+  "name": "Nebivolol",
+  "dose": "5–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: iniciar 2,5 mg/dia (máx 5 mg/dia) · TFG <20: não recomendado"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado"
+   }
+  ]
+ },
+ {
+  "class": "β-Bloqueadores",
+  "group": "Anti-Hipertensores",
+  "name": "Propranolol",
+  "dose": "10–320 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa e Td cuidadosa (monitorizar)"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa e Td cuidadosa"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa e Td cuidadosa"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa e Td cuidadosa"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa e Td cuidadosa"
+   }
+  ]
+ },
+ {
+  "class": "β-Bloqueadores",
+  "group": "Anti-Hipertensores",
+  "name": "Carvedilol",
+  "dose": "6,25–50 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "β-Bloqueadores",
+  "group": "Anti-Hipertensores",
+  "name": "Metoprolol",
+  "dose": "100–300 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste (até dose de 200 mg/dia)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (até dose de 200 mg/dia)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (até dose de 200 mg/dia)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (até dose de 200 mg/dia)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (até dose de 200 mg/dia)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (até dose de 200 mg/dia)"
+   }
+  ]
+ },
+ {
+  "class": "Diuréticos",
+  "group": "Anti-Hipertensores",
+  "name": "Furosemida",
+  "dose": "20–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico (iniciar com 40 mg, Td e aumento dos intervalos)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico (iniciar com 40 mg, Td e aumento dos intervalos)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico (iniciar com 40 mg, Td e aumento dos intervalos)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico (iniciar com 40 mg, Td e aumento dos intervalos)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico (iniciar com 40 mg, Td e aumento dos intervalos)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico (Diálise: manutenção com 250–1500 mg/dia)"
+   }
+  ]
+ },
+ {
+  "class": "Diuréticos",
+  "group": "Anti-Hipertensores",
+  "name": "Espironolactona",
+  "dose": "50–200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste (CI na IR aguda)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (CI na IR aguda)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (CI na IR aguda)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (CI na IR aguda)"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: suspender"
+   },
+   {
+    "s": "ci",
+    "t": "Suspender"
+   }
+  ]
+ },
+ {
+  "class": "Diuréticos",
+  "group": "Anti-Hipertensores",
+  "name": "Indapamida",
+  "dose": "1,5–2,5 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Diuréticos",
+  "group": "Anti-Hipertensores",
+  "name": "Hidroclorotiazida",
+  "dose": "12,5–50 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Eficácia diminuída para TFG <30 (zona limítrofe)"
+   },
+   {
+    "s": "caution",
+    "t": "Eficácia diminuída"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <10: não recomendado"
+   }
+  ]
+ },
+ {
+  "class": "BCC",
+  "group": "Anti-Hipertensores",
+  "name": "Amlodipina",
+  "dose": "5–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "BCC",
+  "group": "Anti-Hipertensores",
+  "name": "Lercanidipina",
+  "dose": "10–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <50: iniciar baixa dose, Td (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar baixa dose, Td"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Estatinas",
+  "group": "Antidislipidémicos",
+  "name": "Atorvastatina",
+  "dose": "10–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Estatinas",
+  "group": "Antidislipidémicos",
+  "name": "Fluvastatina",
+  "dose": "20–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Td com cautela se dose >40 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "Td com cautela se dose >40 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Estatinas",
+  "group": "Antidislipidémicos",
+  "name": "Pitavastatina",
+  "dose": "1–4 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <60: iniciar baixa dose, Td (dose 4 mg não recomendada)"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar baixa dose, Td (dose 4 mg não recomendada)"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar baixa dose; dose 4 mg não recomendada"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar baixa dose; dose 4 mg não recomendada"
+   }
+  ]
+ },
+ {
+  "class": "Estatinas",
+  "group": "Antidislipidémicos",
+  "name": "Pravastatina",
+  "dose": "10–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: iniciar 10 mg, Td com cuidado"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar 10 mg, Td com cuidado"
+   }
+  ]
+ },
+ {
+  "class": "Estatinas",
+  "group": "Antidislipidémicos",
+  "name": "Rosuvastatina",
+  "dose": "5–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <60: iniciar 5 mg/dia · CI dose 40 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar 5 mg/dia · CI dose 40 mg/dia"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado em qualquer dose"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Estatinas",
+  "group": "Antidislipidémicos",
+  "name": "Sinvastatina",
+  "dose": "10–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <30: precaução para dose >10 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "Precaução para dose >10 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Inib. absorção colesterol",
+  "group": "Antidislipidémicos",
+  "name": "Ezetimiba",
+  "dose": "10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Fibratos",
+  "group": "Antidislipidémicos",
+  "name": "Fenofibrato",
+  "dose": "145–267 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: não exceder 100 mg standard ou 67 mg micronizado/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Não exceder 100 mg standard ou 67 mg micronizado/dia"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Inib. α-glucosidase",
+  "group": "Antidiabéticos",
+  "name": "Acarbose",
+  "dose": "50–200 mg 3x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG 25–30: limítrofe · TFG <25: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores SGLT2",
+  "group": "Antidiabéticos",
+  "name": "Empagliflozina",
+  "dose": "10–25 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "DM2: CI se TFG <30 · IC: CI se TFG <20"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores SGLT2",
+  "group": "Antidiabéticos",
+  "name": "Dapagliflozina",
+  "dose": "10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "caution",
+    "t": "Se TFG <25: não iniciar"
+   },
+   {
+    "s": "caution",
+    "t": "Não iniciar"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores SGLT2",
+  "group": "Antidiabéticos",
+  "name": "Ertuglifozina",
+  "dose": "5–15 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <45: não iniciar"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Suspender"
+   },
+   {
+    "s": "ci",
+    "t": "Suspender"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores SGLT2",
+  "group": "Antidiabéticos",
+  "name": "Canaglifozina",
+  "dose": "100–300 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Iniciar 100 mg/dia (Td máx 300 mg/dia)"
+   },
+   {
+    "s": "ok",
+    "t": "Iniciar 100 mg/dia (Td máx 300 mg/dia)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: máx 100 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 100 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <30: não iniciar; pode manter se já a tomar"
+   },
+   {
+    "s": "caution",
+    "t": "Não iniciar"
+   }
+  ]
+ },
+ {
+  "class": "Agonistas GLP1",
+  "group": "Antidiabéticos",
+  "name": "Semaglutido",
+  "dose": "0,25–2 mg/semana (SC)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Evidência limitada na IR grave"
+   },
+   {
+    "s": "caution",
+    "t": "Não recomendado na IRC terminal"
+   }
+  ]
+ },
+ {
+  "class": "Agonistas GLP1",
+  "group": "Antidiabéticos",
+  "name": "Exenatido",
+  "dose": "2 mg/semana (SC LP)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: não recomendado"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado"
+   }
+  ]
+ },
+ {
+  "class": "Agonistas GLP1",
+  "group": "Antidiabéticos",
+  "name": "Liraglutido",
+  "dose": "0,6–1,8 mg/dia (SC)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Não recomendado na DRC terminal"
+   }
+  ]
+ },
+ {
+  "class": "Agonistas GLP1",
+  "group": "Antidiabéticos",
+  "name": "Dulaglutido",
+  "dose": "0,75–4,5 mg/semana (SC)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Não recomendado na DRC terminal"
+   }
+  ]
+ },
+ {
+  "class": "Sulfonilureias",
+  "group": "Antidiabéticos",
+  "name": "Gliclazida",
+  "dose": "30–320 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste — monitorização cuidadosa"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste — monitorização cuidadosa"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste — monitorização cuidadosa"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste — monitorização cuidadosa"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste — monitorização cuidadosa"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste — monitorização cuidadosa"
+   }
+  ]
+ },
+ {
+  "class": "Sulfonilureias",
+  "group": "Antidiabéticos",
+  "name": "Glimepirida",
+  "dose": "1–6 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução"
+   },
+   {
+    "s": "ci",
+    "t": "IR grave: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Sulfonilureias",
+  "group": "Antidiabéticos",
+  "name": "Glipizida",
+  "dose": "2,5–50 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução"
+   },
+   {
+    "s": "ci",
+    "t": "IR grave: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Biguanida",
+  "group": "Antidiabéticos",
+  "name": "Metformina",
+  "dose": "500–3000 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 60–89: máx 3 g/dia; reduzir se agravamento"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 45–59: máx 2 g/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–44: máx 1 g/dia (não iniciar)"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Glitazona",
+  "group": "Antidiabéticos",
+  "name": "Pioglitazona",
+  "dose": "15–45 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores DPP-4",
+  "group": "Antidiabéticos",
+  "name": "Linagliptina",
+  "dose": "5 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores DPP-4",
+  "group": "Antidiabéticos",
+  "name": "Saxagliptina",
+  "dose": "5 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <45: máx 2,5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 2,5 mg/dia"
+   },
+   {
+    "s": "ci",
+    "t": "Suspender se IR terminal (TFG <15)"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores DPP-4",
+  "group": "Antidiabéticos",
+  "name": "Sitagliptina",
+  "dose": "100 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–50: 50 mg/dia (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–50: 50 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: 25 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "25 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores DPP-4",
+  "group": "Antidiabéticos",
+  "name": "Vildagliptina",
+  "dose": "50–100 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <50: reduzir para 50 mg/dia (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "50 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "50 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "50 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Inibidores DPP-4",
+  "group": "Antidiabéticos",
+  "name": "Alogliptina",
+  "dose": "25 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–50: 12,5 mg/dia (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–50: 12,5 mg/dia (50% dose)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: 6,25 mg/dia (25% dose)"
+   },
+   {
+    "s": "adjust",
+    "t": "6,25 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "ISRS",
+  "group": "Psicofármacos",
+  "name": "Fluoxetina",
+  "dose": "20–60 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "ISRS",
+  "group": "Psicofármacos",
+  "name": "Fluvoxamina",
+  "dose": "50–300 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose mais baixa e Td com monitorização da FR"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose mais baixa e Td"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose mais baixa e Td"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose mais baixa e Td"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose mais baixa e Td"
+   }
+  ]
+ },
+ {
+  "class": "ISRS",
+  "group": "Psicofármacos",
+  "name": "Sertralina",
+  "dose": "50–200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "ISRS",
+  "group": "Psicofármacos",
+  "name": "Paroxetina",
+  "dose": "20–60 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: máx 20 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 20 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "ISRS",
+  "group": "Psicofármacos",
+  "name": "Escitalopram",
+  "dose": "10–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: iniciar menor dose possível e Td"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar menor dose possível e Td"
+   }
+  ]
+ },
+ {
+  "class": "ISRSN",
+  "group": "Psicofármacos",
+  "name": "Venlafaxina",
+  "dose": "75–375 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: reduzir dose em 50%"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose em 50%"
+   }
+  ]
+ },
+ {
+  "class": "ISRSN",
+  "group": "Psicofármacos",
+  "name": "Duloxetina",
+  "dose": "60 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: suspender"
+   },
+   {
+    "s": "ci",
+    "t": "Suspender"
+   }
+  ]
+ },
+ {
+  "class": "Antidep. Outros",
+  "group": "Psicofármacos",
+  "name": "Amitriptilina",
+  "dose": "25–150 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste (monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (monitorizar)"
+   }
+  ]
+ },
+ {
+  "class": "Antidep. Outros",
+  "group": "Psicofármacos",
+  "name": "Vortioxetina",
+  "dose": "5–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Antidep. Outros",
+  "group": "Psicofármacos",
+  "name": "Mirtazapina",
+  "dose": "15–45 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <40: menor dose possível e monitorizar (concentrações aumentadas)"
+   },
+   {
+    "s": "caution",
+    "t": "Menor dose possível e monitorizar"
+   },
+   {
+    "s": "caution",
+    "t": "Menor dose possível e monitorizar"
+   }
+  ]
+ },
+ {
+  "class": "Antidep. Outros",
+  "group": "Psicofármacos",
+  "name": "Trazodona",
+  "dose": "50–300 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "IR grave: monitorização apertada"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorização apertada"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Alprazolam",
+  "dose": "0,25–3 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "IR ligeira–grave: monitorizar e eventual redução"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e eventual redução"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e eventual redução"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e eventual redução"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e eventual redução"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Bromazepam",
+  "dose": "1,5–18 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa, Td e monitorizar"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa, Td e monitorizar"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa, Td e monitorizar"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa, Td e monitorizar"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa, Td e monitorizar"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Loflazepato de etilo",
+  "dose": "1–3 mg",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "Redução da dose para metade"
+   },
+   {
+    "s": "adjust",
+    "t": "Redução da dose para metade"
+   },
+   {
+    "s": "adjust",
+    "t": "Redução da dose para metade"
+   },
+   {
+    "s": "adjust",
+    "t": "Redução da dose para metade"
+   },
+   {
+    "s": "adjust",
+    "t": "Redução da dose para metade"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Clorazepato dipotássico",
+  "dose": "5–30 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir para 5–15 mg, iniciar com 5 mg, Td com monitorização"
+   },
+   {
+    "s": "adjust",
+    "t": "5–15 mg/dia, iniciar com 5 mg"
+   },
+   {
+    "s": "adjust",
+    "t": "5–15 mg/dia, iniciar com 5 mg"
+   },
+   {
+    "s": "adjust",
+    "t": "5–15 mg/dia, iniciar com 5 mg"
+   },
+   {
+    "s": "adjust",
+    "t": "5–15 mg/dia, iniciar com 5 mg"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Cloxazolam",
+  "dose": "3–12 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se redução da dose (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se redução da dose (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se redução da dose (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se redução da dose (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se redução da dose (poucos estudos)"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Diazepam",
+  "dose": "5–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Lorazepam",
+  "dose": "0,5–2,5 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Mexazolam",
+  "dose": "1–3 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução na IR (sem indicações específicas)"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução (sem indicações específicas)"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução (sem indicações específicas)"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução (sem indicações específicas)"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução (sem indicações específicas)"
+   }
+  ]
+ },
+ {
+  "class": "Benzodiazepinas",
+  "group": "Psicofármacos",
+  "name": "Oxazepam",
+  "dose": "15–120 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste (Td, monitorizar)"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Celecoxib",
+  "dose": "100–400 mg/dia",
+  "L": [
+   {
+    "s": "caution",
+    "t": "Vigilância função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância função renal"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Cetoprofeno",
+  "dose": "25–75 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 60–89: máx 50 mg/dia"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <60: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Diclofenac",
+  "dose": "75–150 mg/dia",
+  "L": [
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Etoricoxib",
+  "dose": "30–120 mg/dia",
+  "L": [
+   {
+    "s": "caution",
+    "t": "Recomenda-se vigilância da função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se vigilância da função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se vigilância da função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se vigilância da função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se vigilância da função renal"
+   },
+   {
+    "s": "caution",
+    "t": "Recomenda-se vigilância da função renal"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Ibuprofeno",
+  "dose": "400–1200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Meloxicam",
+  "dose": "7,5–15 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Naproxeno",
+  "dose": "500–1500 mg/dia",
+  "L": [
+   {
+    "s": "caution",
+    "t": "TFG >30: monitorização função renal"
+   },
+   {
+    "s": "caution",
+    "t": "TFG >30: monitorização função renal"
+   },
+   {
+    "s": "caution",
+    "t": "TFG >30: monitorização função renal"
+   },
+   {
+    "s": "caution",
+    "t": "TFG >30: monitorização função renal"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Nimesulida",
+  "dose": "100–200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "AINEs",
+  "group": "Analgésicos",
+  "name": "Acemetacina",
+  "dose": "60–180 mg/dia",
+  "L": [
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >30: recomenda-se redução"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Não opióides",
+  "group": "Analgésicos",
+  "name": "Metamizol",
+  "dose": "575–3450 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste em ciclos curtos"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste em ciclos curtos"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar doses múltiplas/elevadas"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar doses múltiplas/elevadas"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar doses múltiplas/elevadas"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar doses múltiplas/elevadas"
+   }
+  ]
+ },
+ {
+  "class": "Não opióides",
+  "group": "Analgésicos",
+  "name": "Paracetamol",
+  "dose": "500–4000 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: 500 mg 6/6h (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: 500 mg 6/6h"
+   },
+   {
+    "s": "adjust",
+    "t": "500 mg 6/6h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 500 mg 8/8h"
+   }
+  ]
+ },
+ {
+  "class": "Opióides",
+  "group": "Analgésicos",
+  "name": "Paracetamol + Codeína",
+  "dose": "500/20–4000/360 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: 50–75% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "50–75% da dose"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <30: evitar (se necessário intervalos ≥8h)"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar (se necessário intervalos ≥8h)"
+   }
+  ]
+ },
+ {
+  "class": "Opióides",
+  "group": "Analgésicos",
+  "name": "Fentanilo (transdérmico)",
+  "dose": "12,5–300 μg/h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: 75% da dose (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: 75% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "75% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 50% da dose"
+   }
+  ]
+ },
+ {
+  "class": "Opióides",
+  "group": "Analgésicos",
+  "name": "Morfina",
+  "dose": "10–250 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: 50–75% da dose; aumento de intervalos"
+   },
+   {
+    "s": "adjust",
+    "t": "50–75% da dose; aumento de intervalos"
+   },
+   {
+    "s": "caution",
+    "t": "TFG 15–30: evitar (eventualmente 25–50% da dose)"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <15: não recomendado"
+   }
+  ]
+ },
+ {
+  "class": "Opióides",
+  "group": "Analgésicos",
+  "name": "Tapentadol",
+  "dose": "25–600 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: não recomendado"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado"
+   }
+  ]
+ },
+ {
+  "class": "Opióides",
+  "group": "Analgésicos",
+  "name": "Tramadol",
+  "dose": "50–400 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "Lib. imediata: 12/12h, máx 200 mg/dia · Lib. prolongada: evitar"
+   },
+   {
+    "s": "adjust",
+    "t": "Lib. imediata: 12/12h, máx 200 mg/dia · LP: evitar"
+   }
+  ]
+ },
+ {
+  "class": "SABA",
+  "group": "Broncodilatadores",
+  "name": "Salbutamol",
+  "dose": "Variável (oral/inalado)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "LABA",
+  "group": "Broncodilatadores",
+  "name": "Salmeterol",
+  "dose": "50–100 μg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "LABA",
+  "group": "Broncodilatadores",
+  "name": "Formoterol",
+  "dose": "12–24 μg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "LABA",
+  "group": "Broncodilatadores",
+  "name": "Indacaterol",
+  "dose": "150–300 μg 1x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "LABA",
+  "group": "Broncodilatadores",
+  "name": "Procaterol",
+  "dose": "50–100 μg/dia (oral)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anticolinérgicos",
+  "group": "Broncodilatadores",
+  "name": "Brometo de ipratrópio",
+  "dose": "20–40 μg 3–4x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anticolinérgicos",
+  "group": "Broncodilatadores",
+  "name": "Brometo de tiotrópio",
+  "dose": "5–18 μg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <50: precaução e vigiar efeitos anticolinérgicos"
+   },
+   {
+    "s": "caution",
+    "t": "Precaução; vigiar efeitos anticolinérgicos"
+   },
+   {
+    "s": "caution",
+    "t": "Precaução; vigiar efeitos anticolinérgicos"
+   },
+   {
+    "s": "caution",
+    "t": "Precaução; vigiar efeitos anticolinérgicos"
+   }
+  ]
+ },
+ {
+  "class": "Anticolinérgicos",
+  "group": "Broncodilatadores",
+  "name": "Brometo de glicopirrónio",
+  "dose": "44 μg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <30: usar com precaução (maior exposição sistémica)"
+   },
+   {
+    "s": "caution",
+    "t": "Usar com precaução"
+   }
+  ]
+ },
+ {
+  "class": "Anticolinérgicos",
+  "group": "Broncodilatadores",
+  "name": "Brometo de aclidínio",
+  "dose": "322 μg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Xantinas",
+  "group": "Broncodilatadores",
+  "name": "Teofilina",
+  "dose": "400 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Xantinas",
+  "group": "Broncodilatadores",
+  "name": "Aminofilina",
+  "dose": "225–550 mg 1–2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Glucocorticóides inalados",
+  "group": "Broncodilatadores",
+  "name": "Budesonido",
+  "dose": "Inalação variável",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Glucocorticóides inalados",
+  "group": "Broncodilatadores",
+  "name": "Fluticasona",
+  "dose": "100–1000 μg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Antileucotrienos",
+  "group": "Broncodilatadores",
+  "name": "Montelucaste",
+  "dose": "10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Heparinas",
+  "group": "Anticoagulantes",
+  "name": "Heparina Não-Fracionada",
+  "dose": "Variável (TEV: 80U/kg+18U/kg/h)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Heparinas",
+  "group": "Anticoagulantes",
+  "name": "HBPM (Enoxaparina)",
+  "dose": "Profilaxia TEV: 40 mg/dia · Tratamento TEV: 1 mg/kg 2x/dia ou 1,5 mg/kg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Profilaxia (usar níveis de anti-fator Xa para monitorização): TFG >50: sem ajuste; TFG 30–50: sem ajuste na maioria das situações; TFG <30: 20–30 mg/dia. Tratamento: TFG <30 — 1 mg/kg/dia."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia (usar níveis de anti-fator Xa para monitorização): TFG >50: sem ajuste; TFG 30–50: sem ajuste na maioria das situações; TFG <30: 20–30 mg/dia. Tratamento: TFG <30 — 1 mg/kg/dia."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia (usar níveis de anti-fator Xa para monitorização): TFG >50: sem ajuste; TFG 30–50: sem ajuste na maioria das situações; TFG <30: 20–30 mg/dia. Tratamento: TFG <30 — 1 mg/kg/dia."
+   },
+   {
+    "s": "caution",
+    "t": "Profilaxia (usar níveis de anti-fator Xa para monitorização): TFG 30–50: sem ajuste na maioria das situações; TFG <30: 20–30 mg/dia. Tratamento: TFG <30 — 1 mg/kg/dia."
+   },
+   {
+    "s": "adjust",
+    "t": "Profilaxia (usar níveis de anti-fator Xa para monitorização): TFG <30: 20–30 mg/dia. Tratamento: TFG <30 — 1 mg/kg/dia."
+   },
+   {
+    "s": "adjust",
+    "t": "Profilaxia: 20–30 mg/dia (usar níveis de anti-fator Xa). Tratamento: 1 mg/kg/dia."
+   }
+  ]
+ },
+ {
+  "class": "Heparinas",
+  "group": "Anticoagulantes",
+  "name": "Fondaparinux",
+  "dose": "2,5–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "TFG 50–80: sem ajuste (clearance diminuída em 25%). TFG 30–50: sem ajuste (clearance diminuída em 40%; se usada para tromboprofilaxia, alguns autores recomendam reduzir para 50% da dose ou trocar para heparina). TFG <30: CI."
+   },
+   {
+    "s": "ok",
+    "t": "TFG 50–80: sem ajuste (clearance diminuída em 25%). TFG 30–50: sem ajuste (clearance diminuída em 40%; se usada para tromboprofilaxia, alguns autores recomendam reduzir para 50% da dose ou trocar para heparina). TFG <30: CI."
+   },
+   {
+    "s": "caution",
+    "t": "TFG 30–50: sem ajuste (clearance diminuída em 40%; se usada para tromboprofilaxia, alguns autores recomendam reduzir para 50% da dose ou trocar para heparina). TFG <30: CI."
+   },
+   {
+    "s": "caution",
+    "t": "TFG 30–50: sem ajuste (clearance diminuída em 40%; se usada para tromboprofilaxia, alguns autores recomendam reduzir para 50% da dose ou trocar para heparina). TFG <30: CI."
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado."
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado."
+   }
+  ]
+ },
+ {
+  "class": "Anticoag. orais",
+  "group": "Anticoagulantes",
+  "name": "Acenocumarol",
+  "dose": "1–12 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anticoag. orais",
+  "group": "Anticoagulantes",
+  "name": "Varfarina",
+  "dose": "2–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <60: alguns estudos sugerem iniciar com 10–20% menos dose e INR mais frequente"
+   },
+   {
+    "s": "caution",
+    "t": "Considerar reduzir 10–20% e INR mais frequente"
+   },
+   {
+    "s": "caution",
+    "t": "Considerar reduzir 10–20% e INR mais frequente"
+   },
+   {
+    "s": "caution",
+    "t": "Considerar reduzir 10–20% e INR mais frequente"
+   }
+  ]
+ },
+ {
+  "class": "NOACs",
+  "group": "Anticoagulantes",
+  "name": "Dabigatrano",
+  "dose": "110–220 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Profilaxia na FA: TFG >50: sem ajuste; TFG 30–50: 75–150 mg/dia; TFG <30: não recomendado. Tratamento de TEV: TFG ≥30: sem ajuste; TFG <30: não recomendado."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia na FA: TFG >50: sem ajuste; TFG 30–50: 75–150 mg/dia; TFG <30: não recomendado. Tratamento de TEV: TFG ≥30: sem ajuste; TFG <30: não recomendado."
+   },
+   {
+    "s": "adjust",
+    "t": "Profilaxia na FA: TFG 30–50: 75–150 mg/dia. Tratamento de TEV: TFG ≥30: sem ajuste."
+   },
+   {
+    "s": "adjust",
+    "t": "Profilaxia na FA: TFG 30–50: 75–150 mg/dia. Tratamento de TEV: TFG ≥30: sem ajuste."
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: não recomendado (Profilaxia na FA e Tratamento de TEV)."
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado."
+   }
+  ]
+ },
+ {
+  "class": "NOACs",
+  "group": "Anticoagulantes",
+  "name": "Rivaroxabano",
+  "dose": "10–30 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG 15–30: usar com precaução"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <15: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "NOACs",
+  "group": "Anticoagulantes",
+  "name": "Apixabano",
+  "dose": "5–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Profilaxia e tratamento de TEV: sem ajuste. Profilaxia na FA: Cr <1,5 mg/dL — sem ajuste, exceto se doente com ≥80 anos E <60 kg: 2,5 mg 2x/dia. Cr ≥1,5 mg/dL E ≥80 anos OU ≤60 kg: 2,5 mg 2x/dia."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia e tratamento de TEV: sem ajuste. Profilaxia na FA: Cr <1,5 mg/dL — sem ajuste, exceto se doente com ≥80 anos E <60 kg: 2,5 mg 2x/dia. Cr ≥1,5 mg/dL E ≥80 anos OU ≤60 kg: 2,5 mg 2x/dia."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia e tratamento de TEV: sem ajuste. Profilaxia na FA: Cr <1,5 mg/dL — sem ajuste, exceto se doente com ≥80 anos E <60 kg: 2,5 mg 2x/dia. Cr ≥1,5 mg/dL E ≥80 anos OU ≤60 kg: 2,5 mg 2x/dia."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia e tratamento de TEV: sem ajuste. Profilaxia na FA: Cr <1,5 mg/dL — sem ajuste, exceto se doente com ≥80 anos E <60 kg: 2,5 mg 2x/dia. Cr ≥1,5 mg/dL E ≥80 anos OU ≤60 kg: 2,5 mg 2x/dia."
+   },
+   {
+    "s": "caution",
+    "t": "Profilaxia e tratamento de TEV: sem ajuste. Profilaxia na FA: Cr <1,5 mg/dL — sem ajuste, exceto se doente com ≥80 anos E <60 kg: 2,5 mg 2x/dia. Cr ≥1,5 mg/dL E ≥80 anos OU ≤60 kg: 2,5 mg 2x/dia. TFG <25: precaução."
+   },
+   {
+    "s": "caution",
+    "t": "TFG <25: precaução. Profilaxia e tratamento de TEV: sem ajuste. Profilaxia na FA: Cr <1,5 mg/dL — sem ajuste, exceto se doente com ≥80 anos E <60 kg: 2,5 mg 2x/dia. Cr ≥1,5 mg/dL E ≥80 anos OU ≤60 kg: 2,5 mg 2x/dia."
+   }
+  ]
+ },
+ {
+  "class": "NOACs",
+  "group": "Anticoagulantes",
+  "name": "Edoxabano",
+  "dose": "30–60 mg/dia",
+  "L": [
+   {
+    "s": "caution",
+    "t": "Profilaxia da FA ou tratamento de TEV: TFG >95: não usar por menor eficácia e maior risco de AVC isquémico (vs Varfarina); TFG 50–95: sem ajuste; TFG 15–50: 30 mg/dia; TFG <15: não recomendado."
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia da FA ou tratamento de TEV: TFG 50–95: sem ajuste; TFG 15–50: 30 mg/dia; TFG <15: não recomendado. (TFG >95: não usar por menor eficácia e maior risco de AVC isquémico vs Varfarina.)"
+   },
+   {
+    "s": "ok",
+    "t": "Profilaxia da FA ou tratamento de TEV: TFG 50–95: sem ajuste; TFG 15–50: 30 mg/dia (aplica-se a TFG 45–50)."
+   },
+   {
+    "s": "adjust",
+    "t": "Profilaxia da FA ou tratamento de TEV: TFG 15–50: 30 mg/dia."
+   },
+   {
+    "s": "adjust",
+    "t": "Profilaxia da FA ou tratamento de TEV: TFG 15–50: 30 mg/dia; TFG <15: não recomendado."
+   },
+   {
+    "s": "ci",
+    "t": "TFG <15: não recomendado."
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Acetilsalicilato de lisina",
+  "dose": "500–3000 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Poucos estudos, evitar na IR"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar na IR"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar na IR"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar na IR"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar na IR"
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Ácido Acetilsalicílico",
+  "dose": "75–4000 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <30: Contraindicado"
+   },
+   {
+    "s": "ci",
+    "t": "Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Dipiridamol",
+  "dose": "75–100 mg 4x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Clopidogrel",
+  "dose": "75–600 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "IR severa: precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Precaução"
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Ticagrelor",
+  "dose": "60–90 mg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Ticlopidina",
+  "dose": "250 mg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   }
+  ]
+ },
+ {
+  "class": "Antiagregantes",
+  "group": "Anticoagulantes",
+  "name": "Triflusal",
+  "dose": "600–900 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   },
+   {
+    "s": "caution",
+    "t": "Sem estudos. Precaução"
+   }
+  ]
+ },
+ {
+  "class": "Penicilinas",
+  "group": "Antibióticos",
+  "name": "Benzilpenicilina benzatínica",
+  "dose": "Até 2.400.000 UI/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Penicilinas",
+  "group": "Antibióticos",
+  "name": "Amoxicilina",
+  "dose": "Até 4 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–30: máx 1000 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: máx 500 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Penicilinas",
+  "group": "Antibióticos",
+  "name": "Ampicilina",
+  "dose": "Até 14 g/dia (IV)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Intervalos 6h"
+   },
+   {
+    "s": "ok",
+    "t": "Intervalos 6h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: intervalos 9h (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "Intervalos 9h"
+   },
+   {
+    "s": "adjust",
+    "t": "Intervalos 9h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: intervalos 12–15h"
+   }
+  ]
+ },
+ {
+  "class": "Penicilinas",
+  "group": "Antibióticos",
+  "name": "Flucloxacilina",
+  "dose": "Até 3 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 1000 mg 8/8h ou 12/12h"
+   }
+  ]
+ },
+ {
+  "class": "Penicilinas+IBL",
+  "group": "Antibióticos",
+  "name": "Amoxicilina + Ác. Clavulânico",
+  "dose": "Até 2625/375 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: não recomendado o rácio 7:1, pode-se usar rácio 5:1. TFG 10–30: 500/125 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: não recomendado o rácio 7:1, pode-se usar rácio 5:1. TFG <10: 500/125 mg 24/24h"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 1ªG",
+  "group": "Antibióticos",
+  "name": "Cefadroxil",
+  "dose": "Até 2 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 25–50: 500 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "500 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–25: 500 mg 24/24h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 500 mg 36/36h"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 1ªG",
+  "group": "Antibióticos",
+  "name": "Cefradina",
+  "dose": "Até 2 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "TFG >20: 500 mg 6/6h"
+   },
+   {
+    "s": "ok",
+    "t": "TFG >20: 500 mg 6/6h"
+   },
+   {
+    "s": "ok",
+    "t": "TFG >20: 500 mg 6/6h"
+   },
+   {
+    "s": "ok",
+    "t": "TFG >20: 500 mg 6/6h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG >20: 500 mg 6/6h · TFG 5–20: 250 mg 6/6h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 5–20: 250 mg 6/6h · TFG <5: 250 mg 12/12h"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 2ªG",
+  "group": "Antibióticos",
+  "name": "Cefaclor",
+  "dose": "Até 4 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: 50–100% da posologia normal"
+   },
+   {
+    "s": "adjust",
+    "t": "50–100% da posologia normal"
+   },
+   {
+    "s": "adjust",
+    "t": "50–100% da posologia normal"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 50% da posologia normal"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 2ªG",
+  "group": "Antibióticos",
+  "name": "Cefuroxima",
+  "dose": "Até 1 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–29: 500 mg 24/24h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 500 mg 48/48h"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 3ªG",
+  "group": "Antibióticos",
+  "name": "Cefotaxima",
+  "dose": "Até 12 g/dia (IV)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <5: dose carga 1 g 12/12h, depois 500 mg 12/12h"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 3ªG",
+  "group": "Antibióticos",
+  "name": "Ceftriaxona",
+  "dose": "1–4 g/dia (IV)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: máx 2 g/dia"
+   }
+  ]
+ },
+ {
+  "class": "Cefalosporinas 4ªG",
+  "group": "Antibióticos",
+  "name": "Cefepima",
+  "dose": "1–6 g/dia (IV)",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–50: máx 4 g/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 4 g/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 11–29: máx 2 g/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: máx 1 g/dia"
+   }
+  ]
+ },
+ {
+  "class": "Tetraciclinas",
+  "group": "Antibióticos",
+  "name": "Doxiciclina",
+  "dose": "100–200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Tetraciclinas",
+  "group": "Antibióticos",
+  "name": "Minociclina",
+  "dose": "100–200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <60: vigilância (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância (poucos estudos)"
+   }
+  ]
+ },
+ {
+  "class": "Macrólidos",
+  "group": "Antibióticos",
+  "name": "Azitromicina",
+  "dose": "500 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <30: vigilância (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Vigilância (poucos estudos)"
+   }
+  ]
+ },
+ {
+  "class": "Macrólidos",
+  "group": "Antibióticos",
+  "name": "Claritromicina",
+  "dose": "250–500 mg 12/12h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: reduzir dose em 50% (máx 250 mg 12/12h)"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir 50% (máx 250 mg 12/12h)"
+   }
+  ]
+ },
+ {
+  "class": "Macrólidos",
+  "group": "Antibióticos",
+  "name": "Eritromicina",
+  "dose": "250–1000 mg 6/6h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 50–75% da dose"
+   }
+  ]
+ },
+ {
+  "class": "Sulfonamidas",
+  "group": "Antibióticos",
+  "name": "Sulfametoxazol+Trimetoprim",
+  "dose": "Até 1600/320 mg/24h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 15–30: 50% da dose"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <15: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Quinolonas",
+  "group": "Antibióticos",
+  "name": "Ciprofloxacina",
+  "dose": "Até 1500 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: máx 500 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 500 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: máx 500 mg 24/24h"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 500 mg 24/24h"
+   }
+  ]
+ },
+ {
+  "class": "Quinolonas",
+  "group": "Antibióticos",
+  "name": "Levofloxacina",
+  "dose": "Até 1000 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 20–50: iniciar 250–500 mg, depois reduzir 50% (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar 250–500 mg, depois reduzir 50%"
+   },
+   {
+    "s": "adjust",
+    "t": "Iniciar 250–500 mg, depois 125 mg 12–48h (TFG 10–19)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: iniciar 250–500 mg, depois 125 mg 24–48h"
+   }
+  ]
+ },
+ {
+  "class": "Quinolonas",
+  "group": "Antibióticos",
+  "name": "Moxifloxacina",
+  "dose": "400 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Quinolonas",
+  "group": "Antibióticos",
+  "name": "Norfloxacina",
+  "dose": "Até 1200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: 400 mg/24h"
+   },
+   {
+    "s": "adjust",
+    "t": "400 mg/24h"
+   }
+  ]
+ },
+ {
+  "class": "Quinolonas",
+  "group": "Antibióticos",
+  "name": "Ofloxacina",
+  "dose": "Até 1500 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: máx 500 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 500 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: máx 500 mg/24h"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 500 mg/24h"
+   }
+  ]
+ },
+ {
+  "class": "Outros AB",
+  "group": "Antibióticos",
+  "name": "Ácido fusídico",
+  "dose": "250 mg 12/12h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   }
+  ]
+ },
+ {
+  "class": "Outros AB",
+  "group": "Antibióticos",
+  "name": "Clindamicina",
+  "dose": "600–1800 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Outros AB",
+  "group": "Antibióticos",
+  "name": "Fosfomicina",
+  "dose": "3 g/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <10: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Antifúngicos",
+  "group": "Outros",
+  "name": "Metronidazol",
+  "dose": "Até 2400 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   }
+  ]
+ },
+ {
+  "class": "Antifúngicos",
+  "group": "Outros",
+  "name": "Cetoconazol",
+  "dose": "Até 1200 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Poucos estudos, mas os dados não indicam necessidade de ajuste"
+   }
+  ]
+ },
+ {
+  "class": "Antifúngicos",
+  "group": "Outros",
+  "name": "Fluconazol",
+  "dose": "Até 800 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <50: 50% da dose (toma única sem ajuste)"
+   },
+   {
+    "s": "adjust",
+    "t": "50% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "50% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "50% da dose"
+   }
+  ]
+ },
+ {
+  "class": "Antifúngicos",
+  "group": "Outros",
+  "name": "Itraconazol",
+  "dose": "Até 400 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "TFG <60: monitorizar e ajustar dose (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e ajustar"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e ajustar"
+   },
+   {
+    "s": "caution",
+    "t": "Monitorizar e ajustar"
+   }
+  ]
+ },
+ {
+  "class": "Antifúngicos",
+  "group": "Outros",
+  "name": "Nistatina",
+  "dose": "1–6 mL 6/6h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   },
+   {
+    "s": "caution",
+    "t": "RCM não aborda o doente renal"
+   }
+  ]
+ },
+ {
+  "class": "Antifúngicos",
+  "group": "Outros",
+  "name": "Terbinafina",
+  "dose": "250 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <60: não deve ser utilizado (poucos estudos)"
+   },
+   {
+    "s": "ci",
+    "t": "Não deve ser utilizado"
+   },
+   {
+    "s": "ci",
+    "t": "Não deve ser utilizado"
+   },
+   {
+    "s": "ci",
+    "t": "Não deve ser utilizado"
+   }
+  ]
+ },
+ {
+  "class": "Antivíricos",
+  "group": "Outros",
+  "name": "Aciclovir",
+  "dose": "Até 800 mg 5x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–25: 800 mg 8/8h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 800 mg 12/12h"
+   }
+  ]
+ },
+ {
+  "class": "Antivíricos",
+  "group": "Outros",
+  "name": "Brivudina",
+  "dose": "125 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Antivíricos",
+  "group": "Outros",
+  "name": "Oseltamivir",
+  "dose": "75 mg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–60: 30 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "30 mg 12/12h"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–30: 30 mg 24/24h"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <10: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Antivíricos",
+  "group": "Outros",
+  "name": "Valaciclovir",
+  "dose": "Até 3000 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–49: máx 2 g/dia (zona 45–49)"
+   },
+   {
+    "s": "adjust",
+    "t": "Máx 2 g/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–29: máx 1 g/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: máx 500 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Antigotosos",
+  "group": "Outros",
+  "name": "Alopurinol",
+  "dose": "100–800 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "IR ligeira–moderada: 150–300 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "150–300 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "IR grave: máx 150 mg/dia (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Máx 150 mg/dia"
+   }
+  ]
+ },
+ {
+  "class": "Antigotosos",
+  "group": "Outros",
+  "name": "Colchicina",
+  "dose": "0,5–1 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar dose baixa 0,5 mg/dia"
+   },
+   {
+    "s": "caution",
+    "t": "Iniciar 0,5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "IR moderada: 0,5 mg em 2/2 dias, monitorização"
+   },
+   {
+    "s": "adjust",
+    "t": "0,5 mg em 2/2 dias, monitorização"
+   },
+   {
+    "s": "adjust",
+    "t": "0,5 mg em 2/2 dias, monitorização"
+   }
+  ]
+ },
+ {
+  "class": "Antigotosos",
+  "group": "Outros",
+  "name": "Febuxostato",
+  "dose": "80–120 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "IR grave (TFG <30): evitar (poucos estudos)"
+   },
+   {
+    "s": "caution",
+    "t": "Evitar (poucos estudos)"
+   }
+  ]
+ },
+ {
+  "class": "IBPs",
+  "group": "Outros",
+  "name": "Esomeprazol",
+  "dose": "10–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "IBPs",
+  "group": "Outros",
+  "name": "Lansoprazol",
+  "dose": "30–60 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "IBPs",
+  "group": "Outros",
+  "name": "Omeprazol",
+  "dose": "10–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "IBPs",
+  "group": "Outros",
+  "name": "Pantoprazol",
+  "dose": "20–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "IBPs",
+  "group": "Outros",
+  "name": "Rabeprazol",
+  "dose": "10–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Procinéticos",
+  "group": "Outros",
+  "name": "Domperidona",
+  "dose": "10–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "Administração única: sem ajuste · Toma continuada: diminuir o número de doses e aumentar o intervalo entre tomas"
+   },
+   {
+    "s": "caution",
+    "t": "Administração única: sem ajuste · Toma continuada: diminuir o número de doses e aumentar o intervalo entre tomas"
+   },
+   {
+    "s": "caution",
+    "t": "Administração única: sem ajuste · Toma continuada: diminuir o número de doses e aumentar o intervalo entre tomas"
+   },
+   {
+    "s": "caution",
+    "t": "Administração única: sem ajuste · Toma continuada: diminuir o número de doses e aumentar o intervalo entre tomas"
+   },
+   {
+    "s": "caution",
+    "t": "Administração única: sem ajuste · Toma continuada: diminuir o número de doses e aumentar o intervalo entre tomas"
+   }
+  ]
+ },
+ {
+  "class": "Procinéticos",
+  "group": "Outros",
+  "name": "Metoclopramida",
+  "dose": "10–30 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 15–60: dose reduzida 50% (zona 45–60)"
+   },
+   {
+    "s": "adjust",
+    "t": "Dose reduzida 50%"
+   },
+   {
+    "s": "adjust",
+    "t": "Dose reduzida 50%"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <15: dose reduzida 75%"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Cinarizina",
+  "dose": "25–75 mg 3x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Clemastina",
+  "dose": "1 mg 2x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "IR moderada–grave: reduzir dose"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Di-hexazina",
+  "dose": "6 mg 3x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Difenidramina",
+  "dose": "50–300 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "caution",
+    "t": "IR moderada–grave: reduzir dose"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose"
+   },
+   {
+    "s": "adjust",
+    "t": "Reduzir dose"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Dimetindeno",
+  "dose": "20–40 gotas (3–6 mg) 3x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Doxilamina",
+  "dose": "12,5–25 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Hidroxizina",
+  "dose": "25–50 mg até 4x/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–50: 50% da dose (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "50% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "50% da dose"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <10: 25–50% da dose"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Prometazina",
+  "dose": "12,5–25 mg 4–6h",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 sedativos",
+  "group": "Outros",
+  "name": "Pseudoefedrina+Triprolidina",
+  "dose": "60/2,5–240/10 mg",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Cetirizina",
+  "dose": "10–40 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–49: 5 mg/dia (zona 45–49)"
+   },
+   {
+    "s": "adjust",
+    "t": "5 mg/dia"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: 5 mg cada 2 dias"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <10: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Desloratadina",
+  "dose": "5–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "IR moderada–grave: 5 mg em dias alternados"
+   },
+   {
+    "s": "adjust",
+    "t": "5 mg em dias alternados"
+   },
+   {
+    "s": "adjust",
+    "t": "5 mg em dias alternados"
+   },
+   {
+    "s": "adjust",
+    "t": "5 mg em dias alternados"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Ebastina",
+  "dose": "10–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Bilastina",
+  "dose": "10–80 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Fexofenadina",
+  "dose": "120–180 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   },
+   {
+    "s": "ok",
+    "t": "Sem necessidade de ajuste posológico"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Levocetirizina",
+  "dose": "2,5–10 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 50–80: 2,5 mg/dia (zona 60–80)"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 30–50: 2,5 mg em dias alternados (zona 45–50)"
+   },
+   {
+    "s": "adjust",
+    "t": "2,5 mg em dias alternados"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG 10–30: 2,5 mg 2x/semana"
+   },
+   {
+    "s": "ci",
+    "t": "TFG <10: Contraindicado"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Loratadina",
+  "dose": "10–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "adjust",
+    "t": "TFG <30: 10 mg cada 48h"
+   },
+   {
+    "s": "adjust",
+    "t": "10 mg cada 48h"
+   }
+  ]
+ },
+ {
+  "class": "Anti-H1 não sedativos",
+  "group": "Outros",
+  "name": "Rupatadina",
+  "dose": "10–20 mg/dia",
+  "L": [
+   {
+    "s": "ok",
+    "t": "Sem ajuste"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado na IR"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado na IR"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado na IR"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado na IR"
+   },
+   {
+    "s": "ci",
+    "t": "Não recomendado na IR"
+   }
+  ]
+ }
 ]
