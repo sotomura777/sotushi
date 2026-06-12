@@ -1,0 +1,459 @@
+{
+ "regras": [
+  {
+   "a": "anticoagulant",
+   "b": "nsaid",
+   "sev": "major",
+   "mec": "Risco hemorrágico aumentado (lesão da mucosa GI + efeito antitrombótico).",
+   "mng": "Evitar; se inevitável, gastroproteção com IBP e vigilância de hemorragia."
+  },
+  {
+   "a": "anticoagulant",
+   "b": "antiplatelet",
+   "sev": "major",
+   "mec": "Hemorragia aditiva.",
+   "mng": "Só com indicação clara; reavaliar duração; ponderar gastroproteção."
+  },
+  {
+   "a": "antiplatelet",
+   "b": "nsaid",
+   "sev": "moderate",
+   "mec": "Aumento do risco hemorrágico GI; os AINEs podem reduzir o efeito antiagregante do AAS.",
+   "mng": "Preferir paracetamol; se AINE, associar IBP."
+  },
+  {
+   "a": "anticoagulant",
+   "b": "serotonergic",
+   "sev": "moderate",
+   "mec": "ISRS/IRSN reduzem a agregação plaquetária e aumentam o risco hemorrágico.",
+   "mng": "Vigiar hemorragia; ponderar gastroproteção."
+  },
+  {
+   "a": "nsaid",
+   "b": "serotonergic",
+   "sev": "moderate",
+   "mec": "Aumento do risco de hemorragia digestiva.",
+   "mng": "Associar IBP e vigiar."
+  },
+  {
+   "a": "serotonergic",
+   "b": "serotonergic",
+   "sev": "major",
+   "mec": "Risco de síndrome serotoninérgica.",
+   "mng": "Vigiar (agitação, clónus, hipertermia); evitar associações desnecessárias."
+  },
+  {
+   "a": "serotonergic",
+   "b": "maoi",
+   "sev": "contra",
+   "mec": "Síndrome serotoninérgica potencialmente fatal.",
+   "mng": "Contraindicado; respeitar o intervalo de washout (>=2 semanas; fluoxetina 5 semanas)."
+  },
+  {
+   "a": "qt",
+   "b": "qt",
+   "sev": "major",
+   "mec": "Prolongamento aditivo do intervalo QT - risco de torsades de pointes.",
+   "mng": "Evitar; se necessário, ECG e corrigir potássio/magnésio."
+  },
+  {
+   "a": "raas",
+   "b": "potassium-raising",
+   "sev": "major",
+   "mec": "Hipercaliemia.",
+   "mng": "Vigiar potássio e função renal; evitar duplo bloqueio do SRAA."
+  },
+  {
+   "a": "ksparing",
+   "b": "potassium-raising",
+   "sev": "major",
+   "mec": "Hipercaliemia.",
+   "mng": "Monitorizar potássio; cuidado na doença renal crónica."
+  },
+  {
+   "a": "raas",
+   "b": "nsaid",
+   "sev": "moderate",
+   "mec": "Redução da função renal e do efeito anti-hipertensor; risco de LRA (sobretudo com diurético - 'triplo golpe').",
+   "mng": "Evitar uso crónico; vigiar creatinina e potássio."
+  },
+  {
+   "a": "diuretic-kloss",
+   "b": "nsaid",
+   "sev": "moderate",
+   "mec": "Os AINEs reduzem o efeito diurético e podem agravar a função renal.",
+   "mng": "Vigiar função renal e PA."
+  },
+  {
+   "a": "statin",
+   "b": "cyp3a4-inhibitor",
+   "sev": "major",
+   "mec": "Aumento dos níveis de estatina (sobretudo sinvastatina/atorvastatina) - miopatia/rabdomiólise.",
+   "mng": "Evitar com sinvastatina; preferir pravastatina/rosuvastatina ou suspender a estatina durante o ciclo (ex.: macrólido)."
+  },
+  {
+   "a": "statin",
+   "b": "fibrate",
+   "sev": "major",
+   "mec": "Aumento do risco de miopatia (sobretudo com genfibrozil).",
+   "mng": "Preferir fenofibrato; vigiar CK e sintomas musculares."
+  },
+  {
+   "a": "macrolide",
+   "b": "qt",
+   "sev": "major",
+   "mec": "Prolongamento aditivo do intervalo QT.",
+   "mng": "Preferir azitromicina; ECG se risco elevado."
+  },
+  {
+   "a": "warfarin",
+   "b": "cyp3a4-inhibitor",
+   "sev": "major",
+   "mec": "Aumento do INR e do risco hemorrágico (azóis, metronidazol, amiodarona, macrólidos).",
+   "mng": "Monitorizar INR de perto e ajustar a dose."
+  },
+  {
+   "a": "warfarin",
+   "b": "nsaid",
+   "sev": "major",
+   "mec": "Hemorragia (efeito aditivo).",
+   "mng": "Evitar."
+  },
+  {
+   "a": "digoxin",
+   "b": "pgp-inhibitor",
+   "sev": "major",
+   "mec": "Aumento dos níveis de digoxina (verapamil, amiodarona, claritromicina).",
+   "mng": "Reduzir a dose de digoxina; monitorizar digoxinemia e ECG."
+  },
+  {
+   "a": "digoxin",
+   "b": "diuretic-kloss",
+   "sev": "moderate",
+   "mec": "A hipocaliemia potencia a toxicidade digitálica.",
+   "mng": "Vigiar potássio e magnésio."
+  },
+  {
+   "a": "lithium",
+   "b": "nsaid",
+   "sev": "major",
+   "mec": "Aumento da litemia - toxicidade.",
+   "mng": "Evitar; se necessário, monitorizar litemia."
+  },
+  {
+   "a": "lithium",
+   "b": "raas",
+   "sev": "major",
+   "mec": "Aumento da litemia.",
+   "mng": "Monitorizar litemia e função renal."
+  },
+  {
+   "a": "lithium",
+   "b": "thiazide",
+   "sev": "major",
+   "mec": "Aumento da litemia.",
+   "mng": "Evitar/monitorizar litemia."
+  },
+  {
+   "a": "methotrexate",
+   "b": "nsaid",
+   "sev": "major",
+   "mec": "Redução da excreção renal do metotrexato - toxicidade (sobretudo em dose alta).",
+   "mng": "Cuidado; vigiar hemograma e função renal."
+  },
+  {
+   "a": "methotrexate",
+   "b": "trimethoprim",
+   "sev": "major",
+   "mec": "Toxicidade medular (efeito antifolato aditivo).",
+   "mng": "Evitar a associação."
+  },
+  {
+   "a": "betablocker",
+   "b": "nondhp-ccb",
+   "sev": "major",
+   "mec": "Bradicardia/bloqueio AV; depressão da contractilidade.",
+   "mng": "Evitar; se necessário, monitorizar FC e ECG."
+  },
+  {
+   "a": "betablocker",
+   "b": "bradycardic",
+   "sev": "moderate",
+   "mec": "Bradicardia aditiva.",
+   "mng": "Vigiar a frequência cardíaca."
+  },
+  {
+   "a": "cns-depressant",
+   "b": "cns-depressant",
+   "sev": "major",
+   "mec": "Sedação e depressão respiratória aditivas.",
+   "mng": "Evitar/ajustar dose; cuidado especial em idosos."
+  },
+  {
+   "a": "opioid",
+   "b": "benzodiazepine",
+   "sev": "major",
+   "mec": "Depressão respiratória e sedação - risco de morte.",
+   "mng": "Evitar; se inevitável, doses mínimas e vigilância."
+  },
+  {
+   "a": "allopurinol",
+   "b": "azathioprine",
+   "sev": "contra",
+   "mec": "Inibição da xantina-oxidase - acumulação de 6-mercaptopurina - mielossupressão grave.",
+   "mng": "Contraindicado, ou reduzir a azatioprina a ~25% com hemograma apertado."
+  },
+  {
+   "a": "clopidogrel",
+   "b": "cyp2c19-inhibitor",
+   "sev": "moderate",
+   "mec": "Redução da ativação do clopidogrel (omeprazol/esomeprazol) - menor efeito antiagregante.",
+   "mng": "Preferir pantoprazol."
+  },
+  {
+   "a": "pde5",
+   "b": "nitrate",
+   "sev": "contra",
+   "mec": "Hipotensão grave.",
+   "mng": "Contraindicado; respeitar o intervalo (24h sildenafil, 48h tadalafil)."
+  },
+  {
+   "a": "pde5",
+   "b": "alpha-blocker",
+   "sev": "moderate",
+   "mec": "Hipotensão sintomática.",
+   "mng": "Iniciar com doses baixas e separar as tomas."
+  },
+  {
+   "a": "corticosteroid",
+   "b": "nsaid",
+   "sev": "moderate",
+   "mec": "Aumento do risco de úlcera/hemorragia GI.",
+   "mng": "Associar IBP e vigiar."
+  },
+  {
+   "a": "corticosteroid",
+   "b": "diuretic-kloss",
+   "sev": "moderate",
+   "mec": "Hipocaliemia aditiva.",
+   "mng": "Vigiar potássio."
+  },
+  {
+   "a": "betablocker",
+   "b": "hypoglycaemic",
+   "sev": "minor",
+   "mec": "Os betabloqueantes podem mascarar os sinais adrenérgicos de hipoglicemia.",
+   "mng": "Educar o doente; preferir cardiosseletivos."
+  },
+  {
+   "a": "raas",
+   "b": "raas",
+   "sev": "major",
+   "mec": "Duplo bloqueio do SRAA: hipercaliemia, LRA e hipotensão.",
+   "mng": "Evitar a combinação IECA + ARA."
+  },
+  {
+   "a": "sympathomimetic",
+   "b": "maoi",
+   "sev": "contra",
+   "mec": "Crise hipertensiva.",
+   "mng": "Contraindicado."
+  },
+  {
+   "a": "anticholinergic",
+   "b": "anticholinergic",
+   "sev": "moderate",
+   "mec": "Carga anticolinérgica aditiva (confusão, retenção urinária, obstipação), sobretudo no idoso.",
+   "mng": "Reduzir o número de anticolinérgicos; rever no idoso."
+  },
+  {
+   "a": "colchicine",
+   "b": "cyp3a4-inhibitor",
+   "sev": "major",
+   "mec": "Aumento dos níveis de colchicina - toxicidade potencialmente fatal (sobretudo com macrólidos/azóis).",
+   "mng": "Reduzir dose/evitar; contraindicada a associação na insuficiência renal ou hepática."
+  },
+  {
+   "a": "cyp3a4-inducer",
+   "b": "statin",
+   "sev": "moderate",
+   "mec": "Indutores enzimáticos (rifampicina, carbamazepina, oxcarbazepina, topiramato) reduzem os níveis da estatina.",
+   "mng": "Vigiar o efeito lipídico; pode ser necessário ajustar a dose ou rever a associação."
+  },
+  {
+   "a": "cyp3a4-inducer",
+   "b": "doac",
+   "sev": "major",
+   "mec": "A indução enzimática reduz os níveis do anticoagulante oral direto - risco de trombose.",
+   "mng": "Evitar; preferir varfarina (com INR) ou HBPM."
+  },
+  {
+   "a": "cyp3a4-inducer",
+   "b": "contraceptive",
+   "sev": "major",
+   "mec": "A indução acelera o metabolismo das hormonas - falha contracetiva.",
+   "mng": "Usar método não hormonal/de alta eficácia (ex.: DIU) e barreira adicional."
+  },
+  {
+   "a": "tamoxifen",
+   "b": "cyp2d6-inhibitor",
+   "sev": "major",
+   "mec": "Inibidores do CYP2D6 (fluoxetina, paroxetina, bupropiona) reduzem a conversão em endoxifeno - menor eficácia antitumoral.",
+   "mng": "Preferir antidepressivos com baixa inibição do CYP2D6 (ex.: venlafaxina, citalopram)."
+  }
+ ],
+ "tagLabels": {
+  "nsaid": "AINEs",
+  "antiplatelet": "Antiagregantes plaquetários",
+  "anticoagulant": "Anticoagulantes",
+  "warfarin": "Varfarina",
+  "doac": "Anticoagulantes orais diretos",
+  "serotonergic": "Fármacos serotoninérgicos (ISRS/IRSN, tramadol…)",
+  "maoi": "IMAO",
+  "qt": "Fármacos que prolongam o intervalo QT",
+  "raas": "IECA / ARA",
+  "potassium-raising": "Fármacos que aumentam o potássio",
+  "ksparing": "Diuréticos poupadores de potássio",
+  "diuretic-kloss": "Diuréticos espoliadores de potássio",
+  "thiazide": "Diuréticos tiazídicos",
+  "nephrotoxic": "Fármacos nefrotóxicos",
+  "statin": "Estatinas",
+  "cyp3a4-inhibitor": "Inibidores do CYP3A4 (macrólidos, azóis, verapamil…)",
+  "cyp3a4-inducer": "Indutores do CYP3A4",
+  "cyp2c19-inhibitor": "Inibidores do CYP2C19 (omeprazol/esomeprazol)",
+  "macrolide": "Macrólidos",
+  "azole": "Antifúngicos azólicos",
+  "digoxin": "Digoxina",
+  "lithium": "Lítio",
+  "methotrexate": "Metotrexato",
+  "metformin": "Metformina",
+  "betablocker": "Betabloqueantes",
+  "nondhp-ccb": "Verapamil / Diltiazem",
+  "bradycardic": "Fármacos bradicardizantes",
+  "pgp-inhibitor": "Inibidores da glicoproteína-P",
+  "cns-depressant": "Depressores do SNC",
+  "opioid": "Opioides",
+  "benzodiazepine": "Benzodiazepinas",
+  "gabapentinoid": "Gabapentinoides",
+  "anticholinergic": "Fármacos anticolinérgicos",
+  "corticosteroid": "Corticosteroides",
+  "allopurinol": "Alopurinol",
+  "azathioprine": "Azatioprina",
+  "fibrate": "Fibratos",
+  "pde5": "Inibidores da PDE5",
+  "nitrate": "Nitratos",
+  "alpha-blocker": "Bloqueadores alfa",
+  "hypoglycaemic": "Antidiabéticos hipoglicemiantes (insulina/sulfonilureias)",
+  "trimethoprim": "Trimetoprim / cotrimoxazol",
+  "sympathomimetic": "Simpaticomiméticos",
+  "colchicine": "Colchicina",
+  "clopidogrel": "Clopidogrel",
+  "cyp2d6-inhibitor": "Inibidores do CYP2D6 (fluoxetina, paroxetina, bupropiona)",
+  "contraceptive": "Contracetivos hormonais combinados",
+  "tamoxifen": "Tamoxifeno"
+ },
+ "duplicacoes": [
+  {
+   "tag": "nsaid",
+   "label": "Dois ou mais AINEs"
+  },
+  {
+   "tag": "anticoagulant",
+   "label": "Múltiplos anticoagulantes"
+  },
+  {
+   "tag": "antiplatelet",
+   "label": "Múltiplos antiagregantes"
+  },
+  {
+   "tag": "statin",
+   "label": "Múltiplas estatinas"
+  },
+  {
+   "tag": "ppi",
+   "label": "Múltiplos inibidores da bomba de protões"
+  },
+  {
+   "tag": "benzodiazepine",
+   "label": "Múltiplas benzodiazepinas"
+  },
+  {
+   "tag": "opioid",
+   "label": "Múltiplos opióides"
+  }
+ ],
+ "populacoes": [
+  {
+   "k": "pr",
+   "l": "Gravidez"
+  },
+  {
+   "k": "bf",
+   "l": "Amamentação"
+  },
+  {
+   "k": "rn",
+   "l": "Insuf. renal"
+  },
+  {
+   "k": "hp",
+   "l": "Insuf. hepática"
+  },
+  {
+   "k": "el",
+   "l": "Idoso"
+  },
+  {
+   "k": "pd",
+   "l": "Pediatria"
+  }
+ ],
+ "niveis": {
+  "safe": {
+   "l": "Seguro / compatível",
+   "c": "g"
+  },
+  "ok": {
+   "l": "Sem ajuste",
+   "c": "g"
+  },
+  "caution": {
+   "l": "Precaução",
+   "c": "a"
+  },
+  "adjust": {
+   "l": "Ajustar dose",
+   "c": "a"
+  },
+  "limited": {
+   "l": "Dados limitados",
+   "c": "a"
+  },
+  "avoid": {
+   "l": "Evitar",
+   "c": "o"
+  },
+  "contra": {
+   "l": "Contraindicado",
+   "c": "r"
+  }
+ },
+ "severidades": {
+  "contra": {
+   "l": "Contraindicado",
+   "r": 0
+  },
+  "major": {
+   "l": "Grave",
+   "r": 1
+  },
+  "moderate": {
+   "l": "Moderada",
+   "r": 2
+  },
+  "minor": {
+   "l": "Ligeira",
+   "r": 3
+  }
+ }
+}

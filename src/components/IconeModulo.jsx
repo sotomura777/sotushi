@@ -12,6 +12,7 @@ const COR = {
   notas: ["#6A7689", "#9fb4ff"],
   "saude-infantil": ["#CE7BA0", "#ff84c4"],
   "farmacos-gravidez": ["#7C5BD0", "#b07cff"],
+  interacoes: ["#1E8C84", "#2af0cf"],
 };
 
 // Mosaico de ícone de módulo: glossy (claro) ou neon (escuro), conforme o tema.

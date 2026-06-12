@@ -19,6 +19,8 @@ import Notas from "./notas/Notas";
 import Calculadoras from "./calculadoras/Calculadoras";
 import FarmacosGravidez from "./farmacos-gravidez/FarmacosGravidez";
 import metaGravidez from "@conteudo/farmacos-gravidez/meta.json";
+import Interacoes from "./interacoes/Interacoes";
+import metaInteracoes from "@conteudo/interacoes/meta.json";
 
 export const MODULOS = [
   {
@@ -122,5 +124,15 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#8b5cf6 0%,#7c3aed 55%,#4c1d95 100%)",
     pronto: true,
     Componente: FarmacosGravidez,
+  },
+  {
+    id: "interacoes",
+    nome: metaInteracoes.nome,
+    descricao: "Interações e cuidados por população",
+    accent: "#0e6b6b",
+    bg: "#e9f4f3",
+    gradiente: "linear-gradient(135deg,#149a92 0%,#0e6b6b 55%,#0a5151 100%)",
+    pronto: true,
+    Componente: Interacoes,
   },
 ];

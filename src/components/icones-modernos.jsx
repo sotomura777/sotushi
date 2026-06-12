@@ -152,6 +152,18 @@ const MI = {
       <circle cx="12" cy="12" r="9" fill={c} fillOpacity="0.16" />
       <path d="M12 8v8M8 12h8" strokeWidth="2" />
     </>),
+
+  // Interações — cápsula + comprimido
+  interacoes: (c, s) => D(c, s,
+    "M14 7 7.5 13.5a4.6 4.6 0 1 0 6.5 6.5l6.5-6.5A4.6 4.6 0 1 0 14 7Z",
+    <>
+      <path d="M14 7 7.5 13.5a4.6 4.6 0 1 0 6.5 6.5l6.5-6.5A4.6 4.6 0 1 0 14 7Z" />
+      <path d="M10.75 10.25l6.5 6.5" />
+    </>,
+    <>
+      <circle cx="6.3" cy="5.8" r="3.3" fill={c} fillOpacity="0.16" stroke="none" />
+      <circle cx="6.3" cy="5.8" r="3.3" />
+    </>),
 };
 
 // Mapa por id de módulo (para a app)
@@ -166,6 +178,7 @@ const MI_MODULO = {
   notas: MI.clipboard,
   "saude-infantil": MI.baby,
   "farmacos-gravidez": MI.pregnant,
+  interacoes: MI.interacoes,
 };
 
 // ============================================================================

@@ -1,0 +1,34 @@
+{
+ "nome": "Interações",
+ "titulo": "Estudo de Interações",
+ "subtitulo": "notas pessoais de estudo e revisão",
+ "disclaimer": "<b>Material de estudo pessoal.</b> Não destinado a apoio à decisão clínica. A lista de interações é por classe e <b>não é exaustiva</b> — para qualquer decisão sobre medicação, consultar o Infomed e um verificador validado.",
+ "infomed": "https://extranet.infarmed.pt/INFOMED-fo/",
+ "links": [
+  {
+   "titulo": "Infomed (INFARMED)",
+   "url": "https://extranet.infarmed.pt/INFOMED-fo/"
+  },
+  {
+   "titulo": "Drugs.com",
+   "url": "https://www.drugs.com/"
+  }
+ ],
+ "bibliografia": "<p><b>Fontes gerais consultadas transversalmente:</b><br>\n        INFARMED / Infomed · EMA · FDA · Drugs.com · LactMed (NIH) · Briggs <i>Drugs in Pregnancy and Lactation</i> · Critérios de Beers (AGS 2023) · STOPP-START · NICE · BNF.</p>\n\n        <p><b>Atualizações específicas, por letra:</b></p>\n\n        <p><i>A.</i> FDA Drug Safety Communication jul 2021 (estatinas na gravidez); INFARMED — Protocolo do ácido fólico; USPSTF; ACR 2020 Gout Guideline; CPIC HLA-B*58:01 (alopurinol); EMA jan 2024 + MHRA set 2024 (valproato — PPP e precaução nos homens); WOMAN trial / FIGO-WHO (ácido tranexâmico); LactMed (aciclovir, tranexâmico).</p>\n\n        <p><i>B.</i> SmPC Bilaxten/Ilaxten (emc / INFARMED); LactMed (bisoprolol, bupropiona, beclometasona); FDA Prescribing Information Wellbutrin; MotherToBaby — corticóides inalados.</p>\n\n        <p><i>C.</i> CPIC — HLA-B/HLA-A e carbamazepina; FDA label Tegretol; Medical Genetics Summaries (NCBI); EMA/PRAC 2018–2019 (restrição das fluoroquinolonas); FDA 2018 (aneurisma/disseção da aorta); FDA label Cipro; FDA label / DailyMed colchicina; StatPearls + MSD Manual (clindamicina); ACC/AHA 2017 + Circulation 2023 (clortalidona).</p>\n\n        <p><i>D.</i> EMA/PRAC 2013 (diclofenac — contraindicações CV); EMA Article 31 referral 2014 (domperidona); SmPC Pradaxa / FDA Pradaxa label (dabigatrano); RCOG / NICE — corticosteróides antenatais.</p>\n\n        <p><i>E.</i> FDA label Savaysa (boxed warning edoxabano, CrCl > 95 mL/min); EMA SmPC Lixiana; ENGAGE AF-TIMI 48; Briggs + LactMed (eritromicina, sinal IHPS); WHO MEC 2015, UKMEC, ACOG (contracetivos combinados).</p>\n\n        <p><i>F.</i> EMA PRAC mai 2025 + MHRA abr 2024 (finasterida — depressão/ideação suicida); FDA DSC out 2019 + Bérard CMAJ 2019 + Mølgaard-Nielsen JAMA 2016 (fluconazol); LactMed + FDA label fentanilo transdérmico (efeito do calor); NICE + RCOG GTG 47 (ferro oral).</p>\n        <p><i>G–I.</i> FDA Drug Safety Communication dez 2019 (gabapentinoides — depressão respiratória); EMA/PRAC + MHRA 2018 e FDA 2020 (HCT — cancro cutâneo não-melanoma); EMA Article 31 referral 2015 (hidroxizina — restrição QT); FDA Drug Safety Communication out 2020 (AINEs a partir das 20 sem — oligoâmnios); SmPC Sporanox + FDA boxed warning (itraconazol — insuficiência cardíaca); SmPC nitratos (CI com inibidores PDE5/riociguat); LactMed (gentamicina, heparina, hidralazina).</p>\n        <p><i>L–N.</i> SmPC Lamictal + Clark Am J Psychiatry 2013 + estudos de clearance (lamotrigina na gravidez); EMA/PRAC 2018–2019 (fluoroquinolonas — class effect, levofloxacina); Patorno NEJM 2017 (lítio — risco modernizado de Ebstein); FDA Drug Safety Communication abr 2016 (metformina — limiares por eGFR); EMA Article 31 referral dez 2013 (metoclopramida — máx 5 dias/30 mg, contraindicação <1 ano); FDA Drug Safety Communication mar 2020 (montelucaste — boxed warning neuropsiquiátrico); FDA Drug Safety Communication out 2020 (naproxeno — AINEs a partir das 20 sem). LactMed e SmPC para os fármacos novos.</p>\n        <p><i>O–Q.</i> Huybrechts JAMA 2018 + Drugs.com (ondansetron — fenda palatina 1.º T) e FDA 2011 (QT, dose máx 16 mg); Ahlqvist JAMA 2024 + ACOG/RCOG/FIGO/EMA 2025 (paracetamol — sem associação causal a autismo/PHDA); FDA 2021 (pravastatina — estatinas na gravidez); MHRA Drug Safety Update abr 2022 + FDA 2019 (pregabalina — malformações e depressão respiratória). SmPC + LactMed + Critérios de Beers para os fármacos novos (prometazina: FDA boxed warning <2 anos; pioglitazona: ICC/bexiga; quinina: FDA cãibras).</p>\n        <p><i>R–T.</i> FDA 2021 (estatinas na gravidez — rosuvastatina, sinvastatina); FDA Drug Safety Communication abr 2017 (tramadol — restrição pediátrica/CYP2D6); Fralick BMJ 2014 (cotrimoxazol + IECA/ARA — hipercaliemia/morte súbita); EMA/PRAC set 2023 + MHRA 2024 (topiramato — Programa de Prevenção da Gravidez). SmPC + LactMed para os fármacos novos (rifampicina: indutor; ropinirol: controlo dos impulsos; sacubitril/valsartan: angioedema c/ IECA; sumatriptano: CI cardiovascular; tamoxifeno: CYP2D6/TEV).</p>\n        <p><i>U–Z.</i> FDA Drug Safety Communication abr 2019 + 2013 (zolpidem — comportamentos complexos do sono / dose na mulher); ESC/ACC + Briggs (varfarina — prótese mecânica) e MHRA 2024 (varfarina+tramadol); FDA Drug Safety Communication out 2020 (diclofenac, etoricoxib — fecho da classe AINE, 20 sem). SmPC + LactMed para os fármacos novos (ácido ursodesoxicólico — colestase da gravidez/PITCHES; vancomicina; vildagliptina; zopiclona). <b>Revisão A–Z concluída.</b></p>",
+ "rodape": {
+  "aviso": "Conteúdo para estudo e revisão pessoais. Não destinado a apoio à decisão clínica.",
+  "referencias": "Referências: INFARMED/Infomed, EMA, Drugs.com, Briggs (Drugs in Pregnancy &amp; Lactation), Beers/STOPP-START.",
+  "base": "fármacos · núcleo dos mais prescritos em Portugal · atualizado: Junho 2026"
+ },
+ "microcopy": {
+  "hintMin2": "Adicione pelo menos 2 fármacos para verificar interações entre eles.",
+  "semInteracoesFarmaco": "Sem interações de classe assinaladas nesta base.",
+  "semInteracoesCombo": "Sem interações de classe assinaladas nesta base para esta combinação. Confirme sempre num verificador validado e no Infomed.",
+  "recomendado": "O que está recomendado:",
+  "duplicacao": "Duplicação terapêutica",
+  "infomedLink": "Procurar RCM no INFOMED (INFARMED)",
+  "infomedHint": "Pesquisar por:",
+  "cuidadosTitulo": "Cuidados por população",
+  "interacoesTitulo": "Interações relevantes (por classe)"
+ }
+}

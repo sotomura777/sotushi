@@ -1,0 +1,6194 @@
+{
+ "farmacos": [
+  {
+   "id": 133,
+   "inn": "Aciclovir",
+   "brands": [
+    "Zovirax",
+    "Aciclovir"
+   ],
+   "cls": "Antiviral (herpes simplex / varicela-zóster)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Tratamento de escolha do herpes na gravidez (todas as fases); supressão a partir das 36 sem reduz recidivas/cesariana."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (~1% da dose infantil no leite) — tratamento de escolha."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Excreção renal; reduzir dose/frequência conforme TFG. Manter boa hidratação."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Acumula na IR -> neurotoxicidade (confusão, alucinações, convulsões); ajustar e hidratar."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 1,
+   "inn": "Ácido acetilsalicílico",
+   "brands": [
+    "Aspirina",
+    "AAS",
+    "Cartia"
+   ],
+   "cls": "Antiagregante / AINE (analgésico em dose alta)",
+   "tags": [
+    "antiplatelet",
+    "nsaid"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dose baixa (75-150 mg) na profilaxia de pré-eclâmpsia. Dose analgésica: evitar, contraindicada no 3.º trimestre."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dose baixa compatível; evitar doses analgésicas (risco teórico de Reye)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Evitar doses analgésicas se TFG<30; dose antiagregante mantida."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Evitar na doença hepática grave (risco hemorrágico)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico GI; ponderar gastroproteção."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Evitar <16 anos em quadros febris/virais (Reye)."
+   }
+  },
+  {
+   "id": 2,
+   "inn": "Ácido fólico",
+   "brands": [
+    "Folicil",
+    "Acfol"
+   ],
+   "cls": "Vitamina (B9)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "400 mcg/dia (baixo risco); 4-5 mg/dia se alto risco (DTN prévio, antiepiléticos, diabetes, obesidade). Iniciar >=1 mês antes da conceção até ao 1.º trimestre."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste habitual."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste habitual."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Seguro."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado em pediatria."
+   }
+  },
+  {
+   "id": 134,
+   "inn": "Ácido tranexâmico",
+   "brands": [
+    "Cyklokapron",
+    "Ácido tranexâmico"
+   ],
+   "cls": "Antifibrinolítico",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Hemorragia pós-parto (1 g IV até 3h após o parto — WOMAN) e trauma; não para hemorragia da gravidez em geral."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Pequenas quantidades no leite; compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Excreção renal; reduzir dose na IR (risco de acumulação)."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco tromboembólico; CI em doença tromboembólica ativa/prévia, hemorragia intracraniana, alteração da visão das cores."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado (cirurgia/trauma/menorragia); ajustar."
+   }
+  },
+  {
+   "id": 169,
+   "inn": "Ácido ursodesoxicólico",
+   "brands": [
+    "Ursofalk",
+    "Destolit"
+   ],
+   "cls": "Ácido biliar (colestase / litíase biliar de colesterol)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Usado na colestase intra-hepática da gravidez (alivia o prurido; o ensaio PITCHES não mostrou benefício perinatal claro, mas mantém-se 1.ª linha sintomática); seguro."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (absorção sistémica baixa)."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "CI na colestase extra-hepática completa/cólica biliar aguda; vigiar na hepatopatia descompensada."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Bem tolerado; diarreia ligeira."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado (colestase/doenças colestáticas)."
+   }
+  },
+  {
+   "id": 3,
+   "inn": "Ácido valpróico / Valproato",
+   "brands": [
+    "Depakine"
+   ],
+   "cls": "Antiepilético / estabilizador do humor",
+   "tags": [
+    "hepatotoxic"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Altamente teratogénico (malformações major ~10%, atraso neurocognitivo até 30-40%). Contraindicado em mulheres em idade fértil sem Programa de Prevenção da Gravidez (PPP). Precaução EMA/MHRA 2024: homens devem usar contraceção durante o tratamento e 3 meses após (possível risco de NDD; dados contestados)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Baixa excreção no leite; geralmente compatível mas vigiar o lactente."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Hepatotoxicidade; contraindicado na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Sedação, tremor, hiperamoniémia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Risco hepático grave em <2 anos."
+   }
+  },
+  {
+   "id": 4,
+   "inn": "Alendronato",
+   "brands": [
+    "Fosamax",
+    "Alendronato"
+   ],
+   "cls": "Bifosfonato (osteoporose)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Não recomendado; retenção óssea prolongada."
+   },
+   "bf": {
+    "l": "limited",
+    "t": "Dados limitados; provavelmente compatível."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar se TFG<35."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Tomar em jejum, de pé 30 min (esofagite); rever osteonecrose mandibular."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 5,
+   "inn": "Alopurinol",
+   "brands": [
+    "Zyloric",
+    "Alopurinol"
+   ],
+   "cls": "Hipouricemiante (inibidor da xantina-oxidase)",
+   "tags": [
+    "allopurinol"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; só se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Excretado no leite; precaução."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "1.ª linha mesmo na DRC; iniciar dose baixa (50 mg se TFG<30) e titular ao alvo de uricemia, não limitar pela TFG."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar função hepática."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Maior risco de SCAR na IR. Ponderar HLA-B*58:01 antes de iniciar em ascendência asiática/africana (SJS/TEN/DRESS)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Indicações específicas."
+   }
+  },
+  {
+   "id": 6,
+   "inn": "Alprazolam",
+   "brands": [
+    "Xanax",
+    "Unilan"
+   ],
+   "cls": "Benzodiazepina (ansiolítico)",
+   "tags": [
+    "benzodiazepine",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Risco no 1.º T e abstinência/floppy infant no 3.º T."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sedação do lactente."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir dose."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: quedas, confusão; evitar."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não recomendado."
+   }
+  },
+  {
+   "id": 7,
+   "inn": "Amiodarona",
+   "brands": [
+    "Cordarone",
+    "Amiodarona"
+   ],
+   "cls": "Antiarrítmico classe III",
+   "tags": [
+    "qt",
+    "cyp3a4-inhibitor",
+    "pgp-inhibitor",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Risco de disfunção tiroideia fetal/neonatal; só em arritmias graves."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Excreção significativa + iodo; evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste renal."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade; vigiar transaminases."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, disfunção tiroideia, toxicidade pulmonar/hepática."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso especializado."
+   }
+  },
+  {
+   "id": 8,
+   "inn": "Amitriptilina",
+   "brands": [
+    "Tryptizol",
+    "Adepril"
+   ],
+   "cls": "Antidepressivo tricíclico",
+   "tags": [
+    "serotonergic",
+    "anticholinergic",
+    "qt",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Ponderar risco/benefício."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Baixa excreção; precaução."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: forte carga anticolinérgica, sedação, hipotensão ortostática, quedas."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Não 1.ª linha; dor neuropática/enurese sob vigilância."
+   }
+  },
+  {
+   "id": 9,
+   "inn": "Amlodipina",
+   "brands": [
+    "Norvasc",
+    "Amlodipina"
+   ],
+   "cls": "Bloqueador dos canais de cálcio (di-hidropiridina)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; nifedipina com mais experiência na gravidez."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Iniciar com dose baixa."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Edema periférico; risco de hipotensão."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada em HTA pediátrica."
+   }
+  },
+  {
+   "id": 10,
+   "inn": "Amoxicilina",
+   "brands": [
+    "Clamoxyl",
+    "Amoxicilina"
+   ],
+   "cls": "Antibiótico (penicilina)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Segura."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose/frequência se TFG<30."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Ajustar à função renal."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Muito usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 11,
+   "inn": "Amoxicilina + ác. clavulânico",
+   "brands": [
+    "Augmentin",
+    "Clavamox"
+   ],
+   "cls": "Antibiótico (penicilina + inibidor da beta-lactamase)",
+   "tags": [
+    "hepatotoxic"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Segura (evitar na RPM pré-termo - enterocolite)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatite colestática (clavulânico)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hepático; ajustar à função renal."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Muito usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 12,
+   "inn": "Apixabano",
+   "brands": [
+    "Eliquis"
+   ],
+   "cls": "Anticoagulante oral direto (anti-Xa)",
+   "tags": [
+    "anticoagulant",
+    "doac"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Contraindicado; usar HBPM."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir/evitar conforme função renal e critérios."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática com coagulopatia."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; ajustar por idade/peso/creatinina."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 13,
+   "inn": "Atenolol",
+   "brands": [
+    "Tenormin",
+    "Atenolol"
+   ],
+   "cls": "Betabloqueante (cardiosseletivo)",
+   "tags": [
+    "betablocker",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Associado a restrição de crescimento fetal; preferir labetalol/metildopa."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Acumula no leite; preferir metoprolol/propranolol."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Excreção renal; reduzir dose."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, fadiga, mascarar hipoglicemia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso sob vigilância."
+   }
+  },
+  {
+   "id": 14,
+   "inn": "Atorvastatina",
+   "brands": [
+    "Zarator",
+    "Atorvastatina"
+   ],
+   "cls": "Estatina",
+   "tags": [
+    "statin"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "RCM mantém contraindicação na gravidez; suspender ao planear/confirmar gravidez. Nota: FDA removeu a contraindicação absoluta (2021) — uso individualizado pode ponderar-se em risco CV muito alto (ex.: HF homozigótica)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicada na doença hepática ativa."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Mialgias; metabolizada pelo CYP3A4 (interações)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Hipercolesterolemia familiar."
+   }
+  },
+  {
+   "id": 15,
+   "inn": "Azatioprina",
+   "brands": [
+    "Imuran",
+    "Azatioprina"
+   ],
+   "cls": "Imunossupressor",
+   "tags": [
+    "azathioprine"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Pode manter-se em transplante/DII sob vigilância; risco fetal relativamente baixo."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Geralmente compatível; vigiar o lactente."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar dose."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade; vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Mielossupressão; vigiar hemograma. NUNCA associar a alopurinol sem ajuste."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso especializado."
+   }
+  },
+  {
+   "id": 16,
+   "inn": "Azitromicina",
+   "brands": [
+    "Zitromax",
+    "Azitromicina"
+   ],
+   "cls": "Antibiótico (macrólido)",
+   "tags": [
+    "macrolide",
+    "qt"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Segura."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco (menor) de prolongamento do QT."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 136,
+   "inn": "Beclometasona (inalada/nasal)",
+   "brands": [
+    "Qvar",
+    "Becotide",
+    "Clenil",
+    "Beconase"
+   ],
+   "cls": "Corticosteroide inalado/nasal",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Corticóide inalado aceitável na asma da gravidez (budesonida com mais dados); manter o controlo."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (absorção sistémica mínima)."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante (inalada)."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Vigiar candidíase oral (lavar a boca após inalação)."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada na asma pediátrica."
+   }
+  },
+  {
+   "id": 17,
+   "inn": "Bilastina",
+   "brands": [
+    "Bilaxten",
+    "Lergonix"
+   ],
+   "cls": "Anti-histamínico (2.ª geração)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; preferir cetirizina/loratadina."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Sem ajuste no adulto; evitar com inibidores da glicoproteína-P (cetoconazol, eritromicina, ciclosporina, ritonavir, diltiazem) na IR moderada/grave."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Pouco sedativa."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=6 anos (10 mg orodispersível/solução); 20 mg a partir dos 12 anos."
+   }
+  },
+  {
+   "id": 18,
+   "inn": "Bisoprolol",
+   "brands": [
+    "Concor",
+    "Bisoprolol"
+   ],
+   "cls": "Betabloqueante (cardiosseletivo)",
+   "tags": [
+    "betablocker",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Relativamente seguro; vigiar bradicardia/hipoglicemia neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; preferir metoprolol."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir se TFG<20."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, fadiga."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 19,
+   "inn": "Bromazepam",
+   "brands": [
+    "Lexotan",
+    "Bromazepam"
+   ],
+   "cls": "Benzodiazepina",
+   "tags": [
+    "benzodiazepine",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Como outras BZD: risco no 1.º e 3.º T."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sedação do lactente."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir dose."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: quedas, confusão."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não recomendado."
+   }
+  },
+  {
+   "id": 20,
+   "inn": "Budesonida (inalada/nasal)",
+   "brands": [
+    "Pulmicort",
+    "Budesonide",
+    "Rhinocort"
+   ],
+   "cls": "Corticosteroide inalado/nasal",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Corticóide inalado preferencial na asma da gravidez."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante (inalada)."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Vigiar candidíase oral."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada na asma pediátrica."
+   }
+  },
+  {
+   "id": 135,
+   "inn": "Bupropiona",
+   "brands": [
+    "Wellbutrin",
+    "Zyban",
+    "Elontril"
+   ],
+   "cls": "Antidepressivo / cessação tabágica (IRDN). CI: epilepsia, anorexia/bulimia, IMAO",
+   "tags": [
+    "seizure-threshold",
+    "cyp2d6-inhibitor"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados inconclusivos; só se benefício > risco. Na cessação tabágica preferir abordagem não-farmacológica/NRT."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Níveis baixos no leite (<=300 mg/dia); possível com vigilância. Relatos de convulsão no lactente; ponderar sertralina/nortriptilina."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose (acumulação de metabolitos ativos)."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose; cuidado na cirrose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Reduzir dose; risco convulsivo, insónia, HTA. Inibe CYP2D6 (metoprolol, antidepressivos; reduz tamoxifeno). NÃO associar a IMAO."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não estabelecido em pediatria."
+   }
+  },
+  {
+   "id": 21,
+   "inn": "Candesartan",
+   "brands": [
+    "Atacand",
+    "Candesartan"
+   ],
+   "cls": "Antagonista dos recetores da angiotensina (ARA)",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico (2.º-3.º T): oligoâmnios, lesão renal fetal. Suspender."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina; cuidado na estenose bilateral."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Iniciar com dose baixa."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, função renal."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 22,
+   "inn": "Carbamazepina",
+   "brands": [
+    "Tegretol",
+    "Carbamazepina"
+   ],
+   "cls": "Antiepilético",
+   "tags": [
+    "cyp3a4-inducer",
+    "hepatotoxic"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Teratogénica (defeitos do tubo neural); se necessária, ácido fólico em dose alta."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Geralmente compatível; vigiar o lactente."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade; vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia (SIADH), ataxia, indução enzimática. Ponderar HLA-B*15:02 (ascendência asiática) e HLA-A*31:01 antes de iniciar — risco de SJS/TEN/DRESS."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; vigiar."
+   }
+  },
+  {
+   "id": 23,
+   "inn": "Carvedilol",
+   "brands": [
+    "Dilbloc",
+    "Carvedilol"
+   ],
+   "cls": "Betabloqueante (não seletivo, com efeito alfa)",
+   "tags": [
+    "betablocker",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; vigiar bradicardia neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão ortostática, bradicardia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 24,
+   "inn": "Cefuroxima",
+   "brands": [
+    "Zinnat",
+    "Cefuroxima"
+   ],
+   "cls": "Antibiótico (cefalosporina 2.ª geração)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Segura."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar se TFG<30."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Ajustar à função renal."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 25,
+   "inn": "Cetirizina",
+   "brands": [
+    "Zyrtec",
+    "Cetirizina"
+   ],
+   "cls": "Anti-histamínico (2.ª geração)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Anti-histamínico de escolha na gravidez."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (leve sonolência possível no lactente)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Ligeira sedação; ajustar à função renal."
+   },
+   "pd": {
+    "l": "ok",
+    "t": ">=6 meses (gotas)."
+   }
+  },
+  {
+   "id": 26,
+   "inn": "Ciprofloxacina",
+   "brands": [
+    "Ciproxina",
+    "Ciprofloxacina"
+   ],
+   "cls": "Antibiótico (fluoroquinolona)",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar (cartilagem em estudos animais); usar alternativas."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; compatível em curso curto."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar se TFG<50."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste habitual."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Tendinopatia/rotura (risco maior com corticóides — evitar associação), QT, confusão, disglicemia, aneurisma/disseção da aorta. Restrição EMA: evitar em infeções ligeiras/autolimitadas e cistite não complicada se houver alternativa."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Evitar exceto indicações específicas."
+   }
+  },
+  {
+   "id": 27,
+   "inn": "Citalopram",
+   "brands": [
+    "Cipramil",
+    "Citalopram"
+   ],
+   "cls": "Antidepressivo (ISRS)",
+   "tags": [
+    "serotonergic",
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Pode manter-se; risco de síndrome de adaptação/HTP neonatal. Decisão partilhada."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Geralmente compatível; sertralina preferida."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado se TFG<20."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Dose máxima reduzida (QT); hiponatremia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso sob vigilância."
+   }
+  },
+  {
+   "id": 28,
+   "inn": "Claritromicina",
+   "brands": [
+    "Klacid",
+    "Claritromicina"
+   ],
+   "cls": "Antibiótico (macrólido)",
+   "tags": [
+    "macrolide",
+    "cyp3a4-inhibitor",
+    "pgp-inhibitor",
+    "qt"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Dados desfavoráveis; preferir azitromicina/amoxicilina."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Geralmente compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade; vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "QT; muitas interações (inibe o CYP3A4)."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 137,
+   "inn": "Clindamicina",
+   "brands": [
+    "Dalacin",
+    "Clindamicina"
+   ],
+   "cls": "Antibiótico (lincosamida)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Sem aumento de malformações no 2.º/3.º T; 1.º T só se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; pode manter-se, vigiar GI do lactente (diarreia, candidíase, raramente colite)."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste (ligeira/moderada); não removida por diálise."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Ajustar/vigiar na doença hepática grave (Child-Pugh C)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Maior associação a colite por C. difficile de todos os antibióticos."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 29,
+   "inn": "Clopidogrel",
+   "brands": [
+    "Plavix",
+    "Clopidogrel"
+   ],
+   "cls": "Antiagregante plaquetário",
+   "tags": [
+    "antiplatelet",
+    "clopidogrel"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; suspender ~5-7 dias antes do parto/neuroeixo."
+   },
+   "bf": {
+    "l": "limited",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Evitar na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 138,
+   "inn": "Clortalidona",
+   "brands": [
+    "Higroton",
+    "Clortalidona"
+   ],
+   "cls": "Diurético tiazida-like",
+   "tags": [
+    "thiazide",
+    "diuretic-kloss"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Não 1.ª linha; não previne pré-eclâmpsia."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Níveis baixos, mas semivida longa pode acumular no lactente (sobretudo pré-termo)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Pouco eficaz se TFG<30; risco de hipocaliemia/hiponatremia/LRA."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na cirrose (alcalose/hipocaliemia)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Preferida à HCT na HTA (semivida longa, dados CV); vigiar Na+/K+, mais hiponatremia/hipocaliemia."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 30,
+   "inn": "Codeína",
+   "brands": [
+    "Codeína",
+    "Pulmoserum"
+   ],
+   "cls": "Opioide fraco / antitússico",
+   "tags": [
+    "opioid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar perto do termo (depressão respiratória/abstinência); metabolismo variável."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Contraindicada (metabolizadores rápidos: morfina no leite)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir/evitar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Sedação, obstipação, confusão."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Contraindicada <12 anos e após amigdalectomia."
+   }
+  },
+  {
+   "id": 32,
+   "inn": "Colchicina",
+   "brands": [
+    "Colchicina"
+   ],
+   "cls": "Anti-inflamatório (gota / FMF)",
+   "tags": [
+    "colchicine"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados sugerem segurança razoável; usar se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; geralmente compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose; risco de toxicidade na DRC. NÃO usar se insuficiência renal E hepática simultâneas."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Margem estreita. Evitar com claritromicina/inibidores duplos CYP3A4+P-gp (toxicidade potencialmente fatal mesmo em dose terapêutica); cuidado com azóis, verapamil, ciclosporina."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "FMF sob especialista."
+   }
+  },
+  {
+   "id": 31,
+   "inn": "Colecalciferol (Vitamina D)",
+   "brands": [
+    "Vigantol",
+    "Dixevil"
+   ],
+   "cls": "Vitamina D",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Suplementação conforme necessidade."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar cálcio na DRC; formas ativas se necessário."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Frequente; vigiar cálcio."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Suplementação no lactente."
+   }
+  },
+  {
+   "id": 139,
+   "inn": "Dabigatrano",
+   "brands": [
+    "Pradaxa"
+   ],
+   "cls": "Anticoagulante oral direto (inibidor direto da trombina); antídoto: idarucizumab",
+   "tags": [
+    "anticoagulant",
+    "doac"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Contraindicado; usar HBPM."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "contra",
+    "t": "~80% eliminação renal; CI se TFG<30 (EMA). Cuidado/ajuste com inibidores P-gp (verapamil, amiodarona, dronedarona, claritromicina) na DRC."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Evitar na doença hepática com coagulopatia."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico (sobretudo >75a); dose 110 mg 2x/d nos idosos/alto risco. Evitar em síndrome antifosfolípido triplo-positivo."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Aprovado a partir dos 3 meses (TEV após anticoagulante parentérico)."
+   }
+  },
+  {
+   "id": 33,
+   "inn": "Deflazacort",
+   "brands": [
+    "Calcort",
+    "Deflazacort"
+   ],
+   "cls": "Corticosteroide",
+   "tags": [
+    "corticosteroid"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Menor dose eficaz; vigiar."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Doses baixas compatíveis."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiperglicemia, osteoporose, HTA."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Vigiar crescimento."
+   }
+  },
+  {
+   "id": 34,
+   "inn": "Desloratadina",
+   "brands": [
+    "Aerius",
+    "Desloratadina"
+   ],
+   "cls": "Anti-histamínico (2.ª geração)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Loratadina/cetirizina com mais dados; provavelmente segura."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Provavelmente compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Cuidado se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Cuidado na doença hepática."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Pouco sedativa."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=1 ano (xarope)."
+   }
+  },
+  {
+   "id": 140,
+   "inn": "Dexametasona",
+   "brands": [
+    "Dexafree",
+    "Decadron",
+    "Oradexon"
+   ],
+   "cls": "Corticosteroide sistémico (longa duração, sem mineralocorticoide)",
+   "tags": [
+    "corticosteroid"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Atravessa a placenta (pouco inativada) — preferir prednisolona para doença materna; usada na maturação pulmonar fetal (12 mg IM, 2 doses, 24-34 sem)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Cursos curtos compatíveis."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiperglicemia, HTA, osteoporose, psicose; cursos curtos preferíveis."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Crupe, antiemese, edema cerebral; ajustar ao peso."
+   }
+  },
+  {
+   "id": 35,
+   "inn": "Diazepam",
+   "brands": [
+    "Valium",
+    "Stesolid",
+    "Diazepam"
+   ],
+   "cls": "Benzodiazepina",
+   "tags": [
+    "benzodiazepine",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Risco no 1.º e 3.º T (abstinência/floppy infant)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Acumulação no lactente."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir dose."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir (metabolitos ativos acumulam)."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: semivida longa, quedas, confusão."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado em convulsões agudas."
+   }
+  },
+  {
+   "id": 36,
+   "inn": "Diclofenac",
+   "brands": [
+    "Voltaren",
+    "Olfen",
+    "Diclofenac"
+   ],
+   "cls": "AINE",
+   "tags": [
+    "nsaid"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "FDA 2020: evitar a partir das 20 sem (oligoâmnios/disfunção renal fetal); CI no 3.º T (encerramento prematuro do canal arterial). Se imprescindível entre 20-30 sem, menor dose/duração."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Curta duração compatível; preferir ibuprofeno."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade; vigiar."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Risco GI/renal/CV; evitar uso crónico. CI EMA 2013 (formulações sistémicas): IC NYHA II-IV, doença isquémica cardíaca, doença arterial periférica, doença cerebrovascular."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=14 anos (formas orais)."
+   }
+  },
+  {
+   "id": 37,
+   "inn": "Digoxina",
+   "brands": [
+    "Lanoxin",
+    "Digoxina"
+   ],
+   "cls": "Glicosídeo cardíaco",
+   "tags": [
+    "digoxin",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Pode usar-se (arritmias/IC); monitorizar níveis."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose (excreção renal); risco de toxicidade."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Margem estreita; reduzir dose, vigiar K+ e níveis."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; ajustar ao peso/níveis."
+   }
+  },
+  {
+   "id": 38,
+   "inn": "Diltiazem",
+   "brands": [
+    "Herbesser",
+    "Diltiazem"
+   ],
+   "cls": "BCC não di-hidropiridínico",
+   "tags": [
+    "nondhp-ccb",
+    "cyp3a4-inhibitor",
+    "pgp-inhibitor",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, edema, obstipação; muitas interações."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 39,
+   "inn": "Domperidona",
+   "brands": [
+    "Motilium",
+    "Domperidona"
+   ],
+   "cls": "Procinético / antiemético",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; preferir alternativas. Períodos curtos."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir frequência se TFG<30."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática moderada/grave."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Restrição EMA 2014: indicação restrita a náusea/vómitos, dose máx 10 mg PO 3x/dia (<=30 mg/dia), duração <=7 dias. CI: doença cardíaca, prolongamento QT, alterações eletrolíticas, insuf. hepática grave, coadministração com QT-prolongantes ou inibidores potentes do CYP3A4 (cetoconazol, fluconazol). Risco maior >60a e >30 mg/dia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Risco QT; uso restrito."
+   }
+  },
+  {
+   "id": 40,
+   "inn": "Doxiciclina",
+   "brands": [
+    "Vibramicina",
+    "Doxiciclina"
+   ],
+   "cls": "Antibiótico (tetraciclina)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Contraindicada a partir das 16 semanas (dentes, osso); evitar."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Cursos curtos geralmente compatíveis."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Preferida entre tetraciclinas na DRC."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Esofagite (tomar com água, de pé); fotossensibilidade."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Evitar <8 anos (exceto cursos curtos)."
+   }
+  },
+  {
+   "id": 41,
+   "inn": "Duloxetina",
+   "brands": [
+    "Cymbalta",
+    "Duloxetina"
+   ],
+   "cls": "Antidepressivo (IRSN)",
+   "tags": [
+    "serotonergic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Ponderar; risco de síndrome de adaptação neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Sertralina/paroxetina preferidas; precaução."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar se TFG<30."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicada na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia, HTA, quedas."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 42,
+   "inn": "Edoxabano",
+   "brands": [
+    "Lixiana"
+   ],
+   "cls": "Anticoagulante oral direto (anti-Xa)",
+   "tags": [
+    "anticoagulant",
+    "doac"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Contraindicado; usar HBPM."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar à função renal; eficácia REDUZIDA em CrCl >95 mL/min na FA não-valvular (FDA boxed warning: não usar; EMA: usar com cautela). Evitar se TFG<15."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática com coagulopatia."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; ajustar."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 43,
+   "inn": "Empagliflozina",
+   "brands": [
+    "Jardiance"
+   ],
+   "cls": "Antidiabético (inibidor SGLT2)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Suspender; sem dados de segurança."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Eficácia glicémica reduzida com TFG baixa; benefício renal/CV mantém-se em limiares definidos."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Depleção de volume; infeções genitais; cetoacidose euglicémica."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 44,
+   "inn": "Enalapril",
+   "brands": [
+    "Renitec",
+    "Enalapril"
+   ],
+   "cls": "IECA",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico (2.º-3.º T); suspender."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Compatível em doses habituais (IECA preferido na amamentação)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina; risco na estenose bilateral."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, tosse."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 45,
+   "inn": "Enoxaparina",
+   "brands": [
+    "Lovenox",
+    "Clexane",
+    "Enoxaparina"
+   ],
+   "cls": "Heparina de baixo peso molecular (anticoagulante)",
+   "tags": [
+    "anticoagulant"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Anticoagulante de escolha na gravidez (não atravessa a placenta)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (não absorvida por via oral pelo lactente)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose se TFG<30; considerar anti-Xa."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; ajustar a peso/função renal."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 141,
+   "inn": "Eritromicina",
+   "brands": [
+    "Eritromicina",
+    "Eryacne"
+   ],
+   "cls": "Antibiótico (macrólido); inibidor forte do CYP3A4",
+   "tags": [
+    "macrolide",
+    "cyp3a4-inhibitor",
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Geralmente aceite; evitar estolato (hepatite colestática). Preferir azitromicina/amoxicilina."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Excretada no leite; sinal de estenose pilórica hipertrófica no recém-nascido com exposição precoce — vigiar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Hepatotoxicidade; evitar na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "QT/torsade (sobretudo com outros QT/CYP3A4); muitas interações por inibição do CYP3A4 (estatinas - rabdomiólise, varfarina, colchicina - toxicidade fatal, ergotamina)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; estenose pilórica em <2 sem (raro)."
+   }
+  },
+  {
+   "id": 46,
+   "inn": "Escitalopram",
+   "brands": [
+    "Cipralex",
+    "Escitalopram"
+   ],
+   "cls": "Antidepressivo (ISRS)",
+   "tags": [
+    "serotonergic",
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Pode manter-se; risco de síndrome de adaptação/HTP neonatal. Decisão partilhada."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Geralmente compatível; sertralina preferida."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado se TFG<20."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Dose máxima reduzida (QT); hiponatremia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=12 anos sob vigilância."
+   }
+  },
+  {
+   "id": 47,
+   "inn": "Esomeprazol",
+   "brands": [
+    "Nexium",
+    "Esomeprazol"
+   ],
+   "cls": "Inibidor da bomba de protões",
+   "tags": [
+    "ppi",
+    "cyp2c19-inhibitor"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Omeprazol com mais dados; usar se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Uso prolongado: hipomagnesemia, B12, fraturas, C. difficile."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Formulações pediátricas específicas."
+   }
+  },
+  {
+   "id": 48,
+   "inn": "Espironolactona",
+   "brands": [
+    "Aldactone",
+    "Espironolactona"
+   ],
+   "cls": "Diurético poupador de potássio (antagonista da aldosterona)",
+   "tags": [
+    "ksparing",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Efeito antiandrogénico teórico; evitar no 1.º T se possível."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Metabolito no leite; geralmente compatível."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar/cuidado se TFG<30 (hipercaliemia)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Usado na cirrose com ascite; vigiar K+/Na+."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipercaliemia (sobretudo com IECA/ARA); ginecomastia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso específico."
+   }
+  },
+  {
+   "id": 142,
+   "inn": "Etinilestradiol + progestativo (contracetivo combinado)",
+   "brands": [
+    "Yasmin",
+    "Microginon",
+    "Loette",
+    "Belara",
+    "Cilest"
+   ],
+   "cls": "Contracetivo hormonal combinado oral",
+   "tags": [
+    "contraceptive"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Suspender se gravidez confirmada (sem indicação; não teratogénico significativo em exposição inadvertida)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Reduz produção de leite — preferir progestativo só nas primeiras 6 semanas/durante a amamentação."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "CI: doença hepática ativa, tumores hepáticos, colestase prévia (gravidez ou COC)."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "CI: enxaqueca com aura, tabagismo + >35a, HTA não controlada, TEV/AVC/EAM prévios, neoplasia hormono-dependente. Eficácia REDUZIDA por indutores enzimáticos (rifampicina, fenitoína, carbamazepina, hipericão) - usar contraceção alternativa."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Desde a menarca, caso a caso."
+   }
+  },
+  {
+   "id": 49,
+   "inn": "Etoricoxib",
+   "brands": [
+    "Arcoxia",
+    "Etoricoxib"
+   ],
+   "cls": "AINE (inibidor seletivo da COX-2)",
+   "tags": [
+    "nsaid"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "FDA 2020: evitar a partir das 20 sem (oligoâmnios); CI no 3.º T (canal arterial)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar se TFG<30."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicado na doença hepática grave."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Risco CV/HTA; CI na HTA não controlada (>140/90 persistente), IC, doença isquémica/arterial/cerebrovascular."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 50,
+   "inn": "Ezetimiba",
+   "brands": [
+    "Ezetrol",
+    "Ezetimiba"
+   ],
+   "cls": "Hipolipemiante (inibidor da absorção do colesterol)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Suspender; dados limitados."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática moderada/grave."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Bem tolerada."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=10 anos."
+   }
+  },
+  {
+   "id": 51,
+   "inn": "Famotidina",
+   "brands": [
+    "Famotidina",
+    "Lasa"
+   ],
+   "cls": "Antagonista dos recetores H2",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Compatível; opção na gravidez."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose se TFG<50."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Ajustar à função renal (confusão se acumula)."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada."
+   }
+  },
+  {
+   "id": 52,
+   "inn": "Fenofibrato",
+   "brands": [
+    "Lipanthyl",
+    "Fenofibrato"
+   ],
+   "cls": "Fibrato (hipolipemiante)",
+   "tags": [
+    "fibrate"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Suspender; dados limitados."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir/evitar conforme TFG."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Mialgias; ajustar à função renal."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 143,
+   "inn": "Fentanilo",
+   "brands": [
+    "Durogesic",
+    "Actiq",
+    "Abstral",
+    "Effentora"
+   ],
+   "cls": "Opióide forte (mu-agonista); substrato do CYP3A4",
+   "tags": [
+    "opioid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Atravessa a placenta; uso pontual aceitável; uso crónico - síndrome de abstinência neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Doses terapêuticas: quantidades pequenas no leite (compatível); vigiar sonolência/respiração do lactente em uso repetido."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado/reduzir na IR (acumulação)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Depressão respiratória - iniciar dose baixa. EVITAR com inibidores potentes do CYP3A4 (claritromicina, ritonavir, voriconazol) e indutores. Adesivo: o calor (febre, almofada elétrica, sauna, banhos quentes) aumenta a libertação - risco de overdose."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado em oncologia/anestesia; ajustar ao peso."
+   }
+  },
+  {
+   "id": 144,
+   "inn": "Ferro (sulfato ferroso)",
+   "brands": [
+    "Ferrograd",
+    "Tardyferon",
+    "Ferro-Gradumet"
+   ],
+   "cls": "Suplemento de ferro oral",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "1.ª linha na anemia ferropénica da gravidez (oral; IV se intolerância/má resposta)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "DRC avançada/diálise: preferir ferro IV."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Obstipação, dor abdominal, fezes negras. REDUZ absorção de: levotiroxina, fluoroquinolonas, tetraciclinas (incl. doxiciclina), bifosfonatos, levodopa, metildopa - separar 2-4h. PPIs/antiácidos reduzem a absorção do ferro."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; toxicidade aguda grave em sobredosagem pediátrica - manter fora do alcance."
+   }
+  },
+  {
+   "id": 53,
+   "inn": "Finasterida",
+   "brands": [
+    "Proscar",
+    "Finasterida"
+   ],
+   "cls": "Inibidor da 5-alfa-redutase",
+   "tags": [],
+   "pr": {
+    "l": "contra",
+    "t": "Contraindicada (feminização de feto masculino); grávidas não devem manusear comprimidos partidos."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Contraindicada."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Disfunção sexual (pode persistir após suspensão - PFS); afeta o valor do PSA. EMA/MHRA 2024-2025: risco de depressão e ideação suicida (sobretudo 1 mg para alopécia) - perguntar antecedentes psiquiátricos e suspender se sintomas."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 54,
+   "inn": "Flucloxacilina",
+   "brands": [
+    "Floxapen",
+    "Flucloxacilina"
+   ],
+   "cls": "Antibiótico (penicilina antiestafilocócica)",
+   "tags": [
+    "hepatotoxic"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Segura."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar em TFG muito baixa."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatite colestática (pode ser tardia)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hepático."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 55,
+   "inn": "Fluconazol",
+   "brands": [
+    "Diflucan",
+    "Fluconazol"
+   ],
+   "cls": "Antifúngico (azol)",
+   "tags": [
+    "azole",
+    "cyp3a4-inhibitor",
+    "cyp2c19-inhibitor",
+    "qt"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Preferir azóis tópicos no 1.º T (1.ª linha na candidíase vaginal); dose única oral 150 mg com evidência mista de risco de aborto (FDA 2019 inconclusivo; estudos dinamarquês/Quebec sugerem aumento); doses altas/repetidas associadas a malformações - evitar."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Compatível em dose única; vigiar em uso prolongado."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose se TFG<50."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade; vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "QT; muitas interações (varfarina, estatinas)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 56,
+   "inn": "Fluoxetina",
+   "brands": [
+    "Prozac",
+    "Fluoxetina"
+   ],
+   "cls": "Antidepressivo (ISRS)",
+   "tags": [
+    "serotonergic",
+    "cyp2d6-inhibitor"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Experiência longa; semivida longa (síndrome neonatal). Sertralina frequentemente preferida."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Maior passagem para o leite que a sertralina; vigiar o lactente."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado se TFG<20."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia; interações (inibe CYP2D6)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Aprovada em depressão pediátrica sob vigilância."
+   }
+  },
+  {
+   "id": 57,
+   "inn": "Formoterol + budesonida",
+   "brands": [
+    "Symbicort",
+    "DuoResp"
+   ],
+   "cls": "Broncodilatador LABA + corticóide inalado",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Budesonida inalada preferida; manter o controlo da asma."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Tremor, palpitações; candidíase oral."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Conforme idade/dispositivo."
+   }
+  },
+  {
+   "id": 58,
+   "inn": "Fosfomicina",
+   "brands": [
+    "Monurol",
+    "Fosfomicina"
+   ],
+   "cls": "Antibiótico (ITU não complicada)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Opção em ITU/bacteriúria na gravidez (dose única)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Evitar se TFG muito baixa."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Útil em cistite não complicada."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Formulações específicas."
+   }
+  },
+  {
+   "id": 59,
+   "inn": "Furosemida",
+   "brands": [
+    "Lasix",
+    "Furosemida"
+   ],
+   "cls": "Diurético da ansa",
+   "tags": [
+    "diuretic-kloss"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar só se indicado (não para edema fisiológico/HTA isolada)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pode reduzir a produção de leite."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Usada na DRC (doses mais altas)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar na cirrose (alcalose/hipocaliemia)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Depleção de volume, hipocaliemia, quedas, ototoxicidade em doses altas."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 60,
+   "inn": "Gabapentina",
+   "brands": [
+    "Neurontin",
+    "Gabapentina"
+   ],
+   "cls": "Gabapentinoide (antiepilético / dor neuropática)",
+   "tags": [
+    "gabapentinoid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; ponderar risco/benefício."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar sedação."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose conforme TFG."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Sedação, tontura, quedas, edema; ajustar à função renal. FDA 2019: risco de depressão respiratória grave/fatal sobretudo com opióides ou outros depressores do SNC, na DPOC e no idoso - iniciar dose baixa e titular."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada sob vigilância."
+   }
+  },
+  {
+   "id": 145,
+   "inn": "Gentamicina",
+   "brands": [
+    "Gentamicina",
+    "Gentalyn"
+   ],
+   "cls": "Antibiótico (aminoglicósido)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Uso só em infeção grave; exposição prolongada com risco de ototoxicidade do VIII par no feto. Preferir alternativas no 1.º T."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Mal absorvida por via oral; compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Nefrotóxica; reduzir/espacar e fazer TDM (vale e pico)."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Maior risco de nefro e ototoxicidade; TDM essencial. Cuidado com outros nefrotóxicos (AINE, vancomicina, contraste, anfotericina B)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; dose por peso; vigiar audição."
+   }
+  },
+  {
+   "id": 61,
+   "inn": "Gliclazida",
+   "brands": [
+    "Diamicron",
+    "Gliclazida"
+   ],
+   "cls": "Sulfonilureia (antidiabético)",
+   "tags": [
+    "hypoglycaemic"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Substituir por insulina na gravidez."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Risco de hipoglicemia no lactente; evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Risco de hipoglicemia; cuidado/evitar na DRC avançada."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Cuidado na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipoglicemia (preferir de curta ação)."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 62,
+   "inn": "Glimepirida",
+   "brands": [
+    "Amaryl",
+    "Glimepirida"
+   ],
+   "cls": "Sulfonilureia",
+   "tags": [
+    "hypoglycaemic"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Substituir por insulina."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Risco de hipoglicemia prolongada; evitar na DRC avançada."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Cuidado."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: risco de hipoglicemia prolongada; evitar."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 146,
+   "inn": "Granisetrona",
+   "brands": [
+    "Kytril",
+    "Sancuso"
+   ],
+   "cls": "Antiemético (antagonista 5-HT3)",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; ondansetron com mais dados (preferir se possível)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; uso pontual provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Prolongamento QT (menor que ondansetron); obstipação; cuidado com outros fármacos QT."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada em quimioterapia pediátrica."
+   }
+  },
+  {
+   "id": 63,
+   "inn": "Haloperidol",
+   "brands": [
+    "Haldol",
+    "Haloperidol"
+   ],
+   "cls": "Antipsicótico (1.ª geração)",
+   "tags": [
+    "qt",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar se necessário; extrapiramidais/abstinência neonatal possíveis."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar o lactente."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Beers: AVC/morte em demência; QT, extrapiramidais."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 147,
+   "inn": "Heparina (não fracionada)",
+   "brands": [
+    "Heparina sódica"
+   ],
+   "cls": "Anticoagulante parentérico",
+   "tags": [
+    "anticoagulant"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Não atravessa a placenta; opção segura (alternativa à HBPM, sobretudo perto do parto pela menor duração de ação)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Não absorvida oralmente; compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante (preferível à HBPM na DRC grave/diálise)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Risco hemorrágico aumentado."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; trombocitopenia induzida pela heparina (HIT) - vigiar plaquetas. Antídoto: sulfato de protamina."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; dose por peso."
+   }
+  },
+  {
+   "id": 148,
+   "inn": "Hidralazina",
+   "brands": [
+    "Apresolina",
+    "Hidralazina"
+   ],
+   "cls": "Vasodilatador arterial direto",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Usada na crise hipertensiva da gravidez / pré-eclâmpsia (IV); dados consolidados."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (passagem mínima ao leite)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir/espacar na DRC."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Taquicardia reflexa, retenção hídrica, cefaleias; síndrome lúpus-like com uso prolongado/doses altas (sobretudo acetiladores lentos)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada (HTA grave)."
+   }
+  },
+  {
+   "id": 64,
+   "inn": "Hidroclorotiazida",
+   "brands": [
+    "Esidrex",
+    "HCT"
+   ],
+   "cls": "Diurético tiazídico",
+   "tags": [
+    "thiazide",
+    "diuretic-kloss"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Não 1.ª linha; risco de depleção de volume/distúrbios electrolíticos."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Doses baixas compatíveis; doses altas podem reduzir o leite."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Pouco eficaz se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Pode precipitar encefalopatia na cirrose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia, hipocaliemia, hipotensão, gota. Risco de cancro cutâneo não-melanoma (EMA 2018 / FDA 2020): fotossensibilizante - aconselhar proteção solar e vigilância cutânea, sobretudo no uso prolongado."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 66,
+   "inn": "Hidroxicloroquina",
+   "brands": [
+    "Plaquinol",
+    "Hidroxicloroquina"
+   ],
+   "cls": "Antirreumático / antimalárico",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Mantém-se no LES/AR (benefício > risco)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Ajustar/vigiar na DRC."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Toxicidade retiniana (rastreio), QT."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada sob especialista."
+   }
+  },
+  {
+   "id": 65,
+   "inn": "Hidroxizina",
+   "brands": [
+    "Atarax",
+    "Hidroxizina"
+   ],
+   "cls": "Anti-histamínico sedativo / ansiolítico",
+   "tags": [
+    "qt",
+    "anticholinergic",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Evitar perto do termo; uso pontual ponderado."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Sedação do lactente; precaução."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers + restrição EMA 2015: não recomendado no idoso (se inevitável, máx 50 mg/dia; adulto máx 100 mg/dia, dose efetiva mais baixa). CI: QT prolongado, doença CV, hipocaliemia/hipomagnesemia, bradicardia, hist. familiar de morte súbita, fármacos QT-prolongantes. Anticolinérgico, sedação."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Máx 2 mg/kg/dia em <=40 kg (restrição EMA 2015)."
+   }
+  },
+  {
+   "id": 67,
+   "inn": "Ibuprofeno",
+   "brands": [
+    "Brufen",
+    "Nurofen",
+    "Ibuprofeno"
+   ],
+   "cls": "AINE",
+   "tags": [
+    "nsaid"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "FDA 2020: evitar a partir das 20 sem (oligoâmnios / disfunção renal fetal); contraindicado no 3.º T (encerramento prematuro do canal arterial). Se imprescindível entre 20-30 sem, menor dose e duração; ecografia se >48h."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (AINE preferido na amamentação)."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar; evitar na doença hepática grave."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Risco GI/renal/CV; evitar uso crónico, gastroproteção se necessário."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado; ajustar ao peso (>=3-6 meses)."
+   }
+  },
+  {
+   "id": 68,
+   "inn": "Indapamida",
+   "brands": [
+    "Fludex",
+    "Indapamida"
+   ],
+   "cls": "Diurético tiazida-like",
+   "tags": [
+    "thiazide",
+    "diuretic-kloss"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Não 1.ª linha."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Pouco eficaz se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia, hipocaliemia, QT."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 69,
+   "inn": "Insulina",
+   "brands": [
+    "Insulina (todas)"
+   ],
+   "cls": "Antidiabético (hormona)",
+   "tags": [
+    "hypoglycaemic"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Tratamento de escolha da diabetes na gravidez."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Necessidades diminuem na DRC (risco de hipoglicemia)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Necessidades podem variar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco de hipoglicemia; simplificar esquemas."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar."
+   }
+  },
+  {
+   "id": 70,
+   "inn": "Ipratrópio (brometo)",
+   "brands": [
+    "Atrovent"
+   ],
+   "cls": "Broncodilatador anticolinérgico (curta ação)",
+   "tags": [
+    "anticholinergic"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Compatível por via inalada."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Boca seca; cuidado no glaucoma de ângulo fechado."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado."
+   }
+  },
+  {
+   "id": 150,
+   "inn": "Isossorbida (mono/dinitrato)",
+   "brands": [
+    "Imdur",
+    "Monoket",
+    "Isoket"
+   ],
+   "cls": "Nitrato (vasodilatador venoso)",
+   "tags": [
+    "nitrate"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; uso só se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, cefaleia, taquicardia reflexa. CONTRAINDICADA a coadministração com inibidores PDE5 (sildenafil, tadalafila, vardenafila, avanafil) e com riociguat - hipotensão grave/fatal. Tolerância: necessário intervalo livre de nitrato."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não usado em pediatria."
+   }
+  },
+  {
+   "id": 149,
+   "inn": "Itraconazol",
+   "brands": [
+    "Sporanox",
+    "Itraconazol"
+   ],
+   "cls": "Antifúngico (azol). Inibidor forte do CYP3A4",
+   "tags": [
+    "azole",
+    "cyp3a4-inhibitor",
+    "qt"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Teratogénico em animais; relatos de malformações em humanos com doses altas - evitar; preferir azóis tópicos."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Dados limitados; preferir alternativa."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "IV contraindicado se TFG<30 (veículo ciclodextrina); oral aceitável com vigilância."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Hepatotoxicidade; CI na doença hepática ativa - vigiar transaminases."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Boxed warning FDA: pode causar/agravar IC (inotrópico negativo) - CI em disfunção ventricular. Inibidor forte do CYP3A4 - MUITAS interações graves (estatinas, ergotaminas, quinidina, dronedarona, midazolam, alfuzosina, ranolazina). QT prolongado."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Pouco usado em pediatria."
+   }
+  },
+  {
+   "id": 71,
+   "inn": "Lamotrigina",
+   "brands": [
+    "Lamictal",
+    "Lamotrigina"
+   ],
+   "cls": "Antiepilético / estabilizador do humor",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Melhor perfil teratogénico entre os antiepiléticos. Clearance aumenta marcadamente (~50-300%) - TDM mensal, aumentar dose ao longo da gravidez; REDUZIR rapidamente no pós-parto (2 sem) para evitar toxicidade."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Passagem significativa; vigiar o lactente (sedação, exantema)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Exantema (titulação lenta), tontura."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; titulação cuidadosa (Stevens-Johnson)."
+   }
+  },
+  {
+   "id": 72,
+   "inn": "Lercanidipina",
+   "brands": [
+    "Zanidip",
+    "Lercanidipina"
+   ],
+   "cls": "BCC di-hidropiridínico",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; preferir alternativas com mais experiência."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado na DRC grave."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Edema, hipotensão; tomar antes das refeições."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 152,
+   "inn": "Letrozol",
+   "brands": [
+    "Femara",
+    "Letrozol"
+   ],
+   "cls": "Inibidor da aromatase (3.ª geração)",
+   "tags": [],
+   "pr": {
+    "l": "contra",
+    "t": "CI na pré-menopáusica (exceto curto curso na indução da ovulação - infertilidade/SOP). Teratogénico."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Contraindicado."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste se TFG>30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na Child-Pugh C."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Osteopenia/fratura (suplementar Ca/vitD; considerar DEXA), artralgias, afrontamentos; reduz eficácia do tamoxifeno (não associar)."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 73,
+   "inn": "Levetiracetam",
+   "brands": [
+    "Keppra",
+    "Levetiracetam"
+   ],
+   "cls": "Antiepilético",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Bom perfil de segurança na gravidez; níveis descem (ajustar)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Passa para o leite; geralmente bem tolerado, vigiar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose conforme TFG."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste (renal)."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Irritabilidade/alterações do humor; ajustar à função renal."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 74,
+   "inn": "Levodopa + carbidopa",
+   "brands": [
+    "Sinemet",
+    "Madopar"
+   ],
+   "cls": "Antiparkinsónico",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; usar se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pode inibir a lactação (prolactina); dados limitados."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão ortostática, confusão, discinesias, alucinações."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 75,
+   "inn": "Levofloxacina",
+   "brands": [
+    "Tavanic",
+    "Levofloxacina"
+   ],
+   "cls": "Antibiótico (fluoroquinolona)",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar; usar alternativas."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; ponderar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar se TFG<50."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste habitual."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Tendinopatia/rotura (maior com corticóides - evitar associação), QT, confusão, disglicemia, aneurisma/disseção da aorta. Restrição EMA: evitar em infeções ligeiras/autolimitadas e cistite não complicada se houver alternativa."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Evitar exceto indicações específicas."
+   }
+  },
+  {
+   "id": 76,
+   "inn": "Levotiroxina",
+   "brands": [
+    "Eutirox",
+    "Letter"
+   ],
+   "cls": "Hormona tiroideia",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Manter/ajustar (necessidades aumentam ~30% na gravidez)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Iniciar baixo na cardiopatia; risco de FA/osteoporose se sobredosagem."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada (hipotiroidismo congénito); ajustar."
+   }
+  },
+  {
+   "id": 151,
+   "inn": "Liraglutida",
+   "brands": [
+    "Victoza",
+    "Saxenda"
+   ],
+   "cls": "Agonista dos recetores do GLP-1 (antidiabético / antiobesidade)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Suspender ao confirmar gravidez; dados insuficientes."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Sem ajuste relevante; experiência limitada em TFG<15/diálise."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Experiência limitada na cirrose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Náuseas/vómitos, pancreatite (raro, vigiar). CI: hist. pessoal/familiar de NEM 2A/2B ou carcinoma medular da tiroide. Cuidado com sulfonilureias (hipoglicemia)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=10 anos para DM2; >=12 anos para obesidade (Saxenda)."
+   }
+  },
+  {
+   "id": 77,
+   "inn": "Lisinopril",
+   "brands": [
+    "Zestril",
+    "Lisinopril"
+   ],
+   "cls": "IECA",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico; suspender."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; preferir enalapril/captopril."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, tosse."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar."
+   }
+  },
+  {
+   "id": 78,
+   "inn": "Lítio (carbonato de lítio)",
+   "brands": [
+    "Priadel"
+   ],
+   "cls": "Estabilizador do humor",
+   "tags": [
+    "lithium"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Risco de Ebstein menor do que historicamente assumido (RR ~1.65; risco absoluto ~0.6% vs 0.2%) - opção viável se necessário, com TDM (semanal no 3.º T), eco fetal/cardíaca às 20 sem, ajuste de dose no pós-parto."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Passagem significativa; tradicionalmente desaconselhada, mas dados recentes apoiam uso com TDM materno e do lactente (litemia, função renal/tiroideia, hidratação) - decisão partilhada."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Excreção renal; risco de toxicidade - ajustar e monitorizar litemia."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste (renal)."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Margem estreita; reduzir dose, vigiar litemia, função renal/tiroide."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso especializado."
+   }
+  },
+  {
+   "id": 79,
+   "inn": "Loratadina",
+   "brands": [
+    "Claritine",
+    "Loratadina"
+   ],
+   "cls": "Anti-histamínico (2.ª geração)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Anti-histamínico de escolha na gravidez."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir frequência se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Pouco sedativa."
+   },
+   "pd": {
+    "l": "ok",
+    "t": ">=2 anos."
+   }
+  },
+  {
+   "id": 80,
+   "inn": "Lorazepam",
+   "brands": [
+    "Lorenin",
+    "Ansilor",
+    "Lorazepam"
+   ],
+   "cls": "Benzodiazepina",
+   "tags": [
+    "benzodiazepine",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Risco no 1.º e 3.º T; uso pontual ponderado."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sedação do lactente."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir dose."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Preferível a outras BZD na doença hepática (sem metabolitos ativos), mas reduzir."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: quedas, confusão (se necessário, dose baixa de curta ação)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado em crises/agitação."
+   }
+  },
+  {
+   "id": 81,
+   "inn": "Losartan",
+   "brands": [
+    "Cozaar",
+    "Losartan"
+   ],
+   "cls": "Antagonista dos recetores da angiotensina (ARA)",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico (2.º-3.º T); suspender."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, função renal."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar."
+   }
+  },
+  {
+   "id": 153,
+   "inn": "Memantina",
+   "brands": [
+    "Ebixa",
+    "Memantina"
+   ],
+   "cls": "Antagonista NMDA (Alzheimer moderado-grave)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; uso só se benefício > risco."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Sem dados; geralmente não aplicável."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Máx 10 mg/dia em TFG 30-49; máx 5-10 mg/dia em TFG 5-29."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na cirrose."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Geralmente bem tolerada; tontura, cefaleia."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicada."
+   }
+  },
+  {
+   "id": 82,
+   "inn": "Metamizol (dipirona)",
+   "brands": [
+    "Nolotil",
+    "Metamizol"
+   ],
+   "cls": "Analgésico / antipirético (pirazolona)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar, sobretudo no 3.º T (canal arterial, oligoâmnios); risco de agranulocitose."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar (metabolitos no leite)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado na DRC."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco de agranulocitose, hipotensão."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Vigiar."
+   }
+  },
+  {
+   "id": 83,
+   "inn": "Metformina",
+   "brands": [
+    "Stagid",
+    "Risidon",
+    "Metformina"
+   ],
+   "cls": "Antidiabético (biguanida)",
+   "tags": [
+    "metformin"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Pode usar-se na gravidez (DM2/diabetes gestacional)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "TFG>=60: sem ajuste (vigilância anual). 45-60: continuar, vigiar 3-6m. 30-45: NÃO iniciar; se já em curso, ponderar redução a 50% (vigiar 3m). <30: CI (acidose láctica). Suspender em doença aguda/desidratação e antes de contraste iodado se TFG<60."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática grave/instável."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Vigiar função renal; suspender em doença aguda/contraste com risco renal."
+   },
+   "pd": {
+    "l": "ok",
+    "t": ">=10 anos."
+   }
+  },
+  {
+   "id": 154,
+   "inn": "Metilfenidato",
+   "brands": [
+    "Concerta",
+    "Ritalina",
+    "Rubifen",
+    "Medikinet"
+   ],
+   "cls": "Psicoestimulante (PHDA)",
+   "tags": [
+    "sympathomimetic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados crescentes; risco modesto de malformações cardíacas no 1.º T; ponderar risco/benefício."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades no leite; uso vigiado."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Taquicardia, HTA, insónia, anorexia. CI: doença CV grave, glaucoma, feocromocitoma, hipertiroidismo não controlado, IMAO nas últimas 2 sem. Avaliação CV antes de iniciar."
+   },
+   "pd": {
+    "l": "ok",
+    "t": ">=6 anos para PHDA; vigiar crescimento/sono/apetite."
+   }
+  },
+  {
+   "id": 84,
+   "inn": "Metilprednisolona",
+   "brands": [
+    "Solu-Medrol",
+    "Medrol",
+    "Urbason"
+   ],
+   "cls": "Corticosteroide",
+   "tags": [
+    "corticosteroid"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Menor dose eficaz; menor passagem placentária que a dexametasona."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Doses baixas compatíveis; aguardar ~3-4h após dose alta."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiperglicemia, HTA, osteoporose, infeção, insónia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Vigiar crescimento."
+   }
+  },
+  {
+   "id": 85,
+   "inn": "Metoclopramida",
+   "brands": [
+    "Primperan",
+    "Metoclopramida"
+   ],
+   "cls": "Procinético / antiemético",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Opção para náuseas/vómitos na gravidez."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; uso curto."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose se TFG<40."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Restrição EMA 2013: máx 30 mg/dia (0.5 mg/kg/dia) e máx 5 dias. IV lento (>3 min) reduz risco de distonia. Já não indicada na DRGE/dispepsia/gastroparesia crónica. Discinesia tardia (sobretudo idoso/uso prolongado)."
+   },
+   "pd": {
+    "l": "contra",
+    "t": "CI <1 ano; em >1 ano apenas 2.ª linha em N&V pós-quimio/pós-op; máx 0.5 mg/kg/dia."
+   }
+  },
+  {
+   "id": 86,
+   "inn": "Metoprolol",
+   "brands": [
+    "Lopresor",
+    "Betaloc",
+    "Metoprolol"
+   ],
+   "cls": "Betabloqueante (cardiosseletivo)",
+   "tags": [
+    "betablocker",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Relativamente seguro; vigiar bradicardia/hipoglicemia neonatal."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (preferido entre betabloqueantes)."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, fadiga; mascarar hipoglicemia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 87,
+   "inn": "Metotrexato",
+   "brands": [
+    "Metoject",
+    "Metotrexato"
+   ],
+   "cls": "Antimetabolito / imunossupressor",
+   "tags": [
+    "methotrexate",
+    "hepatotoxic"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Abortivo e teratogénico; suspender >=3 meses (M e F) antes de conceber."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Contraindicado."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Toxicidade aumentada; reduzir/evitar conforme TFG."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Hepatotoxicidade; contraindicado na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Toxicidade medular/renal; suplementar ácido fólico; vigiar."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso especializado."
+   }
+  },
+  {
+   "id": 88,
+   "inn": "Metronidazol",
+   "brands": [
+    "Flagyl",
+    "Metronidazol"
+   ],
+   "cls": "Antibiótico / antiparasitário (nitroimidazol)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Evitar no 1.º T se possível; usar quando indicado."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; em dose única ponderar pausa na amamentação."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Reduzir na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Neuropatia em uso prolongado; efeito tipo dissulfiram com álcool; aumenta o INR da varfarina."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 89,
+   "inn": "Mirtazapina",
+   "brands": [
+    "Remeron",
+    "Mirtazapina"
+   ],
+   "cls": "Antidepressivo (NaSSA)",
+   "tags": [
+    "serotonergic",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; ponderar risco/benefício."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar sedação."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Sedação, aumento de peso; pode ser útil (apetite/sono)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 90,
+   "inn": "Montelucaste",
+   "brands": [
+    "Singulair",
+    "Montelucaste"
+   ],
+   "cls": "Antagonista dos recetores dos leucotrienos",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Pode manter-se se necessário para controlo da asma."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "FDA 2020 boxed warning: eventos neuropsiquiátricos graves (depressão, ansiedade, distúrbios do sono, ideação suicida). NÃO 1.ª linha em rinite alérgica ligeira; ponderar risco/benefício na asma; alertar doente/cuidador para suspender e procurar ajuda perante alteração do humor/comportamento."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado na asma pediátrica; boxed warning FDA - vigilância apertada; informar cuidadores."
+   }
+  },
+  {
+   "id": 91,
+   "inn": "Morfina",
+   "brands": [
+    "Morfina",
+    "MST"
+   ],
+   "cls": "Opioide forte",
+   "tags": [
+    "opioid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar se necessário; abstinência neonatal se uso prolongado/termo."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar sedação do lactente (doses baixas/curtas)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Acumulação de metabolitos; reduzir dose."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Sedação, depressão respiratória, obstipação, quedas."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 155,
+   "inn": "Naltrexona",
+   "brands": [
+    "Antaxone",
+    "Vivitrol"
+   ],
+   "cls": "Antagonista opióide (manutenção em PUO/AUD)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; ponderar caso a caso (preferir não introduzir na gravidez; pode manter-se se já em uso)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; passagem pequena ao leite."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado na DRC grave."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "CI na hepatite aguda/insuficiência hepática (hepatotoxicidade dose-dependente)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "CI em doente sob opióides - precipita abstinência aguda (exigir abstinência >=7-10 dias). Bloqueia analgesia opióide em cirurgia/trauma. Vigiar transaminases."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não estabelecido."
+   }
+  },
+  {
+   "id": 92,
+   "inn": "Naproxeno",
+   "brands": [
+    "Naprosyn",
+    "Momendol",
+    "Naproxeno"
+   ],
+   "cls": "AINE",
+   "tags": [
+    "nsaid"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "FDA 2020: evitar a partir das 20 sem (oligoâmnios/disfunção renal fetal); CI no 3.º T (encerramento prematuro do canal arterial). Se imprescindível entre 20-30 sem, menor dose e duração; ecografia se >48h."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Curta duração compatível; ibuprofeno preferido."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Evitar se TFG<30."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Risco GI/renal/CV; evitar uso crónico."
+   },
+   "pd": {
+    "l": "caution",
+    "t": ">=2 anos sob indicação."
+   }
+  },
+  {
+   "id": 93,
+   "inn": "Nebivolol",
+   "brands": [
+    "Nebilet",
+    "Nebivolol"
+   ],
+   "cls": "Betabloqueante (cardiosseletivo, vasodilatador)",
+   "tags": [
+    "betablocker",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir se TFG baixa."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, fadiga."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 156,
+   "inn": "Nistatina",
+   "brands": [
+    "Mycostatin",
+    "Nistatina"
+   ],
+   "cls": "Antifúngico tópico/oral (polieno)",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Absorção sistémica desprezável; segura por via tópica/oral (candidíase oral/vaginal)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste (não absorvida)."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Bem tolerada; raros sintomas GI com a forma oral."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada no muguet do RN/lactente."
+   }
+  },
+  {
+   "id": 94,
+   "inn": "Nitrofurantoína",
+   "brands": [
+    "Furadantina",
+    "Nitrofurantoína"
+   ],
+   "cls": "Antibiótico (ITU)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Evitar perto do termo (>=38 sem) e no 1.º T se possível (hemólise neonatal/G6PD)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Evitar em lactente <1 mês ou com défice de G6PD."
+   },
+   "rn": {
+    "l": "avoid",
+    "t": "Ineficaz e tóxica se TFG<45; evitar."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Hepatotoxicidade rara em uso prolongado."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: evitar se TFG<30 e em uso prolongado (toxicidade pulmonar/hepática)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Evitar <1 mês."
+   }
+  },
+  {
+   "id": 95,
+   "inn": "Olanzapina",
+   "brands": [
+    "Zyprexa",
+    "Olanzapina"
+   ],
+   "cls": "Antipsicótico (2.ª geração)",
+   "tags": [
+    "cns-depressant",
+    "anticholinergic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar se necessário; risco metabólico; sintomas neonatais."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar o lactente."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Beers: AVC/morte em demência; sedação, metabólico, anticolinérgico."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 96,
+   "inn": "Omeprazol",
+   "brands": [
+    "Omeprazol",
+    "Losec"
+   ],
+   "cls": "Inibidor da bomba de protões",
+   "tags": [
+    "ppi",
+    "cyp2c19-inhibitor"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "IBP com mais dados na gravidez; usar se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Uso prolongado: hipomagnesemia, B12, fraturas, C. difficile."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Formulações pediátricas; usado."
+   }
+  },
+  {
+   "id": 97,
+   "inn": "Ondansetron",
+   "brands": [
+    "Zofran",
+    "Ondansetron"
+   ],
+   "cls": "Antiemético (antagonista 5-HT3)",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Pequeno aumento do risco de fenda palatina no 1.º T (~+3/10000; sem aumento claro de malformações cardíacas) - preferir doxilamina-piridoxina/metoclopramida no 1.º T, reservar para vómitos refratários."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Dose máxima reduzida na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Prolongamento do QT (sobretudo IV/dose alta) - dose única IV máx 16 mg (retirada a de 32 mg); corrigir hipocaliemia/hipomagnesemia; cuidado com outros QT-prolongantes."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 158,
+   "inn": "Oxcarbazepina",
+   "brands": [
+    "Trileptal",
+    "Oxcarbazepina"
+   ],
+   "cls": "Antiepilético (bloqueador dos canais de sódio)",
+   "tags": [
+    "cyp3a4-inducer"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Risco teratogénico (menor que carbamazepina, mas presente); suplementar ácido fólico; níveis podem descer na gravidez."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar o lactente (sedação)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir se TFG<30 (iniciar a metade)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia (mais frequente que com carbamazepina - vigiar Na+). Ponderar HLA-B*15:02 (ascendência asiática) - SJS/TEN (reatividade cruzada com carbamazepina). Indutor enzimático moderado (reduz contracetivos)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; vigiar Na+."
+   }
+  },
+  {
+   "id": 157,
+   "inn": "Oxicodona",
+   "brands": [
+    "OxyContin",
+    "OxyNorm",
+    "Targin"
+   ],
+   "cls": "Opióide forte (mu-agonista); substrato do CYP2D6/3A4",
+   "tags": [
+    "opioid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Uso pontual aceitável; uso crónico/perto do termo - abstinência neonatal e depressão respiratória."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Passa ao leite; doses repetidas com risco de sedação/depressão respiratória no lactente - vigiar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose na IR (acumulação)."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Depressão respiratória, obstipação, sedação, quedas. Evitar associar a BZD/gabapentinoides. Targin (com naloxona) reduz a obstipação."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso especializado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 98,
+   "inn": "Pantoprazol",
+   "brands": [
+    "Pantoprazol",
+    "Controloc"
+   ],
+   "cls": "Inibidor da bomba de protões",
+   "tags": [
+    "ppi"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar se necessário."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Provavelmente compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Uso prolongado: hipomagnesemia, B12, fraturas. Preferido com clopidogrel."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; formulações específicas."
+   }
+  },
+  {
+   "id": 99,
+   "inn": "Paracetamol",
+   "brands": [
+    "Ben-u-ron",
+    "Paracetamol"
+   ],
+   "cls": "Analgésico / antipirético",
+   "tags": [
+    "hepatotoxic"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Analgésico/antipirético de 1.ª linha na gravidez (menor dose eficaz, menor tempo). O sinal de neurodesenvolvimento (autismo/PHDA) NÃO foi confirmado no maior estudo com controlo de irmãos (JAMA 2024, 2.5M) - ACOG/RCOG/EMA mantêm a recomendação."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Espaçar tomas se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose máxima na doença hepática; hepatotóxico em sobredosagem."
+   },
+   "el": {
+    "l": "ok",
+    "t": "Seguro; preferido para dor ligeira/moderada."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Muito usado; ajustar ao peso."
+   }
+  },
+  {
+   "id": 100,
+   "inn": "Paroxetina",
+   "brands": [
+    "Seroxat",
+    "Paroxetina"
+   ],
+   "cls": "Antidepressivo (ISRS)",
+   "tags": [
+    "serotonergic",
+    "cyp2d6-inhibitor"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Maior associação a malformações cardíacas; preferir sertralina. Síndrome de adaptação neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Baixa passagem para o leite (opção razoável)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Anticolinérgico, hiponatremia, descontinuação difícil."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não recomendada (ideação suicida)."
+   }
+  },
+  {
+   "id": 101,
+   "inn": "Perindopril",
+   "brands": [
+    "Coversyl",
+    "Perindopril"
+   ],
+   "cls": "IECA",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico; suspender."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Dados limitados; preferir enalapril/captopril."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, tosse."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 159,
+   "inn": "Pioglitazona",
+   "brands": [
+    "Actos",
+    "Pioglitazona"
+   ],
+   "cls": "Antidiabético (tiazolidinediona)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Dados insuficientes; evitar."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste (metabolismo hepático); evitar em diálise."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "CI na doença hepática ativa - vigiar transaminases."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "CI na insuficiência cardíaca (qualquer classe NYHA - retenção hídrica). Risco de fraturas (mulher) e possível pequeno aumento de cancro da bexiga - CI em cancro da bexiga ativo/prévio. Edema macular."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicada."
+   }
+  },
+  {
+   "id": 102,
+   "inn": "Pravastatina",
+   "brands": [
+    "Pravastatina",
+    "Selectin"
+   ],
+   "cls": "Estatina",
+   "tags": [
+    "statin"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "RCM mantém contraindicação; suspender ao planear/confirmar gravidez. Nota: FDA removeu a contraindicação absoluta das estatinas (2021) - a pravastatina é a mais estudada na gravidez (em investigação na pré-eclâmpsia); uso individualizado em risco CV muito alto."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir na DRC grave."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicada na doença hepática ativa."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Menos interações (não CYP3A4); vigiar mialgias."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Hipercolesterolemia familiar."
+   }
+  },
+  {
+   "id": 103,
+   "inn": "Prednisolona",
+   "brands": [
+    "Lepicortinolo",
+    "Prednisolona"
+   ],
+   "cls": "Corticosteroide",
+   "tags": [
+    "corticosteroid"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Corticóide de escolha (baixa passagem placentária); menor dose eficaz."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível; doses altas - aguardar ~4h."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Na doença hepática preferir prednisolona (prednisona requer conversão)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiperglicemia, HTA, osteoporose, infeção, insónia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Vigiar crescimento."
+   }
+  },
+  {
+   "id": 104,
+   "inn": "Pregabalina",
+   "brands": [
+    "Lyrica",
+    "Pregabalina"
+   ],
+   "cls": "Gabapentinoide",
+   "tags": [
+    "gabapentinoid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "MHRA 2022: evitar salvo se claramente necessário (pequeno aumento de malformações major); contraceção eficaz na idade fértil."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose conforme TFG."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "adjust",
+    "t": "Sedação, tontura, edema, quedas. FDA 2019: depressão respiratória com opióides/depressores do SNC, DPOC e idoso. Dependência/uso indevido - desmame gradual."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 160,
+   "inn": "Prometazina",
+   "brands": [
+    "Fenergan",
+    "Prometazina"
+   ],
+   "cls": "Anti-histamínico fenotiazínico (sedativo/antiemético)",
+   "tags": [
+    "anticholinergic",
+    "cns-depressant",
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usada pontualmente (náuseas/alergia); evitar perto do termo."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pode reduzir o leite; sedação do lactente - precaução."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: muito anticolinérgica, sedação, quedas, QT. Cuidado com depressores do SNC."
+   },
+   "pd": {
+    "l": "contra",
+    "t": "CI <2 anos (boxed warning FDA: depressão respiratória fatal); cautela 2-12 anos."
+   }
+  },
+  {
+   "id": 105,
+   "inn": "Propranolol",
+   "brands": [
+    "Inderal",
+    "Propranolol"
+   ],
+   "cls": "Betabloqueante (não seletivo)",
+   "tags": [
+    "betablocker",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usado (tirotoxicose, enxaqueca); vigiar bradicardia/hipoglicemia neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia, fadiga, broncospasmo (evitar na asma)."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usado (hemangiomas); ajustar."
+   }
+  },
+  {
+   "id": 106,
+   "inn": "Quetiapina",
+   "brands": [
+    "Seroquel",
+    "Quetiapina"
+   ],
+   "cls": "Antipsicótico (2.ª geração)",
+   "tags": [
+    "qt",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar se necessário; risco metabólico; sintomas neonatais."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar sedação."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Beers: AVC/morte em demência; sedação, QT, hipotensão."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 162,
+   "inn": "Quinapril",
+   "brands": [
+    "Acuitel",
+    "Quinapril"
+   ],
+   "cls": "IECA (inibidor da ECA)",
+   "tags": [
+    "raas"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "CI no 2.º/3.º T (toxicidade renal fetal, oligoâmnios); evitar também no 1.º T - usar alternativa antes da conceção."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; preferir captopril/enalapril."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose; vigiar K+/creatinina; CI na estenose bilateral das artérias renais."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipercaliemia, tosse, angioedema, hipotensão. Não associar a ARA/aliscireno; cuidado com K+/AINE."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não recomendado."
+   }
+  },
+  {
+   "id": 161,
+   "inn": "Quinina",
+   "brands": [
+    "Quinimax",
+    "Quinina"
+   ],
+   "cls": "Antimalárico / (cãibras - uso desaconselhado)",
+   "tags": [
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Tratar malária quando indicado (a doença é mais perigosa); doses altas com risco de hipoglicemia/ototoxicidade."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; evitar se G6PD do lactente."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir/espacar na IR grave."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "QT/torsade, hipoglicemia, cinchonismo, trombocitopenia imune, hemólise no défice de G6PD. FDA desaconselha para cãibras (risco > benefício)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada na malária; vigiar."
+   }
+  },
+  {
+   "id": 107,
+   "inn": "Ramipril",
+   "brands": [
+    "Triatec",
+    "Ramipril"
+   ],
+   "cls": "IECA",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico (2.º-3.º T): oligoâmnios, lesão renal/craniana fetal. Suspender."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; preferir enalapril/captopril."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina; cuidado na estenose bilateral."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, tosse, angioedema."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar."
+   }
+  },
+  {
+   "id": 163,
+   "inn": "Rifampicina",
+   "brands": [
+    "Rifadin",
+    "Rimactan"
+   ],
+   "cls": "Antibiótico (antibacilar); indutor enzimático potente",
+   "tags": [
+    "cyp3a4-inducer"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usada na tuberculose na gravidez; dar vitamina K à mãe/RN no fim da gravidez (risco hemorrágico)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (quantidades pequenas)."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Hepatotóxica; cuidado/evitar na doença hepática - vigiar transaminases."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Cora secreções/lentes de laranja. INDUTOR POTENTE do CYP3A4/2C9/P-gp - reduz a eficácia de inúmeros fármacos: contracetivos, varfarina, DOAC, estatinas, corticóides, tacrolímus, antirretrovirais, azóis. Rever sempre as coadministrações."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Usada; ajustar ao peso."
+   }
+  },
+  {
+   "id": 108,
+   "inn": "Risperidona",
+   "brands": [
+    "Risperdal",
+    "Risperidona"
+   ],
+   "cls": "Antipsicótico (2.ª geração)",
+   "tags": [
+    "qt",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Usar se necessário; extrapiramidais/abstinência neonatal."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir na DRC."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Beers: AVC/morte em demência; extrapiramidais, hipotensão."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada (irritabilidade no autismo) sob vigilância."
+   }
+  },
+  {
+   "id": 109,
+   "inn": "Rivaroxabano",
+   "brands": [
+    "Xarelto"
+   ],
+   "cls": "Anticoagulante oral direto (anti-Xa)",
+   "tags": [
+    "anticoagulant",
+    "doac"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Contraindicado; usar HBPM."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir/evitar conforme TFG (evitar se <15-30)."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática com coagulopatia."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; tomar com alimentos (15/20 mg)."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 164,
+   "inn": "Ropinirol",
+   "brands": [
+    "Requip",
+    "Adartrel"
+   ],
+   "cls": "Agonista dopaminérgico (Parkinson / síndrome das pernas inquietas)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Dados limitados; evitar (pode inibir a lactação)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Suprime a prolactina/lactação."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado na DRC grave/diálise."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão ortostática, sonolência súbita (alertar p/ condução), alucinações. Distúrbios do controlo dos impulsos (jogo, compras, hipersexualidade) - perguntar ativamente."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 110,
+   "inn": "Rosuvastatina",
+   "brands": [
+    "Crestor",
+    "Rosuvastatina"
+   ],
+   "cls": "Estatina",
+   "tags": [
+    "statin"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "RCM mantém contraindicação; suspender ao planear/confirmar gravidez. Nota: FDA removeu a contraindicação absoluta das estatinas (2021) - uso individualizado em risco CV muito alto."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose se TFG<30."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicada na doença hepática ativa."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Menos dependente do CYP3A4; vigiar mialgias."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Hipercolesterolemia familiar."
+   }
+  },
+  {
+   "id": 166,
+   "inn": "Sacubitril + valsartan",
+   "brands": [
+    "Entresto"
+   ],
+   "cls": "ARNI (inibidor da neprilisina + ARA) - insuficiência cardíaca",
+   "tags": [
+    "raas"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "CI (componente ARA - toxicidade renal fetal/oligoâmnios)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Ajustar/vigiar; cuidado se TFG<30; vigiar K+ e creatinina."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Reduzir na Child-Pugh B; evitar na C."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia, angioedema. NUNCA associar a IECA (suspender 36h antes/depois - angioedema); não associar a ARA/aliscireno."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Uso especializado (raro em pediatria)."
+   }
+  },
+  {
+   "id": 111,
+   "inn": "Salbutamol",
+   "brands": [
+    "Ventilan",
+    "Salbutamol"
+   ],
+   "cls": "Broncodilatador (SABA)",
+   "tags": [
+    "sympathomimetic"
+   ],
+   "pr": {
+    "l": "safe",
+    "t": "Seguro por via inalada (asma); manter controlo."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Tremor, palpitações, hipocaliemia (doses altas)."
+   },
+   "pd": {
+    "l": "ok",
+    "t": "Muito usado."
+   }
+  },
+  {
+   "id": 112,
+   "inn": "Salmeterol + fluticasona",
+   "brands": [
+    "Seretide",
+    "Brisomax"
+   ],
+   "cls": "LABA + corticóide inalado",
+   "tags": [],
+   "pr": {
+    "l": "safe",
+    "t": "Manter controlo da asma; corticóide inalado preferido."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Fluticasona em dose alta - efeitos sistémicos."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Candidíase oral, disfonia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Conforme idade/dispositivo."
+   }
+  },
+  {
+   "id": 113,
+   "inn": "Semaglutido",
+   "brands": [
+    "Ozempic",
+    "Rybelsus",
+    "Wegovy"
+   ],
+   "cls": "Agonista GLP-1 (antidiabético / obesidade)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Suspender (~2 meses antes de conceber); sem dados de segurança."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste (vigiar em depleção de volume por vómitos/diarreia)."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Náuseas, perda de peso; risco GI."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 114,
+   "inn": "Sertralina",
+   "brands": [
+    "Zoloft",
+    "Sertralina"
+   ],
+   "cls": "Antidepressivo (ISRS)",
+   "tags": [
+    "serotonergic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "ISRS frequentemente preferido na gravidez; risco de síndrome de adaptação neonatal."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Baixa passagem para o leite (ISRS preferido na amamentação)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hiponatremia, risco hemorrágico."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada (TOC) sob vigilância."
+   }
+  },
+  {
+   "id": 115,
+   "inn": "Sildenafil",
+   "brands": [
+    "Viagra",
+    "Revatio"
+   ],
+   "cls": "Inibidor da PDE5",
+   "tags": [
+    "pde5"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Não para disfunção erétil; em HTP sob especialista (evitar uso fetal/RCIU)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão; NUNCA com nitratos."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "HTP pediátrica sob especialista."
+   }
+  },
+  {
+   "id": 116,
+   "inn": "Sinvastatina",
+   "brands": [
+    "Zocor",
+    "Sinvastatina"
+   ],
+   "cls": "Estatina",
+   "tags": [
+    "statin"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "RCM mantém contraindicação; suspender ao planear/confirmar gravidez. Nota: FDA removeu a contraindicação absoluta das estatinas (2021) - uso individualizado em risco CV muito alto."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Cuidado/reduzir na DRC grave."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicada na doença hepática ativa."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Forte interação com inibidores do CYP3A4 (macrólidos, azóis) - risco de rabdomiólise."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Hipercolesterolemia familiar."
+   }
+  },
+  {
+   "id": 117,
+   "inn": "Sitagliptina",
+   "brands": [
+    "Januvia",
+    "Sitagliptina"
+   ],
+   "cls": "Antidiabético (inibidor DPP-4)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Substituir por insulina; dados limitados."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose conforme TFG."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bem tolerada; ajustar à função renal; pancreatite (rara)."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 118,
+   "inn": "Solifenacina",
+   "brands": [
+    "Vesicare",
+    "Solifenacina"
+   ],
+   "cls": "Antimuscarínico (bexiga hiperativa)",
+   "tags": [
+    "anticholinergic",
+    "qt"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; evitar se possível."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Dose máxima reduzida se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Dose máxima reduzida na doença hepática moderada."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: carga anticolinérgica (confusão, obstipação, retenção); QT."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 165,
+   "inn": "Sumatriptano",
+   "brands": [
+    "Imigran",
+    "Sumatriptano"
+   ],
+   "cls": "Triptano (agonista 5-HT1B/1D) - enxaqueca aguda",
+   "tags": [
+    "serotonergic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dos triptanos, o que tem mais dados; uso aceitável se necessário (preferir a alternativas com menos dados)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (passagem mínima; pode espaçar a amamentação 12h se quiser minimizar)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática; evitar na grave."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "CI: cardiopatia isquémica, enfarte/AVC prévios, HTA não controlada, angina de Prinzmetal, doença vascular periférica. Não associar a IMAO nem a ergotamina (intervalo 24h); cuidado com ISRS/IRSN (s. serotoninérgica)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Spray nasal aprovado em adolescentes em alguns países."
+   }
+  },
+  {
+   "id": 119,
+   "inn": "Tadalafil",
+   "brands": [
+    "Cialis",
+    "Adcirca"
+   ],
+   "cls": "Inibidor da PDE5",
+   "tags": [
+    "pde5"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Não para DE na gravidez; HTP sob especialista."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir/limitar na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Cuidado na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão; NUNCA com nitratos; semivida longa (até 36h)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "HTP sob especialista."
+   }
+  },
+  {
+   "id": 167,
+   "inn": "Tamoxifeno",
+   "brands": [
+    "Nolvadex",
+    "Tamoxifeno"
+   ],
+   "cls": "SERM (modulador seletivo dos recetores de estrogénio)",
+   "tags": [
+    "tamoxifen"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico; CI na gravidez. Contraceção (não-hormonal) durante e ate 9 meses apos parar."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Contraindicado (inibe a lactação)."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado; raros casos de esteatose/hepatotoxicidade."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco de TEV e de cancro do endométrio (vigiar hemorragia uterina). Pró-fármaco ativado pelo CYP2D6 - EVITAR inibidores potentes do CYP2D6 (fluoxetina, paroxetina, bupropiona) que reduzem a eficácia."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 120,
+   "inn": "Tansulosina",
+   "brands": [
+    "Omnic",
+    "Tansulosina"
+   ],
+   "cls": "Bloqueador alfa-1 (HBP)",
+   "tags": [
+    "alpha-blocker"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Não indicada (uso masculino)."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Não aplicável."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste habitual."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão ortostática, síndrome da íris flácida (cirurgia de catarata)."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 121,
+   "inn": "Tapentadol",
+   "brands": [
+    "Palexia"
+   ],
+   "cls": "Opioide (agonista mu + inibidor da recaptação de noradrenalina)",
+   "tags": [
+    "opioid",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; abstinência neonatal se uso prolongado."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados; vigiar sedação."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Não recomendado na DRC grave."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir/evitar na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Sedação, depressão respiratória, obstipação."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não recomendado."
+   }
+  },
+  {
+   "id": 122,
+   "inn": "Telmisartan",
+   "brands": [
+    "Micardis",
+    "Telmisartan"
+   ],
+   "cls": "Antagonista dos recetores da angiotensina (ARA)",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico; suspender."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Evitar na doença hepática grave (excreção biliar)."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 123,
+   "inn": "Ticagrelor",
+   "brands": [
+    "Brilique"
+   ],
+   "cls": "Antiagregante plaquetário",
+   "tags": [
+    "antiplatelet"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; suspender ~5 dias antes de cirurgia/neuroeixo."
+   },
+   "bf": {
+    "l": "limited",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Contraindicado na doença hepática grave."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; dispneia."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 124,
+   "inn": "Tiotrópio",
+   "brands": [
+    "Spiriva"
+   ],
+   "cls": "Broncodilatador anticolinérgico (longa ação)",
+   "tags": [
+    "anticholinergic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; manter se necessário (DPOC/asma grave)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Dados limitados."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Cuidado se TFG<50."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Boca seca; glaucoma de ângulo fechado, retenção urinária."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Conforme indicação."
+   }
+  },
+  {
+   "id": 168,
+   "inn": "Topiramato",
+   "brands": [
+    "Topamax",
+    "Topiramato"
+   ],
+   "cls": "Antiepilético / profilaxia da enxaqueca",
+   "tags": [
+    "cyp3a4-inducer"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Risco ~3x de malformações major (fenda labiopalatina), RCIU e possível risco de perturbacoes do neurodesenvolvimento. Restrição EMA 2023: CI na enxaqueca/peso na gravidez; na epilepsia CI salvo sem alternativa. Programa de Prevenção da Gravidez + contraceção eficaz (ate 4 sem apos parar)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar o lactente (sedação, má progressão ponderal)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir 50% se TFG<70; cálculos renais (hidratar)."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Cuidado na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Parestesias, perda de peso, defeito cognitivo/lentidão, glaucoma agudo, acidose metabólica, litíase renal. Indutor enzimático em doses altas (reduz contracetivos)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; vigiar peso/cognição."
+   }
+  },
+  {
+   "id": 125,
+   "inn": "Tramadol",
+   "brands": [
+    "Tramal",
+    "Tridural",
+    "Zaldiar"
+   ],
+   "cls": "Opioide fraco (+ efeito serotoninérgico)",
+   "tags": [
+    "opioid",
+    "cns-depressant",
+    "serotonergic"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar; abstinência neonatal/depressão respiratória perto do termo."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Evitar (metabolismo variável)."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose/frequência se TFG<30."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Convulsões, confusão, hiponatremia, síndrome serotoninérgica; quedas."
+   },
+   "pd": {
+    "l": "contra",
+    "t": "FDA 2017: CI <12 anos e CI <18 anos após amigdalectomia/adenoidectomia; não recomendado dos 12-18 anos se obesidade/apneia do sono/doença respiratória (metabolizadores ultrarrápidos do CYP2D6)."
+   }
+  },
+  {
+   "id": 126,
+   "inn": "Trazodona",
+   "brands": [
+    "Triticum",
+    "Trazodona"
+   ],
+   "cls": "Antidepressivo (sedativo)",
+   "tags": [
+    "serotonergic",
+    "qt",
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; ponderar."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Sedação, hipotensão ortostática, QT; usada para insónia em dose baixa."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Dados limitados."
+   }
+  },
+  {
+   "id": 127,
+   "inn": "Trimetoprim + sulfametoxazol (cotrimoxazol)",
+   "brands": [
+    "Bactrim",
+    "Septrin"
+   ],
+   "cls": "Antibiótico (associação)",
+   "tags": [
+    "trimethoprim",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar 1.º T (antifolato - defeitos do tubo neural) e perto do termo (kernicterus)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Evitar em lactente <1 mês, prematuro ou com défice de G6PD."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir se TFG<30; evitar se <15."
+   },
+   "hp": {
+    "l": "caution",
+    "t": "Vigiar."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipercaliemia grave com IECA/ARA/poupadores de K+ (risco de morte súbita no idoso - Fralick BMJ 2014; preferir nitrofurantoína se possível). Aumenta o INR da varfarina e a toxicidade do metotrexato; hiponatremia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar ao peso (evitar muito jovens)."
+   }
+  },
+  {
+   "id": 128,
+   "inn": "Valsartan",
+   "brands": [
+    "Diovan",
+    "Valsartan"
+   ],
+   "cls": "Antagonista dos recetores da angiotensina (ARA)",
+   "tags": [
+    "raas",
+    "potassium-raising"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Teratogénico; suspender."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar K+/creatinina."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Hipotensão, hipercaliemia."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usado; ajustar."
+   }
+  },
+  {
+   "id": 170,
+   "inn": "Vancomicina",
+   "brands": [
+    "Vancomicina"
+   ],
+   "cls": "Antibiótico (glicopéptido)",
+   "tags": [],
+   "pr": {
+    "l": "caution",
+    "t": "Uso IV em infeção grave quando indicado; vigilância (ototoxicidade teórica)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Oral mal absorvida; IV com passagem mínima - compatível."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Nefrotóxica; ajustar por TDM (vale-alvo/AUC) e função renal."
+   },
+   "hp": {
+    "l": "ok",
+    "t": "Sem ajuste relevante."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Nefro e ototoxicidade (maior risco com aminoglicosídeos, ansa, contraste, anfotericina B); reação de infusão (“red man”) se IV rápida. Oral usada na colite por C. difficile (ação local)."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; dose por peso + TDM."
+   }
+  },
+  {
+   "id": 129,
+   "inn": "Varfarina",
+   "brands": [
+    "Varfine"
+   ],
+   "cls": "Anticoagulante (antagonista da vitamina K)",
+   "tags": [
+    "anticoagulant",
+    "warfarin"
+   ],
+   "pr": {
+    "l": "contra",
+    "t": "Embriopatia varfarínica no 1.º T (dose-dependente, maior >5 mg/dia) e risco hemorrágico fetal - usar HBPM. Exceção: prótese valvular mecânica, em que a varfarina no 2.º/3.º T é mais eficaz a prevenir trombose (decisão especializada)."
+   },
+   "bf": {
+    "l": "safe",
+    "t": "Compatível (não passa para o leite em quantidade relevante)."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Vigiar; muitos fármacos alteram o INR."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "Doença hepática altera a coagulação; muito cuidado."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Risco hemorrágico; numerosas interações (vitamina K alimentar, antibióticos, amiodarona, azóis, AINE; tramadol aumenta o INR - MHRA 2024) - monitorizar INR."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Usada; monitorização apertada."
+   }
+  },
+  {
+   "id": 130,
+   "inn": "Venlafaxina",
+   "brands": [
+    "Efexor",
+    "Venlafaxina"
+   ],
+   "cls": "Antidepressivo (IRSN)",
+   "tags": [
+    "serotonergic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Ponderar; risco de síndrome de adaptação neonatal/HTP."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Passa para o leite; vigiar o lactente."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir dose conforme TFG."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "HTA (dose-dependente), hiponatremia, descontinuação difícil."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Uso restrito."
+   }
+  },
+  {
+   "id": 131,
+   "inn": "Verapamil",
+   "brands": [
+    "Isoptin",
+    "Verapamil"
+   ],
+   "cls": "BCC não di-hidropiridínico",
+   "tags": [
+    "nondhp-ccb",
+    "cyp3a4-inhibitor",
+    "pgp-inhibitor",
+    "bradycardic"
+   ],
+   "pr": {
+    "l": "caution",
+    "t": "Dados limitados; usado em arritmias/HTA."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; compatível."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Bradicardia/bloqueio AV, obstipação, edema; muitas interações."
+   },
+   "pd": {
+    "l": "caution",
+    "t": "Evitar em lactentes (risco hemodinâmico)."
+   }
+  },
+  {
+   "id": 171,
+   "inn": "Vildagliptina",
+   "brands": [
+    "Galvus",
+    "Jalra"
+   ],
+   "cls": "Antidiabético (inibidor da DPP-4)",
+   "tags": [],
+   "pr": {
+    "l": "avoid",
+    "t": "Dados insuficientes; preferir insulina/metformina."
+   },
+   "bf": {
+    "l": "avoid",
+    "t": "Sem dados; evitar."
+   },
+   "rn": {
+    "l": "adjust",
+    "t": "Reduzir para 50 mg/dia se TFG<50."
+   },
+   "hp": {
+    "l": "avoid",
+    "t": "CI na doença hepática/transaminases >3x - vigiar função hepática."
+   },
+   "el": {
+    "l": "caution",
+    "t": "Geralmente bem tolerada; raros casos de pancreatite e lesão hepática; risco de hipoglicemia se associada a sulfonilureia/insulina."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicada."
+   }
+  },
+  {
+   "id": 132,
+   "inn": "Zolpidem",
+   "brands": [
+    "Stilnox",
+    "Zolpidem"
+   ],
+   "cls": "Hipnótico não-benzodiazepínico (Z-drug)",
+   "tags": [
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar uso regular; dados limitados."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar sedação."
+   },
+   "rn": {
+    "l": "ok",
+    "t": "Sem ajuste."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir dose na doença hepática; evitar na cirrose grave."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: quedas, fraturas, confusão. FDA 2019 boxed warning: comportamentos complexos do sono (conduzir/andar a dormir) - CI se algum episódio prévio; suspender se ocorrer. Dose mais baixa na mulher (5 mg) e no idoso; não associar a álcool/depressores do SNC."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  },
+  {
+   "id": 172,
+   "inn": "Zopiclona",
+   "brands": [
+    "Imovane",
+    "Zopiclona"
+   ],
+   "cls": "Hipnótico não-benzodiazepínico (Z-drug)",
+   "tags": [
+    "cns-depressant"
+   ],
+   "pr": {
+    "l": "avoid",
+    "t": "Evitar; dados limitados (sedação/abstinência neonatal se uso perto do termo)."
+   },
+   "bf": {
+    "l": "caution",
+    "t": "Pequenas quantidades; vigiar sedação do lactente."
+   },
+   "rn": {
+    "l": "caution",
+    "t": "Reduzir na IR."
+   },
+   "hp": {
+    "l": "adjust",
+    "t": "Reduzir na doença hepática."
+   },
+   "el": {
+    "l": "avoid",
+    "t": "Beers: quedas, confusão, sabor amargo, dependência. Comportamentos complexos do sono (efeito de classe Z); não associar a álcool/depressores do SNC; usar curto prazo."
+   },
+   "pd": {
+    "l": "avoid",
+    "t": "Não indicado."
+   }
+  }
+ ]
+}
