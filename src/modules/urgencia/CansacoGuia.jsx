@@ -73,7 +73,7 @@ export default function CansacoGuia({ accent = "#e85d4a", voltar, tabInicial }) 
   const [tx, setTx] = useState(0);
   const [esc, setEsc] = useState(0);
   const [glosQuery, setGlosQuery] = useState("");
-  const mudarTab = (i) => { setTab(i); window.scrollTo({ top: 0 }); };
+  const mudarTab = (i) => setTab(i); // sem scroll: mudar de aba não deve mexer na página
   useAtalhosNumericos(TABS.length, mudarTab);
   // os cartões do menu são atalhos para separadores respetivos
   useEffect(() => { if (tabInicial != null) mudarTab(tabInicial); }, [tabInicial]); // eslint-disable-line react-hooks/exhaustive-deps

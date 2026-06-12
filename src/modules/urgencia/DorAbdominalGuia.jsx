@@ -179,7 +179,7 @@ export default function DorAbdominalGuia({ voltar, tabInicial }) {
   const [tx, setTx] = useState(0);
   const [esc, setEsc] = useState(0);
   const [glosQuery, setGlosQuery] = useState("");
-  const mudarTab = (i) => { setTab(i); window.scrollTo({ top: 0 }); };
+  const mudarTab = (i) => setTab(i); // sem scroll: mudar de aba não deve mexer na página
   useAtalhosNumericos(TABS.length, mudarTab);
   useEffect(() => { if (tabInicial != null) mudarTab(tabInicial); }, [tabInicial]); // eslint-disable-line react-hooks/exhaustive-deps
 

@@ -14,7 +14,7 @@ ferramenta de **estudo**.
 - Esqueleto da app (Vite + React + PWA) que **compila e corre offline**.
 - Ecrã inicial com a grelha de módulos, identidade visual única (creme/verde + modo escuro).
 - **Os 8 módulos estão portados e funcionais** (`pronto: true` em `registo.js`):
-  1. **Ajuste Renal** — lista de fármacos + cálculo de ajuste por TFG.
+  1. **Ajuste Renal** — 178 fármacos × 6 escalões de TFG, com pesquisa, filtros por classe e estado por escalão (sem ajuste / ajustar / precaução / contraindicado).
   2. **Antibioterapia Ambulatório** — referência hierárquica (especialidade → patologia → tratamento).
   3. **Análises + GSA** — interpretação de parâmetros + calculadora de gasometria (passo a passo).
   4. **Vacinação** — PNV 2025, matriz por idade, viajante com mapa interativo.
@@ -47,8 +47,8 @@ medguia/
 ├── conteudo/                 ← TODA a matéria clínica (a médica edita aqui)
 │   ├── LEIA-ME.md            ← guia de edição de conteúdo (para não-programadores)
 │   └── ajuste-renal/
-│       ├── meta.json         ← títulos, estadiamento DRC, nota, bibliografia
-│       └── farmacos.json     ← os 131 fármacos e regras de ajuste
+│       ├── meta.json         ← títulos, escalões de TFG, estados, disclaimer, bibliografia
+│       └── farmacos.json     ← os 178 fármacos × 6 escalões de TFG
 │
 ├── src/                      ← TODA a lógica, UI e identidade visual
 │   ├── main.jsx              ← arranque
@@ -61,7 +61,7 @@ medguia/
 │       ├── registo.js        ← ÚNICO sítio onde se "liga" um módulo
 │       └── ajuste-renal/
 │           ├── AjusteRenal.jsx  ← UI do módulo
-│           └── logica.js        ← funções puras (cálculo, gravidade, estadiamento)
+│           └── logica.js        ← funções puras (filtros, contagens, agrupamento)
 │
 ├── public/icon.svg
 ├── index.html
@@ -133,14 +133,16 @@ ele edita o JSON sem o partir.
 
 ### Convenção de gravidade (importante)
 
-No Ajuste Renal, a cor de cada nota (verde/azul/laranja/vermelho) é **inferida do texto**:
+No Ajuste Renal, cada fármaco tem `L` com 6 entradas (uma por escalão de TFG), e cada
+entrada traz o estado **explícito** que define a cor e o ícone:
 
-- `⛔` ou "Contraindicado" / "Suspender" → **vermelho** (CI)
-- `⚠️` ou "Não recomendado" / "Evitar" / "Não deve" → **laranja** (Cuidado)
-- "Sem ajuste" / "Sem necessidade" → **verde** (OK)
-- tudo o resto → **azul** (Ajustar)
+- `s: "ok"` → **verde** · Sem ajuste
+- `s: "adjust"` → **amarelo** · Ajustar dose
+- `s: "caution"` → **laranja** · Precaução
+- `s: "ci"` → **vermelho** · Contraindicado
 
-Quem escreve a nota controla a cor pela forma como a escreve.
+O campo `t` é a nota mostrada nesse escalão. Quem edita o conteúdo controla a cor pelo
+valor de `s` (já não é inferida do texto).
 
 ---
 

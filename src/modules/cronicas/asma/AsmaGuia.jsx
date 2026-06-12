@@ -11,7 +11,7 @@ export default function AsmaGuia({ voltar }) {
   const [tab, setTab] = useEstadoLocal("medguia:asma:guia:tab", 0);
   const raizRef = useRef(null);
   const filtroComp = useRef("all");
-  const mudarTab = (i) => { setTab(i); window.scrollTo({ top: 0 }); };
+  const mudarTab = (i) => setTab(i); // sem scroll: mudar de aba não deve mexer na página
 
   useEffect(() => { window.scrollTo({ top: 0 }); }, []);
 
