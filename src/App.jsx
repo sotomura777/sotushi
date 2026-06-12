@@ -77,10 +77,10 @@ export default function App() {
 
         <div className="ferramentas">{MODULOS.map((m) => cartaoFerramenta(m, false))}</div>
 
-        <button className="sugestao" onClick={() => abrir(MODULOS.find((m) => m.id === "atb-ambulatorio"))}>
+        <button className="sugestao" onClick={() => abrir(MODULOS.find((m) => m.id === "interacoes"))}>
           <div className="sugestao-eyebrow">SUGESTÃO</div>
-          <div className="sugestao-titulo">Antibioterapia em Ambulatório</div>
-          <div className="sugestao-desc">Prescrição empírica por especialidade e patologia — Ed. 1.3.</div>
+          <div className="sugestao-titulo">Estudo de Interações</div>
+          <div className="sugestao-desc">Interações por classe e cuidados por população — 172 fármacos.</div>
         </button>
 
         <div className="secao-cabecalho">

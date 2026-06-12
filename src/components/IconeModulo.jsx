@@ -3,7 +3,6 @@ import { ICONE_MODULO_MODERNO } from "./icones-modernos";
 // Cor por categoria (claro/glossy · escuro/neon) — tabela do icon-tiles.css.
 const COR = {
   "ajuste-renal": ["#2E9E8F", "#2af5c0"],
-  "atb-ambulatorio": ["#C58A3D", "#ffc24d"],
   urgencia: ["#DB6A5B", "#ff5c7a"],
   cronicas: ["#0B6E7F", "#2ff0e0"],
   analises: ["#8674C9", "#b07cff"],

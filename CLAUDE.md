@@ -14,7 +14,7 @@ Regras específicas deste projeto (complementam as guidelines gerais de coding).
    CSS) e de `src/design/tokens.js`. Reutilizar as classes partilhadas (`.cartao`,
    `.lista`, `.lista-item`, `.campo`, `.filtro`, `.secao-label`, `.rodape`, `.hero`…).
    Estilos próprios de um módulo são permitidos num CSS do módulo (ex.:
-   `modules/antibioterapia/estilo.css`) **desde que consumam as variáveis partilhadas** e
+   `modules/interacoes/estilo.css`) **desde que consumam as variáveis partilhadas** e
    não redefinam a paleta nem a tipografia. Não criar sistemas de estilo paralelos.
 4. **Módulos ligam-se num só sítio:** `src/modules/registo.js`. Cada módulo segue o padrão
    do Ajuste Renal: conteúdo em `/conteudo/<modulo>/`, lógica **pura** em

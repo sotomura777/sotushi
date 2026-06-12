@@ -7,8 +7,6 @@
 
 import AjusteRenal from "./ajuste-renal/AjusteRenal";
 import metaRenal from "@conteudo/ajuste-renal/meta.json";
-import AntibioterapiaAmbulatorio from "./antibioterapia/AntibioterapiaAmbulatorio";
-import metaAtb from "@conteudo/antibioterapia/meta.json";
 import Analises from "./analises/Analises";
 import metaAnalises from "@conteudo/analises/meta.json";
 import Vacinacao from "./vacinacao/Vacinacao";
@@ -33,18 +31,6 @@ export const MODULOS = [
     pronto: true,
     Componente: AjusteRenal,
   },
-  {
-    id: "atb-ambulatorio",
-    nome: metaAtb.nome,
-    descricao: "Antibioterapia empírica",
-    accent: "#b45309",
-    bg: "#fff8eb",
-    gradiente: "linear-gradient(135deg,#b45309 0%,#92400e 60%,#7c2d12 100%)",
-    pronto: true,
-    Componente: AntibioterapiaAmbulatorio,
-  },
-
-  // ── Próximos módulos a portar (mesmo padrão) ─────────────────────────────
   {
     id: "urgencia",
     nome: "Sintomas",
