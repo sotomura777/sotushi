@@ -1613,6 +1613,30 @@
     "calor",
     "podagra"
    ]
+  },
+  {
+   "id": "colica_renal",
+   "name": "Cólica Renal",
+   "sys": "geniturinario",
+   "type": "suspeita",
+   "tags": [
+    "dor lombar/flanco",
+    "irradiação à virilha",
+    "hematúria"
+   ],
+   "search": [
+    "cólica renal",
+    "colica renal",
+    "litíase",
+    "litiase",
+    "cálculo renal",
+    "calculo",
+    "ureteral",
+    "nefrolitíase",
+    "pedra no rim",
+    "loin to groin"
+   ],
+   "active": true
   }
  ]
 }

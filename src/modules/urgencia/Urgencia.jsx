@@ -4,6 +4,7 @@ import { filtrarItens } from "./logica";
 import Obstipacao from "./Obstipacao.jsx";
 import Cansaco from "./Cansaco.jsx";
 import DorAbdominal from "./DorAbdominal.jsx";
+import ColicaRenal from "./ColicaRenal.jsx";
 import { I, Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import "./estilo.css";
@@ -35,7 +36,7 @@ export default function Urgencia({ accent = "#e85d4a", gradiente, onVoltar }) {
     </header>
   );
 
-  const SUBMODULOS = { obstipacao: Obstipacao, cansaco: Cansaco, dor_abdominal: DorAbdominal };
+  const SUBMODULOS = { obstipacao: Obstipacao, cansaco: Cansaco, dor_abdominal: DorAbdominal, colica_renal: ColicaRenal };
   const Sub = SUBMODULOS[aberto];
   if (Sub) {
     return (

@@ -1,0 +1,898 @@
+{
+ "guiaSub": "Guia de estudo sobre cólica renal e litíase urinária — fisiopatologia, apresentação por nível de obstrução, sinais de alarme, imagiologia, analgesia, terapêutica expulsiva e prevenção metabólica. Com treino de anamnese, cards de revisão e casos clínicos orientados para a PNA.",
+ "gt": [
+  {
+   "label": "Definição",
+   "html": "<div class=\"g-card\">\n    <h2>O que é a cólica renal?</h2>\n    <p>A cólica renal (ou cólica nefrética/ureteral) é a dor aguda, intensa e em cólica causada pela <b>obstrução aguda do trato urinário superior</b>, na grande maioria por um cálculo que migra pelo ureter. A obstrução provoca distensão do sistema pielocalicial e do ureter e aumento de pressão, que estimulam as terminações nociceptivas e o peristaltismo ureteral contra o obstáculo.</p>\n    <p>É uma das dores mais intensas em medicina. Caracteristicamente o doente está <b>irrequieto, sem encontrar posição de alívio</b> — ao contrário da dor peritoneal (apendicite, perfuração), em que o doente fica imóvel.</p>\n    <h3>Epidemiologia</h3>\n    <p>A litíase urinária afecta cerca de <b>1 em cada 10 pessoas</b> ao longo da vida, com predomínio masculino, pico entre os 30-50 anos e taxa de recorrência elevada (≈50% em 5-10 anos sem prevenção). Fatores: clima quente, desidratação, dieta, obesidade/síndrome metabólico, história familiar.</p>\n    <h3>Fisiopatologia rápida</h3>\n    <ul>\n      <li>O cálculo migra do rim para o ureter → <b>obstrução</b> → pressão intraluminal ↑ e hidronefrose a montante.</li>\n      <li>A dor é <b>visceral</b> (mal localizada, em cólica) e a sua localização muda com o nível da obstrução.</li>\n      <li>Pontos de impactação fisiológicos: junção pielo-ureteral (JUP), cruzamento dos vasos ilíacos e junção uretero-vesical (JUV) — onde o ureter é mais estreito.</li>\n    </ul>\n    <div class=\"bar bar-a\"><b>Mensagem-chave:</b> cólica renal = dor + obstrução. A gravidade não se mede só pela dor, mas pela <b>repercussão da obstrução</b> (infecção, função renal). O cruzamento perigoso é a obstrução <b>infectada</b>.</div>\n    <div class=\"bar bar-y\" style=\"margin-top:10px\"><b>Âmbito desta ferramenta:</b> conteúdo dirigido a <b>adultos</b>; pediatria não abordada. Material exclusivamente educativo, alinhado com EAU 2025, NICE NG118, AUA 2025, ACR e Cochrane 2025. Não substitui o juízo clínico nem a consulta das fontes primárias actualizadas.</div>\n  </div></div>"
+  },
+  {
+   "label": "SOCRATES",
+   "html": "<div class=\"g-card\">\n    <h2>Caracterizar a dor: SOCRATES</h2>\n    <p>Estrutura sistemática para a anamnese da dor, particularmente útil na cólica renal:</p>\n    <table class=\"tbl\">\n      <tr><th>Letra</th><th>Pergunta</th><th>Na cólica renal típica</th></tr>\n      <tr><td><b>S</b>ite</td><td>Localização</td><td>Flanco / região lombar (ângulo costovertebral)</td></tr>\n      <tr><td><b>O</b>nset</td><td>Início</td><td>Súbito, intenso, frequentemente nocturno/madrugada</td></tr>\n      <tr><td><b>C</b>haracter</td><td>Tipo</td><td>Cólica (em ondas/paroxismos), o doente contorce-se</td></tr>\n      <tr><td><b>R</b>adiation</td><td>Irradiação</td><td>\"Loin to groin\": flanco → fossa ilíaca → virilha / genitália</td></tr>\n      <tr><td><b>A</b>ssociations</td><td>Sintomas associados</td><td>Náuseas/vómitos, hematúria, disúria/polaquiúria (cálculo distal)</td></tr>\n      <tr><td><b>T</b>ime</td><td>Tempo/padrão</td><td>Paroxismos que duram minutos a horas, recorrentes</td></tr>\n      <tr><td><b>E</b>xacerbating</td><td>Modulação</td><td>Não alivia com a posição (≠ dor músculo-esquelética ou peritoneal)</td></tr>\n      <tr><td><b>S</b>everity</td><td>Intensidade</td><td>Habitualmente 8-10/10</td></tr>\n    </table>\n    <div class=\"bar bar-y\"><b>Pista semiológica:</b> doente <b>irrequieto</b> que não pára quieto = dor visceral/cólica. Doente <b>imóvel</b> que evita mexer-se = irritação peritoneal. Esta diferença ajuda a separar cólica renal de apendicite/peritonite.</div>\n  </div>\n  <div class=\"g-card\">\n    <h2>Localização da dor por nível de obstrução</h2>\n    <p>O <b>Site</b> e a <b>Radiation</b> do SOCRATES dependem do nível da obstrução. Toca num quadrante para ver as pistas:</p>\n    <div class=\"quad-grid\"><div class=\"qcell\" data-q=\"hcd\">HCD<span class=\"qf\">Hipocôndrio dto</span></div><div class=\"qcell\" data-q=\"epi\">EPI<span class=\"qf\">Epigástrio</span></div><div class=\"qcell\" data-q=\"hce\">HCE<span class=\"qf\">Hipocôndrio esq</span></div><div class=\"qcell\" data-q=\"fld\">FLD<span class=\"qf\">Flanco dto</span></div><div class=\"qcell\" data-q=\"peri\">PERI<span class=\"qf\">Periumbilical</span></div><div class=\"qcell\" data-q=\"fle\">FLE<span class=\"qf\">Flanco esq</span></div><div class=\"qcell\" data-q=\"fid\">FID<span class=\"qf\">Fossa ilíaca dta</span></div><div class=\"qcell\" data-q=\"hipo\">HIPO<span class=\"qf\">Hipogástrio</span></div><div class=\"qcell\" data-q=\"fie\">FIE<span class=\"qf\">Fossa ilíaca esq</span></div></div>\n    <div class=\"quad-info\" id=\"quadInfo\">Selecciona um quadrante para ver as pistas clínicas.</div>\n    <h3>Onde dói consoante o nível</h3>\n    <ul>\n      <li><b>JUP / ureter proximal:</b> dor no flanco e ângulo costovertebral.</li>\n      <li><b>Ureter médio (cruzamento ilíaco):</b> irradia para a fossa ilíaca — <b>imita apendicite (direita) ou diverticulite (esquerda)</b>.</li>\n      <li><b>Ureter distal / JUV:</b> sintomas urinários baixos (disúria, polaquiúria, urgência) e dor irradiada à ponta do pénis / grandes lábios.</li>\n    </ul>\n  </div></div>"
+  },
+  {
+   "label": "Cálculos",
+   "html": "<div class=\"g-card\">\n    <h2>Tipos de cálculo</h2>\n    <table class=\"tbl\">\n      <tr><th>Tipo</th><th>%</th><th>Rx (radiopacidade)</th><th>Pistas / contexto</th><th>Tratamento médico</th></tr>\n      <tr><td><b>Oxalato de cálcio</b></td><td>~75-80%</td><td>Radiopaco</td><td>Mais frequente; hidratação, dieta</td><td>Tiazida se hipercalciúria; citrato de K</td></tr>\n      <tr><td><b>Fosfato de cálcio</b></td><td>~10-15%</td><td>Radiopaco</td><td>Urina alcalina; acidose tubular renal distal, hiperparatiroidismo</td><td>Tratar causa; citrato</td></tr>\n      <tr><td><b>Ácido úrico</b></td><td>~5-10%</td><td><b>Radiotransparente</b></td><td>Urina ácida, gota, síndrome metabólico</td><td><b>Alcalinizar urina (citrato de K)</b> — dissolúvel; alopurinol</td></tr>\n      <tr><td><b>Estruvite</b></td><td>~5-10%</td><td>Radiopaco</td><td>Infecção (Proteus, urease), urina alcalina, coraliforme</td><td>Remoção cirúrgica completa (PCNL) + tratar infecção</td></tr>\n      <tr><td><b>Cistina</b></td><td>~1%</td><td>Fracamente radiopaco</td><td>Cistinúria (genético), jovens, recorrente</td><td>Hidratação intensa, alcalinização, tiopronina</td></tr>\n    </table>\n    <div class=\"bar bar-y\"><b>Armadilha PNA:</b> cálculo <b>radiotransparente</b> ao Rx = <b>ácido úrico</b> (vê-se na TC, não no Rx). Os cálculos de <b>indinavir</b> (e atazanavir) podem ser invisíveis mesmo na TC — suspeitar pela história farmacológica.</div>\n    <h3>Fatores de risco</h3>\n    <ul>\n      <li>Baixa ingestão de líquidos / desidratação, clima quente.</li>\n      <li>História familiar, obesidade, síndrome metabólico, diabetes.</li>\n      <li>Gota e hiperuricemia (ácido úrico); ITU recorrentes por germes urease + (estruvite).</li>\n      <li>Hiperparatiroidismo primário, acidose tubular renal distal, sarcoidose (cálcio).</li>\n      <li>Fármacos litogénicos: indinavir/atazanavir, topiramato, sulfonamidas, triamtereno.</li>\n    </ul>\n  </div></div>"
+  },
+  {
+   "label": "Sinais de Alarme",
+   "html": "<div class=\"g-card\">\n    <h2>Sinais de alarme</h2>\n    <p>Perante uma \"cólica renal\", há situações que exigem atitude urgente ou que obrigam a reconsiderar o diagnóstico:</p>\n    <div class=\"bar bar-r\"><b>Febre / sinais de infecção + obstrução</b> → obstrução urinária infectada. Emergência urológica: <b>drenagem urgente</b> (duplo-J ou nefrostomia) + antibiótico. Risco de urosépsis.</div>\n    <div class=\"bar bar-r\"><b>Hipotensão / choque num idoso com fatores vasculares</b> e 1º episódio de \"cólica renal\" → excluir <b>AAA roto</b>. A tríade clássica (dor + massa pulsátil + hipotensão) está presente em <b>menos de 50%</b> dos AAA rotos; ~30% são inicialmente diagnosticados como cólica renal. POCUS à cabeceira é o exame mais rápido.</div>\n    <div class=\"bar bar-r\"><b>Lesão renal aguda / obstrução bilateral ou de rim único</b> → drenagem urgente para preservar a função renal.</div>\n    <div class=\"bar bar-r\"><b>Dor refratária à analgesia adequada</b> ou vómitos incoercíveis → internamento / intervenção.</div>\n    <div class=\"bar bar-y\"><b>Mulher fértil:</b> beta-hCG obrigatório — excluir gravidez ectópica e patologia anexial antes de imagem com radiação.</div>\n    <div class=\"bar bar-y\"><b>Anúria</b> ou cálculo num <b>rim transplantado/único</b> → urgência.</div>\n  </div></div>"
+  },
+  {
+   "label": "Diagnósticos",
+   "html": "<div class=\"g-card\">\n      <h2>Diagnósticos diferenciais</h2>\n      <p>A dor no flanco/lombar tem muitos imitadores. Resumo por categoria:</p>\n      <table class=\"tbl\">\n        <tr><th>Categoria</th><th>Entidades</th><th>Pista para distinguir</th></tr>\n        <tr><td>Urológica</td><td>Cálculo ureteral, pielonefrite, enfarte renal, obstrução infectada</td><td>Hematúria + cólica vs febre + dor constante</td></tr>\n        <tr><td>Vascular (não esquecer)</td><td>AAA roto, dissecção, enfarte renal</td><td>Idoso vascular, hipotensão, FA, dor desproporcional</td></tr>\n        <tr><td>Ginecológica (♀ fértil)</td><td>Gravidez ectópica, torção ovárica, quisto roto</td><td>beta-hCG, atraso menstrual, eco pélvica</td></tr>\n        <tr><td>Digestiva</td><td>Apendicite, diverticulite, cólica biliar, pancreatite</td><td>Localização, migração, relação com refeições, lipase</td></tr>\n        <tr><td>Músculo-esquelética / neuro</td><td>Lombalgia, herpes zoster</td><td>Alívio com posição; vesículas em dermátomo</td></tr>\n      </table>\n    </div>\n    <div class=\"g-card\" style=\"padding:18px 20px;\">\n      <h2 style=\"margin-bottom:4px;\">Fichas detalhadas por entidade</h2>\n      <p style=\"margin-bottom:0;color:var(--muted);font-size:13px;\">Toca para expandir: clínica, exame, investigação e conduta.</p>\n    </div>\n    <div class=\"dx-list\"><div class=\"dx-card\" data-dx=\"0\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Cólica renal / cálculo ureteral</div><div class=\"dx-card-sub\">Dor súbita no flanco \"loin to groin\", doente irrequieto</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor intensa em cólica no flanco com irradiação para a virilha/genitália. Náuseas/vómitos, hematúria (~85%). O nível do cálculo muda a localização e os sintomas urinários.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Punho-percussão lombar positiva; abdómen mole; doente agitado, sem posição de alívio.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>TC sem contraste (gold standard); urina II (hematúria); função renal; beta-hCG na ♀ fértil.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>AINE 1ª linha. ≤5 mm conservador; 5-10 mm MET (tamsulosina); >10 mm tratamento ativo.</div></div></div><div class=\"dx-card\" data-dx=\"1\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Obstrução urinária infectada</div><div class=\"dx-card-sub\">Cálculo + febre = emergência</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Cólica renal que cursa com febre, calafrios, taquicardia/hipotensão. Pús sob pressão a montante do cálculo.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Febre, sinais de sépsis, punho-percussão muito dolorosa.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>TC (cálculo + hidronefrose), hemograma/PCR, lactato, urocultura, hemoculturas.</div><div class=\"dx-row alarm\"><span class=\"dx-row-label\">Conduta</span><br>EMERGÊNCIA: ressuscitação + antibiótico EV + <b>drenagem urgente</b> (duplo-J ou nefrostomia). Nunca litotrícia na fase séptica.</div></div></div><div class=\"dx-card\" data-dx=\"2\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Pielonefrite aguda</div><div class=\"dx-card-sub\">Dor lombar constante + febre + piúria</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor lombar surda e mantida (não em cólica), febre, calafrios, sintomas urinários. Pode não haver cálculo.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Punho-percussão lombar positiva, febre.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Urina II (piúria, nitritos), urocultura, hemograma/PCR; eco/TC se suspeita de obstrução/abcesso.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Antibioterapia; se associada a obstrução (cálculo) → drenagem urgente.</div></div></div><div class=\"dx-card\" data-dx=\"3\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">AAA roto</div><div class=\"dx-card-sub\">Idoso vascular, 1º episódio, hipotensão</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor lombar/abdominal súbita que \"parece cólica renal\" num homem &gt;60 anos com fatores vasculares. Pode irradiar à virilha.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Massa abdominal pulsátil, hipotensão, palidez/sudorese.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>POCUS/angio-TC urgente. NÃO assumir litíase.</div><div class=\"dx-row alarm\"><span class=\"dx-row-label\">Conduta</span><br>Emergência cirúrgica vascular; instável + POCUS positivo → bloco sem TC.</div></div></div><div class=\"dx-card\" data-dx=\"4\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Enfarte renal</div><div class=\"dx-card-sub\">FA / fonte embólica, dor súbita no flanco</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor súbita no flanco com fatores embólicos (FA não anticoagulada). TC sem contraste sem cálculo nem hidronefrose; LDH/lactato elevados.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Pode ser pobre; avaliar ritmo (FA).</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Angio-TC (defeito de perfusão renal); LDH.</div><div class=\"dx-row alarm\"><span class=\"dx-row-label\">Conduta</span><br>Anticoagulação/revascularização conforme contexto; tratar a fonte embólica.</div></div></div><div class=\"dx-card\" data-dx=\"5\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Gravidez ectópica</div><div class=\"dx-card-sub\">♀ fértil, atraso menstrual, dor pélvica/flanco</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor na fossa ilíaca/flanco numa mulher fértil; pode imitar cólica renal. Atraso menstrual, metrorragias.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Dor pélvica; instabilidade se rotura.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br><b>beta-hCG</b> + ecografia transvaginal.</div><div class=\"dx-row alarm\"><span class=\"dx-row-label\">Conduta</span><br>Conforme estabilidade: metotrexato vs cirurgia. beta-hCG é obrigatório antes de imagem/cirurgia.</div></div></div><div class=\"dx-card\" data-dx=\"6\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Torção ovárica</div><div class=\"dx-card-sub\">♀, dor anexial súbita</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor pélvica/flanco súbita e intensa, náuseas; pode imitar cólica renal baixa.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Dor anexial, eventual massa.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Ecografia com Doppler (fluxo ovárico).</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Emergência ginecológica — destorção/cirurgia para preservar o ovário.</div></div></div><div class=\"dx-card\" data-dx=\"7\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Torção testicular</div><div class=\"dx-card-sub\">Homem jovem, dor escrotal súbita</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Dor escrotal/inguinal súbita que pode acompanhar ou imitar irradiação de cálculo distal. Janela curta para salvar o testículo.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Testículo elevado, horizontalizado, reflexo cremastérico ausente.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Clínico; eco-Doppler não deve atrasar a cirurgia.</div><div class=\"dx-row alarm\"><span class=\"dx-row-label\">Conduta</span><br>Exploração cirúrgica urgente (&lt;6h).</div></div></div><div class=\"dx-card\" data-dx=\"8\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Apendicite (mímica do cálculo médio)</div><div class=\"dx-card-sub\">FID, migração periumbilical → FID</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Cálculo no ureter médio direito irradia para a FID e imita apendicite. A apendicite tem migração, anorexia, febre e peritonismo localizado.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>McBurney, Rovsing, defesa na FID (≠ cólica renal, em que o abdómen é mole).</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>TC/eco; beta-hCG; a TC sem contraste deteta tanto cálculo como apendicite.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Apendicectomia se confirmada.</div></div></div><div class=\"dx-card\" data-dx=\"9\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Diverticulite (mímica do cálculo médio)</div><div class=\"dx-card-sub\">FIE, febre, alteração do trânsito</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Cálculo no ureter médio esquerdo irradia para a FIE e imita diverticulite. Esta cursa com febre e alteração do trânsito.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Dor e defesa na FIE.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>TC abdominopélvica.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Antibiótico (casos selecionados sem antibiótico); cirurgia se complicada.</div></div></div><div class=\"dx-card\" data-dx=\"10\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Cólica biliar / colecistite</div><div class=\"dx-card-sub\">HCD após refeições, Murphy</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Diferencial de dor no flanco/HCD direito. Relação com refeições gordas; Murphy positivo na colecistite.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>Murphy positivo (colecistite).</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Ecografia abdominal; provas hepáticas.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>AINE na cólica simples; colecistectomia na colecistite.</div></div></div><div class=\"dx-card\" data-dx=\"11\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Cálculo de oxalato de cálcio</div><div class=\"dx-card-sub\">Mais frequente, radiopaco</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>~75-80% dos cálculos. Associado a hipercalciúria, hiperoxalúria, hipocitratúria.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>—</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Composição do cálculo; urina de 24h.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Hidratação, dieta (não restringir cálcio), tiazida se hipercalciúria, citrato de K.</div></div></div><div class=\"dx-card\" data-dx=\"12\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Cálculo de ácido úrico</div><div class=\"dx-card-sub\">Radiotransparente, urina ácida, gota</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Não se vê no Rx (vê-se na TC). Urina persistentemente ácida; gota, síndrome metabólico.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>—</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>pH urinário, ácido úrico sérico/urinário.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br><b>Alcalinização urinária (citrato de K)</b> — único dissolúvel com fármacos; alopurinol.</div></div></div><div class=\"dx-card\" data-dx=\"13\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Cálculo de estruvite</div><div class=\"dx-card-sub\">Infecção (Proteus), coraliforme</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Bactérias produtoras de urease alcalinizam a urina; crescimento rápido; coraliforme; ITU recorrentes.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>—</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Urocultura, pH urinário alcalino, TC (coraliforme).</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Remoção cirúrgica completa (PCNL) + erradicar a infecção.</div></div></div><div class=\"dx-card\" data-dx=\"14\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Cálculos farmacológicos (indinavir)</div><div class=\"dx-card-sub\">Antirretrovirais, radiotransparentes mesmo na TC</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>VIH em terapêutica com indinavir/atazanavir; cólica com hidronefrose mas cálculo mal visível. Outros: topiramato, sulfonamidas, triamtereno.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>—</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>História farmacológica; TC pode ser \"negativa\".</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Hidratação, suspender/ajustar fármaco; drenagem se obstrução complicada.</div></div></div><div class=\"dx-card\" data-dx=\"15\"><div class=\"dx-card-h\"><div><div class=\"dx-card-title\">Hiperparatiroidismo primário</div><div class=\"dx-card-sub\">Litíase de cálcio + hipercalcemia + PTH ↑</div></div><div class=\"dx-card-chev\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg></div></div><div class=\"dx-card-body\"><div class=\"dx-row\"><span class=\"dx-row-label\">Clínica / pistas</span><br>Causa metabólica de litíase cálcica recorrente. Hipercalcemia, hipofosfatemia, PTH elevada.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Exame</span><br>—</div><div class=\"dx-row\"><span class=\"dx-row-label\">Investigação</span><br>Cálcio, fósforo, PTH; ecografia/cintigrafia das paratiroides.</div><div class=\"dx-row\"><span class=\"dx-row-label\">Conduta</span><br>Tratar a causa (paratiroidectomia quando indicado) reduz a recidiva.</div></div></div></div>\n  </div>"
+  },
+  {
+   "label": "Exame Objectivo",
+   "html": "<div class=\"g-card\">\n    <h2>Exame objectivo</h2>\n    <h3>Geral e sinais vitais</h3>\n    <ul>\n      <li>Doente tipicamente <b>agitado, irrequieto</b>, sudorético. Avaliar PA, FC, temperatura (febre = alarme), SpO₂.</li>\n      <li>Hipotensão num idoso vascular → pensar AAA; febre → obstrução infectada/pielonefrite.</li>\n    </ul>\n    <h3>Abdómen e dorso</h3>\n    <ul>\n      <li><b>Punho-percussão lombar (Murphy renal)</b> dolorosa no ângulo costovertebral → origem reno-ureteral.</li>\n      <li>Abdómen habitualmente <b>mole</b> (sem peritonismo) — a presença de defesa/peritonismo deve fazer reconsiderar diagnóstico cirúrgico digestivo.</li>\n      <li>Palpar à procura de <b>massa pulsátil</b> (AAA) e <b>globo vesical</b> (retenção).</li>\n    </ul>\n    <h3>Virilha e genitália</h3>\n    <ul>\n      <li>Examinar a virilha e a genitália: excluir <b>hérnia encarcerada</b> e, no homem jovem com dor escrotal, <b>torção testicular</b> (emergência).</li>\n    </ul>\n    <div class=\"bar bar-a\">Na cólica renal, o exame abdominal costuma ser desproporcionalmente pobre face à intensidade da dor — coerente com dor visceral, não peritoneal.</div>\n  </div></div>"
+  },
+  {
+   "label": "Investigação",
+   "html": "<div class=\"g-card\">\n    <h2>Investigação</h2>\n    <h3>Imagiologia</h3>\n    <table class=\"tbl\">\n      <tr><th>Exame</th><th>Papel</th></tr>\n      <tr><td><b>TC abdominopélvica SEM contraste (low-dose)</b></td><td><b>Gold standard</b> no adulto (sensibilidade e especificidade &gt;95%). Avalia cálculo, tamanho, localização (HU), hidronefrose e diferenciais. O contraste é evitado na fase aguda porque mascara cálculos. <b>Na grávida é último recurso</b>.</td></tr>\n      <tr><td>Ecografia reno-vesical</td><td><b>1ª linha na grávida</b> e em jovens. Deteta hidronefrose; menos sensível para cálculos no ureter médio.</td></tr>\n      <tr><td>RM sem gadolínio (T2)</td><td><b>2ª linha na grávida</b> quando a eco é inconclusiva. Não usa radiação; sensibilidade superior à eco.</td></tr>\n      <tr><td>Rx KUB</td><td>Baixa sensibilidade isolado; útil em <b>seguimento</b> de cálculos cálcicos previamente caracterizados. Não detecta cálculos radiotransparentes (ácido úrico, indinavir).</td></tr>\n    </table>\n    <h3>Laboratório</h3>\n    <ul>\n      <li><b>Urina II / sedimento:</b> hematúria (presente em ~80-85% pela tira urinária; <b>ausente em 15-20%</b> — a sua ausência <b>não exclui</b> o diagnóstico); piúria/nitritos → infecção; pH urinário (ácido → ácido úrico; alcalino → estruvite/fosfato).</li>\n      <li><b>Função renal</b> (creatinina), hemograma, PCR.</li>\n      <li>Bioquímica: cálcio, ácido úrico, fósforo, PTH (se recorrente).</li>\n      <li><b>beta-hCG</b> na mulher fértil.</li>\n      <li>Urocultura se suspeita de infecção; análise da composição do cálculo recuperado.</li>\n    </ul>\n    <div class=\"bar bar-y\"><b>Estudo metabólico</b> (urina de 24h: cálcio, oxalato, citrato, ácido úrico, volume) nos <b>recorrentes, jovens, rim único, e cálculos de estruvite/cistina/ácido úrico</b>.</div>\n  </div></div>\n</div>\n\n\n<div class=\"tab-content\""
+  }
+ ],
+ "tratamento": {
+  "labels": [
+   "Analgesia",
+   "MET / Passagem espontânea",
+   "Drenagem urgente",
+   "Tratamento definitivo",
+   "Prevenção"
+  ],
+  "paineis": [
+   {
+    "analgesia": true,
+    "labels": [
+     "1ª linha",
+     "2ª linha",
+     "Adjuvantes",
+     "Contraindicações dos AINE"
+    ],
+    "paineis": [
+     {
+      "html": "<div class=\"g-card\">\n      <h2>1ª linha — AINE, paracetamol ou metamizol</h2>\n      <p>Os AINE e o paracetamol são <b>superiores ao opióide</b> em controlo da dor, menos resgate e menos vómitos. O metamizol/dipirona é considerado parte do grupo dos AINE para esta indicação e é amplamente usado em Portugal. Os AINE atuam reduzindo o edema e o peristaltismo ureteral.</p>\n      <table class=\"tbl\">\n        <tr><th>Fármaco</th><th>Dose</th><th>Via</th><th>Notas</th></tr>\n        <tr><td><b>Cetorolaco</b></td><td>30 mg (bólus); 10-20 mg podem ser não-inferiores</td><td>IV ou IM</td><td>Eficaz e rápido; máx. 5 dias</td></tr>\n        <tr><td><b>Diclofenac</b></td><td>75 mg IM <i>ou</i> 50-100 mg</td><td>IM, PO ou supositório</td><td>Padrão europeu; opção quando não há acesso IV</td></tr>\n        <tr><td><b>Ibuprofeno</b></td><td>600-800 mg</td><td>PO</td><td>Início rápido; quando tolera via oral</td></tr>\n        <tr><td><b>Paracetamol</b></td><td>1 g</td><td>IV</td><td>Eficácia semelhante à do diclofenac IM e da morfina (Pathan, Lancet 2016); útil quando AINE contraindicado</td></tr>\n        <tr><td><b>Metamizol / dipirona</b></td><td>1-2 g</td><td>IV (lento) ou IM</td><td>Amplamente usado em Portugal; alternativa segura quando outros AINE não disponíveis ou contraindicados</td></tr>\n      </table>\n      <div class=\"bar bar-a\"><b>Mensagem-chave:</b> escolher um fármaco da 1ª linha e administrar precocemente. Reavaliar a dor aos 30-60 min antes de escalar.</div>\n    </div>"
+     },
+     {
+      "html": "<div class=\"g-card\">\n      <h2>2ª linha — Opióide</h2>\n      <p>Reservar o opióide para dor não controlada com 1ª linha ou quando há contraindicação aos AINE/paracetamol/metamizol. A recomendação é fraca na maioria das guidelines (eficácia inferior aos AINE; mais efeitos adversos, sobretudo vómitos).</p>\n      <table class=\"tbl\">\n        <tr><th>Fármaco</th><th>Dose inicial</th><th>Via</th><th>Notas</th></tr>\n        <tr><td><b>Morfina</b></td><td>0,05-0,1 mg/kg (tipicamente 2-5 mg)</td><td>IV em bólus, titulada</td><td>Opióide preferido; vigiar depressão respiratória, hipotensão</td></tr>\n        <tr><td><b>Tramadol</b></td><td>50-100 mg</td><td>IV lento ou PO</td><td>Opção em dor moderada</td></tr>\n        <tr><td><b>Hidromorfona</b></td><td>0,5-1 mg</td><td>IV titulada</td><td>Alternativa à morfina</td></tr>\n      </table>\n      <div class=\"bar bar-r\"><b>Evitar petidina:</b> não tem vantagem sobre os outros opióides e provoca mais vómitos.</div>\n      <div class=\"bar bar-y\"><b>Mito refutado:</b> a analgesia não \"mascara\" o abdómen agudo — negar analgesia é má prática.</div>\n    </div>"
+     },
+     {
+      "html": "<div class=\"g-card\">\n      <h2>Adjuvantes e medidas de suporte</h2>\n      <ul>\n        <li><b>Antieméticos</b> (ondansetrom 4-8 mg IV ou metoclopramida 10 mg IV) para os vómitos.</li>\n        <li><b>Hidratação</b> ajustada à clínica — não há evidência de que a hidratação forçada acelere a expulsão do cálculo; corrigir a desidratação por vómitos.</li>\n        <li><b>Filtrar a urina</b> para tentar recuperar o cálculo (análise da composição orienta a prevenção).</li>\n        <li><b>Reavaliar a dor</b> aos 30-60 min; se mantém intensa apesar de 1ª e 2ª linha, ponderar internamento e avaliação urológica.</li>\n      </ul>\n      <div class=\"bar bar-y\"><b>O que não acrescenta:</b> antiespasmódicos (butilescopolamina) associados a AINE <b>não melhoram</b> o controlo da dor.</div>\n    </div>"
+     },
+     {
+      "html": "<div class=\"g-card\">\n      <h2>Contraindicações dos AINE</h2>\n      <p>O AINE é 1ª linha, mas algumas situações exigem alternativa (paracetamol IV, metamizol ou opióide):</p>\n      <table class=\"tbl\">\n        <tr><th>Situação</th><th>Porquê</th></tr>\n        <tr><td><b>LRA / DRC</b> com TFG baixa</td><td>Risco de agravamento da função renal; a própria obstrução pode já estar a comprometê-la</td></tr>\n        <tr><td>Desidratação significativa</td><td>Hipoperfusão renal — risco de LRA com AINE</td></tr>\n        <tr><td>Úlcera ou hemorragia digestiva activa</td><td>AINE inibe a cicatrização e a hemostase digestiva</td></tr>\n        <tr><td>Anticoagulação</td><td>Aumento do risco hemorrágico</td></tr>\n        <tr><td>ICC descompensada</td><td>Retenção hidrossalina, agravamento</td></tr>\n        <tr><td><b>Gravidez ≥20 semanas</b></td><td>Oligo-hidrâmnios, fecho do canal arterial, nefrotoxicidade fetal (alerta FDA 2020)</td></tr>\n        <tr><td>Alergia/intolerância conhecida</td><td>—</td></tr>\n      </table>\n      <div class=\"bar bar-r\"><b>Avaliação obrigatória antes de prescrever AINE:</b> creatinina, antecedentes (DRC, úlcera, ICC), medicação habitual (anticoagulantes) e estado de hidratação.</div>\n    </div></div>"
+     }
+    ]
+   },
+   {
+    "html": "<div class=\"g-card\">\n    <h2>Terapêutica médica expulsiva (MET) e passagem espontânea</h2>\n    <table class=\"tbl\">\n      <tr><th>Tamanho do cálculo</th><th>Probabilidade de passar</th><th>Conduta</th></tr>\n      <tr><td>&lt;5 mm</td><td>~70%</td><td>Conservador: analgesia, hidratação, filtrar a urina, vigiar</td></tr>\n      <tr><td>5-10 mm</td><td>~50% (↑ com MET)</td><td>Conservador + considerar <b>alfa-bloqueante (tamsulosina 0,4 mg/dia)</b>, sobretudo no ureter distal</td></tr>\n      <tr><td>&gt;10 mm</td><td>Baixa</td><td>Tratamento ativo (URS ou LEOC; PCNL se renal &gt;20 mm)</td></tr>\n    </table>\n    <div class=\"bar bar-a\"><b>MET:</b> alfa-bloqueante (tamsulosina) facilita a expulsão de cálculos ureterais <b>distais ≤10 mm</b>, com benefício clinicamente relevante sobretudo nos &gt;5 mm. Tipicamente 4 semanas de tratamento; suspender se passa, surge febre, dor refratária ou agravamento da função renal.</div>\n  </div>"
+   },
+   {
+    "html": "<div class=\"g-card\">\n    <h2>Drenagem urgente</h2>\n    <p>Indicações de <b>descompressão urgente</b> das vias urinárias:</p>\n    <ul>\n      <li><b>Obstrução infectada</b> (cálculo + febre/sépsis) — emergência absoluta.</li>\n      <li><b>LRA / obstrução bilateral ou de rim único.</b></li>\n      <li>Dor refratária ou vómitos incoercíveis apesar de analgesia adequada.</li>\n    </ul>\n    <h3>Opções: duplo-J vs nefrostomia</h3>\n    <p>São equivalentes em eficácia para descomprimir o sistema; a escolha é institucional e depende da disponibilidade, anatomia e estabilidade do doente (ECR mostrou equivalência clínica). A nefrostomia percutânea é frequentemente preferida em sépsis grave (acesso percutâneo, controlo da pressão, sem manipulação retrógrada). O <b>tratamento definitivo do cálculo é diferido</b> até estabilização.</p>\n    <div class=\"bar bar-r\"><b>Nunca</b> fazer litotrícia/ureteroscopia <b>definitiva</b> na fase séptica — primeiro drenar e tratar a infecção.</div>\n  </div>"
+   },
+   {
+    "html": "<div class=\"g-card\">\n    <h2>Tratamento definitivo do cálculo</h2>\n    <table class=\"tbl\">\n      <tr><th>Técnica</th><th>Indicação preferencial</th></tr>\n      <tr><td><b>Ureteroscopia (URS) + laser</b></td><td>1ª linha para a maioria dos cálculos ureterais (taxas de stone-free elevadas, sobretudo no ureter distal e em cálculos &gt;10 mm)</td></tr>\n      <tr><td><b>LEOC</b> (litotrícia extracorporal)</td><td>Alternativa não invasiva para cálculos renais e ureterais ≤20 mm; menor stone-free que URS em cálculos densos (&gt;1000 HU) ou impactados</td></tr>\n      <tr><td><b>PCNL</b> (nefrolitotomia percutânea)</td><td>1ª linha para cálculos renais &gt;20 mm ou coraliformes</td></tr>\n    </table>\n  </div>"
+   },
+   {
+    "html": "<div class=\"g-card\">\n    <h2>Prevenção</h2>\n    <ul>\n      <li><b>Hidratação abundante</b> (&gt;2,5 L/dia; débito urinário &gt;2-2,5 L/dia) — medida nº1, transversal.</li>\n      <li>Reduzir sódio e proteína animal; <b>NÃO restringir o cálcio dietético</b> (a restrição aumenta o oxalato urinário).</li>\n      <li><b>Hipercalciúria</b> → tiazida; <b>hipocitratúria</b> → citrato de potássio; <b>hiperuricosúria</b> → alopurinol; <b>ácido úrico</b> → alcalinização.</li>\n      <li>Tratar causas subjacentes (hiperparatiroidismo, ITU por germes urease +).</li>\n    </ul>\n    <div class=\"bar bar-y\"><b>Armadilha PNA:</b> restringir cálcio é contraproducente. A prevenção começa sempre por <b>beber mais água</b>.</div>\n  </div></div>\n</div>\n\n\n<div class=\"tab-content\""
+   }
+  ]
+ },
+ "diagnosticos": {
+  "quadData": {
+   "hcd": {
+    "t": "Hipocôndrio direito",
+    "tip": "Pode confundir-se com cólica biliar/colecistite. Cálculo renal alto à direita também dá dor neste território."
+   },
+   "epi": {
+    "t": "Epigástrio",
+    "tip": "Pouco típico de cólica renal. Pensar em pancreatite, úlcera; excluir enfarte inferior (ECG)."
+   },
+   "hce": {
+    "t": "Hipocôndrio esquerdo",
+    "tip": "Cálculo renal alto à esquerda; diferenciar de patologia esplénica e do ângulo esplénico."
+   },
+   "fld": {
+    "t": "Flanco direito",
+    "tip": "<b>Território clássico da cólica renal direita.</b> JUP/ureter proximal → dor no flanco e ângulo costovertebral."
+   },
+   "peri": {
+    "t": "Periumbilical",
+    "tip": "Atenção ao AAA (dor periumbilical/lombar irradiada) e à apendicite inicial."
+   },
+   "fle": {
+    "t": "Flanco esquerdo",
+    "tip": "<b>Território clássico da cólica renal esquerda.</b> Diferenciar de patologia do cólon descendente."
+   },
+   "fid": {
+    "t": "Fossa ilíaca direita",
+    "tip": "Cálculo no <b>ureter médio</b> direito irradia para a FID e <b>imita apendicite</b>. Na mulher fértil, beta-hCG."
+   },
+   "hipo": {
+    "t": "Hipogástrio",
+    "tip": "Cálculo distal/JUV dá sintomas urinários baixos e dor suprapúbica/genital. Excluir retenção (globo vesical)."
+   },
+   "fie": {
+    "t": "Fossa ilíaca esquerda",
+    "tip": "Cálculo no <b>ureter médio</b> esquerdo irradia para a FIE e <b>imita diverticulite</b>."
+   }
+  }
+ },
+ "cards": {
+  "titulo": "Cards de estudo",
+  "sub": "Os 16 diagnósticos do guia em cards de revisão — clínica, investigação e tratamento.",
+  "cats": {
+   "diagnostico": {
+    "label": "Diagnóstico",
+    "color": "#a16207",
+    "badge": "tip"
+   },
+   "alarme": {
+    "label": "Alarmes",
+    "color": "#dc2626",
+    "badge": "tip"
+   },
+   "tratamento": {
+    "label": "Tratamento",
+    "color": "#10b981",
+    "badge": "tip"
+   },
+   "prevencao": {
+    "label": "Prevenção",
+    "color": "#0891b2",
+    "badge": "tip"
+   },
+   "armadilha": {
+    "label": "Armadilhas",
+    "color": "#7c3aed",
+    "badge": "tip"
+   }
+  },
+  "defaults": [
+   {
+    "cat": "diagnostico",
+    "fav": false,
+    "title": "Cólica renal típica",
+    "sub": "Dor súbita no flanco, \"loin to groin\", doente irrequieto",
+    "sections": [
+     {
+      "key": "Clínica",
+      "rows": [
+       "Dor <b>súbita</b> e intensa no flanco com irradiação à virilha/genitália",
+       "Doente <b>irrequieto</b> (≠ peritonismo, em que fica imóvel)",
+       "Náuseas/vómitos; hematúria em ~80-85% (ausente em ~15-20% não exclui)"
+      ]
+     },
+     {
+      "key": "Exame",
+      "rows": [
+       "Punho-percussão lombar positiva (Giordano ou Murphy renal)",
+       "Abdómen tipicamente mole, sem peritonismo"
+      ]
+     },
+     {
+      "key": "Imagem",
+      "rows": [
+       "<b>TC sem contraste</b> = gold standard (sens/espec &gt;95%)",
+       "Eco como 1ª linha na grávida"
+      ]
+     }
+    ],
+    "backTitle": "EAU / NICE NG118",
+    "backHtml": "<p>A cólica renal resulta da obstrução aguda do trato urinário superior, em regra por cálculo no ureter. A distensão a montante explica a dor visceral em cólica. A localização da dor varia com o nível: JUP → flanco; ureter médio → fossa ilíaca (imita apendicite/diverticulite); ureter distal/JUV → sintomas urinários baixos e dor irradiada à genitália.</p>"
+   },
+   {
+    "cat": "diagnostico",
+    "fav": false,
+    "title": "Cálculo de ácido úrico",
+    "sub": "Radiotransparente ao Rx, urina ácida, gota",
+    "sections": [
+     {
+      "key": "Pistas",
+      "rows": [
+       "Cálculo <b>não visível no Rx</b> (vê-se na TC)",
+       "Urina persistentemente ácida (pH &lt;5,5)",
+       "Antecedentes de gota / síndrome metabólico"
+      ]
+     },
+     {
+      "key": "Tratamento",
+      "rows": [
+       "<b>Alcalinização</b> da urina (citrato de potássio, alvo pH 6,5-7)",
+       "Único tipo dissolúvel com fármacos",
+       "Alopurinol se hiperuricemia"
+      ]
+     }
+    ],
+    "backTitle": "AUA — Medical Management",
+    "backHtml": "<p>Os cálculos de ácido úrico representam ~5-10% da litíase. São radiotransparentes ao Rx (mas visíveis na TC, ao contrário dos cálculos de indinavir, que podem ser invisíveis mesmo na TC). A alcalinização sustentada da urina dissolve-os — singular entre os tipos de cálculo.</p>"
+   },
+   {
+    "cat": "diagnostico",
+    "fav": false,
+    "title": "Estruvite — cálculo de infecção",
+    "sub": "Proteus, urina alcalina, coraliforme",
+    "sections": [
+     {
+      "key": "Pistas",
+      "rows": [
+       "ITU de repetição por bactérias produtoras de <b>urease</b> (Proteus, Klebsiella)",
+       "Urina <b>alcalina</b> (pH &gt;7,5)",
+       "Aspecto <b>coraliforme</b> na imagem"
+      ]
+     },
+     {
+      "key": "Tratamento",
+      "rows": [
+       "<b>PCNL</b> com remoção completa",
+       "Fragmentos residuais perpetuam a recidiva",
+       "Erradicar a infecção"
+      ]
+     }
+    ],
+    "backTitle": "EAU Urolithiasis",
+    "backHtml": "<p>As bactérias produtoras de urease hidrolisam a ureia → amónia → urina alcalina → precipitação de fosfato amónio-magnesiano. Cálculos crescem rapidamente e tornam-se coraliformes. A LEOC é insuficiente; a abordagem standard é a PCNL para remoção completa.</p>"
+   },
+   {
+    "cat": "diagnostico",
+    "fav": false,
+    "title": "Pielonefrite vs cólica renal",
+    "sub": "Dor constante + febre + piúria, sem cálculo",
+    "sections": [
+     {
+      "key": "Pielonefrite",
+      "rows": [
+       "Dor lombar <b>constante</b> (não em ondas)",
+       "Febre, calafrios",
+       "Piúria/nitritos; punho-percussão positiva"
+      ]
+     },
+     {
+      "key": "Cólica",
+      "rows": [
+       "Dor em <b>paroxismos</b>",
+       "Doente irrequieto",
+       "Pode ter hematúria, sem febre"
+      ]
+     }
+    ],
+    "backTitle": "IDSA",
+    "backHtml": "<p>O cruzamento perigoso é o cálculo obstrutivo COM febre — obstrução infectada → drenagem urgente. A pielonefrite sem obstrução trata-se com antibiótico EV e suporte; a obstrução infectada exige descompressão (duplo-J ou nefrostomia) ANTES do tratamento definitivo do cálculo.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "Obstrução infectada — EMERGÊNCIA",
+    "sub": "Cálculo + febre = drenagem urgente",
+    "sections": [
+     {
+      "key": "Quadro",
+      "rows": [
+       "Cólica renal + <b>febre/calafrios</b>",
+       "Pode evoluir para urosépsis em horas",
+       "Critérios de sépsis presentes"
+      ]
+     },
+     {
+      "key": "Conduta",
+      "rows": [
+       "Antibiótico EV + ressuscitação",
+       "<b>Drenagem urgente</b>: duplo-J ou nefrostomia",
+       "<b>Nunca</b> litotrícia/URS na fase séptica"
+      ]
+     }
+    ],
+    "backTitle": "EAU — emergência absoluta",
+    "backHtml": "<p>É a emergência por excelência da litíase. O cálculo encarcerado com infecção a montante leva a urosépsis fulminante. A descompressão é prioritária — só depois se trata o cálculo. A escolha entre duplo-J e nefrostomia depende da disponibilidade e da condição do doente (nefrostomia preferida em sépsis grave).</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "AAA roto — a armadilha do idoso",
+    "sub": "1º episódio de \"cólica renal\" + hipotensão",
+    "sections": [
+     {
+      "key": "Suspeitar",
+      "rows": [
+       "Homem &gt;60 anos com fatores vasculares",
+       "<b>1º</b> episódio de dor lombar súbita",
+       "Hipotensão, palidez, massa pulsátil"
+      ]
+     },
+     {
+      "key": "Conduta",
+      "rows": [
+       "POCUS / angio-TC <b>urgente</b>",
+       "Cirurgia vascular imediata",
+       "Não assumir litíase"
+      ]
+     }
+    ],
+    "backTitle": "ESVS 2024",
+    "backHtml": "<p>A rotura de AAA imita a cólica renal — dor súbita lombar irradiada à virilha. A tríade clássica (dor + massa pulsátil + hipotensão) só está completa numa minoria; a hipótese tem de ser activamente excluída. Em doente instável com POCUS positivo, ir para o bloco sem TC.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "Enfarte renal embólico",
+    "sub": "FA + dor súbita + TC sem cálculo",
+    "sections": [
+     {
+      "key": "Pistas",
+      "rows": [
+       "Fibrilhação auricular <b>não anticoagulada</b>",
+       "Dor <b>desproporcional</b> ao exame",
+       "TC sem cálculo nem hidronefrose; LDH/lactato elevados"
+      ]
+     },
+     {
+      "key": "Investigação",
+      "rows": [
+       "<b>Angio-TC</b>: defeito de perfusão renal",
+       "Procurar fonte embólica"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>Quando a imagem \"não bate certo\" com a clínica de cólica (sem cálculo, sem hidronefrose) num doente com fonte embólica, considerar enfarte renal. O tratamento é da causa (anticoagulação, revascularização em casos seleccionados) — o atraso é a regra.</p>"
+   },
+   {
+    "cat": "alarme",
+    "fav": false,
+    "title": "beta-hCG na mulher fértil",
+    "sub": "Ectópica até prova em contrário",
+    "sections": [
+     {
+      "key": "Regra",
+      "rows": [
+       "<b>beta-hCG obrigatório</b> em toda a mulher fértil com dor abdomino-pélvica",
+       "Antes de imagem com radiação",
+       "Atraso menstrual + dor + metrorragia = alarme"
+      ]
+     },
+     {
+      "key": "Imagem se grávida",
+      "rows": [
+       "<b>Ecografia</b> em 1ª linha",
+       "RM sem gadolínio em 2ª linha",
+       "TC só em último recurso"
+      ]
+     }
+    ],
+    "backTitle": "NICE NG126",
+    "backHtml": "<p>A gravidez ectópica imita cólica renal/apendicite. O beta-hCG condiciona a imagem (sem radiação na grávida) e a conduta (cirurgia se rotura). É uma das regras-ouro do diagnóstico na mulher em idade fértil.</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "Analgesia — AINE 1ª linha",
+    "sub": "Superior ao opióide na cólica renal",
+    "sections": [
+     {
+      "key": "1ª linha",
+      "rows": [
+       "<b>AINE</b>: cetorolaco 30 mg IV ou diclofenac 75 mg IM",
+       "Reduz edema e peristaltismo ureteral",
+       "Menos vómitos do que opióide"
+      ]
+     },
+     {
+      "key": "Contraindicações",
+      "rows": [
+       "LRA / DRC com TFG baixa",
+       "Úlcera / HDig activa",
+       "Anticoagulação, ICC, gravidez ≥20 semanas"
+      ]
+     }
+    ],
+    "backTitle": "Cochrane",
+    "backHtml": "<p>A meta-análise Cochrane confirma a superioridade do AINE sobre o opióide na cólica renal: melhor controlo da dor, menos resgate e menos vómitos. Reservar o opióide (morfina titulada) para 2ª linha ou quando o AINE está contraindicado.</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "MET — terapêutica médica expulsiva",
+    "sub": "Tamsulosina para cálculo distal 5-10 mm",
+    "sections": [
+     {
+      "key": "Indicação",
+      "rows": [
+       "Cálculo ureteral <b>5-10 mm</b>, sobretudo distal",
+       "Reavaliação às 4-6 semanas",
+       "Dor controlada, sem febre, função renal normal"
+      ]
+     },
+     {
+      "key": "Passagem espontânea",
+      "rows": [
+       "≤5 mm: ~70-80%",
+       "5-10 mm: ~50% (↑ com MET)",
+       "&gt;10 mm: improvável → tratamento ativo"
+      ]
+     }
+    ],
+    "backTitle": "SUSPEND trial",
+    "backHtml": "<p>A tamsulosina (alfa-bloqueante) relaxa o músculo liso do ureter distal e aumenta a probabilidade de passagem espontânea, sobretudo para cálculos de 5-10 mm distais. O SUSPEND trial mostrou benefício modesto mas mantém-se na maioria das guidelines.</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "Drenagem urgente — quando",
+    "sub": "Obstrução infectada, rim único, LRA",
+    "sections": [
+     {
+      "key": "Indicações",
+      "rows": [
+       "<b>Obstrução infectada</b> (cálculo + febre)",
+       "<b>Rim único</b> obstruído",
+       "<b>LRA</b> / obstrução bilateral",
+       "Dor refratária ou vómitos incoercíveis"
+      ]
+     },
+     {
+      "key": "Opções",
+      "rows": [
+       "<b>Duplo-J</b> (stent ureteral)",
+       "<b>Nefrostomia</b> percutânea",
+       "Tratamento do cálculo é diferido"
+      ]
+     }
+    ],
+    "backTitle": "EAU",
+    "backHtml": "<p>A drenagem urgente preserva a função renal e/ou trata a sépsis. Não é tratamento do cálculo — é descompressão. Só depois de resolvida a infecção/recuperada a função se decide LEOC / URS / PCNL.</p>"
+   },
+   {
+    "cat": "tratamento",
+    "fav": false,
+    "title": "Tratamento definitivo — por tamanho",
+    "sub": "URS, LEOC, PCNL",
+    "sections": [
+     {
+      "key": "Por carga litiásica",
+      "rows": [
+       "Ureteral &lt;1 cm: <b>URS</b> ou LEOC",
+       "Renal &lt;2 cm: LEOC ou URS retrógrada",
+       "Renal &gt;2 cm / coraliforme: <b>PCNL</b>"
+      ]
+     },
+     {
+      "key": "Notas",
+      "rows": [
+       "URS + laser de hólmio cada vez mais 1ª linha",
+       "Densidade alta (&gt;1000 HU) → URS &gt; LEOC"
+      ]
+     }
+    ],
+    "backTitle": "AUA — Surgical Management",
+    "backHtml": "<p>A escolha entre LEOC, URS e PCNL depende de tamanho, localização, composição e anatomia. A URS com laser de hólmio tem taxas de stone-free elevadas e é cada vez mais a 1ª linha nos cálculos ureterais. PCNL mantém-se para a carga renal alta.</p>"
+   },
+   {
+    "cat": "prevencao",
+    "fav": false,
+    "title": "Hidratar — medida nº 1",
+    "sub": "Débito urinário >2-2,5 L/dia",
+    "sections": [
+     {
+      "key": "Princípio",
+      "rows": [
+       "<b>Hidratação abundante</b>: ingerir &gt;2,5 L/dia",
+       "Alvo: débito urinário &gt;2-2,5 L/dia",
+       "Medida transversal a todos os tipos de cálculo"
+      ]
+     },
+     {
+      "key": "Dieta",
+      "rows": [
+       "Reduzir sal e proteína animal",
+       "<b>NÃO restringir cálcio</b> dietético",
+       "Moderar oxalato (espinafres, frutos secos, chá)"
+      ]
+     }
+    ],
+    "backTitle": "EAU / AUA",
+    "backHtml": "<p>A hidratação é a medida preventiva mais eficaz e custo-efetiva. A restrição de cálcio é um erro frequente — sem cálcio no lúmen intestinal, o oxalato é absorvido em maior quantidade e a oxalúria aumenta. O cálcio dietético protege.</p>"
+   },
+   {
+    "cat": "prevencao",
+    "fav": false,
+    "title": "Prevenção dirigida pela urina de 24h",
+    "sub": "Tiazida / citrato / alopurinol",
+    "sections": [
+     {
+      "key": "Por anomalia",
+      "rows": [
+       "<b>Hipercalciúria</b> → tiazida",
+       "<b>Hipocitratúria</b> → citrato de potássio",
+       "<b>Hiperuricosúria</b> → alopurinol",
+       "<b>Ácido úrico</b> → alcalinização"
+      ]
+     },
+     {
+      "key": "Indicações",
+      "rows": [
+       "Litíase recorrente, jovens, rim único",
+       "Cálculos de estruvite, cistina ou ácido úrico",
+       "Analisar sempre composição do cálculo recuperado"
+      ]
+     }
+    ],
+    "backTitle": "AUA — Medical Management",
+    "backHtml": "<p>O estudo metabólico (urina de 24h: volume, cálcio, oxalato, citrato, ácido úrico, sódio) orienta a prevenção dirigida. Nos doentes recorrentes ou de alto risco, a prevenção farmacológica reduz significativamente a recidiva.</p>"
+   },
+   {
+    "cat": "armadilha",
+    "fav": false,
+    "title": "Hematúria — não obrigatória",
+    "sub": "Ausente em ~15-20% dos casos",
+    "sections": [
+     {
+      "key": "Regra",
+      "rows": [
+       "Hematúria <b>apoia</b> o diagnóstico (~80-85% pela tira urinária)",
+       "<b>Ausente em ~15-20%</b> — não exclui cólica renal",
+       "Mais frequente a sua ausência na obstrução completa"
+      ]
+     },
+     {
+      "key": "Investigar",
+      "rows": [
+       "Diagnóstico confirma-se pela TC, não pela urina",
+       "Hematúria indolor no idoso: investigar neoplasia urotelial"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>A ausência de hematúria num doente com clínica típica não deve fazer rejeitar a hipótese de cólica renal — confirma-se por imagem. Inversamente, hematúria sem dor obriga a investigação dirigida (citologia, cistoscopia, uroTC) no doente de risco.</p>"
+   },
+   {
+    "cat": "armadilha",
+    "fav": false,
+    "title": "Cálculo de indinavir — invisível na TC",
+    "sub": "VIH em TAR, TC negativa, hidronefrose",
+    "sections": [
+     {
+      "key": "Pistas",
+      "rows": [
+       "Doente sob <b>indinavir</b> (ou atazanavir)",
+       "TC sem cálculo identificável, mas com hidronefrose",
+       "Outros litogénicos: topiramato, sulfonamidas, triamtereno"
+      ]
+     },
+     {
+      "key": "Conduta",
+      "rows": [
+       "História farmacológica é a chave",
+       "Hidratar; suspender / ajustar fármaco",
+       "Drenar se obstrução complicada"
+      ]
+     }
+    ],
+    "backTitle": "Detalhe",
+    "backHtml": "<p>O indinavir é o exemplo clássico de cálculo radiotransparente também na TC. Em qualquer doente com hidronefrose e TC \"negativa\", a história farmacológica deve ser revista. O ácido úrico, por contraste, é radiotransparente ao Rx mas visível na TC.</p>"
+   }
+  ]
+ },
+ "fontes": {
+  "intro": "As recomendações deste guia baseiam-se nas seguintes fontes — guidelines, consensos e literatura. Cada referência tem ligação directa para o documento original sempre que disponível em acesso aberto. <b>Esta é uma ferramenta de estudo</b> — recomenda-se consultar as fontes primárias para decisões clínicas reais.",
+  "grupos": [
+   {
+    "titulo": "Guidelines de urolitíase",
+    "itens": [
+     {
+      "titulo": "EAU Guidelines on Urolithiasis (edição em vigor)",
+      "autores": "European Association of Urology (EAU)",
+      "fonte": "European Association of Urology, atualização anual",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://uroweb.org/guidelines/urolithiasis"
+     },
+     {
+      "titulo": "Renal and ureteric stones: assessment and management — NG118",
+      "autores": "NICE",
+      "fonte": "NICE, 2019 (atualizada)",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://www.nice.org.uk/guidance/ng118"
+     },
+     {
+      "titulo": "Surgical Management of Stones: AUA/Endourological Society Guideline",
+      "autores": "Assimos D, Krambeck A, Miller NL, et al. (AUA)",
+      "fonte": "Journal of Urology, 2016",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-surgical-management-guideline"
+     },
+     {
+      "titulo": "Medical Management of Kidney Stones: AUA Guideline",
+      "autores": "Pearle MS, Goldfarb DS, Assimos DG, et al. (AUA)",
+      "fonte": "Journal of Urology, 2014;192:316-324",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://www.auanet.org/guidelines-and-quality/guidelines/medical-management-of-kidney-stones-guideline"
+     },
+     {
+      "titulo": "ACR Appropriateness Criteria: Acute Onset Flank Pain — Suspicion of Stone Disease",
+      "autores": "American College of Radiology (ACR)",
+      "fonte": "American College of Radiology",
+      "badge": "Critérios imagiológicos",
+      "badgeTipo": "condicional",
+      "url": "https://acsearch.acr.org/list"
+     }
+    ]
+   },
+   {
+    "titulo": "Analgesia e terapêutica expulsiva",
+    "itens": [
+     {
+      "titulo": "Nonsteroidal anti-inflammatory drugs (NSAIDs) and non-opioids for acute renal colic",
+      "autores": "Afshar K, Jafari S, Marks AJ, et al. (Cochrane)",
+      "fonte": "Cochrane Database Syst Rev, 2015",
+      "badge": "Revisão sistemática",
+      "badgeTipo": "condicional",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006027.pub2/full"
+     },
+     {
+      "titulo": "Medical expulsive therapy in adults with ureteric colic (SUSPEND trial)",
+      "autores": "Pickard R, Starr K, MacLennan G, et al.",
+      "fonte": "The Lancet, 2015;386:341-349",
+      "badge": "RCT",
+      "badgeTipo": "forte",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60933-3/fulltext"
+     },
+     {
+      "titulo": "Alpha blockers for treatment of ureteric stones: systematic review and meta-analysis",
+      "autores": "Hollingsworth JM, Canales BK, Rogers MAM, et al.",
+      "fonte": "BMJ, 2016;355:i6112",
+      "badge": "Meta-análise",
+      "badgeTipo": "condicional",
+      "url": "https://www.bmj.com/content/355/bmj.i6112"
+     }
+    ]
+   },
+   {
+    "titulo": "Diferenciais a não esquecer",
+    "itens": [
+     {
+      "titulo": "ESVS Clinical Practice Guidelines on the Management of Abdominal Aorto-Iliac Artery Aneurysms",
+      "autores": "Wanhainen A, Van Herzeele I, Bastos Goncalves F, et al. (ESVS)",
+      "fonte": "Eur J Vasc Endovasc Surg, 2024",
+      "badge": "Guideline (AAA)",
+      "badgeTipo": "forte",
+      "url": "https://www.ejves.com/article/S1078-5884(23)00772-5/fulltext"
+     },
+     {
+      "titulo": "Ectopic pregnancy and miscarriage: diagnosis and initial management — NG126",
+      "autores": "NICE",
+      "fonte": "NICE, 2019",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://www.nice.org.uk/guidance/ng126"
+     },
+     {
+      "titulo": "International Clinical Practice Guidelines for the Treatment of Acute Uncomplicated Cystitis and Pyelonephritis",
+      "autores": "Gupta K, Hooton TM, Naber KG, et al. (IDSA)",
+      "fonte": "Clin Infect Dis, 2011",
+      "badge": "Guideline",
+      "badgeTipo": "forte",
+      "url": "https://academic.oup.com/cid/article/52/5/e103/388285"
+     }
+    ]
+   },
+   {
+    "titulo": "Manuais e revisões",
+    "itens": [
+     {
+      "titulo": "EAU Guidelines on Diagnosis and Conservative Management of Urolithiasis",
+      "autores": "Türk C, Petřík A, Sarica K, et al.",
+      "fonte": "European Urology, 2016;69:468-474",
+      "badge": "Revisão",
+      "badgeTipo": "fraca",
+      "url": "https://www.europeanurology.com/article/S0302-2838(15)00686-1/fulltext"
+     }
+    ]
+   }
+  ]
+ },
+ "glossario": {
+  "titulo": "Glossário",
+  "sub": "Siglas, escalas e conceitos usados neste guia. Pesquisa a partir de 2 letras.",
+  "termos": [
+   {
+    "term": "AAA",
+    "full": "Aneurisma da Aorta Abdominal",
+    "desc": "Dilatação da aorta abdominal. A sua rotura imita a cólica renal (dor lombar súbita irradiada à virilha) no idoso com fatores vasculares — diferencial obrigatório.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "AINE",
+    "full": "Anti-inflamatório Não Esteróide",
+    "desc": "1ª linha de analgesia na cólica renal (cetorolaco, diclofenac, ibuprofeno; a EAU inclui também o metamizol). Superior ao opióide. Contraindicado em LRA/DRC, úlcera, anticoagulação, ICC e gravidez a partir das 20 semanas.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "beta-hCG",
+    "full": "Gonadotrofina Coriónica Humana",
+    "desc": "Marcador de gravidez. Obrigatório na mulher em idade fértil com dor abdomino-pélvica, antes de imagem com radiação — para excluir gravidez ectópica.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "DRC",
+    "full": "Doença Renal Crónica",
+    "desc": "TFG persistentemente reduzida. Condiciona a escolha da analgesia (evitar AINE) e a investigação contrastada.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "EAU",
+    "full": "European Association of Urology",
+    "desc": "Sociedade europeia de urologia, responsável pelas Guidelines on Urolithiasis — referência principal para a abordagem da litíase urinária.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "FA",
+    "full": "Fibrilhação Auricular",
+    "desc": "Arritmia com risco embólico. Em dor súbita no flanco com TC sem cálculo, levantar suspeita de enfarte renal embólico (angio-TC).",
+    "cat": "Sigla"
+   },
+   {
+    "term": "JUP",
+    "full": "Junção Pielo-Ureteral",
+    "desc": "Estreitamento entre a pélvis renal e o ureter. Local frequente de impactação; obstrução alta dá dor no flanco/ângulo costovertebral.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "JUV",
+    "full": "Junção Uretero-Vesical",
+    "desc": "Estreitamento distal do ureter, junto à bexiga. Cálculo aqui dá sintomas urinários baixos (disúria, polaquiúria, urgência) e dor irradiada à genitália.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "LEOC",
+    "full": "Litotrícia Extracorporal por Ondas de Choque",
+    "desc": "Técnica não invasiva que fragmenta cálculos &lt;2 cm por ondas de choque externas. Eficácia limitada em cálculos muito densos ou de cistina.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "LRA",
+    "full": "Lesão Renal Aguda",
+    "desc": "Queda aguda da função renal. Na cólica renal pode ser pós-renal (obstrução bilateral ou de rim único) — indicação de drenagem urgente.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "MET",
+    "full": "Terapêutica Médica Expulsiva",
+    "desc": "Uso de alfa-bloqueante (tamsulosina 0,4 mg/dia) para facilitar a expulsão de cálculos ureterais distais de 5-10 mm. Reavaliar às 4-6 semanas.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "NICE",
+    "full": "National Institute for Health and Care Excellence",
+    "desc": "Instituto britânico que publica guidelines clínicas baseadas em evidência. NG118 cobre a litíase renal e ureteral.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "PCNL",
+    "full": "Nefrolitotomia Percutânea",
+    "desc": "Acesso percutâneo ao rim para remoção de cálculos. Técnica de eleição para cálculos renais &gt;2 cm ou coraliformes.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "PTH",
+    "full": "Hormona Paratiroideia",
+    "desc": "Regula o metabolismo do cálcio. Elevada no hiperparatiroidismo primário, com hipercalcemia — causa de litíase de cálcio recorrente.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "TC",
+    "full": "Tomografia Computorizada",
+    "desc": "TC abdominopélvica sem contraste (low-dose) é o gold standard na cólica renal (sens/espec &gt;95%). O contraste mascara cálculos.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "URS",
+    "full": "Ureteroscopia",
+    "desc": "Abordagem endoscópica retrógrada do ureter, frequentemente com laser de hólmio. Cada vez mais 1.ª linha para cálculos ureterais.",
+    "cat": "Sigla"
+   },
+   {
+    "term": "Hounsfield",
+    "full": "Unidades Hounsfield (HU)",
+    "desc": "Escala de densidade na TC. Cálculos muito densos (&gt;1000 HU) respondem pior à LEOC; orienta a escolha entre LEOC e URS.",
+    "cat": "Escala"
+   },
+   {
+    "term": "Cólica renal",
+    "full": "Cólica nefrética / ureteral",
+    "desc": "Dor aguda, intensa e em cólica por obstrução aguda do trato urinário superior, habitualmente por cálculo ureteral. Doente irrequieto, sem posição de alívio.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Litíase urinária",
+    "full": "Urolitíase",
+    "desc": "Formação de cálculos no sistema urinário. Afecta ~10% da população ao longo da vida, com elevada taxa de recorrência sem prevenção.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Hidronefrose",
+    "full": "Dilatação pielocalicial",
+    "desc": "Dilatação do sistema pielocalicial por obstrução do fluxo urinário. Visível na ecografia e na TC; o seu grau orienta a urgência.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Loin to groin",
+    "full": "Padrão de irradiação clássico",
+    "desc": "Dor no flanco que irradia à fossa ilíaca e à virilha/genitália. Padrão típico da cólica renal — quanto mais distal o cálculo, mais baixa a irradiação.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Punho-percussão lombar",
+    "full": "Giordano / Murphy renal",
+    "desc": "Pancada com a borda cubital do punho no ângulo costovertebral. Positiva se dor viva — sugere origem reno-ureteral (cólica ou pielonefrite).",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Obstrução infectada",
+    "full": "Cálculo obstrutivo + infecção",
+    "desc": "Emergência absoluta da litíase. Exige drenagem urgente (duplo-J ou nefrostomia) + antibiótico. Nunca litotrícia/URS na fase séptica.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Radiotransparente",
+    "full": "Não visível no Rx",
+    "desc": "Cálculo invisível ao Rx (ácido úrico, indinavir). O ácido úrico vê-se na TC; o indinavir pode ser invisível mesmo na TC.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Coraliforme",
+    "full": "Cálculo em molde do sistema pielocalicial",
+    "desc": "Cálculo volumoso que preenche o sistema pielocalicial. Típico da estruvite (infecção). Tratamento de eleição: PCNL com remoção completa.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Oxalato de cálcio",
+    "full": "Cálculo mais frequente",
+    "desc": "Composição mais frequente (~75-80%), radiopaco. Prevenção: hidratar, reduzir sal/proteína animal, NÃO restringir cálcio; tiazida na hipercalciúria.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Estruvite",
+    "full": "Cálculo de infecção (fosfato amónio-magnesiano)",
+    "desc": "Forma-se em urina alcalina por bactérias produtoras de urease (Proteus). Crescimento rápido, coraliforme. Tratamento: PCNL completa + antibiótico.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Ácido úrico",
+    "full": "Cálculo radiotransparente",
+    "desc": "~5-10% dos cálculos. Urina ácida, associado a gota e síndrome metabólico. Único cálculo dissolúvel com fármacos (citrato de potássio).",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Duplo-J",
+    "full": "Stent ureteral interno",
+    "desc": "Stent que assegura a drenagem da via urinária obstruída entre o rim e a bexiga. Uma das opções de drenagem urgente na obstrução infectada.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Nefrostomia",
+    "full": "Drenagem percutânea do rim",
+    "desc": "Drenagem do sistema pielocalicial para o exterior por punção percutânea. Alternativa ao stent na obstrução infectada (sobretudo se sépsis).",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Hipercalciúria",
+    "full": "Excreção urinária aumentada de cálcio",
+    "desc": "Causa metabólica frequente de litíase de cálcio. Tratamento: tiazida (reduz a calciúria) + medidas dietéticas.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Hipocitratúria",
+    "full": "Citrato urinário baixo",
+    "desc": "Reduz a capacidade da urina de manter o cálcio em solução, favorecendo a litíase. Tratamento: citrato de potássio.",
+    "cat": "Conceito"
+   },
+   {
+    "term": "Cistinúria",
+    "full": "Doença genética da reabsorção tubular",
+    "desc": "Excreção urinária aumentada de cistina, com formação de cálculos de cistina. Rara, recorrente em jovens. Tratamento: hidratação intensa, alcalinização, tiopronina.",
+    "cat": "Conceito"
+   }
+  ]
+ }
+}

@@ -229,7 +229,8 @@ export default function QuizPNA({ dados, prefixo, rotuloVoltar = "‹ Voltar", c
         <>
           <div className="ca-qcard">
             <div className="ca-qnum">Caso clínico {atual + 1} de {total}</div>
-            <div className="ca-vignette">{caso.vignette}</div>
+            {/* os casos da Anemia trazem <b> na vinheta; nos restantes módulos é texto simples */}
+            <div className="ca-vignette" dangerouslySetInnerHTML={{ __html: caso.vignette }} />
             <div className="ca-stem">{caso.stem}</div>
             <div className="ca-opts">
               {sessao.opts[atual].map((origIdx, di) => {

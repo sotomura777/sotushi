@@ -882,6 +882,8 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
    ============================================================================ */
 .da { --acento: #c2410c; }
 .dark .da { --acento: #fb923c; }
+.cr { --acento: #a16207; }
+.dark .cr { --acento: #eab308; }
 /* grelha 3x3 de quadrantes abdominais */
 .da-qgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; max-width: 340px; }
 .da-qcell { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 12px 4px; border: 1.5px solid var(--borda); border-radius: 10px; background: var(--superficie); color: var(--texto); font-size: 13px; font-weight: 800; cursor: pointer; font-family: var(--fonte-corpo); transition: all .12s; }
@@ -1015,3 +1017,79 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
 .da-guia .ddx-distinguish-pair:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
 .da-guia .ddx-pair-label { display:inline-block; background:var(--acento); color:#fff; font-size:10.5px; font-weight:800; padding:3px 10px; border-radius:999px; text-transform:uppercase; letter-spacing:.04em; margin-bottom:5px; }
 .da-guia .ddx-grid { grid-template-columns:1fr; }
+
+/* ════════════════════════════════════════════════════════════════════════
+   CÓLICA RENAL — guia teórico (HTML portado por delegação).
+   Ponte de tokens: as vars do original (--c2, --surface, --bar…) ligam-se aos
+   tokens da app, por isso o HTML portado funciona em claro e escuro. As classes
+   próprias (.bar, .qcell, .dx-*) vivem aqui, escopadas a .cr-guia.
+   ════════════════════════════════════════════════════════════════════════ */
+.cr-guia {
+  --surface: var(--superficie); --s2: var(--superficie-2);
+  --border: var(--borda); --border2: var(--borda-2);
+  --text: var(--texto); --muted: var(--suave); --faint: var(--tenue);
+  --radius: var(--raio-md);
+  --c1: var(--acento); --c2: var(--acento); --c3: var(--acento);
+  --c-soft: color-mix(in srgb, var(--acento) 9%, transparent);
+  --c-mid: color-mix(in srgb, var(--acento) 18%, transparent);
+}
+/* alertas .bar (a=acento · y=aviso · r=alarme · g=ok) */
+.cr-guia .bar { border-radius: 0 10px 10px 0; padding: 13px 16px; font-size: 13px; line-height: 1.6; margin: 12px 0; color: var(--texto-2); }
+.cr-guia .bar b { color: var(--texto); }
+.cr-guia .bar-a { background: color-mix(in srgb, var(--acento) 9%, transparent); border-left: 3px solid var(--acento); }
+.cr-guia .bar-y { background: rgba(217,119,6,.10); border-left: 3px solid #d97706; }
+.cr-guia .bar-r { background: rgba(220,38,38,.07); border-left: 3px solid #dc2626; }
+.cr-guia .bar-g { background: rgba(5,150,105,.07); border-left: 3px solid #059669; }
+/* grelha de quadrantes */
+.cr-guia .quad-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; max-width: 340px; margin-bottom: 10px; }
+.cr-guia .qcell { min-height: 58px; border: 2px solid var(--borda); border-radius: 10px; background: var(--superficie); cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; padding: 4px; text-align: center; transition: all .15s; color: var(--texto); }
+.cr-guia .qcell:hover { border-color: color-mix(in srgb, var(--acento) 40%, transparent); }
+.cr-guia .qcell .qf { font-size: 8.5px; font-weight: 500; color: var(--suave); margin-top: 3px; line-height: 1.15; }
+.cr-guia .qcell.on { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 14%, transparent); color: var(--acento); }
+.cr-guia .qcell.on .qf { color: var(--acento); }
+.cr-guia .quad-info { background: var(--superficie-2); border-radius: 10px; padding: 14px 16px; font-size: 13px; line-height: 1.6; min-height: 60px; color: var(--texto-2); }
+.cr-guia .quad-info b { color: var(--texto); }
+/* accordion de diagnósticos */
+.cr-guia .dx-list { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+.cr-guia .dx-card { background: var(--superficie); border: 1px solid var(--borda); border-radius: 10px; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.cr-guia .dx-card.open { border-color: color-mix(in srgb, var(--acento) 50%, transparent); box-shadow: var(--sombra-sm); }
+.cr-guia .dx-card-h { padding: 13px 16px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; user-select: none; }
+.cr-guia .dx-card-h:hover { background: color-mix(in srgb, var(--acento) 5%, transparent); }
+.cr-guia .dx-card-title { font-family: var(--fonte-display); font-size: 16px; color: var(--texto); line-height: 1.2; margin: 0 0 3px; }
+.cr-guia .dx-card-sub { font-size: 12px; color: var(--suave); line-height: 1.45; }
+.cr-guia .dx-card-chev { flex-shrink: 0; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; color: var(--acento); transition: transform .25s; }
+.cr-guia .dx-card.open .dx-card-chev { transform: rotate(180deg); }
+.cr-guia .dx-card-body { max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease; padding: 0 16px; }
+.cr-guia .dx-card.open .dx-card-body { max-height: 1200px; padding: 4px 16px 16px; }
+.cr-guia .dx-row { font-size: 13px; line-height: 1.65; margin-top: 10px; color: var(--texto-2); }
+.cr-guia .dx-row b { color: var(--texto); }
+.cr-guia .dx-row-label { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--acento); margin-bottom: 4px; }
+.cr-guia .dx-row.alarm .dx-row-label { color: #dc2626; }
+/* sub-sub-abas da analgesia */
+.cr-subsub { margin-top: -4px; }
+
+/* ── Cólica Renal — anamnese: intro de passo, hint de perigo e cartões de
+   armadilha (.ca-an-exc-*). Tintas a partir do acento (âmbar) via color-mix;
+   vermelho semântico hardcoded como nas restantes alertas. ── */
+.ca-an-intro { font-size: 12.5px; color: var(--suave); font-style: italic; line-height: 1.6; margin: 0 0 14px; }
+.ca-an-hint-box.danger { background: rgba(220,38,38,.06); color: #dc2626; }
+.ca-an-exc-intro { background: var(--superficie); border: 1px solid var(--borda); border-left: 3px solid #dc2626; border-radius: 0 10px 10px 0; padding: 14px 16px; font-size: 12.5px; line-height: 1.65; color: var(--texto-2); margin-bottom: 14px; }
+.ca-an-exc-intro b { color: #dc2626; }
+.ca-an-exc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 14px; }
+.ca-an-exc-card { background: linear-gradient(160deg, color-mix(in srgb, var(--acento) 7%, var(--superficie)), color-mix(in srgb, var(--acento) 14%, var(--superficie))); border: 1px solid color-mix(in srgb, var(--acento) 25%, transparent); border-radius: var(--raio-md); padding: 16px 18px; display: flex; flex-direction: column; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.ca-an-exc-card.expanded { border-color: color-mix(in srgb, var(--acento) 50%, transparent); box-shadow: var(--sombra-sm); }
+.ca-an-exc-title { font-family: var(--fonte-display); font-size: 16px; color: var(--texto); line-height: 1.25; margin: 0 0 4px; }
+.ca-an-exc-sub { font-size: 11.5px; color: var(--suave); line-height: 1.45; margin-bottom: 12px; font-style: italic; }
+.ca-an-exc-hint { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--acento); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.ca-an-exc-hint::before { content: ''; width: 14px; height: 1.5px; background: var(--acento); border-radius: 1px; }
+.ca-an-exc-bal { display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: var(--raio-pill); font-size: 11.5px; font-weight: 600; cursor: pointer; background: var(--superficie); border: 1.5px solid color-mix(in srgb, var(--acento) 25%, transparent); color: var(--texto-2); transition: all .15s; user-select: none; font-family: var(--fonte-corpo); }
+.ca-an-exc-bal:hover { border-color: color-mix(in srgb, var(--acento) 45%, transparent); color: var(--texto); }
+.ca-an-exc-bal.on { background: var(--acento); border-color: var(--acento); color: #fff; }
+.ca-an-exc-toggle { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; padding: 8px 12px; margin-top: 14px; background: var(--superficie); border: 1px solid color-mix(in srgb, var(--acento) 20%, transparent); border-radius: 8px; cursor: pointer; font-family: var(--fonte-corpo); font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--acento); transition: background .15s; }
+.ca-an-exc-toggle:hover { background: var(--superficie-2); }
+.ca-an-exc-chev { display: inline-block; transition: transform .25s ease; font-size: 11px; }
+.ca-an-exc-card.expanded .ca-an-exc-chev { transform: rotate(180deg); }
+.ca-an-exc-explain { margin-top: 12px; padding-top: 12px; border-top: 1px solid color-mix(in srgb, var(--acento) 20%, transparent); font-size: 12.5px; color: var(--texto-2); line-height: 1.65; }
+.ca-an-exc-explain p { margin: 0 0 8px; }
+.ca-an-exc-explain p:last-child { margin-bottom: 0; }
+@media (max-width: 700px) { .ca-an-exc-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,238 @@
+{
+ "id": "colica_renal",
+ "titulo": "Cólica Renal",
+ "menu": {
+  "pill": "Síndrome · Cólica Renal",
+  "modalCards": {
+   "eyebrow": "Card 03 · Cards de Estudo",
+   "titulo": "Como queres estudar?",
+   "sub": "Dois modos: cards de diagnóstico do guia ou flashcards de pergunta-resposta.",
+   "opcoes": [
+    {
+     "badge": "Diagnósticos",
+     "nome": "Cards",
+     "desc": "16 diagnósticos em accordion no guia teórico. Clínica, investigação e tratamento de cada um.",
+     "cta": "Abrir cards"
+    },
+    {
+     "badge": "Revisão rápida",
+     "nome": "Flashcards",
+     "desc": "Pergunta-resposta com flip animado. 28 prontos + cria os teus próprios livremente.",
+     "cta": "Abrir flashcards"
+    }
+   ]
+  },
+  "heroSub": "Guia de estudo sobre cólica renal e litíase urinária — fisiopatologia, apresentação por nível de obstrução, sinais de alarme, imagiologia, analgesia, terapêutica expulsiva e prevenção metabólica. Com treino de anamnese, cards de revisão e casos clínicos orientados para a PNA.",
+  "eyebrow": "Quatro caminhos",
+  "label": "Escolhe como queres estudar",
+  "cartoes": [
+   {
+    "destino": "guia",
+    "badge": "01 · Teoria",
+    "eyebrow": "Fundação",
+    "titulo": "Guia teórico",
+    "sub": "A matéria organizada por temas — fisiopatologia, dor por nível de obstrução, sinais de alarme, diagnósticos diferenciais, exame objectivo, imagiologia e tratamento.",
+    "features": [
+     "Localização da dor · por nível ureteral",
+     "Tipos de cálculo · radiopacidade",
+     "Analgesia · MET · drenagem urgente",
+     "Fontes · glossário · escalas"
+    ],
+    "cta": "Estudar matéria"
+   },
+   {
+    "destino": "anamnese",
+    "badge": "02 · Anamnese",
+    "eyebrow": "Treino clínico",
+    "titulo": "Anamnese",
+    "sub": "Treino interactivo de anamnese para um doente com suspeita de cólica renal. Pratica a colheita de história clínica estruturada por passos.",
+    "features": [
+     "Caracterização da dor · SOCRATES",
+     "Irradiação · nível de obstrução · alarmes",
+     "Diagnósticos diferenciais com scoring",
+     "Nota clínica gerada em tempo real"
+    ],
+    "cta": "Treinar anamnese"
+   },
+   {
+    "destino": "cards",
+    "badge": "03 · Cards",
+    "eyebrow": "Revisão",
+    "titulo": "Cards de estudo",
+    "sub": "Dois formatos de revisão: cards de diagnóstico do guia e flashcards com pergunta-resposta tipo flip card.",
+    "features": [
+     "Cards · 16 diagnósticos no guia",
+     "Flashcards · 28 exemplos prontos",
+     "Cria os teus próprios flashcards",
+     "Auto-avaliação · ✓ e ✗"
+    ],
+    "cta": "Abrir cards"
+   },
+   {
+    "destino": "quiz",
+    "badge": "04 · Quiz",
+    "eyebrow": "Auto-avaliação",
+    "titulo": "Casos clínicos",
+    "sub": "Casos clínicos para testar os teus conhecimentos. Activa o Modo PNA para ver a correcção detalhada e dicas para memorizar.",
+    "features": [
+     "Casos clínicos variados · formato SBA",
+     "Correcção detalhada por opção",
+     "Modo PNA com dicas para a prova",
+     "Score e histórico em tempo real"
+    ],
+    "cta": "Fazer casos"
+   }
+  ],
+  "rodape": {
+   "comoTitulo": "Como foi construído",
+   "comoTexto": "Cada secção foi cruzada com guidelines internacionais (EAU Urolithiasis 2025, AUA/Endourological Society, NICE NG118, ACR Appropriateness Criteria, Cochrane sobre analgesia). Sem reproduzir texto verbatim, sem opiniões pessoais, sem casos reais de doentes.",
+   "legal": "Conteúdo exclusivamente educativo · Não constitui dispositivo médico no âmbito do Reg. (UE) 2017/745 · Não emite diagnósticos nem recomendações individualizadas · Em decisões clínicas reais, consultar sempre as fontes primárias e julgamento clínico próprio."
+  }
+ },
+ "flashcards": {
+  "eyebrow": "Flashcards",
+  "titulo": "Cólica Renal.",
+  "exemplos": [
+   {
+    "q": "Analgesia de 1ª linha na cólica renal?",
+    "a": "AINE — cetorolaco 30 mg IV ou diclofenac 75 mg IM",
+    "e": "<b>1ª linha:</b> os AINE são superiores aos opióides (melhor controlo da dor, menos necessidade de resgate, menos vómitos). Reduzem o edema e o peristaltismo ureteral. Opióide é 2ª linha (ou se AINE contraindicado). Metamizol é alternativa em alguns contextos."
+   },
+   {
+    "q": "Cólica renal + febre — qual a conduta?",
+    "a": "Obstrução urinária infectada → drenagem urgente (stent duplo-J ou nefrostomia percutânea) + antibiótico",
+    "e": "<b>Armadilha PNA major.</b> Rim obstruído + infecção = pús sob pressão = emergência urológica. Antibiótico isolado é insuficiente. Pode evoluir para urosépsis em horas. <b>NÃO fazer litotrícia/URS definitiva na fase séptica</b> — primeiro drenar e tratar a infecção."
+   },
+   {
+    "q": "Exame de imagem de eleição (gold standard) na cólica renal?",
+    "a": "TC abdominopélvica SEM contraste (uro-TC / low-dose)",
+    "e": "Sensibilidade e especificidade &gt;95%. Detecta cálculo, tamanho, localização, grau de hidronefrose e diagnósticos alternativos. <b>Sem contraste</b> — o contraste mascara cálculos. Dose baixa em doentes não obesos."
+   },
+   {
+    "q": "1º episódio de \"cólica renal\" num homem &gt;60 anos — que excluir SEMPRE?",
+    "a": "Aneurisma da aorta abdominal (AAA) roto/em expansão",
+    "e": "<b>Armadilha PNA clássica.</b> O AAA roto imita cólica renal (dor lombar/flanco súbita irradiando para a virilha). Idoso com fatores vasculares + 1º episódio = imagem urgente (TC/POCUS) antes de assumir litíase. Massa pulsátil + hipotensão = bloco."
+   },
+   {
+    "q": "Postura do doente: cólica renal vs peritonite?",
+    "a": "Cólica renal = irrequieto, não pára quieto. Peritonite = imóvel, evita mexer-se",
+    "e": "A dor visceral em cólica leva o doente a contorcer-se à procura de alívio. A dor peritoneal (apendicite, perfuração) agrava com o movimento → doente imóvel. <b>Pista semiológica de alto valor.</b>"
+   },
+   {
+    "q": "Cálculo radiotransparente no Rx — composição mais provável?",
+    "a": "Ácido úrico",
+    "e": "<b>Pergunta PNA recorrente.</b> Os cálculos de ácido úrico são radiotransparentes (não se veem no Rx KUB, vêem-se na TC). Associam-se a urina ácida, gota, síndrome metabólica. <b>Tratamento médico:</b> alcalinização urinária com citrato de potássio pode dissolvê-los."
+   },
+   {
+    "q": "Tipo de cálculo mais frequente?",
+    "a": "Oxalato de cálcio (~75-80%) — radiopaco",
+    "e": "Seguem-se fosfato de cálcio, ácido úrico (radiotransparente), estruvite (infecção/coraliforme) e cistina (genético). A maioria dos cálculos de cálcio é radiopaca no Rx."
+   },
+   {
+    "q": "Cálculos coraliformes + urina alcalina + Proteus — que cálculo?",
+    "a": "Estruvite (fosfato amónio-magnesiano)",
+    "e": "Cálculos de infecção, formados por bactérias produtoras de urease (Proteus, Klebsiella, Pseudomonas) que alcalinizam a urina. Crescem rápido, podem preencher o sistema pielocalicial (coraliforme). Tratamento: <b>remoção cirúrgica completa</b> (PCNL) + erradicar a infecção."
+   },
+   {
+    "q": "Terapêutica médica expulsiva (MET) — quando e com quê?",
+    "a": "Cálculo ureteral distal 5-10 mm → alfa-bloqueante (tamsulosina 0,4 mg/dia)",
+    "e": "A tamsulosina relaxa o músculo liso do ureter distal e facilita a expulsão. Maior benefício nos cálculos &gt;5 mm distais. Duração até 4-6 semanas com vigilância. Cálculos ≤5 mm passam espontaneamente em ~70-80% sem necessidade obrigatória de MET."
+   },
+   {
+    "q": "Probabilidade de passagem espontânea segundo o tamanho do cálculo?",
+    "a": "≤5 mm ~70-80% · 5-10 mm ~50% · &gt;10 mm improvável → intervenção",
+    "e": "O tamanho e a localização são os principais preditores. Cálculos distais passam mais facilmente que proximais. &gt;10 mm raramente passam → planear LEOC, URS ou PCNL."
+   },
+   {
+    "q": "A ausência de hematúria exclui cólica renal?",
+    "a": "NÃO — ~15-20% dos doentes com cálculo não têm hematúria",
+    "e": "<b>Armadilha.</b> Meta-análise (BMC Urol 2020): hematúria presente em ~84% das cólicas confirmadas por TC. A sua ausência não exclui o diagnóstico, sobretudo na obstrução completa. Confirma-se por imagem (TC sem contraste)."
+   },
+   {
+    "q": "Mulher fértil com dor no flanco/fossa ilíaca — exame obrigatório?",
+    "a": "Beta-hCG (sangue ou urina)",
+    "e": "<b>Regra absoluta PNA.</b> Gravidez ectópica e patologia anexial (torção, quisto roto) imitam cólica renal. Antes de imagem com radiação ou cirurgia, excluir gravidez. Na grávida, a ecografia é a 1ª linha de imagem."
+   },
+   {
+    "q": "Imagem de 1ª linha na grávida com suspeita de cólica renal?",
+    "a": "Ecografia renal/vesical (sem radiação)",
+    "e": "Detecta hidronefrose e cálculos renais/justavesicais. Se inconclusiva e necessário: <b>RM sem gadolínio</b>. TC só em último recurso. Na grávida evitar AINE a partir das 20 semanas (FDA 2020); a tamsulosina não está recomendada — analgesia com paracetamol/opióide e abordagem conservadora ou drenagem se complicado."
+   },
+   {
+    "q": "Dor irradiada para a ponta do pénis / grandes lábios + sintomas urinários baixos — onde está o cálculo?",
+    "a": "Ureter distal / junção uretero-vesical (JUV)",
+    "e": "O nível da obstrução orienta a clínica: cálculo proximal/JUP → dor no flanco/ângulo costovertebral; ureter médio → irradia para a fossa ilíaca (imita apendicite/diverticulite); distal/JUV → disúria, polaquiúria, urgência e dor irradiada à genitália."
+   },
+   {
+    "q": "Indicações de intervenção/drenagem urgente na cólica renal?",
+    "a": "Infecção + obstrução · rim único obstruído · LRA/obstrução bilateral · dor refratária · cálculo improvável de passar",
+    "e": "A urgência define-se pela obstrução com repercussão (infecção, função renal) mais do que pela dor isolada. A obstrução infectada é a emergência absoluta → drenagem (duplo-J ou nefrostomia)."
+   },
+   {
+    "q": "Tratamento definitivo de um cálculo ureteral de 8 mm que não passa?",
+    "a": "Ureteroscopia (URS) com laser de hólmio ou LEOC",
+    "e": "A URS+laser tem altas taxas de stone-free e é cada vez mais a 1ª linha nos cálculos ureterais. A LEOC é alternativa não invasiva (melhor em cálculos &lt;10 mm, renais/ureterais proximais). Cálculos renais &gt;2 cm ou coraliformes → PCNL."
+   },
+   {
+    "q": "Pielonefrite aguda vs cólica renal — como distinguir?",
+    "a": "Pielonefrite: dor lombar CONSTANTE + febre + piúria/nitritos + Murphy renal +. Cólica: dor em cólica, doente irrequieto, hematúria",
+    "e": "Na pielonefrite a dor é surda e mantida, com febre e sinais de infecção urinária; punho-percussão lombar positiva. A coexistência de febre numa obstrução por cálculo é a situação perigosa (obstrução infectada)."
+   },
+   {
+    "q": "Recomendação dietética central na prevenção da litíase de cálcio?",
+    "a": "Hidratação abundante (&gt;2,5 L/dia) e NÃO restringir o cálcio dietético",
+    "e": "<b>Armadilha PNA.</b> Restringir cálcio é contraproducente — aumenta a absorção de oxalato e o risco de cálculos. Recomenda-se: aumentar líquidos, reduzir sódio e proteína animal, manter ingestão normal de cálcio. Citrato de potássio se hipocitratúria."
+   },
+   {
+    "q": "Fármaco preventivo na hipercalciúria recorrente?",
+    "a": "Diurético tiazídico",
+    "e": "As tiazidas reduzem a excreção urinária de cálcio. Citrato de potássio para hipocitratúria e cálculos de ácido úrico/cálcio. Alopurinol para hiperuricosúria. A escolha guia-se pelo estudo metabólico nos recorrentes."
+   },
+   {
+    "q": "Quando fazer estudo metabólico da litíase?",
+    "a": "Litíase recorrente, jovem, rim único, cálculo de estruvite/cistina/ácido úrico, ou alto risco",
+    "e": "Inclui análise da composição do cálculo (sempre que possível), bioquímica sérica (cálcio, ácido úrico, função renal) e urina de 24 h (cálcio, oxalato, citrato, ácido úrico, volume). Permite prevenção dirigida."
+   },
+   {
+    "q": "Achado de cálculo + hidronefrose + LRA bilateral — conduta?",
+    "a": "Descompressão urgente das vias urinárias (drenagem bilateral)",
+    "e": "A obstrução bilateral (ou de rim único) causa lesão renal aguda pós-renal. É indicação de drenagem urgente para preservar a função renal, independentemente do tamanho do cálculo."
+   },
+   {
+    "q": "Contraindicações dos AINE na cólica renal?",
+    "a": "LRA / DRC com TFG baixa · desidratação · úlcera ou HDig activa · anticoagulação · ICC descompensada · gravidez ≥20 semanas",
+    "e": "Cuidado especial: a cólica renal cursa frequentemente com algum grau de compromisso renal pela obstrução — ponderar AINE vs opióide. Alternativa: paracetamol ± opióide. Metamizol em alguns contextos europeus."
+   },
+   {
+    "q": "Doente com VIH em terapêutica antirretroviral e cólica renal radiotransparente — pensar em quê?",
+    "a": "Cálculos de indinavir (radiotransparentes, mesmo na TC)",
+    "e": "<b>Pormenor PNA.</b> O indinavir forma cálculos radiotransparentes que podem nem se ver bem na TC. Outros fármacos litogénicos: topiramato, sulfonamidas, triamtereno, atazanavir. Suspeitar pela história farmacológica."
+   },
+   {
+    "q": "POCUS / ecografia mostra hidronefrose mas não vê o cálculo ureteral — significa?",
+    "a": "A hidronefrose apoia obstrução; a ecografia é pouco sensível para cálculos no ureter médio",
+    "e": "A ecografia vê bem cálculos renais e na JUV e deteta hidronefrose, mas o ureter médio é mal visualizado por gás intestinal. Se dúvida e não grávida → TC sem contraste confirma."
+   },
+   {
+    "q": "Cólica renal num doente com gota e urina persistentemente ácida — que cálculo e que tratamento médico?",
+    "a": "Cálculo de ácido úrico → alcalinização urinária (citrato de potássio) ± alopurinol",
+    "e": "Os cálculos de ácido úrico são os únicos comummente <b>dissolúveis com tratamento médico</b> (alcalinizar a urina para pH 6,5-7). Reduzir purinas e tratar a hiperuricemia."
+   },
+   {
+    "q": "A morfina mascara o diagnóstico na cólica/abdómen agudo?",
+    "a": "NÃO — mito refutado. A analgesia é obrigatória",
+    "e": "<b>Armadilha PNA recorrente.</b> Os opióides não atrasam o diagnóstico nem a cirurgia. Negar analgesia a um doente com dor intensa é má prática. Na cólica renal, contudo, o AINE é preferido ao opióide como 1ª linha."
+   },
+   {
+    "q": "Critério de tamanho para tratamento ativo (não passagem espontânea esperada)?",
+    "a": "Cálculo &gt;10 mm — planear intervenção; 5-10 mm tentar MET; ≤5 mm vigiar",
+    "e": "A decisão integra tamanho, localização, sintomas, função renal e preferência. Cálculos grandes, obstrução com repercussão, dor refratária ou falência da MET (4-6 semanas) → tratamento ativo."
+   },
+   {
+    "q": "Sinal semiológico de irritação renal/ureteral no exame objectivo?",
+    "a": "Punho-percussão lombar (sinal de Murphy renal) positiva — dor no ângulo costovertebral",
+    "e": "Percussão suave do ângulo costovertebral reproduz dor. Apoia origem reno-ureteral. Combina-se com a palpação abdominal e o exame da virilha/genitália para excluir hérnia, torção testicular e adenopatias."
+   }
+  ]
+ }
+}
