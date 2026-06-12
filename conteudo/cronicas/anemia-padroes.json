@@ -1,0 +1,892 @@
+{
+ "eyebrow": "Treino rápido · 2026",
+ "titulo": "Estuda por padrão",
+ "subtitulo": "Explora cada tipo de anemia pelo seu padrão laboratorial e clínico. Clica num tipo para ver os detalhes, ou seleciona <b>até 5</b> para comparar lado a lado.",
+ "maxSelect": 5,
+ "zona": {
+  "titulo": "Selecionados",
+  "hint0": "Podes selecionar até 5 tipos para comparar lado a lado.",
+  "hint1": "Seleciona mais tipos para comparar lado a lado (até 5).",
+  "hintN": "A comparar {n} tipos."
+ },
+ "labels": {
+  "padrao": "Padrão laboratorial típico",
+  "mecanismo": "Mecanismo fisiopatológico",
+  "caso": "Caso clínico exemplificativo",
+  "distinguir": "Como distinguir",
+  "ladoALado": "Padrões laboratoriais lado a lado",
+  "parametro": "Parâmetro",
+  "comparacao": "Comparação · {n} tipos",
+  "naoCarat": "não característico",
+  "notaNaoCarat": "\"não característico\" = parâmetro não habitualmente alterado nesse padrão (não significa \"não doseado\")."
+ },
+ "catLabels": {
+  "micro": "microcítica",
+  "normo": "normocítica",
+  "macro": "macrocítica"
+ },
+ "fallbackDiffCat": "<b>VGM separa</b>: {a} é {catA}, {b} é {catB}. O VGM é o primeiro parâmetro a observar.",
+ "fallbackSameCat": "Ambas {cat}s — compara os parâmetros na tabela abaixo, sobretudo <b>ferritina/saturação, RDW, reticulócitos e esfregaço</b>.",
+ "tipos": [
+  {
+   "id": "ferropenica",
+   "cat": "micro",
+   "catLabel": "Microcítica",
+   "name": "Anemia ferropénica",
+   "meta": "défice absoluto de ferro",
+   "pattern": [
+    [
+     "VGM",
+     "↓ (< 80 fL)"
+    ],
+    [
+     "Ferritina",
+     "↓↓ (< 30 ng/mL)"
+    ],
+    [
+     "Sideremia (Fe)",
+     "↓↓"
+    ],
+    [
+     "Saturação transferrina",
+     "↓ (< 20%)"
+    ],
+    [
+     "Transferrina (CTFF)",
+     "↑"
+    ],
+    [
+     "sTfR",
+     "↑"
+    ],
+    [
+     "RDW",
+     "↑ (anisocitose)"
+    ],
+    [
+     "Mentzer index",
+     "> 13"
+    ],
+    [
+     "Esfregaço",
+     "hipocromia, anisocitose, poiquilocitose, células em alvo"
+    ],
+    [
+     "Reticulócitos",
+     "baixos (até reposição)"
+    ]
+   ],
+   "mechanism": "Esgotamento dos depósitos de ferro → eritropoiese ineficaz com produção de eritrócitos pequenos e hipocrómicos. Causas: <b>perdas crónicas</b> (menstruais, GI), <b>má absorção</b> (celíaca, pós-bariátrica, H. pylori), <b>aumento de necessidades</b> (gravidez, crescimento) ou <b>aporte insuficiente</b> (raro em adultos com dieta variada).",
+   "case": "Mulher de 32 anos, professora, com <b>fadiga progressiva há 6 meses</b>, palidez cutânea e mucosas, queilite angular e <b>pica</b> (apetite por gelo). Refere ciclos menstruais abundantes desde a menarca. Análises: <b>Hb 8,9 g/dL · VGM 72 fL · HCM 22 pg · ferritina 6 ng/mL · saturação transferrina 9% · RDW 17%</b>. Pensa-se em anemia ferropénica por perdas menstruais; investigação dirigida a causa ginecológica é o passo seguinte.",
+   "quizCase": "Adolescente de 16 anos, dieta vegetariana estrita há 3 anos sem suplementação, refere astenia e dificuldade de concentração nas aulas. <b>Hb 9,8 g/dL · VGM 70 fL · HCM 21 pg · ferritina 4 ng/mL · saturação transferrina 6% · RDW 18,5% · Mentzer 14,2</b>.",
+   "quizCaseLabs": "Hb 9,8 g/dL · VGM 70 fL · HCM 21 pg · ferritina 4 ng/mL · saturação transferrina 6% · CTFF ↑ · sTfR ↑ · RDW 18,5% · Mentzer 14,2"
+  },
+  {
+   "id": "dc-micro",
+   "cat": "micro",
+   "catLabel": "Microcítica / Normocítica",
+   "name": "Anemia de doença crónica (inflamatória)",
+   "meta": "inflamação crónica · pode ser micro ou normocítica",
+   "pattern": [
+    [
+     "VGM",
+     "normal ou ligeiramente ↓"
+    ],
+    [
+     "Ferritina",
+     "normal ou ↑"
+    ],
+    [
+     "Sideremia (Fe)",
+     "↓ (sequestro)"
+    ],
+    [
+     "Saturação transferrina",
+     "normal ou ↓"
+    ],
+    [
+     "Transferrina (CTFF)",
+     "↓"
+    ],
+    [
+     "sTfR",
+     "normal"
+    ],
+    [
+     "RDW",
+     "normal ou ligeiramente ↑"
+    ],
+    [
+     "PCR",
+     "↑"
+    ],
+    [
+     "Hepcidina",
+     "↑"
+    ],
+    [
+     "Esfregaço",
+     "geralmente sem alterações específicas"
+    ]
+   ],
+   "mechanism": "Inflamação crónica → <b>IL-6 ↑ → hepcidina ↑ → bloqueio da ferroportina</b> nos enterócitos e macrófagos. O ferro fica <b>sequestrado nos macrófagos</b> e não chega à medula, apesar de existirem depósitos adequados (ferritina normal/alta). Há também encurtamento da vida do eritrócito e resposta diminuída à EPO. Contextos: doenças autoimunes, infeções crónicas, neoplasias, IC.",
+   "case": "Homem de 65 anos com <b>artrite reumatoide</b> há 15 anos sob metotrexato + adalimumab. Refere astenia progressiva. Análises: <b>Hb 10,8 g/dL · VGM 82 fL · ferritina 220 ng/mL · saturação transferrina 14% · PCR 35 mg/L · sTfR/log ferritina 0,7</b>. Função renal normal. O Thomas index (< 1) confirma componente inflamatório puro sem ferropénia associada.",
+   "quizCase": "Mulher de 54 anos com <b>LES há 8 anos</b> sob prednisolona 5 mg/dia e hidroxicloroquina, recorre por astenia ligeira a moderada. Sem perdas hemorrágicas. <b>Hb 10,5 g/dL · VGM 84 fL · ferritina 280 ng/mL · saturação transferrina 18% · CTFF ↓ · sTfR normal · PCR 28 mg/L</b>.",
+   "quizCaseLabs": "Hb 10,5 g/dL · VGM 84 fL · ferritina 280 ng/mL · saturação transferrina 18% · CTFF ↓ · sTfR normal · PCR 28 mg/L · hepcidina ↑"
+  },
+  {
+   "id": "mista",
+   "cat": "micro",
+   "catLabel": "Microcítica",
+   "name": "Anemia mista (ferropénica + DC)",
+   "meta": "ferropénia funcional na inflamação",
+   "pattern": [
+    [
+     "VGM",
+     "normal ou ↓"
+    ],
+    [
+     "Ferritina",
+     "normal (30–100)"
+    ],
+    [
+     "Sideremia (Fe)",
+     "↓"
+    ],
+    [
+     "Saturação transferrina",
+     "↓ (< 20%)"
+    ],
+    [
+     "Transferrina (CTFF)",
+     "normal ou ↓"
+    ],
+    [
+     "sTfR",
+     "↑"
+    ],
+    [
+     "Thomas index",
+     "> 2"
+    ],
+    [
+     "RDW",
+     "↑"
+    ],
+    [
+     "PCR",
+     "↑"
+    ]
+   ],
+   "mechanism": "Coexistem dois mecanismos: <b>ferropénia real</b> (depósitos a esvaziar) <b>+ inflamação</b> que mascarara a ferritina (que sobe artificialmente). O <b>sTfR (recetor solúvel da transferrina)</b> permanece sensível à ferropénia mesmo em inflamação. Por isso o rácio <b>sTfR/log ferritina > 2 (Thomas index)</b> confirma componente ferropénico funcional. Frequente em DII, neoplasia, DRC.",
+   "case": "Mulher de 58 anos com <b>doença de Crohn ileal</b> e ressecção há 2 anos. Refere astenia e dispneia em esforço. Análises: <b>Hb 9,5 g/dL · VGM 84 fL · ferritina 75 ng/mL · saturação transferrina 11% · sTfR 6,2 mg/L · log ferritina = 1,88 → Thomas index = 3,3 · PCR 22 mg/L</b>. Apesar da ferritina \"normal\", o Thomas index confirma componente ferropénico associado à inflamação intestinal.",
+   "quizCase": "Mulher de 67 anos com <b>DRC estádio 3b + artrite reumatoide</b>, refere fadiga marcada. <b>Hb 9,8 g/dL · VGM 81 fL · ferritina 90 ng/mL · saturação transferrina 12% · sTfR 5,8 mg/L · sTfR/log ferritina = 2,8 · PCR 18 mg/L · TFG 42 mL/min</b>.",
+   "quizCaseLabs": "Hb 9,8 g/dL · VGM 81 fL · ferritina 90 ng/mL · saturação transferrina 12% · sTfR 5,8 mg/L · sTfR/log ferritina = 2,8 · PCR 18 mg/L"
+  },
+  {
+   "id": "beta-tal",
+   "cat": "micro",
+   "catLabel": "Microcítica",
+   "name": "β-talassemia heterozigótica",
+   "meta": "defeito hereditário da cadeia β",
+   "pattern": [
+    [
+     "VGM",
+     "↓↓ (desproporcional à Hb)"
+    ],
+    [
+     "Hb",
+     "pouco diminuída ou normal"
+    ],
+    [
+     "Ferritina",
+     "normal"
+    ],
+    [
+     "Sideremia (Fe)",
+     "normal ou ↑"
+    ],
+    [
+     "Saturação transferrina",
+     "normal"
+    ],
+    [
+     "RDW",
+     "normal"
+    ],
+    [
+     "Mentzer index",
+     "< 13"
+    ],
+    [
+     "Eletroforese Hb",
+     "<b>HbA2 > 3,5%</b>"
+    ],
+    [
+     "Esfregaço",
+     "células em alvo, basophilic stippling, microcitose marcada"
+    ]
+   ],
+   "mechanism": "Mutação heterozigótica no gene da cadeia β da hemoglobina → <b>síntese reduzida de HbA</b> e excesso relativo de cadeias α. A medula compensa parcialmente com mais eritrócitos pequenos (Hb quase normal mas VGM muito baixo). HbA2 sobe (composta por 2α + 2δ). Doença autossómica recessiva — heterozigóticos são portadores; homozigóticos têm β-talassemia major (dependente de transfusões).",
+   "case": "Mulher de 28 anos de origem mediterrânica, assintomática, descoberta em análises pré-concecionais. <b>Hb 11,8 g/dL · VGM 65 fL · HCM 21 pg · ferritina 142 ng/mL · saturação 32% · RDW 13,5%</b>. Esfregaço: células em alvo, microcitose marcada. Mentzer index 4,3 (< 13). Eletroforese Hb: HbA2 4,8%. Aconselhamento genético é essencial (risco de talassemia major no descendente se parceiro for portador).",
+   "quizCase": "Homem de 35 anos de ascendência cipriota, \"anemia ligeira conhecida desde a infância\" sem nunca ter precisado de tratamento. Assintomático. <b>Hb 12,1 g/dL · VGM 63 fL · HCM 19 pg · ferritina 180 ng/mL · saturação transferrina 35% · RDW 13,2% · Mentzer 3,9 · HbA2 5,2%</b>.",
+   "quizCaseLabs": "Hb 12,1 g/dL · VGM 63 fL · HCM 19 pg · ferritina 180 ng/mL · saturação transferrina 35% · RDW 13,2% · Mentzer 3,9 · eletroforese HbA2 5,2%"
+  },
+  {
+   "id": "sideroblastica",
+   "cat": "micro",
+   "catLabel": "Microcítica",
+   "name": "Anemia sideroblástica",
+   "meta": "defeito do metabolismo do ferro",
+   "pattern": [
+    [
+     "VGM",
+     "↓ ou normal (dimorfismo)"
+    ],
+    [
+     "Ferritina",
+     "↑↑"
+    ],
+    [
+     "Sideremia (Fe)",
+     "↑"
+    ],
+    [
+     "Saturação transferrina",
+     "↑ (até > 80%)"
+    ],
+    [
+     "RDW",
+     "↑↑ (dimorfismo bimodal)"
+    ],
+    [
+     "Esfregaço",
+     "dimorfismo eritrocitário; basófilo stippling"
+    ],
+    [
+     "Biópsia medular",
+     "<b>sideroblastos em anel (Perls +)</b>"
+    ]
+   ],
+   "mechanism": "Defeito na incorporação do ferro no heme → o ferro acumula-se <b>nas mitocôndrias dos eritroblastos formando um anel à volta do núcleo</b> (visível com coloração de Perls). Causas: <b>hereditária</b> (mutações ALAS2, X-linked), <b>adquirida</b> (alcoolismo crónico, défice de cobre, fármacos como isoniazida, intoxicação por chumbo) ou <b>SMD com sideroblastos em anel</b> (idosos).",
+   "case": "Homem de 68 anos, etilismo crónico, refere astenia progressiva. <b>Hb 9,2 g/dL · VGM 78 fL com cauda macrocítica · RDW 22% · ferritina 850 ng/mL · saturação transferrina 78%</b>. Esfregaço: dimorfismo (eritrócitos normocíticos e microcíticos coexistentes). Biópsia medular com sideroblastos em anel à coloração de Perls. SMD com sideroblastos em anel não excluído — referenciação a Hematologia.",
+   "quizCase": "Homem de 45 anos, trabalhador de reciclagem de baterias há 12 anos, refere cólicas abdominais recorrentes e parestesias distais. <b>Hb 8,4 g/dL · VGM 76 fL com dimorfismo · RDW 24% · ferritina 920 ng/mL · saturação transferrina 82% · plumbémia 65 µg/dL</b>. Esfregaço: basophilic stippling marcado. Medular: sideroblastos em anel.",
+   "quizCaseLabs": "Hb 8,4 g/dL · VGM 76 fL (dimorfismo) · RDW 24% · ferritina 920 ng/mL · saturação transferrina 82% · esfregaço com basophilic stippling · medula com sideroblastos em anel (Perls +)"
+  },
+  {
+   "id": "dc-normo",
+   "cat": "normo",
+   "catLabel": "Normocítica / Microcítica",
+   "name": "Anemia de doença crónica (inflamatória)",
+   "meta": "inflamação crónica · normocítica na maioria",
+   "pattern": [
+    [
+     "VGM",
+     "normal (ou ligeiramente ↓)"
+    ],
+    [
+     "Ferritina",
+     "normal ou ↑"
+    ],
+    [
+     "Sideremia (Fe)",
+     "↓ (sequestro)"
+    ],
+    [
+     "Saturação transferrina",
+     "normal ou ↓"
+    ],
+    [
+     "Transferrina (CTFF)",
+     "↓"
+    ],
+    [
+     "sTfR",
+     "normal"
+    ],
+    [
+     "RDW",
+     "normal"
+    ],
+    [
+     "PCR",
+     "↑"
+    ],
+    [
+     "Hepcidina",
+     "↑"
+    ],
+    [
+     "Esfregaço",
+     "sem alterações específicas"
+    ]
+   ],
+   "mechanism": "Inflamação crónica produz IL-6, que estimula a síntese hepática de hepcidina. A hepcidina bloqueia a ferroportina nos enterócitos e macrófagos, sequestrando o ferro nos depósitos. A medula tem dificuldade em aceder ao ferro apesar de existir, e a resposta à eritropoietina está diminuída. Pode ser normocítica (maioria) ou ligeiramente microcítica em casos prolongados. Contextos: doenças autoimunes (AR, LES), infeções crónicas, neoplasias, insuficiência cardíaca.",
+   "case": "Homem de 65 anos com artrite reumatoide há 15 anos sob metotrexato e adalimumab. Refere astenia progressiva. Análises: Hb 10,8 g/dL · VGM 88 fL · ferritina 220 ng/mL · saturação transferrina 14% · PCR 35 mg/L · sTfR/log ferritina 0,7. Função renal normal. O Thomas index inferior a 1 confirma componente inflamatório puro sem ferropénia associada.",
+   "quizCase": "Mulher de 54 anos com LES há 8 anos sob prednisolona 5 mg/dia e hidroxicloroquina, recorre por astenia ligeira a moderada. Sem perdas hemorrágicas. Hb 10,5 g/dL · VGM 86 fL · ferritina 280 ng/mL · saturação transferrina 18% · CTFF ↓ · sTfR normal · PCR 28 mg/L.",
+   "quizCaseLabs": "Hb 10,5 g/dL · VGM 86 fL · ferritina 280 ng/mL · saturação transferrina 18% · CTFF ↓ · sTfR normal · PCR 28 mg/L · hepcidina ↑"
+  },
+  {
+   "id": "drc",
+   "cat": "normo",
+   "catLabel": "Normocítica",
+   "name": "Anemia da doença renal crónica",
+   "meta": "défice de eritropoietina",
+   "pattern": [
+    [
+     "VGM",
+     "normal"
+    ],
+    [
+     "Hb",
+     "↓ (proporcional à TFG)"
+    ],
+    [
+     "Reticulócitos absolutos",
+     "↓ (hipoproliferativa)"
+    ],
+    [
+     "IRC",
+     "< 2"
+    ],
+    [
+     "Eritropoietina sérica",
+     "↓ (inadequadamente baixa)"
+    ],
+    [
+     "TFG",
+     "< 60 mL/min"
+    ],
+    [
+     "Ferritina",
+     "variável (alvo > 100 / > 200 em diálise)"
+    ],
+    [
+     "Saturação transferrina",
+     "variável (alvo > 20%)"
+    ],
+    [
+     "Esfregaço",
+     "pode ter burr cells (equinócitos)"
+    ]
+   ],
+   "mechanism": "<b>Défice relativo de eritropoietina</b> pelos rins lesados — principal mecanismo. Contribuem ainda: <b>vida útil do eritrócito reduzida</b> (urémia), <b>inflamação crónica</b> (↑ hepcidina), <b>défice de ferro</b> (perdas em diálise, má absorção), <b>fármacos</b> (IECA/ARA reduzem ainda mais a EPO) e toxicidade urémica direta na medula.",
+   "case": "Mulher de 72 anos, diabética tipo 2 com 25 anos de evolução. Última creatinina 2,8 mg/dL (TFG 22 mL/min). Refere astenia progressiva. <b>Hb 9,6 g/dL · VGM 88 fL · reticulócitos absolutos 28 × 10⁹/L · ferritina 95 ng/mL · saturação transferrina 16% · PCR 4 mg/L · EPO sérica 12 mU/mL (esperado > 100 para este nível de Hb)</b>. Anemia da DRC com componente ferropénico associado.",
+   "quizCase": "Homem de 78 anos em <b>hemodiálise há 3 anos</b> por nefropatia hipertensiva, refere astenia entre sessões. <b>Hb 9,2 g/dL · VGM 89 fL · reticulócitos absolutos 22 × 10⁹/L · creatinina 6,8 mg/dL · TFG 8 mL/min · EPO sérica 8 mU/mL · ferritina 220 ng/mL · saturação transferrina 24% · PCR 5 mg/L</b>.",
+   "quizCaseLabs": "Hb 9,2 g/dL · VGM 89 fL · reticulócitos absolutos 22 × 10⁹/L (IRC 0,8) · creatinina 6,8 mg/dL · TFG 8 mL/min · EPO sérica 8 mU/mL · ferritina 220 ng/mL · saturação transferrina 24%"
+  },
+  {
+   "id": "ahai",
+   "cat": "normo",
+   "catLabel": "Normocítica",
+   "name": "Anemia hemolítica autoimune (AHAI)",
+   "meta": "destruição imune dos eritrócitos",
+   "pattern": [
+    [
+     "VGM",
+     "normal ou ↑ (reticulocitose)"
+    ],
+    [
+     "Reticulócitos absolutos",
+     "↑↑ (> 100 × 10⁹/L)"
+    ],
+    [
+     "IRC",
+     "> 2"
+    ],
+    [
+     "LDH",
+     "↑↑"
+    ],
+    [
+     "Bilirrubina indireta",
+     "↑"
+    ],
+    [
+     "Haptoglobina",
+     "↓↓"
+    ],
+    [
+     "<b>Coombs direto</b>",
+     "<b>positivo</b>"
+    ],
+    [
+     "Esfregaço",
+     "esferócitos (forma quente); aglutinação (forma fria)"
+    ]
+   ],
+   "mechanism": "Autoanticorpos contra antigénios eritrocitários → destruição eritrocitária mediada pelo sistema reticuloendotelial (esplénico, hepático) ou pelo complemento. <b>Quente (IgG)</b> 70% — ativa a 37°C, hemólise extravascular esplénica, esferócitos; <b>Fria (IgM/C3)</b> — ativa em temperaturas baixas, aglutinação. Causa idiopática ou <b>secundária</b> (LLC, LES, linfomas, fármacos, infeções como Mycoplasma e EBV).",
+   "case": "Mulher de 55 anos com <b>leucemia linfocítica crónica</b> conhecida, recorre por icterícia progressiva, astenia e urina escura. <b>Hb 7,8 g/dL · VGM 102 fL · reticulócitos absolutos 320 × 10⁹/L · LDH 850 U/L · bilirrubina indireta 3,2 mg/dL · haptoglobina indoseável · Coombs direto positivo para IgG</b>. Esfregaço: esferócitos numerosos, policromasia. AHAI quente secundária a LLC.",
+   "quizCase": "Homem de 28 anos com <b>mononucleose infecciosa</b> diagnosticada há 2 semanas (Monospot +), recorre por icterícia progressiva e urina escura. <b>Hb 8,2 g/dL · VGM 100 fL · reticulócitos absolutos 280 × 10⁹/L · LDH 920 U/L · BI 3,8 mg/dL · haptoglobina indoseável · Coombs direto positivo (IgM + C3d)</b>. Esfregaço com aglutinação eritrocitária ao frio.",
+   "quizCaseLabs": "Hb 8,2 g/dL · VGM 100 fL · reticulócitos absolutos 280 × 10⁹/L · LDH 920 U/L · BI 3,8 mg/dL · haptoglobina indoseável · Coombs direto positivo · esfregaço com aglutinação"
+  },
+  {
+   "id": "mat-ptt",
+   "cat": "normo",
+   "catLabel": "Normocítica",
+   "name": "Microangiopatia trombótica (PTT / SHU)",
+   "meta": "destruição mecânica em microtrombos",
+   "pattern": [
+    [
+     "VGM",
+     "normal"
+    ],
+    [
+     "<b>Plaquetas</b>",
+     "<b>↓↓ (< 100 × 10⁹/L)</b>"
+    ],
+    [
+     "Reticulócitos absolutos",
+     "↑"
+    ],
+    [
+     "LDH",
+     "↑↑↑"
+    ],
+    [
+     "Bilirrubina indireta",
+     "↑"
+    ],
+    [
+     "Haptoglobina",
+     "↓↓"
+    ],
+    [
+     "Coombs direto",
+     "<b>negativo</b>"
+    ],
+    [
+     "<b>Esfregaço</b>",
+     "<b>esquizócitos abundantes</b>"
+    ],
+    [
+     "ADAMTS13 (PTT)",
+     "< 10%"
+    ]
+   ],
+   "mechanism": "Formação de <b>microtrombos plaquetários nos pequenos vasos</b> → eritrócitos são fragmentados ao passar (esquizócitos) e plaquetas são consumidas. <b>PTT</b>: défice de ADAMTS13 (proteína que cliva o fator de von Willebrand) → multímeros ultragrandes promovem agregação plaquetária. <b>SHU típico</b>: toxina Shiga (E. coli STEC) lesa endotélio renal. <b>SHU atípico</b>: desregulação do complemento.",
+   "case": "Mulher de 38 anos, sem antecedentes, recorre por <b>febre, cefaleia, confusão e petéquias</b> nos membros inferiores. <b>Hb 7,1 g/dL · VGM 92 fL · plaquetas 18 × 10⁹/L · LDH 1850 U/L · bilirrubina indireta 2,8 · haptoglobina indoseável · creatinina 1,4 · Coombs direto negativo</b>. Esfregaço: esquizócitos abundantes (>5/campo de grande ampliação). Pêntade clássica de PTT: anemia hemolítica + trombocitopenia + sintomas neurológicos + febre + lesão renal. Emergência.",
+   "quizCase": "Criança de 5 anos, 1 semana após gastroenterite com <b>diarreia sanguinolenta</b> (gelados de uma feira), recorre por palidez, oligúria e edema palpebral. <b>Hb 7,8 g/dL · VGM 88 fL · plaquetas 38 × 10⁹/L · LDH 2100 U/L · BI 2,4 · creatinina 2,8 mg/dL · Coombs direto negativo</b>. Esfregaço: esquizócitos abundantes. Coprocultura: E. coli O157:H7.",
+   "quizCaseLabs": "Hb 7,8 g/dL · VGM 88 fL · plaquetas 38 × 10⁹/L · LDH 2100 U/L · BI 2,4 mg/dL · haptoglobina indoseável · creatinina 2,8 mg/dL · Coombs direto negativo · esquizócitos abundantes"
+  },
+  {
+   "id": "esferocitose",
+   "cat": "normo",
+   "catLabel": "Normocítica",
+   "name": "Esferocitose hereditária",
+   "meta": "defeito da membrana eritrocitária",
+   "pattern": [
+    [
+     "VGM",
+     "normal ou ↓"
+    ],
+    [
+     "CHCM",
+     "↑ (típico)"
+    ],
+    [
+     "Reticulócitos absolutos",
+     "↑"
+    ],
+    [
+     "LDH",
+     "↑"
+    ],
+    [
+     "Bilirrubina indireta",
+     "↑"
+    ],
+    [
+     "Haptoglobina",
+     "↓"
+    ],
+    [
+     "Coombs direto",
+     "<b>negativo</b>"
+    ],
+    [
+     "<b>Esfregaço</b>",
+     "<b>esferócitos sem causa imune</b>"
+    ],
+    [
+     "EMA-binding test",
+     "↓ (diagnóstico)"
+    ],
+    [
+     "Esplenomegalia",
+     "frequente"
+    ]
+   ],
+   "mechanism": "Defeito hereditário (geralmente autossómico dominante) em proteínas do citoesqueleto eritrocitário (ankirina, espectrina, banda 3, proteína 4.2) → perda de superfície membranar → eritrócitos esferocitários, menos deformáveis. <b>Sequestro e destruição no baço</b>. Manifesta-se desde criança com anemia, icterícia intermitente (crises), esplenomegalia. Risco de litíase biliar de bilirrubinato.",
+   "case": "Homem de 25 anos com história desde os 8 anos de <b>icterícia intermitente, esplenomegalia e litíase biliar (colecistectomia aos 22)</b>. Pai com história similar. <b>Hb 10,2 g/dL · VGM 84 fL · CHCM 36,8 g/dL · reticulócitos absolutos 180 × 10⁹/L · LDH 380 · bilirrubina indireta 2,4 · haptoglobina 12 mg/dL · Coombs negativo</b>. Esfregaço: esferócitos numerosos. EMA-binding test compatível.",
+   "quizCase": "Criança de 9 anos com história desde lactente de <b>icterícia intermitente em surtos febris</b>. Mãe esplenectomizada aos 30 anos por \"anemia hereditária\". Ao exame físico: esplenomegalia palpável 4 cm abaixo do rebordo costal. <b>Hb 9,8 g/dL · VGM 82 fL · CHCM 37,2 g/dL · reticulócitos absolutos 200 × 10⁹/L · LDH 410 · BI 2,6 · Coombs direto negativo</b>. Esfregaço: esferócitos. EMA-binding test ↓.",
+   "quizCaseLabs": "Hb 9,8 g/dL · VGM 82 fL · CHCM 37,2 g/dL (↑) · reticulócitos absolutos 200 × 10⁹/L · LDH 410 · BI 2,6 mg/dL · Coombs direto negativo · esfregaço com esferócitos · EMA-binding test ↓"
+  },
+  {
+   "id": "g6pd",
+   "cat": "normo",
+   "catLabel": "Normocítica",
+   "name": "Défice de G6PD",
+   "meta": "enzimopatia hemolítica",
+   "pattern": [
+    [
+     "VGM",
+     "normal"
+    ],
+    [
+     "Reticulócitos absolutos",
+     "↑ (em crise)"
+    ],
+    [
+     "LDH",
+     "↑"
+    ],
+    [
+     "Bilirrubina indireta",
+     "↑"
+    ],
+    [
+     "Haptoglobina",
+     "↓"
+    ],
+    [
+     "Coombs direto",
+     "<b>negativo</b>"
+    ],
+    [
+     "<b>Esfregaço</b>",
+     "<b>bite cells + corpos de Heinz</b>"
+    ],
+    [
+     "Doseamento G6PD",
+     "↓ (fora do surto)"
+    ]
+   ],
+   "mechanism": "Défice ligado ao X da glicose-6-fosfato desidrogenase → eritrócito incapaz de gerar NADPH → falência da defesa antioxidante. Após <b>stress oxidativo</b> (fármacos, habas, infeções, cetoacidose), a hemoglobina precipita como <b>corpos de Heinz</b>, removidos pelo baço deixando \"mordidas\" (bite cells). Mais frequente em homens (X-linked), populações mediterrânicas, africanas e do sudeste asiático.",
+   "case": "Homem de 28 anos, origem africana, recorre por <b>icterícia, urina escura \"tipo Coca-Cola\" e astenia 2 dias após início de cotrimoxazol</b> por infeção urinária. <b>Hb 7,4 g/dL · VGM 90 fL · reticulócitos absolutos 240 × 10⁹/L · LDH 720 · BI 4,1 · haptoglobina indoseável · Coombs negativo</b>. Esfregaço: bite cells, corpos de Heinz à coloração supravital. Doseamento G6PD diferido para 3 meses (durante surto pode dar falso normal).",
+   "quizCase": "Homem de 22 anos de origem curda, recorre por <b>urina escura e icterícia 24h após refeição com favas</b> em festa familiar. Episódio similar na infância após sulfonamidas. <b>Hb 7,8 g/dL · VGM 91 fL · reticulócitos absolutos 220 × 10⁹/L · LDH 680 U/L · BI 3,8 · haptoglobina indoseável · Coombs negativo</b>. Esfregaço: bite cells, hemi-ghosts, corpos de Heinz à coloração supravital.",
+   "quizCaseLabs": "Hb 7,8 g/dL · VGM 91 fL · reticulócitos absolutos 220 × 10⁹/L · LDH 680 U/L · BI 3,8 mg/dL · haptoglobina indoseável · Coombs direto negativo · esfregaço com bite cells e corpos de Heinz"
+  },
+  {
+   "id": "aplasia",
+   "cat": "normo",
+   "catLabel": "Normocítica",
+   "name": "Aplasia medular",
+   "meta": "falência da hematopoiese",
+   "pattern": [
+    [
+     "VGM",
+     "normal ou ↑"
+    ],
+    [
+     "<b>Pancitopenia</b>",
+     "<b>presente</b>"
+    ],
+    [
+     "Reticulócitos absolutos",
+     "↓↓"
+    ],
+    [
+     "Leucócitos",
+     "↓ (neutropenia)"
+    ],
+    [
+     "Plaquetas",
+     "↓"
+    ],
+    [
+     "<b>Biópsia medular</b>",
+     "<b>hipocelular</b>, sem displasia"
+    ],
+    [
+     "Sem blastos circulantes",
+     ""
+    ]
+   ],
+   "mechanism": "Falência da hematopoiese por <b>destruição imune das células estaminais hematopoiéticas</b> (mecanismo mais comum no adulto) ou por toxicidade direta. Causas: <b>idiopática</b> (autoimune), <b>fármacos</b> (cloranfenicol, antitiroideus, AINEs raros), <b>radiação</b>, <b>infeções virais</b> (parvovírus B19 em hospedeiros imunossuprimidos, hepatites), <b>HPN associada</b>, <b>doenças autoimunes</b> (LES). Hereditária (Fanconi) em jovens.",
+   "case": "Mulher de 42 anos, sem antecedentes, com <b>astenia, equimoses fáceis e infeções respiratórias recorrentes há 3 meses</b>. <b>Hb 6,8 g/dL · VGM 96 fL · leucócitos 1,8 × 10⁹/L (neutrófilos 0,5) · plaquetas 18 × 10⁹/L · reticulócitos absolutos 12 × 10⁹/L</b>. Esfregaço sem blastos nem células displásicas. Biópsia osteomedular: medula hipocelular (< 25%), sem fibrose nem displasia. Excluídas causas reversíveis. Aplasia medular grave.",
+   "quizCase": "Jovem de 19 anos, 6 semanas após <b>tratamento prolongado com cloranfenicol</b> off-label durante mochilagem no Sudeste Asiático, recorre por equimoses extensas, febre 38,5°C e gengivorragias. <b>Hb 7,2 g/dL · VGM 98 fL · leucócitos 1,2 × 10⁹/L (neutrófilos 0,3) · plaquetas 14 × 10⁹/L · reticulócitos absolutos 8 × 10⁹/L</b>. Esfregaço sem blastos. Biópsia osteomedular: <25% celularidade, sem displasia.",
+   "quizCaseLabs": "Hb 7,2 g/dL · VGM 98 fL · leucócitos 1,2 × 10⁹/L (neutrófilos 0,3) · plaquetas 14 × 10⁹/L · reticulócitos absolutos 8 × 10⁹/L · biópsia medular hipocelular sem displasia nem blastos"
+  },
+  {
+   "id": "perniciosa",
+   "cat": "macro",
+   "catLabel": "Macrocítica",
+   "name": "Anemia perniciosa (défice B12 autoimune)",
+   "meta": "gastrite atrófica autoimune",
+   "pattern": [
+    [
+     "VGM",
+     "↑↑ (> 110 fL)"
+    ],
+    [
+     "<b>B12 sérica</b>",
+     "<b>↓ (< 200 pg/mL)</b>"
+    ],
+    [
+     "Folato",
+     "normal"
+    ],
+    [
+     "<b>MMA + homocisteína</b>",
+     "<b>ambos ↑</b>"
+    ],
+    [
+     "RDW",
+     "↑↑"
+    ],
+    [
+     "LDH",
+     "↑ (eritropoiese ineficaz)"
+    ],
+    [
+     "BI",
+     "↑ ligeira"
+    ],
+    [
+     "<b>Esfregaço</b>",
+     "<b>macroovalócitos + neutrófilos hipersegmentados</b>"
+    ],
+    [
+     "Ac anti-fator intrínseco",
+     "positivo (específico)"
+    ],
+    [
+     "Ac anti-células parietais",
+     "positivo (sensível)"
+    ]
+   ],
+   "mechanism": "Doença autoimune com <b>autoanticorpos contra células parietais gástricas e fator intrínseco</b> → gastrite atrófica → <b>ausência de fator intrínseco</b> → incapacidade de absorver B12 no íleon terminal. B12 é necessária para a síntese de DNA (e maturação nuclear); a sua ausência causa <b>eritropoiese ineficaz e macroovalócitos</b>. A B12 também é essencial para a mielinização → <b>sintomas neurológicos</b>: parestesias, ataxia (degeneração combinada subaguda da medula), demência. Associada a outras doenças autoimunes (tiroidite, vitiligo, DM1) e ↑ risco de cancro gástrico.",
+   "case": "Mulher de 68 anos com história de tiroidite de Hashimoto. Recorre por <b>parestesias dos pés que sobem progressivamente, instabilidade na marcha e perda de memória recente</b>. <b>Hb 9,4 g/dL · VGM 118 fL · plaquetas 130 × 10⁹/L · leucócitos 3,5 × 10⁹/L · LDH 720 · BI 2,1 · B12 sérica 92 pg/mL · folato normal · MMA 580 nmol/L (N < 270) · homocisteína 32 µmol/L</b>. Esfregaço: macroovalócitos + neutrófilos hipersegmentados (> 6 lobos). Ac anti-fator intrínseco positivos. EDA: gastrite atrófica corporal. Anemia perniciosa.",
+   "quizCase": "Homem de 72 anos com <b>vitiligo e diabetes tipo 1</b> de longa data, refere ardor lingual (\"glossite\"), parestesias dos pés e dificuldade a subir escadas pela perda de equilíbrio. <b>Hb 8,8 g/dL · VGM 122 fL · plaquetas 125 × 10⁹/L · LDH 880 · BI 2,4 · B12 78 pg/mL · folato 8,5 ng/mL · MMA 720 nmol/L · homocisteína 38 µmol/L</b>. Neutrófilos hipersegmentados. Ac anti-fator intrínseco positivo.",
+   "quizCaseLabs": "Hb 8,8 g/dL · VGM 122 fL · plaquetas 125 × 10⁹/L · LDH 880 U/L · BI 2,4 mg/dL · B12 78 pg/mL · folato 8,5 ng/mL · MMA 720 nmol/L (↑) · homocisteína 38 µmol/L (↑) · neutrófilos hipersegmentados"
+  },
+  {
+   "id": "folato",
+   "cat": "macro",
+   "catLabel": "Macrocítica",
+   "name": "Défice de folato",
+   "meta": "défice nutricional ou farmacológico",
+   "pattern": [
+    [
+     "VGM",
+     "↑"
+    ],
+    [
+     "<b>Folato sérico</b>",
+     "<b>↓</b>"
+    ],
+    [
+     "B12 sérica",
+     "normal"
+    ],
+    [
+     "<b>MMA</b>",
+     "<b>normal</b>"
+    ],
+    [
+     "<b>Homocisteína</b>",
+     "<b>↑</b>"
+    ],
+    [
+     "RDW",
+     "↑"
+    ],
+    [
+     "Esfregaço",
+     "macroovalócitos + neutrófilos hipersegmentados (igual a B12)"
+    ]
+   ],
+   "mechanism": "Folato participa na síntese de timidina (DNA). Défice → eritropoiese megaloblástica (sobreponível à da B12 morfologicamente). Mas <b>folato NÃO participa na mielinização</b> → sem sintomas neurológicos. <b>MMA normal</b> distingue de B12 (homocisteína sobe em ambos). Causas: <b>aporte insuficiente</b> (álcool, idoso, anorexia), <b>má absorção</b> (celíaca, DII), <b>antagonistas</b> (MTX, trimetoprim, fenitoína), <b>aumento de necessidades</b> (gravidez, hemólise crónica). Depósitos esgotam em 3–4 meses (vs anos para B12).",
+   "case": "Homem de 58 anos, alcoolismo crónico há 20 anos, dieta pobre em legumes. <b>Hb 10,1 g/dL · VGM 108 fL · plaquetas 145 · LDH 320 · folato sérico 1,8 ng/mL (N > 4) · B12 480 pg/mL · MMA 220 nmol/L (normal) · homocisteína 28 µmol/L (↑)</b>. Esfregaço: macroovalócitos + neutrófilos hipersegmentados. Défice nutricional de folato. ⚠ Importante excluir B12 antes de iniciar folato isolado para não mascarar défice de B12 e agravar neuropatia.",
+   "quizCase": "Grávida de 28 semanas, sem suplementação pré-natal, com <b>hiperémese gravídica</b> nos primeiros meses e dieta restrita. Refere astenia. Sem parestesias nem alterações neurológicas. <b>Hb 9,8 g/dL · VGM 106 fL · folato sérico 1,2 ng/mL · B12 420 pg/mL · MMA 180 nmol/L (normal) · homocisteína 26 µmol/L (↑)</b>. Esfregaço: macroovalócitos, raros neutrófilos hipersegmentados.",
+   "quizCaseLabs": "Hb 9,8 g/dL · VGM 106 fL · folato sérico 1,2 ng/mL · B12 420 pg/mL · MMA 180 nmol/L (normal) · homocisteína 26 µmol/L (↑) · esfregaço com macroovalócitos e hipersegmentação"
+  },
+  {
+   "id": "macro-nm",
+   "cat": "macro",
+   "catLabel": "Macrocítica",
+   "name": "Macrocitose alcoólica / hepatopatia",
+   "meta": "macrocitose não-megaloblástica",
+   "pattern": [
+    [
+     "VGM",
+     "↑ ligeiro (100–110)"
+    ],
+    [
+     "B12",
+     "normal"
+    ],
+    [
+     "Folato",
+     "pode estar ↓ (alcoolismo)"
+    ],
+    [
+     "<b>RDW</b>",
+     "<b>normal</b> (distingue da megaloblástica)"
+    ],
+    [
+     "MMA",
+     "normal"
+    ],
+    [
+     "<b>Esfregaço</b>",
+     "<b>macrócitos redondos</b>, células em alvo (hepatopatia)"
+    ],
+    [
+     "GGT / AST",
+     "↑"
+    ],
+    [
+     "Plaquetas",
+     "↓ (hipertensão portal, toxicidade)"
+    ]
+   ],
+   "mechanism": "<b>Toxicidade direta do etanol</b> na medula óssea + <b>alteração da composição lipídica da membrana eritrocitária</b> em hepatopatia (colesterol e fosfolípidos aumentados) → eritrócitos maiores mas <b>sem megaloblastose</b> (síntese de DNA preservada). Daí <b>RDW normal</b> e <b>ausência de hipersegmentação</b>. Em álcool pode coexistir défice de folato. Reversível com abstinência em 2–3 meses.",
+   "case": "Homem de 52 anos, alcoolismo (~80g/dia há 25 anos), descoberta em rotina. Sem sintomas. <b>Hb 13,1 g/dL · VGM 104 fL · RDW 13,8% (normal) · folato 5,2 ng/mL · B12 420 pg/mL · plaquetas 142 × 10⁹/L · GGT 145 · AST/ALT 1,8</b>. Esfregaço: macrócitos redondos uniformes, raras células em alvo. Sem hipersegmentação. Macrocitose alcoólica.",
+   "quizCase": "Homem de 60 anos com <b>cirrose alcoólica conhecida (Child A)</b>, em análise de rotina. Sem queixas hematológicas. <b>Hb 12,4 g/dL · VGM 106 fL · RDW 13,2% (normal) · plaquetas 108 × 10⁹/L · GGT 280 · AST/ALT 2,1 · folato 4,8 ng/mL · B12 380 pg/mL · MMA normal</b>. Esfregaço: macrócitos redondos, células em alvo, sem hipersegmentação.",
+   "quizCaseLabs": "Hb 12,4 g/dL · VGM 106 fL · RDW 13,2% (normal) · plaquetas 108 × 10⁹/L · GGT 280 · folato e B12 normais · MMA normal · esfregaço com macrócitos redondos e células em alvo, sem hipersegmentação"
+  },
+  {
+   "id": "smd",
+   "cat": "macro",
+   "catLabel": "Macrocítica",
+   "name": "Síndrome mielodisplásica",
+   "meta": "neoplasia clonal da medula",
+   "pattern": [
+    [
+     "VGM",
+     "↑ (frequentemente > 110)"
+    ],
+    [
+     "Citopenias",
+     "≥ 1 linha (anemia mais comum)"
+    ],
+    [
+     "Reticulócitos",
+     "↓ (eritropoiese ineficaz)"
+    ],
+    [
+     "B12 / folato",
+     "normais"
+    ],
+    [
+     "<b>RDW</b>",
+     "<b>↑↑ (dimorfismo)</b>"
+    ],
+    [
+     "<b>Esfregaço</b>",
+     "<b>displasia: pseudo-Pelger, hipogranulação, blastos</b>"
+    ],
+    [
+     "<b>Biópsia medular</b>",
+     "<b>diagnóstica</b> (citogenética + citometria)"
+    ]
+   ],
+   "mechanism": "<b>Neoplasia clonal das células estaminais hematopoiéticas</b> → hematopoiese ineficaz com displasia morfológica e risco de evolução para LMA. Causas: maioria idiopática (idoso), <b>secundária</b> a quimioterapia/radioterapia prévia (mais agressiva). Estratificação prognóstica pelo IPSS-R (citogenética, % blastos, citopenias). Suspeitar em <b>idoso com VGM > 110 e citopenias persistentes sem causa reversível</b>.",
+   "case": "Homem de 75 anos, descoberta em análises de rotina. <b>Hb 9,8 g/dL · VGM 114 fL · leucócitos 3,2 × 10⁹/L · plaquetas 88 × 10⁹/L · reticulócitos absolutos 28 × 10⁹/L · B12, folato, função renal, TSH normais</b>. Esfregaço: dimorfismo, neutrófilos pseudo-Pelger (núcleos bilobulados), raros blastos (3%). Biópsia osteomedular: medula hipercelular com displasia trilinear, 4% de blastos. Citogenética: del(5q). SMD com sideroblastos em anel não excluído. IPSS-R intermédio.",
+   "quizCase": "Mulher de 80 anos com <b>citopenias persistentes</b> há 8 meses, descobertas em análises de rotina, sem causa reversível identificada (B12, folato, TSH, ferritina, função renal normais). Astenia ligeira. <b>Hb 9,6 g/dL · VGM 112 fL · leucócitos 3,0 × 10⁹/L · plaquetas 95 × 10⁹/L · reticulócitos 18 × 10⁹/L · RDW 19,8%</b>. Esfregaço: pseudo-Pelger, hipogranulação, 2% blastos. Biópsia: medula hipercelular com displasia trilinear, del(20q).",
+   "quizCaseLabs": "Hb 9,6 g/dL · VGM 112 fL · leucócitos 3,0 × 10⁹/L · plaquetas 95 × 10⁹/L · reticulócitos 18 × 10⁹/L · RDW 19,8% · B12 e folato normais · esfregaço com pseudo-Pelger, hipogranulação, 2% blastos · medula com displasia trilinear"
+  }
+ ],
+ "distincoes": {
+  "beta-tal|ferropenica": "Coberto na entrada principal — Mentzer index e ferritina são as chaves.",
+  "dc-micro|ferropenica": "Esta é provavelmente a distinção mais importante na prática: doente com anemia microcítica e ferritina equívoca. A diferença está na <b>biologia do ferro</b>. Na ferropénica falta ferro — os depósitos estão esgotados, então <b>ferritina ↓↓, CTFF ↑ (fígado a tentar captar mais), saturação ↓↓ e sTfR ↑</b> (eritroblastos a expressar mais recetores porque estão \"com fome\" de ferro). Na DC há ferro mas está <b>sequestrado nos macrófagos</b> pela hepcidina elevada (consequência da IL-6 da inflamação): <b>ferritina normal ou alta</b> (a ferritina é também um reagente de fase aguda, sobe com a inflamação), <b>CTFF baixa</b> (o fígado prioriza outras proteínas), sTfR <b>normal</b> e <b>PCR elevada</b>. Resumindo: ferritina < 30 é praticamente patognomónico de ferropénia; ferritina > 100 com PCR alta aponta DC.",
+  "ferropenica|mista": "A anemia mista é o cenário em que a ferropénia e a inflamação convivem — frequente em DII, neoplasia, DRC ou doentes idosos com múltiplas comorbilidades. O problema é que <b>a inflamação eleva artificialmente a ferritina</b>, podendo mascarar uma ferropénia real. Na ferropénica pura a ferritina cai abertamente (< 30); na mista fica numa zona cinzenta (30-100) que parece \"normal\" mas esconde depósitos esgotados. O parâmetro que <b>resolve esta ambiguidade é o sTfR</b>: o recetor solúvel da transferrina é expresso pelos eritroblastos quando há falta de ferro funcional, e <b>não é afetado pela inflamação</b>. Daí o <b>Thomas index (sTfR / log ferritina)</b>: < 1 → só inflamação (sem ferropénia); <b>> 2 → há componente ferropénico</b>, mesmo com ferritina \"normal\". É a forma mais elegante de desmascarar a ferropénia escondida.",
+  "dc-micro|mista": "As duas partilham o terreno comum da inflamação: ferritina normal/alta, PCR elevada, CTFF normal/baixa. A diferença é se <b>também há défice real de ferro</b>. Na DC pura há só sequestro de ferro pelos macrófagos (mecanismo da hepcidina) — os depósitos estão cheios mas inacessíveis. Na mista, além desse mecanismo, os depósitos estão genuinamente esgotados. Como o sTfR sobe quando há falta de ferro funcional (e não é alterado pela inflamação), serve de sentinela: <b>Thomas index < 1 → DC pura</b> (sequestro sem défice real); <b>> 2 → mista</b> (sequestro + ferropénia coexistem). Clinicamente importa porque a mista beneficia de suplementação com ferro (preferencialmente EV) além de tratar a inflamação; a DC pura responde melhor a EPO/tratamento da causa.",
+  "ferropenica|sideroblastica": "Padrão de ferro <b>diametralmente oposto</b>. Na ferropénica, o problema é falta de ferro — ferritina e saturação muito baixas, CTFF alta. Na sideroblástica, o ferro <b>chega ao eritroblasto mas não consegue ser incorporado no heme</b> (defeito da síntese), acumulando-se nas mitocôndrias em forma de anel à volta do núcleo (visíveis com coloração de Perls). Por isso há <b>sobrecarga de ferro: ferritina muito alta, saturação até > 80%</b>. O esfregaço também ajuda: na ferropénica os eritrócitos são uniformemente pequenos e hipocrómicos; na sideroblástica há <b>dimorfismo</b> (coexistem eritrócitos normais e microcíticos), <b>basophilic stippling</b> e a chave diagnóstica está na <b>biópsia medular com sideroblastos em anel</b>. Causas a recordar: chumbo, álcool crónico, isoniazida, SMD.",
+  "beta-tal|dc-micro": "Apesar de ambas poderem ter VGM diminuído, partilham pouco mais. A β-talassemia é um <b>defeito genético da síntese de Hb</b>, sem ferritina alterada nem inflamação: ferro, ferritina, saturação e PCR todos normais ou ligeiramente altos, com VGM muito baixo (até 60-65) mesmo com Hb apenas ligeiramente reduzida — o tal achado paradoxal de \"anemia ligeira com microcitose extrema\". A DC é uma <b>reação à inflamação crónica</b>: PCR elevada, ferritina normal ou alta, CTFF baixa, e a microcitose é apenas ligeira (VGM 80-85). A eletroforese de Hb resolve em 5 minutos: <b>HbA2 > 3,5%</b> confirma β-talassemia heterozigótica.",
+  "beta-tal|sideroblastica": "Ambas podem cursar com ferro/ferritina normais ou altos, mas a similaridade acaba aí. A β-tal tem <b>RDW normal</b> (todos os eritrócitos são uniformemente pequenos), células em alvo, e eletroforese com <b>HbA2 elevada</b> — a chave diagnóstica. A sideroblástica tem <b>RDW muito alto por dimorfismo</b> (coexistem populações de tamanhos diferentes), basophilic stippling, e o diagnóstico definitivo é a <b>biópsia medular com sideroblastos em anel</b> à coloração de Perls. Também o contexto ajuda: β-tal é hereditária e descoberta cedo (frequentemente em rastreio pré-concecional ou pré-operatório); a sideroblástica adquirida aparece em idosos (SMD) ou em contextos tóxicos (chumbo, álcool, isoniazida).",
+  "folato|perniciosa": "As duas formas de <b>anemia megaloblástica clássica</b> — morfologicamente são gémeas (macroovalócitos + neutrófilos hipersegmentados + VGM muito alto + RDW alto), porque ambas resultam de défice na síntese de DNA. A diferença está na <b>bioquímica e no impacto neurológico</b>. A B12 é cofator de duas enzimas: uma que converte MMA em succinil-CoA (relevante para a mielinização) e outra que converte homocisteína em metionina. O folato só está envolvido na segunda. Por isso, em défice de B12 sobem <b>MMA e homocisteína</b>, e há <b>sintomas neurológicos</b> (parestesias, ataxia, degeneração combinada subaguda da medula). Em défice de folato sobe <b>só a homocisteína</b> (MMA normal), e <b>não há neuropatia</b>. Importante: <b>não tratar com folato isolado antes de excluir B12</b> — corrige a anemia mas a neuropatia da B12 progride irreversivelmente.",
+  "macro-nm|perniciosa": "É a distinção entre <b>macrocitose megaloblástica vs não-megaloblástica</b>. A perniciosa (e qualquer défice de B12) é megaloblástica: a falta de B12 paralisa a síntese de DNA enquanto o citoplasma continua a maturar, dando origem a eritrócitos enormes e disfuncionais (VGM frequentemente > 110), eritropoiese ineficaz (LDH e BI elevados, reticulócitos baixos), <b>neutrófilos hipersegmentados</b> (> 5 lobos) e <b>RDW muito alto</b>. A macrocitose alcoólica/hepática é não-megaloblástica: a síntese de DNA está preservada, os eritrócitos são <b>macrócitos redondos uniformes</b> (não ovalócitos), <b>RDW normal</b>, sem hipersegmentação, B12 e MMA normais. O VGM raramente passa de 110. Esta distinção poupa investigação desnecessária no doente alcoólico.",
+  "folato|macro-nm": "É importante notar a sobreposição: <b>no doente alcoólico podem coexistir as duas</b> (toxicidade direta do etanol + défice nutricional de folato). A chave está em saber se há <b>megaloblastose</b>. O défice de folato é megaloblástico: VGM alto, <b>RDW alto</b>, <b>neutrófilos hipersegmentados</b>, macroovalócitos, <b>homocisteína elevada</b> com MMA normal. A macrocitose alcoólica pura tem <b>RDW normal</b>, sem hipersegmentação, com <b>macrócitos redondos</b> e MMA/homocisteína normais. Se o folato sérico está baixo mas os parâmetros megaloblásticos estão ausentes, pode ser apenas baixa ingestão recente; se há megaloblastose franca, há défice real a tratar.",
+  "perniciosa|smd": "Dilema clássico do <b>idoso com VGM > 110</b>. Ambas dão macrocitose marcada, podem ter pancitopenia ligeira e eritropoiese ineficaz (LDH e BI elevados, reticulócitos baixos). A diferença é a <b>causa do defeito</b>. Na perniciosa, há um problema bioquímico reversível: <b>B12 baixa, MMA elevado</b>, autoanticorpos anti-fator intrínseco/células parietais positivos, gastrite atrófica na EDA, e frequentemente <b>sintomas neurológicos</b>. Na SMD há uma <b>neoplasia clonal da medula</b>: B12 e folato normais, citopenias persistentes sem causa reversível, <b>displasia morfológica</b> (pseudo-Pelger, hipogranulação, blastos), e a biópsia medular é diagnóstica (medula hipercelular com displasia trilinear, alterações citogenéticas). Regra prática: idoso com macrocitose persistente e B12 normal exige biópsia medular.",
+  "folato|smd": "Macrocitose num adulto/idoso, novamente. O défice de folato tem uma <b>causa identificável e reversível</b> (álcool, má nutrição, gravidez, fármacos como MTX/fenitoína/trimetoprim, malabsorção) e <b>responde à reposição em semanas</b>. A SMD é uma doença clonal da medula, com <b>folato e B12 normais</b>, citopenias persistentes sem causa, displasia morfológica e biópsia diagnóstica. Se um doente com macrocitose responde rapidamente à reposição de folato → era défice nutricional. Se não responde, ou se há citopenias multilinha persistentes, ou se a displasia é evidente → SMD até prova em contrário.",
+  "macro-nm|smd": "Ambas podem aparecer num <b>idoso com macrocitose ligeira persistente</b>. A alcoólica é <b>secundária a etanol/hepatopatia</b>: contexto clínico óbvio, RDW normal, sem displasia, sem citopenias significativas, melhora com abstinência. A SMD é uma <b>doença da medula</b>: pode haver citopenias em múltiplas linhas, <b>RDW alto por dimorfismo</b>, displasia morfológica no esfregaço (pseudo-Pelger, hipogranulação, blastos), e biópsia medular hipercelular com displasia trilinear. Em doente com história de álcool e macrocitose, a presença de citopenias multilinha persistentes ou displasia franca impõe investigação para SMD — a atribuição exclusiva ao álcool é insuficiente nesse cenário.",
+  "ahai|mat-ptt": "Ambas são <b>hemolíticas</b> — partilham os marcadores de hemólise (LDH alto, BI alta, haptoglobina indoseável, reticulocitose) — mas o <b>mecanismo é radicalmente diferente</b> e isso reflete-se em duas linhas: Coombs e plaquetas. Na AHAI a destruição é <b>imune-mediada</b> (autoanticorpos contra antigénios eritrocitários): <b>Coombs direto positivo</b>, plaquetas normais, esferócitos no esfregaço (se forma quente). Na MAT (PTT, SHU, HELLP) a destruição é <b>mecânica</b>: microtrombos plaquetários nos pequenos vasos cortam os eritrócitos à passagem — daí <b>esquizócitos</b> (\"fragmentos\") e <b>trombocitopenia marcada por consumo</b>, com <b>Coombs negativo</b>. Importante: a MAT é frequentemente uma emergência (PTT tem mortalidade > 90% sem plasmaferese). A presença de esquizócitos + trombocitopenia exige consideração imediata de MAT.",
+  "ahai|esferocitose": "Ambas têm <b>esferócitos no esfregaço</b> (eritrócitos sem a forma bicôncava normal, mais redondos) e ambas hemolisam — por isso são frequentemente confundidas no estágio inicial. O Coombs resolve tudo: <b>positivo na AHAI</b> (porque há anticorpos a marcar os eritrócitos, gerando os esferócitos por remoção parcial de membrana pelos macrófagos esplénicos); <b>negativo na esferocitose hereditária</b> (defeito do citoesqueleto eritrocitário, sem componente imune). O contexto também ajuda: a esferocitose manifesta-se <b>desde a infância</b> com icterícia intermitente, esplenomegalia e litíase biliar, frequentemente com história familiar autossómica dominante; a AHAI aparece tipicamente em adulto, frequentemente <b>secundária</b> (LLC, LES, infeções como Mycoplasma/EBV, fármacos). Diagnóstico definitivo da esferocitose: <b>EMA-binding test diminuído</b>.",
+  "ahai|g6pd": "Ambas hemolíticas, mas com <b>perfis morfológicos e gatilhos diferentes</b>. A AHAI tem <b>Coombs positivo</b> e esferócitos (forma quente). A G6PD tem <b>Coombs negativo</b>, esfregaço com <b>bite cells</b> (\"mordidas\" — o baço removeu a hemoglobina precipitada) e <b>corpos de Heinz</b> (visíveis em coloração supravital). A história clínica é diferente: a G6PD manifesta-se em <b>surtos agudos após gatilho oxidativo</b> — fármacos (sulfonamidas, nitrofurantoína, primaquina, dapsona), <b>habas</b>, infeções, cetoacidose — em homem de origem mediterrânica, africana ou do sudeste asiático (X-linked). Importante: <b>doseamento de G6PD durante a crise pode dar falso normal</b> (eritrócitos jovens, ainda com enzima); repetir 2-3 meses depois.",
+  "esferocitose|g6pd": "Duas anemias hemolíticas hereditárias com <b>Coombs negativo</b> mas mecanismos completamente distintos. Esferocitose: defeito do <b>citoesqueleto da membrana</b> (ankirina, espectrina, banda 3) → eritrócitos esferocitários menos deformáveis, sequestrados e destruídos no baço. Apresentação <b>crónica desde a infância</b> com icterícia intermitente, esplenomegalia, litíase biliar, história familiar autossómica dominante. Esfregaço com <b>esferócitos</b>; <b>EMA-binding test ↓</b>. G6PD: defeito <b>enzimático da via das pentoses</b> → eritrócitos vulneráveis ao stress oxidativo. Apresentação em <b>surtos agudos após gatilho</b> (fármacos oxidantes, habas, infeções). Esfregaço com <b>bite cells + corpos de Heinz</b>; X-linked (homens mediterrânicos/africanos). Doseamento enzimático faz o diagnóstico.",
+  "aplasia|mat-ptt": "Ambas podem ter <b>trombocitopenia</b> e anemia, mas o resto é oposto. A MAT é uma <b>doença hemolítica e consumptiva</b>: LDH muito alto, BI alta, haptoglobina indoseável, <b>reticulócitos altos</b> (medula está a produzir), esquizócitos no esfregaço, e frequentemente lesão renal aguda. A aplasia é uma <b>falência produtiva da medula</b>: sem hemólise (LDH e BI normais ou baixos), <b>reticulócitos muito baixos</b>, pancitopenia (não só trombocitopenia, mas também leucopenia/neutropenia), e biópsia medular <b>hipocelular</b>. Reticulócitos altos vs baixos é o discriminante mais rápido.",
+  "aplasia|smd": "Coberto na entrada principal — biópsia medular distingue (hipocelular sem displasia vs hipercelular com displasia).",
+  "dc-micro|drc": "Coberto na entrada principal — EPO/TFG vs PCR/contexto inflamatório.",
+  "aplasia|drc": "Apesar de ambas serem hipoproliferativas (reticulócitos baixos), distinguem-se facilmente pelas <b>outras linhas celulares</b>. A DRC dá <b>anemia isolada</b> (leucócitos e plaquetas normais), normocítica, com EPO sérica baixa e TFG diminuída — é uma falência produtiva específica da linha eritroide. A aplasia dá <b>pancitopenia</b> (anemia + leucopenia + trombocitopenia), com biópsia medular <b>hipocelular</b>. Pedir hemograma completo + TFG resolve quase sempre: anemia isolada num doente com TFG < 60 = DRC; pancitopenia exige investigação medular.",
+  "sideroblastica|smd": "Há sobreposição genuína: a <b>SMD com sideroblastos em anel</b> é uma entidade própria na classificação OMS. Na prática, a SMD requer <b>≥ 15% sideroblastos em anel no Perls + displasia noutras linhas + alterações citogenéticas + idade tipicamente avançada</b>. A sideroblástica não-SMD tem geralmente <b>causa identificável</b>: tóxica (chumbo, álcool, cobre baixo), farmacológica (isoniazida, cloranfenicol), hereditária (mutação ALAS2, X-linked, em jovens). Padrão de ferro idêntico nos dois: ferritina e saturação muito altas, dimorfismo, RDW alto. A distinção é feita por <b>contexto + biópsia medular completa com citogenética</b>.",
+  "beta-tal|mista": "<b>HbA2 > 3,5%</b> → β-tal. <b>PCR alta + Thomas index > 2</b> → mista. A β-tal não tem componente inflamatório nem ferropénico.",
+  "dc-micro|sideroblastica": "Ambas com ferritina alta, mas a <b>saturação</b> distingue: <b>baixa/normal na DC</b> (sequestro pela hepcidina); <b>muito alta na sideroblástica</b> (sobrecarga real). <b>Sideroblastos em anel</b> na medula são definitivos.",
+  "mista|sideroblastica": "<b>Saturação baixa + sTfR alto</b> → mista (componente ferropénico). <b>Saturação muito alta + dimorfismo + sideroblastos em anel</b> → sideroblástica.",
+  "ahai|drc": "<b>Reticulócitos</b> são o discriminante imediato: <b>baixos na DRC</b> (hipoproliferativa, EPO baixa, TFG baixa); <b>muito altos na AHAI</b> (hemolítica, LDH alto, Coombs positivo).",
+  "drc|mat-ptt": "<b>Plaquetas normais na DRC; ↓↓ na MAT</b>. A DRC é crónica e hipoproliferativa; a MAT é emergência hemolítica com esquizócitos, LDH muito alto e por vezes lesão renal aguda sobreposta.",
+  "drc|esferocitose": "DRC tem <b>TFG baixa</b> e ausência de hemólise. Esferocitose tem <b>hemólise crónica</b> (LDH ↑, BI ↑, haptoglobina ↓), <b>esferócitos no esfregaço</b>, esplenomegalia e história familiar autossómica dominante desde a infância.",
+  "drc|g6pd": "DRC é hipoproliferativa crónica. G6PD é <b>hemólise aguda após gatilho</b> (fármaco, habas, infeção) com <b>bite cells + corpos de Heinz</b>.",
+  "ahai|aplasia": "<b>AHAI tem só anemia</b> (com hemólise: Coombs +, retic ↑, LDH ↑). <b>Aplasia tem pancitopenia</b> com reticulócitos muito baixos e medula hipocelular.",
+  "esferocitose|mat-ptt": "Esferócitos (esferocitose) vs esquizócitos (MAT). <b>Plaquetas normais</b> na esferocitose; <b>↓↓</b> na MAT. Esferocitose é hereditária e crónica; MAT é emergência aguda.",
+  "g6pd|mat-ptt": "Ambas hemolíticas com Coombs negativo, mas o esfregaço resolve: <b>bite cells + Heinz</b> → G6PD; <b>esquizócitos</b> → MAT. <b>Plaquetas normais</b> na G6PD; <b>↓↓</b> na MAT.",
+  "aplasia|esferocitose": "<b>Pancitopenia + medula hipocelular</b> → aplasia. <b>Hemólise crónica isolada + esferócitos</b> → esferocitose.",
+  "aplasia|g6pd": "<b>Pancitopenia + reticulócitos baixos</b> → aplasia. <b>Hemólise aguda após gatilho + bite cells + Heinz</b> → G6PD; plaquetas e leucócitos normais.",
+  "ferropenica|perniciosa": "<b>VGM resolve imediatamente</b>: < 80 → ferropénica; > 110 → perniciosa. Confirma com ferritina (↓ na ferropénica) ou B12 (↓ na perniciosa).",
+  "ferropenica|folato": "<b>VGM resolve</b>: microcítica → ferropénica; macrocítica → folato. Importante: podem coexistir (gravidez, malabsorção) e dar <b>VGM normal</b> com RDW muito alto (anemia dimórfica).",
+  "drc|ferropenica": "Podem coexistir frequentemente. <b>VGM</b>: ↓ na ferropénica, normal na DRC. <b>TFG</b>: normal na ferropénica, ↓ na DRC. Em DRC investigar sempre componente ferropénico associado.",
+  "ahai|ferropenica": "<b>Ferritina baixa</b> → ferropénica (microcítica, sem hemólise). <b>Coombs positivo + reticulócitos altos + LDH alto</b> → AHAI (hemolítica).",
+  "dc-micro|perniciosa": "<b>VGM resolve</b>: ↓ na DC; > 110 na perniciosa. PCR alta vs B12 baixa.",
+  "beta-tal|perniciosa": "Categorias opostas: <b>VGM muito baixo com Hb quase normal</b> → β-tal; <b>VGM > 110</b> → perniciosa.",
+  "drc|perniciosa": "DRC é <b>normocítica com TFG baixa</b>. Perniciosa é <b>macrocítica com B12 baixa e MMA alto</b>. Sintomas neurológicos apontam perniciosa.",
+  "drc|folato": "DRC: normocítica, TFG baixa, EPO baixa. Folato: macrocítica, folato sérico baixo, homocisteína alta.",
+  "drc|smd": "Ambas em idosos. DRC dá <b>anemia isolada</b> com TFG baixa. SMD dá <b>citopenias multilinha</b> com displasia morfológica e biópsia medular alterada.",
+  "drc|macro-nm": "DRC: normocítica, hipoproliferativa, TFG baixa. Alcoólica: macrocítica ligeira, contexto de álcool/hepatopatia, RDW normal.",
+  "ahai|perniciosa": "AHAI: <b>reticulócitos altos, Coombs +, LDH muito alto</b>. Perniciosa: <b>VGM > 110, B12 baixa, hipersegmentação, sintomas neurológicos</b>. Nota: a perniciosa pode ter LDH alto por eritropoiese ineficaz, mas reticulócitos baixos.",
+  "ahai|folato": "<b>Reticulócitos altos + Coombs +</b> → AHAI. <b>VGM alto + folato baixo + hipersegmentação</b> → folato.",
+  "ahai|smd": "AHAI: <b>hemólise isolada com Coombs +</b>. SMD: <b>citopenias multilinha, displasia morfológica, biópsia medular</b>. Reticulócitos altos vs baixos.",
+  "ahai|macro-nm": "AHAI: <b>hemólise (LDH ↑, Coombs +, retic ↑)</b>. Alcoólica: <b>macrocitose ligeira sem hemólise</b>, RDW normal, contexto de álcool.",
+  "mat-ptt|perniciosa": "MAT é <b>emergência</b>: esquizócitos + trombocitopenia + LDH muito alto. Perniciosa é <b>crónica</b>: VGM > 110, B12 baixa, sem esquizócitos.",
+  "folato|mat-ptt": "MAT tem <b>esquizócitos + trombocitopenia</b> (mecânica). Folato tem <b>macrocitose megaloblástica</b> sem esquizócitos.",
+  "mat-ptt|smd": "MAT: <b>hemólise mecânica aguda</b> com esquizócitos. SMD: <b>doença medular crónica</b> com displasia, sem esquizócitos.",
+  "esferocitose|perniciosa": "Esferocitose: <b>hemólise hereditária, esferócitos, Coombs negativo</b>. Perniciosa: <b>macrocitose, B12 baixa, hipersegmentação</b>.",
+  "g6pd|perniciosa": "G6PD: <b>hemólise aguda após gatilho, bite cells, Heinz</b>. Perniciosa: <b>macrocitose crónica, B12 baixa, sintomas neurológicos</b>.",
+  "aplasia|perniciosa": "Ambas podem ter VGM normal/↑ e citopenias. <b>Aplasia: medula hipocelular sem displasia</b>. <b>Perniciosa: B12 baixa, MMA alto, hipersegmentação</b>. Reposição de B12 resolve a perniciosa; aplasia precisa de imunossupressão/transplante.",
+  "aplasia|folato": "Aplasia: <b>pancitopenia com medula hipocelular</b>. Folato: <b>macrocitose isolada com folato baixo</b>.",
+  "aplasia|macro-nm": "Aplasia: <b>pancitopenia, medula hipocelular</b>. Alcoólica: <b>macrocitose ligeira</b>, sem pancitopenia significativa.",
+  "perniciosa|sideroblastica": "Padrões de ferro opostos vs B12. Sideroblástica: <b>ferritina e saturação muito altas, sideroblastos em anel</b>. Perniciosa: <b>B12 baixa, MMA alto, hipersegmentação</b>.",
+  "folato|sideroblastica": "Sideroblástica: <b>ferro alto, sideroblastos em anel</b>. Folato: <b>folato baixo, hipersegmentação</b>.",
+  "macro-nm|sideroblastica": "Sideroblástica: <b>ferro/ferritina altos, dimorfismo, sideroblastos em anel</b>. Alcoólica: <b>RDW normal, sem dimorfismo</b>, ferro normal.",
+  "drc|sideroblastica": "Sideroblástica: <b>sobrecarga de ferro, sideroblastos em anel</b>. DRC: <b>TFG baixa, EPO baixa</b>, sem sobrecarga.",
+  "ahai|sideroblastica": "Padrões completamente diferentes. Sideroblástica: <b>microcítica/dimórfica com sobrecarga de ferro</b>. AHAI: <b>hemólise com Coombs +</b>.",
+  "mat-ptt|sideroblastica": "Sideroblástica: <b>doença crónica do metabolismo do ferro</b>. MAT: <b>hemólise mecânica aguda com esquizócitos e trombocitopenia</b>.",
+  "esferocitose|sideroblastica": "Sideroblástica: <b>ferro alto, dimorfismo, sideroblastos</b>. Esferocitose: <b>esferócitos, Coombs neg, EMA-test ↓</b>, história familiar.",
+  "g6pd|sideroblastica": "Sideroblástica: <b>crónica, ferro alto</b>. G6PD: <b>hemólise aguda após gatilho, bite cells, Heinz</b>.",
+  "aplasia|sideroblastica": "Sideroblástica: <b>anemia com ferro alto, medula com sideroblastos</b>. Aplasia: <b>pancitopenia, medula hipocelular</b>.",
+  "mista|perniciosa": "Mista (microcítica): <b>sTfR alto, Thomas index > 2, PCR alta</b>. Perniciosa: <b>VGM > 110, B12 baixa, hipersegmentação</b>.",
+  "folato|mista": "Mista: microcítica com componente ferropénico em inflamação. Folato: macrocítica com folato baixo.",
+  "macro-nm|mista": "Mista (microcítica) vs alcoólica (macrocítica) — categorias opostas pelo VGM.",
+  "mista|smd": "Mista: <b>microcítica com sTfR alto + PCR alta</b>. SMD: <b>macrocítica com displasia medular</b>.",
+  "drc|mista": "Frequentemente coexistem. Mista tem <b>sTfR alto e Thomas index > 2</b>; DRC tem <b>TFG baixa e EPO baixa</b>.",
+  "ahai|mista": "Mista: <b>microcítica com sTfR alto</b>. AHAI: <b>hemólise com Coombs +</b>.",
+  "mat-ptt|mista": "Categorias diferentes. Mista: microcítica crónica. MAT: emergência hemolítica com esquizócitos e trombocitopenia.",
+  "esferocitose|mista": "Mista: microcítica inflamatória/ferropénica. Esferocitose: hemólise hereditária com esferócitos.",
+  "g6pd|mista": "Mista: microcítica crónica. G6PD: hemólise aguda após gatilho.",
+  "aplasia|mista": "Mista: <b>anemia isolada com sTfR alto</b>. Aplasia: <b>pancitopenia, medula hipocelular</b>.",
+  "beta-tal|folato": "β-tal: <b>VGM muito baixo, HbA2 alta</b>. Folato: <b>VGM alto, folato baixo</b>.",
+  "beta-tal|macro-nm": "Categorias opostas pelo VGM. β-tal: <b>VGM muito baixo com HbA2 alta</b>. Alcoólica: <b>VGM ligeiramente alto, RDW normal</b>.",
+  "beta-tal|smd": "β-tal: <b>microcítica hereditária, HbA2 alta</b>. SMD: <b>macrocítica adquirida com displasia medular</b>.",
+  "beta-tal|drc": "β-tal: <b>VGM muito baixo, HbA2 alta</b>. DRC: <b>normocítica com TFG baixa</b>.",
+  "ahai|beta-tal": "β-tal: <b>microcítica hereditária sem hemólise significativa</b>. AHAI: <b>hemólise aguda/subaguda com Coombs +</b>.",
+  "beta-tal|mat-ptt": "β-tal: <b>crónica, microcítica</b>. MAT: <b>emergência hemolítica com esquizócitos e trombocitopenia</b>.",
+  "beta-tal|esferocitose": "Ambas hereditárias mas distintas. β-tal: <b>microcítica, HbA2 alta, sem hemólise franca</b>. Esferocitose: <b>esferócitos, hemólise crónica, EMA-test ↓</b>.",
+  "beta-tal|g6pd": "β-tal: <b>microcítica crónica, HbA2 alta</b>. G6PD: <b>hemólise aguda após gatilho oxidativo, bite cells, Heinz</b>.",
+  "aplasia|beta-tal": "β-tal: <b>microcítica hereditária com Hb quase normal</b>. Aplasia: <b>pancitopenia, medula hipocelular</b>.",
+  "dc-micro|folato": "DC: microcítica inflamatória. Folato: macrocítica megaloblástica.",
+  "dc-micro|macro-nm": "Categorias opostas pelo VGM.",
+  "dc-micro|smd": "DC: <b>microcítica inflamatória com PCR alta</b>. SMD: <b>macrocítica com displasia e citopenias multilinha</b>.",
+  "ahai|dc-micro": "DC: <b>microcítica sem hemólise</b>. AHAI: <b>hemólise com Coombs +</b>.",
+  "dc-micro|mat-ptt": "DC: crónica, sem trombocitopenia. MAT: emergência com esquizócitos e plaquetas baixas.",
+  "dc-micro|esferocitose": "DC: <b>microcítica inflamatória</b>. Esferocitose: <b>esferócitos, hemólise hereditária</b>.",
+  "dc-micro|g6pd": "DC: crónica, inflamatória. G6PD: hemólise aguda após gatilho.",
+  "aplasia|dc-micro": "DC: <b>anemia isolada com PCR alta</b>. Aplasia: <b>pancitopenia, medula hipocelular</b>.",
+  "ferropenica|mat-ptt": "<b>VGM baixo + ferritina baixa</b> → ferropénica. <b>Esquizócitos + plaquetas baixas + LDH muito alto</b> → MAT (emergência).",
+  "esferocitose|ferropenica": "<b>VGM baixo + ferritina baixa</b> → ferropénica. <b>Esferócitos + hemólise + história familiar</b> → esferocitose.",
+  "ferropenica|g6pd": "<b>VGM baixo + ferritina baixa</b> → ferropénica (crónica). <b>Hemólise aguda + bite cells + Heinz</b> → G6PD.",
+  "aplasia|ferropenica": "<b>Anemia isolada microcítica com ferritina baixa</b> → ferropénica. <b>Pancitopenia normocítica/macrocítica com medula hipocelular</b> → aplasia.",
+  "ferropenica|macro-nm": "Categorias opostas pelo VGM. <b>Ferritina baixa</b> → ferropénica; <b>VGM ↑ ligeiro + álcool/hepatopatia</b> → macrocitose alcoólica.",
+  "ferropenica|smd": "<b>Microcítica com ferritina baixa</b> → ferropénica. <b>Macrocítica com displasia e citopenias multilinha</b> → SMD."
+ }
+}

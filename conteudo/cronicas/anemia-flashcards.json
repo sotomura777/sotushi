@@ -1,0 +1,249 @@
+{
+ "eyebrow": "Flashcards · 2026",
+ "titulo": "Anemia · Flashcards",
+ "decks": [
+  {
+   "id": "micro",
+   "label": "Microcítica",
+   "cards": [
+    {
+     "q": "Ferritina < 30 ng/mL — diagnóstico?",
+     "a": "Anemia ferropénica confirmada",
+     "e": "Ferritina < 30 é diagnóstica em qualquer contexto. Se 30-100 com PCR elevada, usar sTfR ou Thomas index (>2 = ferropénia funcional). Em idosos ≥65a, cutoff sobe para <100."
+    },
+    {
+     "q": "Homem adulto com ferropénia — próximo passo?",
+     "a": "EDA + colonoscopia — mesmo sem queixas GI e com SOF negativo",
+     "e": "Neoplasia GI até prova em contrário. Cancro do cólon direito causa ferropénia isolada sem sintomas. SOF negativo não exclui (sensibilidade 60-70%)."
+    },
+    {
+     "q": "Mentzer index > 13 — sugere?",
+     "a": "Anemia ferropénica (VGM/eritrócitos > 13)",
+     "e": "Mentzer < 13 sugere talassemia (eritrócitos uniformemente pequenos, VGM muito baixo). > 13 sugere ferropénia (menos eritrócitos, VGM variável). Confirmar com cinética do ferro e eletroforese."
+    },
+    {
+     "q": "RDW elevado + microcitose — ferro ou talassemia?",
+     "a": "Ferropénia — na talassemia o RDW é normal",
+     "e": "Na ferropénia há anisocitose (eritrócitos de tamanhos variados, RDW ↑). Na talassemia os eritrócitos são uniformemente pequenos (RDW normal). É uma das distinções mais cobradas."
+    },
+    {
+     "q": "Ferro oral em dias alternados — porquê?",
+     "a": "A hepcidina sobe 24h após dose e bloqueia absorção no dia seguinte",
+     "e": "Moretti 2015 (Blood): ferro em dias alternados absorve mais que diário. Tomar com vit. C, em jejum, longe de chá/café/cálcio. Sulfato ferroso 325mg = 65mg Fe elementar."
+    },
+    {
+     "q": "Sat. transferrina < 16% com ferritina normal — interpretação?",
+     "a": "Ferropénia funcional ou início de depleção",
+     "e": "A saturação cai antes da ferritina em fases iniciais. Se ferritina 30-100 + sat. <16% + PCR normal → investigar como ferropénia."
+    },
+    {
+     "q": "HbA2 > 3,5% na eletroforese — diagnóstico?",
+     "a": "Beta-talassemia minor (traço talassémico)",
+     "e": "Microcitose desproporcional à anemia (VGM 60-70 com Hb 10-12), RDW normal, células em alvo, ferritina normal. Não tratar com ferro — pode causar sobrecarga."
+    },
+    {
+     "q": "Microcitose + ferritina > 300 + saturação > 45% — pensar em?",
+     "a": "Anemia sideroblástica (sideroblastos em anel na medula)",
+     "e": "Ferro elevado com microcitose = sideroblástica (defeito na síntese do heme). Pode ser adquirida (SMD, álcool, isoniazida) ou hereditária. Confirmar com mielograma (coloração de Perls)."
+    },
+    {
+     "q": "Mulher pré-menopausa com ferropénia — é preciso EDA/colonoscopia?",
+     "a": "Não obrigatoriamente — se menorragia evidente e < 50 anos, tratar e vigiar",
+     "e": "Ao contrário do homem/pós-menopausa, a mulher pré-menopausa com perdas menstruais excessivas tem causa óbvia. Investigar GI se: >50 anos, sem menorragia, sintomas GI, história familiar de CCR, ou sem resposta ao ferro."
+    },
+    {
+     "q": "Ferro oral sem resposta em 4 semanas — o que verificar?",
+     "a": "Adesão, causa persistente de perda, má absorção (celíaca/IBP), diagnóstico alternativo",
+     "e": "Subida esperada: Hb ≥1 g/dL em 4 sem. Se não: confirmar adesão, excluir hemorragia oculta continuada, testar anti-tTG (celíaca), rever IBP (↓acidez ↓absorção). Se tudo negativo → ferro EV."
+    },
+    {
+     "q": "Grávida 30 semanas com intolerância a ferro oral — alternativa?",
+     "a": "Carboximaltose férrica EV (Ferinject) — segura a partir do 2.º trimestre",
+     "e": "Segura e eficaz no 2.º-3.º trimestre. Dose até 1000 mg sessão única. Não adiar — anemia não tratada ↑ risco parto pré-termo, hemorragia pós-parto, baixo peso fetal."
+    },
+    {
+     "q": "Ferritina 75 + PCR 48 mg/L + sat. 12% — ferropénia ou DC?",
+     "a": "Provavelmente anemia mista (DC + ferropénia sobreponível)",
+     "e": "Ferritina falsamente normal/elevada pela inflamação (PCR 48). Sat. 12% sugere ferro funcional baixo. Pedir sTfR: se elevado → ferropénia verdadeira. Thomas index >2 confirma."
+    },
+    {
+     "q": "Doente com DII ativa — ferro oral ou EV?",
+     "a": "Ferro EV — o ferro oral agrava a inflamação intestinal na DII ativa",
+     "e": "Guidelines ECCO recomendam ferro EV como 1ª linha na DII ativa. Ferro oral na mucosa inflamada ↑ stress oxidativo, altera microbioma, piora sintomas. Oral só se DII em remissão estável."
+    },
+    {
+     "q": "Que formulação de ferro EV tem maior risco de hipofosfatemia?",
+     "a": "Carboximaltose férrica (Ferinject) — via aumento do FGF23",
+     "e": "Ferinject ↑ FGF23 → fosfatúria → hipofosfatemia. Pode durar semanas. Monitorizar fosfato se doses repetidas. Derisomaltose (Monoferric) tem risco muito menor. Venofer (sacarose) risco mínimo."
+    },
+    {
+     "q": "Quando reavaliar a ferritina após ferro EV?",
+     "a": "Não antes de 4-8 semanas — antes está falsamente elevada",
+     "e": "A ferritina sérica sobe artificialmente logo após a infusão (ferro no SRE). Esperar 4-8 semanas para uma avaliação fidedigna dos depósitos reais."
+    }
+   ]
+  },
+  {
+   "id": "normo",
+   "label": "Normocítica",
+   "cards": [
+    {
+     "q": "Reticulócitos > 100.000/µL — significa?",
+     "a": "Resposta medular preservada — hemólise ou hemorragia",
+     "e": "A medula está a compensar. Procurar sinais de hemólise (LDH, BI, haptoglobina, Coombs) ou hemorragia. Se reticulócitos < 75.000 = hipoproliferativa."
+    },
+    {
+     "q": "Coombs direto positivo (IgG) — diagnóstico?",
+     "a": "AHAI por anticorpos quentes — 1ª linha: prednisolona 1 mg/kg",
+     "e": "70% das AHAI. Hemólise extravascular (baço). Se Coombs IgM/C3 = anticorpos frios. 2ª linha: rituximab. Esplenectomia: última instância."
+    },
+    {
+     "q": "Esquizócitos + trombocitopenia + LDH elevada — pensar em?",
+     "a": "Microangiopatia trombótica (PTT/SHU) — NÃO transfundir plaquetas",
+     "e": "PTT: ADAMTS13 < 10%. SHU: toxina Shiga. Coombs negativo (hemólise mecânica, não imune). Plasmaférese urgente na PTT. Plaquetas contraindicadas."
+    },
+    {
+     "q": "EPO inapropriadamente baixa + TFG < 30 — causa?",
+     "a": "Anemia da DRC — tratar com AEE (epoetina/darbepoetina)",
+     "e": "Alvo Hb 10-11,5 g/dL — NUNCA normalizar (risco CV: TREAT, CREATE). Corrigir ferro antes: alvo ferritina >200, sat. >20% (KDIGO 2025)."
+    },
+    {
+     "q": "Bite cells + corpos de Heinz + história de favas — diagnóstico?",
+     "a": "Défice de G6PD — hemólise por stress oxidativo",
+     "e": "X-linked. Triggers: favas, sulfamidas, dapsona, naftalina. Heinz = Hb oxidada precipitada. O baço remove-a → bite cells. Dosear G6PD após resolução (pode ser falso-normal durante crise)."
+    },
+    {
+     "q": "Esferócitos + Coombs negativo — pensar em?",
+     "a": "Esferocitose hereditária — confirmar com EMA test ou ektacitometria",
+     "e": "Defeito de membrana (ankirina/espectrina). CHCM elevado (>36). Hemólise crónica compensada. Esplenectomia se grave. Folato suplementar."
+    },
+    {
+     "q": "Pancitopenia + medula hipocelular — diagnóstico provável?",
+     "a": "Anemia aplástica — mielograma + biópsia obrigatórios",
+     "e": "Pode ser imune (maioria) ou tóxica (fármacos, radiação, benzeno). Tratamento: imunossupressão (ATG+ciclosporina) ou transplante. Fanconi se jovem."
+    },
+    {
+     "q": "Anemia + PCR elevada + ferritina > 200 + sat. < 20% — padrão?",
+     "a": "Anemia de doença crónica (DC) — sequestro de ferro por hepcidina",
+     "e": "IL-6 → hepcidina ↑ → ferroportina bloqueada → ferro preso nos macrófagos. Ferritina sobe (reagente fase aguda). sTfR normal (ao contrário da ferropénia)."
+    },
+    {
+     "q": "Hb 7 g/dL estável, sem sintomas — transfundir?",
+     "a": "Não necessariamente — a anemia crónica é bem tolerada. Transfundir se sintomático ou Hb < 7",
+     "e": "Threshold restritivo: transfundir se Hb < 7 g/dL (TRICC trial). Excepção: cardiopatia isquémica (< 8). Na hemorragia aguda com instabilidade → transfundir independentemente da Hb."
+    },
+    {
+     "q": "Hb caiu 3 g/dL em 24h com taquicardia — próximo passo?",
+     "a": "Transfusão urgente + identificar e parar hemorragia — thresholds restritivos não se aplicam",
+     "e": "Anemia aguda com compromisso hemodinâmico = transfusão imediata. Não esperar pelo resultado do hemograma — o Hb pode estar falsamente normal no início (hemoconcentrado)."
+    },
+    {
+     "q": "AHAI que não responde a prednisolona 3 semanas — próximo passo?",
+     "a": "Rituximab 375 mg/m2 semanal x 4 — 2.ª linha antes de esplenectomia",
+     "e": "Se corticorrefratária (sem resposta em 3 sem) ou corticodependente (recaída ao desmamar): rituximab. Esplenectomia é última instância. Vacinar antes (pneumococo, meningococo, Hib)."
+    },
+    {
+     "q": "Drepanocítico com dor torácica + febre + infiltrado pulmonar — diagnóstico?",
+     "a": "Síndrome torácica aguda — a principal causa de morte na drepanocitose adulta",
+     "e": "Pode mimetizar pneumonia. Tratar: O2 + analgesia + ATB empírica + transfusão (simples ou exsanguíneo se grave). Hidroxiureia em manutenção para prevenir recorrência."
+    },
+    {
+     "q": "Alvo de Hb com AEE na DRC — porquê não normalizar?",
+     "a": "Hb > 13 g/dL com AEE aumenta risco de AVC, enfarte e morte (TREAT, CREATE)",
+     "e": "Ensaios TREAT e CREATE: normalizar Hb (>13) vs alvo 10-11,5 → grupo normalizado teve mais eventos CV, sem benefício na qualidade de vida. KDIGO 2025 mantém alvo 10-11,5."
+    },
+    {
+     "q": "Doente com PTT — podes transfundir plaquetas?",
+     "a": "NAO — plaquetas agravam a microangiopatia trombótica",
+     "e": "Nas MAT (PTT/SHU), as plaquetas alimentam os microtrombos. Tratamento: plasmaférese urgente (PTT) ou eculizumab (SHU atípico). Plaquetas só se hemorragia com risco de vida imediato."
+    },
+    {
+     "q": "Quando dosear G6PD — durante a crise ou depois?",
+     "a": "DEPOIS da resolução da crise — durante pode ser falso-normal",
+     "e": "Na crise hemolítica, os eritrócitos mais deficientes em G6PD são destruídos primeiro. Os que sobram (+ reticulócitos) têm G6PD mais elevada → resultado falso-normal. Repetir 2-3 meses depois."
+    }
+   ]
+  },
+  {
+   "id": "macro",
+   "label": "Macrocítica",
+   "cards": [
+    {
+     "q": "Macro-ovalócitos + neutrófilos hipersegmentados — diagnóstico?",
+     "a": "Anemia megaloblástica (B12 ou folato)",
+     "e": "Patognomónico de defeito na síntese de DNA. Hipersegmentação = >=5 lobos nos neutrófilos. Se B12 normal e folato normal → excluir fármacos (MTX, hidroxiureia)."
+    },
+    {
+     "q": "MMA elevado + homocisteína elevada — défice de?",
+     "a": "Vitamina B12 (MMA sobe exclusivamente no défice de B12)",
+     "e": "MMA normal + Hcy ↑ = folato isolado. Ambos normais = exclui défice funcional. Útil quando B12 sérica está borderline (200-300 pg/mL)."
+    },
+    {
+     "q": "B12 < 200 pg/mL + neuropatia — via de tratamento?",
+     "a": "Hidroxocobalamina 1000 ug IM em dias alternados x 2 semanas",
+     "e": "Com neuropatia: IM obrigatório (não oral). Depois semanal x 4 semanas, depois mensal. A neuropatia é reversível se tratada precocemente."
+    },
+    {
+     "q": "Folato isolado num doente com macrocitose — risco?",
+     "a": "Mascara a anemia mas agrava a neuropatia por B12",
+     "e": "ARMADILHA: o folato corrige a macrocitose (melhora hemograma) mas a degeneração subaguda combinada progride silenciosamente. REGRA: sempre excluir B12 antes de dar folato."
+    },
+    {
+     "q": "Macrócitos redondos + RDW normal + sem hipersegmentação — causa?",
+     "a": "Macrocitose não-megaloblástica (álcool, hepatopatia, hipotiroidismo)",
+     "e": "A membrana está alterada (colesterol), não a síntese de DNA. Sem megaloblastose. GGT/AST confirmam álcool. TSH exclui hipotiroidismo. Não responde a B12/folato."
+    },
+    {
+     "q": "Anticorpos anti-fator intrínseco positivos — diagnóstico?",
+     "a": "Anemia perniciosa (gastrite autoimune tipo A)",
+     "e": "Anticorpos anti-FI são específicos (>95%) mas pouco sensíveis (~50%). Anti-células parietais são mais sensíveis mas menos específicos. B12 IM vitalícia."
+    },
+    {
+     "q": "VGM > 110 + citopenias + displasia — suspeita?",
+     "a": "Síndrome mielodisplásica (SMD) — mielograma obrigatório",
+     "e": "VGM muito alto (>110) com citopenias e displasia no esfregaço (pseudo-Pelger, granulações tóxicas) → SMD até prova em contrário. IPSS-R para prognóstico. Risco de transformação em LMA."
+    },
+    {
+     "q": "Vegetariano estrito há 4 anos com parestesias — investigação?",
+     "a": "Dosear B12, MMA e homocisteína — provável défice de B12 nutricional",
+     "e": "Depósitos de B12 duram 2-5 anos. Parestesias = neuropatia periférica em curso. Não existe fonte vegetal fiável (spirulina tem análogos inativos). Suplementação obrigatória."
+    },
+    {
+     "q": "Doente sob metotrexato — que suplementar e porquê?",
+     "a": "Acido fólico 5 mg semanal (dia seguinte ao MTX) — previne toxicidade hematológica",
+     "e": "MTX inibe a dihidrofolato redutase → depleta folato → macrocitose, pancitopenia. Folato suplementar reduz EA sem comprometer eficácia. NÃO dar no mesmo dia do MTX."
+    },
+    {
+     "q": "Pós-gastrectomia total — que défices vigiar?",
+     "a": "B12 (obrigatório, sem FI) + ferro (sem acidez gástrica) + folato",
+     "e": "Sem estômago: sem FI → B12 IM vitalícia. Sem acidez → ferro mal absorvido (pode precisar de EV). Folato geralmente mantido por dieta mas vigiar. Défice de B12 aparece em 2-5 anos."
+    },
+    {
+     "q": "Hipocaliemia súbita 3 dias após iniciar B12 IM — causa?",
+     "a": "Eritropoiese acelerada consome K+ — complicação do tratamento de megaloblástica grave",
+     "e": "A medula retoma produção intensa: as células em divisão rápida captam K+, fosfato e folato do plasma. Pode causar arritmia. Monitorizar electrólitos nos primeiros 7-10 dias. Suplementar proactivamente."
+    },
+    {
+     "q": "B12 sérica 250 pg/mL (borderline) — como confirmar défice funcional?",
+     "a": "Pedir MMA e homocisteína — se ambos elevados, tratar como défice de B12",
+     "e": "B12 200-300 = zona cinzenta. A B12 sérica mede total (ativa + inativa). MMA ↑ + Hcy ↑ confirma défice funcional. Alternativa: holotranscobalamina (B12 ativa) se disponível."
+    },
+    {
+     "q": "Macrocitose isolada sem anemia — é preciso investigar?",
+     "a": "Sim — excluir défice de B12 subclínico, hipotiroidismo, hepatopatia e fármacos",
+     "e": "Macrocitose sem anemia pode ser a apresentação inicial de: B12 subclínico (antes da anemia), hipotiroidismo, álcool crónico, ou fármacos (valproato, hidroxiureia). Não ignorar."
+    },
+    {
+     "q": "Qual a diferença entre cianocobalamina e hidroxocobalamina?",
+     "a": "Hidroxocobalamina tem maior retenção tecidular e é preferida na Europa; cianocobalamina liberta cianeto (mínimo)",
+     "e": "Ambas são convertidas nas formas ativas (metil e adenosilcobalamina). Hidroxocobalamina: liga-se melhor às proteínas → dura mais → menos injeções. Preferir em fumadores e DRC (evitar cianeto)."
+    },
+    {
+     "q": "Grávida com risco de DTN — dose de ácido fólico?",
+     "a": "5 mg/dia (não 400 ug) — se epilepsia, DM, IMC>30 ou DTN prévio",
+     "e": "Dose profilática standard: 400 ug. Dose alta (5 mg): se antiepilépticos (valproato, carbamazepina), diabetes, obesidade, ou história prévia de defeito do tubo neural. Iniciar 3 meses antes da conceção."
+    }
+   ]
+  }
+ ]
+}

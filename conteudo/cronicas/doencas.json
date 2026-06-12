@@ -190,5 +190,11 @@
     "nome": "Défice de Ferro e Anemia Ferropénica",
     "sistema": "hematologico",
     "disponivel": true
+  },
+  {
+    "id": "anemia",
+    "nome": "Anemia",
+    "sistema": "hematologico",
+    "disponivel": true
   }
 ]
