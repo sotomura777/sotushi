@@ -1,0 +1,586 @@
+/* ════════════════════════════════════════════════════════════════════════
+   EASYFARM — Guia de Fármacos. CSS portado dos HTML originais (fichas v3),
+   escopado a .easyf / .easyf-ficha. Ponte de tokens: superfícies/texto/bordas
+   ligam-se aos tokens da app (claro + escuro). A cor da classe injeta-se em
+   --cc; --cc-deep/-soft/-wash derivam por color-mix e adaptam-se ao tema.
+   Tipografia: 'Lora'/'DM Sans' do original → --fonte-display / --fonte-corpo.
+   ════════════════════════════════════════════════════════════════════════ */
+
+.easyf {
+  /* ponte de tokens da app (nomes do original → tokens MedGuia) */
+  --surface: var(--superficie);
+  --surface-2: var(--superficie-2);
+  --border: var(--borda-2);
+  --border-soft: var(--borda-2);
+  --text: var(--texto);
+  --muted: var(--suave);
+  --faint: var(--tenue);
+  --r-sm: 8px; --r-md: var(--raio-sm); --r-lg: var(--raio-md); --r-xl: var(--raio-lg);
+  --shadow-sm: var(--sombra-sm);
+  --cc: var(--acento);
+  color: var(--texto);
+  font-family: var(--fonte-corpo);
+}
+
+/* derivações da cor da classe na ficha (onde --cc é injetado por React) */
+.easyf-ficha {
+  --cc-deep: color-mix(in srgb, var(--cc) 68%, var(--texto));
+  --cc-soft: color-mix(in srgb, var(--cc) 14%, var(--superficie));
+  --cc-wash: color-mix(in srgb, var(--cc) 7%, var(--superficie));
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   LISTA (índice de fármacos) — porte do índice original (cartões por classe)
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* DISCLAIMER expansível ("Saber mais") */
+.easyf-disc {
+  display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left;
+  background: #FEF3C7; border: 1px solid #FDE68A; border-radius: var(--raio-sm);
+  padding: 10px 14px; margin-bottom: 12px; cursor: pointer; font: inherit;
+  transition: background .15s;
+}
+.easyf-disc:hover { background: #FEF0BD; }
+.easyf-disc-ico {
+  width: 22px; height: 22px; min-width: 22px; background: #D97706; color: #fff;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 13px;
+}
+.easyf-disc-txt { font-size: 13px; color: #78350F; line-height: 1.45; }
+.easyf-disc-txt b { color: #78350F; }
+.easyf-disc-mais { display: inline-block; color: #B45309; font-weight: 600; text-decoration: underline; margin-left: 4px; }
+.dark .easyf-disc { background: rgba(251,191,36,.13); border-color: rgba(251,191,36,.30); }
+.dark .easyf-disc:hover { background: rgba(251,191,36,.18); }
+.dark .easyf-disc-txt, .dark .easyf-disc-txt b { color: #fcd34d; }
+.dark .easyf-disc-mais { color: #fbbf24; }
+
+.easyf-disc-exp {
+  background: var(--superficie); border: 1px solid var(--borda-2);
+  border-radius: var(--raio-sm); padding: 18px 20px; margin-bottom: 14px;
+  box-shadow: var(--brilho);
+}
+.easyf-disc-exp h3 { margin: 0 0 10px; font-family: var(--fonte-display); font-size: 16px; font-weight: 700; color: var(--texto); }
+.easyf-disc-exp p { margin: 8px 0; font-size: 13.5px; line-height: 1.55; color: var(--texto-2); }
+.easyf-disc-exp ul { margin: 6px 0 10px 18px; padding: 0; font-size: 13.5px; }
+.easyf-disc-exp li { margin: 4px 0; line-height: 1.5; color: var(--texto-2); }
+.easyf-disc-exp b { color: var(--texto); font-weight: 600; }
+
+/* TOOLBAR (pesquisa + botão Filtros) */
+.easyf-toolbar { display: flex; gap: 8px; margin-bottom: 14px; }
+.easyf-searchwrap { position: relative; flex: 1; }
+.easyf-search-ico {
+  position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+  color: var(--tenue); display: flex; pointer-events: none;
+}
+.easyf-search.campo { padding-left: 38px; }
+.easyf-filtro-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--superficie); border: 1px solid var(--borda-2);
+  border-radius: var(--raio-sm); padding: 0 16px;
+  font: inherit; font-size: 13.5px; font-weight: 600; color: var(--texto-2);
+  cursor: pointer; white-space: nowrap; transition: all .15s;
+  box-shadow: var(--brilho);
+}
+.easyf-filtro-btn:hover { border-color: var(--acento); }
+.easyf-filtro-btn.ativo { border-color: var(--acento); color: var(--acento); }
+.easyf-filtro-badge {
+  background: var(--acento); color: #fff; font-size: 11px; font-weight: 700;
+  min-width: 18px; height: 18px; padding: 0 5px; border-radius: 100px;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+/* CHIPS ATIVOS */
+.easyf-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 14px; }
+.easyf-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--acento); color: #fff; border-radius: 100px;
+  padding: 5px 6px 5px 12px; font-size: 12.5px; font-weight: 500;
+}
+.easyf-chip-cat { font-size: 10px; text-transform: uppercase; letter-spacing: .4px; opacity: .7; font-weight: 600; margin-right: 2px; }
+.easyf-chip-x {
+  width: 18px; height: 18px; background: rgba(255,255,255,.22); border: none;
+  border-radius: 100px; color: #fff; cursor: pointer; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 14px; line-height: 1;
+}
+.easyf-chip-x:hover { background: rgba(255,255,255,.38); }
+.easyf-chips-limpar {
+  background: none; border: none; color: var(--suave); font: inherit;
+  font-size: 12px; font-weight: 500; cursor: pointer; padding: 4px 8px; margin-left: 4px;
+}
+.easyf-chips-limpar:hover { color: var(--texto); text-decoration: underline; }
+
+.easyf-meta { font-size: 12px; color: var(--suave); margin: 0 2px 14px; }
+.easyf-vazio { text-align: center; color: var(--suave); padding: 28px 0; font-size: 14px; }
+
+/* ── CARTÕES COLORIDOS POR CLASSE ── */
+.easyf-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.drug-card {
+  --cc-deep: color-mix(in srgb, var(--cc) 35%, #0a0a0a);
+  --cc-soft: color-mix(in srgb, var(--cc) 28%, white);
+  --cc-wash: color-mix(in srgb, var(--cc) 10%, white);
+  position: relative; border-radius: var(--raio-md); padding: 18px 18px 16px;
+  cursor: pointer; overflow: hidden; isolation: isolate;
+  transition: transform .18s cubic-bezier(.4,0,.2,1), box-shadow .18s, filter .15s;
+}
+.drug-card[data-variant="light"] {
+  background: linear-gradient(140deg, var(--cc-soft) 0%, var(--cc-wash) 55%, #fff 100%);
+  color: #161616;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.85), inset 0 -1px 0 color-mix(in srgb, var(--cc) 25%, transparent),
+    0 1px 2px rgba(0,0,0,.04), 0 6px 16px color-mix(in srgb, var(--cc) 20%, transparent);
+}
+.drug-card[data-variant="dark"] {
+  background: linear-gradient(140deg, var(--cc) 0%, color-mix(in srgb, var(--cc) 60%, #0a0a0a) 60%, var(--cc-deep) 100%);
+  color: #fdfdfd;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 -1px 0 rgba(0,0,0,.4),
+    0 2px 4px rgba(0,0,0,.08), 0 10px 24px color-mix(in srgb, var(--cc) 35%, transparent);
+}
+.drug-card:hover { transform: translateY(-2px); filter: brightness(1.03) saturate(1.05); }
+.drug-card::before {
+  content: ''; position: absolute; top: 14px; left: 0; width: 3px; height: 24px;
+  background: var(--cc); border-radius: 0 3px 3px 0; opacity: 0;
+}
+.drug-card[data-variant="light"]::before { opacity: 1; }
+.drug-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 4px; flex-wrap: wrap; }
+.drug-name { font-family: var(--fonte-display); font-size: 20px; font-weight: 700; line-height: 1.15; letter-spacing: -.01em; }
+.drug-class {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  cursor: pointer; text-decoration: underline dotted transparent; text-underline-offset: 3px;
+  transition: text-decoration-color .12s;
+}
+.drug-class:hover { text-decoration-color: currentColor; }
+.drug-class.active { text-decoration: underline solid currentColor; }
+.drug-card[data-variant="light"] .drug-class { color: color-mix(in srgb, var(--cc) 75%, #0a0a0a); }
+.drug-card[data-variant="dark"] .drug-class { color: rgba(255,255,255,.78); }
+.drug-brands { font-size: 12px; margin-bottom: 12px; line-height: 1.5; }
+.drug-card[data-variant="light"] .drug-brands { color: #555; }
+.drug-card[data-variant="dark"] .drug-brands { color: rgba(255,255,255,.72); }
+.drug-brands b { font-weight: 600; }
+.drug-card[data-variant="light"] .drug-brands b { color: #2a2a2a; }
+.drug-card[data-variant="dark"] .drug-brands b { color: rgba(255,255,255,.92); }
+.drug-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.drug-tag {
+  border-radius: 100px; padding: 3px 10px; font-size: 11.5px; font-weight: 500;
+  cursor: pointer; transition: all .12s; backdrop-filter: blur(8px);
+}
+.drug-card[data-variant="light"] .drug-tag {
+  background: rgba(255,255,255,.7); border: 1px solid color-mix(in srgb, var(--cc) 25%, transparent);
+  color: color-mix(in srgb, var(--cc) 70%, #0a0a0a);
+}
+.drug-card[data-variant="light"] .drug-tag:hover { background: #fff; border-color: var(--cc); }
+.drug-card[data-variant="dark"] .drug-tag {
+  background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.25); color: #fff;
+}
+.drug-card[data-variant="dark"] .drug-tag:hover { background: rgba(255,255,255,.3); }
+.drug-tag.active { background: #1A1A1A; border-color: #1A1A1A; color: #fff; }
+
+/* ── PAINEL DE FILTROS (slide-over) ── */
+.easyf-overlay {
+  position: fixed; inset: 0; background: rgba(20,20,20,.4);
+  opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50;
+}
+.easyf-overlay.open { opacity: 1; pointer-events: auto; }
+.easyf-panel {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(420px, 100%);
+  background: var(--fundo); transform: translateX(100%);
+  transition: transform .25s cubic-bezier(.4,0,.2,1);
+  z-index: 51; display: flex; flex-direction: column; box-shadow: var(--sombra-md);
+}
+.easyf-panel.open { transform: translateX(0); }
+.easyf-fp-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 20px; border-bottom: 1px solid var(--borda-2); background: var(--superficie);
+}
+.easyf-fp-title { font-family: var(--fonte-display); font-size: 19px; font-weight: 700; color: var(--texto); }
+.easyf-fp-close {
+  width: 32px; height: 32px; border: none; background: var(--superficie-2);
+  border-radius: 100px; cursor: pointer; font-size: 16px; color: var(--suave);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.easyf-fp-close:hover { background: var(--borda-2); color: var(--texto); }
+.easyf-fp-body { flex: 1; overflow-y: auto; padding: 6px 0; }
+.easyf-fp-group { border-bottom: 1px solid var(--borda-2); padding: 16px 20px; }
+.easyf-fp-group-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.easyf-fp-group-title { font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--suave); }
+.easyf-fp-group-count { font-size: 11px; color: var(--acento); font-weight: 600; }
+.easyf-fp-options { display: flex; flex-direction: column; gap: 2px; }
+.easyf-fp-option {
+  display: flex; align-items: center; gap: 10px; padding: 9px 10px;
+  border-radius: var(--raio-sm); cursor: pointer; transition: background .12s;
+  font-size: 13.5px; color: var(--texto-2);
+}
+.easyf-fp-option:hover { background: var(--superficie-2); }
+.easyf-fp-check {
+  width: 18px; height: 18px; flex-shrink: 0; position: relative;
+  border: 1.5px solid var(--borda-2); border-radius: 5px; background: var(--superficie);
+  display: inline-flex; align-items: center; justify-content: center; transition: all .12s;
+}
+.easyf-fp-option.checked .easyf-fp-check { background: var(--acento); border-color: var(--acento); }
+.easyf-fp-check::after {
+  content: ''; width: 9px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translate(1px, -1px); opacity: 0; transition: opacity .12s;
+}
+.easyf-fp-option.checked .easyf-fp-check::after { opacity: 1; }
+.easyf-fp-opt-label { flex: 1; display: flex; align-items: center; gap: 8px; }
+.easyf-fp-swatch { width: 10px; height: 10px; border-radius: 100px; flex-shrink: 0; box-shadow: 0 0 0 1px rgba(0,0,0,.05); }
+.easyf-fp-opt-count { font-size: 11.5px; color: var(--tenue); font-variant-numeric: tabular-nums; }
+.easyf-fp-foot { display: flex; gap: 8px; padding: 14px 20px; border-top: 1px solid var(--borda-2); background: var(--superficie); }
+.easyf-fp-btn { flex: 1; padding: 11px 16px; border-radius: var(--raio-sm); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: all .15s; }
+.easyf-fp-btn.sec { background: var(--superficie); border: 1px solid var(--borda-2); color: var(--texto); }
+.easyf-fp-btn.sec:hover { background: var(--superficie-2); }
+.easyf-fp-btn.pri { background: var(--acento); border: 1px solid var(--acento); color: #fff; }
+.easyf-fp-btn.pri:hover { filter: brightness(1.08); }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   FICHA (detalhe do fármaco) — porte do CSS original, escopado
+   ───────────────────────────────────────────────────────────────────────── */
+.easyf-ficha { max-width: 780px; margin: 0 auto; padding: 4px 2px 40px; }
+
+.easyf-ficha .back-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: none; border: none; padding: 6px 0;
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--suave);
+  cursor: pointer; margin-bottom: 14px; transition: color .12s;
+}
+.easyf-ficha .back-btn:hover { color: var(--cc-deep); }
+
+/* ── HERO ── */
+.easyf-ficha .hero {
+  margin-bottom: 22px; padding-bottom: 20px;
+  border-bottom: 1px solid var(--borda-2);
+  position: relative; background: none;
+}
+.easyf-ficha .hero::before {
+  content: ''; position: absolute;
+  top: 2px; left: -2px; width: 4px; height: 56px;
+  background: var(--cc); border-radius: 0 4px 4px 0;
+}
+.easyf-ficha .hero-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--cc-soft); color: var(--cc-deep);
+  font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase;
+  padding: 4px 11px; border-radius: 100px; margin-bottom: 11px;
+  border: 1px solid color-mix(in srgb, var(--cc) 22%, transparent);
+}
+.easyf-ficha .hero-pill::before {
+  content: ''; width: 6px; height: 6px; border-radius: 100px; background: var(--cc);
+}
+.easyf-ficha .hero-title {
+  font-family: var(--fonte-display);
+  font-size: 34px; font-weight: 700; line-height: 1.05; letter-spacing: -.02em;
+  color: var(--cc-deep); margin-bottom: 8px;
+}
+.easyf-ficha .hero-actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
+.easyf-ficha .hero-action {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 11px; background: var(--superficie);
+  border: 1px solid var(--borda-2); border-radius: 100px;
+  font-size: 12px; font-weight: 500; color: var(--suave);
+  text-decoration: none; cursor: pointer; transition: all .15s;
+}
+.easyf-ficha .hero-action:hover { background: var(--cc-soft); border-color: var(--cc); color: var(--cc-deep); }
+.easyf-ficha .hero-action svg { width: 12px; height: 12px; flex-shrink: 0; }
+.easyf-ficha .hero-review {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11.5px; color: var(--tenue); margin: 0 0 12px 2px;
+}
+.easyf-ficha .hero-review svg { width: 12px; height: 12px; }
+.easyf-ficha .hero-review b { font-weight: 600; color: var(--suave); }
+.easyf-ficha .hero-brands { font-size: 13px; color: var(--suave); margin-bottom: 13px; line-height: 1.5; }
+.easyf-ficha .hero-brands b { color: var(--texto); font-weight: 600; }
+.easyf-ficha .hero-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.easyf-ficha .hero-tag {
+  background: var(--superficie); border: 1px solid var(--borda-2);
+  border-radius: 100px; padding: 4px 11px;
+  font-size: 11.5px; font-weight: 500; color: var(--suave);
+}
+
+/* ── TABS ── */
+.easyf-ficha .tabs-wrap {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--fundo);
+  margin: 0 -2px 20px; padding: 0 2px;
+  border-bottom: 1px solid var(--borda-2);
+}
+.easyf-ficha .tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.easyf-ficha .tabs::-webkit-scrollbar { display: none; }
+.easyf-ficha .tab-btn {
+  flex-shrink: 0; background: none; border: none;
+  padding: 12px 4px; margin: 0 10px;
+  font: inherit; font-size: 13.5px; font-weight: 500; color: var(--suave);
+  cursor: pointer; position: relative; white-space: nowrap; transition: color .12s;
+}
+.easyf-ficha .tab-btn:first-child { margin-left: 0; }
+.easyf-ficha .tab-btn:hover { color: var(--texto); }
+.easyf-ficha .tab-btn.active { color: var(--cc-deep); font-weight: 700; }
+.easyf-ficha .tab-btn.active::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -1px;
+  height: 2.5px; background: var(--cc); border-radius: 2px 2px 0 0;
+}
+.easyf-ficha .tab-panel { display: block; animation: easyf-fade .2s ease-out; }
+@keyframes easyf-fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+/* ── SUB-TABS ── */
+.easyf-ficha .sub-tabs {
+  display: flex; gap: 4px; background: var(--superficie-2);
+  border-radius: 100px; padding: 3px; margin-bottom: 16px;
+  width: fit-content; max-width: 100%; overflow-x: auto; scrollbar-width: none;
+}
+.easyf-ficha .sub-tabs::-webkit-scrollbar { display: none; }
+.easyf-ficha .sub-tab {
+  flex-shrink: 0; background: none; border: none;
+  padding: 6px 14px; border-radius: 100px;
+  font: inherit; font-size: 12.5px; font-weight: 500; color: var(--suave);
+  cursor: pointer; white-space: nowrap; transition: all .15s;
+}
+.easyf-ficha .sub-tab:hover { color: var(--texto); }
+.easyf-ficha .sub-tab.active {
+  background: var(--superficie); color: var(--cc-deep); font-weight: 700;
+  box-shadow: var(--sombra-sm);
+}
+
+/* ── CARD ── */
+.easyf-ficha .card {
+  background: var(--superficie);
+  border: 1px solid var(--borda-2);
+  border-radius: var(--raio-md);
+  box-shadow: var(--brilho);
+  padding: 18px 20px; margin-bottom: 14px;
+}
+.easyf-ficha .card-eyebrow {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase;
+  color: var(--cc-deep); margin-bottom: 4px; display: flex; align-items: center; gap: 6px;
+}
+.easyf-ficha .card-eyebrow::before {
+  content: ''; width: 14px; height: 1.5px; background: var(--cc); border-radius: 2px;
+}
+.easyf-ficha .card-title {
+  font-family: var(--fonte-display); font-size: 18px; font-weight: 700;
+  margin-bottom: 12px; letter-spacing: -.005em; color: var(--texto);
+}
+.easyf-ficha .card-body { font-size: 14px; color: var(--texto-2); line-height: 1.6; }
+.easyf-ficha .card-body p + p { margin-top: 8px; }
+.easyf-ficha .card-body b { font-weight: 600; color: var(--texto); }
+.easyf-ficha .card-body ul { margin: 8px 0 0 16px; }
+.easyf-ficha .card-body li { margin-top: 3px; }
+
+/* ── "LINGUAGEM SIMPLES" (decode → <details>) ── */
+.easyf-ficha .easyf-decode { margin-bottom: 14px; }
+.easyf-ficha .easyf-decode > summary {
+  list-style: none; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--superficie); border: 1px solid var(--borda-2);
+  border-radius: 100px; padding: 7px 13px;
+  font-size: 12.5px; font-weight: 600; color: var(--suave);
+  transition: all .15s;
+}
+.easyf-ficha .easyf-decode > summary::-webkit-details-marker { display: none; }
+.easyf-ficha .easyf-decode > summary:hover { border-color: var(--cc); color: var(--cc-deep); }
+.easyf-ficha .easyf-decode[open] > summary { background: var(--cc-soft); border-color: var(--cc); color: var(--cc-deep); }
+.easyf-ficha .easyf-decode .decode-section { display: block; margin-top: 12px; }
+.easyf-ficha .easyf-decode .decode-section.card {
+  background: var(--cc-wash);
+  border-color: color-mix(in srgb, var(--cc) 18%, transparent);
+}
+
+/* ── MECANISMO: STEPS ── */
+.easyf-ficha .mec-steps { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 4px; }
+@media (min-width: 560px) { .easyf-ficha .mec-steps { grid-template-columns: 1fr 1fr; } }
+.easyf-ficha .mec-step {
+  display: flex; gap: 14px; align-items: flex-start; padding: 14px;
+  background: var(--cc-wash);
+  border: 1px solid color-mix(in srgb, var(--cc) 14%, transparent);
+  border-radius: var(--raio-sm);
+}
+.easyf-ficha .mec-number {
+  flex-shrink: 0; width: 26px; height: 26px;
+  background: var(--cc); color: #fff; border-radius: 100px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12.5px; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.easyf-ficha .mec-title { font-size: 13.5px; font-weight: 600; margin-bottom: 3px; line-height: 1.3; color: var(--texto); }
+.easyf-ficha .mec-text { font-size: 12.5px; color: var(--suave); line-height: 1.5; }
+
+/* ── TABELA ── */
+.easyf-ficha .table-scroll, .easyf-pedcalc .table-scroll { overflow-x: auto; margin: 0 -2px; }
+.easyf-ficha .data-table, .easyf-pedcalc .data-table {
+  width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px;
+}
+.easyf-ficha .data-table th, .easyf-pedcalc .data-table th {
+  text-align: left; padding: 9px 12px;
+  font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px;
+  color: var(--suave); background: var(--superficie-2);
+  border-bottom: 1px solid var(--borda-2);
+}
+.easyf-ficha .data-table td, .easyf-pedcalc .data-table td {
+  padding: 10px 12px; border-bottom: 1px solid var(--borda-2); color: var(--texto-2);
+}
+.easyf-ficha .data-table tr:last-child td, .easyf-pedcalc .data-table tr:last-child td { border-bottom: none; }
+.easyf-ficha .data-table td b, .easyf-pedcalc .data-table td b { color: var(--texto); font-weight: 600; }
+
+/* ── NOTAS (grade) ── */
+.easyf-ficha .note-grid { display: grid; gap: 10px; grid-template-columns: 1fr; margin-top: 4px; }
+@media (min-width: 560px) { .easyf-ficha .note-grid { grid-template-columns: 1fr 1fr; } }
+.easyf-ficha .note {
+  padding: 12px 14px; background: var(--superficie);
+  border: 1px solid var(--borda-2); border-radius: var(--raio-sm);
+  border-left: 3px solid var(--cc);
+}
+.easyf-ficha .note-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; line-height: 1.3; color: var(--texto); }
+.easyf-ficha .note-body { font-size: 12.5px; color: var(--suave); line-height: 1.55; }
+.easyf-ficha .note-body b { color: var(--texto); font-weight: 600; }
+
+/* ── TIPS (grade) ── */
+.easyf-ficha .tips-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 4px; }
+@media (min-width: 560px) { .easyf-ficha .tips-grid { grid-template-columns: 1fr 1fr; } }
+.easyf-ficha .tip {
+  padding: 12px 14px; background: var(--superficie);
+  border: 1px solid color-mix(in srgb, var(--cc) 18%, transparent);
+  border-radius: var(--raio-sm);
+}
+.easyf-ficha .tip-title { font-size: 13px; font-weight: 600; color: var(--cc-deep); margin-bottom: 3px; line-height: 1.3; }
+.easyf-ficha .tip-body { font-size: 12.5px; color: var(--suave); line-height: 1.55; }
+.easyf-ficha .tip-body b { color: var(--texto); font-weight: 600; }
+
+/* ── ACORDEÃO DE INDICAÇÃO (indication-item → <details>) ── */
+.easyf-ficha .indication-list { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.easyf-ficha .indication-item {
+  background: var(--superficie); border: 1px solid var(--borda-2);
+  border-radius: var(--raio-sm); overflow: hidden;
+  transition: border-color .15s, box-shadow .15s;
+}
+.easyf-ficha .indication-item[open] {
+  border-color: color-mix(in srgb, var(--cc) 35%, transparent);
+  box-shadow: var(--sombra-sm);
+}
+.easyf-ficha .indication-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 13px 16px; cursor: pointer; list-style: none; transition: background .12s;
+}
+.easyf-ficha .indication-header::-webkit-details-marker { display: none; }
+.easyf-ficha .indication-header:hover { background: var(--cc-wash); }
+.easyf-ficha .indication-name { font-size: 13.5px; font-weight: 600; color: var(--texto); line-height: 1.35; }
+.easyf-ficha .indication-chevron { flex-shrink: 0; width: 16px; height: 16px; color: var(--cc); transition: transform .2s; }
+.easyf-ficha .indication-item[open] .indication-chevron { transform: rotate(180deg); }
+.easyf-ficha .indication-body-inner {
+  padding: 12px 16px 14px; font-size: 13px; color: var(--texto-2); line-height: 1.6;
+  border-top: 1px solid var(--borda-2);
+}
+.easyf-ficha .indication-body-inner p + p { margin-top: 7px; }
+.easyf-ficha .indication-body-inner b { font-weight: 600; color: var(--texto); }
+
+/* ── DOSE BLOCK / DOSE BOX ── */
+.easyf-ficha .dose-block {
+  display: grid; grid-template-columns: auto 1fr; gap: 4px 16px;
+  padding: 14px 16px; background: var(--cc-wash);
+  border-left: 3px solid var(--cc); border-radius: 0 var(--raio-sm) var(--raio-sm) 0;
+  margin-bottom: 12px;
+}
+.easyf-ficha .dose-block dt, .easyf-ficha .dose-box dt {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  color: var(--cc-deep); align-self: center;
+}
+.easyf-ficha .dose-block dd { font-size: 14.5px; font-weight: 600; color: var(--texto); line-height: 1.35; }
+.easyf-ficha .dose-block dd small { display: block; font-size: 12px; font-weight: 400; color: var(--suave); margin-top: 2px; }
+.easyf-ficha .dose-box {
+  display: grid; grid-template-columns: auto 1fr; gap: 4px 14px;
+  padding: 14px 16px; background: var(--cc-wash);
+  border: 1px solid color-mix(in srgb, var(--cc) 16%, transparent);
+  border-radius: var(--raio-sm); font-size: 13.5px; margin-bottom: 10px;
+}
+.easyf-ficha .dose-box dd { color: var(--texto); }
+
+/* ── CONTEXTO (prose) ── */
+.easyf-ficha .indication-context { font-size: 13px; color: var(--texto-2); line-height: 1.6; }
+.easyf-ficha .indication-context p + p { margin-top: 7px; }
+.easyf-ficha .indication-context b { font-weight: 600; color: var(--texto); }
+.easyf-ficha .indication-context ul { margin: 8px 0 0 16px; }
+
+/* ── ALERTAS ── */
+.easyf-ficha .alert, .easyf-pedcalc .alert {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 12px 14px; border-radius: var(--raio-sm);
+  font-size: 13px; line-height: 1.5; margin-bottom: 10px;
+}
+.easyf-ficha .alert b, .easyf-pedcalc .alert b { font-weight: 700; }
+.easyf-ficha .alert-warn { background: #FEF3C7; border: 1px solid #FDE68A; color: #78350F; }
+.easyf-ficha .alert-danger { background: #FEE2E2; border: 1px solid #FECACA; color: #7F1D1D; }
+.easyf-ficha .alert-info, .easyf-pedcalc .alert-info {
+  background: var(--cc-wash); border: 1px solid color-mix(in srgb, var(--cc) 18%, transparent); color: var(--cc-deep);
+}
+.easyf-ficha .alert-icon, .easyf-pedcalc .alert-icon {
+  flex-shrink: 0; width: 18px; height: 18px;
+  font-weight: 700; font-size: 11px;
+  display: inline-flex; align-items: center; justify-content: center; border-radius: 100px;
+}
+.easyf-ficha .alert-warn.alert-icon { background: #FBBF24; color: #78350F; }
+.easyf-ficha .alert-danger.alert-icon { background: #DC2626; color: #fff; }
+.easyf-ficha .alert-info.alert-icon, .easyf-pedcalc .alert-info.alert-icon { background: var(--cc); color: #fff; }
+/* legibilidade no tema escuro: caixas semânticas translúcidas */
+.dark .easyf-ficha .alert-warn { background: rgba(251,191,36,.13); border-color: rgba(251,191,36,.30); color: #fcd34d; }
+.dark .easyf-ficha .alert-danger { background: rgba(248,113,113,.13); border-color: rgba(248,113,113,.30); color: #fca5a5; }
+.dark .easyf-ficha .alert-warn.alert-icon { background: #fbbf24; color: #3a2606; }
+.dark .easyf-ficha .alert-danger.alert-icon { background: #ef4444; color: #fff; }
+
+/* ── CALCULADORA PEDIÁTRICA ── */
+.easyf-pedcalc { margin-bottom: 4px; }
+.easyf-pedcalc .ped-toggle-group { margin-bottom: 14px; }
+.easyf-pedcalc .ped-toggle-label {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  color: var(--suave); margin-bottom: 6px;
+}
+.easyf-pedcalc .ped-toggles {
+  display: inline-flex; gap: 2px; background: var(--superficie-2); border-radius: 100px; padding: 3px;
+}
+.easyf-pedcalc .ped-toggle {
+  background: none; border: none; padding: 6px 14px; border-radius: 100px;
+  font: inherit; font-size: 12.5px; font-weight: 500; color: var(--suave);
+  cursor: pointer; white-space: nowrap; transition: all .15s;
+}
+.easyf-pedcalc .ped-toggle:hover { color: var(--texto); }
+.easyf-pedcalc .ped-toggle.active { background: var(--superficie); color: var(--cc-deep); font-weight: 700; box-shadow: var(--sombra-sm); }
+.easyf-pedcalc .formula-badge {
+  display: inline-block; background: var(--cc-soft); color: var(--cc-deep);
+  font-size: 13.5px; font-weight: 600; padding: 8px 14px; border-radius: var(--raio-sm);
+  border: 1px solid color-mix(in srgb, var(--cc) 22%, transparent); margin: 6px 0 10px;
+}
+
+/* ── BIBLIOGRAFIA ── */
+.easyf-ficha .sources {
+  margin-top: 28px; padding: 22px 20px; background: var(--superficie-2);
+  border-radius: var(--raio-md); border: 1px solid var(--borda-2);
+}
+.easyf-ficha .sources-eyebrow {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase;
+  color: var(--cc-deep); margin-bottom: 4px; display: flex; align-items: center; gap: 6px;
+}
+.easyf-ficha .sources-eyebrow::before { content: ''; width: 14px; height: 1.5px; background: var(--cc); border-radius: 2px; }
+.easyf-ficha .sources-title { font-family: var(--fonte-display); font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--texto); }
+.easyf-ficha .sources-sub { font-size: 12.5px; color: var(--suave); line-height: 1.6; margin-bottom: 16px; }
+.easyf-ficha .sources-list { list-style: none; padding: 0; counter-reset: src; }
+.easyf-ficha .sources-list li {
+  counter-increment: src; display: grid; grid-template-columns: 22px 1fr; gap: 12px;
+  padding: 10px 0; border-top: 1px solid var(--borda-2); font-size: 13px; line-height: 1.55; color: var(--texto-2);
+}
+.easyf-ficha .sources-list li:first-child { border-top: none; padding-top: 0; }
+.easyf-ficha .sources-list li::before {
+  content: counter(src); width: 22px; height: 22px;
+  background: var(--cc-soft); color: var(--cc-deep); border-radius: 100px;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 11.5px; font-weight: 700;
+}
+.easyf-ficha .sources-list b { font-weight: 600; color: var(--texto); }
+.easyf-ficha .src-tag {
+  display: inline-block; background: var(--cc-soft); color: var(--cc-deep);
+  border: 1px solid color-mix(in srgb, var(--cc) 18%, transparent);
+  font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 100px;
+  margin-left: 6px; vertical-align: middle;
+}
+.easyf-ficha .src-tag.src-regulator { background: #FEF3C7; color: #78350F; border-color: #FDE68A; }
+.easyf-ficha .src-tag.src-trial { background: #F3E8FF; color: #6B21A8; border-color: #E9D5FF; }
+.dark .easyf-ficha .src-tag.src-regulator { background: rgba(251,191,36,.14); color: #fcd34d; border-color: rgba(251,191,36,.3); }
+.dark .easyf-ficha .src-tag.src-trial { background: rgba(192,132,252,.16); color: #d8b4fe; border-color: rgba(192,132,252,.3); }
+
+/* ── separador de secção (section-head) ── */
+.easyf-ficha .section-head {
+  font-family: var(--fonte-display); font-size: 16px; font-weight: 700;
+  margin: 18px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--borda-2); color: var(--texto);
+}

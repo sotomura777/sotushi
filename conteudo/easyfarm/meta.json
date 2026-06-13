@@ -1,0 +1,318 @@
+{
+ "nome": "EasyFarm",
+ "titulo": "Guia de Fármacos",
+ "subtitulo": "Fichas completas: mecanismo, posologia, formulações e segurança",
+ "disclaimer": "Conteúdo educativo. Não substitui o julgamento clínico nem o RCM em vigor. Verificar sempre o Infomed do INFARMED.",
+ "disclaimerExpandedHtml": "<h3>Sobre esta ferramenta</h3>\n    <p>Esta é uma <b>ferramenta educativa</b> destinada a estudantes de medicina, internos e profissionais de saúde, para apoio ao estudo e à consulta rápida de informação farmacológica.</p>\n    <p><b>Não substitui:</b></p>\n    <ul>\n      <li>O Resumo das Características do Medicamento (RCM) em vigor, disponível no <b>Infomed</b> do INFARMED</li>\n      <li>O julgamento clínico do profissional de saúde</li>\n      <li>As guidelines e protocolos institucionais aplicáveis</li>\n    </ul>\n    <p><b>Limitações importantes:</b></p>\n    <ul>\n      <li>As <b>formulações comerciais</b> variam ao longo do tempo (descontinuações, novos genéricos, alterações de apresentação). A listagem nesta ferramenta é indicativa, não exaustiva nem garantidamente atual.</li>\n      <li>As <b>posologias</b> apresentadas são as habituais; o ajuste individual depende sempre do contexto clínico, comorbilidades, idade, função renal e hepática, interações medicamentosas e outras variáveis.</li>\n      <li>As <b>guidelines</b> são revistas periodicamente. Verificar a versão em vigor antes de decisões clínicas.</li>\n    </ul>\n    <p style=\"font-size: 12px; color: var(--muted); margin-top: 14px;\">Última revisão geral: <b>Junho 2026</b>.</p>",
+ "classStyle": {
+  "saba": {
+   "color": "#06B6D4",
+   "variant": "light"
+  },
+  "laba": {
+   "color": "#0284C7",
+   "variant": "dark"
+  },
+  "ics": {
+   "color": "#F59E0B",
+   "variant": "light"
+  },
+  "lama": {
+   "color": "#8B5CF6",
+   "variant": "dark"
+  },
+  "ieca": {
+   "color": "#EC4899",
+   "variant": "light"
+  },
+  "ara": {
+   "color": "#F43F5E",
+   "variant": "dark"
+  },
+  "bb": {
+   "color": "#10B981",
+   "variant": "light"
+  },
+  "bcc": {
+   "color": "#6366F1",
+   "variant": "dark"
+  },
+  "aine": {
+   "color": "#EA580C",
+   "variant": "dark"
+  },
+  "para": {
+   "color": "#0D9488",
+   "variant": "light"
+  },
+  "rmusc": {
+   "color": "#7E22CE",
+   "variant": "dark"
+  }
+ },
+ "farmacos": [
+  {
+   "dci": "Salbutamol",
+   "slug": "salbutamol",
+   "classe": "β2-agonista de curta ação (SABA)",
+   "classeKey": "saba",
+   "sistema": "Respiratório",
+   "marcas": [
+    "Salbutamol (genérico)",
+    "Ventilan",
+    "Ventilan-Inalador",
+    "Ventilan Rotacaps",
+    "Airomir",
+    "Salbutamol Sandoz",
+    "Salbutamol Taifun",
+    "Salbutamol Novolizer",
+    "Salbutamol Clickhaler",
+    "Butovent Pulvinal",
+    "Combivent (com ipratrópio)",
+    "Propavente (com ipratrópio)"
+   ],
+   "indicacoes": [
+    "Asma",
+    "DPOC",
+    "Broncospasmo"
+   ]
+  },
+  {
+   "dci": "Formoterol",
+   "slug": "formoterol",
+   "classe": "β2-agonista de longa ação (LABA)",
+   "classeKey": "laba",
+   "sistema": "Respiratório",
+   "marcas": [
+    "Foradil",
+    "Atimos",
+    "Formoterol Generis",
+    "Formoterol Mylan",
+    "Symbicort",
+    "BiResp/DuoResp",
+    "Bufomix Easyhaler",
+    "Foster",
+    "Foster NEXThaler",
+    "Formodual",
+    "Flutiform",
+    "Brimica Genuair",
+    "Trimbow (tripla)",
+    "Riltrava Aerosphere (tripla)"
+   ],
+   "indicacoes": [
+    "Asma",
+    "DPOC"
+   ]
+  },
+  {
+   "dci": "Budesonida",
+   "slug": "budesonida",
+   "classe": "Corticoide inalado (ICS)",
+   "classeKey": "ics",
+   "sistema": "Respiratório",
+   "marcas": [
+    "Budesonida (genérico)",
+    "Pulmicort",
+    "Miflonide",
+    "Budesonida Farmoz",
+    "Budesonida Novolizer",
+    "Pulmicort Nasal Aqua",
+    "Aeromax Nasal",
+    "Entocort (oral)",
+    "Jorveza (orodispersável)",
+    "Symbicort (com formoterol)",
+    "BiResp/DuoResp",
+    "Bufomix Easyhaler"
+   ],
+   "indicacoes": [
+    "Asma",
+    "DPOC",
+    "Doença de Crohn"
+   ]
+  },
+  {
+   "dci": "Tiotrópio",
+   "slug": "tiotropio",
+   "classe": "Anticolinérgico de longa ação (LAMA)",
+   "classeKey": "lama",
+   "sistema": "Respiratório",
+   "marcas": [
+    "Tiotrópio (genérico)",
+    "Spiriva HandiHaler",
+    "Spiriva Respimat",
+    "Spiolto Respimat (com olodaterol)"
+   ],
+   "indicacoes": [
+    "DPOC",
+    "Asma grave"
+   ]
+  },
+  {
+   "dci": "Enalapril",
+   "slug": "enalapril",
+   "classe": "IECA",
+   "classeKey": "ieca",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Enalapril (genérico)",
+    "Renitec",
+    "Enalapril Generis",
+    "Enalapril Ciclum",
+    "Enalapril Sandoz",
+    "Enalapril Bluepharma",
+    "Enalapril Mepha",
+    "Enalapril Inventis",
+    "Maleato de Enalapril Mylan",
+    "Co-Renitec (com HCT)",
+    "Combinações com lercanidipina"
+   ],
+   "indicacoes": [
+    "HTA",
+    "Insuficiência cardíaca",
+    "Nefroproteção"
+   ]
+  },
+  {
+   "dci": "Losartan",
+   "slug": "losartan",
+   "classe": "ARA II",
+   "classeKey": "ara",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Losartan (genérico)",
+    "Cozaar",
+    "Lortaan",
+    "Losartan Bluepharma",
+    "Losartan Ratiopharm",
+    "Losartan Mepha",
+    "Losartan Teva",
+    "Cozaar Plus (com HCT)",
+    "Lortaan Plus (com HCT)"
+   ],
+   "indicacoes": [
+    "HTA",
+    "Insuficiência cardíaca",
+    "Nefroproteção"
+   ]
+  },
+  {
+   "dci": "Bisoprolol",
+   "slug": "bisoprolol",
+   "classe": "β-bloqueante cardiosselectivo",
+   "classeKey": "bb",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Bisoprolol (genérico)",
+    "Concor",
+    "Bisoprolol Sandoz",
+    "Bisoprolol Jaba",
+    "Bisoprolol Generis",
+    "Bisoprolol Ciclum",
+    "Bisoprolol Krka",
+    "Bisoprolol Labesfal",
+    "Bisoprolol toLife",
+    "Cosyrel (com perindopril)",
+    "Bisoprolol + HCT Generis"
+   ],
+   "indicacoes": [
+    "Insuficiência cardíaca",
+    "Angina estável",
+    "Arritmias"
+   ]
+  },
+  {
+   "dci": "Amlodipina",
+   "slug": "amlodipina",
+   "classe": "Bloqueador dos canais de cálcio (BCC)",
+   "classeKey": "bcc",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Amlodipina (genérico)",
+    "Norvasc",
+    "Amlocor",
+    "Amlodipina Alter",
+    "Amlodipina Farmoz",
+    "Amlodipina Aurobindo",
+    "Amlodipina Aristo",
+    "Coveram (com perindopril)",
+    "Sevikar (com olmesartan)",
+    "Twynsta (com telmisartan)",
+    "Exforge (com valsartan)"
+   ],
+   "indicacoes": [
+    "HTA",
+    "Angina estável",
+    "Vasoespasmo"
+   ]
+  },
+  {
+   "dci": "Ibuprofeno",
+   "slug": "ibuprofeno",
+   "classe": "AINE não seletivo",
+   "classeKey": "aine",
+   "sistema": "Analgesia / Inflamação",
+   "marcas": [
+    "Ibuprofeno (genérico)",
+    "Brufen",
+    "Brufen Act",
+    "Brufen Retard",
+    "Nurofen",
+    "Spidifen",
+    "Faspic",
+    "Trifene",
+    "Brufenon (com paracetamol)"
+   ],
+   "indicacoes": [
+    "Dor",
+    "Febre",
+    "Inflamação"
+   ]
+  },
+  {
+   "dci": "Paracetamol",
+   "slug": "paracetamol",
+   "classe": "Analgésico/antipirético não-AINE",
+   "classeKey": "para",
+   "sistema": "Analgesia / Inflamação",
+   "marcas": [
+    "Paracetamol (genérico)",
+    "Ben-u-ron",
+    "Ben-u-ron Bebé",
+    "Panadol",
+    "Panadol Prolong",
+    "Dafalgan",
+    "Paramolan",
+    "Supofen",
+    "Panasorbe",
+    "Perdolan Mono",
+    "Perfalgan (IV)"
+   ],
+   "indicacoes": [
+    "Dor",
+    "Febre",
+    "Osteoartrose"
+   ]
+  },
+  {
+   "dci": "Tiocolquicosido",
+   "slug": "tiocolquicosido",
+   "classe": "Relaxante muscular (derivado da colchicina)",
+   "classeKey": "rmusc",
+   "sistema": "Musculoesquelético",
+   "marcas": [
+    "Tiocolquicosido (genérico)",
+    "Coltramyl",
+    "Relmus",
+    "Descontran",
+    "Adalgur N (com paracetamol)",
+    "Tiocolquicosido Generis",
+    "Tiocolquicosido Arrowblue"
+   ],
+   "indicacoes": [
+    "Contratura muscular",
+    "Lombalgia",
+    "Cervicalgia"
+   ]
+  }
+ ]
+}

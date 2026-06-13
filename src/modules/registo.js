@@ -19,6 +19,9 @@ import FarmacosGravidez from "./farmacos-gravidez/FarmacosGravidez";
 import metaGravidez from "@conteudo/farmacos-gravidez/meta.json";
 import Interacoes from "./interacoes/Interacoes";
 import metaInteracoes from "@conteudo/interacoes/meta.json";
+import InfetoAcessoAdulto from "./infetoacesso/InfetoAcessoAdulto";
+import InfetoAcessoPed from "./infetoacesso/InfetoAcessoPed";
+import EasyFarm from "./easyfarm/EasyFarm";
 
 export const MODULOS = [
   {
@@ -120,5 +123,35 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#149a92 0%,#0e6b6b 55%,#0a5151 100%)",
     pronto: true,
     Componente: Interacoes,
+  },
+  {
+    id: "infetoacesso",
+    nome: "InfetAcess",
+    descricao: "Antibioterapia em ambulatório (adulto)",
+    accent: "#b45309",
+    bg: "#fff8eb",
+    gradiente: "linear-gradient(135deg,#c2762a 0%,#b45309 55%,#8a3f08 100%)",
+    pronto: true,
+    Componente: InfetoAcessoAdulto,
+  },
+  {
+    id: "infetoacesso-ped",
+    nome: "InfetAcess Ped",
+    descricao: "Antibioterapia em ambulatório (pediatria)",
+    accent: "#C4756B",
+    bg: "#fbeeec",
+    gradiente: "linear-gradient(135deg,#d18a80 0%,#C4756B 55%,#9c574e 100%)",
+    pronto: true,
+    Componente: InfetoAcessoPed,
+  },
+  {
+    id: "easyfarm",
+    nome: "EasyFarm",
+    descricao: "Guia de fármacos · fichas completas",
+    accent: "#1B5E8A",
+    bg: "#eef5fb",
+    gradiente: "linear-gradient(135deg,#2E7CB5 0%,#1B5E8A 55%,#134866 100%)",
+    pronto: true,
+    Componente: EasyFarm,
   },
 ];

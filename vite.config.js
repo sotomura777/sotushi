@@ -4,6 +4,14 @@ import { VitePWA } from "vite-plugin-pwa";
 import { fileURLToPath, URL } from "node:url";
 
 export default defineConfig({
+  // Ouvir em IPv4 (127.0.0.1). Abrir sempre por http://127.0.0.1:5173/ — evita a
+  // ambiguidade do "localhost", que no macOS resolve para IPv6 (::1) primeiro.
+  server: { host: "127.0.0.1" },
+  // Em dev, o Vite varre todos os .html da pasta como entradas para pré-empacotar
+  // dependências. Há HTMLs/pastas-fonte soltos na raiz (com espaços e acentos) que
+  // fazem o scanner abortar (ECANCELED) → dev server não serve nada → ecrã branco.
+  // Limitar a varredura ao index.html resolve. (O build já só usa o index.html.)
+  optimizeDeps: { entries: ["index.html"] },
   plugins: [
     react(),
     VitePWA({

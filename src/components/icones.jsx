@@ -64,6 +64,9 @@ export const I = {
 
   // ── Módulo Interações: cápsula + comprimido ──
   interacoes: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13.5 7.5 7 14a4.6 4.6 0 1 0 6.5 6.5l6.5-6.5a4.6 4.6 0 1 0-6.5-6.5z" /><line x1="10.25" y1="10.75" x2="16.75" y2="17.25" /><circle cx="6.5" cy="5.5" r="3.5" /></svg>,
+
+  // ── InfetAcesso: escudo com cruz médica ──
+  infet: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.6 19 5v6c0 4.6-3 7.9-7 9.4-4-1.5-7-4.8-7-9.4V5l7-2.4Z" /><path d="M12 8v6M9 11h6" /></svg>,
 };
 
 // Wrapper para usar um ícone inline no meio de texto (trata o alinhamento vertical).
@@ -86,4 +89,7 @@ export const ICONE_MODULO = {
   "saude-infantil": I.baby,
   "farmacos-gravidez": I.pregnant,
   interacoes: I.interacoes,
+  infetoacesso: I.infet,
+  "infetoacesso-ped": I.infet,
+  easyfarm: I.pill,
 };

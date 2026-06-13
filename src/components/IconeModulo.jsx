@@ -12,6 +12,9 @@ const COR = {
   "saude-infantil": ["#CE7BA0", "#ff84c4"],
   "farmacos-gravidez": ["#7C5BD0", "#b07cff"],
   interacoes: ["#1E8C84", "#2af0cf"],
+  infetoacesso: ["#B45309", "#ffb454"],
+  "infetoacesso-ped": ["#C4756B", "#ff9e90"],
+  easyfarm: ["#1B5E8A", "#5db4f0"],
 };
 
 // Mosaico de ícone de módulo: glossy (claro) ou neon (escuro), conforme o tema.

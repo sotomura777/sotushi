@@ -164,6 +164,23 @@ const MI = {
       <circle cx="6.3" cy="5.8" r="3.3" fill={c} fillOpacity="0.16" stroke="none" />
       <circle cx="6.3" cy="5.8" r="3.3" />
     </>),
+
+  // InfetAcesso (adulto) — escudo com cruz médica
+  infet: (c, s) => D(c, s,
+    "M12 2.6 19 5v6c0 4.6-3 7.9-7 9.4-4-1.5-7-4.8-7-9.4V5l7-2.4Z",
+    <>
+      <path d="M12 2.6 19 5v6c0 4.6-3 7.9-7 9.4-4-1.5-7-4.8-7-9.4V5l7-2.4Z" />
+      <path d="M12 8v6M9 11h6" strokeWidth="2" />
+    </>),
+
+  // InfetAcesso Ped — escudo com "+" (variante pediátrica, traço mais redondo)
+  infetPed: (c, s) => D(c, s,
+    "M12 2.6 19 5v6c0 4.6-3 7.9-7 9.4-4-1.5-7-4.8-7-9.4V5l7-2.4Z",
+    <>
+      <path d="M12 2.6 19 5v6c0 4.6-3 7.9-7 9.4-4-1.5-7-4.8-7-9.4V5l7-2.4Z" />
+      <circle cx="12" cy="11" r="3.4" fill={c} fillOpacity="0.16" stroke="none" />
+      <path d="M12 9.2v3.6M10.2 11h3.6" strokeWidth="2" />
+    </>),
 };
 
 // Mapa por id de módulo (para a app)
@@ -178,6 +195,9 @@ const MI_MODULO = {
   "saude-infantil": MI.baby,
   "farmacos-gravidez": MI.pregnant,
   interacoes: MI.interacoes,
+  infetoacesso: MI.infet,
+  "infetoacesso-ped": MI.infetPed,
+  easyfarm: MI.pill,
 };
 
 // ============================================================================

@@ -1,0 +1,800 @@
+{
+ "meta": {
+  "titulo": "InfetAcesso · Pediatria",
+  "subtitulo": "Antibioterapia · Pediatria · Guia rápido",
+  "sectionLabel": "Que tipo de infeção suspeitas?",
+  "footerHtml": "<footer class=\"page-footer\">\n    <div class=\"footer-text\">\n    <div class=\"footer-disclaimer\"><strong>Aviso:</strong> Este material destina-se exclusivamente a fins de estudo e consulta pessoal das indicações terapêuticas constantes nas guidelines de referência pediátricas para cada infeção, tendo como base principal o Guia de Bolso de Antibioterapia em Ambulatório (PAPA/ARS-LVT, Ed. 1.3, Nov 2025), complementado com orientações da DGS, CNFT/INFARMED, OMS AWaRe 2022, NICE, AAP e IDSA. Patologias não cobertas pelo Guia PAPA estão assinaladas com *. Não constitui aconselhamento médico nem se destina a orientar a prescrição em prática clínica real. As doses pediátricas são apresentadas em mg/kg/dose ou mg/kg/dia - confirmar sempre as doses máximas e ajustes individuais.</div>\n    <div class=\"aware-box\">\n      <span class=\"footer-section-title\">Classificação AWaRe (OMS, 2022)</span>\n      <div class=\"aware-badges\"><span class=\"badge badge-access\" style=\"margin-top:6px\">ACCESS</span> Antibióticos de 1.ª linha, menor potencial de resistências. Primeira escolha na maioria das infeções.<br><span class=\"badge badge-watch\" style=\"margin-top:4px\">WATCH</span> Maior potencial de resistências. Uso em situações específicas, sujeito a monitorização.<br><span class=\"badge badge-reserve\" style=\"background:#FFEBEE;color:#C62828;margin-top:4px\">RESERVE</span> Última linha. Infeções multirresistentes. Controlo rigoroso de dispensa.</div>\n      <div class=\"aware-explanation\"><strong>Porque é importante?</strong>A classificação AWaRe (<em>Access · Watch · Reserve</em>) foi desenvolvida pela OMS em 2017 como ferramenta de <em>stewardship</em> antimicrobiano, para orientar a prescrição racional e travar o aumento global de resistências. A OMS recomenda que pelo menos <strong>60% do consumo total de antibióticos</strong> de cada país seja do grupo Access, preservando os antibióticos das categorias Watch e Reserve para situações onde são realmente necessários. Em 2024, os Estados-Membros da ONU acordaram um novo objetivo: 70% até 2030. A versão atual (2023) classifica 257 antibióticos: 87 Access, 141 Watch e 29 Reserve. Usar antibióticos Access sempre que possível ajuda a manter os Watch e Reserve eficazes para as infeções graves do futuro.</div>\n    </div>\n    <div class=\"bib-box\">\n      <span class=\"footer-section-title\">Sobre a bibliografia e fontes</span>\n      <div class=\"bib-box-text\">As referências bibliográficas estão <strong>individualizadas para cada patologia</strong>, no separador <em>\"Guidelines\"</em> dentro de cada cartão de doença. Aí encontras as guidelines nacionais e internacionais utilizadas, incluindo o Guia de Bolso de Antibioterapia em Ambulatório (PAPA/ARS-LVT, Ed. 1.3, Nov 2025), orientações da DGS, CNFT/INFARMED, OMS AWaRe 2022, NICE, AAP e IDSA, bem como as atualizações recentes relevantes. As doses dos fármacos sintomáticos foram verificadas contra o <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\" style=\"color:var(--text);text-decoration:underline\">INFARMED Infomed</a> e indicadas no rodapé do separador <em>\"Terapêutica sintomática\"</em> de cada doença.</div>\n    </div>\n  </div>\n  </footer>"
+ },
+ "sistemas": [
+  {
+   "id": "orl",
+   "icon": "ORL",
+   "nome": "Infeções ORL",
+   "label": "ORL",
+   "bubbles": [
+    {
+     "doencaId": "oma",
+     "label": "OMA"
+    },
+    {
+     "doencaId": "amig",
+     "label": "Amigdalite"
+    },
+    {
+     "doencaId": "rs",
+     "label": "Sinusite"
+    },
+    {
+     "doencaId": "oe",
+     "label": "Otite externa"
+    }
+   ],
+   "diseases": [
+    {
+     "id": "oma",
+     "icon": "OMA",
+     "title": "Otite média aguda",
+     "search": "otite media aguda crianca pediatria amoxicilina streptococcus pneumoniae haemophilus moraxella",
+     "tabs": [
+      {
+       "id": "oma-diff",
+       "label": "Indicações de ATB",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Infeção respiratória bacteriana mais frequente na criança. Estratégia \"watchful waiting\" (vigilância sintomática 48–72h) recomendada em casos selecionados.</span></div>\n        <div class=\"content-block\"><h4>Indicações para antibioterapia imediata</h4><ul><li>&lt; 6 meses (sempre)</li><li>6 meses - 2 anos: OMA bilateral · OMA com otorreia · sintomas graves (otalgia &gt;48h, febre ≥39 °C)</li><li>≥ 2 anos: sintomas graves · OMA bilateral · otorreia</li><li>Imunossupressão · síndrome de Down · anomalias craniofaciais · implante coclear</li></ul></div>\n        <div class=\"content-block\"><h4>Vigilância (48–72h sem ATB)</h4><ul><li>≥ 6 meses, sintomas ligeiros-moderados, unilateral, sem otorreia</li><li>Reavaliar em 48–72h - iniciar ATB se persistência ou agravamento</li></ul></div>"
+      },
+      {
+       "id": "oma-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Streptococcus pneumoniae</em>, <em>Haemophilus influenzae</em> não tipável, <em>Moraxella catarrhalis</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina</span><span class=\"drug-class\">(aminopenicilina)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">80–90 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 5–7 dias</span><span class=\"obs\">Duração: &lt;2 anos → 7 dias · ≥2 anos → 5 dias · Máx. 3 g/dia</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">80–90 mg/kg/dia (amoxicilina), oral, 12/12h <strong>(2× dia)</strong>, 7 dias</span><span class=\"obs\">(1) Se falência da amoxicilina · ATB nos 30 dias prévios · OMA recorrente · conjuntivite associada · Formulação 14:1. Máx. 3 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima axetil</span><span class=\"drug-class\">(cefalosporina 2.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">30 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 7 dias</span><span class=\"obs\">(2) Hipersensibilidade NÃO tipo I à penicilina. Máx. 1 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 3 dias</span><span class=\"obs\">(3) Hipersensibilidade tipo I à penicilina. Máx. 500 mg/dia. Resistências locais frequentes</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Referenciação SE:</strong> &lt;3 meses com febre · suspeita de mastoidite (eritema/edema retroauricular) · paralisia facial · meningismo · falência terapêutica 48–72h.</span></div>\n        <div class=\"source-note\">Critérios: AAP 2013 (atualizada 2024) e NICE NG91 - <a href=\"https://publications.aap.org/pediatrics/\" target=\"_blank\">ver guideline</a></div>"
+      },
+      {
+       "id": "oma-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Posição com a cabeça ligeiramente elevada (almofada extra) - alivia dor</li><li>Vigilância da temperatura, hidratação adequada</li><li>Reavaliação em 48–72h se atitude expectante</li><li>Evitar exposição a fumo passivo (fator de risco para OMA)</li><li>Aleitamento materno até pelo menos 6 meses - fator protetor</li><li>Vacinação pneumocócica e contra a gripe</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia (prioridade no tratamento)</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, oral, 6/6h-8/8h (máx. 60 mg/kg/dia)</li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, oral, 8/8h (máx. 30 mg/kg/dia · só após 3 meses · hidratação adequada)</li><li>Pode alternar paracetamol e ibuprofeno para controlo ótimo da dor</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP 2013/2024 · NICE NG91: <a href=\"https://www.nice.org.uk/guidance/ng91\" target=\"_blank\">NICE Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "oma-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP 2013 (atualizada 2024) - The Diagnosis and Management of Acute Otitis Media. Lieberthal AS et al. Pediatrics 2013;131(3):e964–e999.</li>\n          <li>NICE NG91 - Otitis media (acute): antimicrobial prescribing. 2018.</li>\n          <li>DGS - Norma n.º 006/2014, atualizada a 17/11/2022. Duração de Terapêutica Antibiótica.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "amig",
+     "icon": "AF",
+     "title": "Amigdalo-faringite estreptocócica",
+     "search": "amigdalo faringite estreptococica gas streptococcus pyogenes amoxicilina penicilina centor tdar",
+     "tabs": [
+      {
+       "id": "af-diff",
+       "label": "Viral vs Bacteriana",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Apenas 15–30% das amigdalo-faringites em idade pediátrica são por <em>Streptococcus pyogenes</em> (Grupo A - GAS). Em &lt;3 anos a etiologia é quase sempre viral.</span></div>\n        <table class=\"diff-table\"><thead><tr><th>Viral (maioria)</th><th>Bacteriana (GAS)</th></tr></thead><tbody><tr><td>Coriza, tosse, conjuntivite</td><td>Início súbito, sem tosse</td></tr><tr><td>Rouquidão, exantema viral</td><td>Petéquias no palato</td></tr><tr><td>Diarreia, ulcerações</td><td>Exsudado amigdalino</td></tr><tr><td>Idade &lt;3 anos</td><td>3–14 anos (pico)</td></tr><tr><td>TDAR negativo</td><td>Adenopatia cervical anterior dolorosa</td></tr></tbody></table>\n        <div class=\"content-block\"><h4>Score de McIsaac/Centor modificado (pediátrico)</h4><ul><li>Idade 3–14 anos: +1 · idade 15–44: 0 · idade ≥45: −1</li><li>Febre &gt;38 °C: +1</li><li>Ausência de tosse: +1</li><li>Adenopatia cervical anterior dolorosa: +1</li><li>Exsudado/tumefação amigdalina: +1</li></ul><p style=\"margin-top:8px\"><strong>≥3 pontos:</strong> realizar <strong>TDAR</strong> (Teste de Deteção Rápida de Antigénio) · tratar se positivo.</p></div>\n        <div class=\"note-text\"><strong>Não rastrear &lt;3 anos:</strong> portadores assintomáticos frequentes e febre reumática rara nesta idade.</div>"
+      },
+      {
+       "id": "af-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismo</h4><p><em>Streptococcus pyogenes</em> (Estreptococo β-hemolítico do Grupo A - GAS)</p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha (após TDAR positivo)</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina</span><span class=\"drug-class\">(aminopenicilina)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">50 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 10 dias</span><span class=\"obs\">Máx. 1 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Benzilpenicilina benzatínica</span><span class=\"drug-class\">(penicilina IM)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">&lt;27 kg: 600.000 UI · ≥27 kg: 1.200.000 UI, IM, toma única</span><span class=\"obs\">Opção de toma única (boa adesão).</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima axetil</span><span class=\"drug-class\">(cefalosporina 2.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">20–30 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 10 dias</span><span class=\"obs\">(1) Hipersensibilidade NÃO tipo I à penicilina. Máx. 1 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">12 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 5 dias</span><span class=\"obs\">(2) Hipersensibilidade tipo I à penicilina. Máx. 500 mg/dia. Atenção às resistências</span></div></div></div></div></div>"
+      },
+      {
+       "id": "af-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Hidratação abundante - preferir líquidos frios, gelados, refrescos</li><li>Dieta mole, fria, sem alimentos ácidos ou irritantes</li><li>Repouso em casa</li><li>Pode regressar à escola após 24h de antibioterapia (deixa de ser contagioso)</li><li>Trocar escova de dentes após início do tratamento</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia e antipiréticos</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, oral, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, oral, 8/8h (após 3 meses)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: IDSA 2012/2025 · NICE NG84 · DGS: <a href=\"https://www.nice.org.uk/guidance/ng84\" target=\"_blank\">NICE Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "af-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>IDSA 2012 - Clinical Practice Guideline for the Diagnosis and Management of Group A Streptococcal Pharyngitis. Shulman ST et al. CID 2012;55(10):e86–e102.</li>\n          <li>NICE NG84 - Sore throat (acute): antimicrobial prescribing. 2018.</li>\n          <li>DGS - Norma n.º 020/2012 atualizada. Diagnóstico e Tratamento da Amigdalite Aguda na Idade Pediátrica.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "rs",
+     "icon": "RS",
+     "title": "Rinossinusite aguda",
+     "search": "rinossinusite aguda crianca pediatria sinusite amoxicilina clavulanico haemophilus streptococcus",
+     "tabs": [
+      {
+       "id": "rs-diff",
+       "label": "Viral vs Bacteriana",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>A maioria das rinossinusites em pediatria é viral. Apenas 6–9% complicam-se com sobreinfeção bacteriana.</span></div>\n        <div class=\"content-block\"><h4>Critérios para sinusite bacteriana (AAP 2013)</h4><ul><li><strong>Persistente:</strong> rinorreia (qualquer qualidade) e/ou tosse diurna &gt;10 dias sem melhoria</li><li><strong>Grave:</strong> febre ≥39 °C + rinorreia purulenta ≥3 dias consecutivos</li><li><strong>Piora (\"double sickening\"):</strong> agravamento após melhoria inicial - nova febre, cefaleia, rinorreia</li></ul></div>"
+      },
+      {
+       "id": "rs-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Streptococcus pneumoniae</em>, <em>Haemophilus influenzae</em> não tipável, <em>Moraxella catarrhalis</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina</span><span class=\"drug-class\">(aminopenicilina)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">80–90 mg/kg/dia, oral, 8/8h <strong>(3× dia)</strong>, 10 dias</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">80–90 mg/kg/dia (amoxicilina), oral, 8/8h <strong>(3× dia)</strong>, 10 dias</span><span class=\"obs\">(1) Sinusite grave · ATB nos 30 dias prévios · falência terapêutica · imunossupressão · Formulação 14:1. Máx. 3 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima axetil</span><span class=\"drug-class\">(cefalosporina 2.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">30 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 10 dias</span><span class=\"obs\">Hipersensibilidade NÃO tipo I à penicilina. Máx. 1000 mg/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Levofloxacina</span><span class=\"drug-class\">(fluoroquinolona)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">&lt;5 anos: 20 mg/kg/dia 12/12h · ≥5 anos: 10 mg/kg/dia 24/24h, oral, 10 dias</span><span class=\"obs\">Hipersensibilidade tipo I grave a beta-lactâmicos. Máx. 750 mg/dia. Off-label, referenciação hospitalar recomendada</span></div></div></div></div></div>"
+      },
+      {
+       "id": "rs-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Lavagem nasal com soro fisiológico - 3–5 vezes/dia, várias instilações em cada narina</li><li>Hidratação abundante</li><li>Humidificação do ambiente</li><li>Elevação ligeira da cabeceira durante o sono</li><li>Evitar exposição a fumo passivo</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia e antipiréticos</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li></ul></div>\n        <div class=\"content-block\"><h4>Não recomendados em pediatria</h4><ul><li>Descongestionantes orais (pseudoefedrina) - contraindicados &lt;12 anos</li><li>Anti-histamínicos - sem benefício, podem espessar secreções</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP 2013 · EPOS 2020: <a href=\"https://www.epos2020.com\" target=\"_blank\">EPOS 2020</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "rs-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP 2013 - Clinical Practice Guideline for the Diagnosis and Management of Acute Bacterial Sinusitis in Children Aged 1 to 18 Years. Wald ER et al. Pediatrics 2013;132(1):e262–e280.</li>\n          <li>EPOS 2020 - European Position Paper on Rhinosinusitis and Nasal Polyps.</li>\n          <li>NICE NG79 - Sinusitis (acute): antimicrobial prescribing. 2017.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "oe",
+     "icon": "OE",
+     "title": "Otite externa aguda",
+     "search": "otite externa nadador pediatria pseudomonas staphylococcus ciprofloxacina ofloxacina",
+     "tabs": [
+      {
+       "id": "oe-diff",
+       "label": "Apresentação clínica",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>«Otite do nadador». Comum em meses quentes e em crianças expostas a água (piscina, mar). Tratamento essencialmente tópico.</span></div>\n        <div class=\"content-block\"><h4>Apresentação típica</h4><ul><li>Otalgia que agrava com tração do pavilhão auricular ou pressão no tragus</li><li>Prurido auricular</li><li>Otorreia (escassa, mucopurulenta)</li><li>Edema e eritema do canal auditivo</li><li>Sem sintomas sistémicos significativos</li></ul></div>\n        <div class=\"note-text\">Distinguir de OMA com otorreia (perfuração timpânica) - na OE o tímpano está íntegro mas pode não ser visualizável pelo edema do canal.</div>"
+      },
+      {
+       "id": "oe-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Pseudomonas aeruginosa</em>, <em>Staphylococcus aureus</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Tópico</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ciprofloxacina + Fluocinolona</span><span class=\"drug-class\">(fluoroquinolona + corticoide tópico)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Gotas auriculares: 2–4 gotas, 8/8h <strong>(3× dia)</strong>, 7–10 dias</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ofloxacina</span><span class=\"drug-class\">(fluoroquinolona tópica)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Gotas auriculares 0,3%: 5 gotas, 24/24h <strong>(1× dia)</strong>, 7 dias</span><span class=\"obs\">Segura se perfuração timpânica. Alternativa: Ofloxacina + Dexametasona gotas, 2 gotas 12/12h <strong>(2× dia)</strong>, 7–10 dias</span></div></div></div></div></div>\n\n        <div class=\"note-text\">Antibioterapia oral apenas se: celulite peri-auricular · imunossupressão · diabetes · falência tópica · otite externa maligna (referenciar).</div>"
+      },
+      {
+       "id": "oe-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Evitar água no ouvido durante o tratamento - usar tampões/touca em duches</li><li>Não usar cotonetes</li><li>Secar o ouvido após o banho (toalha suave)</li><li><strong>Prevenção:</strong> 1 parte vinagre branco + 1 parte água a 70%, 3–5 gotas em cada ouvido após natação</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAO-HNSF 2014: <a href=\"https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/aoe/\" target=\"_blank\">AAO-HNSF Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "oe-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAO-HNSF 2014 - Clinical Practice Guideline: Acute Otitis Externa. Rosenfeld RM et al. Otolaryngol Head Neck Surg 2014;150(1 Suppl):S1–S24.</li>\n          <li>NICE - Otitis externa. CKS 2024.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    }
+   ],
+   "detailTitle": "Infeções ORL"
+  },
+  {
+   "id": "resp",
+   "icon": "RESP",
+   "nome": "Infeções Respiratórias",
+   "label": "Respiratório",
+   "bubbles": [
+    {
+     "doencaId": "bronquiolite",
+     "label": "Bronquiolite"
+    },
+    {
+     "doencaId": "crupe",
+     "label": "Crupe"
+    },
+    {
+     "doencaId": "pac",
+     "label": "Pneumonia"
+    },
+    {
+     "doencaId": "influenza",
+     "label": "Gripe"
+    },
+    {
+     "doencaId": "tosse-convulsa",
+     "label": "Tosse convulsa"
+    }
+   ],
+   "diseases": [
+    {
+     "id": "bronquiolite",
+     "icon": "BQ",
+     "title": "Bronquiolite aguda",
+     "search": "bronquiolite aguda vsr rsv virus sincicial respiratorio lactente",
+     "tabs": [
+      {
+       "id": "bq-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Infeção viral aguda das vias aéreas inferiores em crianças &lt;2 anos (pico aos 3–6 meses). Maioria autolimitada. Antibioterapia NÃO indicada.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> O Guia PAPA/ARS-LVT (2025) remete a bronquiolite para <em>«avaliação em meio hospitalar»</em>. O conteúdo abaixo segue as guidelines NICE NG9 (2021) e AAP (2014).</span></div>\n        <div class=\"content-block\"><h4>Apresentação típica</h4><ul><li>Pródromo de IVRS (rinorreia, tosse seca, febre baixa) 1–3 dias</li><li>Evolução para dispneia, sibilância, taquipneia, fervores crepitantes/sibilos</li><li>Recusa alimentar, apneia (lactentes pequenos)</li><li>Pico de gravidade aos 3–5 dias, resolução em 1–2 semanas</li></ul></div>\n        <div class=\"content-block\"><h4>Critérios de gravidade - referenciar/internar</h4><ul><li>Apneia ou risco de apneia (&lt;3 meses, prematuro)</li><li>SpO₂ &lt;92% em ar ambiente</li><li>Dificuldade respiratória marcada (gemido, adejo nasal, tiragem grave)</li><li>Incapacidade para tolerar alimentação (≤50% do habitual)</li><li>Desidratação</li><li>Idade &lt;3 meses · prematuridade · cardiopatia · doença pulmonar crónica · imunossupressão</li></ul></div>\n        <div class=\"note-text\">VSR (Vírus Sincicial Respiratório) é o agente mais frequente. Outros: rinovírus, parainfluenza, metapneumovírus.</div>"
+      },
+      {
+       "id": "bq-atb",
+       "label": "Tratamento",
+       "active": false,
+       "html": "<div class=\"alert alert-green\"><span class=\"alert-icon\">+</span><span><strong>NÃO USAR ANTIBIÓTICOS</strong> - bronquiolite é viral. Antibióticos apenas se sobreinfeção bacteriana confirmada (rara, &lt;1%).</span></div>\n\n        <div class=\"content-block\"><h4>Pilar do tratamento: suporte</h4><ul><li>Hidratação · oxigenoterapia se SpO₂ &lt;92% · alimentação fracionada</li><li>Lavagem nasal com soro fisiológico antes das refeições e antes de dormir</li><li>Posição semi-sentada</li><li>Vigilância de sinais de agravamento</li></ul></div>\n\n        <div class=\"content-block\"><h4>Sem evidência ou pouco eficazes (NÃO usar por rotina)</h4><ul><li><strong>Broncodilatadores</strong> (salbutamol) - sem benefício consistente, NICE 2021 não recomenda</li><li><strong>Corticoides</strong> sistémicos ou inalados - sem benefício</li><li><strong>Adrenalina nebulizada</strong> - apenas em internamento, casos selecionados</li><li><strong>Soro hipertónico nebulizado</strong> - modesto benefício em internamento</li><li><strong>Fisioterapia respiratória</strong> - sem benefício na bronquiolite ligeira</li></ul></div>\n\n        <div class=\"content-block\"><h4>Prevenção</h4><ul><li><strong>Nirsevimab</strong> (anticorpo monoclonal anti-VSR) - PNV Portugal 2024 para todos os recém-nascidos antes da época respiratória</li><li><strong>Palivizumab</strong> - apenas grupos de risco específicos</li><li>Aleitamento materno · evitar fumo passivo · higiene das mãos</li></ul></div>"
+      },
+      {
+       "id": "bq-sint",
+       "label": "Suporte sintomático",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li><strong>Hidratação fracionada</strong> - oferecer líquidos em pequenas quantidades, com mais frequência</li><li><strong>Alimentação fracionada</strong> - refeições menores e mais frequentes</li><li><strong>Lavagem nasal</strong> com soro fisiológico antes das refeições e antes de dormir</li><li><strong>Aspiração de secreções</strong> nasais (aspirador nasal manual)</li><li>Posição semi-sentada para dormir (30°–45°)</li><li>Ambiente fresco, sem fumo de tabaco, humidificação se ar muito seco</li><li>Vigilância dos sinais de alarme - dificuldade respiratória, apneia, recusa alimentar &gt;50%, SpO₂ &lt;92%</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos (se febre)</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h (desde nascimento)</li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (apenas ≥3 meses, hidratação adequada)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: NICE NG9 2021 · AAP 2014: <a href=\"https://www.nice.org.uk/guidance/ng9\" target=\"_blank\">NICE Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "bq-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>NICE NG9 - Bronchiolitis in children: diagnosis and management. 2015 (revisto 2021).</li>\n          <li>AAP 2014 - Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis. Ralston SL et al. Pediatrics 2014;134(5):e1474–e1502.</li>\n          <li>DGS - Programa Nacional de Vacinação 2024 (inclui nirsevimab universal).</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>\n        <div class=\"update-mark\"><strong>Atualização PNV 2024 (DGS):</strong> Nirsevimab (Beyfortus®) - anticorpo monoclonal anti-VSR - passa a ser administrado universalmente a todos os recém-nascidos antes da época VSR (outubro a março). Estudos mostram redução de 70–80% nas hospitalizações.</div>"
+      }
+     ]
+    },
+    {
+     "id": "crupe",
+     "icon": "CR",
+     "title": "Crupe (laringotraqueíte aguda)",
+     "search": "crupe laringotraqueite laringotraqueobronquite parainfluenza dexametasona adrenalina estridor tosse cao",
+     "tabs": [
+      {
+       "id": "cr-diff",
+       "label": "Gravidade (Westley)",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Infeção viral da via aérea superior (laringe e traqueia). Etiologia mais comum: <em>parainfluenza</em>. Idade típica: 6 meses - 3 anos. Predomina no outono/inverno.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> O Guia PAPA/ARS-LVT (2025) refere: <em>«Infeções geralmente virais. Se evolução não favorável, referenciar para avaliação hospitalar.»</em> O conteúdo abaixo segue as guidelines NICE CKS (2024) e CPS Canada (2017).</span></div>\n        <div class=\"content-block\"><h4>Apresentação típica</h4><ul><li>Pródromo IVRS 1–2 dias (rinorreia, febre baixa)</li><li><strong>Tríade clássica:</strong> tosse «de cão» (latido) + estridor inspiratório + disfonia</li><li>Início noturno, agravamento com agitação/choro</li><li>Resolução em 2–7 dias</li></ul></div>\n        <div class=\"content-block\"><h4>Score de Westley (gravidade)</h4><ul><li><strong>Ligeiro</strong> (≤2): tosse de cão sem estridor em repouso</li><li><strong>Moderado</strong> (3–7): estridor em repouso + tiragem leve-moderada</li><li><strong>Grave</strong> (8–11): estridor + tiragem grave + agitação</li><li><strong>Insuficiência respiratória iminente</strong> (≥12): cianose, alteração consciência → urgência</li></ul></div>\n        <div class=\"note-text\">Diagnóstico clínico. Não fazer radiografia por rotina (atrasa diagnóstico, irradia desnecessariamente).</div>"
+      },
+      {
+       "id": "cr-atb",
+       "label": "Tratamento",
+       "active": false,
+       "html": "<div class=\"alert alert-green\"><span class=\"alert-icon\">+</span><span><strong>NÃO USAR ANTIBIÓTICOS</strong> - crupe é viral. O tratamento centra-se na corticoterapia e medidas de suporte.</span></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Todos os graus (incluindo ligeiro)</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Dexametasona</span><span class=\"drug-class\">(corticoide sistémico)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">0,15–0,6 mg/kg, oral, toma única</span><span class=\"obs\">Máx. 10 mg. Início de ação em 1–2h, duração 24–48h</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Prednisolona</span><span class=\"drug-class\">(corticoide sistémico)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">1 mg/kg, oral, 1x/dia, 3 dias</span><span class=\"obs\">Alternativa se dexametasona indisponível</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Adicionar - Crupe moderado/grave</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Adrenalina nebulizada</span><span class=\"drug-class\">(simpaticomimético)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">L-adrenalina 1:1000: 0,5 mL/kg (máx. 5 mL), nebulizada com O₂</span><span class=\"obs\">Pode repetir 30 min. Vigilância 3–4h após (efeito rebound). Considerar internamento</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Referenciação SE:</strong> estridor em repouso · tiragem moderada-grave · cianose · alteração consciência · idade &lt;6 meses · imunossupressão · pouca resposta à corticoterapia · 2 nebulizações de adrenalina necessárias.</span></div>"
+      },
+      {
+       "id": "cr-sint",
+       "label": "Suporte sintomático",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li><strong>Manter a criança tranquila</strong> - o choro agrava o estridor</li><li>Posição confortável, ao colo dos pais</li><li>Hidratação adequada</li><li>Ambiente fresco e húmido</li><li>Ar frio (janela aberta, brisa noturna) pode ajudar - efeito de vasoconstrição na mucosa edemaciada</li><li>Inalação de vapor - sem evidência forte mas largamente usado</li><li>Vigilância dos sinais de alarme - estridor em repouso, tiragem, recusa alimentar, alteração consciência</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos (se febre)</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: NICE CKS Croup 2024 · CPS Canada 2017: <a href=\"https://cks.nice.org.uk/topics/croup/\" target=\"_blank\">NICE CKS</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "cr-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>NICE CKS - Croup. 2024.</li>\n          <li>CPS Canadian Paediatric Society 2017 - Acute management of croup in the emergency department.</li>\n          <li>Cochrane Review - Glucocorticoids for croup in children. 2018.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "pac",
+     "icon": "PAC",
+     "title": "Pneumonia adquirida na comunidade",
+     "search": "pneumonia adquirida comunidade pac crianca pediatrica streptococcus pneumoniae mycoplasma amoxicilina",
+     "tabs": [
+      {
+       "id": "pac-diff",
+       "label": "Apresentação por idade",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Em &lt;5 anos a etiologia viral é predominante. A partir dos 5 anos aumenta a importância de <em>Mycoplasma pneumoniae</em> (pneumonia atípica).</span></div>\n        <table class=\"diff-table\"><thead><tr><th>Típica (bacteriana)</th><th>Atípica (Mycoplasma/Chlamydia)</th></tr></thead><tbody><tr><td>Início súbito</td><td>Início gradual</td></tr><tr><td>Febre alta (&gt;39 °C)</td><td>Febre moderada</td></tr><tr><td>Tosse produtiva</td><td>Tosse seca, persistente</td></tr><tr><td>Dor torácica/abdominal</td><td>Cefaleia, mialgias</td></tr><tr><td>Auscultação focal (fervores)</td><td>Auscultação difusa, sibilos</td></tr><tr><td>Radiografia: condensação lobar</td><td>Radiografia: padrão intersticial</td></tr><tr><td>Idade &lt;5 anos</td><td>Idade ≥5 anos</td></tr></tbody></table>\n        <div class=\"note-text\">Em pediatria, evitar radiografia por rotina - apenas em casos atípicos, falência terapêutica ou complicações.</div>"
+      },
+      {
+       "id": "pac-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><strong>Bactérias:</strong> <em>Streptococcus pneumoniae</em> (típica) · <em>Mycoplasma pneumoniae</em>, <em>Chlamydia pneumoniae</em> (atípicas, ≥5 anos) · <strong>Vírus:</strong> VSR, influenza, adenovírus</p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Criança 3 meses a 5 anos</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina</span><span class=\"drug-class\">(aminopenicilina)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">90–100 mg/kg/dia, oral, 8/8h <strong>(3× dia)</strong>, 7 dias</span><span class=\"obs\">Máx. 3 g/dia</span></div></div></div></div></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Criança ≥5 anos</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina</span><span class=\"drug-class\">(aminopenicilina)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">90–100 mg/kg/dia, oral, 8/8h <strong>(3× dia)</strong>, 7 dias</span></div></div></div><div class=\"atb-ou\">Ou (se atípica suspeita)</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg D1; 5 mg/kg D2–D5, oral, 24/24h <strong>(1× dia)</strong></span><span class=\"obs\">Máx. 500 mg/dia. Para cobertura de Mycoplasma/Chlamydia</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">90–100 mg/kg/dia (amoxicilina), oral, 8/8h <strong>(3× dia)</strong>, 7 dias</span><span class=\"obs\">(1) Imunossupressão · paralisia cerebral · ATB 1.ª linha há &lt;1 mês · falência terapêutica · vacinação incompleta H. influenzae · Formulação 14:1. Máx. 3 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima axetil</span><span class=\"drug-class\">(cefalosporina 2.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">30–40 mg/kg/dia, oral, 8/8h <strong>(3× dia)</strong>, 7 dias</span><span class=\"obs\">(2) Hipersensibilidade NÃO tipo I à penicilina. Máx. 1 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Levofloxacina</span><span class=\"drug-class\">(fluoroquinolona)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">&lt;5 anos: 20 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong> · ≥5 anos: 10 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 7 dias</span><span class=\"obs\">Hipersensibilidade tipo I grave a beta-lactâmicos. Máx. 750 mg/dia. Off-label, referenciação hospitalar recomendada</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Referenciação SE:</strong> SpO₂ &lt;92% · idade &lt;3 meses · sinais de gravidade (tiragem grave, gemido, cianose) · desidratação · incapacidade tolerância oral · suspeita de complicações (derrame, empiema) · falência terapêutica 48–72h.</span></div>"
+      },
+      {
+       "id": "pac-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Hidratação adequada</li><li>Alimentação fracionada conforme tolerância</li><li>Repouso conforme tolerância</li><li>Vigilância da SpO₂ se possível, especialmente em &lt;5 anos</li><li>Reavaliação clínica em 48–72h</li><li>Não fumar em casa</li><li>Vacinação contra a gripe e pneumococo atualizada</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos e analgesia</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses, função renal normal)</li></ul></div>\n        <div class=\"content-block\"><h4>Não recomendados</h4><ul><li>Antitússicos - não usar</li><li>Mucolíticos - sem benefício</li><li>Broncodilatadores apenas se broncospasmo associado documentado</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: PIDS/IDSA 2011 · NICE NG138 · BTS 2011: <a href=\"https://www.idsociety.org/practice-guideline/pneumonia-in-children/\" target=\"_blank\">PIDS/IDSA Guidelines</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "pac-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>PIDS/IDSA 2011 - The Management of Community-Acquired Pneumonia in Infants and Children Older Than 3 Months of Age. Bradley JS et al. CID 2011;53(7):e25–e76.</li>\n          <li>NICE NG138 - Pneumonia (community-acquired): antimicrobial prescribing. 2019.</li>\n          <li>BTS 2011 - British Thoracic Society guidelines for the management of community acquired pneumonia in children.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>\n        <div class=\"update-mark\"><strong>Atualização recente:</strong> ATS/IDSA e NICE recomendam duração mais curta (5 dias) para PAC pediátrica não complicada, com evidência de não-inferioridade vs 7–10 dias.</div>"
+      }
+     ]
+    },
+    {
+     "id": "influenza",
+     "icon": "FLU",
+     "title": "Influenza (Gripe)",
+     "search": "influenza gripe pediatria crianca oseltamivir antiviral vacina",
+     "tabs": [
+      {
+       "id": "flu-diff",
+       "label": "Quando tratar",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Em pediatria saudável a doença é geralmente autolimitada (5–7 dias). Antiviral indicado em grupos de risco e em doença grave.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> A gripe não consta no Guia PAPA/ARS-LVT (2025). O conteúdo segue as guidelines AAP (2024) e CDC/IDSA (2018).</span></div>\n        <div class=\"content-block\"><h4>Grupos de risco para complicações</h4><ul><li>Idade &lt;5 anos (sobretudo &lt;2 anos)</li><li>Doença crónica (asma, cardiopatia, doença neurológica, imunossupressão)</li><li>Crianças em terapêutica crónica com salicilatos (risco de síndrome de Reye)</li><li>Obesidade mórbida</li></ul></div>\n        <div class=\"content-block\"><h4>Indicações para antiviral</h4><ul><li>Idade &lt;2 anos (sempre considerar)</li><li>Doença grave (hospitalização, complicações)</li><li>Grupos de risco para complicações</li><li>Iniciar idealmente nas primeiras 48h</li></ul></div>"
+      },
+      {
+       "id": "flu-atb",
+       "label": "Antiviral",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismo</h4><p><em>Influenza A</em> e <em>B</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Doses por peso</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Oseltamivir</span><span class=\"drug-class\">(inib. neuraminidase)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Oral, 12/12h <strong>(2× dia)</strong>, 5 dias</span><span class=\"obs\">Dose por peso: ≤15 kg → 30 mg/dose · 15-23 kg → 45 mg/dose · 23-40 kg → 60 mg/dose · &gt;40 kg → 75 mg/dose (= dose adulta)</span><span class=\"obs\">Em &lt;3 meses: dose ajustada (3 mg/kg/dose)</span></div></div></div></div></div>\n\n        <div class=\"alert alert-info\" style=\"margin-top:14px\"><span class=\"alert-icon\">i</span><span><strong>Vacinação anual</strong> recomendada para crianças ≥6 meses pertencentes a grupos de risco e, em alguns países, universal (PNV em discussão). Atualmente em Portugal, crianças com fatores de risco e dos 6 meses aos 18 anos em algumas campanhas.</span></div>"
+      },
+      {
+       "id": "flu-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Repouso e hidratação abundante</li><li>Isolamento domiciliar - ficar em casa até 24h sem febre</li><li>Etiqueta respiratória, lavagem das mãos</li><li>Vacinação anual em grupos de risco</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos e analgesia</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li><li><strong>NUNCA usar AAS (ácido acetilsalicílico)</strong> em crianças - risco de síndrome de Reye</li></ul></div>\n        <div class=\"content-block\"><h4>Outros</h4><ul><li>Lavagem nasal com soro fisiológico</li><li>Não usar antitússicos &lt;6 anos</li><li>Mel pode aliviar tosse (apenas ≥1 ano)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP 2024 · CDC · IDSA Influenza 2018: <a href=\"https://www.aap.org\" target=\"_blank\">AAP</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "flu-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP 2024 - Recommendations for Prevention and Control of Influenza in Children.</li>\n          <li>IDSA 2018 - Clinical Practice Guidelines for the Diagnosis, Treatment, Chemoprophylaxis, and Institutional Outbreak Management of Seasonal Influenza.</li>\n          <li>DGS - Orientação Vacinação Antigripal anual.</li>\n          <li>CDC - Influenza Antiviral Medications.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "tosse-convulsa",
+     "icon": "TC",
+     "title": "Tosse convulsa",
+     "search": "tosse convulsa pertussis bordetella azitromicina claritromicina lactente",
+     "tabs": [
+      {
+       "id": "tc-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-warn\"><span class=\"alert-icon\">!</span><span><span class=\"sinave\">SINAVE</span> - doença de notificação obrigatória. Particularmente grave em lactentes &lt;3 meses não vacinados (risco de apneia, hospitalização, óbito).</span></div>\n        <div class=\"content-block\"><h4>Apresentação por fase</h4><ul><li><strong>Catarral (1–2 sem):</strong> rinorreia, tosse ligeira, febre baixa - semelhante a IVRS</li><li><strong>Paroxística (2–6 sem):</strong> tosse paroxística, «guincho» inspiratório, vómitos pós-tosse, cianose. Em lactentes pode haver apneia em vez de guincho</li><li><strong>Convalescença (semanas a meses):</strong> diminuição gradual da intensidade</li></ul></div>\n        <div class=\"content-block\"><h4>Quando suspeitar</h4><ul><li>Tosse persistente &gt;2 semanas, paroxística, com guincho ou vómitos pós-tosse</li><li>Cianose ou apneia em lactente</li><li>Contacto com caso confirmado de tosse convulsa</li></ul></div>\n        <div class=\"note-text\"><strong>Diagnóstico:</strong> PCR de aspirado/zaragatoa nasofaríngea. Confirmar laboratorialmente sempre que possível.</div>"
+      },
+      {
+       "id": "tc-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismo</h4><p><em>Bordetella pertussis</em></p></div>\n        <div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Antibioterapia reduz a transmissibilidade (importante!) mas tem impacto limitado na duração da tosse. Iniciar precocemente (idealmente nas primeiras 3 semanas de tosse).</span></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 5 dias</span><span class=\"obs\">Máx. 500 mg/dia</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Lactentes:</strong> Segundo o Guia PAPA/ARS-LVT (2025), se suspeita de tosse convulsa com história de não vacinação materna e tosse acessual → <strong>referenciação hospitalar</strong>.</span></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativa</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Claritromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">15 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 7 dias</span><span class=\"obs\">* Alternativa de NICE/CDC, não consta no Guia PAPA. Máx. 1 g/dia</span><span class=\"obs\">Apenas ≥1 mês. Máx. 500 mg/dose</span></div></div></div></div></div>\n\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Profilaxia pós-exposição</strong> com mesmo esquema para todos os contactos próximos (em especial lactentes não vacinados, grávidas, contactos imunossuprimidos), independentemente do estado vacinal.</span></div>\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Internamento se:</strong> idade &lt;3 meses · apneia · cianose · desidratação · pneumonia secundária · sinais de gravidade.</span></div>"
+      },
+      {
+       "id": "tc-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Hidratação e alimentação fracionadas (entre paroxismos)</li><li>Ambiente calmo, sem irritantes (fumo, aerossóis)</li><li>Humidificação do ambiente</li><li>Posição lateral durante os paroxismos - previne aspiração</li><li>Isolamento domiciliar até 5 dias de ATB completos</li><li><strong>Vacinação:</strong> verificar e atualizar PNV (DTPa). Vacinação na grávida (3.º trimestre) é fundamental para proteger o recém-nascido</li><li>Notificação obrigatória ao SINAVE</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos (se necessário)</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li></ul></div>\n        <div class=\"content-block\"><h4>O que NÃO funciona</h4><ul><li>Antitússicos - sem benefício</li><li>Broncodilatadores - sem benefício</li><li>Corticoides - sem benefício</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP Red Book 2024 · CDC: <a href=\"https://www.cdc.gov/pertussis/\" target=\"_blank\">CDC Pertussis</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "tc-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP Red Book 2024 - Pertussis (Whooping Cough).</li>\n          <li>CDC 2024 - Pertussis: Clinical Features and Treatment.</li>\n          <li>DGS - Programa Nacional de Vacinação (DTPa). Notificação obrigatória SINAVE.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    }
+   ],
+   "detailTitle": "Infeções Respiratórias"
+  },
+  {
+   "id": "gi",
+   "icon": "GI",
+   "nome": "Infeções Gastrointestinais",
+   "label": "GI",
+   "bubbles": [
+    {
+     "doencaId": "ge",
+     "label": "Gastroenterite"
+    },
+    {
+     "doencaId": "dvi",
+     "label": "Diarreia viajante"
+    }
+   ],
+   "diseases": [
+    {
+     "id": "ge",
+     "icon": "GE",
+     "title": "Gastroenterite aguda",
+     "search": "gastroenterite aguda crianca diarreia campylobacter salmonella shigella rotavirus norovirus desidratacao",
+     "tabs": [
+      {
+       "id": "ge-diff",
+       "label": "Viral vs Bacteriana",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Maioria viral (rotavírus, norovírus, adenovírus) e autolimitada (5–7 dias). <strong>Hidratação</strong> é o pilar do tratamento. Antibioterapia raramente indicada.</span></div>\n        <table class=\"diff-table\"><thead><tr><th>Viral (maioria)</th><th>Bacteriana (suspeitar se)</th></tr></thead><tbody><tr><td>Diarreia aquosa, sem sangue</td><td>Diarreia com sangue/muco (disenteria)</td></tr><tr><td>Vómitos, febre baixa</td><td>Febre alta &gt;39 °C</td></tr><tr><td>Resolução em 5–7 dias</td><td>Dor abdominal intensa, tenesmo</td></tr><tr><td>Rotavírus (sobretudo &lt;2 anos), norovírus</td><td>Salmonella, Shigella, Campylobacter, E. coli</td></tr></tbody></table>\n        <div class=\"content-block\"><h4>Avaliação da desidratação</h4><ul><li><strong>Sem desidratação</strong> (&lt;3%): aspeto bem, alerta, mucosas húmidas → SRO em casa</li><li><strong>Ligeira a moderada</strong> (3–9%): irritabilidade, olhos encovados, mucosas secas, oligúria → SRO supervisionada</li><li><strong>Grave</strong> (≥9%): letargia, olhos muito encovados, pele em tenda, anúria → urgência hospitalar</li></ul></div>\n        <div class=\"note-text\"><span class=\"sinave\">SINAVE</span> - Diarreia por Salmonella não-Typhi, Shigella e Campylobacter são doenças de notificação obrigatória.</div>"
+      },
+      {
+       "id": "ge-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"alert alert-green\"><span class=\"alert-icon\">+</span><span><strong>Atitude expectante.</strong> O uso empírico de antibióticos <strong>não está preconizado</strong> em crianças, exceto em doença grave e imunossupressão - que exigem <strong>referenciação hospitalar</strong>. Diarreia no recém-nascido → referenciar para Urgência Pediátrica.</span></div>\n\n        <div class=\"content-block\"><h4>Indicações para antibioterapia</h4><ul><li>Disenteria com sinais sistémicos (febre alta, toxicidade)</li><li>Diarreia &gt;7 dias com agente identificado</li><li>Lactentes &lt;3 meses com Salmonella ou suspeita de bacteriemia</li><li>Imunossupressão, comorbilidades graves</li></ul></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">Campylobacter</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 3 dias</span><span class=\"obs\">Máx. 500 mg/dia</span></div></div></div></div></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">Salmonella / Shigella</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 3–5 dias</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Sulfametoxazol + Trimetoprim</span><span class=\"drug-class\">(sulfonamida + inib. DHFR)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">SMX 40 mg/kg/dia + TMP 8 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 5 dias</span></div></div></div></div></div>\n\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>NÃO usar loperamida</strong> em crianças com gastroenterite (risco de íleo paralítico, complicações em Shigella, EHEC). Antiespasmódicos também não recomendados.</span></div>"
+      },
+      {
+       "id": "ge-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><h4>Hidratação (pilar do tratamento)</h4><ul><li><strong>Soluções de reidratação oral (SRO)</strong> - preparado conforme indicação (Dioralyte®, Miltina Electrolit®)</li><li>Em desidratação ligeira: 50 mL/kg em 4h + reposição das perdas (10 mL/kg por dejeção, 2 mL/kg por vómito)</li><li>Reposição contínua das perdas: 5–10 mL/kg/dejeção, 2 mL/kg/vómito</li><li>Lactentes - manter aleitamento materno; em fórmula, retomar precocemente (não diluir)</li></ul></div>\n        <div class=\"content-block\"><h4>Alimentação</h4><ul><li><strong>Retomar alimentação normal precocemente</strong> (4–6h após início da SRO)</li><li>Não restringir lactose (exceto em diarreia prolongada com intolerância documentada)</li><li>Dieta normal, evitar açúcares concentrados, alimentos muito gordos</li></ul></div>\n        <div class=\"content-block\"><h4>Higiene</h4><ul><li>Lavagem frequente das mãos</li><li>Lavar superfícies contaminadas com lixívia diluída</li><li>Afastamento de creche/escola até 48h sem diarreia</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antieméticos (uso pontual)</h4><ul><li><strong>Ondansetrom</strong> 0,15 mg/kg/dose, oral, dose única (≥6 meses) - apenas se vómitos impedem hidratação oral · máx. 8 mg</li><li>Metoclopramida e domperidona <strong>não recomendadas</strong> em pediatria por riscos (extrapiramidais, cardíacos)</li></ul></div>\n        <div class=\"content-block\"><h4>Probióticos (uso seletivo)</h4><ul><li><em>Saccharomyces boulardii</em> 250 mg, 12/12h <strong>(2× dia)</strong>, 5 dias - pode reduzir duração da diarreia em 1 dia</li><li><em>Lactobacillus rhamnosus GG</em> - evidência variável</li></ul></div>\n        <div class=\"content-block\"><h4>Zinco</h4><ul><li>Considerar em populações com risco de défice - 10–20 mg/dia, 10–14 dias (recomendado pela OMS em países em desenvolvimento)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: ESPGHAN 2014 · NICE NG84 · WGO 2023: <a href=\"https://www.espghan.org\" target=\"_blank\">ESPGHAN</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "ge-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>ESPGHAN/ESPID 2014 - Evidence-based Guidelines for the Management of Acute Gastroenteritis in Children in Europe. Guarino A et al. JPGN 2014;59(1):132–152.</li>\n          <li>NICE - Diarrhoea and vomiting in children under 5. CKS 2024.</li>\n          <li>WGO 2023 - World Gastroenterology Organisation Global Guidelines: Acute diarrhea in adults and children.</li>\n          <li>DGS - Norma n.º 020/2012 atualizada. Gastroenterite aguda.</li>\n          <li>SINAVE - Doenças entéricas de notificação obrigatória.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "dvi",
+     "icon": "DV",
+     "title": "Diarreia do viajante",
+     "search": "diarreia viajante etec azitromicina",
+     "tabs": [
+      {
+       "id": "dvi-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Diarreia em viajante a destino de risco (Subcontinente Indiano, Sudeste Asiático, África Subsariana, América Central/Sul). Maioria autolimitada em 3–5 dias.</span></div>\n        <div class=\"content-block\"><h4>Indicações para antibioterapia</h4><ul><li>Diarreia moderada-grave com impacto funcional na viagem</li><li>Disenteria (sangue/muco nas fezes)</li><li>Febre alta</li><li>Idade &lt;2 anos ou imunossupressão</li></ul></div>"
+      },
+      {
+       "id": "dvi-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>E. coli</em> enterotoxigénica (ETEC), <em>Campylobacter</em>, <em>Shigella</em>, <em>Salmonella</em>, protozoários (<em>Giardia</em>)</p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Azitromicina</span><span class=\"drug-class\">(macrólido)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia, oral, 24/24h <strong>(1× dia)</strong>, 3 dias</span><span class=\"obs\">Máx. 500 mg/dia. Preferida em Sul/Sudeste asiático (Campylobacter resistente a quinolonas)</span></div></div></div></div></div>"
+      },
+      {
+       "id": "dvi-sint",
+       "label": "Prevenção e suporte",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><h4>Prevenção («cook it, boil it, peel it, or forget it»)</h4><ul><li>Beber apenas água engarrafada selada ou fervida</li><li>Evitar gelo, gelados, sumos com gelo</li><li>Lavar dentes com água engarrafada</li><li>Comer alimentos bem cozinhados e servidos quentes</li><li>Evitar saladas cruas, fruta sem casca, marisco cru, lácteos não pasteurizados</li><li>Lavagem frequente das mãos</li></ul></div>\n        <div class=\"content-block\"><h4>Tratamento</h4><ul><li>SRO essencial - preparada com água segura</li><li>Manter alimentação conforme tolerância</li><li>Não usar loperamida em crianças</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: CDC Yellow Book 2024 · ISTM 2017: <a href=\"https://wwwnc.cdc.gov/travel/yellowbook/2024/\" target=\"_blank\">CDC Yellow Book</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "dvi-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>CDC Yellow Book 2024 - Travelers' Diarrhea (Children).</li>\n          <li>ISTM 2017 - Guidelines for the prevention and treatment of travelers' diarrhea in children.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    }
+   ],
+   "detailTitle": "Infeções Gastrointestinais"
+  },
+  {
+   "id": "gu",
+   "icon": "GU",
+   "nome": "Infeções Geniturinárias",
+   "label": "Geniturinário",
+   "bubbles": [
+    {
+     "doencaId": "cistite",
+     "label": "Cistite"
+    },
+    {
+     "doencaId": "pn",
+     "label": "Pielonefrite"
+    }
+   ],
+   "diseases": [
+    {
+     "id": "cistite",
+     "icon": "CIS",
+     "title": "ITU baixa (cistite)",
+     "search": "itu infeção urinaria crianca cistite escherichia coli nitrofurantoina amoxicilina cefradina",
+     "tabs": [
+      {
+       "id": "cis-diff",
+       "label": "Apresentação por idade",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>ITU é frequente em pediatria - 7% das raparigas e 2% dos rapazes terão pelo menos um episódio até aos 6 anos. Diagnóstico requer urocultura adequadamente colhida.</span></div>\n        <div class=\"content-block\"><h4>Apresentação por idade</h4><ul><li><strong>&lt;2 anos:</strong> sintomas inespecíficos - febre sem foco, irritabilidade, recusa alimentar, vómitos, má progressão ponderal</li><li><strong>2–6 anos:</strong> disúria, polaquiúria, dor abdominal, enurese de novo</li><li><strong>&gt;6 anos:</strong> sintomas típicos de adulto - disúria, polaquiúria, urgência, dor suprapúbica</li></ul></div>\n        <div class=\"content-block\"><h4>Colheita de urina</h4><ul><li><strong>&gt;2 anos com controlo esfincteriano:</strong> jato médio</li><li><strong>&lt;2 anos:</strong> saco coletor é INADEQUADO para diagnóstico (apenas exclui ITU se negativo). Confirmar com cateterização ou punção suprapúbica se necessário</li></ul></div>\n        <div class=\"note-text\"><strong>Distinguir cistite de pielonefrite:</strong> presença de febre &gt;38 °C, dor lombar ou sintomas sistémicos sugere pielonefrite (ver cartão respetivo).</div>"
+      },
+      {
+       "id": "cis-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Escherichia coli</em> (70–90%), <em>Klebsiella</em>, <em>Proteus</em>, <em>Enterococcus</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - ITU afebril</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima axetil</span><span class=\"drug-class\">(cefalosporina 2.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">20–30 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 3–4 dias</span><span class=\"obs\">Máx. 1 g/dia</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">50 mg/kg/dia (amoxicilina), oral, 12/12h <strong>(2× dia)</strong>, 3–4 dias</span><span class=\"obs\">(1) Se intolerância à cefuroxima. Formulação 4:1. Máx. 3 g/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Sulfametoxazol + Trimetoprim</span><span class=\"drug-class\">(sulfonamida + inib. DHFR)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia (TMP), oral, 12/12h <strong>(2× dia)</strong>, 3–4 dias</span><span class=\"obs\">(2) Se alergia aos beta-lactâmicos. Máx. 160 mg/dia (TMP)</span></div></div></div></div></div>\n\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Atenção:</strong> em crianças NÃO usar fluoroquinolonas (contraindicadas &lt;18 anos exceto situações específicas) nem trimetoprim-sulfametoxazol sem antibiograma (resistências locais elevadas).</span></div>"
+      },
+      {
+       "id": "cis-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Hidratação abundante</li><li>Micção frequente, não adiar</li><li>Higiene perineal antero-posterior (da frente para trás)</li><li>Tratar obstipação se presente (fator de risco)</li><li>Eliminar fatores irritantes (banhos com sabão, espumas, roupa apertada)</li><li>Ensino de esvaziamento vesical completo</li><li>Reavaliação após terminar tratamento</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP 2011/2016 · NICE NG224 · EAU Paediatric 2024: <a href=\"https://uroweb.org/guidelines/paediatric-urology\" target=\"_blank\">EAU Paediatric</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "cis-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP 2011 (revisto 2016) - Urinary Tract Infection: Clinical Practice Guideline for the Diagnosis and Management of the Initial UTI in Febrile Infants and Children 2 to 24 Months.</li>\n          <li>NICE NG224 - Urinary tract infection in under 16s: diagnosis and management. 2022.</li>\n          <li>EAU Paediatric Urology 2024.</li>\n          <li>DGS - Norma n.º 008/2012 atualizada. Diagnóstico e tratamento da ITU na criança.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "pn",
+     "icon": "PN",
+     "title": "ITU alta (pielonefrite)",
+     "search": "pielonefrite itu alta crianca cefuroxima amoxicilina clavulanico cefixima escherichia coli",
+     "tabs": [
+      {
+       "id": "pn-diff",
+       "label": "Cistite vs Pielonefrite",
+       "active": true,
+       "html": "<div class=\"alert alert-warn\"><span class=\"alert-icon\">!</span><span>Infeção potencialmente grave em pediatria. Em &lt;3 meses sempre internar. Investigação imagiológica (ecografia renal) recomendada após 1.º episódio.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> O Guia PAPA/ARS-LVT (2025) inclui a ITU febril na secção de ITU pediátrica, remetendo crianças sem controlo de esfíncter para referenciação hospitalar. O conteúdo abaixo segue NICE NG224 (2022) e AAP (2011/2016).</span></div>\n        <div class=\"content-block\"><h4>Sintomas de pielonefrite</h4><ul><li>Febre &gt;38 °C (frequentemente única manifestação em &lt;2 anos)</li><li>Dor lombar (em crianças mais velhas)</li><li>Sintomas sistémicos - vómitos, prostração, recusa alimentar</li><li>Bacteriúria + leucocitúria significativa + sinais sistémicos</li></ul></div>\n        <div class=\"content-block\"><h4>Critérios de internamento</h4><ul><li>Idade &lt;3 meses (sempre)</li><li>Aspeto tóxico, sépsis</li><li>Desidratação, intolerância oral</li><li>Imunossupressão, uropatia conhecida</li><li>Falência terapêutica em ambulatório</li><li>Insuficiência social/adesão duvidosa</li></ul></div>"
+      },
+      {
+       "id": "pn-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Escherichia coli</em> (maioria), <em>Klebsiella</em>, <em>Proteus</em>, <em>Enterococcus</em></p></div>\n\n        <div class=\"alert alert-danger\"><span class=\"alert-icon\">!</span><span><strong>Referenciação hospitalar:</strong> Em criança SEM controlo de esfíncteres → referenciar ao hospital. Em criança COM controlo de esfíncteres: terapêutica empírica igual a ITU afebril, mas com duração 7-10 dias e urocultura com TSA.</span></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha (ambulatório)</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima axetil</span><span class=\"drug-class\">(cefalosporina 2.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">30 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong>, 7–10 dias</span><span class=\"obs\">Máx. 500 mg/dose</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">80–90 mg/kg/dia (amoxicilina), oral, 8/8h <strong>(3× dia)</strong>, 10 dias</span><span class=\"obs\">(1) Se antibiograma compatível</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefixima</span><span class=\"drug-class\">(cefalosporina 3.ª ger.)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">8 mg/kg/dia, oral, 12/12h <strong>(2× dia)</strong> ou 24/24h <strong>(1× dia)</strong>, 10 dias</span><span class=\"obs\">(2) Alternativa oral com boa atividade contra Gram-negativos</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Internamento e antibioterapia EV SE:</strong> &lt;3 meses · aspeto tóxico/sépsis · vómitos persistentes · desidratação · imunossupressão · uropatia · falência após 48–72h.</span></div>\n\n        <div class=\"content-block\" style=\"margin-top:14px\"><h4>Após o episódio agudo</h4><ul><li>Ecografia renal - recomendada após o 1.º episódio de pielonefrite (especialmente em &lt;6 meses ou ITU recorrente)</li><li>Avaliar necessidade de DMSA (cicatrizes renais) e CUMS (refluxo vesico-ureteral)</li><li>Profilaxia antibiótica não recomendada por rotina (apenas em refluxo de alto grau ou ITU recorrente)</li></ul></div>"
+      },
+      {
+       "id": "pn-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Hidratação abundante</li><li>Repouso conforme tolerância</li><li>Reavaliação clínica em 48–72h</li><li>Urocultura de controlo não rotineiramente necessária se boa resposta clínica</li><li>Investigação imagiológica conforme idade e episódio</li><li>Tratar fatores predisponentes (obstipação, disfunção vesical, fimose se relevante)</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Antipiréticos e analgesia</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong> - preferir sobre AINE</li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses, função renal normal, boa hidratação)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP 2011/2016 · NICE NG224: <a href=\"https://www.nice.org.uk/guidance/ng224\" target=\"_blank\">NICE NG224</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "pn-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP 2011 (revisto 2016) - UTI Clinical Practice Guideline.</li>\n          <li>NICE NG224 - Urinary tract infection in under 16s. 2022.</li>\n          <li>EAU Paediatric Urology 2024.</li>\n          <li>DGS - Norma n.º 008/2012 atualizada. ITU na criança.</li>\n        </ol></div>"
+      }
+     ]
+    }
+   ],
+   "detailTitle": "Infeções Geniturinárias"
+  },
+  {
+   "id": "pele",
+   "icon": "PELE",
+   "nome": "Pele e Tecidos Moles",
+   "label": "Pele",
+   "bubbles": [
+    {
+     "doencaId": "impetigo",
+     "label": "Impétigo"
+    },
+    {
+     "doencaId": "celulite",
+     "label": "Celulite"
+    },
+    {
+     "doencaId": "pediculose",
+     "label": "Piolhos"
+    },
+    {
+     "doencaId": "escabiose",
+     "label": "Sarna"
+    }
+   ],
+   "diseases": [
+    {
+     "id": "impetigo",
+     "icon": "IM",
+     "title": "Impétigo",
+     "search": "impetigo crianca staphylococcus aureus streptococcus pyogenes mupirocina acido fusidico flucloxacilina",
+     "tabs": [
+      {
+       "id": "im-diff",
+       "label": "Localizado vs Extenso",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Infeção cutânea muito frequente em pediatria (sobretudo 2–5 anos). Altamente contagiosa. Lesões iniciais - vesículas que rebentam formando crostas «cor de mel».</span></div>\n        <table class=\"diff-table\"><thead><tr><th>Localizado</th><th>Extenso / Sistémico</th></tr></thead><tbody><tr><td>≤3 lesões agrupadas</td><td>Múltiplas lesões em áreas separadas</td></tr><tr><td>Sem febre nem sintomas sistémicos</td><td>Febre, adenopatia regional, mal-estar</td></tr><tr><td>Tratamento tópico</td><td>Antibioterapia sistémica</td></tr></tbody></table>\n        <div class=\"note-text\"><strong>Impétigo bolhoso:</strong> bolhas maiores que rebentam deixando colar epidérmico. Causado por <em>S. aureus</em> com toxina esfoliativa. Mais comum em recém-nascidos e lactentes.</div>"
+      },
+      {
+       "id": "im-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Staphylococcus aureus</em> (predominante), <em>Streptococcus pyogenes</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Localizado (tópico)</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ácido fusídico</span><span class=\"drug-class\">(antibacteriano tópico)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Creme 20 mg/g, aplicar 8/8h <strong>(3× dia)</strong>, 5 dias</span><span class=\"obs\">Associar limpeza com antisséptico. Remover crostas com soro fisiológico</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Mupirocina</span><span class=\"drug-class\">(antibacteriano tópico)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Pomada 20 mg/g, aplicar 8/8h <strong>(3× dia)</strong>, 5 dias</span><span class=\"obs\">Se falência do ácido fusídico ou suspeita de MRSA</span></div></div></div></div></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Extenso (sistémico)</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Flucloxacilina</span><span class=\"drug-class\">(penicilina antiestafilocócica)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">50–100 mg/kg/dia, oral, 6/6h <strong>(4× dia)</strong>, 7 dias</span><span class=\"obs\">Máx. 1500–2000 mg/dia. Tomar 1h antes ou 2h após refeição</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas - Extenso</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">40–50 mg/kg/dia (amoxicilina), oral, 8/8h <strong>(3× dia)</strong>, 5–7 dias</span><span class=\"obs\">(1) Se intolerância ou indisponibilidade de flucloxacilina. Formulação 4:1. Máx. 1500 mg/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Clindamicina</span><span class=\"drug-class\">(lincosamida)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">30–40 mg/kg/dia, oral, 6/6h <strong>(4× dia)</strong> ou 8/8h <strong>(3× dia)</strong>, 5–7 dias</span><span class=\"obs\">(2) Se hipersensibilidade aos beta-lactâmicos ou suspeita de MRSA. Máx. 1800 mg/dia</span></div></div></div></div></div>"
+      },
+      {
+       "id": "im-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Lavagem cuidadosa das mãos pelas crianças e cuidadores - alta contagiosidade</li><li>Manter as lesões cobertas com penso até secarem</li><li>Cortar unhas curtas - reduz autoinoculação</li><li>Não partilhar toalhas, roupa, brinquedos</li><li>Lavar roupa e toalhas em separado, ≥60 °C</li><li>Afastamento da escola/creche até 24h após início do tratamento</li><li>Investigar foco familiar em recorrências</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Cuidados locais</h4><ul><li>Remoção das crostas com compressas mornas de soro fisiológico, 2–3x/dia</li><li>Lavagem com água e sabão neutro</li></ul></div>\n        <div class=\"content-block\"><h4>Analgesia (se necessário)</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: NICE NG153 · IDSA SSTI 2014: <a href=\"https://www.nice.org.uk/guidance/ng153\" target=\"_blank\">NICE Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "im-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>NICE NG153 - Impetigo: antimicrobial prescribing. 2020.</li>\n          <li>IDSA 2014 - Skin and Soft Tissue Infections.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "celulite",
+     "icon": "CE",
+     "title": "Celulite e Erisipela",
+     "search": "celulite erisipela streptococcus staphylococcus flucloxacilina cefradina clindamicina",
+     "tabs": [
+      {
+       "id": "ce-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Marcar limite do eritema com caneta para monitorizar progressão. Procurar porta de entrada. Reavaliar em 48–72h.</span></div>\n        <table class=\"diff-table\"><thead><tr><th>Erisipela</th><th>Celulite</th></tr></thead><tbody><tr><td>Atinge derme superficial + linfáticos</td><td>Atinge derme profunda + tecido subcutâneo</td></tr><tr><td>Bordo bem demarcado e elevado</td><td>Bordo difuso, mal demarcado</td></tr><tr><td>Eritema vivo, brilhante</td><td>Eritema menos intenso</td></tr><tr><td>Causa: <em>S. pyogenes</em></td><td>Causa: <em>S. pyogenes</em> e <em>S. aureus</em></td></tr></tbody></table>"
+      },
+      {
+       "id": "ce-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Streptococcus pyogenes</em>, <em>Staphylococcus aureus</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Celulite</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Flucloxacilina</span><span class=\"drug-class\">(penicilina antiestafilocócica)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">50–100 mg/kg/dia, oral, 6/6h <strong>(4× dia)</strong>, 7 dias</span><span class=\"obs\">Máx. 1500–2000 mg/dia · 1h antes ou 2h após refeição · Celulite (S. aureus + S. pyogenes)</span></div></div></div></div></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Erisipela</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina</span><span class=\"drug-class\">(aminopenicilina)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">50 mg/kg/dia, oral, 8/8h <strong>(3× dia)</strong>, 10 dias</span><span class=\"obs\">Erisipela (predomínio de S. pyogenes). Confirmação de Streptococcus</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativas</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">40–50 mg/kg/dia (amoxicilina), oral, 8/8h <strong>(3× dia)</strong>, 7 dias</span><span class=\"obs\">(1) Celulite. Formulação 14:1. Máx. 1500 mg/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Clindamicina</span><span class=\"drug-class\">(lincosamida)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">30–40 mg/kg/dia, oral, 6/6h <strong>(4× dia)</strong> ou 8/8h <strong>(3× dia)</strong>, 7 dias</span><span class=\"obs\">(2) Se hipersensibilidade aos beta-lactâmicos ou suspeita de MRSA. Máx. 1800 mg/dia</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Sulfametoxazol + Trimetoprim</span><span class=\"drug-class\">(sulfonamida + DHFR)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">10 mg/kg/dia (TMP), oral, 12/12h <strong>(2× dia)</strong>, 7 dias</span><span class=\"obs\">Hipersensibilidade a beta-lactâmicos. Máx. 160 mg/dia (TMP). Contraindicado &lt;6 semanas</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Referenciação SE:</strong> sépsis · febre alta com mau estado geral · idade &lt;3 meses · fasceíte necrotizante · celulite periorbitária/orbitária · imunossupressão · falência terapêutica 48–72h.</span></div>"
+      },
+      {
+       "id": "ce-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li><strong>Marcar limite do eritema com caneta</strong> - avaliar progressão em 48–72h</li><li>Elevação do membro afetado se possível</li><li>Repouso relativo</li><li>Tratar porta de entrada (fissura, picadas, eczema)</li><li>Hidratação adequada da pele</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia e antipiréticos</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: NICE NG141 · IDSA SSTI 2014: <a href=\"https://www.nice.org.uk/guidance/ng141\" target=\"_blank\">NICE Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "ce-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>NICE NG141 - Cellulitis and erysipelas: antimicrobial prescribing. 2019.</li>\n          <li>IDSA 2014 - Skin and Soft Tissue Infections.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "pediculose",
+     "icon": "PD",
+     "title": "Pediculose (Piolhos)",
+     "search": "pediculose piolhos lendeas pediculus humanus capitis permetrina dimeticona escola",
+     "tabs": [
+      {
+       "id": "pd-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Infestação muito comum em idade escolar (3–11 anos). Transmissão por contacto direto ou objetos partilhados (escovas, gorros, almofadas).</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> Pediculose não consta no Guia PAPA/ARS-LVT (2025). O conteúdo segue AAP Red Book (2024) e CDC (2024).</span></div>\n        <div class=\"content-block\"><h4>Apresentação</h4><ul><li>Prurido intenso no couro cabeludo (sobretudo nucal e retro-auricular)</li><li>Visualização de piolhos (3–4 mm) ou lêndeas (ovos) aderentes ao cabelo</li><li>Eritema, escoriações por coçar</li><li>Adenopatia cervical/occipital secundária</li></ul></div>\n        <div class=\"note-text\"><strong>Diagnóstico:</strong> visualização direta dos piolhos vivos. Lêndeas sem piolhos vivos podem ser antigas (não significam infestação ativa).</div>"
+      },
+      {
+       "id": "pd-atb",
+       "label": "Tratamento",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismo</h4><p><em>Pediculus humanus capitis</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Tópico</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Permetrina 1%</span><span class=\"drug-class\">(piretroide tópico)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Loção/champô: aplicar no cabelo seco, deixar atuar 10 min, enxaguar. <strong>Repetir em 7–10 dias</strong></span><span class=\"obs\">≥2 meses. Pode haver resistências locais</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Dimeticona 4%</span><span class=\"drug-class\">(silicone, sufocação física)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Loção: aplicar no cabelo seco, deixar atuar 8h, enxaguar. Repetir em 7 dias</span><span class=\"obs\">Sem resistências (mecanismo físico)</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Casos refratários</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ivermectina</span><span class=\"drug-class\">(antiparasitário sistémico)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">200 µg/kg, oral, toma única, repetir em 7 dias</span><span class=\"obs\">Apenas em casos refratários. ≥15 kg</span></div></div></div></div></div>"
+      },
+      {
+       "id": "pd-sint",
+       "label": "Medidas de controlo",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><h4>Remoção mecânica das lêndeas</h4><ul><li>Pente fino metálico - diariamente, no cabelo molhado com amaciador, 2–3 semanas</li><li>Repetir após cada tratamento medicamentoso</li></ul></div>\n        <div class=\"content-block\"><h4>Controlo de contactos</h4><ul><li>Examinar todos os familiares - tratar apenas os infestados</li><li>Não é necessário afastamento escolar prolongado - regressa após primeiro tratamento</li><li>Notificar a escola</li></ul></div>\n        <div class=\"content-block\"><h4>Medidas ambientais</h4><ul><li>Lavar roupa de cama, toalhas, gorros a ≥60 °C</li><li>Itens não laváveis: ensacar em plástico 2 semanas</li><li>Aspirar móveis estofados e tapetes</li><li>Não partilhar escovas, pentes, gorros</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica adjuvante</h4>\n        <div class=\"content-block\"><h4>Alívio do prurido</h4><ul><li>Compressas frias</li><li>Anti-histamínico oral se prurido intenso: <strong>Cetirizina</strong> 0,25 mg/kg/dia, 1x/dia (≥6 meses)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAP Red Book 2024 · CDC: <a href=\"https://www.cdc.gov/lice/\" target=\"_blank\">CDC Lice</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "pd-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAP Red Book 2024 - Head Lice.</li>\n          <li>CDC 2024 - Head Lice: Treatment.</li>\n          <li>NICE - Head lice. CKS 2024.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "escabiose",
+     "icon": "ES",
+     "title": "Escabiose (Sarna)",
+     "search": "escabiose sarna sarcoptes scabiei permetrina ivermectina prurido noturno tuneis",
+     "tabs": [
+      {
+       "id": "es-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Infestação por <em>Sarcoptes scabiei</em>. Transmissão por contacto pele-pele prolongado. <strong>Tratar simultaneamente todos os contactos íntimos</strong>, mesmo assintomáticos.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> Escabiose não consta no Guia PAPA/ARS-LVT (2025). O conteúdo segue IUSTI/WHO (2017) e CDC (2024).</span></div>\n        <div class=\"content-block\"><h4>Apresentação típica</h4><ul><li><strong>Prurido intenso, sobretudo noturno</strong> (sinal cardinal)</li><li>Túneis acarianos lineares (3–10 mm) - espaços interdigitais, punhos, axilas, cintura, genitais</li><li>Pápulas eritematosas, vesículas, escoriações</li><li>Em lactentes - palmas, plantas, face e couro cabeludo também afetados (atípico)</li><li>Lesões em vários membros da família</li></ul></div>\n        <div class=\"note-text\"><strong>Diagnóstico:</strong> clínico. Confirmação por dermatoscopia ou raspado cutâneo.</div>"
+      },
+      {
+       "id": "es-atb",
+       "label": "Tratamento",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismo</h4><p><em>Sarcoptes scabiei var. hominis</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Tópico</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Permetrina 5%</span><span class=\"drug-class\">(piretroide tópico)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Creme: aplicar em todo o corpo do pescoço para baixo; incluir couro cabeludo, palmas e plantas em &lt;2 anos. Deixar 8–14h, retirar com banho. <strong>Repetir em 7 dias</strong></span><span class=\"obs\">≥2 meses. Tratar todos os contactos íntimos em simultâneo</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativa - Sistémica</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ivermectina</span><span class=\"drug-class\">(antiparasitário sistémico)</span></div><div class=\"atb-dose-col\"><span class=\"dose\">200 µg/kg, oral, toma única, repetir em 7–14 dias</span><span class=\"obs\">≥15 kg. Útil em surtos comunitários, escabiose crostosa, falência tópica</span></div></div></div></div></div>"
+      },
+      {
+       "id": "es-sint",
+       "label": "Medidas de controlo",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais (essenciais)</h4>\n        <div class=\"content-block\"><h4>Tratamento dos contactos</h4><ul><li><strong>Tratar simultaneamente todos os contactos próximos</strong> (todos os co-habitantes, parceiros, cuidadores) mesmo assintomáticos</li><li>Período de incubação 2–6 semanas → prurido pode aparecer tarde</li></ul></div>\n        <div class=\"content-block\"><h4>Medidas ambientais</h4><ul><li>Lavar roupa de cama, toalhas, roupa pessoal - máquina ≥60 °C ou secadora quente</li><li>Itens não laváveis: ensacar em plástico 7 dias (o ácaro morre fora do hospedeiro)</li><li>Aspirar tapetes e móveis estofados</li></ul></div>\n        <div class=\"content-block\"><h4>Pós-tratamento</h4><ul><li><strong>O prurido pode persistir 2–4 semanas</strong> após tratamento eficaz - não significa falência</li><li>Avaliar resposta em 4 semanas</li><li>Regresso à escola/creche após 24h de tratamento</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Alívio do prurido</h4><ul><li>Emolientes generosos</li><li><strong>Cetirizina</strong> 0,25 mg/kg/dia, oral, 1x/dia (≥6 meses) à noite</li><li>Corticoide tópico (hidrocortisona 1%) para lesões pruriginosas residuais (uso pontual)</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: CDC · IUSTI/WHO 2017: <a href=\"https://www.cdc.gov/scabies/\" target=\"_blank\">CDC Scabies</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "es-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>IUSTI/WHO 2017 - European guideline for the management of scabies.</li>\n          <li>CDC 2024 - Scabies: Treatment.</li>\n          <li>NICE - Scabies. CKS 2024.</li>\n          <li>AAP Red Book 2024 - Scabies.</li>\n        </ol></div>"
+      }
+     ]
+    }
+   ],
+   "detailTitle": "Pele e Tecidos Moles"
+  },
+  {
+   "id": "outras",
+   "icon": "OUT",
+   "nome": "Outras Infeções Frequentes",
+   "label": "Outras",
+   "bubbles": [
+    {
+     "doencaId": "conjuntivite",
+     "label": "Conjuntivite"
+    },
+    {
+     "doencaId": "estomatite",
+     "label": "Estomatite"
+    },
+    {
+     "doencaId": "mordeduras",
+     "label": "Mordeduras"
+    }
+   ],
+   "diseases": [
+    {
+     "id": "conjuntivite",
+     "icon": "CO",
+     "title": "Conjuntivite bacteriana",
+     "search": "conjuntivite bacteriana crianca cloranfenicol tobramicina staphylococcus haemophilus",
+     "tabs": [
+      {
+       "id": "co-diff",
+       "label": "Viral vs Bacteriana",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Em pediatria a conjuntivite bacteriana é mais frequente que no adulto, sobretudo &lt;5 anos. Muitas vezes autolimitada (5–10 dias). Tratamento tópico acelera cura e reduz transmissão.</span></div>\n        <table class=\"diff-table\"><thead><tr><th>Viral / Alérgica</th><th>Bacteriana</th></tr></thead><tbody><tr><td>Secreção aquosa</td><td>Secreção mucopurulenta espessa</td></tr><tr><td>Bilateral, sintomas IVRS associados</td><td>Pode iniciar unilateral, pálpebras coladas ao acordar</td></tr><tr><td>Adenovírus (mais frequente)</td><td>H. influenzae, S. pneumoniae, S. aureus</td></tr></tbody></table>\n        <div class=\"content-block\"><h4>Sinais de alarme - referenciar a oftalmologia</h4><ul><li>Recém-nascido (oftalmia neonatal)</li><li>Dor ocular intensa, diminuição da acuidade visual</li><li>Fotofobia, edema palpebral marcado</li><li>Suspeita de celulite peri-orbitária ou orbitária</li><li>Utilizador de lentes de contacto</li></ul></div>"
+      },
+      {
+       "id": "co-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><em>Haemophilus influenzae</em> não tipável (mais comum em pediatria), <em>Streptococcus pneumoniae</em>, <em>Staphylococcus aureus</em>, <em>Moraxella catarrhalis</em></p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cloranfenicol</span><span class=\"drug-class\">(antibacteriano oftálmico)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Colírio 8 mg/mL: 1 gota cada 2h (D1–D2), depois 6/6h-8/8h (D3–D7)</span><span class=\"obs\">Manter até 48h após resolução. Pomada 10 mg/g: 1 aplicação 6/6h-8/8h</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativa</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ofloxacina</span><span class=\"drug-class\">(fluoroquinolona tópica)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Colírio 3 mg/mL: 1–2 gotas cada 2–4h (D1–D2), depois 6/6h (D3–D7)</span><span class=\"obs\">Quinolona é 1.ª linha em utilizadores de lentes de contacto</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ciprofloxacina</span><span class=\"drug-class\">(fluoroquinolona tópica)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Pomada oftálmica 3 mg/mL: tira de 1,5 cm, 8/8h <strong>(3× dia)</strong> D1-D2, depois 12/12h <strong>(2× dia)</strong> D3-D7</span></div></div></div><div class=\"atb-ou\">Ou</div><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Ácido fusídico</span><span class=\"drug-class\">(antibacteriano tópico)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Gel oftálmico 10 mg/g: 1 aplicação 6/6h-8/8h, até 48h após resolução</span></div></div></div></div></div>\n\n        <div class=\"content-block\" style=\"margin-top:14px\"><h4>Síndrome conjuntivite-otite</h4><p>Frequente em pediatria, causado por <em>H. influenzae</em> não tipável. Considerar antibioterapia sistémica (amox-clav 80–90 mg/kg/dia) para cobrir os dois focos.</p></div>"
+      },
+      {
+       "id": "co-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><ul><li>Lavagem cuidadosa das mãos (criança e cuidadores)</li><li>Não tocar nos olhos</li><li>Não partilhar toalhas, almofadas, brinquedos próximos do rosto</li><li>Limpar secreções com compressa estéril embebida em soro fisiológico - do canto interno para o externo, uma compressa por olho</li><li>Pode regressar à creche/escola após 24h de tratamento</li><li>Lavar fronhas e toalhas em separado</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Conforto ocular</h4><ul><li><strong>Lágrimas artificiais</strong> sem conservantes (monodose) - 1 gota, 4/4h-6/6h <strong>(4× dia)</strong></li><li>Compressas frias sobre olhos fechados - alívio do edema</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: AAO PPP 2018 · NICE CKS: <a href=\"https://www.aao.org/clinical-statement/conjunctivitis-ppp\" target=\"_blank\">AAO Guidelines</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "co-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>AAO 2018 - Conjunctivitis Preferred Practice Pattern.</li>\n          <li>NICE - Conjunctivitis (infective). CKS 2024.</li>\n          <li>WHO AWaRe antibiotic book. WHO, 2022.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "estomatite",
+     "icon": "EH",
+     "title": "Gengivoestomatite herpética",
+     "search": "estomatite herpetica gengivoestomatite herpes simplex hsv aciclovir crianca primoinfecao",
+     "tabs": [
+      {
+       "id": "eh-diff",
+       "label": "Apresentação",
+       "active": true,
+       "html": "<div class=\"alert alert-info\"><span class=\"alert-icon\">i</span><span>Primoinfeção sintomática por HSV-1. Idade típica: 6 meses - 5 anos. Quadro auto-limitado em 7–14 dias mas pode causar desidratação grave por recusa alimentar.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>* Nota:</strong> Gengivoestomatite herpética não consta no Guia PAPA/ARS-LVT (2025). O conteúdo segue NICE CKS (2024) e AAP Red Book (2024).</span></div>\n        <div class=\"content-block\"><h4>Apresentação típica</h4><ul><li>Febre alta de início súbito</li><li>Recusa alimentar, recusa hídrica</li><li>Sialorreia, halitose</li><li>Vesículas e úlceras dolorosas na mucosa oral (gengiva, língua, palato, mucosa jugal)</li><li>Adenopatia cervical e submandibular dolorosa</li><li>Pode haver lesões peri-orais e perinasais</li></ul></div>\n        <div class=\"content-block\"><h4>Sinais de gravidade - internamento</h4><ul><li>Desidratação por recusa hídrica</li><li>Incapacidade total de tolerar líquidos</li><li>Lesões extensas com risco de sobreinfeção</li><li>Imunossupressão</li><li>Diagnóstico diferencial duvidoso</li></ul></div>"
+      },
+      {
+       "id": "eh-atb",
+       "label": "Tratamento",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismo</h4><p><em>Herpes Simplex Vírus tipo 1</em> (HSV-1) - primoinfeção sintomática</p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Iniciar nas primeiras 72h</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Aciclovir</span><span class=\"drug-class\">(antiviral nucleósido)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">20 mg/kg/dose, oral, 6/6h (4x/dia), 5–7 dias</span><span class=\"obs\">Máx. 800 mg/dose. Suspensão oral 200 mg/5 mL disponível. Iniciar nas primeiras 72h reduz duração</span></div></div></div></div></div>\n\n        <div class=\"alert alert-info\" style=\"margin-top:14px\"><span class=\"alert-icon\">i</span><span><strong>Após 72h:</strong> o benefício do antiviral é limitado. Manter apenas tratamento de suporte (hidratação, analgesia).</span></div>\n\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span>A criança permanece contagiosa enquanto houver lesões ativas. Evitar contacto íntimo, partilha de utensílios. Crianças com eczema atópico têm risco aumentado de eczema herpético.</span></div>"
+      },
+      {
+       "id": "eh-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais</h4>\n        <div class=\"content-block\"><h4>Hidratação (essencial - risco de internamento por desidratação)</h4><ul><li>Líquidos frios, gelados (sumos frescos, gelatina, batidos)</li><li>Iogurtes, gelados - frios aliviam a dor e fornecem calorias</li><li>Beber por palhinha (menos contacto com mucosa lesada)</li><li>Pequenas quantidades, frequentemente</li><li>Evitar sumos cítricos, alimentos ácidos, picantes, salgados</li></ul></div>\n        <div class=\"content-block\"><h4>Higiene oral</h4><ul><li>Bochechos suaves com soro fisiológico (em crianças mais velhas)</li><li>Escovagem dos dentes com escova muito macia</li><li>Não usar pasta de dentes mentolada (ardor)</li></ul></div>\n        <div class=\"content-block\"><h4>Cuidado das lesões</h4><ul><li>Não rebentar vesículas</li><li>Lavar mãos frequentemente para evitar auto-inoculação (dedos, olhos)</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia (pilar do tratamento sintomático)</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h (máx. 60 mg/kg/dia)</li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses, hidratação adequada)</li><li>Alternar para controlo ótimo da dor</li></ul></div>\n        <div class=\"content-block\"><h4>Analgesia tópica</h4><ul><li><strong>Lidocaína viscosa 2%</strong> - aplicar pequena quantidade nas lesões antes das refeições (apenas em crianças que consigam não engolir; cuidado com sobredosagem)</li><li>Gel oral com benzidamina ou cloreto de cetilpiridínio - em crianças mais velhas</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: NICE CKS 2024 · AAP Red Book 2024: <a href=\"https://cks.nice.org.uk/topics/herpes-simplex-oral/\" target=\"_blank\">NICE CKS</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "eh-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>NICE - Herpes simplex - oral. CKS 2024.</li>\n          <li>AAP Red Book 2024 - Herpes simplex virus infections.</li>\n          <li>Cochrane Review - Antiviral agents for primary herpetic gingivostomatitis. 2008.</li>\n        </ol></div>"
+      }
+     ]
+    },
+    {
+     "id": "mordeduras",
+     "icon": "MO",
+     "title": "Mordeduras (animais e humanas)",
+     "search": "mordeduras animais humanas pasteurella eikenella amoxicilina clavulanico raiva tetano",
+     "tabs": [
+      {
+       "id": "mo-diff",
+       "label": "Avaliação inicial",
+       "active": true,
+       "html": "<div class=\"alert alert-warn\"><span class=\"alert-icon\">!</span><span><strong>Avaliar sempre:</strong> estado vacinal antitetânico · risco de raiva (animal selvagem, morcego, cão não vacinado) · profundidade da ferida · contaminação.</span></div>\n        <div class=\"content-block\"><h4>Indicações para antibioterapia profilática</h4><ul><li>Mordedura humana (qualquer localização)</li><li>Mordedura de gato (lesões profundas, alto risco)</li><li>Localização: face, mãos, pés, articulações, genitais</li><li>Feridas profundas, puntiformes, com tecido desvitalizado</li><li>Imunossupressão, asplenia</li><li>Atraso na apresentação (&gt;8h)</li></ul></div>\n        <div class=\"note-text\"><strong>Não suturar primariamente</strong> (exceto face por motivos estéticos, com observação cuidadosa) - risco de infeção secundária. Preferir cicatrização por 2.ª intenção.</div>"
+      },
+      {
+       "id": "mo-atb",
+       "label": "Antibioterapia",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Microrganismos mais frequentes</h4><p><strong>Cão/Gato:</strong> <em>Pasteurella multocida</em>, <em>Staphylococcus</em>, <em>Streptococcus</em>, anaeróbios · <strong>Humano:</strong> <em>Eikenella corrodens</em>, <em>Streptococcus</em>, <em>Staphylococcus</em>, anaeróbios orais</p></div>\n\n        <div class=\"atb-block primeira\"><div class=\"atb-block-header\">1.ª Linha - Profilaxia ou tratamento</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Amoxicilina + Ác. Clavulânico</span><span class=\"drug-class\">(aminopenicilina + inib. beta-lactamase)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">40–50 mg/kg/dia (amoxicilina), oral, 8/8h <strong>(3× dia)</strong>, 3–5 dias (profilaxia) ou 7 dias (tratamento)</span><span class=\"obs\">Formulação 4:1. Máx. 1500 mg/dia</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativa - Hipersensibilidade NÃO tipo I à penicilina</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Cefuroxima + Clindamicina</span><span class=\"drug-class\">(cefalosporina 2.ª ger. + lincosamida)</span> <span class=\"badge badge-watch\">WATCH</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Cefuroxima 20-30 mg/kg/dia 12/12h <strong>(2× dia)</strong> + Clindamicina 30-40 mg/kg/dia, oral, 6/6h-8/8h, 3-5 dias (profilaxia) ou 7 dias (tratamento)</span><span class=\"obs\">Máx. Cefuroxima 500 mg/dia; Clindamicina 1800 mg/dia</span></div></div></div></div></div>\n\n        <div class=\"atb-block alternativa\"><div class=\"atb-block-header\">Alternativa - Hipersensibilidade tipo I à penicilina</div><div class=\"atb-block-body\"><div class=\"atb-item\"><div class=\"atb-row\"><div class=\"atb-drug-col\"><span class=\"drug\">Clindamicina + SMX-TMP</span><span class=\"drug-class\">(lincosamida + sulfonamida)</span> <span class=\"badge badge-access\">ACCESS</span></div><div class=\"atb-dose-col\"><span class=\"dose\">Clindamicina 30-40 mg/kg/dia 6/6h-8/8h + SMX-TMP 10 mg/kg/dia (TMP) 12/12h <strong>(2× dia)</strong>, 3-5 dias (profilaxia) ou 7 dias (tratamento)</span><span class=\"obs\">Máx. Clindamicina 1800 mg/dia; SMX-TMP 160 mg/dia (TMP)</span></div></div></div></div></div>\n\n        <div class=\"alert alert-danger\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Profilaxia obrigatória:</strong> antitetânica conforme estado vacinal (reforço se &gt;5 anos da última dose em ferida contaminada). Profilaxia da raiva - avaliar risco e administrar vacina ± imunoglobulina conforme normas DGS.</span></div>\n        <div class=\"alert alert-warn\" style=\"margin-top:14px\"><span class=\"alert-icon\">!</span><span><strong>Considerar referenciação:</strong> mordeduras na face · mordeduras profundas das mãos · feridas extensas · imunossupressão · suspeita de envolvimento ósseo, articular ou tendinoso · sépsis · raiva potencial.</span></div>"
+      },
+      {
+       "id": "mo-sint",
+       "label": "Terapêutica sintomática",
+       "active": false,
+       "html": "<div style=\"margin-top:0\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Medidas gerais (essenciais)</h4>\n        <div class=\"content-block\"><ul><li><strong>Lavagem abundante</strong> da ferida com água e sabão durante ≥5 min (15 min se risco de raiva)</li><li>Irrigação com soro fisiológico sob pressão</li><li>Desbridamento de tecidos desvitalizados</li><li>Antissepsia com iodopovidona ou clorexidina</li><li>Não suturar primariamente (exceto face)</li><li>Penso oclusivo e elevação do membro afetado</li><li>Reavaliação clínica em 24–48h</li><li>Atualização da vacina antitetânica conforme indicação</li><li>Avaliar necessidade de profilaxia da raiva (DGS)</li></ul></div>\n        <div style=\"margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)\"><h4 style=\"font-family:'Outfit',sans-serif;font-weight:700;font-size:0.95rem;color:var(--sys-dark);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px\">Terapêutica farmacológica</h4>\n        <div class=\"content-block\"><h4>Analgesia</h4><ul><li><strong>Paracetamol</strong> 15 mg/kg/dose, 6/6h-8/8h <strong>(3× dia)</strong></li><li><strong>Ibuprofeno</strong> 10 mg/kg/dose, 8/8h (≥3 meses)</li></ul></div>\n        <div class=\"content-block\"><h4>Imunizações</h4><ul><li><strong>Vacina antitetânica</strong>: conforme estado vacinal PNV. Tdpa em ≥3 anos se reforço necessário</li><li><strong>Imunoglobulina antitetânica</strong>: 250 UI IM se ferida contaminada e doente não vacinado/incompleto</li><li><strong>Profilaxia antirrábica</strong>: avaliação por médico de saúde pública/centro de referência</li></ul></div>\n        </div>\n        <div class=\"source-note\">Fonte: NICE NG184 · DGS Norma Tétano · DGS Norma Raiva: <a href=\"https://www.nice.org.uk/guidance/ng184\" target=\"_blank\">NICE Guideline</a> · <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">INFARMED Infomed</a></div>\n        </div>"
+      },
+      {
+       "id": "mo-guide",
+       "label": "Guidelines",
+       "active": false,
+       "html": "<div class=\"content-block\"><h4>Guidelines de referência</h4>\n        <ol class=\"ref-list\">\n          <li>NICE NG184 - Human and animal bites: antimicrobial prescribing. 2020.</li>\n          <li>IDSA 2014 - Skin and Soft Tissue Infections.</li>\n          <li>DGS - Norma Profilaxia Antitetânica.</li>\n          <li>DGS - Plano Nacional de Eliminação da Raiva.</li>\n          <li>AAP Red Book 2024 - Bite wounds.</li>\n        </ol></div>"
+      }
+     ]
+    }
+   ],
+   "detailTitle": "Outras Infeções Frequentes"
+  }
+ ],
+ "doses": {
+  "html": "<div class=\"detail-header\">\n    <button class=\"back-btn\">← Início</button>\n    <div class=\"detail-color\" style=\"background:#A8C9AC\"></div>\n    <span class=\"detail-title\">Cálculo de Doses Pediátricas</span>\n  </div>\n\n  <div class=\"dose-help\">\n    <strong>Esta secção ensina como funciona o cálculo de doses em pediatria.</strong> Aqui aprendes os princípios e tens exemplos passo-a-passo baseados em guidelines oficiais portuguesas e internacionais. As <strong>doses específicas</strong> para cada infeção estão dentro de cada cartão de doença, no separador <em>Antibioterapia</em>. A <strong>calculadora flutuante</strong> (canto inferior direito) sumariza o esquema de cálculo.\n  </div>\n\n  <details class=\"form-explainer\">\n    <summary class=\"form-explainer-summary\">\n      <span>Suspensão ou comprimido? Como funcionam os AB em pediatria</span>\n    </summary>\n    <div class=\"form-explainer-body\">\n      <h4>Por idade e peso</h4>\n      <table>\n        <thead><tr><th>Idade · Peso</th><th>Formulação habitual</th><th>Porquê</th></tr></thead>\n        <tbody>\n          <tr><td>Até ~6 meses</td><td>Suspensão / gotas</td><td>Doses muito pequenas, não engole comprimidos</td></tr>\n          <tr><td>~6 meses - 5 anos</td><td><strong>Suspensão oral</strong></td><td>Não engole comprimidos, dose por peso</td></tr>\n          <tr><td>~5 - 8 anos</td><td>Suspensão <em>ou</em> comp. dispersíveis</td><td>Fase de transição, depende da criança</td></tr>\n          <tr><td>~8 - 12 anos</td><td>Comprimido / cápsula ou suspensão</td><td>Maioria já engole comprimidos</td></tr>\n          <tr><td>&gt;12 anos · &gt;40 kg</td><td>Apresentação adulta</td><td>Dose pediátrica iguala dose adulta</td></tr>\n        </tbody>\n      </table>\n\n      <h4>Formulações disponíveis em Portugal (referência)</h4>\n      <ul>\n        <li><strong>Amoxicilina:</strong> suspensão 250 mg/5 mL · 500 mg/5 mL · comp. 500 mg · 1 g · comp. dispersíveis 125/250/500 mg</li>\n        <li><strong>Amox + Clav:</strong> susp. 100/12,5 mg/mL (lactentes) · 400/57 mg/5 mL (forte) · comp. 875/125 mg</li>\n        <li><strong>Cefradina:</strong> susp. 250 mg/5 mL · cáps. 500 mg</li>\n        <li><strong>Cefuroxima axetil:</strong> susp. 125 mg/5 mL · 250 mg/5 mL · comp. 250 mg · 500 mg</li>\n        <li><strong>Flucloxacilina:</strong> susp. 125 mg/5 mL · cáps. 500 mg</li>\n        <li><strong>Azitromicina:</strong> susp. 200 mg/5 mL · comp. 500 mg</li>\n        <li><strong>Nitrofurantoína:</strong> susp. 25 mg/5 mL (Furadantina®) · cáps. 100 mg</li>\n        <li><strong>Aciclovir:</strong> susp. 200 mg/5 mL · comp. 200/400/800 mg</li>\n      </ul>\n\n      <h4>Reconstituição da suspensão</h4>\n      <ul>\n        <li>O frasco vem em <strong>pó</strong> - adicionar a água engarrafada/fervida até à marca indicada e agitar bem</li>\n        <li>Validade após reconstituição: tipicamente <strong>14 dias no frigorífico</strong> (verificar RCM de cada apresentação)</li>\n        <li>Agitar bem antes de cada toma</li>\n        <li>Usar seringa oral graduada (mais precisa que colher de chá ou medida do tampão)</li>\n      </ul>\n\n      <h4>Quando passar para comprimido?</h4>\n      <ul>\n        <li>Criança consegue engolir comprimido com água - testar primeiro com gomas/cápsulas vazias</li>\n        <li>Peso ≥ 25–30 kg em vários antibióticos (a dose corresponde a comprimido inteiro)</li>\n        <li>Preferência da criança/família · adesão</li>\n        <li>Alguns comprimidos podem ser <strong>triturados ou dispersos em água/iogurte</strong> (verificar RCM)</li>\n      </ul>\n\n      <h4>Estratégias se a criança recusa</h4>\n      <ul>\n        <li>Comprimidos dispersíveis (sabores frutados disponíveis)</li>\n        <li>Suspensões com sabores melhorados (banana, morango, frutos vermelhos)</li>\n        <li>Dar com sumo de fruta (verificar interacções - evitar com macrólidos sem orientação)</li>\n        <li>Não misturar em biberão de leite (pode não acabar toda a dose)</li>\n        <li>Reforço positivo, brincadeira, autocolantes - não obrigar à força</li>\n      </ul>\n    </div>\n  </details>\n\n    <details class=\"form-explainer\">\n    <summary class=\"form-explainer-summary\">\n      <span>Porque é que se calcula a dose por peso (mg/kg)?</span>\n    </summary>\n    <div class=\"form-explainer-body\">\n      <p>Em pediatria, as crianças têm <strong>características farmacocinéticas diferentes dos adultos</strong> - a forma como absorvem, distribuem, metabolizam e eliminam os fármacos varia substancialmente com a idade, o peso e a maturação dos órgãos (sobretudo fígado e rim).</p>\n\n      <h4>Principais diferenças</h4>\n      <ul>\n        <li><strong>Volume de distribuição</strong> - crianças têm maior proporção de água corporal total e menor proporção de massa gorda</li>\n        <li><strong>Função renal</strong> - imatura nos primeiros meses de vida (clearance de creatinina baixo até aos 12 meses)</li>\n        <li><strong>Função hepática</strong> - sistemas enzimáticos (citocromo P450) ainda em maturação</li>\n        <li><strong>Barreira hemato-encefálica</strong> - mais permeável em recém-nascidos</li>\n        <li><strong>Massa corporal</strong> - pode variar 20× entre um RN (3 kg) e um adolescente (60 kg)</li>\n      </ul>\n\n      <p>Por isto, prescrever uma <em>dose fixa</em> seria perigoso. As doses pediátricas são expressas em <strong>mg/kg/dia</strong> ou <strong>mg/kg/dose</strong> e ajustam-se ao tamanho da criança.</p>\n\n      <div class=\"form-explainer-source\"><strong>Fonte:</strong> BNF for Children (BNFc) 2024 - capítulo \"Prescribing for children\" · WHO (2010) Model Formulary for Children · DGS Norma n.º 006/2014 atualizada</div>\n    </div>\n  </details>\n\n  <details class=\"form-explainer\">\n    <summary class=\"form-explainer-summary\">\n      <span>Como se calcula uma dose passo-a-passo - exemplos aprofundados</span>\n    </summary>\n    <div class=\"form-explainer-body\">\n      <p>O cálculo segue sempre <strong>4 passos</strong>. Mostro com 3 exemplos baseados na <em>Orientação CNFT/INFARMED n.º 18</em> (Fev 2024) para infeções respiratórias pediátricas.</p>\n\n      <div class=\"dose-example-box\">\n        <div class=\"dose-example-title\">Exemplo 1 · OMA · Criança 12 kg</div>\n        <p><em>Prescrição:</em> Amoxicilina 80–90 mg/kg/dia, 8/8h (3× dia), máx. 3 g/dia <em>(CNFT/INFARMED Orient. n.º 18, 2024)</em></p>\n        <ol class=\"dose-steps-list\">\n          <li><strong>Dose diária total</strong><br><code>12 kg × 90 mg/kg/dia = 1080 mg/dia</code></li>\n          <li><strong>Verificar dose máxima diária</strong><br>1080 mg &lt; 3000 mg (máx) → <strong>OK, não capar</strong></li>\n          <li><strong>Dose por toma</strong> (8/8h = 3× dia)<br><code>1080 mg ÷ 3 = 360 mg/toma</code></li>\n          <li><strong>Volume na suspensão</strong> (250 mg/5 mL)<br><code>(360 mg × 5 mL) ÷ 250 mg = 7,2 mL/toma</code><br><em>Na prática, arredondar para 7 ou 7,5 mL.</em></li>\n        </ol>\n      </div>\n\n      <div class=\"dose-example-box\">\n        <div class=\"dose-example-title\">Exemplo 2 · Faringoamigdalite por SGA · Criança 25 kg</div>\n        <p><em>Prescrição:</em> Amoxicilina 50 mg/kg/dia, 12/12h (2× dia), máx. 1 g/dia <em>(CNFT/INFARMED Orient. n.º 18, 2024)</em></p>\n        <ol class=\"dose-steps-list\">\n          <li><strong>Dose diária total</strong><br><code>25 kg × 50 mg/kg/dia = 1250 mg/dia</code></li>\n          <li><strong>Verificar dose máxima diária</strong><br>1250 mg &gt; 1000 mg (máx) → <strong>CAPAR a 1000 mg/dia</strong></li>\n          <li><strong>Dose por toma</strong> (12/12h = 2× dia)<br><code>1000 mg ÷ 2 = 500 mg/toma</code></li>\n          <li><strong>Volume na suspensão</strong> (500 mg/5 mL)<br><code>(500 mg × 5 mL) ÷ 500 mg = 5 mL/toma</code></li>\n        </ol>\n        <p class=\"dose-example-note\"><strong>Atenção ao cap:</strong> se não tivesses verificado o máximo, terias prescrito 625 mg/toma - sobredosagem.</p>\n      </div>\n\n      <div class=\"dose-example-box\">\n        <div class=\"dose-example-title\">Exemplo 3 · Tosse convulsa · Criança 8 kg</div>\n        <p><em>Prescrição:</em> Azitromicina 10 mg/kg D1, depois 5 mg/kg D2–D5, 24/24h (1× dia), máx. 500 mg/dia <em>(CNFT/INFARMED Orient. n.º 18, 2024)</em></p>\n        <ol class=\"dose-steps-list\">\n          <li><strong>Dose diária D1 (loading)</strong><br><code>8 kg × 10 mg/kg = 80 mg D1</code></li>\n          <li><strong>Dose diária D2–D5 (manutenção)</strong><br><code>8 kg × 5 mg/kg = 40 mg/dia</code></li>\n          <li><strong>Verificar máximo</strong><br>Ambos &lt; 500 mg → <strong>OK</strong></li>\n          <li><strong>Volume na suspensão</strong> (200 mg/5 mL):<br>D1: <code>(80 × 5) ÷ 200 = 2 mL</code><br>D2–D5: <code>(40 × 5) ÷ 200 = 1 mL</code></li>\n        </ol>\n      </div>\n\n      <h4>Regra prática (BNFc 2024)</h4>\n      <p>O BNF for Children recomenda: <em>\"For most drugs the adult maximum dose should not be exceeded.\"</em></p>\n      <p>Exemplo: se uma criança de 10 kg recebe um fármaco a 8 mg/kg, recebe 80 mg. Uma criança de 40 kg <strong>não</strong> recebe 320 mg se o máximo for 300 mg - recebe 300 mg.</p>\n\n      <div class=\"form-explainer-source\"><strong>Fontes:</strong> CNFT/INFARMED Orientação n.º 18 (Fev 2024) - Tratamento antibiótico de infeções respiratórias em Pediatria · BNF for Children 2024 (BMJ/RPS/RCPCH) · DGS Norma n.º 007/2012 (OMA) · DGS Norma n.º 020/2012 (Amigdalite)</div>\n    </div>\n  </details>\n\n  <details class=\"form-explainer\">\n    <summary class=\"form-explainer-summary\">\n      <span>A importância da dose máxima - quando aplicar o \"cap\"</span>\n    </summary>\n    <div class=\"form-explainer-body\">\n      <p>A <strong>dose máxima</strong> é o limite acima do qual o risco de toxicidade supera o benefício terapêutico, mesmo em crianças com peso elevado.</p>\n\n      <h4>Quando capar (limitar a dose)?</h4>\n      <ul>\n        <li>Quando o cálculo <strong>peso × mg/kg ultrapassa a dose máxima recomendada</strong></li>\n        <li>Tipicamente acontece em <strong>adolescentes ou crianças com peso ≥30–40 kg</strong></li>\n        <li>Princípio: <em>\"a dose pediátrica nunca deve ultrapassar a dose adulta padrão para essa indicação\"</em> (BNFc)</li>\n      </ul>\n\n      <h4>Exemplos de doses máximas pediátricas (CNFT/INFARMED 2024)</h4>\n      <table class=\"dose-max-table\">\n        <thead><tr><th>Antibiótico</th><th>Indicação</th><th>Dose</th><th>Máximo</th></tr></thead>\n        <tbody>\n          <tr><td>Amoxicilina</td><td>Faringite SGA</td><td>50 mg/kg/dia</td><td><strong>1 g/dia</strong></td></tr>\n          <tr><td>Amoxicilina</td><td>OMA · Sinusite</td><td>80–90 mg/kg/dia</td><td><strong>3 g/dia</strong></td></tr>\n          <tr><td>Amoxicilina</td><td>Pneumonia</td><td>90–100 mg/kg/dia</td><td><strong>3 g/dia</strong></td></tr>\n          <tr><td>Azitromicina</td><td>Várias</td><td>10 mg/kg/dia</td><td><strong>500 mg/dia</strong></td></tr>\n          <tr><td>Claritromicina</td><td>Várias</td><td>15 mg/kg/dia</td><td><strong>1 g/dia</strong></td></tr>\n          <tr><td>Clindamicina</td><td>Faringite</td><td>20 mg/kg/dia</td><td><strong>900 mg/dia</strong></td></tr>\n          <tr><td>Clindamicina</td><td>Sinusite</td><td>30 mg/kg/dia</td><td><strong>1,8 g/dia</strong></td></tr>\n          <tr><td>Cefuroxima axetil</td><td>Faringite</td><td>20 mg/kg/dia</td><td><strong>500 mg/dia</strong></td></tr>\n          <tr><td>Cefuroxima axetil</td><td>OMA · Sinusite</td><td>30 mg/kg/dia</td><td><strong>1 g/dia</strong></td></tr>\n          <tr><td>Cefixima</td><td>Sinusite</td><td>8 mg/kg/dia</td><td><strong>400 mg/dia</strong></td></tr>\n        </tbody>\n      </table>\n\n      <div class=\"form-explainer-source\"><strong>Fonte:</strong> CNFT/INFARMED Orientação n.º 18 (Fev 2024) - Tratamento antibiótico de infeções respiratórias em Pediatria · BNF for Children (BNFc) 2024</div>\n    </div>\n  </details>\n\n  <details class=\"form-explainer\">\n    <summary class=\"form-explainer-summary\">\n      <span>Onde encontrar a informação oficial</span>\n    </summary>\n    <div class=\"form-explainer-body\">\n      <h4>Portugal - Fontes oficiais</h4>\n      <ul>\n        <li><strong>INFARMED Infomed</strong> - base de dados oficial de medicamentos comercializados em Portugal, com RCM (Resumo das Características do Medicamento) completo. <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\">infarmed.pt/infomed</a></li>\n        <li><strong>CNFT - Comissão Nacional de Farmácia e Terapêutica</strong> (Orientações)\n          <ul>\n            <li><a href=\"https://www.infarmed.pt/web/infarmed/profissionais-de-saude/cnft/orientacoes-da-cnft\" target=\"_blank\">Lista de Orientações CNFT</a></li>\n            <li>Orientação n.º 18 - <em>Tratamento antibiótico de infeções respiratórias em Pediatria</em> (Fev 2024)</li>\n          </ul>\n        </li>\n        <li><strong>DGS - Direção-Geral da Saúde</strong> (Normas clínicas)\n          <ul>\n            <li>Norma n.º 006/2014 atualizada - Duração da terapêutica antibiótica</li>\n            <li>Norma n.º 007/2012 atualizada - OMA na idade pediátrica</li>\n            <li>Norma n.º 019/2012 - Pneumonia adquirida na comunidade pediátrica</li>\n            <li>Norma n.º 020/2012 - Amigdalite aguda pediátrica</li>\n            <li><a href=\"https://normas.dgs.min-saude.pt/\" target=\"_blank\">normas.dgs.min-saude.pt</a></li>\n          </ul>\n        </li>\n      </ul>\n\n      <h4>Internacional - Referências consagradas</h4>\n      <ul>\n        <li><strong>BNF for Children (BNFc)</strong> - Reino Unido. Atualizado anualmente. Referência mundial para prescrição pediátrica. <a href=\"https://bnfc.nice.org.uk/\" target=\"_blank\">bnfc.nice.org.uk</a></li>\n        <li><strong>WHO AWaRe antibiotic book</strong> (2022) - Orienta o uso racional de antibióticos, com secção pediátrica e modelo de Lista de Medicamentos Essenciais para Crianças (EMLc). <a href=\"https://www.who.int/publications/i/item/9789240062382\" target=\"_blank\">WHO AWaRe Book</a></li>\n        <li><strong>WHO Model Formulary for Children</strong> (2010) - disponível gratuitamente</li>\n        <li><strong>AAP - American Academy of Pediatrics · Red Book</strong> (ed. 2024) - Report of the Committee on Infectious Diseases</li>\n        <li><strong>Nelson Textbook of Pediatrics</strong> - referência global em pediatria</li>\n        <li><strong>Harriet Lane Handbook</strong> (Johns Hopkins) - manual prático com doses pediátricas</li>\n        <li><strong>Sanford Guide to Antimicrobial Therapy</strong> - atualizado anualmente</li>\n        <li><strong>UpToDate · Lexicomp Pediatric Drug Information</strong> - recurso online com monografias detalhadas</li>\n        <li><strong>NICE - Antimicrobial Prescribing Guidelines</strong> (UK) - guidelines por patologia <a href=\"https://www.nice.org.uk/guidance/conditions-and-diseases/infections\" target=\"_blank\">NICE Antimicrobial</a></li>\n        <li><strong>IDSA - Infectious Diseases Society of America</strong> - guidelines clínicas internacionais</li>\n      </ul>\n\n      <h4>Apps profissionais de referência</h4>\n      <ul>\n        <li><strong>BNFc app</strong> · <strong>Medscape Drug Reference</strong> · <strong>Epocrates</strong> · <strong>Sanford Guide app</strong></li>\n      </ul>\n\n      <div class=\"form-explainer-source\"><strong>Importante:</strong> Em caso de dúvida na prescrição pediátrica, contactar sempre o pediatra, farmacêutico hospitalar ou consultar o RCM atualizado no Infomed. As doses apresentadas nesta app são exclusivamente para fins de estudo.</div>\n    </div>\n  </details>\n\n  \n\n  \n\n  <footer class=\"page-footer\">\n    <div class=\"footer-text\">\n      <div class=\"footer-disclaimer\"><strong>Aviso:</strong> Conteúdo educativo baseado em formulários pediátricos e guidelines nacionais e internacionais, nomeadamente o Guia de Bolso de Antibioterapia em Ambulatório (PAPA/ARS-LVT, Ed. 1.3, Nov 2025), BNF for Children 2024, CNFT/INFARMED Orientação n.º 18 (Fev 2024), NICE, AAP e OMS AWaRe 2022. Patologias não cobertas pelo Guia PAPA estão assinaladas com * e a fonte alternativa é indicada. Os valores são pré-calculados e arredondados para uso prático. <strong>Confirmar sempre dose máxima e ajustes individuais</strong> (função renal, idade, gravidade clínica).</div>\n      <div class=\"bib-box\">\n        <span class=\"footer-section-title\">Sobre as doses</span>\n        <div class=\"bib-box-text\">As doses apresentadas seguem o esquema standard de cada antibiótico nas guidelines pediátricas internacionais. As <strong>concentrações de suspensão</strong> indicadas correspondem às formulações <a href=\"https://www.infarmed.pt/infomed/\" target=\"_blank\" style=\"color:var(--text);text-decoration:underline\">disponíveis em Portugal segundo o INFARMED Infomed</a>. Os valores são apresentados como referência estática e não substituem o juízo clínico ou a consulta direta do Resumo das Características do Medicamento (RCM).</div>\n      </div>\n    </div>\n  </footer>"
+ },
+ "doseCalcPopover": "<div class=\"dose-calc-popover-header\">\n      <div class=\"dose-calc-popover-icon\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#A8845A\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><line x1=\"8\" y1=\"6\" x2=\"16\" y2=\"6\"/></svg>\n      </div>\n      <div class=\"dose-calc-popover-title\">Aprende a calcular a dose</div>\n      <button class=\"dose-calc-popover-close\" aria-label=\"Fechar\">\n        <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg>\n      </button>\n    </div>\n    <div class=\"dose-calc-popover-body\">\n      <div class=\"dose-calc-steps\">\n        <div class=\"dose-calc-step\">\n          <div class=\"dose-calc-step-num\">1</div>\n          <div class=\"dose-calc-step-body\">\n            <span class=\"dose-calc-step-label\">Dose diária total</span>\n            <code class=\"dose-calc-step-formula\">Peso × mg/kg/dia = mg/dia</code>\n            <span class=\"dose-calc-step-example\">Ex.: <strong>10 kg</strong> × 80 mg/kg/dia = <strong>800 mg/dia</strong></span>\n          </div>\n        </div>\n        <div class=\"dose-calc-step\">\n          <div class=\"dose-calc-step-num\">2</div>\n          <div class=\"dose-calc-step-body\">\n            <span class=\"dose-calc-step-label\">Dose por toma</span>\n            <span class=\"dose-calc-step-example\" style=\"margin-bottom:5px\">Se a dose diária é 800 mg e queres dar de 8/8h <strong>(3× dia)</strong>, calculas a quantidade por cada uma das 3 tomas:</span>\n            <code class=\"dose-calc-step-formula\">Dose diária ÷ n.º de tomas</code>\n            <span class=\"dose-calc-step-example\">Frequências: 6/6h <strong>(4× dia)</strong> · 8/8h <strong>(3× dia)</strong> · 12/12h <strong>(2× dia)</strong> · 24/24h <strong>(1× dia)</strong><br>Ex.: 800 ÷ 3 ≈ <strong>267 mg/toma</strong> (arredondar a 300 mg)</span>\n          </div>\n        </div>\n        <div class=\"dose-calc-step\">\n          <div class=\"dose-calc-step-num\">3</div>\n          <div class=\"dose-calc-step-body\">\n            <span class=\"dose-calc-step-label\">Volume da suspensão</span>\n            <span class=\"dose-calc-step-example\" style=\"margin-bottom:5px\">Para saber quantos <strong>mL</strong> dar em cada toma, multiplicas a dose pelo volume da suspensão e divides pela concentração:</span>\n            <code class=\"dose-calc-step-formula\">(Dose mg × Vol. susp. mL) ÷ Conc. mg</code>\n            <span class=\"dose-calc-step-example\">Ex.: 300 mg numa susp. <strong>250 mg/5 mL</strong> → <strong>(300 × 5) ÷ 250 = 6 mL/toma</strong></span>\n          </div>\n        </div>\n      </div>\n    </div>"
+}
