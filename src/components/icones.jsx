@@ -67,6 +67,15 @@ export const I = {
 
   // ── InfetAcesso: escudo com cruz médica ──
   infet: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.6 19 5v6c0 4.6-3 7.9-7 9.4-4-1.5-7-4.8-7-9.4V5l7-2.4Z" /><path d="M12 8v6M9 11h6" /></svg>,
+
+  // ── Módulo PNA ──
+  stethoscope: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M5 3.4v4a4.5 4.5 0 0 0 9 0v-4" /><path d="M9.5 12v2.5a5.5 5.5 0 0 0 11 0v-1.2" /><circle cx="20.5" cy="11" r="2" /><circle cx="5" cy="3.3" r="0.6" fill={c} /><circle cx="14" cy="3.3" r="0.6" fill={c} /></svg>,
+  refresh: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 2v6h-6" /><path d="M3 12a9 9 0 0 1 15-6.7L21 8" /><path d="M3 22v-6h6" /><path d="M21 12a9 9 0 0 1-15 6.7L3 16" /></svg>,
+  sliders: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" /><line x1="12" y1="21" x2="12" y2="12" /><line x1="12" y1="8" x2="12" y2="3" /><line x1="20" y1="21" x2="20" y2="16" /><line x1="20" y1="12" x2="20" y2="3" /><line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" /></svg>,
+  brain: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 6v13" /><path d="M12 6a2.5 2.5 0 0 0-4.96-.46A2.5 2.5 0 0 0 4.5 9.5a2.5 2.5 0 0 0 .54 4.4A2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 4.5-1" /><path d="M12 6a2.5 2.5 0 0 1 4.96-.46A2.5 2.5 0 0 1 19.5 9.5a2.5 2.5 0 0 1-.54 4.4A2.5 2.5 0 0 1 16.5 18a2.5 2.5 0 0 1-4.5-1" /></svg>,
+  calendar: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>,
+  link: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>,
+  trophy: (c = "currentColor", s = 18) => <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M6 4h12v5a6 6 0 0 1-12 0V4Z" /><path d="M6 6H4a2 2 0 0 0 0 4h2" /><path d="M18 6h2a2 2 0 0 1 0 4h-2" /><path d="M12 15v3" /><path d="M8.5 21h7" /><path d="M9 21a3 3 0 0 1 6 0" /></svg>,
 };
 
 // Wrapper para usar um ícone inline no meio de texto (trata o alinhamento vertical).
@@ -92,4 +101,5 @@ export const ICONE_MODULO = {
   infetoacesso: I.infet,
   "infetoacesso-ped": I.infet,
   easyfarm: I.pill,
+  "my-easyfarm": I.library,
 };

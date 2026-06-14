@@ -1,0 +1,50 @@
+[
+ {
+  "id": "ex-bisoprolol",
+  "name": "Bisoprolol",
+  "brands": "Concor, Cardicor, Bisocor",
+  "indication": "HTA, IC",
+  "classes": "β-bloqueador cardiosseletivo",
+  "dose": "2,5mg id, titular q2sem até 10mg\nAvaliar TA e FC antes de subir",
+  "clinical": "Em idoso fragilizado começo a 1,25mg. Pausar se FC < 55 ou TA < 100. Bom perfil em IC com FEr.",
+  "tags": ["cardio", "idoso"],
+  "color": "#1B5E8A",
+  "updated": 4
+ },
+ {
+  "id": "ex-amoxiclav",
+  "name": "Amoxicilina + Ác. clavulânico",
+  "brands": "Augmentin, Clavamox, Penilan",
+  "indication": "Infeção respiratória, Otite, ITU",
+  "classes": "Penicilina, β-lactâmico",
+  "dose": "875/125mg 12/12h, 7 dias\nPediátrico: 80mg/kg/dia em 2 tomas",
+  "clinical": "Primeira linha em PAC ligeira ambulatório. Trocar para azitromicina se alergia β-lactâmicos. Cuidado com diarreia em idosos.",
+  "tags": ["antibiótico", "respiratório"],
+  "color": "#DC2626",
+  "updated": 3
+ },
+ {
+  "id": "ex-metformina",
+  "name": "Metformina",
+  "brands": "Risidon, Stagid, Glucophage",
+  "indication": "DM2",
+  "classes": "Biguanida, Antidiabético oral",
+  "dose": "500mg id ao jantar, subir semanalmente até 1000mg 2id\nMáx 2550mg/dia",
+  "clinical": "Suspender 48h antes de contraste iodado. DRC: TFG 30–45 reduzir metade; <30 contraindicada. Iniciar à noite reduz GI.",
+  "tags": ["endócrino", "DM"],
+  "color": "#CA8A04",
+  "updated": 2
+ },
+ {
+  "id": "ex-sertralina",
+  "name": "Sertralina",
+  "brands": "Zoloft, Sertralur",
+  "indication": "Depressão, Ansiedade",
+  "classes": "ISRS, Antidepressivo",
+  "dose": "25mg id 1ª semana, depois 50mg id\nTitular até 100–200mg",
+  "clinical": "Começo sempre baixo — reduz náuseas iniciais. Reavaliar às 4–6 semanas. Boa opção em idoso e gravidez (1ª linha ISRS).",
+  "tags": ["psiq", "ISRS"],
+  "color": "#7C3AED",
+  "updated": 1
+ }
+]

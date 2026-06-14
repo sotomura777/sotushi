@@ -1,20 +1,24 @@
 import { ICONE_MODULO_MODERNO } from "./icones-modernos";
 
 // Cor por categoria (claro/glossy · escuro/neon) — tabela do icon-tiles.css.
+// Uma cor distinta por módulo — espalhadas pelo espectro para os ícones do menu
+// não se parecerem entre si. Par [clara/glossy (claro) · neon (escuro)].
 const COR = {
-  "ajuste-renal": ["#2E9E8F", "#2af5c0"],
-  urgencia: ["#DB6A5B", "#ff5c7a"],
-  cronicas: ["#0B6E7F", "#2ff0e0"],
-  analises: ["#8674C9", "#b07cff"],
-  calculadoras: ["#3FA178", "#3df59a"],
-  vacinacao: ["#34A7A0", "#2ff0d8"],
-  notas: ["#6A7689", "#9fb4ff"],
-  "saude-infantil": ["#CE7BA0", "#ff84c4"],
-  "farmacos-gravidez": ["#7C5BD0", "#b07cff"],
-  interacoes: ["#1E8C84", "#2af0cf"],
-  infetoacesso: ["#B45309", "#ffb454"],
-  "infetoacesso-ped": ["#C4756B", "#ff9e90"],
-  easyfarm: ["#1B5E8A", "#5db4f0"],
+  "ajuste-renal": ["#5566C4", "#8b9bff"],      // índigo
+  urgencia: ["#DB6A5B", "#ff5c7a"],            // vermelho-coral
+  cronicas: ["#BD941F", "#ffd24a"],            // dourado
+  analises: ["#8674C9", "#b07cff"],            // violeta-azulado
+  calculadoras: ["#6E9E22", "#b6e63a"],        // lima
+  vacinacao: ["#1AA0B5", "#2fe6f5"],           // ciano
+  notas: ["#6A7689", "#9fb4ff"],               // ardósia
+  "saude-infantil": ["#CE7BA0", "#ff84c4"],    // rosa
+  "farmacos-gravidez": ["#A24FB8", "#d07cff"], // ameixa/magenta
+  interacoes: ["#1E8C84", "#2af0cf"],          // teal
+  infetoacesso: ["#B45309", "#ffb454"],        // âmbar
+  "infetoacesso-ped": ["#C4756B", "#ff9e90"],  // terracota
+  easyfarm: ["#1B5E8A", "#5db4f0"],            // azul
+  "my-easyfarm": ["#2E9E55", "#3df58a"],       // verde-esmeralda
+  pna: ["#639922", "#a3e635"],                 // verde-relva (PNA)
 };
 
 // Mosaico de ícone de módulo: glossy (claro) ou neon (escuro), conforme o tema.

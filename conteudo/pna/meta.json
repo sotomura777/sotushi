@@ -1,0 +1,31 @@
+{
+  "nome": "PNA",
+  "titulo": "PNA — Prova Nacional de Acesso",
+  "subtitulo": "Treino no formato oficial, com revisão espaçada e análise do teu desempenho. Funciona offline.",
+  "descricao_curta": "Treino para a Prova Nacional de Acesso",
+  "enquadramento": "Ferramenta de estudo e treino. Não se destina a apoiar decisões sobre doentes reais.",
+  "modos": {
+    "exame": "Simulação cronometrada, sem feedback durante a prova.",
+    "treino": "Feedback imediato e explicação a cada pergunta.",
+    "revisao": "Revisão espaçada (FSRS) das perguntas que estás prestes a esquecer + caderno de erros.",
+    "construtor": "Monta um exame à medida com filtros por área, tipo e dificuldade."
+  },
+  "textos": {
+    "fsrs": "FSRS é um algoritmo de repetição espaçada: calcula quando estás prestes a esquecer cada conceito e mostra-to nesse momento — revês menos e fixas mais.",
+    "matriz_oficial": "Cada ano da PNA tem uma distribuição própria de áreas. As simulações por ano reproduzem essa distribuição para se parecerem com a prova real.",
+    "posicao_historica": "Mostramos em que lugar terias ficado num ano oficial da PNA, a partir dos dados públicos da ACSS. Nunca comparamos o teu desempenho com o de outros utilizadores da app.",
+    "diagnostico_inicial": "Um conjunto de perguntas que cobre várias áreas para estimar o teu nível em cada uma — depois cada sessão é otimizada para ti."
+  },
+  "heatmap_legenda": {
+    "c1": "≥ 80% · forte",
+    "c2": "70–79%",
+    "c3": "55–69%",
+    "c4": "40–54%",
+    "c5": "< 40% · a trabalhar"
+  },
+  "bibliografia": [
+    "ACSS — Prova Nacional de Acesso (matrizes e relatórios oficiais)",
+    "DGS — Normas e Orientações Clínicas"
+  ],
+  "disclaimer": "As perguntas, explicações e dados clínicos vivem em /conteudo/pna/ e são revistos clinicamente. Os dados oficiais (matrizes e histórico) provêm da ACSS."
+}

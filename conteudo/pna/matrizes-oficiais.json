@@ -1,0 +1,4 @@
+{
+  "_leia_me": "Distribuição oficial de áreas em cada ano da PNA (dados da ACSS). Permite gerar simulações fiéis à prova real daquele ano. Preencher por ano. Exemplo: \"2023\": { \"total_perguntas\": 150, \"duracao_minutos\": 240, \"distribuicao\": { \"Cardiologia\": 0.12, \"Pneumologia\": 0.10, \"Medicina Geral e Familiar\": 0.15 } } — as frações de cada área devem somar ~1.",
+  "anos": {}
+}

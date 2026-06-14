@@ -272,7 +272,7 @@
 .infet .dose-calc-fab { position: fixed; bottom: 84px; right: 18px; width: 52px; height: 52px; border-radius: 50%; background: var(--sys); color: #fff; border: none; box-shadow: 0 4px 14px color-mix(in srgb, var(--sys) 45%, transparent); cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 60; transition: transform 0.15s, box-shadow 0.15s; }
 .infet .dose-calc-fab:hover { transform: scale(1.08); }
 .infet .dose-calc-fab:active { transform: scale(0.95); }
-.infet .dose-calc-popover { position: fixed; bottom: 146px; right: 18px; width: 340px; max-width: calc(100vw - 32px); max-height: 64vh; overflow-y: auto; background: var(--card-bg); border: 1.5px solid var(--border); border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.18); z-index: 61; }
+.infet .dose-calc-popover { position: fixed; bottom: 146px; right: 18px; width: 340px; max-width: calc(100vw - 32px); max-height: 64vh; overflow-y: auto; background: var(--fundo); backdrop-filter: blur(20px); border: 1.5px solid var(--border); border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.18); z-index: 61; }
 .infet .dose-calc-popover-header { padding: 14px 18px 10px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--border); }
 .infet .dose-calc-popover-icon { width: 30px; height: 30px; border-radius: 50%; background: var(--sys-light); display: flex; align-items: center; justify-content: center; flex: 0 0 30px; }
 .infet .dose-calc-popover-icon svg { stroke: var(--sys-dark); }

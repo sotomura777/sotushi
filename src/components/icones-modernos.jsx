@@ -181,6 +181,17 @@ const MI = {
       <circle cx="12" cy="11" r="3.4" fill={c} fillOpacity="0.16" stroke="none" />
       <path d="M12 9.2v3.6M10.2 11h3.6" strokeWidth="2" />
     </>),
+
+  // PNA — estetoscópio (binaural + tubo + campânula)
+  stethoscope: (c, s) => D(c, s,
+    null,
+    <>
+      <path d="M5 3.4v3.9a4.5 4.5 0 0 0 9 0V3.4" stroke={c} fill="none" />
+      <path d="M9.5 11.9v2.6a5.6 5.6 0 0 0 11.2 0v-1.1" stroke={c} fill="none" />
+      <circle cx="20.6" cy="11.4" r="2.1" fill={c} fillOpacity="0.16" />
+      <circle cx="5" cy="3.3" r="0.55" fill={c} stroke="none" />
+      <circle cx="14" cy="3.3" r="0.55" fill={c} stroke="none" />
+    </>),
 };
 
 // Mapa por id de módulo (para a app)
@@ -198,6 +209,8 @@ const MI_MODULO = {
   infetoacesso: MI.infet,
   "infetoacesso-ped": MI.infetPed,
   easyfarm: MI.pill,
+  "my-easyfarm": MI.library,
+  pna: MI.stethoscope,
 };
 
 // ============================================================================

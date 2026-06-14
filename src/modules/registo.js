@@ -22,6 +22,9 @@ import metaInteracoes from "@conteudo/interacoes/meta.json";
 import InfetoAcessoAdulto from "./infetoacesso/InfetoAcessoAdulto";
 import InfetoAcessoPed from "./infetoacesso/InfetoAcessoPed";
 import EasyFarm from "./easyfarm/EasyFarm";
+import MyEasyFarm from "./my-easyfarm/MyEasyFarm";
+import PNA from "./pna/PNA";
+import metaPNA from "@conteudo/pna/meta.json";
 
 export const MODULOS = [
   {
@@ -153,5 +156,25 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#2E7CB5 0%,#1B5E8A 55%,#134866 100%)",
     pronto: true,
     Componente: EasyFarm,
+  },
+  {
+    id: "my-easyfarm",
+    nome: "My EasyFarm",
+    descricao: "A tua biblioteca pessoal de doses e esquemas",
+    accent: "#0F766E",
+    bg: "#eafaf5",
+    gradiente: "linear-gradient(135deg,#15998c 0%,#0F766E 55%,#0a544e 100%)",
+    pronto: true,
+    Componente: MyEasyFarm,
+  },
+  {
+    id: "pna",
+    nome: metaPNA.nome,
+    descricao: metaPNA.descricao_curta,
+    accent: "#639922",
+    bg: "#eef6e3",
+    gradiente: "linear-gradient(135deg,#7BB52E 0%,#639922 55%,#3B6D11 100%)",
+    pronto: true,
+    Componente: PNA,
   },
 ];

@@ -1,0 +1,8 @@
+{
+  "_leia_me": "Configurações de exame 'de fábrica' oferecidas a todos. Cada preset tem: nome, filtros (especialidades/subareas/tipos/dificuldades/guidelines como listas, historico), n (nº perguntas), modo (treino|exame), ordem, tempo (sem_limite|pna|rapido). O utilizador também guarda os seus, localmente.",
+  "presets": [
+    { "nome": "Diagnóstico inicial", "filtros": { "historico": "nunca" }, "n": 30, "modo": "treino", "ordem": "aleatoria", "tempo": "sem_limite" },
+    { "nome": "Só as que errei", "filtros": { "historico": "erradas" }, "n": 20, "modo": "treino", "ordem": "mais_errada", "tempo": "sem_limite" },
+    { "nome": "Simulação rápida", "filtros": {}, "n": 25, "modo": "exame", "ordem": "aleatoria", "tempo": "pna" }
+  ]
+}

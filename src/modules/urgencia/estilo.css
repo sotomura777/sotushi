@@ -387,7 +387,7 @@
 .oba-nota-btn { position: fixed; right: 14px; bottom: 92px; z-index: 200; display: inline-flex; align-items: center; gap: 6px; padding: 11px 16px; border: none; border-radius: var(--raio-pill); background: var(--acento); color: #fff; font-family: var(--fonte-corpo); font-size: 13px; font-weight: 700; box-shadow: var(--sombra-md); cursor: pointer; }
 /* Drawer (bottom sheet) */
 .oba-nota-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.42); z-index: 250; }
-.oba-nota-drawer { position: fixed; left: 0; right: 0; bottom: 0; z-index: 260; background: var(--superficie); border-radius: 20px 20px 0 0; padding: 16px 14px 24px; max-height: 82vh; overflow-y: auto; transform: translateY(101%); transition: transform .26s ease; box-shadow: 0 -8px 44px rgba(0,0,0,.28); }
+.oba-nota-drawer { position: fixed; left: 0; right: 0; bottom: 0; z-index: 260; background: var(--fundo); border-radius: 20px 20px 0 0; padding: 16px 14px 24px; max-height: 82vh; overflow-y: auto; transform: translateY(101%); transition: transform .26s ease; box-shadow: 0 -8px 44px rgba(0,0,0,.28); }
 .oba-nota-drawer.aberta { transform: translateY(0); }
 .oba-nota-drawer .oba-nota-panel { border: none; box-shadow: none; padding: 0; background: none; }
 .oba-nota-drawer .oba-nota { min-height: 300px; }
@@ -487,7 +487,7 @@
 .ca-guia .supl-card .nf-card-icon { background: rgba(8,145,178,.10); }
 .ca-guia .supl-card .nf-card-icon svg { stroke: #0891b2; }
 .ca-guia .supl-badge { display: inline-block; padding: 3px 9px; border-radius: 4px; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; background: rgba(8,145,178,.1); color: #0891b2; margin-bottom: 8px; }
-.ca-guia .supl-badge-weak { background: rgba(120,113,108,.12); color: #78716c; }
+.ca-guia .supl-badge-weak { background: rgba(120,113,108,.12); color: var(--suave); }
 .ca-guia .prob-badge { display: inline-block; padding: 6px 12px; border-radius: 7px; font-size: 12.5px; font-weight: 700; letter-spacing: .02em; background: color-mix(in srgb, var(--acento) 10%, transparent); color: var(--acento); margin-bottom: 6px; }
 .ca-guia .prob-card .nf-card-title { color: var(--acento); }
 .ca-guia .prob-card .nf-card-note { color: var(--acento); border-top-color: color-mix(in srgb, var(--acento) 12%, transparent); }
@@ -543,7 +543,7 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
 .ca-fonte-badge { align-self: flex-start; padding: 3px 10px; border-radius: 4px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
 .ca-fonte-badge.forte { background: color-mix(in srgb, var(--acento) 12%, transparent); color: var(--acento); }
 .ca-fonte-badge.condicional { background: color-mix(in srgb, var(--acento) 7%, transparent); color: color-mix(in srgb, var(--acento) 80%, var(--texto)); }
-.ca-fonte-badge.fraca { background: rgba(120,113,108,.12); color: #78716c; }
+.ca-fonte-badge.fraca { background: rgba(120,113,108,.12); color: var(--suave); }
 .ca-fonte-titulo { font-weight: 700; font-size: 14px; color: var(--texto); line-height: 1.35; margin-bottom: 4px; }
 .ca-fonte-autores { font-size: 12px; color: var(--suave); line-height: 1.45; margin-bottom: 6px; }
 .ca-fonte-revista { font-size: 11.5px; color: var(--tenue); font-style: italic; margin-top: auto; }
@@ -953,7 +953,7 @@ a.ca-fonte-card:hover { border-color: color-mix(in srgb, var(--acento) 35%, tran
 .da-guia .cz-sys-uro { background: rgba(76,29,149,0.10);  color: #6d28d9; }
 .da-guia .cz-sys-vasc { background: rgba(220,38,38,0.10);  color: #b91c1c; }
 .da-guia .cz-sys-gin { background: rgba(219,39,119,0.10); color: #be185d; }
-.da-guia .cz-sys-par { background: rgba(120,113,108,0.12); color: #57534e; }
+.da-guia .cz-sys-par { background: rgba(120,113,108,0.12); color: var(--suave); }
 .da-guia .cz-sys-meta { background: rgba(16,185,129,0.10); color: #047857; }
 .da-guia /* Analgesia ladder (escalonamento) */
 .anag-ladder { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }

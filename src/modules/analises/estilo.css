@@ -196,3 +196,7 @@
 .an-set-row-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
 .an-set-val { font-size: 12px; font-weight: 700; padding: 4px 10px; border: 1px solid var(--borda); border-radius: var(--raio-pill); background: var(--superficie-2); color: var(--texto-2); }
 .an-cmp-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+
+/* Dark mode: setas de feedback (dn/up) legíveis sobre vidro escuro */
+.dark .an-fb.dn { color: #7db4e8; }
+.dark .an-fb.up { color: #f0908a; }

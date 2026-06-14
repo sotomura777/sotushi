@@ -1,0 +1,43 @@
+{
+  "_leia_me": "Listas controladas para classificar perguntas. Uma pergunta cujo valor não exista aqui é rejeitada ao carregar (e gera warning na consola). Editar com cuidado: mudar um nome aqui obriga a re-etiquetar as perguntas que o usavam.",
+  "especialidades": [
+    "Cardiologia",
+    "Pneumologia",
+    "Gastrenterologia",
+    "Nefrologia",
+    "Endocrinologia",
+    "Neurologia",
+    "Infeciologia",
+    "Hematologia",
+    "Reumatologia",
+    "Dermatologia",
+    "Psiquiatria",
+    "Medicina Geral e Familiar",
+    "Pediatria",
+    "Ginecologia e Obstetrícia",
+    "Cirurgia Geral",
+    "Ortopedia",
+    "Urologia",
+    "Oftalmologia",
+    "Otorrinolaringologia",
+    "Saúde Pública",
+    "Farmacologia",
+    "Ética e Deontologia"
+  ],
+  "subareas": {
+    "Cardiologia": ["Arritmias", "Insuficiência cardíaca", "Síndromes coronárias agudas", "Hipertensão arterial", "Valvulopatias", "Doença pericárdica"],
+    "Pneumologia": ["DPOC", "Asma", "Infeções respiratórias", "Tromboembolismo pulmonar", "Doença intersticial", "Neoplasia do pulmão"],
+    "Gastrenterologia": ["Doença péptica", "Doença inflamatória intestinal", "Hepatologia", "Pancreatite", "Hemorragia digestiva", "Neoplasias digestivas"],
+    "Medicina Geral e Familiar": ["Rastreios e prevenção", "Multimorbilidade", "Saúde do adulto", "Saúde do idoso", "Sintomas comuns"]
+  },
+  "tipos_raciocinio": [
+    "Diagnóstico",
+    "Tratamento",
+    "Investigação",
+    "Prognóstico",
+    "Prevenção",
+    "Emergência",
+    "Ética"
+  ],
+  "dificuldades": ["fácil", "média", "difícil"]
+}

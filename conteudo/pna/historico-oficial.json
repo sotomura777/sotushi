@@ -1,0 +1,4 @@
+{
+  "_leia_me": "Distribuição das notas oficiais por ano (dados públicos da ACSS). Usada para estimar 'em que lugar terias ficado'. Preencher por ano. Se a ACSS não publicar todos os percentis, basta media + desvio_padrao (a app aproxima por distribuição normal). Enquanto estiver vazio, o módulo mostra um estado 'adicionar dados ACSS'. Exemplo de um ano: \"2023\": { \"candidatos\": 2300, \"media\": 0.64, \"desvio_padrao\": 0.11, \"percentis\": { \"p10\": 0.48, \"p25\": 0.56, \"p50\": 0.66, \"p75\": 0.74, \"p90\": 0.82 } }",
+  "anos": {}
+}

@@ -1,0 +1,355 @@
+/* ==========================================================================
+   PNA — sistema de design do módulo. Fiel aos mockups (layout/estrutura) mas
+   adaptado ao estilo MedGuia: consome SEMPRE as variáveis partilhadas
+   (var(--acento), var(--borda), var(--superficie), var(--texto)…) e o vidro.
+   Não redefine paleta global nem fontes. Prefixo .pna-.
+   ========================================================================== */
+
+.pna {
+  --acento: #639922;
+  /* Escala do heatmap / desempenho (verde → vermelho). Semântica, partilhada
+     pelo heatmap, barras de área e legendas. */
+  --pna-h1: #5f9a1f;   /* ≥ 85% */
+  --pna-h2: #8fbf4e;   /* 70–84% */
+  --pna-h3: #bcd98f;   /* 55–69% */
+  --pna-h4: #ef9a7a;   /* 40–54% */
+  --pna-h5: #e24b4a;   /* < 40% */
+}
+
+/* ── Aviso de enquadramento de estudo ─────────────────────────────────────── */
+.pna-aviso {
+  font-size: 12px; color: var(--suave);
+  background: var(--superficie-2); border: 1px solid var(--borda-2);
+  border-radius: var(--raio-sm); padding: 9px 12px; margin-bottom: 14px;
+}
+
+/* ── Métricas (grelha de 4) ───────────────────────────────────────────────── */
+.pna-metricas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 18px; }
+.pna-metrica {
+  background: var(--superficie); border: 1px solid var(--borda);
+  border-radius: var(--raio-md); padding: 11px 12px;
+  backdrop-filter: blur(16px) saturate(1.6); -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  box-shadow: var(--brilho);
+}
+.pna-metrica--destaque {
+  background: color-mix(in srgb, var(--acento) 14%, var(--superficie));
+  border-color: color-mix(in srgb, var(--acento) 28%, transparent);
+}
+.pna-metrica-label { font-size: 10.5px; color: var(--suave); margin: 0; }
+.pna-metrica--destaque .pna-metrica-label { color: color-mix(in srgb, var(--acento) 78%, var(--texto)); }
+.pna-metrica-valor { font-size: 19px; font-weight: 700; margin: 2px 0 0; color: var(--texto); font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.pna-metrica-valor .u { font-size: 11px; font-weight: 600; color: var(--suave); }
+.pna-metrica--destaque .pna-metrica-valor { color: color-mix(in srgb, var(--acento) 88%, var(--texto)); }
+.pna-metrica-delta { font-size: 10px; margin: 1px 0 0; font-variant-numeric: tabular-nums; }
+.pna-delta-pos { color: #3f8a1e; }
+.pna-delta-neg { color: #c0392b; }
+.pna-delta-neutro { color: var(--tenue); }
+
+/* ── Cartão CTA (estado vazio) ────────────────────────────────────────────── */
+.pna-cta { text-align: center; padding: 24px 20px; margin-bottom: 14px; }
+.pna-cta-icone {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: color-mix(in srgb, var(--acento) 16%, transparent);
+  color: var(--acento);
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;
+}
+.pna-cta-titulo { font-size: 20px; font-weight: 700; color: var(--texto); margin: 0 0 8px; letter-spacing: -.02em; }
+.pna-cta-texto { font-size: 13px; color: var(--texto-2); line-height: 1.6; margin: 0 auto 20px; max-width: 440px; }
+.pna-cta-nota { font-size: 11px; color: var(--tenue); margin: 10px 0 0; }
+
+/* ── Botões ───────────────────────────────────────────────────────────────── */
+.pna-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--acento); color: #fff; border: none;
+  padding: 13px 24px; border-radius: var(--raio-md);
+  font-size: 14px; font-weight: 700; font-family: var(--fonte-corpo); cursor: pointer;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--acento) 32%, transparent), inset 0 1px 0 rgba(255,255,255,.28);
+  transition: filter .15s;
+}
+.pna-btn:hover { filter: brightness(1.05); }
+.pna-btn-sec {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  background: var(--superficie); color: var(--texto-2); border: 1px solid var(--borda);
+  padding: 12px 18px; border-radius: var(--raio-md);
+  font-size: 13px; font-weight: 600; font-family: var(--fonte-corpo); cursor: pointer;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--brilho);
+}
+
+/* ── Caixas de insight (bom / mau / aviso) ────────────────────────────────── */
+.pna-insight {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 11px 13px; border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  font-size: 11.5px; line-height: 1.55; margin-bottom: 18px;
+}
+.pna-insight .i { flex-shrink: 0; margin-top: 1px; }
+.pna-insight b { font-weight: 700; }
+.pna-insight--bom   { background: color-mix(in srgb, var(--pna-h1) 14%, transparent); border-left: 3px solid var(--pna-h1); color: var(--texto-2); }
+.pna-insight--bom .i   { color: var(--pna-h1); }
+.pna-insight--aviso { background: color-mix(in srgb, #ef9f27 16%, transparent); border-left: 3px solid #ef9f27; color: var(--texto-2); }
+.pna-insight--aviso .i { color: #d98a12; }
+.pna-insight--mau   { background: color-mix(in srgb, var(--pna-h5) 13%, transparent); border-left: 3px solid var(--pna-h5); color: var(--texto-2); }
+.pna-insight--mau .i   { color: var(--pna-h5); }
+
+/* ── Cartões de modo (grelha 2×2) ─────────────────────────────────────────── */
+.pna-modos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 18px; }
+.pna-modo {
+  text-align: left; background: var(--superficie); border: 1px solid var(--borda);
+  border-radius: var(--raio-md); padding: 13px 14px; cursor: pointer; font-family: var(--fonte-corpo);
+  backdrop-filter: blur(16px) saturate(1.6); -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  box-shadow: var(--brilho); transition: border-color .15s, transform .1s;
+}
+.pna-modo:hover { border-color: color-mix(in srgb, var(--acento) 45%, var(--borda)); }
+.pna-modo--off { opacity: .55; cursor: default; }
+.pna-modo--off:hover { border-color: var(--borda); }
+.pna-modo-cab { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+.pna-modo-cab .ic { color: var(--acento); display: inline-flex; }
+.pna-modo--off .pna-modo-cab .ic { color: var(--suave); }
+.pna-modo-nome { font-size: 14px; font-weight: 700; color: var(--texto); margin: 0; }
+.pna-modo-desc { font-size: 11.5px; color: var(--texto-2); margin: 0; line-height: 1.45; }
+
+/* ── Lista de diferenciadores / itens com ícone ───────────────────────────── */
+.pna-difs { padding: 4px 14px; margin-bottom: 18px; }
+.pna-dif { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; }
+.pna-dif + .pna-dif { border-top: 0.5px solid var(--borda-2); }
+.pna-dif .ic { color: var(--acento); flex-shrink: 0; margin-top: 2px; }
+.pna-dif-titulo { font-size: 12.5px; font-weight: 700; color: var(--texto); margin: 0; }
+.pna-dif-texto { font-size: 11.5px; color: var(--texto-2); margin: 2px 0 0; line-height: 1.5; }
+
+/* ── Heatmap (área × tipo de raciocínio) ──────────────────────────────────── */
+.pna-heat { padding: 12px; margin-bottom: 18px; }
+.pna-heat-grade { display: grid; gap: 3px; align-items: center; font-size: 10px; }
+.pna-heat-cab { color: var(--tenue); text-align: center; padding: 2px 0; }
+.pna-heat-area { color: var(--texto-2); font-weight: 600; padding: 4px 0; }
+.pna-heat-cell { height: 20px; border-radius: 3px; }
+.pna-heat-pct { text-align: right; color: var(--suave); font-variant-numeric: tabular-nums; font-size: 10px; }
+.pna-heat-legenda { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; padding-top: 8px; border-top: 0.5px solid var(--borda-2); font-size: 10px; color: var(--tenue); }
+.pna-heat-legenda span { display: inline-flex; align-items: center; gap: 4px; }
+.pna-heat-legenda i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.hc1 { background: var(--pna-h1); } .hc2 { background: var(--pna-h2); }
+.hc3 { background: var(--pna-h3); } .hc4 { background: var(--pna-h4); } .hc5 { background: var(--pna-h5); }
+
+/* ── Linhas de "áreas a trabalhar" / barras horizontais ───────────────────── */
+.pna-areas { padding: 4px 14px; margin-bottom: 18px; }
+.pna-area { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; }
+.pna-area + .pna-area { border-top: 0.5px solid var(--borda-2); }
+.pna-area-nome { font-size: 13px; font-weight: 600; color: var(--texto); margin: 0; }
+.pna-area-sub { font-size: 11px; color: var(--suave); margin: 2px 0 0; }
+.pna-link { font-size: 11px; font-weight: 600; color: var(--acento); cursor: pointer; white-space: nowrap; background: none; border: none; font-family: var(--fonte-corpo); }
+
+/* barra horizontal de desempenho (usada nas estatísticas / resultados) */
+.pna-barra { height: 7px; background: var(--superficie-2); border-radius: 4px; overflow: hidden; }
+.pna-barra > i { display: block; height: 100%; border-radius: 4px; background: var(--acento); }
+
+/* ── Chips de filtro temporal ─────────────────────────────────────────────── */
+.pna-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+.pna-chip {
+  padding: 6px 13px; border-radius: var(--raio-pill); font-size: 12px; font-weight: 600;
+  background: var(--superficie); color: var(--suave); border: 1px solid var(--borda);
+  cursor: pointer; font-family: var(--fonte-corpo);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--brilho);
+}
+.pna-chip.ativo { background: var(--acento); color: #fff; border-color: transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,.28); }
+
+/* ── Cabeçalho de secção com link à direita ───────────────────────────────── */
+.pna-sec-cab { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.pna-sec-cab .secao-label { margin-bottom: 0; }
+
+/* ── Rodapé do módulo ─────────────────────────────────────────────────────── */
+.pna-rodape {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin-top: 6px; padding-top: 12px; border-top: 0.5px solid var(--borda-2);
+  font-size: 11px; color: var(--tenue);
+}
+.pna-rodape .pna-link { color: var(--suave); }
+
+/* ── Pergunta (vinheta + opções) — partilhado Treino/Exame ────────────────── */
+.pna-pergunta-cab { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.pna-pergunta-area { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--acento); }
+.pna-marcar { background: none; border: none; cursor: pointer; color: var(--tenue); display: inline-flex; padding: 2px; }
+.pna-marcar.ativo { color: #e0a020; }
+.pna-vinheta { font-size: 14.5px; color: var(--texto); line-height: 1.6; margin: 0 0 12px; }
+.pna-leadin { font-size: 14px; font-weight: 700; color: var(--texto); line-height: 1.45; margin: 0 0 14px; }
+
+.pna-opcoes { display: flex; flex-direction: column; gap: 8px; }
+.pna-opcao {
+  display: flex; align-items: center; gap: 11px; width: 100%; text-align: left;
+  background: var(--superficie-2); border: 1px solid var(--borda); border-radius: var(--raio-md);
+  padding: 11px 13px; cursor: pointer; font-family: var(--fonte-corpo);
+  transition: border-color .12s, background .12s;
+}
+.pna-opcao:hover { border-color: color-mix(in srgb, var(--acento) 40%, var(--borda)); }
+.pna-opcao-letra {
+  flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+  border: 1px solid var(--borda); color: var(--suave);
+  display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;
+}
+.pna-opcao-texto { flex: 1; font-size: 13px; color: var(--texto); line-height: 1.4; }
+.pna-opcao-ic { flex-shrink: 0; display: inline-flex; }
+
+.pna-opcao--escolhida { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 10%, transparent); }
+.pna-opcao--escolhida .pna-opcao-letra { background: var(--acento); color: #fff; border-color: transparent; }
+
+.pna-opcao--correta { border-color: var(--pna-h1); background: color-mix(in srgb, var(--pna-h1) 14%, transparent); cursor: default; }
+.pna-opcao--correta .pna-opcao-letra { background: var(--pna-h1); color: #fff; border-color: transparent; }
+.pna-opcao--correta .pna-opcao-ic { color: var(--pna-h1); }
+.pna-opcao--errada { border-color: var(--pna-h5); background: color-mix(in srgb, var(--pna-h5) 12%, transparent); cursor: default; }
+.pna-opcao--errada .pna-opcao-letra { background: var(--pna-h5); color: #fff; border-color: transparent; }
+.pna-opcao--errada .pna-opcao-ic { color: var(--pna-h5); }
+.pna-opcao--dim { opacity: .5; cursor: default; }
+
+.pna-explicacao { margin-top: 14px; padding: 12px 13px; background: var(--superficie-2); border: 1px solid var(--borda-2); border-radius: var(--raio-md); }
+.pna-explicacao-titulo { font-size: 12.5px; font-weight: 700; color: var(--texto); margin: 0 0 5px; }
+.pna-explicacao-texto { font-size: 12.5px; color: var(--texto-2); line-height: 1.55; margin: 0; }
+
+/* ── Treino — topo e ações ────────────────────────────────────────────────── */
+.pna-treino-topo { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.pna-treino-prog { font-size: 12px; font-weight: 700; color: var(--suave); font-variant-numeric: tabular-nums; }
+.pna-treino-acoes { margin-top: 14px; display: flex; justify-content: flex-end; }
+.pna-treino-acoes .pna-btn:disabled { opacity: .5; cursor: default; box-shadow: none; }
+.pna-vazio-mini { padding: 24px; text-align: center; color: var(--suave); font-size: 13px; }
+
+/* ── Estatísticas: heatmap cell com número ────────────────────────────────── */
+.pna-heat-cell { display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 600; color: #173404; }
+.dark .pna-heat-cell { color: #06210a; }
+.hc0 { background: var(--superficie-2); }
+.pna-heat-cell.hc0 { color: var(--tenue); }
+.pna-heat-cell.hc4, .pna-heat-cell.hc5 { color: #3a0f08; }
+
+/* ── Posição ──────────────────────────────────────────────────────────────── */
+.pna-pos-grande { font-size: 26px; font-weight: 800; color: var(--acento); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+
+/* ── Tag "o teu diferencial" ──────────────────────────────────────────────── */
+.pna-tag-dif { font-size: 10px; font-weight: 700; color: var(--acento); background: color-mix(in srgb, var(--acento) 14%, transparent); border-radius: var(--raio-pill); padding: 2px 9px; }
+
+/* ── Mini gráfico de barras ───────────────────────────────────────────────── */
+.pna-barras { display: flex; align-items: flex-end; justify-content: space-between; gap: 4px; }
+.pna-barras-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 0; }
+.pna-barras-val { font-size: 9px; color: var(--suave); font-variant-numeric: tabular-nums; margin-bottom: 2px; height: 11px; }
+.pna-barras-bar { width: 78%; max-width: 30px; border-radius: 3px 3px 0 0; min-height: 2px; }
+.pna-barras-lbl { font-size: 8.5px; color: var(--tenue); margin-top: 4px; text-align: center; white-space: nowrap; }
+
+/* ── Barra empilhada (mudança de resposta) ────────────────────────────────── */
+.pna-barra-emp { display: flex; height: 28px; border-radius: var(--raio-sm); overflow: hidden; }
+.pna-barra-emp > span { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; }
+.pna-barra-emp > span.hc0 { color: var(--texto-2); }
+
+/* ── Dois cartões lado a lado ─────────────────────────────────────────────── */
+.pna-dois { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+
+/* ── Exame: barra de topo ─────────────────────────────────────────────────── */
+.pna-exame-bar { padding: 12px 14px; margin-bottom: 12px; }
+.pna-exame-bar-topo { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.pna-exame-bar-esq, .pna-exame-bar-dir { display: flex; align-items: center; gap: 12px; }
+.pna-exame-sair { display: inline-flex; align-items: center; gap: 5px; background: none; border: none; cursor: pointer; color: var(--suave); font-size: 11px; font-family: var(--fonte-corpo); }
+.pna-exame-eyebrow { font-size: 9.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--tenue); margin: 0; }
+.pna-exame-prog { font-size: 13px; font-weight: 700; color: var(--texto); margin: 1px 0 0; }
+.pna-exame-flags { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: #d39316; font-variant-numeric: tabular-nums; }
+.pna-exame-tempo { font-size: 14px; font-weight: 700; color: var(--acento); margin: 1px 0 0; font-variant-numeric: tabular-nums; }
+.pna-exame-tempo.urgente { color: var(--pna-h5); }
+.pna-exame-grid { background: none; border: none; cursor: pointer; color: var(--suave); display: inline-flex; padding: 2px; }
+.pna-exame-barra { height: 3px; background: var(--superficie-2); border-radius: 2px; overflow: hidden; }
+.pna-exame-barra > i { display: block; height: 100%; background: var(--acento); border-radius: 2px; transition: width .2s; }
+
+.pna-exame-nav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.pna-exame-nav .pna-btn-sec:disabled { opacity: .45; cursor: default; }
+.pna-exame-atalhos { font-size: 10px; color: var(--tenue); text-align: center; margin-top: 12px; }
+.pna-exame-atalhos kbd { background: var(--superficie-2); border: 1px solid var(--borda-2); border-radius: 3px; padding: 1px 5px; font-size: 9px; font-family: ui-monospace, monospace; }
+
+/* ── Mapa de navegação: grelha ────────────────────────────────────────────── */
+.pna-mapa-grade { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; }
+.pna-mapa-cel {
+  aspect-ratio: 1; border-radius: 4px; border: none; cursor: pointer; position: relative;
+  display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600;
+  font-family: var(--fonte-corpo); font-variant-numeric: tabular-nums;
+}
+.pna-mapa--resp { background: var(--pna-h3); color: #173404; }
+.pna-mapa--branco { background: var(--superficie-2); border: 1px solid var(--borda-2); color: var(--tenue); }
+.pna-mapa--atual { background: var(--acento); color: #fff; outline: 2px solid color-mix(in srgb, var(--acento) 55%, #000); outline-offset: -2px; }
+.pna-mapa-flag { position: absolute; top: 2px; right: 2px; width: 6px; height: 6px; background: #d39316; border-radius: 50%; }
+.pna-mapa-legenda { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 0.5px solid var(--borda-2); font-size: 10px; color: var(--tenue); }
+.pna-mapa-legenda span { display: inline-flex; align-items: center; gap: 5px; }
+.pna-mapa-legenda i { width: 12px; height: 12px; border-radius: 2px; display: inline-block; position: relative; }
+.pna-mapa-legenda i.pna-mapa-flagged::after { content: ""; position: absolute; top: 1px; right: 1px; width: 4px; height: 4px; background: #d39316; border-radius: 50%; }
+
+/* ── Resultados ───────────────────────────────────────────────────────────── */
+.pna-res-hero { padding: 22px 20px; margin-bottom: 14px; text-align: center; }
+.pna-res-concluida { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--pna-h1); margin-bottom: 12px; }
+.pna-res-score { display: flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 6px; }
+.pna-res-score .n { font-size: 60px; font-weight: 800; line-height: 1; color: var(--acento); font-variant-numeric: tabular-nums; letter-spacing: -.03em; }
+.pna-res-score .pc { font-size: 24px; font-weight: 700; color: var(--acento); }
+.pna-res-posbox { background: var(--superficie-2); border: 1px solid var(--borda-2); border-radius: var(--raio-md); padding: 14px 16px; margin-top: 14px; }
+.pna-res-pos { font-size: 26px; font-weight: 800; color: var(--texto); text-align: center; margin: 0; font-variant-numeric: tabular-nums; }
+.pna-res-pos .de { font-size: 14px; font-weight: 500; color: var(--suave); }
+
+.pna-res-2x2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.pna-res-cel { padding: 13px 14px; }
+.pna-res-cel-lbl { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--suave); margin: 0 0 6px; }
+.pna-res-cel-n { font-size: 24px; font-weight: 700; color: var(--texto); margin: 0 0 4px; font-variant-numeric: tabular-nums; }
+.pna-res-cel-n .u { font-size: 12px; font-weight: 600; color: var(--suave); }
+
+/* ── Construtor ───────────────────────────────────────────────────────────── */
+.pna-cons-lbl { font-size: 12px; font-weight: 700; color: var(--texto); margin: 0 0 8px; }
+.pna-cons-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+.pna-cons-chip {
+  padding: 5px 11px; border-radius: var(--raio-pill); font-size: 11.5px; font-weight: 600;
+  background: var(--superficie-2); color: var(--suave); border: 1px solid var(--borda-2);
+  cursor: pointer; font-family: var(--fonte-corpo);
+}
+.pna-cons-chip.ativo { background: var(--acento); color: #fff; border-color: transparent; }
+.pna-cons-presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.pna-cons-preset {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600;
+  background: var(--superficie); color: var(--texto); border: 1px solid var(--borda);
+  border-radius: var(--raio-pill); padding: 5px 12px; cursor: pointer; font-family: var(--fonte-corpo);
+  box-shadow: var(--brilho);
+}
+.pna-cons-preset .qt { color: var(--tenue); font-weight: 500; }
+.pna-cons-preset .mg-ictile, .pna-cons-preset svg { color: var(--acento); }
+.pna-cons-prev { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 11.5px; color: var(--texto-2); }
+.pna-cons-prev span:last-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pna-cons-prev-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--acento); flex-shrink: 0; }
+
+.pna-modo--sel { border-color: var(--acento); outline: 1px solid var(--acento); background: color-mix(in srgb, var(--acento) 8%, var(--superficie)); }
+
+.pna-range { -webkit-appearance: none; appearance: none; width: 100%; height: 4px; border-radius: 2px; background: var(--superficie-2); outline: none; }
+.pna-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--acento); cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.25); border: 2px solid var(--superficie); }
+.pna-range::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--acento); cursor: pointer; border: 2px solid var(--superficie); }
+.pna-range:disabled { opacity: .5; }
+
+/* ── Treino: botões FSRS ──────────────────────────────────────────────────── */
+.pna-fsrs-lbl { font-size: 11px; color: var(--suave); text-align: center; margin: 14px 0 8px; }
+.pna-fsrs-lbl span { color: var(--tenue); }
+.pna-fsrs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.pna-fsrs-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 11px 6px;
+  border: none; border-radius: var(--raio-md); cursor: pointer; font-family: var(--fonte-corpo);
+  color: #fff; box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+}
+.pna-fsrs-btn .t { font-size: 13px; font-weight: 700; }
+.pna-fsrs-btn .d { font-size: 10px; opacity: .9; font-variant-numeric: tabular-nums; }
+.pna-fsrs-btn.hc4, .pna-fsrs-btn.hc5 { color: #fff; }
+
+/* ── Revisão ──────────────────────────────────────────────────────────────── */
+.pna-rev-leg { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--suave); }
+.pna-rev-leg span { display: inline-flex; align-items: center; gap: 5px; }
+.pna-rev-leg i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+.pna-rev-item { display: flex; align-items: center; gap: 10px; padding: 10px 14px; }
+.pna-rev-bar { width: 4px; height: 30px; border-radius: 2px; flex-shrink: 0; }
+
+/* ── Histórico: linhas de simulação ───────────────────────────────────────── */
+.pna-hist-linha {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  background: none; border: none; cursor: pointer; padding: 12px 14px; font-family: var(--fonte-corpo);
+}
+.pna-hist-linha:hover { background: var(--superficie-2); }
+.pna-hist-linha > svg { color: var(--tenue); flex-shrink: 0; }
+.pna-hist-data { min-width: 56px; }
+.pna-hist-d1 { font-size: 12px; font-weight: 600; color: var(--texto); margin: 0; }
+.pna-hist-score { font-size: 15px; font-weight: 700; margin: 0; font-variant-numeric: tabular-nums; }
+
+@media (max-width: 480px) {
+  .pna-metricas { grid-template-columns: repeat(2, 1fr); }
+  .pna-treino-acoes .pna-btn { width: 100%; }
+  .pna-dois { grid-template-columns: 1fr; }
+  .pna-mapa-grade { grid-template-columns: repeat(8, 1fr); }
+}
