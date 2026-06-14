@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { Ico } from "@/components/icones";
 import { obterFsrs, obterRespostas } from "./db";
 import { gerarFeed, curvaRetencao, prever7Dias } from "./logica-fsrs";
+import { exportarCaderno } from "./exportar";
 
 // ============================================================================
 // Revisao — feed inteligente (FSRS) + caderno de erros. Mostra quantas e porquê
@@ -130,7 +131,12 @@ export default function Revisao({ perguntas, onComecar, onVoltar }) {
       </div>
 
       {/* caderno de erros */}
-      <p className="secao-label">Caderno de erros</p>
+      <div className="pna-sec-cab">
+        <p className="secao-label">Caderno de erros</p>
+        {caderno.length > 0 && (
+          <button className="pna-link" onClick={() => exportarCaderno(caderno.map((e) => ({ ...e, titulo: byId[e.id]?.taxonomia?.patologia || byId[e.id]?.lead_in })))}>Exportar CSV ↓</button>
+        )}
+      </div>
       <div className="cartao pna-areas">
         {caderno.length === 0 ? (
           <p className="pna-explicacao-texto">Ainda sem erros registados. Os erros do treino e do exame aparecem aqui.</p>

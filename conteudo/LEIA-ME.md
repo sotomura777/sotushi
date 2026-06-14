@@ -60,6 +60,14 @@ Para marcar algo como contraindicado, escreve `⛔` ou a palavra "Contraindicado
 
 ---
 
+## Módulo PNA (perguntas de exame)
+
+O módulo **PNA** tem regras próprias (banco de perguntas, taxonomia, dados da ACSS).
+Vê o guia dedicado em **`pna/LEIA-ME.md`** — explica como adicionar uma pergunta, o
+formato de cada campo, e como preencher os dados oficiais da ACSS.
+
+---
+
 ## Editar os textos (`meta.json`)
 
 Mudar o título, a nota de rodapé ou a bibliografia é só editar o texto entre aspas.

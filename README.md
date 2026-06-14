@@ -22,6 +22,13 @@ ferramenta de **estudo**.
   6. **Urgência** — índice pesquisável de 114 sintomas/suspeitas por sistema + workup interativo da obstipação.
   7. **Notas Clínicas** — gestor de doentes **só com iniciais** + notas por separador com templates (SOAP/admissão/alta). *Interface pronta; persistência segura por fazer (ver Roadmap).*
   8. **Calculadoras** — doses pediátricas de antibióticos (por peso, com teto e formulação).
+  9. **PNA — Prova Nacional de Acesso** — módulo de treino completo (app dentro da app):
+     banco de perguntas no formato oficial, modos **Treino / Exame cronometrado /
+     Construtor / Revisão (FSRS)**, **estatísticas** e **análise comportamental**,
+     **histórico** de simulações e **posição** face às provas oficiais da ACSS.
+     Estado pessoal em **IndexedDB** (Dexie); repetição espaçada com **ts-fsrs**.
+     Conteúdo (perguntas, taxonomia, dados ACSS) em `/conteudo/pna/` — ver
+     `conteudo/pna/LEIA-ME.md`. **Sem comparação entre utilizadores.**
 - Separação total **conteúdo ↔ lógica** implementada e validada em todos (ver "Regra de ouro").
 
 O que ainda **não** está feito (é a tua parte — ver Roadmap e **`BACKEND.md`**):

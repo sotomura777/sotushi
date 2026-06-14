@@ -8,15 +8,12 @@ import {
 } from "./logica-estatisticas";
 import { mudancaResposta, tempoVsAcerto, fadiga, performancePorHora, detectarPadroes } from "./logica-comportamento";
 import { melhorPosicao } from "./logica-posicao";
+import { classeTaxa, ABREV_TIPO as ABREV } from "./ui";
+import { exportarRespostas } from "./exportar";
 
 const JANELAS = [{ v: 7, t: "7 dias" }, { v: 30, t: "30 dias" }, { v: 90, t: "90 dias" }, { v: "tudo", t: "Tudo" }];
-const ABREV = { Diagnóstico: "Diag", Tratamento: "Trat", Investigação: "Inv", Prognóstico: "Prog", Prevenção: "Prev", Emergência: "Emerg", Ética: "Ética" };
 
 const pct = (x) => (x == null ? "—" : Math.round(x * 100) + "%");
-function classeTaxa(t) {
-  if (t == null) return "hc0";
-  if (t >= 0.85) return "hc1"; if (t >= 0.70) return "hc2"; if (t >= 0.55) return "hc3"; if (t >= 0.40) return "hc4"; return "hc5";
-}
 const delta = (v, suf = "", inverter = false) => {
   if (v == null || v === 0) return <p className="pna-metrica-delta pna-delta-neutro">{v === 0 ? "sem variação" : "—"}</p>;
   const bom = inverter ? v < 0 : v > 0;
@@ -95,7 +92,7 @@ export default function Estatisticas({ taxonomia, historico, onVoltar }) {
     <>
       <div className="pna-treino-topo">
         <button className="pna-link" onClick={onVoltar}>← Voltar</button>
-        <span className="pna-treino-prog">{r.total} resposta{r.total === 1 ? "" : "s"}</span>
+        <button className="pna-link" onClick={() => exportarRespostas(respostas)} disabled={!respostas.length}>Exportar CSV ↓</button>
       </div>
 
       {/* filtro temporal */}

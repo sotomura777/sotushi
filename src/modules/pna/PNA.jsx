@@ -16,6 +16,7 @@ import Estatisticas from "./Estatisticas";
 import Construtor from "./Construtor";
 import Revisao from "./Revisao";
 import Historico from "./Historico";
+import ErroBoundary from "./ErroBoundary";
 import "./estilo.css";
 
 // ============================================================================
@@ -75,6 +76,7 @@ export default function PNA({ accent = "#639922", gradiente, onVoltar }) {
       </header>
 
       <div className="modulo-corpo">
+       <ErroBoundary key={ecra} onReset={() => setEcra("inicio")}>
         {ecra === "inicio" && nResp !== null && (
           <>
             <div className="pna-aviso">{meta.enquadramento}</div>
@@ -154,6 +156,7 @@ export default function PNA({ accent = "#639922", gradiente, onVoltar }) {
             onVoltar={() => { recarregarContagem(); setEcra("inicio"); }}
           />
         )}
+       </ErroBoundary>
       </div>
     </div>
   );

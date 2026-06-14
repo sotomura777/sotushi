@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { Ico } from "@/components/icones";
 import { listarSessoes, obterRespostas } from "./db";
 import { melhorPosicao, lugarNoAno, percentilNoAno } from "./logica-posicao";
+import { exportarSessoes } from "./exportar";
 
 // ============================================================================
 // Historico — lista das simulações (sessões de exame) guardadas no IndexedDB.
@@ -64,7 +65,7 @@ export default function Historico({ perguntas, historico, onAbrir, onVoltar }) {
     <>
       <div className="pna-treino-topo">
         <button className="pna-link" onClick={onVoltar}>← Voltar</button>
-        <span className="pna-treino-prog">Histórico</span>
+        <button className="pna-link" onClick={() => exportarSessoes(concluidas)}>Exportar CSV ↓</button>
       </div>
 
       {/* métricas */}

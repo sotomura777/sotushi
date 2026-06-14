@@ -2,6 +2,7 @@ import { Ico } from "@/components/icones";
 import { resumo, acertoPorArea } from "./logica-estatisticas";
 import { mudancaResposta, fadiga } from "./logica-comportamento";
 import { melhorPosicao, percentilNoAno, lugarNoAno } from "./logica-posicao";
+import { classeTaxa } from "./ui";
 
 // ============================================================================
 // Resultados — ecrã pós-exame. Score, posição vs. PNAs OFICIAIS (estado vazio
@@ -9,10 +10,6 @@ import { melhorPosicao, percentilNoAno, lugarNoAno } from "./logica-posicao";
 // área, análise comportamental da sessão e "ganho estimado se não mudasses as
 // respostas". Apresentação: recebe o resultado já calculado pelo Exame.
 // ============================================================================
-function classeTaxa(t) {
-  if (t == null) return "hc0";
-  if (t >= 0.85) return "hc1"; if (t >= 0.70) return "hc2"; if (t >= 0.55) return "hc3"; if (t >= 0.40) return "hc4"; return "hc5";
-}
 const fmtMin = (ms) => { const m = Math.round(ms / 60000); return m >= 60 ? `${Math.floor(m / 60)}h ${m % 60}min` : `${m}min`; };
 
 export default function Resultados({ resultado, historico, onVoltar, onNova, onRefazerErradas }) {

@@ -2,16 +2,12 @@ import { useEffect, useState } from "react";
 import { Ico } from "@/components/icones";
 import { obterRespostas } from "./db";
 import { resumo, resumoComDelta, streak, heatmap, areasAMelhorar } from "./logica-estatisticas";
+import { classeTaxa, ABREV_TIPO as ABREV } from "./ui";
 
 // ============================================================================
 // Dashboard — menu inicial do PNA quando já há respostas. Fiel ao mockup "menu
 // inicial", vestido com o design MedGuia. Lê o estado pessoal do IndexedDB.
 // ============================================================================
-const ABREV = { Diagnóstico: "Diag", Tratamento: "Trat", Investigação: "Inv", Prognóstico: "Prog", Prevenção: "Prev", Emergência: "Emerg", Ética: "Ética" };
-function classeTaxa(t) {
-  if (t == null) return "hc0";
-  if (t >= 0.85) return "hc1"; if (t >= 0.70) return "hc2"; if (t >= 0.55) return "hc3"; if (t >= 0.40) return "hc4"; return "hc5";
-}
 
 export default function Dashboard({ taxonomia, nPerguntas, onModo, onEstatisticas, onHistorico }) {
   const [resp, setResp] = useState(null);
