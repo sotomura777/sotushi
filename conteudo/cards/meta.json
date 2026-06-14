@@ -3,7 +3,8 @@
     "Farmacologia":   { "cor": "#B45309", "label": "DOSE" },
     "Fisiopatologia": { "cor": "#7C3AED", "label": "CHAVE" },
     "Calculadora":    { "cor": "#2563EB", "label": "CRITÉRIOS" },
-    "Procedimento":   { "cor": "#0F766E", "label": "TÉCNICA" }
+    "Procedimento":   { "cor": "#0F766E", "label": "TÉCNICA" },
+    "Resumo":         { "cor": "#DB2777", "label": "PDF" }
   },
   "especialidades": {
     "cardiologia":       { "label": "Cardiologia",      "cor": "#C0392B" },

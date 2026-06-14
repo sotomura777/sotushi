@@ -52,3 +52,31 @@
 .cd-form-row { display: flex; gap: 8px; }
 .cd-form-row > * { flex: 1; min-width: 0; }
 .cd-empty { text-align: center; color: var(--tenue); padding: 40px 0; font-size: 13px; }
+
+/* ── Card de Resumo (PDF) + seletor de tipo + visor ─────────────────────────── */
+.cd-kindrow { display: flex; gap: 8px; margin-bottom: 16px; }
+.cd-kind { flex: 1; text-align: left; background: var(--superficie-2); border: 1.5px solid var(--borda); border-radius: 11px; padding: 11px 12px; cursor: pointer; font-family: var(--fonte-corpo); display: flex; flex-direction: column; gap: 3px; }
+.cd-kind.ativo { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 8%, transparent); }
+.cd-kind-t { font-size: 13px; font-weight: 700; color: var(--texto); }
+.cd-kind-d { font-size: 11px; color: var(--suave); line-height: 1.3; }
+
+.cd-upload { width: 100%; text-align: left; padding: 12px 13px; border-radius: 9px; border: 1.5px dashed var(--borda); background: var(--superficie-2); color: var(--texto-2); font-size: 13px; cursor: pointer; font-family: var(--fonte-corpo); margin-bottom: 6px; }
+.cd-upload:hover { border-color: var(--acento); }
+.cd-hint { font-size: 11px; color: var(--tenue); margin-bottom: 10px; }
+
+.cd-resumo { position: relative; background: var(--superficie); border: 1px solid var(--borda); border-radius: 12px; padding: 11px 12px 26px; cursor: pointer; box-shadow: var(--sombra-sm); transition: transform .1s, box-shadow .15s; }
+.cd-resumo:hover { transform: translateY(-1px); box-shadow: var(--sombra-md); }
+.cd-resumo-top { display: flex; align-items: flex-start; gap: 7px; }
+.cd-resumo-ic { flex-shrink: 0; display: inline-flex; }
+.cd-resumo-file { font-size: 10.5px; color: var(--suave); margin-top: 4px; word-break: break-word; }
+.cd-resumo-acao { font-size: 11px; font-weight: 700; color: var(--acento); margin-top: 8px; }
+
+/* visor de PDF (overlay) */
+.cd-visor { position: fixed; inset: 0; z-index: 400; background: rgba(10,14,20,.72); display: flex; align-items: center; justify-content: center; padding: 16px; backdrop-filter: blur(4px); }
+.cd-visor-box { width: 100%; max-width: 860px; height: 90vh; background: var(--superficie); border: 1px solid var(--borda); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--sombra-md); }
+.cd-visor-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--borda-2); }
+.cd-visor-nome { font-size: 12.5px; font-weight: 600; color: var(--texto); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cd-visor-acoes { display: flex; gap: 6px; flex-shrink: 0; }
+.cd-visor-btn { font-size: 12px; font-weight: 600; padding: 6px 11px; border-radius: 8px; border: 1px solid var(--borda); background: var(--superficie-2); color: var(--texto-2); cursor: pointer; text-decoration: none; font-family: var(--fonte-corpo); }
+.cd-visor-btn:hover { border-color: var(--acento); color: var(--acento); }
+.cd-visor-frame { flex: 1; width: 100%; border: none; background: #fff; }
