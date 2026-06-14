@@ -7,3 +7,6 @@ dist-ssr
 !.vscode/extensions.json
 scripts/_p_v4.json
 scripts/_padroes_test.txt
+
+# Export derivado para RAG (descartável; gerado por scripts/exportar-conteudo-rag.mjs)
+conteudo-rag/
