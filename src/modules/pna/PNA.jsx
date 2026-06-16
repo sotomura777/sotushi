@@ -100,7 +100,7 @@ export default function PNA({ accent = "#639922", gradiente, onVoltar }) {
         )}
 
         {ecra === "treino" && (
-          <Treino perguntas={treinoSet} onFim={() => { recarregarContagem(); setEcra("estatisticas"); }} />
+          <Treino perguntas={treinoSet} onFim={() => { recarregarContagem(); setEcra("inicio"); }} />
         )}
 
         {ecra === "exame" && (
