@@ -48,6 +48,22 @@
   "rmusc": {
    "color": "#7E22CE",
    "variant": "dark"
+  },
+  "folato": {
+   "color": "#65A30D",
+   "variant": "light"
+  },
+  "azol": {
+   "color": "#0E7490",
+   "variant": "dark"
+  },
+  "metam": {
+   "color": "#B45309",
+   "variant": "dark"
+  },
+  "opioide": {
+   "color": "#9333EA",
+   "variant": "dark"
   }
  },
  "farmacos": [
@@ -312,6 +328,75 @@
     "Contratura muscular",
     "Lombalgia",
     "Cervicalgia"
+   ]
+  },
+  {
+   "dci": "Ácido fólico",
+   "slug": "acido-folico",
+   "classe": "Vitamina B9 (folato)",
+   "classeKey": "folato",
+   "sistema": "Sangue",
+   "marcas": [
+    "Ácido Fólico Generis",
+    "Ácido Fólico Labesfal",
+    "Folicil",
+    "Acfol",
+    "Tardyferon Fol (com ferro)"
+   ],
+   "indicacoes": [
+    "Anemia megaloblástica",
+    "Profilaxia DTN",
+    "Suplementação"
+   ]
+  },
+  {
+   "dci": "Fluconazol",
+   "slug": "fluconazol",
+   "classe": "Antifúngico triazol",
+   "classeKey": "azol",
+   "sistema": "Anti-infeciosos",
+   "marcas": [
+    "Fluconazol (genérico)",
+    "Diflucan",
+    "Diflucan 150"
+   ],
+   "indicacoes": [
+    "Candidíase",
+    "Criptococose"
+   ]
+  },
+  {
+   "dci": "Metamizol magnésico",
+   "slug": "metamizol",
+   "classe": "Pirazolona (analgésico não opióide)",
+   "classeKey": "metam",
+   "sistema": "Analgesia / Inflamação",
+   "marcas": [
+    "Nolotil",
+    "Dolocalma",
+    "Metamizol Tolife",
+    "Metamizol Vitória"
+   ],
+   "indicacoes": [
+    "Dor aguda intensa",
+    "Dor cólica",
+    "Febre"
+   ]
+  },
+  {
+   "dci": "Tramadol",
+   "slug": "tramadol",
+   "classe": "Opióide fraco",
+   "classeKey": "opioide",
+   "sistema": "Analgesia / Inflamação",
+   "marcas": [
+    "Tramal",
+    "Tramal retard",
+    "Tramadol (genérico)",
+    "Zaldiar (com paracetamol)"
+   ],
+   "indicacoes": [
+    "Dor moderada a grave"
    ]
   }
  ]

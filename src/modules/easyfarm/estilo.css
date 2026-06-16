@@ -584,3 +584,37 @@
   font-family: var(--fonte-display); font-size: 16px; font-weight: 700;
   margin: 18px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--borda-2); color: var(--texto);
 }
+
+/* ==========================================================================
+   Classes do conteúdo dos cartões (versão atualizada 2026): reações adversas
+   (ra), frequências (freq) e interações (drug, eff). Scoped à ficha;
+   usam as variáveis já existentes. Resolve o SVG gigante (.ra-icon svg) e o
+   layout destas secções, que só estavam no CSS do HTML original.
+   ========================================================================== */
+.easyf-ficha .ra-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 4px; }
+.easyf-ficha .ra-card { display: flex; gap: 13px; padding: 13px 14px; background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--r-md); border-left: 3px solid var(--cc); transition: transform .15s; }
+.easyf-ficha .ra-card:hover { transform: translateY(-1px); border-left-color: var(--cc-deep); }
+.easyf-ficha .ra-icon { flex-shrink: 0; width: 40px; height: 40px; background: var(--cc-wash); border: 1px solid color-mix(in srgb, var(--cc) 18%, transparent); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--cc-deep); }
+.easyf-ficha .ra-icon svg { width: 22px; height: 22px; }
+.easyf-ficha .ra-icon.danger { background: #FEE2E2; border-color: #FCA5A5; color: #991B1B; }
+.easyf-ficha .ra-icon.warn { background: #FEF3C7; border-color: #FDE68A; color: #78350F; }
+.easyf-ficha .ra-card-body { flex: 1; min-width: 0; }
+.easyf-ficha .ra-card-head { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; flex-wrap: wrap; }
+.easyf-ficha .ra-card-title { font-size: 13.5px; font-weight: 600; color: var(--text); }
+.easyf-ficha .ra-text { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+.easyf-ficha .ra-text b { font-weight: 600; color: var(--text); }
+.easyf-ficha .freq-badge { font-size: 9.5px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; padding: 2px 7px; border-radius: 100px; white-space: nowrap; }
+.easyf-ficha .freq-freq { background: #DBEAFE; color: #1E3A8A; border: 1px solid #93C5FD; }
+.easyf-ficha .freq-pf { background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
+.easyf-ficha .freq-raro { background: #FEF3C7; color: #78350F; border: 1px solid #FDE68A; }
+.easyf-ficha .freq-grave { background: #FEE2E2; color: #991B1B; border: 1px solid #FCA5A5; }
+.easyf-ficha .drug-list { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.easyf-ficha .drug-row { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--r-md); align-items: start; }
+.easyf-ficha .drug-row b { font-weight: 600; color: var(--text); }
+.easyf-ficha .drug-row .drug-name { font-size: 13px; line-height: 1.5; }
+.easyf-ficha .drug-row .drug-name small { display: block; font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+.easyf-ficha .drug-effect { font-size: 10.5px; font-weight: 600; padding: 3px 8px; border-radius: 100px; white-space: nowrap; align-self: start; }
+.easyf-ficha .eff-up { background: #FEE2E2; color: #991B1B; border: 1px solid #FCA5A5; }
+.easyf-ficha .eff-down { background: #DBEAFE; color: #1E3A8A; border: 1px solid #93C5FD; }
+.easyf-ficha .eff-ci { background: #1F2937; color: #fff; }
+.easyf-ficha .eff-monitor { background: #FEF3C7; color: #78350F; border: 1px solid #FDE68A; }
