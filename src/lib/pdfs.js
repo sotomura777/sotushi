@@ -26,6 +26,12 @@ export async function obterPdfUrl(id) {
   return { url: URL.createObjectURL(reg.blob), nome: reg.nome, tamanho: reg.tamanho };
 }
 
+// devolve o blob cru (para renderizar com pdf.js — fiável em todos os browsers)
+export async function obterPdfBlob(id) {
+  const reg = await db.pdfs.get(id);
+  return reg ? reg.blob : null;
+}
+
 export function apagarPdf(id) {
   return id ? db.pdfs.delete(id) : Promise.resolve();
 }

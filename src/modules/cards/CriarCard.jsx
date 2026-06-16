@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import meta from "@conteudo/cards/meta.json";
 import { Ico } from "@/components/icones";
 import { parseTags, gerarTagColors, uid } from "./logica";
-import { guardarPdf, apagarPdf } from "./pdfs";
+import { guardarPdf, apagarPdf } from "@/lib/pdfs";
 import "./estilo.css";
 
 const TIPOS = meta.tipos;

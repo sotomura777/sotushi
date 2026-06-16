@@ -2,6 +2,8 @@ import { useState, useMemo, useRef } from "react";
 import { Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import { normalizar } from "@/lib/texto";
+import { guardarPdf, apagarPdf } from "@/lib/pdfs";
+import VisorPdf from "@/components/VisorPdf";
 
 // paleta para tipos criados pelo utilizador
 const CORES_NOVAS = ["#d97706", "#7c3aed", "#0d9488", "#be185d", "#2563eb", "#ca8a04"];
@@ -36,6 +38,19 @@ function FormNovoCard({ cats, onGuardar, onFechar }) {
   const [sub, setSub] = useState("");
   const [pontos, setPontos] = useState("");
   const [verso, setVerso] = useState("");
+  const [pdf, setPdf] = useState(null);          // { id, nome, tamanho }
+  const [aPdf, setAPdf] = useState(false);
+  const fileRef = useRef(null);
+  const fmtB = (n) => (n > 1048576 ? (n / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(n / 1024)) + " KB");
+
+  const escolherPdf = async (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (!file) return;
+    setAPdf(true);
+    setPdf(await guardarPdf(file));
+    setAPdf(false);
+  };
 
   const guardar = () => {
     if (!titulo.trim()) return;
@@ -46,6 +61,7 @@ function FormNovoCard({ cats, onGuardar, onFechar }) {
       sections: rows.length ? [{ key: "Pontos-chave", rows }] : [],
       backTitle: verso.trim() ? "Verso" : undefined,
       backHtml: verso.trim() ? textoParaHtml(esc(verso)) : undefined,
+      pdf: pdf || undefined,
     });
   };
 
@@ -71,6 +87,12 @@ function FormNovoCard({ cats, onGuardar, onFechar }) {
         <textarea className="campo ca-an-inp ca-form-area" value={pontos} onChange={(e) => setPontos(e.target.value)} placeholder={"Primeiro ponto\nSegundo ponto"} />
         <div className="ca-form-lbl">Verso (opcional — aparece ao virar o card)</div>
         <textarea className="campo ca-an-inp ca-form-area" value={verso} onChange={(e) => setVerso(e.target.value)} placeholder="Detalhe, mnemónica, referência…" />
+        <div className="ca-form-lbl">Resumo em PDF (opcional — abre dentro do card)</div>
+        <input ref={fileRef} type="file" accept="application/pdf" style={{ display: "none" }} onChange={escolherPdf} />
+        <button type="button" className="ca-btn-out" style={{ width: "100%", justifyContent: "flex-start" }} onClick={() => fileRef.current?.click()} disabled={aPdf}>
+          <Ico name="documento" s={14} style={{ marginRight: 6 }} />
+          {aPdf ? "A guardar…" : pdf ? `${pdf.nome} · ${fmtB(pdf.tamanho)}` : "Anexar PDF…"}
+        </button>
         <div className="ca-flash-nav" style={{ marginTop: 14 }}>
           <button className="ca-btn" disabled={!titulo.trim()} onClick={guardar}>Guardar card</button>
           <button className="ca-btn-out" onClick={onFechar}>Cancelar</button>
@@ -80,7 +102,7 @@ function FormNovoCard({ cats, onGuardar, onFechar }) {
   );
 }
 
-function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, onFav, onApagar, sortMode, dragProps, onMover }) {
+function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, onFav, onApagar, onAbrirResumo, sortMode, dragProps, onMover }) {
   const [viradoLocal, setVirado] = useState(false);
   const emEdicao = !!edicao;
   const virado = emEdicao ? edicao.verso : viradoLocal;
@@ -124,6 +146,11 @@ function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, on
                   <ul>{s.rows.map((r, j) => <li key={j} dangerouslySetInnerHTML={{ __html: r }} />)}</ul>
                 </div>
               ))}
+              {card.pdf && (
+                <button className="ca-pdf-btn" onClick={(e) => { e.stopPropagation(); onAbrirResumo?.(); }}>
+                  <Ico name="documento" s={13} /> Abrir PDF
+                </button>
+              )}
               {!emEdicao && <div className="ob-pc-hint">↻ ×2</div>}
             </>
           )}
@@ -157,6 +184,7 @@ function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, on
           )}
         </div>
       </div>
+
     </div>
   );
 }
@@ -178,6 +206,7 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
   const [editI, setEditI] = useState(null);
   const [editVerso, setEditVerso] = useState(false);
   const [draft, setDraft] = useState(null);
+  const [visorId, setVisorId] = useState(null);   // PDF aberto no visor (caixa)
   const dragDe = useRef(null);
 
   const cats = useMemo(() => ({
@@ -219,7 +248,10 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
   };
   const eliminarDefinitivo = (ti) => {
     const t = lixoValido[ti];
-    if (t && confirm("Eliminar definitivamente este card?")) setLixo((l) => l.filter((x) => x !== t));
+    if (t && confirm("Eliminar definitivamente este card?")) {
+      if (t.card?.pdf) apagarPdf(t.card.pdf.id); // apaga o blob do PDF anexo
+      setLixo((l) => l.filter((x) => x !== t));
+    }
   };
   const toggleFav = (i) => setDeck((d) => d.map((c, j) => (j === i ? { ...c, fav: !c.fav } : c)));
 
@@ -377,6 +409,7 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
                 sevLabel={(sevLabels && c.sevBadge && sevLabels[c.sevBadge]) || null}
                 edicao={edicaoDe(i)} onIniciarEdicao={() => iniciarEdicao(i)}
                 onFav={() => toggleFav(i)} onApagar={() => apagarCard(i)}
+                onAbrirResumo={() => setVisorId(c.pdf?.id)}
                 sortMode={sortMode} dragProps={dragProps(i)}
                 onMover={(d) => mover(i, Math.max(0, Math.min(deck.length - 1, i + d)))} />
             ))}
@@ -384,6 +417,7 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
         </>
       )}
 
+      {visorId && <VisorPdf pdfId={visorId} onClose={() => setVisorId(null)} />}
     </div>
   );
 }

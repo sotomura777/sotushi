@@ -2,7 +2,8 @@ import { useState } from "react";
 import { I } from "@/components/icones";
 import meta from "@conteudo/cards/meta.json";
 import { filtrar, agrupar, especialidadesComCards } from "./logica";
-import { obterPdfUrl } from "./pdfs";
+import { apagarPdf } from "@/lib/pdfs";
+import VisorPdf from "@/components/VisorPdf";
 import "./estilo.css";
 
 const TIPOS = meta.tipos;
@@ -14,16 +15,17 @@ export default function Biblioteca({ cards, setCards, onEditar, accent }) {
   const [fEsp, setFEsp] = useState("Todas");
   const [fav, setFav] = useState(false);
   const [flip, setFlip] = useState({});
-  const [visor, setVisor] = useState(null); // { url, nome } do PDF aberto
+  const [visorId, setVisorId] = useState(null); // id do PDF aberto no visor
 
-  const abrirResumo = async (c) => {
-    const r = await obterPdfUrl(c.pdf?.id);
-    if (r) setVisor(r);
-  };
-  const fecharVisor = () => { if (visor?.url) URL.revokeObjectURL(visor.url); setVisor(null); };
+  const abrirResumo = (c) => setVisorId(c.pdf?.id);
 
   const toggleFlip = (id) => setFlip((f) => ({ ...f, [id]: !f[id] }));
   const toggleFav = (id) => setCards((cs) => cs.map((c) => (c.id === id ? { ...c, favorito: !c.favorito } : c)));
+  const apagar = async (c) => {
+    if (!window.confirm(`Apagar o card “${c.titulo}”?`)) return;
+    if (c.pdf) await apagarPdf(c.pdf.id);
+    setCards((cs) => cs.filter((x) => x.id !== c.id));
+  };
 
   const filtrados = filtrar(cards, { filtroTipo: fTipo, filtroEsp: fEsp, favOnly: fav });
   const grupos = agrupar(filtrados, fEsp === "Todas", ESP, TIPOS);
@@ -104,6 +106,7 @@ export default function Biblioteca({ cards, setCards, onEditar, accent }) {
                     <div className="cd-titulo" style={{ marginTop: 6 }}>{c.titulo}</div>
                     {c.pdf && <div className="cd-resumo-file">{c.pdf.nome} · {fmtBytes(c.pdf.tamanho)}</div>}
                     <div className="cd-resumo-acao">Abrir resumo →</div>
+                    <button className="cd-del" onClick={(e) => { e.stopPropagation(); apagar(c); }} aria-label="Apagar">{I.trash("currentColor", 14)}</button>
                     <button className="cd-edit" onClick={(e) => { e.stopPropagation(); onEditar(c.id); }} aria-label="Editar">···</button>
                   </div>
                 );
@@ -127,6 +130,7 @@ export default function Biblioteca({ cards, setCards, onEditar, accent }) {
                       {c.subtitulo && <div className="cd-sub">{c.subtitulo}</div>}
                       {c.front?.dose && <div style={{ marginTop: 8 }}><div className="cd-flabel">{tipoLabel}</div><div className="cd-fval">{c.front.dose}</div></div>}
                       {c.front?.ea && <div className="cd-fea" style={{ marginTop: 6 }}>{c.front.ea}</div>}
+                      <button className="cd-del" onClick={(e) => { e.stopPropagation(); apagar(c); }} aria-label="Apagar">{I.trash("currentColor", 14)}</button>
                       <button className="cd-edit" onClick={(e) => { e.stopPropagation(); onEditar(c.id); }} aria-label="Editar">···</button>
                     </div>
                     <div className="cd-face cd-back">
@@ -144,21 +148,7 @@ export default function Biblioteca({ cards, setCards, onEditar, accent }) {
         </div>
       ))}
 
-      {visor && (
-        <div className="cd-visor" onClick={fecharVisor}>
-          <div className="cd-visor-box" onClick={(e) => e.stopPropagation()}>
-            <div className="cd-visor-bar">
-              <span className="cd-visor-nome">{visor.nome}</span>
-              <div className="cd-visor-acoes">
-                <a className="cd-visor-btn" href={visor.url} target="_blank" rel="noreferrer">Abrir</a>
-                <a className="cd-visor-btn" href={visor.url} download={visor.nome}>Descarregar</a>
-                <button className="cd-visor-btn" onClick={fecharVisor}>Fechar</button>
-              </div>
-            </div>
-            <iframe className="cd-visor-frame" title={visor.nome} src={visor.url} />
-          </div>
-        </div>
-      )}
+      {visorId && <VisorPdf pdfId={visorId} onClose={() => setVisorId(null)} />}
     </div>
   );
 }
