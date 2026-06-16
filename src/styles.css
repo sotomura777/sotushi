@@ -327,6 +327,12 @@ input[type=number] { -moz-appearance: textfield; }
 }
 .ca-pdf-btn:hover { background: color-mix(in srgb, var(--acento) 20%, transparent); }
 
+/* controlo de PDF na edição inline do card */
+.ca-edit-pdf { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; font-size: 11px; }
+.ca-edit-pdf-nome { display: inline-flex; align-items: center; gap: 5px; color: var(--texto-2); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ca-edit-pdf button { font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: var(--raio-pill); cursor: pointer; font-family: var(--fonte-corpo); border: 1px solid color-mix(in srgb, var(--acento) 30%, transparent); background: color-mix(in srgb, var(--acento) 12%, transparent); color: var(--acento); }
+.ca-edit-pdf button.rem { border-color: #f0b6b6; background: #fef2f2; color: #dc2626; }
+
 /* ── pdf.js: páginas renderizadas dentro do visor (caixa) ──────────────────── */
 .pdfinline-paginas { width: 100%; }
 .pdfinline-msg { padding: 22px; text-align: center; color: var(--suave); font-size: 13px; }

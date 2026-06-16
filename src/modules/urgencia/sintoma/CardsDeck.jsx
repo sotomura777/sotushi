@@ -106,6 +106,7 @@ function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, on
   const [viradoLocal, setVirado] = useState(false);
   const emEdicao = !!edicao;
   const virado = emEdicao ? edicao.verso : viradoLocal;
+  const fileEditRef = useRef(null);
 
   return (
     <div className={"ob-drug-wrap" + (virado ? " flipped" : "") + (sortMode ? " ca-sorting" : "") + (emEdicao ? " ca-editando" : "")}
@@ -135,6 +136,19 @@ function CardRapido({ card, cor, catLabel, sevLabel, edicao, onIniciarEdicao, on
               <input className="campo ca-an-inp" value={edicao.draft.title} onChange={(e) => edicao.mudar("title", e.target.value)} placeholder="Título" />
               <input className="campo ca-an-inp" value={edicao.draft.sub} onChange={(e) => edicao.mudar("sub", e.target.value)} placeholder="Subtítulo" />
               <textarea className="campo ca-an-inp ca-form-area alta" value={edicao.draft.secsText} onChange={(e) => edicao.mudar("secsText", e.target.value)} placeholder={"Secção:\nponto\nponto\n\nOutra secção:\nponto"} />
+              <div className="ca-edit-pdf">
+                {edicao.pdf ? (
+                  <>
+                    <span className="ca-edit-pdf-nome"><Ico name="documento" s={13} /> {edicao.pdf.nome}</span>
+                    <button type="button" onClick={() => fileEditRef.current?.click()}>Substituir</button>
+                    <button type="button" className="rem" onClick={edicao.removerPdf}>Remover</button>
+                  </>
+                ) : (
+                  <button type="button" onClick={() => fileEditRef.current?.click()}><Ico name="documento" s={13} /> Anexar PDF</button>
+                )}
+                <input ref={fileEditRef} type="file" accept="application/pdf" style={{ display: "none" }}
+                  onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ""; if (f) edicao.anexarPdf(f); }} />
+              </div>
             </div>
           ) : (
             <>
@@ -258,9 +272,10 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
   const iniciarEdicao = (i) => {
     const c = deck[i];
     setEditI(i); setEditVerso(false);
-    setDraft({ title: c.title, sub: c.sub || "", secsText: secsParaTexto(c.sections), backTitle: c.backTitle || "", backText: htmlParaTexto(c.backHtml) });
+    setDraft({ title: c.title, sub: c.sub || "", secsText: secsParaTexto(c.sections), backTitle: c.backTitle || "", backText: htmlParaTexto(c.backHtml), pdf: c.pdf || null });
   };
   const guardarEdicao = () => {
+    const antiga = deck[editI]?.pdf;
     setDeck((d) => d.map((c, j) => (j !== editI ? c : {
       ...c,
       title: draft.title.trim() || c.title,
@@ -268,9 +283,14 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
       sections: textoParaSecs(draft.secsText),
       backTitle: draft.backTitle.trim(),
       backHtml: draft.backText.trim() ? textoParaHtml(draft.backText) : "",
+      pdf: draft.pdf || undefined,
     })));
+    if (antiga && antiga.id !== draft.pdf?.id) apagarPdf(antiga.id); // limpa o blob antigo se mudou/removeu
     setEditI(null); setDraft(null);
   };
+  // trocar/remover o PDF anexo durante a edição
+  const anexarPdfEdicao = async (file) => { const ref = await guardarPdf(file); setDraft((dr) => ({ ...dr, pdf: ref })); };
+  const removerPdfEdicao = () => setDraft((dr) => ({ ...dr, pdf: null }));
   const reporOriginal = () => {
     const atual = deck[editI];
     const original = defaults.find((x) => x.title === (atual.origemTitle || atual.title));
@@ -318,6 +338,9 @@ export default function CardsDeck({ titulo, sub, cats: catsConteudo, defaults, p
     repor: reporOriginal,
     cancelar: () => { setEditI(null); setDraft(null); },
     guardar: guardarEdicao,
+    pdf: draft?.pdf || null,
+    anexarPdf: anexarPdfEdicao,
+    removerPdf: removerPdfEdicao,
   } : null;
 
   return (
