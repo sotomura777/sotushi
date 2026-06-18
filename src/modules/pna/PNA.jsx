@@ -16,6 +16,7 @@ import Estatisticas from "./Estatisticas";
 import Construtor from "./Construtor";
 import Revisao from "./Revisao";
 import Historico from "./Historico";
+import TreinoAreas from "./TreinoAreas";
 import ErroBoundary from "./ErroBoundary";
 import "./estilo.css";
 
@@ -50,6 +51,11 @@ export default function PNA({ accent = "#639922", gradiente, onVoltar }) {
     if (semBanco) { toast("Banco de perguntas vazio"); return; }
     setTreinoSet(set && set.length ? set : perguntas);
     setEcra("treino");
+  };
+  const iniciarTreinoArea = (area) => {
+    const set = perguntas.filter((p) => p.taxonomia?.especialidade === area);
+    if (!set.length) { toast(`Sem perguntas de ${area}`); return; }
+    iniciarTreino(set);
   };
   const iniciarExame = (set, tempoS) => {
     if (semBanco) { toast("Banco de perguntas vazio"); return; }
@@ -87,6 +93,8 @@ export default function PNA({ accent = "#639922", gradiente, onVoltar }) {
                 onEstatisticas={() => setEcra("estatisticas")}
                 onHistorico={() => setEcra("historico")}
                 onModo={aoEscolherModo}
+                onTreinarArea={iniciarTreinoArea}
+                onAreas={() => setEcra("areas")}
               />
             ) : (
               <>
@@ -147,6 +155,10 @@ export default function PNA({ accent = "#639922", gradiente, onVoltar }) {
             onVoltar={() => setEcra("inicio")}
             onAbrir={(res) => { setResultado(res); setResultadoVoltar("historico"); setEcra("resultados"); }}
           />
+        )}
+
+        {ecra === "areas" && (
+          <TreinoAreas perguntas={perguntas} onTreinar={iniciarTreinoArea} onVoltar={() => setEcra("inicio")} />
         )}
 
         {ecra === "estatisticas" && (

@@ -353,3 +353,7 @@
   .pna-dois { grid-template-columns: 1fr; }
   .pna-mapa-grade { grid-template-columns: repeat(8, 1fr); }
 }
+
+/* linha de área clicável (ecrã "Treinar por área") */
+.pna-area-btn { width: 100%; background: none; cursor: pointer; font-family: var(--fonte-corpo); text-align: left; }
+.pna-area-btn:hover { background: var(--superficie-2); }

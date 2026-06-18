@@ -9,7 +9,7 @@ import { classeTaxa, ABREV_TIPO as ABREV } from "./ui";
 // inicial", vestido com o design MedGuia. Lê o estado pessoal do IndexedDB.
 // ============================================================================
 
-export default function Dashboard({ taxonomia, nPerguntas, onModo, onEstatisticas, onHistorico }) {
+export default function Dashboard({ taxonomia, nPerguntas, onModo, onEstatisticas, onHistorico, onTreinarArea, onAreas }) {
   const [resp, setResp] = useState(null);
   useEffect(() => { obterRespostas().then(setResp); }, []);
   if (resp === null) return <div className="pna-vazio-mini">A carregar…</div>;
@@ -84,23 +84,26 @@ export default function Dashboard({ taxonomia, nPerguntas, onModo, onEstatistica
         )}
       </div>
 
-      {/* áreas a trabalhar */}
-      {piores.length > 0 && (
-        <>
-          <p className="secao-label">Áreas a trabalhar</p>
-          <div className="cartao pna-areas">
-            {piores.map((a) => (
-              <div key={a.nome} className="pna-area">
-                <div style={{ flex: 1 }}>
-                  <p className="pna-area-nome">{a.nome}</p>
-                  <p className="pna-area-sub">{Math.round(a.taxa * 100)}% de acerto · {a.total} respondidas</p>
-                </div>
-                <button className="pna-link" onClick={() => onModo?.("treino")}>Treinar →</button>
+      {/* áreas a trabalhar + treinar por qualquer área */}
+      <div className="pna-sec-cab">
+        <p className="secao-label">Áreas a trabalhar</p>
+        <button className="pna-link" onClick={onAreas}>Treinar por área →</button>
+      </div>
+      <div className="cartao pna-areas">
+        {piores.length > 0 ? (
+          piores.map((a) => (
+            <div key={a.nome} className="pna-area">
+              <div style={{ flex: 1 }}>
+                <p className="pna-area-nome">{a.nome}</p>
+                <p className="pna-area-sub">{Math.round(a.taxa * 100)}% de acerto · {a.total} respondidas</p>
               </div>
-            ))}
-          </div>
-        </>
-      )}
+              <button className="pna-link" onClick={() => onTreinarArea?.(a.nome)}>Treinar →</button>
+            </div>
+          ))
+        ) : (
+          <p className="pna-explicacao-texto">Sem dados suficientes para sugerir áreas fracas. Escolhe qualquer uma em <b>Treinar por área</b>.</p>
+        )}
+      </div>
 
       {/* rodapé */}
       <div className="pna-rodape">
