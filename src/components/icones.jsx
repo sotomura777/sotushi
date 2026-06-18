@@ -89,8 +89,6 @@ export function Ico({ name, c = "currentColor", s = 14, style }) {
 // Ícone por módulo (chave = id do módulo no registo).
 export const ICONE_MODULO = {
   "ajuste-renal": I.kidney,
-  urgencia: I.bolt,
-  cronicas: I.chart,
   analises: I.flask,
   calculadoras: I.calc,
   vacinacao: I.shield,
