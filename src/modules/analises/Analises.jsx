@@ -221,7 +221,9 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
                     const slot = slots[p.id];
                     const ei = slot ? ESTADO_INFO[slot.status] : null;
                     return (
-                      <button key={p.id} className={"an-card" + (slot ? " on" : "")} onClick={() => setModalId(p.id)}
+                      <div key={p.id} className={"an-card" + (slot ? " on" : "")} role="button" tabIndex={0}
+                        onClick={() => setModalId(p.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setModalId(p.id); } }}
                         style={ei ? { borderColor: ei.borda } : undefined}>
                         <button
                           className={"an-estrela" + (favoritos.includes(p.id) ? " on" : "")}
@@ -238,7 +240,7 @@ export default function Analises({ accent = "#8b5cf6", gradiente, onVoltar }) {
                             {slot.val} {slot.status === "high" ? "↑" : slot.status === "low" ? "↓" : "·"}
                           </div>
                         )}
-                      </button>
+                      </div>
                     );
                   })}
                 </div>
