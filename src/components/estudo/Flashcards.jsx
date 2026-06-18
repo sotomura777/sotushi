@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./estilo.css";
 import { useEstadoLocal } from "@/lib/persistencia";
 
 // Flashcards de revisão — partilhado pelos módulos de sintomas.

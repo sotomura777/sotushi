@@ -197,8 +197,6 @@ const MI = {
 // Mapa por id de módulo (para a app)
 const MI_MODULO = {
   "ajuste-renal": MI.kidney,
-  urgencia: MI.bolt,
-  cronicas: MI.heart,
   analises: MI.flask,
   calculadoras: MI.calc,
   vacinacao: MI.syringe,

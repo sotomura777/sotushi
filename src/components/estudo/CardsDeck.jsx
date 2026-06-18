@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef } from "react";
+import "./estilo.css";
 import { Ico } from "@/components/icones";
 import { useEstadoLocal } from "@/lib/persistencia";
 import { normalizar } from "@/lib/texto";

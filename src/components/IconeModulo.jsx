@@ -5,8 +5,6 @@ import { ICONE_MODULO_MODERNO } from "./icones-modernos";
 // não se parecerem entre si. Par [clara/glossy (claro) · neon (escuro)].
 const COR = {
   "ajuste-renal": ["#5566C4", "#8b9bff"],      // índigo
-  urgencia: ["#DB6A5B", "#ff5c7a"],            // vermelho-coral
-  cronicas: ["#BD941F", "#ffd24a"],            // dourado
   analises: ["#8674C9", "#b07cff"],            // violeta-azulado
   calculadoras: ["#6E9E22", "#b6e63a"],        // lima
   vacinacao: ["#1AA0B5", "#2fe6f5"],           // ciano

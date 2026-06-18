@@ -11,8 +11,6 @@ import Analises from "./analises/Analises";
 import metaAnalises from "@conteudo/analises/meta.json";
 import Vacinacao from "./vacinacao/Vacinacao";
 import SaudeInfantil from "./saude-infantil/SaudeInfantil";
-import Urgencia from "./urgencia/Urgencia";
-import Cronicas from "./cronicas/Cronicas";
 import Notas from "./notas/Notas";
 import Calculadoras from "./calculadoras/Calculadoras";
 import FarmacosGravidez from "./farmacos-gravidez/FarmacosGravidez";
@@ -36,26 +34,6 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#0f766e 0%,#115e59 50%,#134e4a 100%)",
     pronto: true,
     Componente: AjusteRenal,
-  },
-  {
-    id: "urgencia",
-    nome: "Sintomas",
-    descricao: "Suspeitas clínicas por sistema",
-    accent: "#e85d4a",
-    bg: "#fff0ee",
-    gradiente: "linear-gradient(135deg,#f08070 0%,#e85d4a 55%,#c2410c 100%)",
-    pronto: true,
-    Componente: Urgencia,
-  },
-  {
-    id: "cronicas",
-    nome: "Patologias",
-    descricao: "Guias de estudo por patologia",
-    accent: "#0b6e7f",
-    bg: "#eef8fa",
-    gradiente: "linear-gradient(135deg,#3DB5B5 0%,#0B6E7F 55%,#0A4D6B 100%)",
-    pronto: true,
-    Componente: Cronicas,
   },
   {
     id: "analises",
