@@ -49,20 +49,92 @@
    "color": "#7E22CE",
    "variant": "dark"
   },
-  "folato": {
-   "color": "#65A30D",
-   "variant": "light"
-  },
-  "azol": {
-   "color": "#0E7490",
+  "antiag": {
+   "color": "#DC2626",
    "variant": "dark"
   },
-  "metam": {
+  "stat": {
+   "color": "#65A30D",
+   "variant": "dark"
+  },
+  "dm": {
+   "color": "#0EA5E9",
+   "variant": "light"
+  },
+  "isglt": {
+   "color": "#0891B2",
+   "variant": "dark"
+  },
+  "isrs": {
+   "color": "#A855F7",
+   "variant": "light"
+  },
+  "ad_at": {
+   "color": "#C026D3",
+   "variant": "dark"
+  },
+  "bzd": {
+   "color": "#475569",
+   "variant": "dark"
+  },
+  "opio": {
+   "color": "#B91C1C",
+   "variant": "dark"
+  },
+  "fol": {
+   "color": "#CA8A04",
+   "variant": "light"
+  },
+  "pir": {
+   "color": "#9F1239",
+   "variant": "dark"
+  },
+  "azol": {
+   "color": "#155E75",
+   "variant": "dark"
+  },
+  "doac": {
+   "color": "#1E40AF",
+   "variant": "dark"
+  },
+  "tireo": {
+   "color": "#F97316",
+   "variant": "light"
+  },
+  "dial": {
+   "color": "#14B8A6",
+   "variant": "dark"
+  },
+  "antxan": {
+   "color": "#A16207",
+   "variant": "dark"
+  },
+  "glp": {
+   "color": "#84CC16",
+   "variant": "light"
+  },
+  "arm": {
+   "color": "#DB2777",
+   "variant": "dark"
+  },
+  "ibp": {
+   "color": "#64748B",
+   "variant": "dark"
+  },
+  "p2y12": {
+   "color": "#BE123C",
+   "variant": "dark"
+  },
+  "tiaz": {
+   "color": "#0369A1",
+   "variant": "dark"
+  },
+  "fer": {
    "color": "#B45309",
    "variant": "dark"
   },
-  "opioide": {
-   "color": "#9333EA",
+  "aep": {
+   "color": "#7C3AED",
    "variant": "dark"
   }
  },
@@ -331,72 +403,640 @@
    ]
   },
   {
-   "dci": "Ácido fólico",
-   "slug": "acido-folico",
-   "classe": "Vitamina B9 (folato)",
-   "classeKey": "folato",
-   "sistema": "Sangue",
+   "dci": "Ácido acetilsalicílico",
+   "slug": "aas",
+   "classe": "Antiagregante plaquetário (inibidor irreversível da COX-1)",
+   "classeKey": "antiag",
+   "sistema": "Cardiovascular",
    "marcas": [
-    "Ácido Fólico Generis",
-    "Ácido Fólico Labesfal",
-    "Folicil",
-    "Acfol",
-    "Tardyferon Fol (com ferro)"
+    "AAS (genérico)",
+    "Tromalyt",
+    "Ácido Acetilsalicílico Ratiopharm",
+    "AAS Generis",
+    "AAS Mylan",
+    "AAS Bluepharma",
+    "Aspirina (Bayer, dose analgésica)"
    ],
    "indicacoes": [
-    "Anemia megaloblástica",
-    "Profilaxia DTN",
-    "Suplementação"
+    "Prevenção CV secundária",
+    "AVC isquémico",
+    "Pré-eclâmpsia"
    ]
   },
   {
-   "dci": "Fluconazol",
-   "slug": "fluconazol",
-   "classe": "Antifúngico triazol",
-   "classeKey": "azol",
-   "sistema": "Anti-infeciosos",
+   "dci": "Atorvastatina",
+   "slug": "atorvastatina",
+   "classe": "Estatina (inibidor da HMG-CoA redutase)",
+   "classeKey": "stat",
+   "sistema": "Cardiovascular",
    "marcas": [
-    "Fluconazol (genérico)",
-    "Diflucan",
-    "Diflucan 150"
+    "Atorvastatina (genérico)",
+    "Lipitor",
+    "Zarator",
+    "Atorvastatina Generis",
+    "Atorvastatina Mylan",
+    "Atorvastatina Bluepharma",
+    "Atorvastatina Sandoz",
+    "Atorvastatina Ratiopharm",
+    "Caduet (com amlodipina)"
    ],
    "indicacoes": [
-    "Candidíase",
-    "Criptococose"
+    "Dislipidemia",
+    "Prevenção CV",
+    "Pós-SCA"
    ]
   },
   {
-   "dci": "Metamizol magnésico",
-   "slug": "metamizol",
-   "classe": "Pirazolona (analgésico não opióide)",
-   "classeKey": "metam",
-   "sistema": "Analgesia / Inflamação",
+   "dci": "Metformina",
+   "slug": "metformina",
+   "classe": "Antidiabético oral (biguanida)",
+   "classeKey": "dm",
+   "sistema": "Diabetes",
    "marcas": [
-    "Nolotil",
-    "Dolocalma",
-    "Metamizol Tolife",
-    "Metamizol Vitória"
+    "Metformina (genérico)",
+    "Glucophage",
+    "Risidon",
+    "Stagid (embonato)",
+    "Metformina Mylan",
+    "Metformina Aurobindo",
+    "Eucreas (com vildagliptina)",
+    "Synjardy (com empagliflozina)",
+    "Janumet (com sitagliptina)",
+    "Komboglyze (com saxagliptina)"
    ],
    "indicacoes": [
-    "Dor aguda intensa",
-    "Dor cólica",
-    "Febre"
+    "DM2",
+    "Pré-diabetes",
+    "SOP"
+   ]
+  },
+  {
+   "dci": "Empagliflozina",
+   "slug": "empagliflozina",
+   "classe": "Inibidor do SGLT2 (gliflozina)",
+   "classeKey": "isglt",
+   "sistema": "Diabetes",
+   "marcas": [
+    "Jardiance",
+    "Synjardy (com metformina)",
+    "Glyxambi (com linagliptina)"
+   ],
+   "indicacoes": [
+    "DM2",
+    "Insuficiência cardíaca",
+    "Doença renal crónica"
+   ]
+  },
+  {
+   "dci": "Sertralina",
+   "slug": "sertralina",
+   "classe": "ISRS (inibidor seletivo da recaptação da serotonina)",
+   "classeKey": "isrs",
+   "sistema": "Saúde mental",
+   "marcas": [
+    "Sertralina (genérico)",
+    "Zoloft",
+    "Lustral",
+    "Sertralina Sandoz",
+    "Sertralina Mylan",
+    "Sertralina Ratiopharm",
+    "Sertralina Mepha",
+    "Sertralina Aurobindo",
+    "Sertralina ToLife",
+    "Sertralina Bluepharma"
+   ],
+   "indicacoes": [
+    "Depressão",
+    "Ansiedade",
+    "POC"
+   ]
+  },
+  {
+   "dci": "Mirtazapina",
+   "slug": "mirtazapina",
+   "classe": "Antidepressivo atípico (NaSSA)",
+   "classeKey": "ad_at",
+   "sistema": "Saúde mental",
+   "marcas": [
+    "Mirtazapina (genérico)",
+    "Remeron",
+    "Mirtazapina Sandoz",
+    "Mirtazapina Psidep",
+    "Mirtazapina Generis",
+    "Mirtazapina Mylan",
+    "Mirtazapina Ratiopharm"
+   ],
+   "indicacoes": [
+    "Depressão",
+    "Insónia (depressiva)",
+    "Anorexia/perda ponderal"
+   ]
+  },
+  {
+   "dci": "Lorazepam",
+   "slug": "lorazepam",
+   "classe": "Benzodiazepina de ação intermédia",
+   "classeKey": "bzd",
+   "sistema": "Saúde mental",
+   "marcas": [
+    "Lorazepam (genérico)",
+    "Lorenin",
+    "Ansilor",
+    "Lorsedal",
+    "Lorazepam Labesfal",
+    "Lorazepam Pharmakern",
+    "Lorazepam Vitória",
+    "Lorazepam Aristo",
+    "Rialam",
+    "Temelor",
+    "Lorazepam Macure (IV/IM)"
+   ],
+   "indicacoes": [
+    "Ansiedade aguda",
+    "Insónia",
+    "Estado de mal epiléptico"
    ]
   },
   {
    "dci": "Tramadol",
    "slug": "tramadol",
-   "classe": "Opióide fraco",
-   "classeKey": "opioide",
+   "classe": "Opióide fraco (agonista μ + IRSN)",
+   "classeKey": "opio",
    "sistema": "Analgesia / Inflamação",
    "marcas": [
-    "Tramal",
-    "Tramal retard",
     "Tramadol (genérico)",
-    "Zaldiar (com paracetamol)"
+    "Tramal",
+    "Tramal Retard",
+    "Tridural",
+    "Travex",
+    "Travex Long",
+    "Travex Rapid (orodispersível)",
+    "Gelotralib",
+    "Tram-u-ron OD",
+    "Tramadol Generis/Mylan/Sandoz/Actavis",
+    "Zaldiar (com paracetamol)",
+    "Zaldiar Efe (efervescente)",
+    "Tomin (com paracetamol)",
+    "Skudexa (com dexcetoprofeno)"
    ],
    "indicacoes": [
+    "Sistema Nervoso Central",
+    "Analgésicos estupefacientes",
     "Dor moderada a grave"
+   ]
+  },
+  {
+   "dci": "Ácido fólico",
+   "slug": "acido-folico",
+   "classe": "Vitamina B9 (suplementação)",
+   "classeKey": "fol",
+   "sistema": "Saúde materna",
+   "marcas": [
+    "Ácido fólico (genérico)",
+    "Folicil",
+    "Acfol",
+    "Ácido Fólico Generis",
+    "Ácido Fólico Labesfal",
+    "Tardyferon Fol (com ferro)",
+    "Elevit Pronatal (suplemento)",
+    "Femibion (suplemento)",
+    "Pregnacare (suplemento)",
+    "Multinatal (suplemento)"
+   ],
+   "indicacoes": [
+    "Sangue",
+    "Antianémicos",
+    "Anemia megaloblástica · profilaxia DTN"
+   ]
+  },
+  {
+   "dci": "Metamizol magnésico",
+   "slug": "metamizol",
+   "classe": "Analgésico não opióide (pirazolona)",
+   "classeKey": "pir",
+   "sistema": "Analgesia / Inflamação",
+   "marcas": [
+    "Nolotil",
+    "Dolocalma",
+    "Metamizol Magnésico Tolife",
+    "Metamizol Vitória"
+   ],
+   "indicacoes": [
+    "Sistema Nervoso Central",
+    "Analgésicos e antipiréticos",
+    "Dor aguda intensa, dor cólica, febre refratária"
+   ]
+  },
+  {
+   "dci": "Fluconazol",
+   "slug": "fluconazol",
+   "classe": "Antifúngico azólico (triazol)",
+   "classeKey": "azol",
+   "sistema": "Anti-infecciosos",
+   "marcas": [
+    "Diflucan",
+    "Fluconazol (genérico)",
+    "Fluconazol Generis",
+    "Fluconazol Ratiopharm",
+    "Fluconazol Mylan",
+    "Fluconazol Aurobindo",
+    "Fluconazol Sandoz",
+    "Fluconazol Mepha",
+    "Fluconazol Krka",
+    "Fluconazol Bluepharma"
+   ],
+   "indicacoes": [
+    "Anti-infecciosos",
+    "Antifúngicos",
+    "Candidíase mucosa e sistémica · criptococose"
+   ]
+  },
+  {
+   "dci": "Sinvastatina",
+   "slug": "sinvastatina",
+   "classe": "Estatina (inibidor da HMG-CoA redutase)",
+   "classeKey": "stat",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Sinvastatina (genérico)",
+    "Zocor",
+    "Cordilat",
+    "Sinvacol",
+    "Sinvastatina Generis",
+    "Sinvastatina Bluepharma",
+    "Sinvastatina Mylan",
+    "Sinvastatina Sandoz",
+    "Inegy (com ezetimiba)"
+   ],
+   "indicacoes": [
+    "Dislipidemia",
+    "Prevenção CV",
+    "Pós-SCA"
+   ]
+  },
+  {
+   "dci": "Apixabano",
+   "slug": "apixabano",
+   "classe": "Anticoagulante oral direto (DOAC · inibidor Fator Xa)",
+   "classeKey": "doac",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Eliquis",
+    "Apixabano · genéricos (em entrada 2026)"
+   ],
+   "indicacoes": [
+    "Fibrilhação auricular",
+    "Tromboembolismo venoso",
+    "Profilaxia em cirurgia ortopédica"
+   ]
+  },
+  {
+   "dci": "Levotiroxina",
+   "slug": "levotiroxina",
+   "classe": "Hormona tiroideia (T4 sintética)",
+   "classeKey": "tireo",
+   "sistema": "Endocrinologia",
+   "marcas": [
+    "Eutirox (Merck · referência · cor por dose)",
+    "Letter (Sanofi)",
+    "Levotiroxina sódica · genéricos (Aurovitas, Sandoz, Generis, Ratiopharm)"
+   ],
+   "indicacoes": [
+    "Hipotiroidismo",
+    "Bócio",
+    "Cancro diferenciado da tiroide (supressão TSH)"
+   ]
+  },
+  {
+   "dci": "Furosemida",
+   "slug": "furosemida",
+   "classe": "Diurético da ansa",
+   "classeKey": "dial",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Lasix",
+    "Furosemida Generis",
+    "Furosemida Labesfal",
+    "Furosemida Mylan",
+    "Furosemida Ciclum",
+    "Furosemida IV (uso hospitalar)"
+   ],
+   "indicacoes": [
+    "Insuficiência cardíaca",
+    "Edema",
+    "HTA refratária",
+    "Insuficiência renal"
+   ]
+  },
+  {
+   "dci": "Alopurinol",
+   "slug": "alopurinol",
+   "classe": "Inibidor da xantina oxidase",
+   "classeKey": "antxan",
+   "sistema": "Reumatologia",
+   "marcas": [
+    "Zyloric",
+    "Alopurinol Generis",
+    "Alopurinol Bluepharma",
+    "Alopurinol Mylan",
+    "Alopurinol Sandoz"
+   ],
+   "indicacoes": [
+    "Gota crónica",
+    "Hiperuricemia",
+    "Síndrome de lise tumoral · profilaxia"
+   ]
+  },
+  {
+   "dci": "Diazepam",
+   "slug": "diazepam",
+   "classe": "Benzodiazepina de ação longa",
+   "classeKey": "bzd",
+   "sistema": "Saúde mental",
+   "marcas": [
+    "Valium",
+    "Diazepam Labesfal",
+    "Diazepam ratiopharm",
+    "Stesolid (rectal)"
+   ],
+   "indicacoes": [
+    "Ansiedade aguda",
+    "Status epilepticus",
+    "Síndrome de abstinência alcoólica",
+    "Espasticidade muscular"
+   ]
+  },
+  {
+   "dci": "Semaglutida",
+   "slug": "semaglutida",
+   "classe": "Agonista do recetor GLP-1",
+   "classeKey": "glp",
+   "sistema": "Diabetes",
+   "marcas": [
+    "Ozempic",
+    "Rybelsus (oral)",
+    "Wegovy",
+    "Wegovy oral (Rebymo)",
+    "Kayshild (MASH · em aprovação UE)"
+   ],
+   "indicacoes": [
+    "DM2",
+    "Obesidade",
+    "Prevenção CV",
+    "MASH",
+    "HFpEF",
+    "Osteoartrose do joelho (obesidade)"
+   ]
+  },
+  {
+   "dci": "Liraglutida",
+   "slug": "liraglutida",
+   "classe": "Agonista do recetor GLP-1",
+   "classeKey": "glp",
+   "sistema": "Diabetes",
+   "marcas": [
+    "Victoza",
+    "Saxenda",
+    "Xultophy (com insulina degludeca)",
+    "Liraglutide Stada (híbrido)",
+    "Ablymico (híbrido · obesidade)",
+    "Liraglutida · genéricos"
+   ],
+   "indicacoes": [
+    "DM2",
+    "Obesidade"
+   ]
+  },
+  {
+   "dci": "Dapagliflozina",
+   "slug": "dapagliflozina",
+   "classe": "Inibidor do SGLT2 (gliflozina)",
+   "classeKey": "isglt",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Forxiga",
+    "Xigduo (com metformina)",
+    "Qtern (com saxagliptina)",
+    "Dapagliflozina · genéricos (em entrada 2026)"
+   ],
+   "indicacoes": [
+    "DM2",
+    "Insuficiência cardíaca",
+    "Doença renal crónica"
+   ]
+  },
+  {
+   "dci": "Espironolactona",
+   "slug": "espironolactona",
+   "classe": "Antagonista do recetor mineralocorticoide (ARM)",
+   "classeKey": "arm",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Aldactone",
+    "Espironolactona Generis",
+    "Espironolactona Bluepharma",
+    "Espironolactona Mylan",
+    "Espironolactona Labesfal"
+   ],
+   "indicacoes": [
+    "Insuficiência cardíaca",
+    "HTA resistente",
+    "Hiperaldosteronismo",
+    "Cirrose com ascite",
+    "SOP/hirsutismo"
+   ]
+  },
+  {
+   "dci": "Pantoprazol",
+   "slug": "pantoprazol",
+   "classe": "Inibidor da bomba de protões (IBP)",
+   "classeKey": "ibp",
+   "sistema": "Gastrointestinal",
+   "marcas": [
+    "Pantoc (Sanofi)",
+    "Zurcal",
+    "Apton",
+    "Pantoprazol Generis",
+    "Pantoprazol Mylan",
+    "Pantoprazol Sandoz",
+    "Pantoprazol IV (uso hospitalar)"
+   ],
+   "indicacoes": [
+    "DRGE",
+    "Úlcera péptica",
+    "H. pylori (erradicação)",
+    "Hemorragia digestiva alta",
+    "Profilaxia stress UCI",
+    "Zollinger-Ellison"
+   ]
+  },
+  {
+   "dci": "Clopidogrel",
+   "slug": "clopidogrel",
+   "classe": "Antiagregante plaquetário (inibidor P2Y12)",
+   "classeKey": "p2y12",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "Clopidogrel (genérico)",
+    "Plavix",
+    "Iscover",
+    "Clopidogrel Generis",
+    "Clopidogrel Bluepharma",
+    "Clopidogrel Sandoz",
+    "Clopidogrel Mylan",
+    "DuoPlavin (com AAS)",
+    "Vatrop (com AAS)"
+   ],
+   "indicacoes": [
+    "SCA · DAPT",
+    "Pós-PCI",
+    "AVC/AIT · DAPT curta",
+    "Doença arterial periférica"
+   ]
+  },
+  {
+   "dci": "Omeprazol",
+   "slug": "omeprazol",
+   "classe": "Inibidor da bomba de protões (IBP)",
+   "classeKey": "ibp",
+   "sistema": "Gastrointestinal",
+   "marcas": [
+    "Losec",
+    "Omeprazol (genérico)",
+    "Omeprazol Generis",
+    "Omeprazol Mylan",
+    "Omeprazol Sandoz",
+    "Omeprazol Ratiopharm",
+    "Omeprazol Bluepharma",
+    "Omeprazol Pensa",
+    "Losec IV (uso hospitalar)"
+   ],
+   "indicacoes": [
+    "DRGE",
+    "Úlcera péptica",
+    "H. pylori (erradicação)",
+    "Zollinger-Ellison"
+   ]
+  },
+  {
+   "dci": "Hidroclorotiazida",
+   "slug": "hidroclorotiazida",
+   "classe": "Diurético tiazídico",
+   "classeKey": "tiaz",
+   "sistema": "Cardiovascular",
+   "marcas": [
+    "HCT em combinações fixas",
+    "Co-Renitec (com enalapril)",
+    "Hyzaar (com losartan)",
+    "Co-Aprovel (com irbesartan)",
+    "Co-Diovan (com valsartan)",
+    "Olsar Plus (com olmesartan)",
+    "Micardis Plus (com telmisartan)",
+    "Triplexam"
+   ],
+   "indicacoes": [
+    "HTA",
+    "Edema",
+    "Nefrolitíase hipercalciúrica",
+    "Diabetes insípida nefrogénica"
+   ]
+  },
+  {
+   "dci": "Escitalopram",
+   "slug": "escitalopram",
+   "classe": "ISRS (inibidor seletivo da recaptação da serotonina)",
+   "classeKey": "isrs",
+   "sistema": "Saúde mental",
+   "marcas": [
+    "Cipralex",
+    "Escitalopram (genérico)",
+    "Escitalopram Generis",
+    "Escitalopram Sandoz",
+    "Escitalopram Mepha",
+    "Escitalopram Krka",
+    "Escitalopram Aurovitas",
+    "Escitalopram Mylan",
+    "Escitalopram Bluepharma",
+    "Escitalopram Pensa"
+   ],
+   "indicacoes": [
+    "Depressão",
+    "PAG",
+    "Pânico",
+    "POC",
+    "Fobia social"
+   ]
+  },
+  {
+   "dci": "Diclofenac",
+   "slug": "diclofenac",
+   "classe": "AINE não seletivo (preferencial COX-2)",
+   "classeKey": "aine",
+   "sistema": "Analgesia / Inflamação",
+   "marcas": [
+    "Voltaren",
+    "Cataflam (sal potássico)",
+    "Olfen",
+    "Diclofenac (genérico)",
+    "Voltaren Emulgel (tópico)",
+    "Flector tissugel (penso)",
+    "Voltaren oftálmico (colírio)"
+   ],
+   "indicacoes": [
+    "Dor aguda",
+    "Cólica renal",
+    "Gota aguda",
+    "Dismenorreia",
+    "AR/espondilartrites",
+    "Pericardite"
+   ]
+  },
+  {
+   "dci": "Ferro",
+   "slug": "ferro",
+   "classe": "Suplementação de ferro (oral e IV)",
+   "classeKey": "fer",
+   "sistema": "Sangue",
+   "marcas": [
+    "Sulfato Ferroso (genérico)",
+    "Ferplex (proteico-succinilato)",
+    "Ferimax (maltose férrico)",
+    "Ferro Generis",
+    "Tardyferon Fol (com fólico)",
+    "Ferinject (carboximaltose IV)",
+    "Venofer (sacarose IV)"
+   ],
+   "indicacoes": [
+    "Anemia ferropénica",
+    "Profilaxia em gravidez",
+    "Insuficiência cardíaca com def ferro",
+    "DRC",
+    "Pós-bariátrica",
+    "Pré-cirúrgico"
+   ]
+  },
+  {
+   "dci": "Levetiracetam",
+   "slug": "levetiracetam",
+   "classe": "Antiepilético (modulador SV2A)",
+   "classeKey": "aep",
+   "sistema": "Neurologia",
+   "marcas": [
+    "Keppra",
+    "Levetiracetam (genérico)",
+    "Levetiracetam Generis",
+    "Levetiracetam Mepha",
+    "Levetiracetam Krka",
+    "Levetiracetam Labesfal",
+    "Levetiracetam Sandoz",
+    "Levetiracetam IV (uso hospitalar)"
+   ],
+   "indicacoes": [
+    "Crises focais",
+    "Crises mioclónicas (EMJ)",
+    "Crises generalizadas",
+    "Status epilepticus",
+    "Profilaxia TCE"
    ]
   }
  ]
