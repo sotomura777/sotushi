@@ -5,6 +5,7 @@ import IconeModulo from "./components/IconeModulo.jsx";
 import { useEstadoLocal } from "./lib/persistencia";
 import { normalizar } from "./lib/texto";
 import Toaster from "./components/Toaster.jsx";
+import Landing from "./components/Landing.jsx";
 import Biblioteca from "./modules/cards/Biblioteca.jsx";
 import CriarCard from "./modules/cards/CriarCard.jsx";
 import CARDS_EXEMPLO from "@conteudo/cards/exemplos.json";
@@ -17,6 +18,7 @@ const ABAS = [
 ];
 
 export default function App() {
+  const [entrou, setEntrou] = useEstadoLocal("medguia:entrou", false);
   const [aba, setAba] = useEstadoLocal("medguia:nav:aba", "inicio");
   const [dark, setDark] = useEstadoLocal("medguia:tema:dark", false);
   const [abertoId, setAbertoId] = useEstadoLocal("medguia:nav:aberto", null);
@@ -24,6 +26,9 @@ export default function App() {
   const [procura, setProcura] = useState("");
   const [cards, setCards] = useEstadoLocal("medguia:cards", CARDS_EXEMPLO);
   const [editCardId, setEditCardId] = useState(null);
+
+  // Porta de entrada (landing). Login ainda não está ligado — só abre a app.
+  if (!entrou) return <Landing dark={dark} onEntrar={() => setEntrou(true)} />;
 
   // Cores literais (hex) para ícones SVG e estilos que dependem do tema.
   const tema = dark
@@ -67,12 +72,21 @@ export default function App() {
       <div className="aba">
         <div className="aba-cabecalho">
           <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-            <div className="avatar">MG</div>
+            <div className="avatar">Ai</div>
             <h1 className="aba-titulo">Início</h1>
           </div>
-          <button className="toggle-tema" onClick={() => setDark((v) => !v)} aria-label="Alternar tema">
-            {dark ? I.sun(tema.tx2, 16) : I.moon(tema.tx2, 16)}
-          </button>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <button
+              onClick={() => setEntrou(false)}
+              title="Sair"
+              style={{ background: "none", border: "none", cursor: "pointer", color: tema.tx2, fontSize: 12.5, fontWeight: 700, fontFamily: "var(--fonte-corpo)", padding: "6px 4px" }}
+            >
+              Sair
+            </button>
+            <button className="toggle-tema" onClick={() => setDark((v) => !v)} aria-label="Alternar tema">
+              {dark ? I.sun(tema.tx2, 16) : I.moon(tema.tx2, 16)}
+            </button>
+          </div>
         </div>
 
         <div className="ferramentas">{MODULOS.map((m) => cartaoFerramenta(m, false))}</div>
