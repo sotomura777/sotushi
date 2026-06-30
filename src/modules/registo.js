@@ -12,13 +12,15 @@ import metaAnalises from "@conteudo/analises/meta.json";
 import Vacinacao from "./vacinacao/Vacinacao";
 import SaudeInfantil from "./saude-infantil/SaudeInfantil";
 import Notas from "./notas/Notas";
-import Calculadoras from "./calculadoras/Calculadoras";
 import FarmacosGravidez from "./farmacos-gravidez/FarmacosGravidez";
 import metaGravidez from "@conteudo/farmacos-gravidez/meta.json";
 import Interacoes from "./interacoes/Interacoes";
 import metaInteracoes from "@conteudo/interacoes/meta.json";
 import InfetoAcessoAdulto from "./infetoacesso/InfetoAcessoAdulto";
 import InfetoAcessoPed from "./infetoacesso/InfetoAcessoPed";
+import Sintomas from "./sintomas/Sintomas";
+import metaSintomas from "@conteudo/sintomas/meta.json";
+import Sinave from "./sinave/Sinave";
 import EasyFarm from "./easyfarm/EasyFarm";
 import MyEasyFarm from "./my-easyfarm/MyEasyFarm";
 import PNA from "./pna/PNA";
@@ -44,16 +46,6 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#8b5cf6 0%,#7c3aed 55%,#5b21b6 100%)",
     pronto: true,
     Componente: Analises,
-  },
-  {
-    id: "calculadoras",
-    nome: "Calculadoras",
-    descricao: "Doses pediátricas de antibióticos",
-    accent: "#0a8f6a",
-    bg: "#e3f0ea",
-    gradiente: "linear-gradient(135deg,#34b88a 0%,#0a8f6a 55%,#0a5e45 100%)",
-    pronto: true,
-    Componente: Calculadoras,
   },
   {
     id: "vacinacao",
@@ -124,6 +116,26 @@ export const MODULOS = [
     gradiente: "linear-gradient(135deg,#d18a80 0%,#C4756B 55%,#9c574e 100%)",
     pronto: true,
     Componente: InfetoAcessoPed,
+  },
+  {
+    id: "sintomas",
+    nome: metaSintomas.nome,
+    descricao: "Abordagem por sintoma · 5 dimensões",
+    accent: "#1e3a36",
+    bg: "#eaf1ef",
+    gradiente: "linear-gradient(135deg,#2d5552 0%,#1e3a36 55%,#13231f 100%)",
+    pronto: true,
+    Componente: Sintomas,
+  },
+  {
+    id: "sinave",
+    nome: "Sinave",
+    descricao: "Doenças de notificação obrigatória",
+    accent: "#8c2f39",
+    bg: "#fbecec",
+    gradiente: "linear-gradient(135deg,#a8434d 0%,#8c2f39 55%,#5e1d25 100%)",
+    pronto: true,
+    Componente: Sinave,
   },
   {
     id: "easyfarm",

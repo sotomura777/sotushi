@@ -90,7 +90,6 @@ export function Ico({ name, c = "currentColor", s = 14, style }) {
 export const ICONE_MODULO = {
   "ajuste-renal": I.kidney,
   analises: I.flask,
-  calculadoras: I.calc,
   vacinacao: I.shield,
   notas: I.clipboard,
   "saude-infantil": I.baby,

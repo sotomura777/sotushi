@@ -198,7 +198,6 @@ const MI = {
 const MI_MODULO = {
   "ajuste-renal": MI.kidney,
   analises: MI.flask,
-  calculadoras: MI.calc,
   vacinacao: MI.syringe,
   notas: MI.clipboard,
   "saude-infantil": MI.baby,
@@ -367,4 +366,6 @@ const EXTRA = {
 
 // glifos base (MI) + extra (EXTRA), num único mapa
 export const ICONES_MODERNOS = Object.assign({}, MI, EXTRA);
+MI_MODULO.sintomas = EXTRA.thermo; // termómetro (glifo definido em EXTRA, após MI_MODULO)
+MI_MODULO.sinave = EXTRA.virus;    // vírus (glifo em EXTRA)
 export const ICONE_MODULO_MODERNO = MI_MODULO;

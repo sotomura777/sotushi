@@ -6,7 +6,6 @@ import { ICONE_MODULO_MODERNO } from "./icones-modernos";
 const COR = {
   "ajuste-renal": ["#5566C4", "#8b9bff"],      // índigo
   analises: ["#8674C9", "#b07cff"],            // violeta-azulado
-  calculadoras: ["#6E9E22", "#b6e63a"],        // lima
   vacinacao: ["#1AA0B5", "#2fe6f5"],           // ciano
   notas: ["#6A7689", "#9fb4ff"],               // ardósia
   "saude-infantil": ["#CE7BA0", "#ff84c4"],    // rosa
@@ -17,6 +16,8 @@ const COR = {
   easyfarm: ["#1B5E8A", "#5db4f0"],            // azul
   "my-easyfarm": ["#2E9E55", "#3df58a"],       // verde-esmeralda
   pna: ["#639922", "#a3e635"],                 // verde-relva (PNA)
+  sintomas: ["#2d5552", "#5fd6c4"],            // teal-profundo (Abordagem por Sintoma)
+  sinave: ["#a8434d", "#ff7a88"],              // bordeaux (Notificação Obrigatória)
 };
 
 // Mosaico de ícone de módulo: glossy (claro) ou neon (escuro), conforme o tema.
