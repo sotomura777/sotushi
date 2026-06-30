@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cv",
+    "nome": "Cardiovascular",
+    "desc": "Coração, vasos e circulação.",
+    "cor": "#8c1d3f"
+  },
+  {
+    "id": "rs",
+    "nome": "Respiratória",
+    "desc": "Pulmão, vias aéreas e ventilação.",
+    "cor": "#3c5878"
+  },
+  {
+    "id": "nl",
+    "nome": "Neurológica",
+    "desc": "SNC, nervos e sistema nervoso.",
+    "cor": "#5e528a"
+  },
+  {
+    "id": "gi",
+    "nome": "Digestiva e Hepatobiliar",
+    "desc": "Tubo digestivo, fígado e pâncreas.",
+    "cor": "#4e6840"
+  },
+  {
+    "id": "gu",
+    "nome": "Geniturinária",
+    "desc": "Rim, vias urinárias e aparelho reprodutor.",
+    "cor": "#8a5a3a"
+  },
+  {
+    "id": "he",
+    "nome": "Hematológica",
+    "desc": "Sangue, coagulação e linfa.",
+    "cor": "#c93a5c"
+  },
+  {
+    "id": "rm",
+    "nome": "Musculo-esquelética",
+    "desc": "Articulações, músculos e coluna.",
+    "cor": "#7a6438"
+  },
+  {
+    "id": "in",
+    "nome": "Constitucional",
+    "desc": "Sintomas sistémicos: cansaço, febre, perda de peso.",
+    "cor": "#1f7a7a"
+  },
+  {
+    "id": "of",
+    "nome": "Oftalmologia",
+    "desc": "Olho e visão: diplopia, olho vermelho, perda de visão.",
+    "cor": "#3a6e8a"
+  },
+  {
+    "id": "orl",
+    "nome": "ORL",
+    "desc": "Otorrinolaringologia: disfonia, epistaxis, rino-sinusite, surdez, vertigem.",
+    "cor": "#8d7459"
+  }
+]

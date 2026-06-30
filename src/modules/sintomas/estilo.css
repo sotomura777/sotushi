@@ -1,0 +1,165 @@
+/* ============================================================================
+   Sintomas — Abordagem por Sintoma.
+   Consome as variáveis partilhadas (styles.css) e o mosaico glossy .mg-ictile
+   (icon-tiles.css, global). A cor de cada sistema entra por --sys (inline) e por
+   --ac (no .mg-ictile). Cai em --acento se faltar.
+   ============================================================================ */
+.stm { --sys: var(--acento); }
+
+/* Dimensão do glifo dentro do mosaico glossy (os SVGs do mock não trazem tamanho) */
+.stm .mg-ictile svg { width: 23px; height: 23px; }
+.stm .mg-ictile--lg svg { width: 26px; height: 26px; }
+.stm .mg-ictile--sm svg { width: 20px; height: 20px; }
+
+/* Banner de enquadramento (estudo) */
+.stm-aviso {
+  font-size: 13px; line-height: 1.5; color: var(--texto-2);
+  background: var(--acento-claro);
+  border: 1px solid var(--borda-2); border-radius: var(--raio-md);
+  padding: 10px 14px; margin-bottom: 18px;
+}
+
+/* ── Pesquisa ── */
+.stm-busca { position: relative; margin-bottom: 24px; }
+.stm-busca-ic {
+  position: absolute; left: 15px; top: 50%; transform: translateY(-50%);
+  color: var(--tenue); display: flex; pointer-events: none;
+}
+.stm-busca-input { width: 100%; padding-left: 44px; padding-right: 40px; }
+.stm-busca-x {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px; border: none; background: transparent;
+  color: var(--suave); font-size: 22px; line-height: 1; cursor: pointer; border-radius: 50%;
+}
+.stm-busca-x:hover { background: var(--borda-2); }
+
+/* ── Grelha de sistemas ── */
+.stm-sistemas {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 14px;
+}
+.stm-sys {
+  position: relative; text-align: left; cursor: pointer; border: none; width: 100%;
+  display: flex; flex-direction: column; gap: 10px; padding: 18px 18px 14px;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.stm-sys:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px -16px color-mix(in srgb, var(--sys) 60%, transparent), var(--sombra-sm);
+}
+.stm-sys-nome { font-weight: 700; font-size: 17px; color: var(--texto); letter-spacing: -.01em; margin-top: 2px; }
+.stm-sys-desc { font-size: 13px; color: var(--suave); line-height: 1.5; flex: 1; }
+.stm-sys-foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--borda-2);
+  font-size: 12.5px; color: var(--tenue);
+}
+.stm-sys-foot b { color: var(--texto-2); font-weight: 700; }
+.stm-sys-ativos { color: var(--sys); font-weight: 700; }
+.stm-sys-arr { color: var(--sys); font-size: 15px; font-weight: 800; }
+
+/* ── Resultados ── */
+.stm-res-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.stm-res-cab .secao-label em { font-style: normal; color: var(--acento); }
+.stm-res-conta { font-size: 12px; color: var(--tenue); white-space: nowrap; }
+.stm-res-lista { display: flex; flex-direction: column; gap: 12px; }
+.stm-res { padding: 16px; border-left: 3px solid var(--sys); transition: transform .16s ease, box-shadow .16s ease; }
+.stm-res--ativo { cursor: pointer; }
+.stm-res--ativo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -16px color-mix(in srgb, var(--sys) 55%, transparent), var(--sombra-sm);
+}
+.stm-res-top { display: flex; align-items: center; gap: 13px; }
+.stm-res-meta { flex: 1; min-width: 0; }
+.stm-res-nome { font-weight: 700; font-size: 15.5px; color: var(--texto); }
+.stm-res-sys { font-size: 12px; color: var(--suave); margin-top: 1px; }
+.stm-badge {
+  font-size: 11px; font-weight: 600; color: var(--suave);
+  background: var(--borda-2); padding: 3px 9px; border-radius: var(--raio-pill);
+}
+.stm-res-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 13px; }
+.stm-tag {
+  font-size: 12px; font-weight: 600; color: var(--texto-2);
+  background: var(--superficie-2); border: 1px solid var(--borda-2);
+  padding: 4px 10px; border-radius: var(--raio-pill); cursor: pointer;
+}
+.stm-tag:hover { border-color: var(--sys); color: var(--sys); }
+.stm-tag--p { color: var(--sys); border-color: color-mix(in srgb, var(--sys) 40%, transparent); }
+.stm-tag--off { cursor: default; color: var(--tenue); opacity: .7; }
+.stm-tag--off:hover { border-color: var(--borda-2); color: var(--tenue); }
+.stm-vazio { color: var(--suave); font-size: 14px; }
+
+/* ── Vista detalhe (sintoma / dimensão) ── */
+.stm-voltar-bar { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+.stm-voltar {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: none; border: none; cursor: pointer; padding: 4px 0;
+  color: var(--acento); font-weight: 700; font-size: 14px;
+}
+.stm-migalhas { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--tenue); flex-wrap: wrap; }
+.stm-migalhas a { color: var(--suave); cursor: pointer; }
+.stm-migalhas a:hover { color: var(--acento); }
+.stm-sep { color: var(--tenue); }
+.stm-atual { color: var(--texto-2); font-weight: 600; }
+
+.stm-sym-cab { display: flex; align-items: center; gap: 15px; }
+.stm-sym-sys { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--sys); }
+.stm-sym-titulo { font-size: 27px; font-weight: 800; color: var(--texto); margin: 3px 0 0; letter-spacing: -.02em; }
+.stm-sym-intro { font-size: 14.5px; line-height: 1.6; color: var(--texto-2); margin: 14px 0 4px; }
+.stm-sym-intro b { color: var(--texto); }
+
+.stm-sec-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 24px; }
+.stm-sec-hint { font-size: 12px; color: var(--tenue); }
+
+/* ── Cartões das 5 dimensões ── */
+.stm-dims { display: grid; grid-template-columns: repeat(auto-fill, minmax(244px, 1fr)); gap: 14px; }
+.stm-dim {
+  position: relative; text-align: left; cursor: pointer; border: none; width: 100%;
+  display: flex; flex-direction: column; gap: 9px; padding: 18px;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.stm-dim:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px -16px color-mix(in srgb, var(--sys) 55%, transparent), var(--sombra-sm);
+}
+.stm-dim-num { position: absolute; top: 16px; right: 18px; font-size: 13px; font-weight: 800; color: var(--tenue); }
+.stm-dim-titulo { font-size: 16px; font-weight: 700; color: var(--texto); }
+.stm-dim-titulo em { font-style: normal; color: var(--sys); }
+.stm-dim-desc { font-size: 13px; line-height: 1.5; color: var(--suave); flex: 1; }
+.stm-dim-foot {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 4px; padding-top: 12px; border-top: 1px solid var(--borda-2);
+  font-size: 13px; font-weight: 700; color: var(--sys);
+}
+.stm-arr { font-size: 15px; }
+
+/* ── Separadores da vista dimensão ── */
+.stm-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 18px; }
+.stm-tab {
+  flex: 0 0 auto; display: flex; flex-direction: column; gap: 2px; text-align: left;
+  background: var(--superficie-2); border: 1px solid var(--borda-2);
+  border-radius: var(--raio-md); padding: 8px 14px; cursor: pointer; min-width: 120px;
+}
+.stm-tab--on { border-color: var(--sys); background: color-mix(in srgb, var(--sys) 10%, transparent); }
+.stm-tab-t { font-size: 13.5px; font-weight: 700; color: var(--texto); }
+.stm-tab--on .stm-tab-t { color: var(--sys); }
+.stm-tab-s { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; color: var(--tenue); }
+
+.stm-pill {
+  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--sys);
+  background: color-mix(in srgb, var(--sys) 11%, transparent);
+  padding: 5px 12px; border-radius: var(--raio-pill); margin-bottom: 10px;
+}
+.stm-mod-titulo { font-size: 24px; font-weight: 800; color: var(--texto); letter-spacing: -.02em; }
+.stm-mod-titulo em { font-style: normal; color: var(--sys); }
+.stm-mod-lead { font-size: 14.5px; line-height: 1.6; color: var(--texto-2); margin: 8px 0 20px; }
+
+/* ── Cartão "em construção" ── */
+.stm-construcao { text-align: center; padding: 38px 24px; }
+.stm-construcao .mg-ictile { display: flex; margin: 0 auto 14px; }
+.stm-construcao-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--tenue); margin-bottom: 6px;
+}
+.stm-construcao-titulo { font-size: 18px; font-weight: 800; color: var(--texto); }
+.stm-construcao-desc { font-size: 14px; line-height: 1.6; color: var(--suave); max-width: 440px; margin: 8px auto 0; }

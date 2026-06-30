@@ -1,0 +1,1135 @@
+{
+  "cv": [
+    {
+      "nome": "Dor torácica",
+      "estado": "ativo",
+      "id": "dor-toracica",
+      "intro": "A dor torácica é dos motivos mais frequentes de recurso à urgência. O desafio não é tratar, é não falhar a minoria de causas que mata no meio da maioria de causas benignas. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões — definição, semiologia, sinais de alarme, exame objectivo, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta — síntese teórica organizada por dimensões. Lê primeiro para teres o mapa, antes de mergulhares nos esquemas e diferenciais."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para te ajudarem a estudar a abordagem à dor torácica de maneira mais fácil.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à dor torácica de maneira mais fácil.",
+          "card1": {
+            "symbol": "¶",
+            "label": "SU AGUDO",
+            "titleHtml": "1ª <em>abordagem</em>",
+            "desc": "Estratificação imediata, ABCDE em paralelo, ecoscopia à cabeceira para excluir as 6 que matam.",
+            "footN": "1",
+            "footLbl": "fluxograma"
+          },
+          "card2": {
+            "symbol": "§",
+            "label": "ESTÁVEL",
+            "titleHtml": "HEART + <em>disposição</em>",
+            "desc": "Score HEART, hs-troponina seriada 0/1h, critérios de muito alto risco e Triple Rule-Out CT.",
+            "footN": "3",
+            "footLbl": "esquemas"
+          }
+        },
+        {
+          "id": "diagnosticos",
+          "title": "Compara os diferenciais",
+          "titleHtml": "Compara os <em>diferenciais</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Diagnósticos diferenciais com pistas semiológicas, exames-chave e critérios. As seis causas a não falhar e o que vem depois.",
+          "pill": "COMPARA OS DIFERENCIAIS",
+          "lead": "Diagnósticos diferenciais com pistas semiológicas, exames-chave e critérios. As seis a não falhar e o que vem depois."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva, passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão.",
+          "card1": {
+            "symbol": "¶",
+            "label": "CASOS CLÍNICOS",
+            "titleHtml": "Casos tipo <em>PNA</em>",
+            "desc": "40 vinhetas clínicas com múltipla escolha. Recebe feedback imediato e uma explicação detalhada de cada resposta.",
+            "footN": "40",
+            "footLbl": "casos"
+          },
+          "card2": {
+            "symbol": "§",
+            "label": "FLASHCARDS",
+            "titleHtml": "Cards de <em>revisão</em>",
+            "desc": "16 cartões essenciais com mnemónicas e armadilhas PNA. Vira o cartão, classifica acerto ou erro, e acompanha o progresso.",
+            "footN": "16",
+            "footLbl": "cards"
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Edema",
+      "estado": "ativo",
+      "id": "edema",
+      "intro": "O edema é o acúmulo anormal de líquido no espaço intersticial. O desafio é distinguir edema <b>localizado</b> (TVP, celulite, linfedema) de <b>generalizado</b> (IC, cirrose, síndrome nefrótica, malnutrição), e identificar a causa subjacente. O exame (depressão à pressão, simetria, distribuição, sinais associados) e a avaliação dirigida (ECG, eco, função renal, albumina) orientam a investigação. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, definição, fisiopatologia, exame, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem a edema de maneira mais fácil.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem a edema de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos e causas com padrão clínico e comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos agrupados por mecanismo e etiologia. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com edema e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Palpitações",
+      "estado": "em-breve"
+    }
+  ],
+  "rs": [
+    {
+      "nome": "Dispneia",
+      "estado": "ativo",
+      "id": "dispneia",
+      "intro": "A dispneia é uma das queixas mais frequentes em qualquer contexto clínico. O desafio é separar as causas agudas potencialmente fatais (EP, EAP, pneumotórax hipertensivo, anafilaxia, tamponamento) das causas crónicas mais frequentes (DPOC, IC, asma, doença intersticial). A história, o exame físico com sinais vitais (FR, SpO₂), ECG, Rx tórax e eco point-of-care orientam a maior parte dos diagnósticos. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, definição, fisiopatologia, escalas, exame objectivo, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa, antes de mergulhares nos esquemas e tipos."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à dispneia de maneira mais fácil, triagem inicial e estratificação por agudez.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à dispneia de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos e causas de dispneia agrupados por sistema (cardíaca, pulmonar, hematológica, metabólica). Padrão clínico e comparação pairwise.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos e causas de dispneia agrupados por sistema. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com dispneia e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Tosse",
+      "estado": "ativo",
+      "id": "tosse",
+      "intro": "A tosse é o sintoma respiratório mais comum em ambulatório. O desafio é estratificar consoante a duração (aguda <3 semanas, subaguda 3-8 semanas, crónica >8 semanas) e descartar as causas graves (neoplasia pulmonar, tuberculose, embolia pulmonar, doença intersticial, IC) que se escondem entre as muitas causas benignas (gotejamento posterior, asma, DRGE, IECA). Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, definição, classificação por duração, fisiopatologia, exame, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à tosse aguda, subaguda e crónica.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à tosse de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Tipos de tosse por duração e por característica (produtiva, seca, hemoptóica, nocturna, posicional). Comparação pairwise das principais causas.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Tipos de tosse por duração e por característica. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com tosse e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Infeção respiratória",
+      "estado": "ativo",
+      "id": "infecao-resp",
+      "intro": "Infeção respiratória é um dos grupos diagnósticos mais frequentes em qualquer contexto clínico. O desafio é distinguir entre infeção alta (faringite, sinusite, otite, laringite) e baixa (traqueobronquite, pneumonia), viral vs bacteriana, gravidade (ambulatório vs internamento vs UCI conforme CURB-65 / PSI), e seleccionar adequadamente os antibióticos quando indicados. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, classificação anatómica, agentes mais frequentes, escalas de gravidade, antibioterapia.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à infeção respiratória, decisão ambulatório vs internamento e selecção de antibioterapia.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à infeção respiratória de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos de infeção respiratória, IVAS, traqueobronquite, PAC, pneumonia nosocomial, gripe, COVID-19, tuberculose. Comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de infeção respiratória. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com infeção respiratória e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Distúrbios da ventilação",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Patologia obstrutiva do sono",
+      "estado": "em-breve"
+    }
+  ],
+  "nl": [
+    {
+      "nome": "Cefaleias",
+      "estado": "ativo",
+      "id": "cefaleias",
+      "intro": "As cefaleias são uma das queixas mais frequentes em ambulatório e SU. O desafio é distinguir as cefaleias primárias (enxaqueca, tensão, salvas) das secundárias potencialmente graves (HSA, meningite, AVC, hipertensão intracraniana, arterite temporal). A história, o exame neurológico e o reconhecimento das red flags (SNNOOP10) orientam a investigação. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, classificação ICHD, fisiopatologia, red flags SNNOOP10, exame neurológico, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à cefaleia aguda, recorrente e crónica, com identificação das red flags.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem às cefaleias de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos de cefaleia primária (enxaqueca, tensão, salvas, hemicrânia) e secundária. Padrão clínico e comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de cefaleia agrupados por classificação. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com cefaleias e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Convulsões e crises epiléticas",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Síncope",
+      "estado": "ativo",
+      "id": "sincope",
+      "intro": "A síncope é uma queixa frequente e enganadora. A maioria é benigna, mas há um subgrupo de causas cardíacas que mata se passar ao lado. O desafio é estratificar bem com a história, ECG e exame, sem investigar em excesso o que é benigno nem subestimar o que mata. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões — definição, fisiopatologia, escalas de risco, exame objectivo, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta — síntese teórica organizada por dimensões. Lê primeiro para teres o mapa, antes de mergulhares nos esquemas e tipos."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para te ajudarem a estudar a abordagem à síncope de maneira mais fácil — triagem inicial e casos especiais.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à síncope de maneira mais fácil.",
+          "card1": {
+            "symbol": "¶",
+            "label": "TRIAGEM",
+            "titleHtml": "1ª <em>abordagem</em>",
+            "desc": "Decisor interactivo, baixo / médio / alto risco a partir dos 8 critérios descritos. ECG ≤10 min em qualquer adulto.",
+            "footN": "1",
+            "footLbl": "fluxograma"
+          },
+          "card2": {
+            "symbol": "§",
+            "label": "CONTEXTOS",
+            "titleHtml": "Casos <em>especiais</em>",
+            "desc": "10 contextos clínicos típicos (idoso polimedicado, atleta jovem, gravidez, parkinsónico) com o caminho descrito em cada um.",
+            "footN": "10",
+            "footLbl": "contextos"
+          }
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "14 tipos de síncope agrupados em 3 famílias (reflexa, ortostática, cardíaca). Padrão clínico, caso clínico, fisiopatologia, e comparação pairwise entre tipos.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "14 tipos de síncope agrupados em 3 famílias (reflexa, ortostática, cardíaca). Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva, passo a passo, em 3 fases (antes / durante / depois). Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com síncope e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão.",
+          "card1": {
+            "symbol": "¶",
+            "label": "CASOS CLÍNICOS",
+            "titleHtml": "Casos tipo <em>PNA</em>",
+            "desc": "12 vinhetas clínicas de síncope no formato SBA. Recebe feedback imediato e uma explicação detalhada de cada resposta.",
+            "footN": "12",
+            "footLbl": "casos"
+          },
+          "card2": {
+            "symbol": "§",
+            "label": "FLASHCARDS",
+            "titleHtml": "Cards de <em>revisão</em>",
+            "desc": "24 cartões essenciais com armadilhas PNA das 3 famílias, mimics e red flags. Vira o cartão, classifica acerto ou erro.",
+            "footN": "24",
+            "footLbl": "cards"
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Tonturas",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Vertigens",
+      "estado": "ativo",
+      "id": "vertigens",
+      "intro": "A vertigem é uma sensação ilusória de movimento (de si próprio ou do ambiente). O desafio é distinguir vertigem central (AVC vertebrobasilar, esclerose múltipla, neoplasia) de vertigem periférica (VPPB, neurite vestibular, doença de Ménière). O exame HINTS, o teste de Dix-Hallpike e a presença de sinais neurológicos focais orientam a decisão. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, anatomia vestibular, fisiopatologia, exame HINTS, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à vertigem aguda, com distinção central vs periférica.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à vertigem de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos de vertigem (VPPB, neurite vestibular, Ménière, AVC vertebrobasilar, vestibulopatia bilateral). Padrão clínico e comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de vertigem agrupados por origem. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com vertigem e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    }
+  ],
+  "gi": [
+    {
+      "nome": "Diarreia",
+      "estado": "ativo",
+      "id": "diarreia",
+      "intro": "A diarreia é uma queixa frequente e o desafio é estratificar pela <b>duração</b> (aguda &lt;14 dias, persistente 14-30 dias, crónica &gt;30 dias) e pelo <b>tipo fisiopatológico</b> (osmótica, secretora, inflamatória, motilidade). A presença de red flags (sangue, perda ponderal, idade &gt;50, FH neoplasia, sintomas nocturnos, sinais sistémicos) determina urgência da investigação. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, classificação por duração e tipo, fisiopatologia, red flags, exame, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à diarreia aguda, persistente e crónica.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à diarreia de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos de diarreia por mecanismo (osmótica, secretora, inflamatória, motilidade) e por etiologia (infecciosa, inflamatória, funcional, neoplásica).",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de diarreia agrupados por mecanismo e etiologia. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com diarreia e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Disfagia",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Dor abdominal",
+      "estado": "ativo",
+      "id": "dor-abdominal",
+      "intro": "A dor abdominal é uma das queixas mais frequentes em urgência e ambulatório. O desafio é separar as causas cirúrgicas e potencialmente fatais (apendicite, perfuração, isquemia mesentérica, AAA roto, gravidez ectópica) das múltiplas causas médicas e funcionais. A localização, características da dor, sinais peritoneais, sinais vitais e a investigação dirigida orientam o diagnóstico. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, definição, classificação por localização, fisiopatologia, exame, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à dor abdominal aguda e crónica, com identificação das causas cirúrgicas urgentes.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à dor abdominal de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos de dor abdominal por localização (epigástrica, FID, FIE, periumbilical, difusa) e respectivas causas. Comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de dor abdominal por localização e mecanismo. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com dor abdominal e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    },
+    {
+      "nome": "Hematemeses/Hematoquézias",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Icterícia",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Náuseas, vómitos e dispepsia",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Obstipação",
+      "estado": "ativo",
+      "id": "obstipacao",
+      "intro": "A obstipação é uma queixa muito frequente, sobretudo no idoso e na mulher. O desafio é distinguir <b>obstipação funcional</b> (a forma mais comum, sem causa orgânica) da <b>secundária</b> (fármacos, hipotiroidismo, hipercalcémia, Parkinson, neoplasia do cólon), e reconhecer red flags (idade &gt;50 novo início, perda ponderal, sangue, anemia, FH neoplasia cólon) que motivam colonoscopia. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, critérios de Roma, classificação funcional vs secundária, fisiopatologia, exame, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à obstipação, com identificação das red flags e escolha de estratégia terapêutica.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à obstipação de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Tipos de obstipação (funcional com trânsito normal, com trânsito lento, disfunção do pavimento pélvico) e causas secundárias. Comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de obstipação agrupados por mecanismo. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com obstipação e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    }
+  ],
+  "gu": [
+    {
+      "nome": "Alterações urinárias (oligúria, poliúria, proteinúria, hematúria)",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Síndrome de infeção urinária",
+      "estado": "ativo",
+      "id": "sindrome-itu",
+      "intro": "A infeção do trato urinário é uma das infecções bacterianas mais frequentes. O desafio é classificar correctamente (cistite não complicada, cistite complicada, pielonefrite, prostatite, urosépsis), identificar factores de risco para complicação, escolher antibioterapia empírica adequada e reconhecer quando há indicação para internamento. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, classificação anatómica e clínica, agentes mais frequentes, antibioterapia empírica.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à infeção urinária, decisão ambulatório vs internamento e selecção de antibioterapia.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à infeção urinária de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais quadros (cistite não complicada, cistite complicada, pielonefrite, prostatite, bacteriúria assintomática, urosépsis). Padrão clínico e comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de infeção urinária agrupados por localização e gravidade. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com sintomas urinários e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    }
+  ],
+  "he": [
+    {
+      "nome": "Adenopatias e esplenomegalia",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Alterações hematológicas",
+      "estado": "em-breve"
+    }
+  ],
+  "rm": [
+    {
+      "nome": "Artralgias",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Lombalgia",
+      "estado": "ativo",
+      "id": "lombalgia",
+      "intro": "A lombalgia é uma das queixas mais frequentes na medicina ambulatória. O desafio é distinguir <b>lombalgia mecânica</b> (a grande maioria, autolimitada) de causas <b>específicas</b> com red flags (fractura, infecção, neoplasia, síndrome de cauda equina, espondilartropatia inflamatória). Idade &gt;50 novo início, perda ponderal, dor nocturna, défice neurológico, retenção urinária e FH neoplasia são red flags a pesquisar. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, definição, fisiopatologia, exame, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem a lombalgia de maneira mais fácil.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem a lombalgia de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos e causas com padrão clínico e comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos agrupados por mecanismo e etiologia. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com lombalgia e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    }
+  ],
+  "in": [
+    {
+      "nome": "Cansaço/Fadiga",
+      "estado": "ativo",
+      "id": "cansaco",
+      "intro": "O cansaço é uma das queixas mais frequentes e inespecíficas na prática clínica. O desafio descrito na literatura é separar fadiga fisiológica de fadiga patológica, e dentro desta distinguir causas orgânicas (anemia, hipotiroidismo, insuficiência cardíaca, neoplasia, infecciosa) de causas psiquiátricas e do quadro de fadiga crónica. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões — definição, fisiopatologia, sinais de alarme, exame objectivo, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta — síntese teórica organizada por dimensões. Lê primeiro para teres o mapa, antes de mergulhares nos esquemas e diferenciais."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para te ajudarem a estudar a abordagem ao cansaço de maneira mais fácil — agudo, subagudo e crónico.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem ao cansaço de maneira mais fácil."
+        },
+        {
+          "id": "causas",
+          "title": "Compara as causas",
+          "titleHtml": "Compara as <em>causas</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Principais causas de fadiga agrupadas por família (hematológica, endócrina, cardiopulmonar, infecciosa, neoplásica, psiquiátrica, fadiga crónica). Padrão clínico, exames-chave e distinção descrita na literatura.",
+          "pill": "COMPARA AS CAUSAS",
+          "lead": "Principais causas de fadiga agrupadas por família. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese interativa",
+          "titleHtml": "Anamnese <em>interativa</em>",
+          "sub": "INTERATIVO",
+          "icon": "walk",
+          "action": "Treinar",
+          "shortDesc": "Conduz uma anamnese guiada passo a passo, recebe feedback automático e exemplo de nota clínica no final.",
+          "pill": "TREINO INTERATIVO DE ANAMNESE",
+          "lead": "Constrói a anamnese passo a passo num caso clínico fictício. O sistema dá feedback em tempo real (pistas, alarmes, score por causa) e gera uma nota clínica de exemplo no final."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão.",
+          "card1": {
+            "symbol": "¶",
+            "label": "CASOS CLÍNICOS",
+            "titleHtml": "Casos tipo <em>PNA</em>",
+            "desc": "25 vinhetas clínicas com múltipla escolha, cobrindo as principais famílias de fadiga (anémica, endócrina, cardiopulmonar, infecciosa, oncológica, autoimune, psiquiátrica, sono, ME/SFC, long COVID). Feedback imediato e explicação detalhada.",
+            "footN": "25",
+            "footLbl": "casos"
+          },
+          "card2": {
+            "symbol": "§",
+            "label": "FLASHCARDS",
+            "titleHtml": "Cards de <em>revisão</em>",
+            "desc": "30 cartões essenciais com pistas clínicas, cut-offs e armadilhas PNA. Vira o cartão, classifica acerto ou erro, e acompanha o progresso.",
+            "footN": "30",
+            "footLbl": "cards"
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Febre",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Emagrecimento involuntário",
+      "estado": "em-breve"
+    }
+  ],
+  "of": [
+    {
+      "nome": "Diplopia",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Olho vermelho",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Perda súbita de visão",
+      "estado": "em-breve"
+    }
+  ],
+  "orl": [
+    {
+      "nome": "Disfonia",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Epistaxis",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Rino-sinusite",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Surdez",
+      "estado": "em-breve"
+    },
+    {
+      "nome": "Vertigem",
+      "estado": "ativo",
+      "id": "vertigens",
+      "intro": "A vertigem é uma sensação ilusória de movimento (de si próprio ou do ambiente). O desafio é distinguir vertigem central (AVC vertebrobasilar, esclerose múltipla, neoplasia) de vertigem periférica (VPPB, neurite vestibular, doença de Ménière). O exame HINTS, o teste de Dix-Hallpike e a presença de sinais neurológicos focais orientam a decisão. Este módulo está organizado em cinco dimensões da prática.",
+      "modulos": [
+        {
+          "id": "guia",
+          "title": "Guia digital",
+          "titleHtml": "Guia <em>digital</em>",
+          "sub": "LIVRO",
+          "icon": "book",
+          "action": "Ler",
+          "shortDesc": "Como um livro digital de consulta. Síntese teórica organizada por dimensões, anatomia vestibular, fisiopatologia, exame HINTS, investigação.",
+          "pill": "LIVRO DIGITAL DE CONSULTA",
+          "lead": "Como um livro digital de consulta, síntese teórica organizada por dimensões. Lê primeiro para teres o mapa."
+        },
+        {
+          "id": "algoritmos",
+          "title": "Easyfluxo",
+          "titleHtml": "Easy<em>fluxo</em>",
+          "sub": "ESTUDO",
+          "icon": "algo",
+          "action": "Estudar",
+          "shortDesc": "Esquemas e fluxogramas para estudar a abordagem à vertigem aguda, com distinção central vs periférica.",
+          "pill": "ESQUEMAS DE ESTUDO",
+          "lead": "Esquemas e fluxogramas para te ajudar a estudar a abordagem à vertigem de maneira mais fácil."
+        },
+        {
+          "id": "tipos",
+          "title": "Compara os tipos",
+          "titleHtml": "Compara os <em>tipos</em>",
+          "sub": "COMPARAÇÃO",
+          "icon": "ddx",
+          "action": "Comparar",
+          "shortDesc": "Os principais tipos de vertigem (VPPB, neurite vestibular, Ménière, AVC vertebrobasilar, vestibulopatia bilateral). Padrão clínico e comparação lado a lado.",
+          "pill": "COMPARA OS TIPOS",
+          "lead": "Os principais tipos de vertigem agrupados por origem. Comparação lado a lado com distinções descritas na literatura."
+        },
+        {
+          "id": "anamnese",
+          "title": "Anamnese",
+          "titleHtml": "Anamnese",
+          "sub": "INTERATIVO",
+          "icon": "anam",
+          "action": "Praticar",
+          "shortDesc": "Anamnese estruturada interactiva passo a passo. Pistas e alarmes gerados em tempo real à medida que constróis o caso fictício.",
+          "pill": "PRATICA A ANAMNESE",
+          "lead": "Treino com caso fictício. Constrói passo a passo a história de um doente hipotético com vertigem e vê os alarmes acenderem-se quando a tua escolha cai num padrão de risco."
+        },
+        {
+          "id": "treino",
+          "title": "Treino",
+          "titleHtml": "Treino <em>activo</em>",
+          "sub": "PRÁTICA",
+          "icon": "cards",
+          "action": "Treinar",
+          "shortDesc": "Casos clínicos estilo PNA e flashcards num só lugar. Revisão activa com feedback imediato.",
+          "pill": "TREINA O QUE APRENDESTE",
+          "lead": "Consolida o estudo com casos clínicos estilo PNA e flashcards interactivos. Escolhe o modo de revisão."
+        }
+      ]
+    }
+  ]
+}
