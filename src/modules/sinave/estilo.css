@@ -1,0 +1,134 @@
+/* ============================================================================
+   SINAVE — Doenças de Notificação Obrigatória.
+   Consome as variáveis partilhadas (styles.css) e o mosaico .mg-ictile
+   (icon-tiles.css). A cor por natureza entra por --nat (inline em cada cartão)
+   e por --ac (no mosaico da letra). Tags coloridas por --tc.
+   ============================================================================ */
+.snv { --acento: #8c2f39; }
+
+/* letra (B/V/P/π) no mosaico glossy */
+.snv .snv-card-ic { font-weight: 800; font-size: 20px; color: #fff; }
+
+/* Banner de enquadramento */
+.snv-aviso {
+  font-size: 13px; line-height: 1.5; color: var(--texto-2);
+  background: var(--acento-claro);
+  border: 1px solid var(--borda-2); border-radius: var(--raio-md);
+  padding: 10px 14px; margin-bottom: 18px;
+}
+
+/* ── Pesquisa ── */
+.snv-busca { position: relative; margin-bottom: 16px; }
+.snv-busca-ic { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--tenue); display: flex; pointer-events: none; }
+.snv-busca-input { width: 100%; padding-left: 44px; padding-right: 40px; }
+.snv-busca-input::-webkit-search-cancel-button { display: none; }
+.snv-busca-x {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px; border: none; background: transparent;
+  color: var(--suave); font-size: 22px; line-height: 1; cursor: pointer; border-radius: 50%;
+}
+.snv-busca-x:hover { background: var(--borda-2); }
+
+/* ── Estatísticas ── */
+.snv-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 16px; }
+.snv-stat {
+  background: var(--superficie-2); border: 1px solid var(--borda-2);
+  border-radius: var(--raio-md); padding: 12px 8px; text-align: center;
+}
+.snv-stat-n { font-size: 22px; font-weight: 800; color: var(--acento); line-height: 1; }
+.snv-stat-l { font-size: 11px; color: var(--suave); margin-top: 5px; }
+@media (max-width: 560px) {
+  .snv-stats { grid-template-columns: repeat(3, 1fr); }
+  .snv-stat:first-child { grid-column: span 3; }
+}
+
+/* ── Filtros ── */
+.snv-filtros { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 18px; }
+.snv-filtros-label { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--tenue); margin-right: 2px; }
+.snv-chip {
+  font-size: 12.5px; font-weight: 600; color: var(--texto-2);
+  background: var(--superficie-2); border: 1px solid var(--borda-2);
+  padding: 6px 12px; border-radius: var(--raio-pill); cursor: pointer;
+  transition: all .14s ease;
+}
+.snv-chip:hover { border-color: var(--acento); color: var(--acento); }
+.snv-chip--on { background: var(--acento); color: #fff; border-color: var(--acento); }
+.snv-chip-clear { font-size: 12px; color: var(--suave); background: none; border: none; cursor: pointer; text-decoration: underline; padding: 6px 4px; }
+
+/* ── Meta resultados ── */
+.snv-res-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.snv-res-cab .secao-label em { font-style: normal; color: var(--acento); }
+.snv-res-conta { font-size: 12px; color: var(--tenue); white-space: nowrap; }
+
+/* ── Lista de cartões ── */
+.snv-lista { display: flex; flex-direction: column; gap: 10px; }
+.snv-card { padding: 0; overflow: hidden; border-left: 3px solid var(--nat); transition: box-shadow .16s ease; }
+.snv-card--on { box-shadow: 0 14px 32px -16px color-mix(in srgb, var(--nat) 55%, transparent), var(--sombra-sm); }
+
+.snv-card-head {
+  width: 100%; display: flex; align-items: center; gap: 14px; text-align: left;
+  background: none; border: none; cursor: pointer; padding: 14px 16px;
+}
+.snv-card-ic { flex: 0 0 auto; width: 44px; height: 44px; }
+.snv-card-meta { flex: 1; min-width: 0; }
+.snv-card-nome { display: block; font-weight: 700; font-size: 15.5px; color: var(--texto); line-height: 1.25; }
+.snv-card--on .snv-card-nome { color: var(--nat); }
+.snv-card-agente { display: block; font-size: 12.5px; color: var(--suave); font-style: italic; margin-top: 2px; }
+.snv-card-dir { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; }
+.snv-card-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; max-width: 320px; }
+@media (max-width: 640px) { .snv-card-tags { display: none; } }
+.snv-chev { display: flex; color: var(--tenue); transition: transform .2s ease; }
+.snv-chev svg { width: 18px; height: 18px; }
+.snv-card--on .snv-chev { transform: rotate(180deg); color: var(--nat); }
+
+/* tags */
+.snv-tag {
+  font-size: 11px; font-weight: 600; white-space: nowrap;
+  padding: 3px 9px; border-radius: var(--raio-pill); border: 1px solid var(--borda-2);
+  background: var(--superficie-2); color: var(--suave);
+}
+.snv-tag--nat, .snv-tag--crit {
+  color: var(--tc); border-color: color-mix(in srgb, var(--tc) 32%, transparent);
+  background: color-mix(in srgb, var(--tc) 10%, transparent);
+}
+.snv-tag--crit { font-weight: 800; }
+
+/* corpo expandido */
+.snv-card-body { padding: 0 16px 16px; animation: snvDown .22s ease both; }
+@keyframes snvDown { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.snv-crit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.snv-crit-bloco {
+  background: var(--superficie-2); border: 1px solid var(--borda-2);
+  border-left: 3px solid var(--nat); border-radius: var(--raio-md); padding: 14px 16px;
+}
+.snv-crit-eyebrow {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--nat); margin-bottom: 9px;
+}
+.snv-crit-eyebrow svg { width: 15px; height: 15px; }
+.snv-crit-texto { font-size: 13px; line-height: 1.55; color: var(--texto-2); }
+.snv-crit-texto em { font-style: normal; font-weight: 700; color: var(--texto); }
+
+/* classificação de caso */
+.snv-classif { margin-top: 14px; }
+.snv-classif-titulo {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--suave); margin-bottom: 10px;
+}
+.snv-classif-titulo svg { width: 15px; height: 15px; }
+.snv-classif-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.snv-classif-item { border: 1px solid var(--borda-2); border-radius: var(--raio-md); padding: 11px 14px; background: var(--superficie-2); }
+.snv-classif-label { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 5px; }
+.snv-classif--possivel .snv-classif-label { color: var(--suave); }
+.snv-classif--provavel .snv-classif-label { color: #b45309; }
+.snv-classif--confirmado .snv-classif-label { color: #0f766e; }
+.snv-classif-body { font-size: 12.5px; line-height: 1.5; color: var(--texto-2); }
+.snv-classif-na { color: var(--tenue); font-style: italic; }
+
+/* fonte / disclaimer */
+.snv-fonte { margin-top: 22px; font-size: 12px; line-height: 1.6; color: var(--suave); }
+.snv-fonte b { color: var(--texto-2); }
+.snv-fonte em { color: var(--texto-2); font-style: italic; }
+.snv-fonte .src { margin-top: 10px; font-size: 11px; color: var(--tenue); }

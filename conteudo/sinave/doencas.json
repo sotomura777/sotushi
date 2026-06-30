@@ -1,0 +1,1208 @@
+[
+ {
+  "name": "Antraz",
+  "agent": "Bacillus anthracis",
+  "cats": [
+   "bact",
+   "zoo",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Pelo menos uma forma clínica: <em>carbúnculo cutâneo</em> (lesão papular/vesicular ou escara negra com edema), <em>gastrointestinal</em> (febre + dor abdominal intensa ou diarreia), <em>por inalação</em> (febre + insuficiência respiratória ou alargamento mediastínico), <em>meningoencefalítico</em> (febre + convulsões, perda de consciência ou sinais meníngeos), ou <em>septicemia</em>.",
+   "lab": "Isolamento ou deteção de ácidos nucleicos de <em>Bacillus anthracis</em> em amostra biológica. Esfregaço nasal positivo isolado não confirma o caso.",
+   "epi": "Transmissão animal-humano · exposição a fonte comum · alimentos/água contaminados."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Critérios clínicos + epidemiológicos.",
+   "confirmado": "Critérios clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Botulismo",
+  "agent": "Clostridium botulinum e neurotoxinas afins",
+  "cats": [
+   "bact",
+   "fb",
+   "crit"
+  ],
+  "crit": {
+   "clin": "<em>Alimentar/feridas</em>: disfunção bilateral de nervos cranianos (diplopia, disfagia, debilidade bulbar) ou paralisia simétrica periférica. <em>Infantil</em> (lactente): obstipação, letargia, dificuldade de sucção, ptose, disfagia, fraqueza muscular generalizada.",
+   "lab": "Isolamento de clostrídios produtores de neurotoxinas (fezes ou ferida) · deteção de neurotoxinas ou dos seus genes codificadores em amostra biológica.",
+   "epi": "Fonte comum (alimentos, partilha de agulhas) · alimentos/água contaminados."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Brucelose",
+  "agent": "Brucella spp.",
+  "cats": [
+   "bact",
+   "zoo",
+   "fb"
+  ],
+  "crit": {
+   "clin": "Febre + pelo menos um: sudorese (profusa, predominante noturna), calafrios, artralgia, astenia, depressão, cefaleia, anorexia.",
+   "lab": "Isolamento de <em>Brucella spp.</em> · resposta imunitária específica (aglutinação, fixação de complemento, ELISA) · deteção de ácidos nucleicos.",
+   "epi": "Alimentos/água contaminados · produtos animais (leite ou lacticínios) · transmissão zoonótica · exposição laboratorial/profissional."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Campilobacteriose",
+  "agent": "Campylobacter spp.",
+  "cats": [
+   "bact",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Pelo menos um: diarreia, dores abdominais, febre.",
+   "lab": "Isolamento ou deteção de ácidos nucleicos de <em>Campylobacter spp.</em> em amostra biológica. Recomenda-se identificação de espécie e testes de sensibilidade.",
+   "epi": "Zoonose · transmissão entre humanos · fonte comum · alimentos/água contaminados · exposição ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Chikungunya",
+  "agent": "Vírus Chikungunya",
+  "cats": [
+   "vir",
+   "vec"
+  ],
+  "crit": {
+   "clin": "Febre (excluído diagnóstico alternativo).",
+   "lab": "<em>Confirmado</em>: isolamento, deteção de ácidos nucleicos, IgM com confirmação por neutralização, ou seroconversão/quadruplicação. <em>Provável</em>: IgM em soro único.",
+   "epi": "Viagem ou residência, nas 2 semanas anteriores, em área de transmissão documentada."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos + laboratoriais de provável.",
+   "confirmado": "Laboratoriais de confirmado."
+  }
+ },
+ {
+  "name": "Chlamydia trachomatis (incl. Linfogranuloma venéreo)",
+  "agent": "Chlamydia trachomatis",
+  "cats": [
+   "bact",
+   "sex"
+  ],
+  "crit": {
+   "clin": "<em>Clamidiose</em>: uretrite, epididimite, salpingite aguda, endometrite, cervicite, proctite. Em recém-nascidos: conjuntivite ou pneumonia. <em>Linfogranuloma venéreo</em>: uretrite, úlcera genital, linfadenopatia inguinal, cervicite, proctite.",
+   "lab": "Isolamento, imunofluorescência direta ou deteção de ácidos nucleicos em amostra do trato ano-genital/conjuntiva. LGV exige identificação dos serovares L1, L2 ou L3.",
+   "epi": "Contacto sexual ou transmissão vertical."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Cólera",
+  "agent": "Vibrio cholerae",
+  "cats": [
+   "bact",
+   "fb",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Diarreia ou vómitos.",
+   "lab": "Isolamento de <em>V. cholerae</em> + presença do antigénio O1 ou O139 + demonstração da enterotoxina da cólera (ou do seu gene).",
+   "epi": "Fonte comum · transmissão entre humanos · alimentos/água contaminados · exposição ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Criptosporidíase",
+  "agent": "Cryptosporidium spp.",
+  "cats": [
+   "par",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Diarreia ou dores abdominais.",
+   "lab": "Deteção de oócitos nas fezes · presença em fluidos intestinais ou biópsia · ácidos nucleicos ou antigénio nas fezes.",
+   "epi": "Transmissão entre humanos · fonte comum · zoonose · alimentos/água contaminados · exposição ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Dengue",
+  "agent": "Vírus Dengue (flavivírus)",
+  "cats": [
+   "vir",
+   "vec"
+  ],
+  "crit": {
+   "clin": "Febre (excluído diagnóstico alternativo).",
+   "lab": "<em>Confirmado</em>: isolamento, ácidos nucleicos, antigénio, IgM com confirmação por neutralização, ou seroconversão. <em>Provável</em>: IgM em soro único. Atenção a exposição prévia/vacinação para flavivírus.",
+   "epi": "Viagem ou residência, nas 2 semanas anteriores, em área de transmissão documentada."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos + laboratoriais de provável.",
+   "confirmado": "Laboratoriais de confirmado."
+  }
+ },
+ {
+  "name": "Difteria",
+  "agent": "Corynebacterium diphtheriae · C. ulcerans (produtores de toxina)",
+  "cats": [
+   "bact",
+   "vac"
+  ],
+  "crit": {
+   "clin": "<em>Respiratória clássica</em>: laringite/nasofaringite/amigdalite + pseudomembranas aderentes. <em>Respiratória ligeira</em>: igual, sem pseudomembranas. <em>Cutânea</em>: lesão cutânea. <em>Outros locais</em>: conjuntiva ou mucosas.",
+   "lab": "Isolamento de <em>C. diphtheriae</em> ou <em>C. ulcerans</em> produtores de toxinas.",
+   "epi": "Pessoa a pessoa · transmissão zoonótica."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos de difteria respiratória clássica.",
+   "provavel": "Quaisquer critérios clínicos de difteria + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Doença de Creutzfeldt-Jakob",
+  "agent": "Proteína priónica (DCJ esporádica e variante)",
+  "cats": [
+   "pri"
+  ],
+  "crit": {
+   "clin": "Doença neuropsiquiátrica progressiva ≥6 meses sem diagnóstico alternativo, sem exposição a hormonas hipofisárias/duramáter humana e sem forma genética. Pelo menos um: sintomas psiquiátricos precoces, sintomas sensoriais dolorosos persistentes, ataxia, mioclonia/coreia/distonia, demência.",
+   "lab": "<em>Confirmado</em>: neuropatologia (alteração espongiforme + depósito de proteínas priónicas). <em>Provável</em>: EEG sem traçado típico + sinal pulvinar bilateral em RM, ou biópsia das amígdalas positiva.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": "Condições prévias + critérios clínicos + EEG negativo para DCJ esporádica.",
+   "provavel": "Possível + RM positiva ou biópsia das amígdalas positiva.",
+   "confirmado": "Condições prévias + critérios de diagnóstico para caso confirmado."
+  }
+ },
+ {
+  "name": "Doença de Hansen (Lepra)",
+  "agent": "Mycobacterium leprae",
+  "cats": [
+   "bact"
+  ],
+  "crit": {
+   "clin": "<em>Lepromatosa</em> (multibacilar): nódulos, pápulas e máculas bilaterais, obstrução respiratória, epistáxis, irite, queratite. <em>Tuberculoide</em> (paucibacilar): lesões cutâneas assimétricas anestésicas + envolvimento grave de nervos periféricos.",
+   "lab": "Bacilos ácido-álcool resistentes em esfregaço de lesão ou biópsia (pele/nervo).",
+   "epi": "Ligação a caso provável/confirmado · viagem ou residência em área endémica dentro do período de incubação."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Doença dos Legionários",
+  "agent": "Legionella spp.",
+  "cats": [
+   "bact",
+   "resp"
+  ],
+  "crit": {
+   "clin": "Pneumonia.",
+   "lab": "<em>Confirmado</em>: isolamento de <em>Legionella spp.</em>, antigénio urinário de <em>L. pneumophila</em>, ou aumento significativo de anticorpos para serogrupo 1 em soros emparelhados. <em>Provável</em>: imunofluorescência direta, ácidos nucleicos, anticorpos contra outros serogrupos ou título único elevado.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + laboratoriais de provável.",
+   "confirmado": "Clínicos + laboratoriais de confirmado."
+  }
+ },
+ {
+  "name": "Doença Invasiva Pneumocócica",
+  "agent": "Streptococcus pneumoniae",
+  "cats": [
+   "bact",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Critérios clínicos não relevantes para vigilância.",
+   "lab": "Isolamento, ácidos nucleicos ou antigénio de <em>S. pneumoniae</em> em produto biológico normalmente estéril. Recomendada serotipagem.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Doença Invasiva por Haemophilus influenzae",
+  "agent": "Haemophilus influenzae",
+  "cats": [
+   "bact",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Critérios clínicos não relevantes para vigilância.",
+   "lab": "Isolamento ou ácidos nucleicos de <em>H. influenzae</em> em produto biológico estéril. Recomendada serotipagem.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Doença Meningocócica",
+  "agent": "Neisseria meningitidis",
+  "cats": [
+   "bact",
+   "vac",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Pelo menos um: sinais meníngeos, exantema petequial, choque sético, artrite sética.",
+   "lab": "Isolamento, ácidos nucleicos ou antigénio de <em>N. meningitidis</em> em produto estéril ou lesão purpúrica; diplococos gram-negativos no LCR. Estirpes enviadas ao INSA para serogrupagem.",
+   "epi": "Transmissão pessoa a pessoa."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Ébola",
+  "agent": "Vírus Ébola",
+  "cats": [
+   "vir",
+   "crit",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Temperatura elevada ou febre subjetiva, podendo associar-se a sintomas gastrointestinais, mialgias, astenia, cefaleia, conjuntivite, exantema maculopapular, dispneia, hemorragias. Estadios avançados: falência renal/hepática, CIVD, falência multiorgânica.",
+   "lab": "Isolamento ou deteção de ácidos nucleicos (PCR) do vírus Ébola.",
+   "epi": "Nos 21 dias anteriores: viagem/residência em área afetada · contacto próximo com caso provável/confirmado (assistência ao doente, coabitação, contacto com fluidos/órgãos, animais infetados, superfícies contaminadas, cadáver suspeito, cerimónias fúnebres)."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Encefalite viral transmitida por carraças",
+  "agent": "Vírus TBE (flavivírus)",
+  "cats": [
+   "vir",
+   "vec",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Sintomas sugestivos de inflamação do SNC (meningite, meningoencefalite, encefalomielite, radiculite).",
+   "lab": "<em>Confirmado</em>: IgM+IgG no sangue, IgM no LCR, seroconversão, ácidos nucleicos ou isolamento viral. <em>Provável</em>: IgM em soro único.",
+   "epi": "Transmissão zoonótica."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + lab. de provável; ou clínicos + epidemiológicos.",
+   "confirmado": "Laboratoriais de confirmado."
+  }
+ },
+ {
+  "name": "Equinococose / Hidatidose",
+  "agent": "Echinococcus granulosus · E. multilocularis",
+  "cats": [
+   "par",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Critérios clínicos não relevantes para vigilância.",
+   "lab": "Histopatologia/parasitologia compatível · quistos com morfologia patognomónica · imagiologia característica + confirmação serológica · serologia ELISA + Immunoblot · ácidos nucleicos.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Critérios de diagnóstico."
+  }
+ },
+ {
+  "name": "Febre Amarela",
+  "agent": "Vírus da febre amarela (flavivírus)",
+  "cats": [
+   "vir",
+   "vec",
+   "vac",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Febre + icterícia ou hemorragia generalizada.",
+   "lab": "Isolamento, ácidos nucleicos, antigénio, resposta imunitária específica, ou lesões histopatológicas hepáticas características em necrópsia.",
+   "epi": "Viagem nos 7 dias anteriores a área com casos suspeitos/confirmados."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Pessoa não vacinada recentemente com critérios clínicos + laboratoriais. Em vacinação recente, exige deteção de estirpe selvagem."
+  }
+ },
+ {
+  "name": "Febre Escaro-Nodular (Rickettsiose)",
+  "agent": "Rickettsia conorii",
+  "cats": [
+   "bact",
+   "vec"
+  ],
+  "crit": {
+   "clin": "Febre + pelo menos um: artralgias, cefaleias/mialgias súbitas, erupção maculopapular não pruriginosa ou petéquias, linfadenopatia regional · ou lesão cutânea típica de picada de carraça.",
+   "lab": "Isolamento, ácidos nucleicos, imunohistoquímica em tecido cutâneo, ou IgM/IgG (seroconversão) por imunofluorescência/ELISA.",
+   "epi": "Picada de carraça nos 7 dias anteriores."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Febre Q",
+  "agent": "Coxiella burnetii",
+  "cats": [
+   "bact",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Febre, pneumonia ou hepatite.",
+   "lab": "Isolamento, ácidos nucleicos ou resposta imunitária específica (IgG e IgM fase II).",
+   "epi": "Fonte comum · transmissão zoonótica."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Febre Tifóide e Paratifóide",
+  "agent": "Salmonella Typhi · S. Paratyphi",
+  "cats": [
+   "bact",
+   "fb"
+  ],
+  "crit": {
+   "clin": "Febre prolongada · ou pelo menos dois de: cefaleia, bradicardia relativa, tosse não produtiva, queixas gastrointestinais.",
+   "lab": "Isolamento ou ácidos nucleicos de <em>S. Typhi</em> ou <em>Paratyphi</em>.",
+   "epi": "Fonte comum · transmissão entre humanos · alimentos/água contaminados."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Febres Hemorrágicas Virais",
+  "agent": "Vírus diversos (Lassa, Marburg, Crimeia-Congo, etc.)",
+  "cats": [
+   "vir",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Febre · manifestações hemorrágicas suscetíveis de conduzir a falência multiorgânica.",
+   "lab": "Isolamento viral específico ou deteção de ácidos nucleicos com confirmação por genotipagem.",
+   "epi": "Viagem nos últimos 21 dias a região com casos · exposição a caso provável/confirmado ocorrido nos últimos 6 meses."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Giardíase",
+  "agent": "Giardia intestinalis",
+  "cats": [
+   "par",
+   "fb"
+  ],
+  "crit": {
+   "clin": "Diarreia, dores abdominais, distensão abdominal, ou sinais de má absorção.",
+   "lab": "Quistos/trofozoítos nas fezes, fluido duodenal ou biópsia · antigénio · ácidos nucleicos.",
+   "epi": "Alimentos/água contaminados · transmissão entre humanos · fonte comum · exposição ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Gonorreia",
+  "agent": "Neisseria gonorrhoeae",
+  "cats": [
+   "bact",
+   "sex"
+  ],
+  "crit": {
+   "clin": "Uretrite, salpingite, doença inflamatória pélvica, cervicite, epididimite, proctite, faringite, artrite · ou conjuntivite em recém-nascido.",
+   "lab": "Isolamento, ácidos nucleicos (com ou sem amplificação), ou diplococos gram-negativos intracelulares em amostra uretral masculina.",
+   "epi": "Contacto sexual ou transmissão vertical."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Gripe",
+  "agent": "Vírus influenza A (H3N2, H1N1) e B",
+  "cats": [
+   "vir",
+   "resp",
+   "vac"
+  ],
+  "crit": {
+   "clin": "<em>Síndrome gripal</em>: início súbito + sintoma sistémico (febre, mal-estar, cefaleia, mialgia) + sintoma respiratório (tosse, odinofagia, dispneia). <em>Infeção respiratória aguda</em>: início súbito + tosse/odinofagia/dispneia/rinite + parecer clínico de infeção. Nota: a vigilância faz-se pelo INSA e DGS, não pelo SINAVE.",
+   "lab": "Isolamento viral, ácidos nucleicos, imunofluorescência direta ou resposta imunitária específica.",
+   "epi": "Transmissão pessoa a pessoa."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Gripe A (H5N1) e outros vírus de origem animal",
+  "agent": "Influenza A/H5N1 e variantes zoonóticas",
+  "cats": [
+   "vir",
+   "resp",
+   "zoo",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Febre + sinais de infeção respiratória aguda · ou morte por doença respiratória aguda idiopática.",
+   "lab": "Isolamento, ácidos nucleicos, ou resposta imunitária específica (quadruplicação ou título único elevado).",
+   "epi": "Contacto próximo (&lt;1 m) com caso humano provável/confirmado · exposição laboratorial · contacto próximo com animal infetado (exceto aves) · residência/visita a área afetada com contacto com aves doentes/mortas."
+  },
+  "classif": {
+   "possivel": "Clínicos + epidemiológicos.",
+   "provavel": "Teste positivo num laboratório não de referência.",
+   "confirmado": "Teste positivo em laboratório nacional de referência da rede UE ou centro colaborador da OMS."
+  }
+ },
+ {
+  "name": "Hepatite A",
+  "agent": "Vírus da hepatite A",
+  "cats": [
+   "vir",
+   "fb",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Sintomas iniciais (fadiga, dores abdominais, anorexia, náuseas/vómitos) + febre, icterícia ou elevação das aminotransferases.",
+   "lab": "Ácidos nucleicos do VHA (soro/fezes) · IgM específica.",
+   "epi": "Transmissão entre humanos · fonte comum · alimentos/água contaminados · exposição ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Hepatite B",
+  "agent": "Vírus da hepatite B",
+  "cats": [
+   "vir",
+   "sex",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Critérios clínicos não relevantes para vigilância.",
+   "lab": "IgM anti-HBc · AgHBs · AgHBe · ADN do VHB. Interpretar à luz do estado vacinal; recomendada genotipagem em contexto específico.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Hepatite C",
+  "agent": "Vírus da hepatite C",
+  "cats": [
+   "vir",
+   "sex"
+  ],
+  "crit": {
+   "clin": "Critérios clínicos não relevantes para vigilância.",
+   "lab": "ARN do VHC · antigénio do core · anti-VHC confirmado por ensaio confirmatório (em pessoas com &gt;18 meses sem sinais de infeção debelada).",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Hepatite E",
+  "agent": "Vírus da hepatite E",
+  "cats": [
+   "vir",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Sintomas iniciais de hepatite vírica aguda + febre, icterícia ou elevação das aminotransferases.",
+   "lab": "Ácidos nucleicos do VHE (plasma/soro/fezes) · IgM e IgG específicas.",
+   "epi": "Transmissão entre humanos · fonte comum · alimentos/água contaminados · exposição ambiental · viagem/residência nos últimos 3 meses em região endémica."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Infeção pelo MERS-CoV",
+  "agent": "Coronavírus do MERS",
+  "cats": [
+   "vir",
+   "resp",
+   "zoo",
+   "crit"
+  ],
+  "crit": {
+   "clin": "<em>Doença grave</em>: febre + pneumonia ou SDRA sem outra etiologia. <em>Doença moderada</em>: febre ou sintomas respiratórios sem necessariamente pneumonia.",
+   "lab": "Ácidos nucleicos do MERS-CoV por RT-PCR (no Laboratório Nacional de Referência, INSA).",
+   "epi": "<em>Grave</em>: viagem/residência em área com circulação documentada nos últimos 14 dias; contacto próximo com doente respiratório com tal história; cluster de doença respiratória aguda; profissional de saúde em unidade dedicada; contacto com dromedário. <em>Moderada</em>: estadia em unidade de saúde em área afetada nos últimos 14 dias ou contacto próximo com caso confirmado."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Infeção pelo SARS-CoV-2 / COVID-19",
+  "agent": "SARS-CoV-2",
+  "cats": [
+   "vir",
+   "resp",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Pelo menos um: tosse nova ou agravada · febre ≥38 °C sem outra causa · dispneia sem outra causa · anosmia súbita · disgeusia ou ageusia súbita.",
+   "lab": "Deteção de ARN do SARS-CoV-2 por TAAN · ou antigénio por TRAg (Norma DGS 019/2020), em amostra respiratória.",
+   "epi": "Nos 14 dias anteriores: contacto com caso confirmado · residência/trabalho em instituição vulnerável com transmissão documentada · exposição laboratorial não protegida. <em>Imagiológicos</em>: vidro despolido periférico/subpleural; consolidações multifocais; sinal de halo invertido."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos; ou clínicos + imagiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Infeção pelo vírus do Nilo Ocidental",
+  "agent": "Vírus do Nilo Ocidental (flavivírus)",
+  "cats": [
+   "vir",
+   "vec",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Febre, encefalite ou meningite.",
+   "lab": "<em>Confirmado</em>: isolamento, ácidos nucleicos, IgM no LCR, ou IgM elevada + IgG + neutralização. <em>Provável</em>: resposta imunitária específica no soro.",
+   "epi": "Zoonose (área endémica em cavalos/aves ou exposição a mosquitos) · transmissão entre humanos (vertical, transfusão, transplante)."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + (epidemiológico ou laboratorial de provável).",
+   "confirmado": "Laboratoriais de confirmado."
+  }
+ },
+ {
+  "name": "Infeção por E. coli STEC/VTEC (incl. SHU)",
+  "agent": "Escherichia coli produtora de toxina Shiga/Vero",
+  "cats": [
+   "bact",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "<em>Diarreia por STEC/VTEC</em>: diarreia ou dores abdominais. <em>SHU</em>: insuficiência renal aguda + anemia hemolítica microangiopática ou trombocitopenia.",
+   "lab": "Isolamento/cultura de E. coli produtora ou portadora de stx1/stx2 · E. coli O157 não fermentadora do sorbitol · ácidos nucleicos de stx1/stx2 · toxina livre nas fezes · resposta imunitária específica (apenas no SHU).",
+   "epi": "Transmissão entre humanos · fonte comum · zoonose · alimentos/água contaminados · ambiental."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos para SHU.",
+   "provavel": "Clínicos + epidemiológicos (STEC/VTEC).",
+   "confirmado": "Clínicos + laboratoriais (STEC/VTEC)."
+  }
+ },
+ {
+  "name": "Leishmaníase Visceral",
+  "agent": "Leishmania spp.",
+  "cats": [
+   "par",
+   "vec",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Pelo menos dois: febre, mal-estar, anorexia, perda de peso, esplenomegalia mole indolor, hepatomegalia moderada, adenopatias, anemia, trombocitopenia.",
+   "lab": "Isolamento · microscopia em esfregaço/gota espessa (Giemsa) · ácidos nucleicos em medula óssea ou sangue · serologia ELISA/HA/IF + Immunoblot.",
+   "epi": "Transmissão zoonótica."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos; ou clínicos com partilha de seringas.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Leptospirose",
+  "agent": "Leptospira interrogans e outras Leptospira spp.",
+  "cats": [
+   "bact",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Febre · ou pelo menos dois de: calafrios, cefaleias, mialgias, derrame conjuntival, manifestações hemorrágicas, erupções, icterícia, miocardite, meningite, compromisso renal, sintomas respiratórios (hemoptise).",
+   "lab": "Isolamento, ácidos nucleicos, imunofluorescência, ou resposta imunitária específica.",
+   "epi": "Zoonose · exposição ambiental · fonte comum."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Listeriose",
+  "agent": "Listeria monocytogenes",
+  "cats": [
+   "bact",
+   "fb",
+   "cong"
+  ],
+  "crit": {
+   "clin": "Febre, meningite/meningoencefalite, sintomas gripais, septicemia, ou infeções localizadas (artrite, endocardite, abcessos). <em>Gravidez</em>: aborto, nado-morto (após 20 sem), parto prematuro (&lt;37 sem). <em>Neonatal</em> (≤28 dias): meningite/meningoencefalite, septicemia, dispneia, granulomatose infantisséptica, lesões cutâneas/mucosas/conjuntiva.",
+   "lab": "Isolamento ou ácidos nucleicos a partir de local normalmente estéril; em caso associado à gravidez também de placenta, líquido amniótico, mecónio, esfregaço vaginal ou amostras do feto/recém-nascido/mãe.",
+   "epi": "Fonte comum · transmissão vertical · alimentos contaminados · zoonose."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais (estéril) ou específicos em contexto de gravidez."
+  }
+ },
+ {
+  "name": "Malária",
+  "agent": "Plasmodium spp.",
+  "cats": [
+   "par",
+   "vec"
+  ],
+  "crit": {
+   "clin": "Febre ou antecedentes de febre.",
+   "lab": "Microscopia em esfregaço/gota espessa, ácidos nucleicos, ou antigénios específicos. Recomenda-se tipagem da espécie.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Neuroborreliose de Lyme",
+  "agent": "Borrelia burgdorferi s.l.",
+  "cats": [
+   "bact",
+   "vec",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "<em>Precoce</em>: sintomas neurológicos &lt;6 meses (SNC/SNP). <em>Tardia</em>: &gt;6 meses. Suspeição quando não há outras razões evidentes (definição EFNS).",
+   "lab": "<em>Confirmado</em>: pleocitose no LCR + produção intratecal de anticorpos · ou isolamento · ou ácidos nucleicos no LCR · ou IgG no sangue em menores de 18 anos com paralisia facial/neurite craniana e eritema migrans recente. <em>Provável</em>: pleocitose + serologia positiva no LCR; ou produção intratecal de anticorpos específicos.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + lab. de provável.",
+   "confirmado": "Clínicos + lab. de confirmado."
+  }
+ },
+ {
+  "name": "Paralisia Flácida Aguda",
+  "agent": "Múltiplas etiologias (vigilância da poliomielite)",
+  "cats": [
+   "vir"
+  ],
+  "crit": {
+   "clin": "Pessoa com &lt;15 anos com início súbito de fraqueza muscular (incluindo respiratória/deglutição) com progressão em dias/semanas. Ausência de espasticidade ou sinais de lesão central (hiperreflexia, clónus, Babinski).",
+   "lab": "Não aplicável.",
+   "epi": "Não aplicável. <em>Seguimento aos 60 dias</em> deve ser notificado no SINAVE."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Critérios clínicos."
+  }
+ },
+ {
+  "name": "Parotidite Epidémica (Papeira)",
+  "agent": "Vírus da parotidite",
+  "cats": [
+   "vir",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Febre + pelo menos um: tumefação súbita unilateral/bilateral de parótidas ou outras glândulas salivares, orquite, ou meningite.",
+   "lab": "Isolamento, ácidos nucleicos, ou IgM específica. Interpretar à luz do estado vacinal; vacinação recente exige investigação de estirpe selvagem.",
+   "epi": "Pessoa a pessoa."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Pessoa não vacinada recentemente com critérios laboratoriais; ou, em vacinação recente, deteção de estirpe selvagem."
+  }
+ },
+ {
+  "name": "Peste",
+  "agent": "Yersinia pestis",
+  "cats": [
+   "bact",
+   "zoo",
+   "crit"
+  ],
+  "crit": {
+   "clin": "<em>Bubónica</em>: febre + linfadenite dolorosa súbita. <em>Septicémica</em>: febre. <em>Pneumónica</em>: febre + tosse, toracalgia ou hemoptise.",
+   "lab": "Isolamento, ácidos nucleicos, ou resposta imunitária ao antigénio F1.",
+   "epi": "Pessoa a pessoa · zoonose · exposição laboratorial · fonte comum."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Poliomielite Aguda",
+  "agent": "Poliovírus",
+  "cats": [
+   "vir",
+   "vac",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Pessoa &lt;15 anos com paralisia flácida aguda · ou pessoa em quem o médico suspeite de poliomielite.",
+   "lab": "Diferenciação intratípica (em laboratório acreditado pela OMS) de: poliovírus selvagem · poliovírus tipo Sabin discordante (≥85% semelhança com vírus vacinal) · poliovírus derivado da vacina (1–15% de diferença em VP1).",
+   "epi": "Transmissão entre humanos · viagem a área endémica ou com circulação suspeita/confirmada."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Raiva",
+  "agent": "Lyssavirus",
+  "cats": [
+   "vir",
+   "zoo",
+   "crit",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Encefalomielite aguda + pelo menos dois: alterações sensoriais na zona de mordedura prévia, paresia/paralisia, espasmos de deglutição, hidrofobia, delírio, convulsões, ansiedade.",
+   "lab": "Isolamento, ácidos nucleicos, antigénios por imunofluorescência direta, ou resposta imunitária por neutralização (soro/LCR). Interpretar à luz do estado vacinal/imunização.",
+   "epi": "Transmissão zoonótica · fonte comum (mesmo animal) · transmissão entre humanos (ex.: transplante de órgãos)."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Rubéola (excluindo congénita)",
+  "agent": "Vírus da rubéola",
+  "cats": [
+   "vir",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Exantema maculopapular generalizado de início brusco + pelo menos um: adenopatia cervical, suboccipital ou retro-auricular, artralgia ou artrite.",
+   "lab": "Isolamento, ácidos nucleicos, IgM + IgG de baixa avidez, ou seroconversão/aumento significativo de IgG em soros emparelhados. INSA é o laboratório nacional de referência.",
+   "epi": "Pessoa a pessoa."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais (não vacinada recentemente); em vacinação recente, deteção de estirpe selvagem."
+  }
+ },
+ {
+  "name": "Rubéola Congénita",
+  "agent": "Vírus da rubéola",
+  "cats": [
+   "vir",
+   "cong",
+   "vac"
+  ],
+  "crit": {
+   "clin": "<em>SRC</em>: lactente &lt;12 meses ou nado-morto com ≥2 critérios da categoria A, ou 1 de A + 1 de B. <em>Categoria A</em>: catarata, glaucoma congénito, cardiopatia congénita, surdez, retinite pigmentar. <em>Categoria B</em>: púrpura, esplenomegalia, microcefalia, atraso desenvolvimento, meningoencefalite, osteopatia radiotransparente, icterícia &lt;24 h.",
+   "lab": "Isolamento, ácidos nucleicos, IgM específica, ou persistência de IgG entre 6–12 meses. Testes no laboratório nacional de referência (INSA).",
+   "epi": "Transmissão vertical confirmada laboratorialmente durante a gravidez."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Nado-morto/lactente não testado ou com lab. negativo que preencha: critério epi + 1 critério A; ou todos os critérios clínicos.",
+   "confirmado": "Lactente/nado-morto com critérios laboratoriais + critério epidemiológico ou ≥1 critério A."
+  }
+ },
+ {
+  "name": "Salmoneloses não Typhi e não Paratyphi",
+  "agent": "Salmonella spp. (não-tifoide)",
+  "cats": [
+   "bact",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Diarreia, febre, dores abdominais ou vómitos.",
+   "lab": "Isolamento ou ácidos nucleicos de <em>Salmonella</em> (excluindo Typhi/Paratyphi). Recomendados identificação de espécie e antibiograma.",
+   "epi": "Transmissão entre humanos · fonte comum · zoonose · alimentos/água contaminados · ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Sarampo",
+  "agent": "Vírus do sarampo",
+  "cats": [
+   "vir",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Febre + exantema maculopapular + pelo menos um: tosse, rinite ou conjuntivite.",
+   "lab": "Isolamento, ácidos nucleicos, IgM específica em soro/saliva, ou subida significativa de IgG em soros emparelhados. INSA é o laboratório nacional de referência; em vacinação recente, investigar vírus selvagem.",
+   "epi": "Pessoa a pessoa."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Pessoa não vacinada recentemente com critérios clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Shigelose",
+  "agent": "Shigella spp.",
+  "cats": [
+   "bact",
+   "fb"
+  ],
+  "crit": {
+   "clin": "Diarreia, febre, vómitos ou dores abdominais.",
+   "lab": "<em>Confirmado</em>: isolamento de <em>Shigella spp.</em>. <em>Provável</em>: ácidos nucleicos. Recomendado antibiograma.",
+   "epi": "Transmissão entre humanos · fonte comum · alimentos/água contaminados · ambiental."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos; ou clínicos + lab. de provável.",
+   "confirmado": "Clínicos + lab. de confirmado."
+  }
+ },
+ {
+  "name": "Sífilis (excluindo congénita)",
+  "agent": "Treponema pallidum",
+  "cats": [
+   "bact",
+   "sex"
+  ],
+  "crit": {
+   "clin": "<em>Primária</em>: cancro(s) duro(s) indolor(es) em zona genital/perineal/anal, mucosa bucal/faríngea ou extragenital. <em>Secundária</em>: exantema maculopapular difuso (frequentemente palmas/plantas), linfadenopatia generalizada, condyloma lata, enantema, alopécia difusa. <em>Latente precoce (&lt;1 ano)</em>: sem sintomas com história compatível nos 12 meses anteriores. Manifestações oculares/neurológicas em qualquer fase.",
+   "lab": "TP por campo escuro, imunofluorescência direta, técnicas NAAT, ou anticorpos por rastreio (TPHA/TPPA/EIA) + TP-IgM ou não-TP (RPR/VDRL).",
+   "epi": "Contacto sexual (na latente precoce, nos 12 meses anteriores)."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Lab. de confirmado."
+  }
+ },
+ {
+  "name": "Sífilis Congénita",
+  "agent": "Treponema pallidum",
+  "cats": [
+   "bact",
+   "cong",
+   "sex"
+  ],
+  "crit": {
+   "clin": "Lactente &lt;2 anos com pelo menos um: hepatoesplenomegalia, lesões mucocutâneas, condyloma lata, rinite persistente, icterícia, pseudoparalisia (periostite/osteocondrite), SNC, anemia, síndrome nefrótico, desnutrição.",
+   "lab": "<em>Confirmado</em>: TP por campo escuro ou imunofluorescência direta em cordão umbilical/placenta/exsudado nasal/lesões cutâneas; ou IgM específico + teste não treponémico reactivo no soro do lactente. <em>Provável</em>: VDRL reactivo no LCR; testes treponémicos+não treponémicos reactivos na mãe; ou título 4× superior ao materno no lactente.",
+   "epi": "Transmissão vertical."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Lactente/criança com clínicos + (epidemiológico ou lab. de provável).",
+   "confirmado": "Lactente com lab. de confirmado."
+  }
+ },
+ {
+  "name": "Síndrome Respiratória Aguda Grave (SARS)",
+  "agent": "SARS-CoV",
+  "cats": [
+   "vir",
+   "resp",
+   "crit"
+  ],
+  "crit": {
+   "clin": "Febre (ou antecedentes) + tosse/dificuldade respiratória/dispneia + imagem radiológica ou sinais autópticos de pneumonia/insuficiência respiratória + ausência de diagnóstico alternativo.",
+   "lab": "<em>Confirmado</em>: isolamento + RT-PCR · deteção de ácidos nucleicos em duas amostras distintas ou ensaios distintos · seroconversão por ELISA/IFI ou quadruplicação em soros emparelhados. <em>Provável</em>: anticorpos positivos em teste único; ou PCR positiva em amostra única e ensaio único.",
+   "epi": "Profissão associada a risco · animais reservatórios · contacto próximo com SARS confirmada/em investigação · viagem ou residência em área de surto · cluster em serviço de saúde."
+  },
+  "classif": {
+   "possivel": "Variável conforme período inter-epidémico ou surto: clínicos (+ ligação epidemiológica fora de surto).",
+   "provavel": "Clínicos + ligação epi + lab. de provável; em surto, clínicos + ligação a caso confirmado.",
+   "confirmado": "Confirmação a nível nacional (lab. nacional) ou internacional (lab. de referência + verificação OMS)."
+  }
+ },
+ {
+  "name": "Tétano",
+  "agent": "Clostridium tetani",
+  "cats": [
+   "bact",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Início agudo de pelo menos dois: contrações musculares dolorosas dos masséteres/pescoço com espasmos faciais (trismus, risus sardonicus), contrações dos músculos do tronco, espasmos generalizados (frequentemente com opistótonos).",
+   "lab": "Não aplicável.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Critérios clínicos na ausência de diagnóstico mais provável.",
+   "confirmado": null
+  }
+ },
+ {
+  "name": "Tosse Convulsa",
+  "agent": "Bordetella pertussis",
+  "cats": [
+   "bact",
+   "resp",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Tosse persistente ≥2 semanas + pelo menos um: tosse paroxística, sibilos inspiratórios, vómitos provocados pela tosse · ou diagnóstico médico de tosse convulsa · ou episódios de apneia em lactentes.",
+   "lab": "Isolamento, ácidos nucleicos, ou resposta imunológica específica para a toxina pertússica.",
+   "epi": "Pessoa a pessoa."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Toxoplasmose Congénita",
+  "agent": "Toxoplasma gondii",
+  "cats": [
+   "par",
+   "cong"
+  ],
+  "crit": {
+   "clin": "Critérios clínicos não relevantes para vigilância.",
+   "lab": "Presença de <em>T. gondii</em> em tecidos/fluidos, ácidos nucleicos, IgM/IgG/IgA no recém-nascido, ou IgG estável em lactente &lt;12 meses.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "Lactente com critérios laboratoriais."
+  }
+ },
+ {
+  "name": "Triquinelíase",
+  "agent": "Trichinella spp.",
+  "cats": [
+   "par",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Pelo menos três: febre, mialgias, diarreia, edema facial, eosinofilia, hemorragias subconjuntivais/subungueais/retinianas.",
+   "lab": "Larvas em biópsia muscular · serologia ELISA/HA/IF + Immunoblot.",
+   "epi": "Alimentos contaminados · fonte comum."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Tuberculose",
+  "agent": "Mycobacterium tuberculosis complex",
+  "cats": [
+   "bact",
+   "resp"
+  ],
+  "crit": {
+   "clin": "Sinais/sintomas/imagiologia compatíveis com TB ativa + decisão médica de tratamento antituberculoso completo · ou achados necrópsicos compatíveis com TB ativa que exigissem tratamento.",
+   "lab": "<em>Confirmado</em>: isolamento do <em>M. tuberculosis complex</em> (excluindo BCG); ou ácidos nucleicos + microscopia de bacilos ácido-resistentes. <em>Provável</em>: microscopia de BAAR, ácidos nucleicos, ou lesões granulomatosas em exame histológico.",
+   "epi": "Não aplicável."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + lab. de provável.",
+   "confirmado": "Clínicos + lab. de confirmado."
+  }
+ },
+ {
+  "name": "Tularémia",
+  "agent": "Francisella tularensis",
+  "cats": [
+   "bact",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Pelo menos uma forma: <em>ulceroglandular</em> (úlcera + adenopatia regional), <em>glandular</em> (adenopatias sem úlcera), <em>oculoglandular</em>, <em>orofaríngea</em> (adenopatia cervical + estomatite/faringite/amigdalite), <em>intestinal</em>, <em>pneumónica</em>, ou <em>tifóide</em> (febre sem localização ou septicemia).",
+   "lab": "Isolamento, ácidos nucleicos, ou resposta imunitária específica.",
+   "epi": "Fonte comum · zoonose · alimentos/água contaminados."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Varíola",
+  "agent": "Vírus da varíola",
+  "cats": [
+   "vir",
+   "crit",
+   "vac"
+  ],
+  "crit": {
+   "clin": "Febre + exantema com vesículas/pústulas na mesma fase e distribuição centrífuga · ou formas atípicas (lesões hemorrágicas, lesões planas aveludadas, erupção sinusoidal, ou alastrim).",
+   "lab": "<em>Confirmado</em>: isolamento ou ácidos nucleicos com sequenciação. <em>Provável</em>: partículas de Orthopoxvirus ao microscópio eletrónico.",
+   "epi": "Transmissão entre humanos · exposição laboratorial."
+  },
+  "classif": {
+   "possivel": "Critérios clínicos.",
+   "provavel": "Clínicos + (epidemiológicos ou lab. de provável).",
+   "confirmado": "Lab. de confirmado. Em surto: clínicos + ligação epidemiológica."
+  }
+ },
+ {
+  "name": "VIH / SIDA",
+  "agent": "Vírus da imunodeficiência humana",
+  "cats": [
+   "vir",
+   "sex"
+  ],
+  "crit": {
+   "clin": "<em>SIDA</em>: manifestação clínica referida na definição europeia de caso (adultos e adolescentes ≥15 anos; crianças &lt;15 anos).",
+   "lab": "<em>≥18 meses</em>: anti-VIH ou pesquisa combinada + Western blot; duplo EIA + confirmação por terceiro EIA; ou ≥2 amostras com ácidos nucleicos, antigénio p24 com neutralização, ou isolamento. <em>&lt;18 meses</em>: ≥2 amostras separadas (excl. cordão umbilical) com isolamento, ácidos nucleicos, ou antigénio p24 com neutralização (≥1 mês de idade).",
+   "epi": "Não aplicável. Notificação no SINAVE ou no SI.VIDA."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": null,
+   "confirmado": "<em>VIH</em>: critérios laboratoriais. <em>SIDA</em>: critérios clínicos + laboratoriais para VIH."
+  }
+ },
+ {
+  "name": "Yersiniose",
+  "agent": "Yersinia enterocolitica · Y. pseudotuberculosis",
+  "cats": [
+   "bact",
+   "fb",
+   "zoo"
+  ],
+  "crit": {
+   "clin": "Pelo menos um: febre, diarreia, vómitos, dores abdominais (pseudoapendicite), tenesmo retal.",
+   "lab": "Isolamento ou deteção de genes de virulência.",
+   "epi": "Transmissão entre humanos · fonte comum · zoonose · alimentos/água contaminados."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos.",
+   "confirmado": "Clínicos + laboratoriais."
+  }
+ },
+ {
+  "name": "Zika",
+  "agent": "Vírus Zika (flavivírus)",
+  "cats": [
+   "vir",
+   "vec",
+   "sex"
+  ],
+  "crit": {
+   "clin": "Exantema.",
+   "lab": "<em>Confirmado</em>: ácidos nucleicos, antigénio, isolamento, IgM com confirmação por neutralização, ou seroconversão. <em>Provável</em>: IgM em soro. Atenção a flavivírus.",
+   "epi": "Viagem/residência em área de transmissão documentada nas 2 semanas anteriores · contacto sexual com pessoa exposta ou com infeção confirmada."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Clínicos + epidemiológicos + lab. de provável.",
+   "confirmado": "Lab. de confirmado."
+  }
+ },
+ {
+  "name": "Zika Congénita",
+  "agent": "Vírus Zika",
+  "cats": [
+   "vir",
+   "cong",
+   "vec"
+  ],
+  "crit": {
+   "clin": "Lactente ou feto com microcefalia, calcificações intracranianas, ou outras anomalias do SNC.",
+   "lab": "Ácidos nucleicos, antigénio, isolamento, ou IgM específica em soro, LCR ou líquido amniótico.",
+   "epi": "Suspeição ou confirmação de infeção pelo vírus Zika na mãe durante a gravidez."
+  },
+  "classif": {
+   "possivel": null,
+   "provavel": "Lactente/feto com clínicos + epidemiológicos.",
+   "confirmado": "Lactente/feto com clínicos + laboratoriais."
+  }
+ }
+]

@@ -1,0 +1,95 @@
+{
+  "tagLabels": {
+    "bact": "Bacteriana",
+    "vir": "Viral",
+    "par": "Parasitária",
+    "pri": "Priónica",
+    "vec": "Vetorial",
+    "sex": "Sexual",
+    "vac": "Vacinal",
+    "fb": "Alimentar/hídrica",
+    "resp": "Respiratória",
+    "cong": "Congénita",
+    "zoo": "Zoonótica",
+    "crit": "Alto risco"
+  },
+  "tagPriority": [
+    "bact",
+    "vir",
+    "par",
+    "pri",
+    "crit",
+    "vec",
+    "sex",
+    "resp",
+    "fb",
+    "cong",
+    "zoo",
+    "vac"
+  ],
+  "nature": [
+    "bact",
+    "vir",
+    "par",
+    "pri"
+  ],
+  "filters": [
+    {
+      "k": "bact",
+      "l": "Bacterianas"
+    },
+    {
+      "k": "vir",
+      "l": "Virais"
+    },
+    {
+      "k": "par",
+      "l": "Parasitárias"
+    },
+    {
+      "k": "vec",
+      "l": "Vetoriais"
+    },
+    {
+      "k": "sex",
+      "l": "Sexuais"
+    },
+    {
+      "k": "vac",
+      "l": "Vacinais"
+    },
+    {
+      "k": "fb",
+      "l": "Alimentar/hídrica"
+    },
+    {
+      "k": "resp",
+      "l": "Respiratórias"
+    },
+    {
+      "k": "cong",
+      "l": "Congénitas"
+    },
+    {
+      "k": "zoo",
+      "l": "Zoonóticas"
+    },
+    {
+      "k": "crit",
+      "l": "Alto risco"
+    }
+  ],
+  "natureLetters": {
+    "bact": "B",
+    "vir": "V",
+    "par": "P",
+    "pri": "π"
+  },
+  "natureColors": {
+    "bact": "#4e6840",
+    "vir": "#3c5878",
+    "par": "#806040",
+    "pri": "#7d2b94"
+  },
+  "critColor": "#94322c"
+}
