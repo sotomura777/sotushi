@@ -16,7 +16,7 @@ const MODOS = [
 const DIFERENCIADORES = [
   { icone: "brain", titulo: "Análise comportamental", texto: "Detetamos padrões como mudanças de resposta nos últimos segundos ou colapso de tempo em enunciados longos. Treinas a estratégia, não só o conteúdo." },
   { icone: "calendar", titulo: "Revisão espaçada inteligente", texto: "O algoritmo FSRS calcula quando estás prestes a esquecer cada conceito. Vês só o que precisas, no momento certo." },
-  { icone: "link", titulo: "Integrado no MedGuia", texto: "Cada pergunta liga aos teus outros módulos. Pergunta sobre amiodarona? Um toque abre a ficha do fármaco com doses, ajustes e interações." },
+  { icone: "link", titulo: "Integrado no AllinMed", texto: "Cada pergunta liga aos teus outros módulos. Pergunta sobre amiodarona? Um toque abre a ficha do fármaco com doses, ajustes e interações." },
   { icone: "trophy", titulo: "Posição histórica, sem competição social", texto: "Vês em que lugar terias ficado em cada ano oficial da PNA, com base nas distribuições publicadas pela ACSS. Sem rankings contra outros utilizadores." },
 ];
 

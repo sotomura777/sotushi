@@ -19,8 +19,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["icon.svg"],
       manifest: {
-        name: "MedGuia",
-        short_name: "MedGuia",
+        name: "AllinMed",
+        short_name: "AllinMed",
         description: "Guia de bolso de estudo clínico",
         lang: "pt",
         theme_color: "#2d8a4e",
