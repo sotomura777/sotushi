@@ -1,7 +1,24 @@
-# CLAUDE.md — MedGuia
+# CLAUDE.md — AllinMed
 
-Regras específicas deste projeto (complementam as guidelines gerais de coding).
+Regras específicas deste projeto. **Complementam** o CLAUDE.md global
+(`~/.claude/CLAUDE.md`) e, onde indicado, **substituem-no** — em caso de conflito,
+**este ficheiro manda**.
 **Ler o `README.md` primeiro** — tem a arquitetura completa e o "como adicionar um módulo".
+
+## Stack e convenções deste projeto (override ao global)
+
+O CLAUDE.md global assume TypeScript + Next.js + Tailwind + shadcn + Vercel + pnpm.
+**A AllinMed NÃO usa nada disso.** Aqui:
+
+- **JavaScript** (não TypeScript) — ficheiros `.jsx`/`.js`.
+- **React + Vite** (não Next.js) — PWA via `vite-plugin-pwa`.
+- **CSS próprio** com variáveis em `src/styles.css` + `src/design/tokens.js`
+  (**não** Tailwind nem shadcn — ver invariante "um só design").
+- **Ícones próprios** (`src/components/icones*.jsx`, mosaico `.mg-ictile`) — não Lucide/Phosphor.
+- **npm** (não pnpm). Estado local: `localStorage` + IndexedDB (Dexie).
+- **Git**: repo solo, trabalha-se **direto em `main`**, mensagens em **português**,
+  terminadas com o trailer `Co-Authored-By` habitual. (O global pede inglês/branches —
+  não se aplica aqui.)
 
 ## Invariantes (não quebrar)
 
@@ -102,7 +119,9 @@ frases alteradas para revisão clínica.
 
 ## Roadmap (resumo — detalhe no README e no BACKEND.md)
 
-Fase 1 esqueleto ✅ · Fase 2 os 8 módulos portados ✅ · **Fase 3 (próximo): persistência
-das Notas** (teoria via cloud; doentes só-iniciais com cifra ponta-a-ponta + chave de
-recuperação) · Fase 4 contas + subscrição (com tolerância offline) · Fase 5 pagamentos.
+Fase 1 esqueleto ✅ · Fase 2 módulos portados ✅ (**14 módulos ativos**) · **Fase 3
+(próximo): persistência das Notas** (teoria via cloud; doentes só-iniciais com cifra
+ponta-a-ponta + chave de recuperação) · Fase 4 contas + subscrição (com tolerância
+offline) · Fase 5 pagamentos. Já existe uma **landing + login (ainda não ligado)** como
+gancho para a Fase 4.
 **Ler o `BACKEND.md`** — tem o spec da tua parte (modelos de dados e o que cifrar).

@@ -1,4 +1,4 @@
-# MedGuia
+# AllinMed
 
 Guia de bolso clínico para estudo — informação densa de medicina, organizada para
 consulta rápida em PC e telemóvel, **com funcionamento offline**. Posicionada como
@@ -12,17 +12,23 @@ ferramenta de **estudo**.
 ## Estado atual
 
 - Esqueleto da app (Vite + React + PWA) que **compila e corre offline**.
-- Ecrã inicial com a grelha de módulos, identidade visual única (creme/verde + modo escuro).
-- **Os 8 módulos estão portados e funcionais** (`pronto: true` em `registo.js`):
-  1. **Ajuste Renal** — 178 fármacos × 6 escalões de TFG, com pesquisa, filtros por classe e estado por escalão (sem ajuste / ajustar / precaução / contraindicado).
-  2. **Antibioterapia Ambulatório** — referência hierárquica (especialidade → patologia → tratamento).
-  3. **Análises + GSA** — interpretação de parâmetros + calculadora de gasometria (passo a passo).
-  4. **Vacinação** — PNV 2025, matriz por idade, viajante com mapa interativo.
-  5. **Vigilância Infantil** — 7 ferramentas: consultas PNSIJ, crescimento (percentis OMS), Tanner, M-CHAT, tensão arterial, Snellen, flúor + referenciação.
-  6. **Urgência** — índice pesquisável de 114 sintomas/suspeitas por sistema + workup interativo da obstipação.
-  7. **Notas Clínicas** — gestor de doentes **só com iniciais** + notas por separador com templates (SOAP/admissão/alta). *Interface pronta; persistência segura por fazer (ver Roadmap).*
-  8. **Calculadoras** — doses pediátricas de antibióticos (por peso, com teto e formulação).
-  9. **PNA — Prova Nacional de Acesso** — módulo de treino completo (app dentro da app):
+- Ecrã inicial com a grelha de módulos, identidade visual única (violeta + modo escuro).
+- **Landing de entrada + login (ainda não ligado)** e páginas de Política de Privacidade / Termos.
+- **14 módulos ativos** (`pronto: true` em `registo.js`):
+  1. **Ajuste Renal** — fármacos × escalões de TFG, com pesquisa, filtros por classe e estado por escalão (sem ajuste / ajustar / precaução / contraindicado).
+  2. **Análises & GSA** — interpretação de parâmetros + calculadora de gasometria (passo a passo).
+  3. **Vacinação** — PNV, matriz por idade, viajante com mapa interativo.
+  4. **Vig. Infantil** — PNSIJ, crescimento (percentis OMS), Tanner, M-CHAT, tensão arterial, Snellen, flúor + referenciação.
+  5. **Notas Clínicas** — gestor de doentes **só com iniciais** + notas com templates (SOAP/admissão/alta). *Interface pronta; persistência por fazer (Fase 3).*
+  6. **Fármacos na Gravidez** — contraindicações e precauções por trimestre.
+  7. **Interações** — interações por classe e cuidados por população (172 fármacos).
+  8. **InfetAccess** — antibioterapia em ambulatório (adulto).
+  9. **InfetAccess Ped** — antibioterapia em ambulatório (pediatria).
+  10. **Sintomas** — Abordagem por Sintoma: hub de 3 níveis (sistema → sintoma → 5 dimensões). Conteúdo das dimensões em construção.
+  11. **Sinave** — Doenças de Notificação Obrigatória: 65 doenças pesquisáveis/filtráveis com critérios e classificação de caso.
+  12. **EasyFarm** — guia de fármacos, fichas completas.
+  13. **My EasyFarm** — biblioteca pessoal de doses e esquemas.
+  14. **PNA — Prova Nacional de Acesso** — módulo de treino completo (app dentro da app):
      banco de perguntas no formato oficial, modos **Treino / Exame cronometrado /
      Construtor / Revisão (FSRS)**, **estatísticas** e **análise comportamental**,
      **histórico** de simulações e **posição** face às provas oficiais da ACSS.
@@ -113,18 +119,18 @@ npm run preview    # pré-visualizar a build de produção
 
 ## Como adicionar um módulo novo (usar o Ajuste Renal como molde)
 
-Exemplo: adicionar "Calculadoras".
+Exemplo: adicionar um módulo `<novo>`.
 
-1. **Conteúdo** — criar `conteudo/calculadoras/` com:
+1. **Conteúdo** — criar `conteudo/<novo>/` com:
    - `meta.json` (títulos, textos, e os dados de referência do módulo)
-   - os ficheiros de dados que fizerem sentido (ex.: `scores.json`)
-2. **Lógica** — criar `src/modules/calculadoras/`:
+   - os ficheiros de dados que fizerem sentido (ex.: `dados.json`)
+2. **Lógica** — criar `src/modules/<novo>/`:
    - `logica.js` — funções **puras**, sem dados clínicos lá dentro (importa-os de `/conteudo`)
-   - `Calculadoras.jsx` — a UI; reutiliza as classes de `styles.css`
+   - `<Novo>.jsx` — a UI; reutiliza as classes de `styles.css`
      (`.cartao`, `.lista`, `.campo`, `.filtro`, `.secao-label`, `.rodape`…) e recebe
      as props `accent`, `gradiente`, `onVoltar`
-3. **Ligar** — em `src/modules/registo.js`, importar o componente e mudar a entrada do
-   módulo para `pronto: true` com `Componente: Calculadoras`.
+3. **Ligar** — em `src/modules/registo.js`, importar o componente e adicionar a entrada
+   com `pronto: true` e `Componente: <Novo>`. (Ver **Sintomas** e **Sinave** como exemplos recentes.)
 
 Regra: o componente importa o seu conteúdo de `@conteudo/...` e nunca tem doses/textos
 clínicos escritos no meio do código.
@@ -156,7 +162,7 @@ valor de `s` (já não é inferida do texto).
 ## Roadmap
 
 - **Fase 1 — Esqueleto + 1 módulo modelo** ✅
-- **Fase 2 — Portar os restantes módulos** ✅ (os 8 módulos estão portados e a compilar)
+- **Fase 2 — Portar os restantes módulos** ✅ (14 módulos ativos; landing + login não-ligado já existem)
 - **Fase 3 — Persistência das Notas** ⬅️ *próximo (ver `BACKEND.md`)*
   - A **interface** das Notas já existe (gestor de doentes só-iniciais + notas com templates),
     mas por agora vive **só na sessão** (não guarda nada). Falta ligar ao armazenamento.
